@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/configuring-bmc-interface-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, BMC, baseboard management controller, configure, setup, set up 
+summary: サービスアプライアンスのベースボード管理コントローラ \ （ bmc \ ）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、サービスアプライアンスの SNMP 設定やその他のオプションを設定できます。 
+---
+= BMC インターフェイスの設定（ SG100 および SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスアプライアンスのベースボード管理コントローラ（ BMC ）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、サービスアプライアンスで SNMP 設定やその他のオプションを設定できます。

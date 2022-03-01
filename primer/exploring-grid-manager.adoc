@@ -1,0 +1,230 @@
+---
+permalink: primer/exploring-grid-manager.html 
+sidebar: sidebar 
+keywords: what is the grid manager, grid manager dashboard 
+summary: Grid Manager はブラウザベースのグラフィカルインターフェイスで、 StorageGRID システムの設定、管理、監視に使用できます。 
+---
+= Grid Manager の詳細を見る
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager はブラウザベースのグラフィカルインターフェイスで、 StorageGRID システムの設定、管理、監視に使用できます。
+
+Grid Manager にサインインすると、管理ノードに接続されます。各 StorageGRID システムには、 1 つのプライマリ管理ノードと、任意の数のプライマリ以外の管理ノードが含まれています。どの管理ノードにも接続が可能で、各管理ノードに表示される StorageGRID システムのビューもほぼ同じです。
+
+を使用して Grid Manager にアクセスできます xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+
+
+
+== Grid Manager ダッシュボード
+
+Grid Manager に初めてサインインするときは、ダッシュボードを使用してシステムのアクティビティを一目で監視できます。
+
+ダッシュボードには、システムの健常性、ストレージの使用状況、 ILM プロセス、 S3 および Swift 処理に関する概要情報が表示されます。
+
+image::../media/grid_manager_dashboard.png[Grid Manager のダッシュボード]
+
+各パネルの情報の説明については、ヘルプアイコンをクリックしてください image:../media/icon_nms_question.png["疑問符アイコン"] をクリックしてください。
+
+.詳細はこちら。
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+
+
+
+== 検索フィールド
+
+ヘッダーバーの * Search * フィールドを使用すると、 Grid Manager 内の特定のページにすばやく移動できます。たとえば、「 * KM * 」と入力して、 Key Management Server （ KMS ）ページにアクセスできます。* Search * を使用して、 Grid Manager のサイドバーおよび設定、メンテナンス、サポートの各メニューでエントリを検索できます。
+
+
+
+== ［ アラート ］ メニュー
+
+[Alerts] メニューには、 StorageGRID の動作中に発生する可能性のある問題を検出、評価、解決するための使いやすいインターフェイスが用意されています。
+
+image::../media/alerts_menu.png[アラートメニュー]
+
+[Alerts] メニューでは ' 次の操作を実行できます
+
+* 現在のアラートを確認します
+* 解決済みのアラートを確認
+* サイレンスを設定してアラート通知を停止する
+* アラートをトリガーする条件のアラートルールを定義
+* アラート通知用の E メールサーバを設定します
+
+
+.詳細はこちら。
+* xref:monitoring-and-managing-alerts.adoc[アラートを監視および管理する]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+
+
+
+== Nodes ヘエシ
+
+Nodes ページには、グリッド全体、グリッド内の各サイト、およびサイトの各ノードに関する情報が表示されます。
+
+ノードのホームページには、グリッド全体の複数の指標の合計が表示されます。特定のサイトまたはノードの情報を表示するには、サイトまたはノードを選択します。
+
+image::../media/nodes_menu.png[Nodes ページメイン]
+
+.詳細はこちら。
+* xref:viewing-nodes-page.adoc[Nodes ページを表示します]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+
+
+
+== テナントページ
+
+テナントページでは、 StorageGRID システムのストレージテナントアカウントを作成および監視できます。オブジェクトの格納と読み出しを実行できるユーザを指定し、どの機能を利用可能とするかを指定するには、少なくとも 1 つのテナントアカウントを作成する必要があります。
+
+テナントページには、使用されているストレージの容量やオブジェクトの数など、各テナントの使用状況の詳細も表示されます。テナントの作成時にクォータを設定すると、そのクォータのうちどれくらいが使用されているかを確認できます。
+
+image::../media/tenants_menu_and_page.png[[Tenants Menu and Page]]
+
+.詳細はこちら。
+* xref:managing-tenants-and-client-connections.adoc[テナントとクライアント接続を管理する]
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:../tenant/index.adoc[テナントアカウントを使用する]
+
+
+
+
+== ILM メニュー
+
+ILM メニューでは、データの保持と可用性を制御する情報ライフサイクル管理（ ILM ）のルールとポリシーを設定できます。オブジェクト ID を入力して、そのオブジェクトのメタデータを表示することもできます。
+
+image::../media/ilm_menu_and_page.png[ILM のメニューとページ]
+
+.詳細はこちら。
+* xref:using-information-lifecycle-management.adoc[情報ライフサイクル管理を使用]
+* xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+
+
+
+== 設定メニュー
+
+[Configuration] メニューでは、ネットワーク設定、セキュリティ設定、システム設定、モニタリングオプション、およびアクセスコントロールオプションを指定できます。
+
+image::../media/configuration_menu.png[Configuration Menu （設定メニュー）]
+
+.詳細はこちら。
+* xref:configuring-network-settings.adoc[ネットワークの設定を行います]
+* xref:managing-tenants-and-client-connections.adoc[テナントとクライアント接続を管理する]
+* xref:reviewing-audit-messages.adoc[監査メッセージを確認します]
+* xref:controlling-storagegrid-access.adoc[StorageGRID アクセスを制御します]
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+* xref:../audit/index.adoc[監査ログを確認します]
+
+
+
+
+== メンテナンスメニュー
+
+Maintenance （メンテナンス）メニューでは、メンテナンスタスク、システムメンテナンス、およびネットワークメンテナンスを実行できます。
+
+image::../media/maintenance_menu.png[メンテナンスメニューとページ]
+
+
+
+=== タスク
+
+保守作業には次のものが含ま
+
+* 運用停止処理：使用されていないグリッドノードとサイトを削除します。
+* 新しいグリッドノードとサイトを追加するための拡張処理。
+* 障害が発生したノードの交換とデータのリストアに使用するリカバリ処理。
+* オブジェクトの有無は、オブジェクトデータの有無（正確性ではなく）を確認するためにチェックされます。
+
+
+
+
+=== システム
+
+実行可能なシステムメンテナンスタスクには、次のものがあります。
+
+* 現在の StorageGRID ライセンスの詳細を確認するか、新しいライセンスをアップロードしています。
+* リカバリパッケージを生成しています。
+* 選択したアプライアンスで、ソフトウェアのアップグレード、ホットフィックス、 SANtricity OS ソフトウェアの更新など、 StorageGRID ソフトウェアの更新を実行する。
+
+
+
+
+=== ネットワーク
+
+実行できるネットワークメンテナンス作業には、次のものがあります。
+
+* DNS サーバの情報を編集します。
+* グリッドネットワークで使用されるサブネットを設定します。
+* NTP サーバの情報を編集しています。
+
+
+.詳細はこちら。
+* xref:performing-maintenance-procedures.adoc[メンテナンスを実施します]
+* xref:downloading-recovery-package.adoc[リカバリパッケージをダウンロードします]
+* xref:../expand/index.adoc[グリッドを展開します]
+* xref:../upgrade/index.adoc[ソフトウェアをアップグレードする]
+* xref:../maintain/index.adoc[リカバリとメンテナンス]
+* xref:../sg6000/index.adoc[SG6000 ストレージアプライアンス]
+* xref:../sg5700/index.adoc[SG5700 ストレージアプライアンス]
+* xref:../sg5600/index.adoc[SG5600 ストレージアプライアンス]
+
+
+
+
+== サポートメニュー
+
+Support （サポート）メニューには、テクニカルサポートがシステムの分析とトラブルシューティングに役立つオプションが表示されます。[ サポート ] メニューには、 [ ツール ] と [ アラーム ] （レガシー）の 2 つの部分があります。
+
+image::../media/support_menu.png[サポートメニュー]
+
+
+
+=== ツール
+
+[ サポート（ Support ） ] メニューの [ ツール（ Tools ） ] セクションから、次の操作を実行できます。
+
+* AutoSupport を有効にします。
+* グリッドの現在の状態に対して一連の診断チェックを実行します。
+* グリッドトポロジツリーにアクセスして、グリッドノード、サービス、および属性に関する詳細情報を表示します。
+* ログファイルとシステムデータを取得します。
+* 詳細な指標やチャートを確認
++
+
+IMPORTANT: [*Metrics] オプションで使用できるツールは、テクニカル・サポートが使用することを目的としています。これらのツールの一部の機能およびメニュー項目は、意図的に機能しないようになっています。
+
+
+
+
+
+=== アラーム（レガシー）
+
+サポートメニューのアラーム（レガシー）セクションでは、現在、過去、グローバルのアラームを確認したり、カスタムイベントを設定したり、従来のアラームと AutoSupport の E メール通知を設定したりできます。
+
+
+NOTE: 従来のアラームシステムは引き続きサポートされますが、アラートシステムには大きなメリットがあり、使いやすくなっています。
+
+.詳細はこちら。
+* xref:storagegrid-architecture-and-network-topology.adoc[StorageGRID のアーキテクチャとネットワークトポロジ]
+* xref:viewing-nodes-page.adoc[StorageGRID 属性]
+* xref:using-storagegrid-support-options.adoc[StorageGRID のサポートオプションを使用する]
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+
+
+
+== ヘルプメニュー
+
+ヘルプオプションを使用すると、最新リリースの StorageGRID ドキュメントセンターや API ドキュメントにアクセスできます。現在インストールされている StorageGRID のバージョンを確認することもできます。
+
+image::../media/help_menu.png[ヘルプメニュー]
+
+.詳細はこちら。
+* xref:../admin/index.adoc[StorageGRID の管理]
+

@@ -1,0 +1,80 @@
+---
+permalink: admin/what-is-autosupport.html 
+sidebar: sidebar 
+keywords: autosupport, technical support, storagegrid health, system status, active iq 
+summary: AutoSupport 機能を使用すると、 StorageGRID システムのヘルスメッセージおよびステータスメッセージをテクニカルサポートに送信できます。 
+---
+= AutoSupport とは
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AutoSupport 機能を使用すると、 StorageGRID システムのヘルスメッセージおよびステータスメッセージをテクニカルサポートに送信できます。
+
+AutoSupport を使用すると、問題の特定と解決にかかる時間を大幅に短縮できます。また、システムのストレージニーズを監視し、新しいノードやサイトを追加する必要があるかどうかを判断するための支援も行います。必要に応じて、 1 つの別の送信先に AutoSupport メッセージを送信するように設定できます。
+
+
+
+== AutoSupport メッセージに含まれる情報
+
+AutoSupport メッセージには次のような情報が含まれます。
+
+* StorageGRID ソフトウェアのバージョン
+* オペレーティングシステムのバージョン
+* システムレベルおよび場所レベルの属性情報
+* 最新のアラートとアラーム（従来型システム）
+* 履歴データを含む、すべてのグリッドタスクの現在のステータス
+* 管理ノードデータベースの使用率
+* 失われた、または欠落しているオブジェクトの数
+* Grid の設定
+* NMS エンティティ
+* アクティブな ILM ポリシー
+* プロビジョニングされたグリッド仕様ファイル
+* 診断メトリック
+
+
+AutoSupport 機能および個々の AutoSupport オプションは、 StorageGRID の初回インストール時に有効にするか、あとから有効にすることができます。AutoSupport が有効になっていない場合、 Grid Manager ダッシュボードにメッセージが表示されます。このメッセージには、 AutoSupport 設定ページへのリンクが含まれています。
+
+image::../media/autosupport_disabled_message.png[AutoSupport が無効なメッセージです]
+
+メッセージを閉じても、 AutoSupport が無効なままであっても、ブラウザキャッシュがクリアされるまでは再度表示されません。
+
+
+
+== Active IQ とは
+
+Active IQ は、ネットアップのインストールベースが提供する予測分析と集合知を活用する、クラウドベースのデジタルアドバイザです。継続的なリスク評価、予測アラート、規範となるガイダンス、自動化されたアクションによって、問題が発生する前に予防できます。これにより、システムの健全性が向上し、システムの可用性が向上します。
+
+ネットアップサポートサイトの Active IQ ダッシュボードと機能を使用する場合は、 AutoSupport を有効にする必要があります。
+
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"^]
+
+
+
+== AutoSupport メッセージを送信するためのプロトコル
+
+AutoSupport メッセージの送信には、次の 3 つのプロトコルのいずれかを選択できます。
+
+* HTTPS
+* HTTP
+* SMTP
+
+
+HTTPS または HTTP を使用して AutoSupport メッセージを送信する場合は、管理ノードとテクニカルサポートの間に非透過型プロキシサーバを設定できます。
+
+SMTP を AutoSupport メッセージのプロトコルとして使用する場合は、 SMTP メールサーバを設定する必要があります。
+
+
+
+== AutoSupport オプション
+
+AutoSupport メッセージをテクニカルサポートに送信するには、次のオプションを任意に組み合わせて使用できます。
+
+* * 週単位 * ： AutoSupport メッセージを週に 1 回自動的に送信します。デフォルト設定： Enabled （有効）。
+* * イベントトリガー型 * ： 1 時間ごと、または重大なシステムイベントが発生したときに、 AutoSupport メッセージを自動的に送信します。デフォルト設定： Enabled （有効）。
+* * On Demand * ： StorageGRID システムが AutoSupport メッセージを自動的に送信するようテクニカルサポートから要求できます。これは、問題 がアクティブに機能している場合に便利です（ HTTPS AutoSupport 転送プロトコルが必要）。デフォルト設定： Disabled （無効）。
+* * User-triggered * ： AutoSupport メッセージをいつでも手動で送信します。
+
+
+https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

@@ -1,0 +1,69 @@
+---
+permalink: fabricpool/creating-traffic-classification-policy-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, traffic classification, traffic policy, QOS, quality of service 
+summary: 必要に応じて、 StorageGRID トラフィック分類ポリシーを設計して、 FabricPool ワークロードのサービス品質を最適化できます。 
+---
+= FabricPool のトラフィック分類ポリシーを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+必要に応じて、 StorageGRID トラフィック分類ポリシーを設計して、 FabricPool ワークロードのサービス品質を最適化できます。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Root Access 権限が必要です。
+
+
+FabricPool のトラフィック分類ポリシーを作成する場合のベストプラクティスは、次のようにワークロードによって異なります。
+
+* FabricPool のプライマリワークロードのデータを StorageGRID に階層化する場合は、 FabricPool ワークロードの帯域幅が大半であることを確認する必要があります。トラフィック分類ポリシーを作成して、他のすべてのワークロードを制限できます。
++
+
+NOTE: 一般に、 FabricPool の読み取り処理は、書き込み処理よりも優先順位を付けることが重要です。
+
++
+たとえば、他の S3 クライアントがこの StorageGRID システムを使用している場合は、トラフィック分類ポリシーを作成する必要があります。他のバケット、テナント、 IP サブネット、またはロードバランサエンドポイントのネットワークトラフィックを制限できます。
+
+* 原則として、どの FabricPool ワークロードにも QoS 制限を課すべきではなく、他のワークロードに限定するだけです。
+* 他のワークロードに適用される制限には、ワークロードの動作を考慮する必要があります。また、グリッドのサイジングと機能、および想定される利用率に応じて、制限が適用されます。
+
+
+詳細については、以下をご覧ください。 xref:../admin/managing-traffic-classification-policies.adoc[トラフィック分類ポリシーを管理します]
+
+.手順
+. * configuration * > * Network * > * traffic classification * を選択します。
+. 名前と概要 を入力します。
+. [ 一致ルール ] セクションで、少なくとも 1 つのルールを作成します。
++
+.. 「 * Create * 」を選択します。
+.. [* Endpoint] を選択し、 FabricPool 用に作成したロードバランサエンドポイントを選択します。
++
+FabricPool テナントアカウントまたはバケットを選択することもできます。
+
+.. このトラフィックポリシーで他のエンドポイントのトラフィックを制限する場合は、 [* 逆一致 * （ Inverse match * ） ] を選択します。
+
+
+. 必要に応じて、 1 つ以上の制限を作成します。
++
+
+NOTE: トラフィック分類ポリシーに制限が設定されていない場合でも、トラフィックの傾向を把握できるようにメトリックが収集されます。
+
++
+.. 「 * Create * 」を選択します。
+.. 制限するトラフィックのタイプと適用する制限を選択します。
++
+次に、 FabricPool トラフィック分類ポリシーの例を示します。このポリシーでは、制限できるネットワークトラフィックのタイプと、選択できる値のタイプを示します。実際のポリシーの制限は、ユーザ固有の要件に基づきます。
+
++
+image::../media/traffic_classification_policy_for_fabricpool.png[トラフィック分類ポリシー FabricPool]
+
+
+
+. トラフィック分類ポリシーを作成した後、ポリシーを選択し、 [*Metrics] を選択して、ポリシーがトラフィックを想定どおりに制限しているかどうかを確認します。
++
+image::../media/traffic_classification_metrics_fabricpool.png[Traffic Classification Metrics FabricPool の略]
+
+

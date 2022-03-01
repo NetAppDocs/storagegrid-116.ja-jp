@@ -1,0 +1,27 @@
+---
+permalink: maintain/resetting-preferred-sender-on-recovered-non-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, non-primary admin node, reset preferred sender, resetting preferred sender 
+summary: リカバリする非プライマリ管理ノードが、アラート通知、アラーム通知、および AutoSupport メッセージの優先送信者として設定されている場合は、 StorageGRID システムでこの設定を変更する必要があります。 
+---
+= リカバリ済み非プライマリ管理ノードで優先送信者をリセットします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+リカバリする非プライマリ管理ノードが、アラート通知、アラーム通知、および AutoSupport メッセージの優先送信者として設定されている場合は、 StorageGRID システムでこの設定を変更する必要があります。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* リカバリした管理ノードをインストールして実行する必要があります。
+
+
+.手順
+. * 設定 * > * システム * > * 表示オプション * を選択します。
+. [*Preferred Sender] ドロップダウン・リストからリカバリされた管理ノードを選択します
+. [ 変更の適用 *] をクリックします。
+
+
+xref:../admin/index.adoc[StorageGRID の管理]

@@ -1,0 +1,26 @@
+---
+permalink: admin/managing-load-balancing.html 
+sidebar: sidebar 
+keywords: manage load balancing, balance workload, client ingest, client retrieval, distribute connection 
+summary: StorageGRID のロードバランシング機能を使用して、 S3 / Swift クライアントからの取り込み / 読み出しワークロードを処理できます。ロードバランシングは、複数のストレージノードにワークロードと接続を分散することで、速度と接続容量を最大化します。 
+---
+= ロードバランシングの管理：概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID のロードバランシング機能を使用して、 S3 / Swift クライアントからの取り込み / 読み出しワークロードを処理できます。ロードバランシングは、複数のストレージノードにワークロードと接続を分散することで、速度と接続容量を最大化します。
+
+次の方法でクライアントワークロードの負荷を分散できます。
+
+* 管理ノードとゲートウェイノードにインストールされているロードバランササービスを使用します。ロードバランササービスはレイヤ 7 のロードバランシングを提供し、クライアント要求の TLS ターミネーション、要求の検査、およびストレージノードへの新しいセキュアな接続の確立を実施します。これは推奨されるロードバランシングメカニズムです。
++
+を参照してください xref:how-load-balancing-works-load-balancer-service.adoc[ロードバランシングの仕組み - ロードバランササービス]。
+
+* ゲートウェイノードにのみインストールされている、廃止された Connection Load Balancer （ CLB ）サービスを使用します。CLB サービスはレイヤ 4 のロードバランシングを提供し、リンクコストをサポートします。
++
+を参照してください xref:how-load-balancing-works-clb-service.adoc[ロードバランシングの仕組み - CLB サービス（廃止）]。
+
+* サードパーティ製ロードバランサを統合します。詳細については、ネットアップのアカウント担当者にお問い合わせください。
+

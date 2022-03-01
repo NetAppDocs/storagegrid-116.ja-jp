@@ -1,0 +1,164 @@
+---
+permalink: upgrade/obtaining-required-materials-for-software-upgrade.html 
+sidebar: sidebar 
+keywords: upgrade, requirements, rhel, red hat, linux, centOS, ubuntu, debian 
+summary: ソフトウェアのアップグレードを開始する前に、アップグレードを正常に完了できるよう、必要なファイル、機器、情報をすべて揃えておく必要があります。 
+---
+= ソフトウェアのアップグレードに必要なファイル、機器、機器を揃えます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ソフトウェアのアップグレードを開始する前に、アップグレードを正常に完了できるよう、必要なファイル、機器、情報をすべて揃えておく必要があります。
+
+[cols="1a,3a"]
+|===
+| 項目 | 注： 
+
+
+ a| 
+StorageGRID アップグレードファイル
+ a| 
+<<Download the StorageGRID upgrade files>> サービスラップトップに。
+
+
+
+ a| 
+サービスラップトップ
+ a| 
+サービスラップトップには次のものが必要です。
+
+* ネットワークポート
+* SSH クライアント（ PuTTY など）
+
+
+
+
+ a| 
+xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]
+ a| 
+通常、ブラウザサポートは StorageGRID リリースごとに変更されます。ブラウザが新しい StorageGRID バージョンに対応していることを確認します。
+
+
+
+ a| 
+リカバリ・パッケージ（ .zip ）ファイル
+ a| 
+<<Download the Recovery Package>> アップグレードする前に、ファイルを安全な場所に保存しておいてください。リカバリパッケージファイルは、障害が発生した場合にシステムをリストアするために使用します。
+
+
+
+ a| 
+「 passwords.txt 」ファイル
+ a| 
+このファイルは ' リカバリ・パッケージの .zip ファイルの一部である SAID パッケージに含まれています最新バージョンのリカバリパッケージを入手する必要があります。
+
+
+
+ a| 
+プロビジョニングパスフレーズ
+ a| 
+このパスフレーズは、 StorageGRID システムが最初にインストールされるときに作成されて文書化されます。プロビジョニング・パスフレーズは 'passwords.txt ファイルにはリストされていません
+
+
+
+ a| 
+関連ドキュメント
+ a| 
+* xref:../release-notes/index.adoc[リリースノート] StorageGRID 11.6 の場合：アップグレードを開始する前に、このドキュメントに記載されている情報をよくお読みください。
+* の手順 xref:../admin/index.adoc[StorageGRID の管理]。
+* Linux 環境をアップグレードする場合は、使用している Linux プラットフォーム用の StorageGRID のインストール手順：
++
+** xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+** xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]
+
+
+* 必要に応じて、その他の StorageGRID ドキュメント
+
+
+|===
+
+
+== StorageGRID アップグレードファイルをダウンロードします
+
+ノードのインストール場所に応じて、 1 つ以上のファイルをダウンロードする必要があります。
+
+* * すべてのプラットフォーム *:`.upgrade` ファイル
+
+
+Linux ホストに導入されているノードがある場合は、 RPM アーカイブまたは DEB アーカイブもダウンロードする必要があります。これは、アップグレードを開始する前にインストールします。
+
+* * Red Hat Enterprise Linux または CentOS * ：追加の RPM ファイル（「 .zip 」または「 .tgz 」）
+* *Ubuntu または Debian*: 追加の DEB ファイル (`.zip または `.tgz`)
+
+
+.手順
+. に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
+. 最新のリリースをダウンロードするボタンを選択するか、ドロップダウンメニューから別のバージョンを選択して、「 * Go * 」を選択します。
++
+StorageGRID ソフトウェアのバージョンの形式は、 11._x.y_. です。StorageGRID ホットフィックスの形式は、 11._x.y.z _ です。
+
+. ネットアップアカウントのユーザ名とパスワードを使用してサインインします。
+. 「注意 / 必ずお読みください」という記述が表示されたら、それを読んでチェックボックスを選択してください。
++
+このステートメントは、リリースに必要なホットフィックスがある場合に表示されます。
+
+. エンドユーザライセンス契約を読み、チェックボックスをオンにして、「 * 同意して続行 * 」を選択します。
++
+選択したバージョンのダウンロードページが表示されます。このページには 3 つの列があります。
+
++
+** StorageGRID をインストールします
+** StorageGRID をアップグレードします
+** StorageGRID アプライアンスのサポートファイル
+
+
+. [*Upgrade StorageGRID *] カラムで '`.upgrade] アーカイブを選択してダウンロードします
++
+すべてのプラットフォームには '.upgrade アーカイブが必要です
+
+. Linux ホストに導入されているノードがある場合は '.tgz 形式または '.zip 形式の RPM または DEB アーカイブもダウンロードしますサービスラップトップで Windows を実行している場合は '.zip ファイルを選択します
++
+** Red Hat Enterprise Linux または CentOS +`StorageGRID -Webscale --_version_-RPM-uniqueID_.zip +`StorageGRID -Webscale --_version_-RPM-uniqueID_tgz`
+** Ubuntu または Debian+`StorageGRIDWeb-Webscale --_version__ DEB --_uniqueID_.zip `+`StorageGRIDWebscale --_version_-DEB -- _uniqueID_.tgz `
++
+
+NOTE: SG100 または SG1000 では追加のファイルは必要ありません。
+
+
+
+
+
+
+
+== リカバリパッケージをダウンロードします
+
+リカバリパッケージファイルを使用すると、障害発生時に StorageGRID システムをリストアできます。StorageGRID システムでグリッドトポロジの変更を行う前、またはソフトウェアをアップグレードする前に、現在のリカバリパッケージファイルをダウンロードしてください。グリッドトポロジを変更するかソフトウェアをアップグレードしたあとに、リカバリパッケージの新しいコピーをダウンロードします。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* プロビジョニングパスフレーズが必要です。
+* 特定のアクセス権限が必要です。
+
+
+.手順
+. [* Maintenance * （メンテナンス） ] > [* System * （システム * ） ] > [* Recovery Package] （リカバリパッケージ * ）
+. プロビジョニングパスフレーズを入力し、 * ダウンロードの開始 * を選択します。
++
+ダウンロードがすぐに開始されます。
+
+. ダウンロードが完了したら、次の手順を実行
++
+.. 「 .zip 」ファイルを開きます。
+.. これには 'gpt-backup' ディレクトリと内部の '.zip ファイルが含まれていることを確認します
+.. 内部の「 .zip 」ファイルを解凍します。
+.. 「 passwords.txt 」ファイルを開くことができることを確認します。
+
+
+. ダウンロードしたリカバリ・パッケージ・ファイル（ .zip ）を ' 安全で安全な 2 つの場所にコピーします
++
+
+IMPORTANT: リカバリパッケージファイルには StorageGRID システムからデータを取得するための暗号キーとパスワードが含まれているため、安全に保管する必要があります。
+
+

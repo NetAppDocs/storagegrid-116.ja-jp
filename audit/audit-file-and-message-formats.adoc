@@ -1,0 +1,13 @@
+---
+permalink: audit/audit-file-and-message-formats.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, log file formats, log formats, message formats, log file format, log format ,message format 
+summary: 監査ログを使用して、システムに関する情報を収集し、問題のトラブルシューティングを行うことができます。監査ログファイルの形式と、監査メッセージに使用される一般的な形式を理解しておく必要があります。 
+---
+= 監査ログファイルおよびメッセージの形式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査ログを使用して、システムに関する情報を収集し、問題のトラブルシューティングを行うことができます。監査ログファイルの形式と、監査メッセージに使用される一般的な形式を理解しておく必要があります。

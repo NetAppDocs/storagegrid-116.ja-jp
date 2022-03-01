@@ -1,0 +1,45 @@
+---
+permalink: sg5600/troubleshooting-connection-issues.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, troubleshoot, troubleshooting, connection 
+summary: StorageGRID アプライアンスのインストール時に接続の問題が発生した場合は、以下に記載する対処策を実施する必要があります。 
+---
+= 接続の問題のトラブルシューティング（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスのインストール時に接続の問題が発生した場合は、以下に記載する対処策を実施する必要があります。
+
+
+
+== StorageGRID アプライアンスにネットワーク経由で接続できません
+
+アプライアンスに接続できない場合は、ネットワーク問題 があるか、またはハードウェアの設置が正常に完了していない可能性があります。
+
+* * 問題 *
++
+アプライアンスに接続できません。
+
+* * 原因 *
++
+この問題は、ネットワーク問題 が存在する場合、またはハードウェアの設置が正常に完了しなかった場合に発生することがあります。
+
+* * 是正措置 *
++
+.. アプライアンスに ping を実行します： +`*ping_E5600 _controller_IP_*`
+.. ブラウザを開き '+`*https://_Management_Port_IP_:8443*` と入力して StorageGRID アプライアンス・インストーラにアクセスします
++
+Management_Port_IP には、 E5600SG コントローラ（物理インストールでプロビジョニングされた）の管理ポート 1 の IP アドレスを入力します。
+
+.. [ 管理ネットワークの設定 *] をクリックし、 IP を確認します。
+.. ping からの応答を受信したら、ファイアウォールでポート 8443 が開いていることを確認します。
+.. アプライアンスをリブートします。
+.. インストール用 Web ページをリフレッシュします。
+.. この方法で接続問題 が解決しない場合は、ネットアップサポートサイトからテクニカルサポートにお問い合わせください http://mysupport.netapp.com/["mysupport.netapp.com"^]。
+
+
+
+
+xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG コントローラのデジタル表示ディスプレイのコード]

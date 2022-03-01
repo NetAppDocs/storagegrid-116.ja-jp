@@ -1,0 +1,13 @@
+---
+permalink: sg5700/configuring-hardware-sg5712-60.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: アプライアンスの電源を入れたら、ハードウェアの監視に使用するソフトウェアである SANtricity System Manager を設定する必要があります。また、 StorageGRID で使用されるネットワーク接続も設定する必要があります。 
+---
+= ハードウェアの構成（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスの電源を入れたら、ハードウェアの監視に使用するソフトウェアである SANtricity System Manager を設定する必要があります。また、 StorageGRID で使用されるネットワーク接続も設定する必要があります。

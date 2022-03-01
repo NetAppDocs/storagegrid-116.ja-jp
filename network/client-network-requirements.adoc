@@ -1,0 +1,17 @@
+---
+permalink: network/client-network-requirements.html 
+sidebar: sidebar 
+keywords: client network 
+summary: クライアントネットワークはオプションです。クライアントネットワークを設定する場合は、次の考慮事項に注意してください。 
+---
+= クライアントネットワークの要件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クライアントネットワークはオプションです。クライアントネットワークを設定する場合は、次の考慮事項に注意してください。
+
+クライアントネットワークは、 S3 および Swift クライアントからのトラフィックをサポートするように設計されています。設定すると、クライアントネットワークゲートウェイがノードのデフォルトゲートウェイになります。
+
+クライアントネットワークを使用する場合は、明示的に設定されたロードバランサエンドポイントでのみインバウンドクライアントトラフィックを受け入れることで、悪意のある攻撃から StorageGRID を保護できます。を参照してください xref:..admin/managing-untrusted-client-network.adoc[信頼されていないクライアントネットワークを管理する] および xref:../admin/configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]。

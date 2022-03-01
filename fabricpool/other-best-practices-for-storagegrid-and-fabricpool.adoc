@@ -1,0 +1,40 @@
+---
+permalink: fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, best practices, encryption, compressions, tiering, AFF, consistency 
+summary: FabricPool で使用する StorageGRID システムを設定する場合は、データの保存方法に影響する可能性があるグローバルオプションを設定しないでください。 
+---
+= StorageGRID および FabricPool に関するその他のベストプラクティスです
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FabricPool で使用する StorageGRID システムを設定する場合は、データの保存方法に影響する可能性があるグローバルオプションを設定しないでください。
+
+
+
+== オブジェクトの暗号化
+
+StorageGRID の設定時に、他の StorageGRID クライアント（ * configuration * > * System * > * Grid options * ）でデータ暗号化が必要な場合は、グローバル * 格納オブジェクト暗号化 * 設定を有効にすることができます。FabricPool から StorageGRID に階層化されたデータはすでに暗号化されているため、 StorageGRID 設定を有効にする必要はありません。クライアント側の暗号化キーは ONTAP が所有します。
+
+
+
+== オブジェクトの圧縮
+
+StorageGRID を設定する場合は、グローバル * 保存オブジェクトの圧縮 * 設定（ * 設定 * > * システム * > * グリッドオプション * ）を有効にしないでください。FabricPool から StorageGRID に階層化されたデータはすでに圧縮されています。「格納オブジェクトの圧縮」を有効にしても、オブジェクトのサイズはこれ以上縮小されません。
+
+
+
+== 整合性レベル
+
+FabricPool バケットの場合、推奨されるバケット整合性レベルは「 read-after-new-write 」です。 「利用可能」整合性レベルは推奨されません。を参照してください xref:../tenant/changing-consistency-level.adoc[整合性レベルを変更します]。
+
+
+
+== FabricPool による階層化
+
+StorageGRID ノードが NetApp AFF システムから割り当てられたストレージを使用している場合は、ボリュームで FabricPool 階層化ポリシーが有効になっていないことを確認してください。たとえば、 StorageGRID ノードが VMware ホストで実行されている場合は、 StorageGRID ノードのデータストアの作成元ボリュームで FabricPool 階層化ポリシーが有効になっていないことを確認します。StorageGRID ノードで使用するボリュームで FabricPool による階層化を無効にすることで、トラブルシューティングとストレージの処理がシンプルになります。
+
+
+IMPORTANT: StorageGRID を使用して StorageGRID に関連するデータを FabricPool 自体に階層化しないでください。StorageGRID データを StorageGRID に階層化すると、トラブルシューティングと運用がより複雑になります。

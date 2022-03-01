@@ -1,0 +1,13 @@
+---
+permalink: sg5600/configuring-storagegrid-connections.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, storagegrid connections, connections, configure, setup, set up 
+summary: StorageGRID アプライアンスをストレージノードとして StorageGRID グリッドに導入するには、アプライアンスと使用するネットワークの間の接続を設定する必要があります。ネットワークを設定するには、 E5600SG コントローラ（アプライアンスのコンピューティングコントローラ）に搭載されている StorageGRID アプライアンスインストーラを参照します。 
+---
+= StorageGRID 接続の設定（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスをストレージノードとして StorageGRID グリッドに導入するには、アプライアンスと使用するネットワークの間の接続を設定する必要があります。ネットワークを設定するには、 StorageGRID アプライアンスインストーラを使用します。インストーラは、 E5600SG コントローラ（アプライアンスのコンピューティングコントローラ）に搭載されています。

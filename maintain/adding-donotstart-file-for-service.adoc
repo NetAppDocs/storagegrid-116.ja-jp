@@ -1,0 +1,45 @@
+---
+permalink: maintain/adding-donotstart-file-for-service.html 
+sidebar: sidebar 
+keywords: storagegrid, add do not start file, adding do not start file, service 
+summary: 個別のサービスが開始しないようにするには、グリッドノードのそのサービスのディレクトリに DoNotStart ファイルを追加します。 
+---
+= サービスの DoNotStart ファイルを追加します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+個別のサービスが開始しないようにするには、グリッドノードのそのサービスのディレクトリに DoNotStart ファイルを追加します。
+
+「 passwords.txt 」ファイルが必要です。
+
+.手順
+. グリッドノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_grid_node_name
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+. DoNotStart ファイルを追加します。「 touch /etc/sv/_service_/DoNotStart 」
++
+ここで 'service' は ' 開始しないようにするサービスの名前です例：
+
++
+[listing]
+----
+touch /etc/sv/ldr/DoNotStart
+----
++
+DoNotStart ファイルが作成されます。ファイルの内容は不要です。
+
++
+Server Manager またはグリッドノードが再起動されたときに Server Manager は再起動しますが、サービスは再開されません。
+
+. コマンドシェルからログアウトします :exit
+

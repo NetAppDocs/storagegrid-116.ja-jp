@@ -1,0 +1,44 @@
+---
+permalink: admin/kms-removing.html 
+sidebar: sidebar 
+keywords: remove kms, remove key management server 
+summary: 場合によっては、キー管理サーバの削除が必要になることがあります。たとえば、サイトの運用を停止した場合は、サイト固有の KMS を削除できます。 
+---
+= キー管理サーバ（ KMS ）を削除する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+場合によっては、キー管理サーバの削除が必要になることがあります。たとえば、サイトの運用を停止した場合は、サイト固有の KMS を削除できます。
+
+.必要なもの
+* を確認しておきます xref:kms-considerations-and-requirements.adoc[キー管理サーバを使用する際の考慮事項と要件]。
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Root アクセス権限が割り当てられている。
+
+
+KMS は以下の場合に削除できます。
+
+* サイトの運用が停止された場合や、ノードの暗号化が有効なアプライアンスノードがサイトに含まれていない場合は、サイト固有の KMS を削除できます。
+* ノード暗号化が有効なアプライアンスノードがあるサイトごとにサイト固有の KMS がすでに存在する場合は、デフォルトの KMS を削除できます。
+
+
+.手順
+. 設定 * > * セキュリティ * > * キー管理サーバ * を選択します。
++
+Key Management Server ページが表示され、設定済みのすべてのキー管理サーバが表示されます。
+
++
+image::../media/kms_configuration_details_table.png[KMS 構成の詳細 KMS テーブル]
+
+. 削除する KMS のラジオボタンを選択し、「 * Remove * 」を選択します。
+. 警告ダイアログで考慮事項を確認します。
++
+image::../media/kms_remove_warning.png[KMS 削除の警告]
+
+. 「 * OK 」を選択します。
++
+KMS の設定は削除されます。
+
+

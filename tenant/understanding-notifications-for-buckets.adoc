@@ -1,0 +1,67 @@
+---
+permalink: tenant/understanding-notifications-for-buckets.html 
+sidebar: sidebar 
+keywords: s3 bucket event notification, sequencer key 
+summary: S3 バケットに対するイベント通知を有効にすると、指定したイベントに関する通知を StorageGRID からデスティネーションの Amazon Simple Notification Service （ SNS ）に送信できます。 
+---
+= バケットの通知について理解します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 バケットに対するイベント通知を有効にすると、指定したイベントに関する通知を StorageGRID からデスティネーションの Amazon Simple Notification Service （ SNS ）に送信できます。
+
+可能です xref:configuring-event-notifications.adoc[イベント通知を設定する] 通知設定 XML をソースバケットに関連付けます。通知設定 XML には S3 の規則に従ってバケットの通知を設定し、デスティネーションの SNS トピックをエンドポイントの URN として指定します。
+
+イベント通知は通知設定に従ってソースバケットで作成され、デスティネーションに配信されます。オブジェクトに関連付けられているイベントが成功すると、そのイベントに関する通知が作成されて配信のためにキューに登録されます。
+
+一意になるとは限らず、その順序も保証されません。確実に配信することを目的とした処理の結果として、 1 つのイベントに関する通知が複数デスティネーションに配信されることがあります。また配信は非同期で実行されるため、特に異なる StorageGRID サイトで開始された処理の場合、デスティネーションでの通知の時間的順序がソースバケットでのイベントの順序と一致する保証はありません。Amazon S3 のドキュメントで説明されているように、イベントメッセージで「 sequencer 」キーを使用すると特定のオブジェクトのイベントの順序を決定できます。
+
+
+
+== サポートされている通知およびメッセージです
+
+StorageGRID イベント通知は Amazon S3 API に準拠しますが、次の制限事項があります。
+
+* 次のイベントタイプには通知を設定できません。これらのイベントタイプは * サポートされていません。
++
+** `s3 ： ReducedRedundancyLostObject`
+** `s3:ObjectRestore: Completed`
+
+
+* StorageGRID から送信されるイベント通知は標準の JSON 形式を使用しますが、次の表に示すように使用されないキーおよび特定の値が使用されるキーがあります。
+
+
+[cols="1a,2a"]
+|===
+| キー名 | StorageGRID 値 
+
+
+ a| 
+eventSource
+ a| 
+sgws ： s3`
+
+
+
+ a| 
+awsRegion のようになります
+ a| 
+含まれません
+
+
+
+ a| 
+x-amz-id-2
+ a| 
+含まれません
+
+
+
+ a| 
+ARN
+ a| 
+urn ： sgws ： s3 ：：： bucket_name'
+
+|===

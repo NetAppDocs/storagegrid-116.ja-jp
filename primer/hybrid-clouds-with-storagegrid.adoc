@@ -1,0 +1,50 @@
+---
+permalink: primer/hybrid-clouds-with-storagegrid.html 
+sidebar: sidebar 
+keywords: hybrid cloud, cloud storage pool, platform services, fabricpool, ontap 
+summary: ハイブリッドクラウド構成で StorageGRID を使用するには、ポリシーベースのデータ管理を実装してクラウドストレージプールにオブジェクトを格納し、 StorageGRID プラットフォームサービスを利用し、さらに NetApp FabricPool を使用して StorageGRID にデータを移動します。 
+---
+= StorageGRID を使用したハイブリッドクラウド
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハイブリッドクラウド構成で StorageGRID を使用するには、ポリシーベースのデータ管理を実装してクラウドストレージプールにオブジェクトを格納し、 StorageGRID プラットフォームサービスを利用し、さらに NetApp FabricPool を使用して StorageGRID にデータを移動します。
+
+
+
+== クラウドストレージプール
+
+クラウドストレージプールを使用すると、 StorageGRID システムの外部にオブジェクトを格納できます。たとえば、 Amazon S3 Glacier 、 S3 Glacier Deep Archive 、 Microsoft Azure Blob Storage のアーカイブアクセス階層など、アクセス頻度の低いオブジェクトを低コストのクラウドストレージに移動できます。また、 StorageGRID オブジェクトのクラウドバックアップを保持しておくことで、ストレージボリュームやストレージノードの障害によって失われたデータをリカバリすることができます。
+
+
+NOTE: クラウドストレージプールターゲットからオブジェクトを読み出すレイテンシが増加しているため、 FabricPool でクラウドストレージプールを使用することはサポートされていません。
+
+
+
+== S3 プラットフォームサービス
+
+S3 プラットフォームサービスでは、リモートサービスをオブジェクトレプリケーション、イベント通知、または検索統合のエンドポイントとして使用できます。プラットフォームサービスはグリッドの ILM ルールとは独立して動作し、個々の S3 バケットで有効化されます。サポートされるサービスは次のとおりです。
+
+* CloudMirror レプリケーションサービスでは、指定したオブジェクトが Amazon S3 または別の StorageGRID システムにあるターゲット S3 バケットに自動的にミラーリングされます。
+* イベント通知サービスでは、指定した操作に関するメッセージが、 Simple Notification Service （ SNS ）イベントの受信をサポートする外部のエンドポイントに送信されます。
+* 検索統合サービスでは、サードパーティのツールでメタデータの検索、可視化、分析を行うために、外部の Elasticsearch サービスにオブジェクトメタデータが送信されます。
+
+
+たとえば、 CloudMirror レプリケーションを使用して特定の顧客レコードを Amazon S3 にミラーリングし、 AWS サービスを利用してデータを分析することができます。
+
+
+
+== StorageGRID による ONTAP データの階層化
+
+FabricPool を使用してデータを StorageGRID に階層化することで、 ONTAP ストレージのコストを削減できます。FabricPool はネットアップデータファブリックのテクノロジで、オンプレミスまたはオフプレミスの低コストのオブジェクトストレージ階層へデータを自動で階層化することができます。
+
+手動の階層化ソリューションとは異なり、 FabricPool はデータの階層化を自動化してストレージコストを削減することで、総所有コストを削減します。StorageGRID を含むパブリッククラウドとプライベートクラウドに階層化することで、クラウドエコノミクスのメリットを実現します。
+
+.関連情報
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:../tenant/index.adoc[テナントアカウントを使用する]
+* xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+* xref:../fabricpool/index.adoc[StorageGRID for FabricPool を設定します]
+

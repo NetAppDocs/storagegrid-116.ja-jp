@@ -1,0 +1,58 @@
+---
+permalink: sg6000/reviewing-hardware-status-in-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, hardware, status, diagnostic, environment drives, drive, temperature 
+summary: SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。 
+---
+= SANtricity システムマネージャでハードウェアステータスを確認します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。
+
+.必要なもの
+* を使用している xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* グリッドマネージャを介して SANtricity システムマネージャにアクセスするには、ストレージアプライアンス管理者の権限またはルートアクセス権限が必要です。
+* StorageGRID アプライアンスインストーラを使用して SANtricity System Manager にアクセスするには、 SANtricity System Manager 管理者のユーザ名とパスワードが必要です。
+* Web ブラウザを使用して SANtricity System Manager に直接アクセスするには、 SANtricity System Manager 管理者のユーザ名とパスワードが必要です。
+
+
+
+NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+
+
+IMPORTANT: グリッドマネージャまたはアプライアンスインストーラから SANtricity システムマネージャにアクセスする方法は、通常、ハードウェアを監視して E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、 SANtricity System Manager 内の多くの機能や操作は、 StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。
+
+.手順
+. xref:setting-up-and-accessing-santricity-system-manager.adoc[SANtricity システムマネージャにアクセスします]。
+. 必要に応じて、管理者のユーザ名とパスワードを入力します。
+. セットアップウィザードを閉じて SANtricity システムマネージャのホームページを表示するには、 * Cancel * をクリックします。
++
+SANtricity の System Manager ホームページが表示されます。SANtricity System Manager では、コントローラシェルフがストレージアレイと表示されます。
+
++
+image::../media/sam_home_page.gif[SANtricity System Manager ホームページのスクリーンショット]
+
+. アプライアンスハードウェアについて表示された情報を確認し、すべてのハードウェアコンポーネントのステータスが「 Optimal 」であることを確認します。
++
+.. [* ハードウェア * ] タブをクリックします。
+.. Show back of shelf* （シェルフの背面を表示）をクリックします。
++
+image::../media/sam_hardware_controllers_a_and_b.gif[SANtricity システムマネージャのハードウェアステータスタブ]
+
++
+シェルフの背面から、両方のストレージコントローラ、各ストレージコントローラのバッテリ、電源キャニスター 2 台、ファンキャニスター 2 台、および拡張シェルフ（ある場合）を確認できます。構成部品の温度を表示することもできます。
+
+.. 各ストレージコントローラの設定を表示するには、コントローラを選択し、コンテキストメニューから * 設定の表示 * を選択します。
+.. シェルフの背面にある他のコンポーネントの設定を確認するには、対象となるコンポーネントを選択します。
+.. [Show front of shelf* （シェルフの前面を表示） ] をクリックし、表示するコンポーネントを選択します。
++
+シェルフの前面からは、ストレージコントローラシェルフまたは拡張シェルフ（ある場合）のドライブとドライブドロワーを確認できます。
+
+
+
+
+
+ステータスが「 Needs Attention 」になっているコンポーネントがある場合は、 Recovery Guru に示される手順に従って問題 を解決するか、テクニカルサポートに連絡してください。

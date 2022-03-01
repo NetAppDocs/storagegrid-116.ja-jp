@@ -1,0 +1,15 @@
+---
+permalink: s3/separation-of-http-connection-pools-for-read-and-write-operations.html 
+sidebar: sidebar 
+keywords: separate http connection pools read write 
+summary: 読み取り処理と書き込み処理に別々の HTTP 接続プールを使用して、それぞれに使用するプールの容量を制御できます。HTTP 接続のプールを分けることで、トランザクションや負荷分散をより細かく制御できます。 
+---
+= 読み取り処理用と書き込み処理用に別々の HTTP 接続プールを使用する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+読み取り処理と書き込み処理に別々の HTTP 接続プールを使用して、それぞれに使用するプールの容量を制御できます。HTTP 接続のプールを分けることで、トランザクションや負荷分散をより細かく制御できます。
+
+クライアントアプリケーションで生成される負荷には、読み出し中心（読み取り）の負荷と格納中心（書き込み）の負荷があります。読み取りと書き込みで HTTP 接続プールを分けることで、各プールの量を調整してそれぞれのトランザクション専用に使用することができます。

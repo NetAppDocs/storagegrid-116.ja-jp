@@ -1,0 +1,68 @@
+---
+permalink: sg5700/unpacking-boxes-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
+---
+= 開梱（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。
+
+* * SG5712 アプライアンス、 12 ドライブ搭載 *
++
+image::../media/de212c_table_size.gif[SG5712 2U アプライアンス]
+
+* * ドライブを取り付けていない SG5760 アプライアンス *
++
+image::../media/de460c_table_size.gif[SG5760 4U アプライアンス]
+
+* * アプライアンスの前面ベゼル *
++
+image::../media/sg5700_front_bezels.gif[SG5712 と SG5760 のベゼル]
+
+* * 取扱説明書付きレールキット *
++
+image::../media/rail_kit.gif[レールキット]
+
+* * SG5760 ： 60 ドライブ *
++
+image::../media/sg5760_drive.gif[ドライブ]
+
+* * SG5760 ：取っ手 *
++
+image::../media/handles.gif[SG5760 の取っ手]
+
+* * SG5760 ：角穴ラックに設置するための後部ブラケットとケージナット *
++
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+
+
+
+
+== ケーブルとコネクタ
+
+StorageGRID アプライアンスには、出荷時に次のケーブルとコネクタが付属しています。
+
+* * お住まいの国に対応した電源コード 2 本 *
++
+image::../media/power_cords.gif[電源コード]
+
++
+キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
+* * 光ケーブルと SFP トランシーバ *
++
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP]
+
++
+FC インターコネクトポート用の光ケーブル × 2
+
++
+4 つの 16Gb/s FC インターコネクトポートおよび 4 つの 10GbE ネットワークポートの両方に対応した、 8 つの SFP+ トランシーバ
+
+

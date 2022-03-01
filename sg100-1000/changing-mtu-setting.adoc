@@ -1,0 +1,70 @@
+---
+permalink: sg100-1000/changing-mtu-setting.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, mtu, set, setting, change, changing, modify 
+summary: アプライアンスノードの IP アドレスを設定するときに割り当てた MTU 設定を変更できます。 
+---
+= MTU 設定を変更します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスノードの IP アドレスを設定するときに割り当てた MTU 設定を変更できます。
+
+.このタスクについて
+
+IMPORTANT: ネットワークの MTU 値は、ノードが接続されているスイッチポートに設定されている値と同じである必要があります。そうしないと、ネットワークパフォーマンスの問題やパケット損失が発生する可能性があります。
+
+
+IMPORTANT: ネットワークのパフォーマンスを最大限に高めるには、すべてのノードのグリッドネットワークインターフェイスで MTU 値がほぼ同じになるように設定する必要があります。個々のノードのグリッドネットワークの MTU 設定に大きな違いがある場合は、 * Grid Network MTU mismatch * アラートがトリガーされます。MTU 値はすべてのネットワークタイプで同じである必要はありません。
+
+アプライアンスノードをリブートせずに MTU 設定を変更するには、次の手順を実行します。 <<Change the MTU setting using the Change IP tool,IP 変更ツールを使用します>>。
+
+初回インストール時にクライアントまたは管理ネットワークが StorageGRID アプライアンスインストーラで設定されていなかった場合は、次の手順を実行します。 <<Change the MTU setting using maintenance mode,メンテナンスモードを使用して MTU 設定を変更します>>。
+
+
+
+== IP 変更ツールを使用して MTU 設定を変更します
+
+.必要なもの
+* IP 変更ツールを使用するための「 passwords.txt 」ファイルが必要です。
+
+
+IP 変更ツールにアクセスし、の説明に従って MTU 設定を更新します xref:../maintain/changing-nodes-network-configuration.adoc[ノードのネットワーク設定の変更]。
+
+
+
+== メンテナンスモードを使用して MTU 設定を変更します
+
+IP 変更ツールでこれらの設定にアクセスできない場合は、メンテナンスモードを使用して MTU 設定を変更してください。
+
+.必要なもの
+* これで完了です xref:placing-appliance-into-maintenance-mode.adoc[アプライアンスをメンテナンスモードにしました]。
+
+
+.手順
+. StorageGRID アプライアンスインストーラから、 *Configure Networking*>*IP Configuration* を選択します。
+. グリッドネットワーク、管理ネットワーク、およびクライアントネットワークの MTU 設定に必要な変更を加えます。
++
+image::../media/grid_network_static.png[グリッドネットワークの IP]
+
+. 設定に問題がなければ、「 * 保存 * 」を選択します。
+. ノードをリブートします。StorageGRID アプライアンス・インストーラから、 *Advanced*>*Reboot Controller* を選択し、次のいずれかのオプションを選択します。
++
+** Reboot into StorageGRID * を選択し、ノードをグリッドに再追加してコントローラをリブートします。メンテナンスモードで作業を完了し、ノードを通常動作に戻す準備ができている場合は、このオプションを選択します。
+** メンテナンスモードを維持したままコントローラをリブートするには、 * Reboot into Maintenance Mode * を選択します。（このオプションは、コントローラがメンテナンスモードのときにのみ使用できます）。 このオプションは、グリッドに再追加する前にノードで追加のメンテナンス処理を実行する必要がある場合に選択します。
++
+image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+
++
+アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。ノード * ページには、アクティブなアラートがなくノードがグリッドに接続されていることを示すために、アプライアンスノードの通常ステータス（アイコンなし）が表示されます。
+
++
+image::../media/nodes_menu.png[アプライアンスノードがグリッドに再参加しました]
+
+
+
+
+
+xref:../admin/index.adoc[StorageGRID の管理]

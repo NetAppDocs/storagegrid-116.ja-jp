@@ -1,0 +1,82 @@
+---
+permalink: swift/account-operations.html 
+sidebar: sidebar 
+keywords: swift account operations 
+summary: アカウントに対して実行する Swift API 処理を次に示します。 
+---
+= アカウントの処理
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アカウントに対して実行する Swift API 処理を次に示します。
+
+
+
+== GET アカウント
+
+この処理は、アカウントに関連付けられているコンテナリストおよびアカウントの使用状況を示す統計を取得します。
+
+次の要求パラメータが必要です。
+
+* 「アカウント」
+
+
+次の要求ヘッダーが必要です。
+
+* 「 X-Auth-Token 」
+
+
+次のサポートされている要求クエリパラメータはオプションです。
+
+* 「デリミタ」
+* 「 End_marker 」のように入力します
+* 「フォーマット」
+* 「制限」
+* 「マーカー」
+* 「接頭辞」
+
+
+実行が成功すると ' アカウントが見つかってコンテナがないかコンテナリストが空である場合 ' またはアカウントが見つかってコンテナリストが空でない場合には 'HTTP/1.1 204 No Content' の応答とともに ' 次のヘッダーが返され ' コンテナリストが空でない場合は 'HTTP/1.1 200 OK' の応答が返されます
+
+* 「 Accept-Ranges 」を参照してください
+* 「 Content-Length 」
+* 「 Content-Type 」
+* 「日付」
+* 「 X-Account-bytes - 使用済み」
+* 「 X-Account-Container-Count 」
+* 「 X-Account-Object-Count 」
+* 「 X - タイムスタンプ」
+* 「 X-Trans-ID 」
+
+
+
+
+== HEAD アカウント
+
+この処理は、 Swift アカウントからアカウント情報と統計情報を取得します。
+
+次の要求パラメータが必要です。
+
+* 「アカウント」
+
+
+次の要求ヘッダーが必要です。
+
+* 「 X-Auth-Token 」
+
+
+実行が成功すると、「 HTTP/1.1 204 No Content 」の応答とともに次のヘッダーが返されます。
+
+* 「 Accept-Ranges 」を参照してください
+* 「 Content-Length 」
+* 「日付」
+* 「 X-Account-bytes - 使用済み」
+* 「 X-Account-Container-Count 」
+* 「 X-Account-Object-Count 」
+* 「 X - タイムスタンプ」
+* 「 X-Trans-ID 」
+
+
+xref:monitoring-and-auditing-operations.adoc[監視と監査の処理]

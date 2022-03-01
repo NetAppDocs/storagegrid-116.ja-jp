@@ -1,0 +1,80 @@
+---
+permalink: ilm/creating-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: how to create cloud storage pool 
+summary: クラウドストレージプールを作成する際には、 StorageGRID がオブジェクトの格納に使用する外部バケットまたはコンテナの名前と場所、クラウドプロバイダのタイプ（ Amazon S3 または Azure Blob Storage ）、および StorageGRID が外部のバケットまたはコンテナにアクセスするために必要な情報を指定します。 
+---
+= クラウドストレージプールを作成
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クラウドストレージプールを作成 StorageGRID する際には、 StorageGRID がオブジェクトの格納に使用する外部バケットまたはコンテナの名前と場所、クラウドプロバイダのタイプ（ Amazon S3 または Azure Blob Storage ）、および外部のバケットまたはコンテナにアクセスするために必要な情報を指定します。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* クラウドストレージプールの設定に関するガイドラインを確認しておく必要があります。
+* クラウドストレージプールに参照されている外部のバケットまたはコンテナがすでに存在します。
+* バケットまたはコンテナへのアクセスに必要なすべての認証情報が必要です。
+
+
+クラウドストレージプールは、単一の外部の S3 バケットまたは Azure BLOB ストレージコンテナを指定します。クラウドストレージプールは保存後すぐに StorageGRID で検証されます。そのため、クラウドストレージプールに指定されたバケットまたはコンテナが存在し、アクセス可能であることを確認しておく必要があります。
+
+.手順
+. ILM * > * Storage pools * を選択します
++
+Storage Pools （ストレージプール）ページが表示されます。このページには、ストレージプールとクラウドストレージプールの 2 つのセクションがあります。
+
++
+image::../media/storage_pools_page_cloud_storage_pool.png[ストレージプールページクラウドストレージプール]
+
+. ページのクラウドストレージプールセクションで、 * 作成 * を選択します。
++
+Create Cloud Storage Pool （クラウドストレージプールの作成）ダイアログボックスが表示されます。
+
++
+image::../media/cloud_storage_pool_create.png[クラウドストレージプールの作成]
+
+. 次の情報を入力します。
++
+[cols="1a,2a"]
+|===
+| フィールド | 説明 
+
+
+ a| 
+表示名
+ a| 
+クラウドストレージプールとその目的を簡単に説明する名前。ILM ルールを設定するときに識別しやすい名前を使用してください。
+
+
+
+ a| 
+プロバイダタイプ
+ a| 
+このクラウドストレージプールに使用するクラウドプロバイダ：
+
+** * Amazon S3 * ： S3 、 C2S S3 、または Google Cloud Platform （ GCP ）エンドポイントの場合は、このオプションを選択します。
+** * Azure Blob Storage *
+
+
+* 注： [ プロバイダタイプ ] を選択すると、ページの下部に [ サービスエンドポイント ] 、 [ 認証 ] 、および [ サーバ検証 ] セクションが表示されます。
+
+
+
+ a| 
+バケットまたはコンテナ
+ a| 
+クラウドストレージプール用に作成された外部の S3 バケットまたは Azure コンテナの名前。バケットまたはコンテナの名前は正確に指定する必要があります。一致していないと、クラウドストレージプールの作成が失敗します。クラウドストレージプールの保存後にこの値を変更することはできません。
+
+|===
+. 選択したプロバイダータイプに基づいて、ページの [Service Endpoint] 、 [Authentication] 、および [Server Verification] セクションを完了します。
++
+** xref:s3-authentication-details-for-cloud-storage-pool.adoc[S3 ：クラウドストレージプールの認証情報を指定します]
+** xref:c2s-s3-authentication-details-for-cloud-storage-pool.adoc[C2S S3 ：クラウドストレージプールの認証情報を指定します]
+** xref:azure-authentication-details-for-cloud-storage-pool.adoc[Azure ：クラウドストレージプールの認証情報を指定します]
+
+
+

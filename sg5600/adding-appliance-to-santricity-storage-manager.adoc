@@ -1,0 +1,45 @@
+---
+permalink: sg5600/adding-appliance-to-santricity-storage-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Adding, add, appliance, SANtricity Storage Manager, SANtricity 
+summary: アプライアンス内の E2700 コントローラを SANtricity Storage Manager に接続し、アプライアンスをストレージアレイとして追加します。 
+---
+= SANtricity ストレージ・マネージャにアプライアンスを追加します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンス内の E2700 コントローラを SANtricity Storage Manager に接続し、アプライアンスをストレージアレイとして追加します。
+
+を使用している xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+
+詳しい手順については、 SANtricity Storage Manager のドキュメントを参照してください。
+
+.手順
+. Web ブラウザを開き、 SANtricity Storage Manager:+`*https://_E2700_Controller_IP_*` の URL として IP アドレスを入力します
++
+SANtricity Storage Manager のログインページが表示されます。
+
+. [ 追加方法の選択 *] ページで、 [*Manual*] を選択し、 [OK] をクリックします。
+. 「 * 編集 * > * ストレージアレイの追加 * 」を選択します。
++
+Add New Storage Array - Manual ページが表示されます。
+
++
+image::../media/sanricity_add_new_storage_array_out_of_band.gif[SANtricity の Add New Storage Array ページを参照してください]
+
+. [ 帯域外管理 * ] ボックスに、次のいずれかの値を入力します。
++
+** * DHCP を使用： * E2700 コントローラ上の管理ポート 1 に対して DHCP サーバによって割り当てられた IP アドレス
+** * DHCP を使用しない場合： *192.168.128.101'
++
+
+NOTE: SANtricity Storage Manager に接続されるのはアプライアンスの一方のコントローラだけなので、 IP アドレスは 1 つだけで済みます。
+
+
+
+. [ 追加（ Add ） ] をクリックします。
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["ネットアップのマニュアル： SANtricity Storage Manager"^]

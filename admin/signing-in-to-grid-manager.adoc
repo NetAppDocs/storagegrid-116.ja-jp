@@ -1,0 +1,125 @@
+---
+permalink: admin/signing-in-to-grid-manager.html 
+sidebar: sidebar 
+keywords: grid manager, sign in, log in 
+summary: Grid Manager のサインインページにアクセスするには、サポートされている Web ブラウザのアドレスバーに管理ノードの完全修飾ドメイン名（ FQDN ）または IP アドレスを入力します。 
+---
+= Grid Manager にサインインします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager のサインインページにアクセスするには、サポートされている Web ブラウザのアドレスバーに管理ノードの完全修飾ドメイン名（ FQDN ）または IP アドレスを入力します。
+
+.必要なもの
+* ログインクレデンシャルが必要です。
+* Grid Manager の URL が必要です。
+* を使用している xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Web ブラウザでクッキーが有効になっている必要があります。
+* 特定のアクセス権限が必要です。
+
+
+各 StorageGRID システムには、 1 つのプライマリ管理ノードと、任意の数のプライマリ以外の管理ノードが含まれています。任意の管理ノードでグリッドマネージャにサインインして、 StorageGRID システムを管理できます。ただし、管理ノードはまったく同じというわけではありません。
+
+* ある管理ノードで実行されたアラームの確認応答（従来のシステム）は他の管理ノードにはコピーされません。そのため、各管理ノードでアラームについて異なる情報が表示される可能性があります。
+* 一部のメンテナンス手順は、プライマリ管理ノードでしか実行できません。
+
+
+管理ノードがハイアベイラビリティ（ HA ）グループに含まれている場合は、 HA グループの仮想 IP アドレスまたは仮想 IP アドレスにマッピングされる完全修飾ドメイン名を使用して接続します。プライマリ管理ノードが使用できない場合を除いてプライマリ管理ノード上のグリッド Manager にアクセスするよう、プライマリ管理ノードをグループのプライマリインターフェイスとして選択する必要があります。
+
+.手順
+. サポートされている Web ブラウザを起動します。
+. ブラウザのアドレスバーに、 Grid Manager の URL を入力します。
++
+https://_FQDN_or_Admin_Node_IP_/`
+
++
+ここで '`_fqdn_or_Admin_Node_IP_` は ' 管理ノードの完全修飾ドメイン名または IP アドレス ' あるいは管理ノードの HA グループの仮想 IP アドレスです
+
++
+HTTPS （ 443 ）の標準ポート以外のポートで Grid Manager にアクセスする必要がある場合は、次のように入力します。「 _FQDN_or_ADMIN_NETWORK_IP _ 」は完全修飾ドメイン名または IP アドレス、「 port 」はポート番号です。
+
++
+https://_FQDN_or_Admin_Node_IP:port_/`
+
+. セキュリティ警告が表示された場合は、ブラウザのインストールウィザードを使用して証明書をインストールします（を参照） xref:using-storagegrid-security-certificates.adoc[セキュリティ証明書について]）。
+. Grid Manager にサインインします。
++
+** StorageGRID システムでシングルサインオン（ SSO ）が使用されていない場合は、次の手順を実行します。
++
+... Grid Manager のユーザ名とパスワードを入力します。
+... 「サインイン」を選択します。
++
+image::../media/sign_in_grid_manager_no_sso.gif[サインインページ]
+
+
+
+** StorageGRID システムで SSO が有効になっており、このブラウザで初めて URL にアクセスした場合は、次の手順を実行します。
++
+... 「サインイン」を選択します。[ アカウント ID] フィールドは空白のままにできます。
++
+image::../media/sso_sign_in_first_time.gif[SSO が有効でクッキーがない場合は、サインイン画面にサインインします]
+
+... 組織の SSO サインインページで標準の SSO クレデンシャルを入力します。例：
++
+image::../media/sso_organization_page.gif[組織の SSO サインインページの例]
+
+
+
+** StorageGRID システムで SSO が有効になっており、 Grid Manager またはテナントアカウントに以前にアクセスしたことがある場合は、次の手順を実行します。
++
+... 次のいずれかを実行します。
++
+**** 「 * 0 * 」（ Grid Manager のアカウント ID ）を入力し、「 * サインイン * 」を選択します。
+**** 最近のアカウントのリストに * Grid Manager * が表示されている場合は、 * サインイン * を選択します。
++
+image::../media/sign_in_grid_manager_sso.gif[SSO が有効になっている場合は、最近のアカウントリストから Grid Manager を選択する]
+
+
+
+... 組織の SSO サインインページで通常使用している SSO クレデンシャルを使用してサインインします。サインインすると、ダッシュボードが含まれた Grid Manager のホームページが表示されます。表示される情報については、を参照してください xref:../monitor/viewing-dashboard.adoc[ダッシュボードを表示します]。
+
+
+
+
++
+image::../media/grid_manager_dashboard.png[ダッシュボード]
+
+. 別の管理ノードにサインインする場合は、次の手順を実行します。
++
+[cols="1a,2a"]
+|===
+| オプション | 手順 
+
+
+ a| 
+SSO が有効になっていない
+ a| 
+.. ブラウザのアドレスバーに、他の管理ノードの完全修飾ドメイン名または IP アドレスを入力します。必要に応じてポート番号を追加します。
+.. Grid Manager のユーザ名とパスワードを入力します。
+.. 「サインイン」を選択します。
+
+
+
+
+ a| 
+SSO が有効です
+ a| 
+ブラウザのアドレスバーに、他の管理ノードの完全修飾ドメイン名または IP アドレスを入力します。
+
+1 つの管理ノードにサインインしたら、再度サインインしなくても他の管理ノードにアクセスできます。ただし、 SSO セッションが期限切れになると、クレデンシャルの再入力を求められます。
+
+* 注： SSO は制限された Grid Manager ポートでは使用できません。ユーザをシングルサインオンで認証する場合は、デフォルトの HTTPS ポート（ 443 ）を使用する必要があります。
+
+|===
+
+
+.関連情報
+* xref:controlling-access-through-firewalls.adoc[ファイアウォールによるアクセスの制御]
+* xref:configuring-sso.adoc[シングルサインオンを設定します]
+* xref:managing-admin-groups.adoc[管理者グループを管理する]
+* xref:managing-high-availability-groups.adoc[ハイアベイラビリティグループを管理します]
+* xref:../tenant/index.adoc[テナントアカウントを使用する]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+

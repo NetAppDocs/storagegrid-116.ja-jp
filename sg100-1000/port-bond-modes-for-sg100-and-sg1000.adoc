@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/port-bond-modes-for-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, port bond, port bonding, port bond mode, port-bond mode 
+summary: SG100 および SG1000 アプライアンスのネットワークリンクを設定する場合は、グリッドネットワークとオプションのクライアントネットワークに接続するポート、およびオプションの管理ネットワークに接続する 1GbE 管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。 
+---
+= SG100 および SG1000 アプライアンスのポートボンディングモード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG100 および SG1000 アプライアンスのネットワークリンクを設定する場合は、グリッドネットワークとオプションのクライアントネットワークに接続するポート、およびオプションの管理ネットワークに接続する 1GbE 管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。

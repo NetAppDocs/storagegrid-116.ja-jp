@@ -1,0 +1,144 @@
+---
+permalink: sg6000/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, automate, automating, automation, automatic, install, installation, configuration, configure, configure-sga.py script, configure-sga.py 
+summary: configure-sga.py スクリプトを使用すると、プライマリ管理ノードのインストールや設定など、 StorageGRID アプライアンスノードのインストールタスクや設定タスクの多くを自動化できます。このスクリプトは、設定するアプライアンスが多数ある場合に役立ちます。スクリプトを使用して、アプライアンスの設定情報を含む JSON ファイルを生成することもできます。 
+---
+= configure-sga.py スクリプトを使用して、アプライアンスノードのインストールと設定を自動化します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+configure -sSGA .py スクリプトを使用すると、プライマリ管理ノードのインストールや設定など、 StorageGRID アプライアンスノードのインストールタスクや設定タスクの多くを自動化できます。このスクリプトは、設定するアプライアンスが多数ある場合に役立ちます。スクリプトを使用して、アプライアンスの設定情報を含む JSON ファイルを生成することもできます。
+
+.必要なもの
+* アプライアンスをラックに設置し、ネットワークに接続し、電源を投入しておきます。
+* StorageGRID アプライアンスインストーラを使用してプライマリ管理ノードのネットワークリンクと IP アドレスを設定しておきます。
+* プライマリ管理ノードをインストールする場合は、その IP アドレスを確認しておきます。
+* 他のノードをインストールして設定する場合は、プライマリ管理ノードが導入され、その IP アドレスを確認しておきます。
+* プライマリ管理ノード以外のすべてのノードについて、 StorageGRID アプライアンスインストーラの IP 設定ページに表示されるすべてのグリッドネットワークサブネットが、プライマリ管理ノードのグリッドネットワークサブネットリストで定義されている。
+* 「 configure-sSGA .py 」ファイルがダウンロードされています。このファイルはインストール・アーカイブに含まれています。または、 StorageGRID アプライアンス・インストーラの * Help * > * Appliance Installation Script * をクリックしてアクセスできます。
++
+
+NOTE: この手順 は、コマンドラインインターフェイスを使用した経験のある上級ユーザを対象としています。また、 StorageGRID アプライアンスインストーラを使用して設定を自動化することもできます。[+]xref:automating-appliance-configuration-using-storagegrid-appliance-installer.adoc[StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する]
+
+
+
+.手順
+. Python スクリプトを実行するために使用する Linux マシンにログインします。
+. スクリプト構文に関する一般的なヘルプおよび使用可能なパラメータの一覧を表示するには、次のように入力します。
++
+[listing]
+----
+configure-sga.py --help
+----
++
+「 configure -SGA .py 」スクリプトでは、次の 5 つのサブコマンドが使用されています。
+
++
+** StorageGRID アプライアンスの高度な操作（ BMC の設定、アプライアンスの現在の設定を含む JSON ファイルの作成など
+** RAID モード ' ノード名 ' およびネットワーク・パラメータを構成するための configure
+** StorageGRID のインストールを開始するためのインストール
+** StorageGRID のインストールを監視するための「 monitor 」
+** アプライアンスを再起動するための再起動
+
+
++
+サブコマンド（ advanced 、 configure 、 install 、 monitor 、または reboot ）引数に続けて「 --help 」オプションを入力すると、そのサブコマンド内で使用可能なオプションの詳細を示す別のヘルプテキストが表示されます。 +`configure-sga.py _subcommand _ --help`
+
+. アプライアンス・ノードの現在の構成を確認するには ' 次のように入力しますここで '_sSGA -install-ip_ は ' アプライアンス・ノードのいずれかの IP アドレスです +`configure-sga.py configure_SGA -install-ip_
++
+この結果には、プライマリ管理ノードの IP アドレスや管理、グリッド、クライアントネットワークに関する情報など、アプライアンスの現在の IP 情報が表示されます。
+
++
+[listing]
+----
+Connecting to +https://10.224.2.30:8443+ (Checking version and connectivity.)
+2021/02/25 16:25:11: Performing GET on /api/versions... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-info... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/admin-connection... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/link-config... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/networks... Received 200
+2021/02/25 16:25:11: Performing GET on /api/v2/system-config... Received 200
+
+  StorageGRID Appliance
+    Name:        LAB-SGA-2-30
+    Node type:   storage
+
+  StorageGRID primary Admin Node
+    IP:        172.16.1.170
+    State:     unknown
+    Message:   Initializing...
+    Version:   Unknown
+
+  Network Link Configuration
+    Link Status
+          Link      State      Speed (Gbps)
+          ----      -----      -----
+          1         Up         10
+          2         Up         10
+          3         Up         10
+          4         Up         10
+          5         Up         1
+          6         Down       N/A
+
+    Link Settings
+        Port bond mode:      FIXED
+        Link speed:          10GBE
+
+        Grid Network:        ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:8a  00:a0:98:59:8e:82
+
+        Admin Network:       ENABLED
+            Bonding mode:    no-bond
+            MAC Addresses:   00:80:e5:29:70:f4
+
+        Client Network:      ENABLED
+            Bonding mode:    active-backup
+            VLAN:            novlan
+            MAC Addresses:   00:a0:98:59:8e:89  00:a0:98:59:8e:81
+
+  Grid Network
+    CIDR:      172.16.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:8A
+    Gateway:   172.16.0.1
+    Subnets:   172.17.0.0/21
+               172.18.0.0/21
+               192.168.0.0/21
+    MTU:       1500
+
+  Admin Network
+    CIDR:      10.224.2.30/21 (Static)
+    MAC:       00:80:E5:29:70:F4
+    Gateway:   10.224.0.1
+    Subnets:   10.0.0.0/8
+               172.19.0.0/16
+               172.21.0.0/16
+    MTU:       1500
+
+  Client Network
+    CIDR:      47.47.2.30/21 (Static)
+    MAC:       00:A0:98:59:8E:89
+    Gateway:   47.47.0.1
+    MTU:       2000
+
+##############################################################
+#####   If you are satisfied with this configuration,    #####
+##### execute the script with the "install" sub-command. #####
+##############################################################
+----
+. 現在の設定のいずれかの値を変更する必要がある場合は、 configure サブコマンドを使用して値を更新します。たとえば、アプライアンスがプライマリ管理ノードへの接続に使用する IP アドレスを「 172.16.2.99 」に変更する場合は、 +`configure-sga.py configure --admin-IP 172.16.2.99_SGA -install-ip_` を入力します
+. アプライアンス構成を JSON ファイルにバックアップする場合は 'advanced' および backup-file' サブコマンドを使用しますたとえば、 IP アドレスが「 _SGA -install-ip_ 」のアプライアンスの設定を「 apply-SG1000 」という名前のファイルにバックアップする場合は、「 configure-sga.py advanced --backup-file appliance -SG1000 -sSGA -install-ip_ 」と入力します
++
+設定情報が格納された JSON ファイルは、スクリプトの実行元と同じディレクトリに書き込まれます。
+
++
+
+IMPORTANT: 生成された JSON ファイルの最上位のノード名がアプライアンス名と一致していることを確認します。経験豊富なユーザで StorageGRID API について十分な知識がある場合を除き、このファイルに変更を加えないでください。
+
+. アプライアンスの構成に問題がなければ 'install' および 'monitor' サブコマンドを使用してアプライアンスをインストールします +`configure-sga.py install --monitor_sSGA -install-ip_
+. アプライアンスを再起動する場合は、 +`configure-sga.py reboot_sSGA -install-ip_` を入力します
+

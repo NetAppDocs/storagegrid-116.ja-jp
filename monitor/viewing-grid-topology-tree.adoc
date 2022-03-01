@@ -1,0 +1,19 @@
+---
+permalink: monitor/viewing-grid-topology-tree.html 
+sidebar: sidebar 
+keywords: how to view the Grid Topology tree 
+summary: グリッドトポロジツリーを使用すると、サイト、グリッドノード、サービス、コンポーネントなど、 StorageGRID のシステム要素に関する詳細情報にアクセスできます。ほとんどの場合、グリッドトポロジツリーへのアクセスが必要になるのは、ドキュメントで指示されているとき、またはテクニカルサポートとともに作業するときに限られます。 
+---
+= グリッドトポロジツリーを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッドトポロジツリーを使用すると、サイト、グリッドノード、サービス、コンポーネントなど、 StorageGRID のシステム要素に関する詳細情報にアクセスできます。ほとんどの場合、グリッドトポロジツリーへのアクセスが必要になるのは、ドキュメントで指示されているとき、またはテクニカルサポートとともに作業するときに限られます。
+
+グリッドトポロジツリーにアクセスするには、 * support * > * Tools * > * Grid Topology * を選択します。
+
+image::../media/grid_topology_tree.gif[グリッドトポロジツリーの一部]
+
+グリッドトポロジツリーを展開または折りたたむには、をクリックします image:../media/nms_tree_expand.gif["プラス記号アイコン"] または image:../media/nms_tree_collapse.gif["マイナス記号アイコン"] をクリックします。サイト全体または各ノードのすべての項目を展開または折りたたむには、 * <Ctrl>* キーを押しながらクリックします。

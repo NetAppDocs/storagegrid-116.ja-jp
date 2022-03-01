@@ -1,0 +1,104 @@
+---
+permalink: tenant/what-platform-services-are.html 
+sidebar: sidebar 
+keywords: what are platform services 
+summary: StorageGRID プラットフォームサービスは、ハイブリッドクラウドの実装に役立ちます。 
+---
+= プラットフォームサービスとは
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID プラットフォームサービスは、ハイブリッドクラウドの実装に役立ちます。
+
+テナントアカウントにプラットフォームサービスの使用が許可されている場合は、 S3 バケットに対して次のサービスを設定できます。
+
+* * CloudMirror レプリケーション * ： xref:understanding-cloudmirror-replication-service.adoc[StorageGRID CloudMirror レプリケーションサービス] は、 StorageGRID バケットから指定された外部のデスティネーションに特定のオブジェクトをミラーリングするために使用します。
++
+たとえば、 CloudMirror レプリケーションを使用して特定の顧客レコードを Amazon S3 にミラーリングし、 AWS サービスを利用してデータを分析することができます。
+
++
+
+NOTE: ソースバケットで S3 オブジェクトのロックが有効になっている場合、 CloudMirror レプリケーションはサポートされません。
+
+* * 通知 * ： xref:understanding-notifications-for-buckets.adoc[バケット単位のイベント通知] オブジェクトに対して実行された特定の操作に関する通知を、指定された外部の Amazon Simple Notification Service ™（ SNS ）に送信するために使用します。
++
+たとえば、バケットに追加された各オブジェクトについてアラートが管理者に送信されるように設定できます。この場合、オブジェクトは重大なシステムイベントに関連付けられているログファイルです。
+
++
+
+NOTE: S3 オブジェクトのロックが有効になっているバケットでイベント通知を設定することはできますが、オブジェクトの S3 オブジェクトロックメタデータ（ Retain Until Date および Legal Hold のステータスを含む）は通知メッセージに含まれません。
+
+* * 検索統合サービス *: xref:understanding-search-integration-service.adoc[検索統合サービス] は、外部サービスを使用してメタデータを検索または分析できるように、指定された Elasticsearch インデックスに S3 オブジェクトメタデータを送信するために使用します。
++
+たとえば、リモートの Elasticsearch サービスに S3 オブジェクトメタデータを送信するようにバケットを設定できます。次に、 Elasticsearch を使用してバケット間で検索を実行し、オブジェクトメタデータのパターンに対して高度な分析を実行できます。
+
++
+
+NOTE: S3 オブジェクトロックが有効なバケットでは Elasticsearch 統合を設定できますが、オブジェクトの S3 オブジェクトロックメタデータ（ Retain Until Date および Legal Hold のステータスを含む）は通知メッセージに含まれません。
+
+
+
+通常、プラットフォームサービスのターゲットは StorageGRID 環境の外部にあるため、プラットフォームサービスを使用することで外部ストレージリソース、通知サービス、検索または分析サービスの機能と柔軟性をデータに対して利用できます。
+
+単一の S3 バケットに対して複数のプラットフォームサービスを組み合わせて設定できます。たとえば、 StorageGRID S3 バケットに対して CloudMirror サービスと通知の両方を設定して、特定のオブジェクトを Amazon Simple Storage Service にミラーリングし、同時に各オブジェクトに関する通知を他社製の監視アプリケーションに送信して AWS の費用を追跡できます。
+
+
+IMPORTANT: プラットフォームサービスの使用は、 StorageGRID 管理者がグリッドマネージャまたはグリッド管理 API を使用してテナントアカウントごとに有効にする必要があります。
+
+
+
+== プラットフォームサービスの設定方法
+
+プラットフォームサービスは、 Tenant Manager またはテナント管理 API を使用して、設定した外部エンドポイントと通信します。各エンドポイントは外部のデスティネーション（ StorageGRID S3 バケット、 Amazon Web Services バケット、 Simple Notification Service （ SNS ）トピック、ローカル、 AWS などにホストされる Elasticsearch クラスタなど）です。
+
+エンドポイントを作成したら、バケットに XML 設定を追加してプラットフォームサービスを有効にすることができます。XML 設定は、バケットが処理を実行するオブジェクト、実行する処理、およびサービスに使用するエンドポイントを特定します。
+
+設定するプラットフォームサービスごとに XML 設定を追加する必要があります。例：
+
+. キーが「 /images 」で始まるすべてのオブジェクトを Amazon S3 バケットにレプリケートする場合は、ソースバケットにレプリケーション設定を追加する必要があります。
+. これらのオブジェクトがバケットに格納されたときに通知も送信するには、通知設定を追加する必要があります。
+. 最後に、これらのオブジェクトのメタデータのインデックスを作成する場合は、検索統合を実装するためのメタデータ通知設定を追加する必要があります。
+
+
+設定 XML の形式は、 StorageGRID プラットフォームサービスの実装に使用する S3 REST API に従います。
+
+[cols="1a,2a"]
+|===
+| プラットフォームサービス | S3 REST API 
+
+
+ a| 
+CloudMirror レプリケーション
+ a| 
+* GET Bucket replication
+* PUT Bucket replication
+
+
+
+
+ a| 
+通知
+ a| 
+* GET Bucket notification
+* PUT Bucket notification
+
+
+
+
+ a| 
+検索統合
+ a| 
+* GET Bucket metadata notification configuration
+* PUT Bucket metadata notification configuration のコマンドです
+
+
+これらは StorageGRID 独自の処理です。
+
+|===
+StorageGRID でのこれらの API の実装方法の詳細については、 S3 クライアントアプリケーションを実装する手順を参照してください。
+
+xref:considerations-for-using-platform-services.adoc[プラットフォームサービスの使用に関する考慮事項]
+
+xref:../s3/index.adoc[S3 を使用する]

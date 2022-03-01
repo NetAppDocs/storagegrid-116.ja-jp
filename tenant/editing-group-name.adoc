@@ -1,0 +1,38 @@
+---
+permalink: tenant/editing-group-name.html 
+sidebar: sidebar 
+keywords: how to edit tenant group name 
+summary: グループの表示名を編集できます。グループの一意の名前は編集できません。 
+---
+= グループ名を編集します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グループの表示名を編集できます。グループの一意の名前は編集できません。
+
+.必要なもの
+* Tenant Manager にはを使用してサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Root Access 権限を持つユーザグループに属している必要があります。を参照してください xref:tenant-management-permissions.adoc[テナント管理権限]。
+
+
+.手順
+. * access management * > * Groups * を選択します。
+. 表示名を編集するグループのチェックボックスを選択します。
+. [ * アクション * > * グループ名の編集 * ] を選択します。
++
+Edit group name （グループ名の編集）ダイアログボックスが表示されます。
+
++
+image::../media/edit_group_name.png[グループ名を編集します]
+
+. ローカルグループを編集する場合は、必要に応じて表示名を更新します。
++
+グループの一意の名前は変更できません。フェデレーテッドグループの表示名は編集できません。
+
+. 「変更を保存」を選択します。
++
+ページの右上に確認メッセージが表示されます。キャッシングに時間がかかるため変更には最大で 15 分を要します。
+
+

@@ -1,0 +1,81 @@
+---
+permalink: sg5600/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Installation, deployment, Install, deploy, Installing, deploying 
+summary: StorageGRID アプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環として追加することもできます。リカバリ処理の一環としてアプライアンスストレージノードの設置が必要となる場合もあります。 
+---
+= インストールと導入の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環として追加することもできます。リカバリ処理の一環としてアプライアンスストレージノードの設置が必要となる場合もあります。
+
+StorageGRID システムに StorageGRID ストレージアプライアンスを追加するには、主に次の 4 つの手順を実行します。
+
+. 設置の準備：
++
+** 設置場所の準備
+** 開梱と内容の確認
+** 追加機器および工具の入手方法
+** IP アドレスとネットワーク情報を収集しています
+** オプション：すべてのアプライアンスデータを暗号化する場合は、外部キー管理サーバ（ KMS ）を設定します。外部キー管理の詳細については、 StorageGRID の管理手順を参照してください。
+
+
+. ハードウェアの設置
++
+** ハードウェアの登録
+** キャビネットまたはラックへのアプライアンスの設置
+** ドライブの取り付け（ SG5660 のみ）
+** アプライアンスのケーブル接続
+** 電源コードの接続と電源の投入
+** ブート時のステータスコードの確認
+
+
+. ハードウェアの設定
++
+** SANtricity Storage Manager へのアクセス、 E2700 コントローラの管理ポート 1 の静的 IP アドレスの設定、および SANtricity Storage Manager の設定
+** StorageGRID アプライアンスインストーラへのアクセス、および StorageGRID ネットワークへの接続に必要なリンクとネットワーク IP の設定
+** オプション：外部 KMS を使用してアプライアンスデータを暗号化する場合は、ノード暗号化を有効にします。
+** オプション： RAID モードを変更する
+
+
+. アプライアンスをストレージノードとして導入する：
+
+
+|===
+| タスク | を参照してください 
+
+
+ a| 
+新しい StorageGRID システムにアプライアンスストレージノードを導入する
+ a| 
+xref:deploying-appliance-storage-node.adoc[アプライアンスストレージノードを導入する]
+
+
+
+ a| 
+既存の StorageGRID システムへのアプライアンスストレージノードの追加
+ a| 
+StorageGRID システムの拡張手順
+
+
+
+ a| 
+ストレージノードのリカバリ処理の一環としてアプライアンスストレージノードを導入する
+ a| 
+リカバリとメンテナンスの手順
+
+|===
+xref:preparing-for-installation.adoc[設置の準備（ SG5600 ）]
+
+xref:installing-hardware.adoc[ハードウェアの設置（ SG5600 ）]
+
+xref:configuring-hardware.adoc[ハードウェアの設定（ SG5600 ）]
+
+xref:../expand/index.adoc[グリッドを展開します]
+
+xref:../maintain/index.adoc[リカバリとメンテナンス]
+
+xref:../admin/index.adoc[StorageGRID の管理]

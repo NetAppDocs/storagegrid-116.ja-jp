@@ -1,0 +1,29 @@
+---
+permalink: sg5700/upgrading-santricity-os-on-storage-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, controller, storage controller, upgrade, upgrading, SANtricity OS, SANtricity 
+summary: ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。使用するバージョンを確認するには、ネットアップの Interoperability Matrix Tool （ IMT ）を参照してください。サポートが必要な場合は、テクニカルサポートにお問い合わせください。 
+---
+= ストレージコントローラの SANtricity OS をアップグレードします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。使用するバージョンを確認するには、 NetApp Interoperability Matrix Tool （ IMT ）を参照してください。サポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+* ストレージコントローラで SANtricity OS 08.42.20.00 （ 11.42 ）以降を使用している場合、 Grid Manager を使用してアップグレードを実行します。
++
+xref:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.adoc[Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード]
+
+* ストレージコントローラで 08.42.20.00 （ 11.42 ）より前のバージョンの SANtricity OS を使用している場合、メンテナンスモードを使用してアップグレードを実行します。
++
+xref:upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.adoc[E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします]
+
+
+
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
+
+https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["ネットアップのダウンロード： SANtricity OS"^]
+
+xref:../monitor/index.adoc[監視とトラブルシューティング]

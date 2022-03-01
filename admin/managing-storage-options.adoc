@@ -1,0 +1,17 @@
+---
+permalink: admin/managing-storage-options.html 
+sidebar: sidebar 
+keywords: storage options 
+summary: ストレージオプションには、オブジェクトのセグメント化設定、ストレージボリュームウォーターマークの現在の値、 Metadata Reserved Space 設定があります。ゲートウェイノード上の廃止された CLB サービスおよびストレージノード上の LDR サービスで使用されている S3 および Swift ポートを表示することもできます。 
+---
+= ストレージオプションを管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージオプションには、オブジェクトのセグメント化設定、ストレージボリュームウォーターマークの現在の値、 Metadata Reserved Space 設定があります。ゲートウェイノード上の廃止された CLB サービスおよびストレージノード上の LDR サービスで使用されている S3 および Swift ポートを表示することもできます。
+
+ポート割り当ての詳細については、を参照してください xref:summary-ip-addresses-and-ports-for-client-connections.adoc[Summary ：クライアント接続の IP アドレスとポート]。
+
+image::../media/storage_options.png[ストレージオプション]

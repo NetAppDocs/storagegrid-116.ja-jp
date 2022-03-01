@@ -1,0 +1,111 @@
+---
+permalink: s3/using-s3-object-lock.html 
+sidebar: sidebar 
+keywords: using S3 object lock, object lock, S3 object 
+summary: StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合は、 S3 オブジェクトのロックを有効にしたバケットを作成し、そのバケットに追加するオブジェクトのバージョンごとに retain-until date および legal hold 設定を指定できます。 
+---
+= S3 オブジェクトロックを使用する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合は、 S3 オブジェクトのロックを有効にしたバケットを作成し、バケットごとにデフォルトの保持期間を指定したり、バケットに追加する各オブジェクトバージョンに対して特定の retain-une-date および legal hold 設定を指定したりできます。
+
+S3 オブジェクトロックでは、オブジェクトレベルの設定を指定して、一定期間または無期限にオブジェクトが削除または上書きされないようにすることができます。
+
+StorageGRID S3 オブジェクトロック機能は、 Amazon S3 準拠モードと同等の単一の保持モードを提供します。デフォルトでは、保護されたオブジェクトバージョンは、どのユーザーでも上書きまたは削除できません。StorageGRID S3 オブジェクトのロック機能では、ガバナンスモードはサポートされず、特別な権限を持つユーザは保持設定を省略したり保護されたオブジェクトを削除したりすることはできません。
+
+
+
+== バケットに対して S3 オブジェクトロックを有効にします
+
+StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合は、各バケットの作成時に S3 オブジェクトのロックを必要に応じて有効にすることができます。次のいずれかの方法を使用できます。
+
+* Tenant Manager を使用してバケットを作成します。
++
+xref:../tenant/index.adoc[テナントアカウントを使用する]
+
+* PUT Bucket 要求で「 x-amz-bucketobject-lock-enabled 」要求ヘッダーを指定してバケットを作成します。
++
+xref:operations-on-buckets.adoc[バケットの処理]
+
+
+
+バケットの作成後に S3 オブジェクトのロックを追加または無効にすることはできません。S3 オブジェクトロックにはバケットのバージョン管理が必要です。バケットの作成時に自動的に有効になります。
+
+S3 オブジェクトのロックが有効になっているバケットには、 S3 オブジェクトのロック設定があるオブジェクトとなっていないオブジェクトを組み合わせて含めることができます。StorageGRID では、 S3 オブジェクトロックバケット内のオブジェクトに対してデフォルトの保持期間をサポートしており、 PUT Object Lock Configuration バケット処理をサポートしています。`s3:object-lock-remaining-retention-days' ポリシー条件キーは ' オブジェクトの最小および最大の保持期間を設定します
+
+
+
+== バケットで S3 オブジェクトのロックが有効になっているかどうかを確認しています
+
+S3 オブジェクトロックが有効になっているかどうかを確認するには、を使用します xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[オブジェクトロック設定の取得] リクエスト。
+
+
+
+== S3 オブジェクトのロック設定を指定してオブジェクトを作成します
+
+S3 オブジェクトロックが有効に問題 なっているバケットにオブジェクトのバージョンを追加するときに S3 オブジェクトのロック設定を指定するには、 PUT Object 、 PUT Object - Copy 、 Initiate Multipart Upload 要求のいずれかを実行します。次の要求ヘッダーを使用します。
+
+
+NOTE: バケットの作成時に S3 オブジェクトのロックを有効にする必要があります。バケットの作成後に S3 オブジェクトのロックを追加または無効にすることはできません。
+
+* 「 x-amz-object-lock-mode 」を指定してください。このモードは準拠している必要があります（大文字と小文字が区別されます）。
++
+
+NOTE: 「 x-amz-object-lock-mode 」を指定した場合は、「 x-amz-object-lock-retain-date 」も指定する必要があります。
+
+* x-amz-object-lock-retain-until -date' のように指定します
++
+** retain-until の値は、「 2020-08-10T21:46:00Z」 の形式で指定する必要があります。秒数には分数を指定できますが、保持される 10 進数は 3 桁（ミリ秒単位）だけです。それ以外の ISO 8601 形式はサポートされません。
+** retain-une-date は将来の日付にする必要があります。
+
+
+* 「 x-amz-object-lock-legal hold' 」のようになります
++
+リーガルホールドがオン（大文字と小文字が区別される）の場合、オブジェクトはリーガルホールドの対象になります。リーガルホールドがオフの場合、リーガルホールドは適用されません。それ以外の値を指定すると、 400 Bad Request （ InvalidArgument ）エラーが発生します。
+
+
+
+次のいずれかの要求ヘッダーを使用する場合は、次の制限事項に注意してください。
+
+* PUT Object 要求に x-amz-object-lock-*' 要求ヘッダーが含まれている場合は 'Content-MD5' 要求ヘッダーが必要ですPUT Object - Copy または Initiate Multipart Upload には 'Content-md5' は必要ありません
+* バケットで S3 オブジェクトロックが有効になっておらず、「 x-amz-object-lock - * 」要求ヘッダーが存在する場合、 400 Bad Request （ InvalidRequest ）エラーが返されます。
+* PUT Object 要求では、 AWS の動作に合わせて「 x-amz-storage-class ： reduced_redundancy 」を使用できます。ただし、 S3 オブジェクトのロックが有効になっているバケットにオブジェクトが取り込まれると、 StorageGRID は常にデュアルコミットの取り込みを実行します。
+* 後続の GET または HEAD Object バージョンの応答には、「 x-amz-object-lock-mode 」、「 x-amz-object-lock-retain-until date 」、「 x-amz-object-lock-legal hold` 」のヘッダーが含まれます。設定されている場合、要求の送信者に「 s3 ： get * 」権限が付与されている場合のみです。
+* それ以降の DELETE Object version 要求または DELETE Objects versions 要求は、 retain-until 日の前であるか、リーガルホールドがオンの場合には失敗します。
+
+
+
+
+== S3 オブジェクトのロック設定を更新します
+
+既存のオブジェクトのバージョンのリーガルホールドや保持の設定を更新する必要がある場合、次のオブジェクトサブリソース処理を実行できます。
+
+* 「 PUT Object legal hold. 」のように指定します
++
+新しいリーガルホールドの値が on の場合、オブジェクトはリーガルホールドの対象になります。リーガルホールドの値がオフの場合、リーガルホールドは解除されます。
+
+* 「 PUT Object retention 」のように指定します
++
+** モード値は準拠している必要があります（大文字と小文字が区別されます）。
+** retain-until の値は、「 2020-08-10T21:46:00Z」 の形式で指定する必要があります。秒数には分数を指定できますが、保持される 10 進数は 3 桁（ミリ秒単位）だけです。それ以外の ISO 8601 形式はサポートされません。
+** オブジェクトバージョンに既存の retain-until がある場合は、オブジェクトバージョンを増やすことはできますが、増やすことはできません。新しい値は将来の必要があります。
+
+
+
+
+xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+xref:../tenant/index.adoc[テナントアカウントを使用する]
+
+xref:put-object.adoc[PUT Object の場合]
+
+xref:put-object-copy.adoc[PUT Object - Copy の各コマンドを実行します]
+
+xref:initiate-multipart-upload.adoc[マルチパートアップロードを開始します]
+
+xref:object-versioning.adoc[オブジェクトのバージョン管理]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["『 Amazon Simple Storage Service User Guide 』：「 Using S3 Object Lock"^]

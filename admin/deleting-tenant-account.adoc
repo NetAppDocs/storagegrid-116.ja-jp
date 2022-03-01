@@ -1,0 +1,29 @@
+---
+permalink: admin/deleting-tenant-account.html 
+sidebar: sidebar 
+keywords: tenant, delete, remove tenant 
+summary: システムに対するテナントのアクセス権を完全に削除する場合は、テナントアカウントを削除できます。 
+---
+= テナントアカウントを削除する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムに対するテナントのアクセス権を完全に削除する場合は、テナントアカウントを削除します。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* テナントアカウントに関連付けられているすべてのバケット（ S3 ）、コンテナ（ Swift ）、およびオブジェクトを削除しておく必要があります。
+
+
+.手順
+. 「 * tenants * 」を選択します
+. 削除するテナントアカウントを選択します。
++
+検索ボックスを使用して、テナントアカウントを名前またはテナント ID で検索します。
+
+. [* アクション * （ * Actions * ） ] ドロップダウンから、 [ * 削除 * （ * Delete * ） ] を選択します。
+. 「 * OK 」を選択します。
+

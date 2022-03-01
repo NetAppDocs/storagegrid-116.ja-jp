@@ -1,0 +1,60 @@
+---
+permalink: sg100-1000/overview-of-installation-rest-apis.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, installation REST API, REST API, installation REST APIs, REST APIs, Appliance Installer API, Appliance Installer APIs, Install API, Install APIs, Installer API, Installer APIs, Installation API, Installation APIs, api, apis 
+summary: StorageGRID には、インストールタスクを実行するための REST API として、 StorageGRID インストール API と StorageGRID アプライアンスインストーラ API の 2 つが用意されています。 
+---
+= インストール REST API の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID には、インストールタスクを実行するための REST API として、 StorageGRID インストール API と StorageGRID アプライアンスインストーラ API の 2 つが用意されています。
+
+どちらの API も、 Swagger オープンソース API プラットフォームを使用して API のドキュメントを提供しています。Swagger では、ユーザインターフェイスを使用してパラメータやオプションを変更した場合の API の動作を確認しながら、 API の開発を進めることができます。このドキュメントは、標準的な Web テクノロジと JavaScript Object Notation （ JSON ）データ形式について十分理解していることを前提としています。
+
+
+IMPORTANT: API Docs Web ページを使用して実行する API 処理はすべてその場で実行されます。設定データやその他のデータを誤って作成、更新、または削除しないように注意してください。
+
+各 REST API コマンドは、 API の URL 、 HTTP アクション、必須またはオプションの URL パラメータ、および想定される API 応答で構成されます。
+
+
+
+== StorageGRID インストール API
+
+StorageGRID インストール API は、 StorageGRID システムを最初に設定するとき、およびプライマリ管理ノードのリカバリを実行する必要がある場合にのみ使用できます。インストール API には、 Grid Manager から HTTPS 経由でアクセスできます。
+
+API のドキュメントにアクセスするには、プライマリ管理ノードのインストール用 Web ページに移動し、メニューバーから * Help * > * API Documentation * を選択します。
+
+StorageGRID インストール API には次のセクションがあります。
+
+* *config *-- API の製品リリースとバージョンに関連する操作。製品リリースバージョンおよびそのリリースでサポートされる API のメジャーバージョンを一覧表示できます。
+* * grid * -- グリッドレベルの設定操作。グリッドの詳細、グリッドネットワークのサブネット、グリッドパスワード、 NTP および DNS サーバの IP アドレスなど、グリッド設定を取得および更新できます。
+* *nodes * -- ノードレベルの設定操作。グリッドノードのリストを取得できるほか、グリッドノードの削除、設定、表示、およびグリッドノードの設定のリセットを行うことができます。
+* *provision * -- プロビジョニング操作。プロビジョニング処理を開始し、プロビジョニング処理のステータスを表示できます。
+* * recovery * - プライマリ管理ノードのリカバリ処理。情報のリセット、リカバリパッケージのアップロード、リカバリの開始、およびリカバリ処理のステータスの表示を行うことができます。
+* * recovery-package * -- リカバリパッケージをダウンロードする処理。
+* *sites * -- サイトレベルの設定操作。サイトを作成、表示、削除、および変更できます。
+
+
+
+
+== StorageGRID アプライアンスインストーラ API
+
+StorageGRID アプライアンス・インストーラ API には '_Controller_IP_:8443 から HTTPS 経由でアクセスできます
+
+API ドキュメントにアクセスするには、アプライアンスの StorageGRID アプライアンスインストーラのメニューバーから * Help * > * API Docs * を選択します。
+
+StorageGRID アプライアンスインストーラ API には、次のセクションがあります。
+
+* * clone * -- ノードのクローニングを構成および制御するための処理。
+* *encryption * -- 暗号化を管理し、暗号化ステータスを表示するための処理。
+* * ハードウェア構成 * -- 接続されたハードウェアでシステム設定を構成するための操作。
+* *installation * ：アプライアンスのインストールを開始し、インストール・ステータスを監視するための処理。
+* * networking * -- StorageGRID アプライアンスのグリッドネットワーク、管理ネットワーク、クライアントネットワークの設定、およびアプライアンスのポート設定に関連する処理です。
+* * setup * - システムに関する情報の取得やプライマリ管理ノード IP の更新要求など、アプライアンスの初期インストール設定に役立つ処理。
+* *support * -- コントローラのリブートとログ取得のための処理。
+* * upgrade * ：アプライアンス・ファームウェアのアップグレードに関連する操作
+* *uploadsg* -- StorageGRID インストールファイルをアップロードするための操作。
+

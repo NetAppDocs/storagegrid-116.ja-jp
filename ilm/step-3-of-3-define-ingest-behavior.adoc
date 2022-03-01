@@ -1,0 +1,73 @@
+---
+permalink: ilm/step-3-of-3-define-ingest-behavior.html 
+sidebar: sidebar 
+keywords: ilm rule step 3, define ingest behavior 
+summary: Create ILM Rule ウィザードのステップ 3 \ （取り込み動作の定義 \ ）では、このルールでフィルタリングされたオブジェクトを取り込み時に保護する方法を選択できます。 
+---
+= ステップ 3 / 3 ：取り込み動作を定義する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Create ILM Rule ウィザードのステップ 3 （取り込み動作の定義）では、このルールでフィルタリングされたオブジェクトを取り込み時に保護する方法を選択できます。
+
+StorageGRID は、中間コピーを作成してオブジェクトをキューに登録し、あとで ILM 評価を実行するか、またはコピーを作成してルールの配置手順をすぐに満たすことができます。
+
+image::../media/define_ingest_behavior_for_ilm_rule.png[Create ILM rule ステップ 3 / 3]
+
+.手順
+. オブジェクトの取り込み時に使用するデータ保護オプションを選択します。
++
+[cols="1a,2a"]
+|===
+| オプション | 説明 
+
+
+ a| 
+strict
+ a| 
+取り込み時に必ずこのルールの配置手順を使用します。このルールの配置手順が不可能な場合、取り込みは失敗します。
+
+
+
+ a| 
+中間（ Balanced ）
+ a| 
+最適な ILM 効率取り込み時にこのルールの配置手順を試行し、不可能な場合に中間コピーを作成します。
+
+
+
+ a| 
+デュアルコミット
+ a| 
+取り込み時に中間コピーを作成し、このルールの配置手順をあとで適用します。
+
+|===
++
+「 Balanced 」は、ほとんどの場合に適した データ セキュリティ と効率性を組み合わせたソリューションです。「 Strict 」または「 Dual commit 」は一般に特定の要件を満たすために使用します。
+
++
+を参照してください xref:data-protection-options-for-ingest.adoc[取り込みのデータ保護オプション] および xref:advantages-disadvantages-of-ingest-options.adoc[データ保護オプションのメリット、デメリット、および制限事項] を参照してください。
+
++
+[NOTE]
+====
+Strict オプションまたは Balanced オプションを選択してルールで次のいずれかの配置を使用している場合は、エラーメッセージが表示されます。
+
+** クラウドストレージプール： 0 日目
+** アーカイブノード： 0 日目
+** ルールでユーザ定義の作成時間を参照時間として使用する場合は、クラウドストレージプールまたはアーカイブノード
+
+
+====
+. [ 保存（ Save ） ] を選択します。
++
+ILM ルールが保存されます。ルールは、 ILM ポリシーに追加されてアクティブ化されるまでは有効になりません。
+
+
+
+.関連情報
+* xref:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.adoc[例 5 ：取り込み動作が Strict の場合の ILM ルールとポリシー]
+* xref:creating-ilm-policy.adoc[ILM ポリシーを作成する]
+

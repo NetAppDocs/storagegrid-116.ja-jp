@@ -1,0 +1,50 @@
+---
+permalink: maintain/gathering-required-materials-site-decom.html 
+sidebar: sidebar 
+keywords: storagegrid, decommission 
+summary: サイトの運用を停止する前に、以下を準備しておく必要があります。 
+---
+= 必要なデータや機器を揃えます
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サイトの運用を停止する前に、以下を準備しておく必要があります。
+
+|===
+
+
+| 項目 | 注： 
+
+
+ a| 
+リカバリ・パッケージの .zip ファイル
+ a| 
+最新のリカバリ・パッケージ「 .zip 」ファイル（ SGWs-recovery-package-id-revision.zip ）をダウンロードする必要があります。リカバリパッケージファイルは、障害発生時のシステムのリストアに使用できます。
+
+
+
+ a| 
+「 passwords.txt 」ファイル
+ a| 
+このファイルには、コマンドラインでグリッドノードにアクセスするために必要なパスワードが格納されます。このファイルはリカバリパッケージに含まれています。
+
+
+
+ a| 
+プロビジョニングパスフレーズ
+ a| 
+このパスフレーズは、 StorageGRID システムが最初にインストールされるときに作成されて文書化されます。プロビジョニングパスフレーズは 'passwords.txt ファイルには含まれていません
+
+
+
+ a| 
+運用停止前の StorageGRID システムのトポロジの概要
+ a| 
+システムの現在のトポロジを記載したドキュメントがあれば、すべて入手します。
+
+|===
+xref:../admin/web-browser-requirements.adoc[Web ブラウザの要件]
+
+xref:downloading-recovery-package.adoc[リカバリパッケージをダウンロードします]

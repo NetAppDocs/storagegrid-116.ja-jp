@@ -1,0 +1,74 @@
+---
+permalink: sg5700/preparing-site-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。 
+---
+= サイトの準備（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。
+
+.手順
+. 設置場所の温度、湿度、高度範囲、通気、熱放散の要件を満たしていることを確認します。 配線、電源、およびアース。詳細については、 NetApp Hardware Universe を参照してください。
+. SG5760 モデルを設置する場合は、設置場所が 240 ボルトの AC 電源を備えていることを確認してください。
+. 次のサイズのシェルフ（ケーブルなし）が収まる 48.3cm （ 19 インチ）のキャビネットまたはラックを用意します。
++
+|===
+| アプライアンスのモデル | 高さ | 幅 | 奥行き | 最大重量 
+
+
+ a| 
+SG5712
+
+（ 12 ドライブ）
+ a| 
+3.41 インチ
+
+（ 8.68 cm ）
+ a| 
+17.6 インチ
+
+（ 44.7 cm ）
+ a| 
+21.1 インチ
+
+（ 53.6 cm ）
+ a| 
+63.9 ポンド
+
+（ 29.0 kg ）
+
+
+
+ a| 
+SG5760
+
+（ 60 ドライブ）
+ a| 
+6.87 インチ
+
+（ 17.46 cm ）
+ a| 
+17.66 インチ
+
+（ 44.86 cm ）
+ a| 
+38.25 インチ
+
+（ 97.16 cm ）
+ a| 
+250 ポンド
+
+（ 113 kg ）
+
+|===
+. 必要なネットワークスイッチを取り付けます。互換性の情報については、 NetApp Interoperability Matrix Tool を参照してください。
+
+
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

@@ -1,0 +1,47 @@
+---
+permalink: sg100-1000/preparing-site-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。 
+---
+= サイトの準備（ SG100 および SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。
+
+.手順
+. 設置場所の温度、湿度、高度範囲、通気、熱放散の要件を満たしていることを確認します。 配線、電源、およびアース。詳細については、 NetApp Hardware Universe を参照してください。
+. 設置場所が AC 電源の正しい電圧を供給していることを確認します（ AC 120 ～ 240 ボルトの範囲）。
+. 次のサイズのシェルフ（ケーブルなし）が収まる 48.3cm （ 19 インチ）のキャビネットまたはラックを用意します。
++
+|===
+| 高さ | 幅 | 奥行き | 最大重量 
+
+
+ a| 
+1.70 インチ
+
+（ 4.32 cm ）
+ a| 
+17.32 インチ
+
+（ 44.0 cm ）
+ a| 
+32.0 インチ
+
+（ 81.3 cm ）
+ a| 
+39 ポンド
+
+（ 17.7 kg ）
+
+|===
+. アプライアンスの設置場所を決定します。
+
+
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

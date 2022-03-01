@@ -1,0 +1,524 @@
+---
+permalink: monitor/alarms-that-generate-snmp-notifications.html 
+sidebar: sidebar 
+keywords: alarms, monitor alarms, snmp notification, snmp 
+summary: 次の表に、 SNMP 通知を生成するレガシーアラームを示します。アラートとは異なり、すべてのアラームが SNMP 通知を生成するわけではありません。リストされたアラームだけが SNMP 通知を生成し、指定された重大度以上の重大度のみが生成されます。 
+---
+= SNMP 通知を生成するアラーム（従来のシステム）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+次の表に、 SNMP 通知を生成するレガシーアラームを示します。アラートとは異なり、すべてのアラームが SNMP 通知を生成するわけではありません。リストされたアラームだけが SNMP 通知を生成し、指定された重大度以上の重大度のみが生成されます。
+
+
+NOTE: 従来のアラームシステムは引き続きサポートされますが、アラートシステムには大きなメリットがあり、使いやすくなっています。
+
+[cols="1a,2a,1a"]
+|===
+| コード | 名前 | 重大度 
+
+
+ a| 
+ACMS
+ a| 
+使用可能なメタデータサービス
+ a| 
+重要
+
+
+
+ a| 
+AITE
+ a| 
+読み出し状態
+ a| 
+マイナー
+
+
+
+ a| 
+AITU
+ a| 
+ステータスを取得します
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+AMQS （ AMQS ）
+ a| 
+キューに登録された監査メッセージ
+ a| 
+注意
+
+
+
+ a| 
+AOTE
+ a| 
+ストアの状態
+ a| 
+マイナー
+
+
+
+ a| 
+AOTU
+ a| 
+ストアのステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+AROQ
+ a| 
+Objects Queued （オブジェクトのキュー
+ a| 
+マイナー
+
+
+
+ a| 
+ARRF
+ a| 
+要求の失敗
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+ARRV
+ a| 
+検証エラー
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+ARVF
+ a| 
+Store Failures （ストア障害）
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+ASXP
+ a| 
+監査共有
+ a| 
+マイナー
+
+
+
+ a| 
+AUMA
+ a| 
+AMS ステータス
+ a| 
+マイナー
+
+
+
+ a| 
+補助
+ a| 
+監査エクスポートのステータス
+ a| 
+マイナー
+
+
+
+ a| 
+BTOF
+ a| 
+オフセット（ Offset ）
+ a| 
+注意
+
+
+
+ a| 
+CAHP
+ a| 
+Java ヒープ使用率
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+CAQH
+ a| 
+使用可能な宛先の数
+ a| 
+注意
+
+
+
+ a| 
+カーサ
+ a| 
+データストアのステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+CDLP
+ a| 
+Metadata Used Space （ Percent ）
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+CLBE
+ a| 
+CLB の状態
+ a| 
+重要
+
+
+
+ a| 
+DNST
+ a| 
+DNS ステータス
+ a| 
+重要
+
+
+
+ a| 
+ECST
+ a| 
+検証ステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+HSTE
+ a| 
+HTTP State のことです
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+HTAS
+ a| 
+HTTP を自動起動します
+ a| 
+注意
+
+
+
+ a| 
+失われました
+ a| 
+Lost Objects
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+MINQ
+ a| 
+キューに登録された電子メール通知
+ a| 
+注意
+
+
+
+ a| 
+分
+ a| 
+電子メール通知のステータス
+ a| 
+マイナー
+
+
+
+ a| 
+ナン
+ a| 
+ネットワーク自動ネゴシエーション設定
+ a| 
+注意
+
+
+
+ a| 
+NDUP （ NDUP ）
+ a| 
+ネットワークのデュプレックス設定
+ a| 
+マイナー
+
+
+
+ a| 
+NLNK
+ a| 
+ネットワークリンク検出
+ a| 
+マイナー
+
+
+
+ a| 
+NRER
+ a| 
+受信エラー
+ a| 
+注意
+
+
+
+ a| 
+NSPD
+ a| 
+スピード
+ a| 
+注意
+
+
+
+ a| 
+入力します
+ a| 
+送信エラー
+ a| 
+注意
+
+
+
+ a| 
+NTFQ
+ a| 
+NTP 周波数オフセット
+ a| 
+マイナー
+
+
+
+ a| 
+NTLK
+ a| 
+NTP ロック
+ a| 
+マイナー
+
+
+
+ a| 
+NTOF
+ a| 
+NTP 時間オフセット
+ a| 
+マイナー
+
+
+
+ a| 
+NTSJ
+ a| 
+選択された時間ソースジッタ
+ a| 
+マイナー
+
+
+
+ a| 
+NTSU
+ a| 
+NTP ステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+OPST の場合
+ a| 
+全体的な電源ステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+ORSU
+ a| 
+アウトバウンドレプリケーションステータス
+ a| 
+注意
+
+
+
+ a| 
+PSAS
+ a| 
+Power Supply A Status の順に選択します
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+PSBS
+ a| 
+電源装置 B のステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+RDTE
+ a| 
+Tivoli Storage Manager の状態
+ a| 
+注意
+
+
+
+ a| 
+RDTU
+ a| 
+Tivoli Storage Manager のステータス
+ a| 
+メジャー（ Major ）
+
+
+
+ a| 
+SAVP の
+ a| 
+使用可能な合計スペース（割合）
+ a| 
+注意
+
+
+
+ a| 
+SHLH
+ a| 
+健常性
+ a| 
+注意
+
+
+
+ a| 
+slsa
+ a| 
+CPU Load Average （ CPU 負荷平均）
+ a| 
+注意
+
+
+
+ a| 
+SMTT
+ a| 
+合計イベント数
+ a| 
+注意
+
+
+
+ a| 
+SNST
+ a| 
+ステータス
+ a| 
+
+
+
+ a| 
+SOSS
+ a| 
+ストレージオペレーティングシステムのステータス
+ a| 
+注意
+
+
+
+ a| 
+SSTS のコマンドです
+ a| 
+ストレージステータス
+ a| 
+注意
+
+
+
+ a| 
+SVST
+ a| 
+ステータス
+ a| 
+注意
+
+
+
+ a| 
+TMEM
+ a| 
+メモリを取り付けた
+ a| 
+マイナー
+
+
+
+ a| 
+UMEM
+ a| 
+使用可能なメモリ
+ a| 
+マイナー
+
+
+
+ a| 
+VMST
+ a| 
+ステータス
+ a| 
+マイナー
+
+
+
+ a| 
+VPRI （ VPRI ）
+ a| 
+検証の優先順位
+ a| 
+注意
+
+
+
+ a| 
+VSTU
+ a| 
+オブジェクトの検証ステータス
+ a| 
+注意
+
+|===

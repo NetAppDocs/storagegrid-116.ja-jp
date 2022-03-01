@@ -1,0 +1,102 @@
+---
+permalink: sg6000/sg6060-cabling-optional-expansion-shelves.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, cabling, cable, wiring, wire, expansion shelf, sg6060 
+summary: 拡張シェルフを使用する場合は、 E2860 コントローラシェルフに拡張シェルフを接続する必要があります。SG6060 アプライアンスには、最大 2 台の拡張シェルフを用意できます。 
+---
+= SG6060 ：オプションの拡張シェルフのケーブル接続
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+拡張シェルフを使用する場合は、 E2860 コントローラシェルフに拡張シェルフを接続する必要があります。SG6060 アプライアンスには、最大 2 台の拡張シェルフを用意できます。
+
+.必要なもの
+* それぞれの拡張シェルフに付属の 2 本の SAS ケーブルを用意しておきます。
+* E2860 コントローラシェルフが搭載されたキャビネットまたはラックに拡張シェルフを設置しておきます。
++
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します]
+
+
+
+次の図に示すように、各拡張シェルフを E2860 コントローラシェルフに接続します。
+
+この図は、 2 台の拡張シェルフを示しています。IOM A のみをコントローラ A に接続し、 IOM B をコントローラ B に接続します
+
+image::../media/expansion_shelves_connections_sg6060.png[SG6060 拡張シェルフの接続]
+
+[cols="1a,2a"]
+|===
+| コールアウト | 説明 
+
+
+ a| 
+1.
+ a| 
+SG6000-CN の情報
+
+
+
+ a| 
+2.
+ a| 
+E2860 コントローラシェルフです
+
+
+
+ a| 
+3.
+ a| 
+コントローラ A
+
+
+
+ a| 
+4.
+ a| 
+コントローラ B
+
+
+
+ a| 
+5.
+ a| 
+拡張シェルフ 1
+
+
+
+ a| 
+6.
+ a| 
+拡張シェルフ 1 の IOM A
+
+
+
+ a| 
+7.
+ a| 
+拡張シェルフ 1 の IOM B
+
+
+
+ a| 
+8.
+ a| 
+拡張シェルフ 2
+
+
+
+ a| 
+9.
+ a| 
+拡張シェルフ 2 の IOM A
+
+
+
+ a| 
+10.
+ a| 
+拡張シェルフ 2 の IOM B
+
+|===

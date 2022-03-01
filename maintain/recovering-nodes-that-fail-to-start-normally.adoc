@@ -1,0 +1,25 @@
+---
+permalink: maintain/recovering-nodes-that-fail-to-start-normally.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, node did not start, node fail to start 
+summary: グリッドに正常に再参加できずリカバリ可能と表示されない StorageGRID ノードは破損している可能性があります。ノードを強制的にリカバリモードに設定することができます。 
+---
+= 正常に開始しないノードをリカバリします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッドに正常に再参加できずリカバリ可能と表示されない StorageGRID ノードは破損している可能性があります。ノードを強制的にリカバリモードに設定することができます。
+
+ノードを強制的にリカバリモードにするには、次の手順を実行
+
+sudo StorageGRID node force-recovery_node-name_
+
+
+TIP: このコマンドを実行する前に、ノードのネットワーク設定が正しいことを確認してください。ネットワークインターフェイスのマッピングまたはグリッドネットワークの IP アドレスまたはゲートウェイが正しくないために、ノードがグリッドに再参加できなかった可能性があります。
+
+
+IMPORTANT: StorageGRID node force-recovery_node_name _ コマンドを発行した後 '_node-name_' に対して追加のリカバリ手順を実行する必要があります
+
+xref:whats-next-performing-additional-recovery-steps-if-required.adoc[次の手順：必要に応じて追加のリカバリ手順を実行します]

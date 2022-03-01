@@ -1,0 +1,41 @@
+---
+permalink: sg5600/obtaining-additional-equipment-and-tools-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, additional, equipment, tools 
+summary: SG5600 アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。 
+---
+= 追加の機器とツールの入手（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG5600 アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。
+
+* * ドライバ *
++
+image::../media/appliance_screwdrivers.gif[ドライバ]
+
++
+フィリップス番号2 本のドライバ
+
++
+中型マイナスドライバ
+
+* * 静電気防止用リストストラップ *
++
+image::../media/appliance_wriststrap.gif[静電気防止用リストストラップ]
+
+* * イーサネットケーブル *
++
+image::../media/appliance_ethernet_cables.gif[イーサネットケーブル]
+
+* * イーサネットスイッチ *
++
+image::../media/appliance_ethernet_switch_network_hub.gif[イーサネットハブ]
+
+* * サービスラップトップ *xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]
++
+image::../media/appliance_laptop.gif[管理ステーション]
+
+

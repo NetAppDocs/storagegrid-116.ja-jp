@@ -1,0 +1,48 @@
+---
+permalink: sg6000/accessing-bmc-interface-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard management controller, access, open, login 
+summary: BMC 管理ポートの DHCP または静的 IP アドレスを使用して、 SG6000-CN コントローラの BMC インターフェイスにアクセスできます。 
+---
+= BMC インターフェイスにアクセスします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+BMC 管理ポートの DHCP または静的 IP アドレスを使用して、 SG6000-CN コントローラの BMC インターフェイスにアクセスできます。
+
+.必要なもの
+* SG6000-CN コントローラの BMC 管理ポートが、使用する管理ネットワークに接続されている。
++
+image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN コントローラの BMC 管理ポート]
+
+* 管理クライアントがを使用している必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+
+
+.手順
+. BMC インターフェイスの URL を入力します： +`*https://_BMC_Port_IP_*`
++
+「 _BMC_Port_IP_` 」の場合は、 BMC 管理ポートの DHCP または静的 IP アドレスを使用します。
+
++
+BMC のサインインページが表示されます。
+
++
+
+NOTE: 「 BMC_Port_IP 」をまだ設定していない場合は、の手順に従います xref:configuring-bmc-interface-sg6000.adoc[BMC インターフェイス（ SG6000 ）の設定]。ハードウェアの問題が原因で手順 を使用できず、 BMC の IP アドレスを設定していない場合でも、 BMC にアクセスできる可能性があります。デフォルトでは、 BMC は DHCP を使用して IP アドレスを取得します。BMC ネットワークで DHCP が有効になっている場合は、ネットワーク管理者が、 SG6000-CN コントローラの前面のラベルに記載された BMC MAC に割り当てられた IP アドレスを指定できます。BMC ネットワークで DHCP が有効になっていない場合、 BMC は数分後に応答せず、デフォルトの静的 IP アドレス 192.168.0.120` を割り当てます。「 192.168.0.120 」を参照するには、ラップトップを BMC ポートに直接接続し、ラップトップに「 192.168.0.200/24 」などの IP アドレスを割り当てるようにネットワーク設定を変更する必要がある場合があります。
+
+. root のユーザ名とパスワードを入力します。このときに設定したパスワードを使用します xref:changing-root-password-for-bmc-interface-sg6000.adoc[デフォルトの root パスワードが変更されました]：
++
+image::../media/bmc_signin_page.gif[BMC のサインインページ]
+
+. 「 * サインイン * 」を選択します。
++
+image::../media/bmc_dashboard.gif[BMC ダッシュボード]
+
+. 必要に応じて、 *Settings*>*User Management* を選択し、「 disabled 」ユーザをクリックして、追加のユーザを作成します。
++
+
+NOTE: ユーザが初めてサインインすると、セキュリティを強化するためにパスワードの変更を求められる場合があります。
+
+

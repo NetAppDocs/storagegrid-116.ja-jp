@@ -1,0 +1,32 @@
+---
+permalink: sg6000/hardware-setup-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: ハードウェア障害やケーブル接続エラーによってストレージコントローラまたは SG6000-CN コントローラのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。 
+---
+= ハードウェアのセットアップがハングしたように見える（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェア障害やケーブル接続エラーによってストレージコントローラまたは SG6000-CN コントローラのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。
+
+.手順
+. ストレージコントローラの場合は、デジタル表示ディスプレイのコードを監視します。
++
+電源投入時にハードウェアが初期化される際に、 2 つのデジタル表示ディスプレイに一連のコードが表示されます。ハードウェアが正常に起動すると、デジタル表示ディスプレイに「 99 」と表示されます。
+
+. SG6000-CN コントローラの LED と、 BMC に表示されたブート時のコードとエラーコードを確認します。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+
+xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[SG6000 ストレージコントローラのブート時のステータスコードを確認します]
+
+https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2800 System Monitoring Guide 』を参照してください"^]
+
+xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]
+
+xref:viewing-boot-up-codes-for-sg6000-cn-controller.adoc[SG6000-CN コントローラのブート時のコードを確認します]
+
+xref:viewing-error-codes-for-sg6000-cn-controller.adoc[SG6000-CN コントローラのエラーコードを確認します]

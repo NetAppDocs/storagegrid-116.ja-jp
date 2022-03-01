@@ -1,0 +1,15 @@
+---
+permalink: sg5600/port-bond-modes-for-e5600sg-controller-ports.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, port bond, port bonding, port bond mode, port-bond mode 
+summary: E5600SG コントローラポートにネットワークリンクを設定する場合は、グリッドネットワークとオプションのクライアントネットワークに接続する 10GbE ポート、およびオプションの管理ネットワークに接続する 1GbE 管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。 
+---
+= E5600SG コントローラポートのポートボンディングモード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E5600SG コントローラポートにネットワークリンクを設定する場合は、グリッドネットワークとオプションのクライアントネットワークに接続する 10GbE ポート、およびオプションの管理ネットワークに接続する 1GbE 管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。
+
+xref:configuring-network-links-sg5600.adoc[ネットワークリンクの設定（ SG5600 ）]

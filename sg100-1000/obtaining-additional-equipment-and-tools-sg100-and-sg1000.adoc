@@ -1,0 +1,131 @@
+---
+permalink: sg100-1000/obtaining-additional-equipment-and-tools-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, additional, equipment, tools 
+summary: StorageGRID アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。 
+---
+= 追加の機器と工具の入手（ SG100 および SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。
+
+ハードウェアの設置と設定を行うには、次の追加機器が必要です。
+
+* * ドライバ *
++
+image::../media/screwdrivers.gif[2 本のドライバ]
+
++
+フィリップス番号2 本のドライバ
+
++
+中型マイナスドライバ
+
+* * 静電気防止用リストストラップ *
++
+image::../media/appliance_wriststrap.gif[静電気防止用リストストラップ]
+
+* * 光ケーブルとトランシーバ *
++
+image::../media/fc_cable_and_sfp.gif[光ケーブルと QSFP+ トランシーバ]
+
++
+** ケーブル
++
+*** TwinAx / 銅線（ 1~4 本）
++
+または
+
+*** ファイバ / 光（ 1~4 本）
+
+
+** リンク速度に基づいて、各トランシーバ / アダプタの 1 ～ 4 （速度の混在はサポートされていません）
++
+*** SG100 ：
++
+|===
+| リンク速度（ GbE ） | 必要な機器 
+
+
+ a| 
+10.
+ a| 
+SFP+ トランシーバ
+
+
+
+ a| 
+25
+ a| 
+SFP28 トランシーバ
+
+|===
+*** SG1000 ：
++
+|===
+| リンク速度（ GbE ） | 必要な機器 
+
+
+ a| 
+10.
+ a| 
+QSFP-SFP アダプタ（ QSA ）および SFP+ トランシーバ
+
+
+
+ a| 
+25
+ a| 
+QSFP-SFP アダプタ（ QSA ）および SFP28 トランシーバです
+
+
+
+ a| 
+40
+ a| 
+QSFP+ トランシーバ
+
+
+
+ a| 
+100
+ a| 
+QFSP28 トランシーバ
+
+|===
+
+
+
+
+* * RJ-45 （ Cat5 / Cat5e / Cat6 / Cat6A ）イーサネットケーブル *
++
+image::../media/ethernet_cables.png[イーサネットケーブル]
+
+* * サービスラップトップ *
++
+image::../media/sam_management_client.gif[サービスラップトップ]
+
++
+xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]
+
++
+1GbE （ RJ-45 ）ポート
+
++
+
+NOTE: 一部のポートでは 10/100 イーサネット速度がサポートされない場合があります。
+
+* * オプションのツール *
++
+image::../media/optional_tools.gif[電動ドリルと懐中電灯]
+
++
+ヘッドビット付き電源ドリル
+
++
+懐中電灯
+
+

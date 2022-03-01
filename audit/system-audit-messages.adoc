@@ -1,0 +1,207 @@
+---
+permalink: audit/system-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, system, ECOC, ETAF, GNRG, GNUR, GTED, GTST, GTSU, IDEL, LKCU, LLST, OLST, ORLM, SADD, SADE, SVRF, SVRU, SYSD, SYST, SYSU, VLST 
+summary: システム監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。潜在的な問題に対処できるよう、監査システム自体、グリッドノードの状態、システム全体のタスクアクティビティ（グリッドタスク）、およびサービスバックアップ処理に関連するイベントについて生成されます。 
+---
+= システム監査メッセージ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システム監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。潜在的な問題に対処できるよう、監査システム自体、グリッドノードの状態、システム全体のタスクアクティビティ（グリッドタスク）、およびサービスバックアップ処理に関連するイベントについて生成されます。
+
+|===
+| コード | メッセージのタイトルと概要 | を参照してください 
+
+
+ a| 
+ECMC
+ a| 
+Missing Erasure Coded Data Fragment ：イレイジャーコーディングされたデータフラグメントの欠落が検出されたことを示します。
+ a| 
+xref:ecmc-missing-erasure-coded-data-fragment.adoc[ECMC ：イレイジャーコーディングされたデータフラグメントがありません]
+
+
+
+ a| 
+ECOC
+ a| 
+Corrupt Erasure Coded Data Fragment ：イレイジャーコーディングされたデータフラグメントの破損が検出されたことを示します。
+ a| 
+xref:ecoc-corrupt-erasure-coded-data-fragment.adoc[ECOC ：イレイジャーコーディングされたデータフラグメントが破損しています]
+
+
+
+ a| 
+ETAF
+ a| 
+Security Authentication Failed ： Transport Layer Security （ TLS ）を使用した接続試行が失敗しました。
+ a| 
+xref:etaf-security-authentication-failed.adoc[ETAF ：セキュリティ認証に失敗しました]
+
+
+
+ a| 
+GNRG
+ a| 
+GNDS Registration ：サービスが StorageGRID システムに自身に関する情報を更新または登録しました。
+ a| 
+xref:gnrg-gnds-registration.adoc[GNRG ： GNDS 登録]
+
+
+
+ a| 
+GNUR
+ a| 
+GNDS Unregistration ：サービスが StorageGRID システムから自身の登録を解除しました。
+ a| 
+xref:gnur-gnds-unregistration.adoc[GNUR ： GNDS 登録解除]
+
+
+
+ a| 
+GTED
+ a| 
+Grid Task Ended ： CMN サービスがグリッドタスクの処理を完了しました。
+ a| 
+xref:gted-grid-task-ended.adoc[GTED ： Grid タスクが終了しました]
+
+
+
+ a| 
+GTSt
+ a| 
+Grid Task Started ： CMN サービスがグリッドタスクの処理を開始しました。
+ a| 
+xref:gtst-grid-task-started.adoc[GTSt ： Grid タスクが開始されました]
+
+
+
+ a| 
+GTSU
+ a| 
+Grid Task Submitted ：グリッドタスクが CMN サービスに送信されました。
+ a| 
+xref:gtsu-grid-task-submitted.adoc[GTSU ： Grid タスクが送信されました]
+
+
+
+ a| 
+IDEL
+ a| 
+ILM Initiated Delete ：この監査メッセージは、 ILM がオブジェクトを削除する処理を開始すると生成されます。
+ a| 
+xref:idel-ilm-initiated-delete.adoc[IDEL ： ILM Initiated Delete]
+
+
+
+ a| 
+LCU
+ a| 
+上書きされたオブジェクトのクリーンアップ。この監査メッセージは、ストレージスペースを解放するために上書きされたオブジェクトが自動的に削除されたときに生成されます。
+ a| 
+xref:lkcu-overwritten-object-cleanup.adoc[LKCU: 上書きされたオブジェクトのクリーンアップ]
+
+
+
+ a| 
+LLST
+ a| 
+Location Lost ：この監査メッセージは、場所が失われたときに生成されます。
+ a| 
+xref:llst-location-lost.adoc[LLST ：ロケーションが失われました]
+
+
+
+ a| 
+OLST
+ a| 
+Object Lost ：要求されたオブジェクトが StorageGRID システム内に見つかりません。
+ a| 
+xref:olst-system-detected-lost-object.adoc[OLST: システムが損失オブジェクトを検出しました]
+
+
+
+ a| 
+ORLM の場合
+ a| 
+Object Rules Met ：オブジェクトデータが ILM ルールに沿って格納されました。
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM ：オブジェクトルールが満たされています]
+
+
+
+ a| 
+サッド
+ a| 
+Security Audit Disable ：監査メッセージのロギングがオフになりました。
+ a| 
+xref:sadd-security-audit-disable.adoc[SADD ：セキュリティ監査無効]
+
+
+
+ a| 
+Sade 社
+ a| 
+Security Audit Enable ：監査メッセージのロギングが再開されました。
+ a| 
+xref:sade-security-audit-enable.adoc[Sade ：セキュリティ監査を有効にします]
+
+
+
+ a| 
+SVRF
+ a| 
+Object Store Verify Fail ：コンテンツブロックが検証チェックに失敗しました。
+ a| 
+xref:svrf-object-store-verify-fail.adoc[SVRF ：オブジェクトストアの検証に失敗しました]
+
+
+
+ a| 
+SVRU の場合
+ a| 
+Object Store Verify Unknown ：オブジェクトストアで想定外のオブジェクトデータが検出されました。
+ a| 
+xref:svru-object-store-verify-unknown.adoc[SVRU ：オブジェクトストア検証が不明です]
+
+
+
+ a| 
+SYSD
+ a| 
+Node Stop ：シャットダウンが要求されました。
+ a| 
+xref:sysd-node-stop.adoc[SYSD ：ノード停止]
+
+
+
+ a| 
+SYST
+ a| 
+Node Stopping ：サービスが正常な停止を開始しました。
+ a| 
+xref:syst-node-stopping.adoc[SYST ：ノードを停止しています]
+
+
+
+ a| 
+SYSU
+ a| 
+Node Start ：サービスが開始されました。前回のシャットダウンのタイプがメッセージに示されます。
+ a| 
+xref:sysu-node-start.adoc[SYSU ：ノードが開始されました]
+
+
+
+ a| 
+VLST
+ a| 
+ユーザーが開始したボリュームが失われました : /proc/CMSI/Volume_lost コマンドが実行されました
+ a| 
+xref:vlst-user-initiated-volume-lost.adoc[VLST ：ユーザーが開始したボリュームが失われました]
+
+|===
+xref:lkcu-overwritten-object-cleanup.adoc[LKCU: 上書きされたオブジェクトのクリーンアップ]

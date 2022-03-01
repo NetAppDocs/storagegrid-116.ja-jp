@@ -1,0 +1,118 @@
+---
+permalink: primer/using-storagegrid-support-options.html 
+sidebar: sidebar 
+keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics 
+summary: Grid Manager には、 StorageGRID システムで問題 が発生した場合にテクニカルサポートと連携するためのオプションが用意されています。 
+---
+= StorageGRID のサポートオプションを使用する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager には、 StorageGRID システムで問題 が発生した場合にテクニカルサポートと連携するためのオプションが用意されています。
+
+
+
+== AutoSupport を設定します
+
+AutoSupport 機能を使用すると、 StorageGRID システムのヘルスメッセージおよびステータスメッセージをテクニカルサポートに送信できます。AutoSupport を使用すると、問題の特定と解決にかかる時間を大幅に短縮できます。また、システムのストレージニーズを監視し、新しいノードやサイトを追加する必要があるかどうかを判断するための支援も行います。必要に応じて、 1 つの別の送信先に AutoSupport メッセージを送信するように設定できます。
+
+AutoSupport は Grid Manager （ * support * > * Tools * > * AutoSupport * ）を使用して設定します。「 * AutoSupport * 」ページには、 * 設定 * と * 結果 * の 2 つのタブがあります。
+
+image::../media/autosupport_accessing_settings.png[Grid Manager の AutoSupport ページ]
+
+
+
+=== AutoSupport メッセージに含まれる情報
+
+AutoSupport メッセージには次のような情報が含まれます。
+
+* StorageGRID ソフトウェアのバージョン
+* オペレーティングシステムのバージョン
+* システムレベルおよび場所レベルの属性情報
+* 最新のアラートとアラーム（従来型システム）
+* 履歴データを含む、すべてのグリッドタスクの現在のステータス
+* 管理ノードデータベースの使用率
+* 失われた、または欠落しているオブジェクトの数
+* Grid の設定
+* NMS エンティティ
+* アクティブな ILM ポリシー
+* プロビジョニングされたグリッド仕様ファイル
+* 診断メトリック
+
+
+AutoSupport 機能および個々の AutoSupport オプションは、 StorageGRID の初回インストール時に有効にするか、あとから有効にすることができます。AutoSupport が有効になっていない場合、 Grid Manager ダッシュボードにメッセージが表示されます。このメッセージには、 AutoSupport 設定ページへのリンクが含まれています。
+
+image::../media/autosupport_disabled_message.png[AutoSupport が無効なメッセージです]
+
+メッセージを閉じても、 AutoSupport が無効なままであっても、ブラウザキャッシュがクリアされるまでは再度表示されません。
+
+
+
+=== Active IQ を使用します
+
+Active IQ は、ネットアップのインストールベースが提供する予測分析と集合知を活用する、クラウドベースのデジタルアドバイザです。継続的なリスク評価、予測アラート、規範となるガイダンス、自動化されたアクションによって、問題が発生する前に予防できます。これにより、システムの健全性が向上し、システムの可用性が向上します。
+
+ネットアップサポートサイトの Active IQ ダッシュボードと機能を使用する場合は、 AutoSupport を有効にする必要があります。
+
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"^]
+
+
+
+== StorageGRID ログを収集
+
+問題をトラブルシューティングするために、ログファイルを収集してテクニカルサポートに転送することが必要になる場合があります。
+
+StorageGRID は、ログファイルを使用して、イベント、診断メッセージ、およびエラー状態をキャプチャします。bycast.log ファイルは、すべてのグリッドノードに対して作成される主要なトラブルシューティングファイルです。StorageGRID では、個々の StorageGRID サービスのログファイル、導入とメンテナンス作業に関連するログファイル、サードパーティアプリケーションに関連するログファイルも作成されます。
+
+適切な権限を持つユーザと StorageGRID システムのプロビジョニングパスフレーズを知っているユーザは、グリッドマネージャの Logs ページを使用して、ログファイル、システムデータ、および設定データを収集できます。ログを収集する際には、 1 つ以上のノードを選択し、期間を指定します。収集されたデータは '.tar.gz' ファイルにアーカイブされ ' ローカル・コンピュータにダウンロードできますこのファイルには、グリッドノードごとに 1 つのログファイルがアーカイブされています。
+
+image::../media/support_logs_select_nodes.png[ログ収集用の UI のスクリーンショット]
+
+
+
+== 指標を使用して診断を実行
+
+問題 のトラブルシューティングでは、テクニカルサポートと協力して StorageGRID システムの詳細な指標とグラフを確認することができます。また、構築済みの診断クエリを実行して、 StorageGRID システムのキーの値をプロアクティブに評価することもできます。
+
+
+
+=== 指標ページ
+
+Metrics ページでは、 Prometheus および Grafana のユーザインターフェイスへのアクセスが可能です。Prometheus は指標を収集するオープンソースソフトウェアです。Grafana は指標を視覚化するオープンソースソフトウェアです。
+
+
+IMPORTANT: Metrics ページで使用可能なツールは、テクニカルサポートが使用することを目的としています。これらのツールの一部の機能およびメニュー項目は意図的に機能しないため、変更される場合があります。
+
+image::../media/metrics_page.png[メトリクスページ]
+
+Metrics ページの Prometheus セクションのリンクを使用すると、 StorageGRID 指標の現在の値を照会し、その値の推移をグラフで確認できます。
+
+image::../media/metrics_page_prometheus.png[メトリクスページ Prometheus]
+
+
+NOTE: 名前に _private_ が含まれる指標は内部専用です。 StorageGRID のリリースごとに予告なく変更されることがあります。
+
+Metrics ページの Grafana セクションのリンクを使用すると、時間の経過とともに StorageGRID 指標のグラフを含む構築済みのダッシュボードにアクセスできます。
+
+image::../media/metrics_page_grafana.png[指標ページ Grafana]
+
+
+
+=== Diagnostics （診断）ページ
+
+Diagnostics （診断）ページでは、グリッドの現在の状態に対して事前に構築された診断チェックのセットが実行されます。この例では、すべての診断のステータスは Normal です。
+
+image::../media/support_diagnostics_page.png[Support Diagnostics ページ]
+
+特定の診断をクリックすると、診断とその現在の結果の詳細が表示されます。
+
+この例では、 StorageGRID システム内のすべてのノードの現在の CPU 利用率が表示されています。すべてのノードの値が警告と警告のしきい値を下回っているため、診断の全体的なステータスは「正常」です。
+
+image::../media/support_diagnostics_cpu_utilization.png[CPU 使用率の診断をサポートします]
+
+.関連情報
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:configuring-network-settings.adoc[ネットワークの設定を行います]
+

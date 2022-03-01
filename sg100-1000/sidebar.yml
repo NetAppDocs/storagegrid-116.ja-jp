@@ -1,0 +1,136 @@
+---
+section: sg100-1000
+title: SG100 および SG1000 サービスアプライアンス
+entries:
+- title: 概要
+  pdf-filename: StorageGRID SG100 および SG1000 サービスアプライアンス
+  url: "/sg100-1000/index.html"
+- title: SG100 および SG1000 アプリケーション
+  url: "/sg100-1000/sg100-and-sg1000-applications.html"
+- title: インストールと導入の概要
+  url: "/sg100-1000/installation-and-deployment-overview.html"
+- title: 設置の準備（ SG100 および SG1000 ）
+  url: "/sg100-1000/preparing-for-installation-sg100-and-sg1000.html"
+  entries:
+  - title: サイトの準備（ SG100 および SG1000 ）
+    url: "/sg100-1000/preparing-site-sg100-and-sg1000.html"
+  - title: 開梱（ SG100 と SG1000 ）
+    url: "/sg100-1000/unpacking-boxes-sg100-and-sg1000.html"
+  - title: 追加の機器と工具の入手（ SG100 および SG1000 ）
+    url: "/sg100-1000/obtaining-additional-equipment-and-tools-sg100-and-sg1000.html"
+  - title: アプライアンスのネットワーク接続（ SG100 および SG1000 ）の確認
+    url: "/sg100-1000/reviewing-appliance-network-connections-sg100-and-sg1000.html"
+    entries:
+    - title: SG100 および SG1000 アプライアンスのポートボンディングモード
+      url: "/sg100-1000/port-bond-modes-for-sg100-and-sg1000.html"
+      entries:
+      - title: ネットワークボンディングモード
+        url: "/sg100-1000/network-bond-modes-sg100-and-sg1000.html"
+      - title: 管理ポートのネットワークボンディングモード
+        url: "/sg100-1000/network-bond-modes-for-management-ports-sg100-and-sg1000.html"
+  - title: インストール情報（ SG100 および SG1000 ）の収集
+    url: "/sg100-1000/gathering-installation-information-sg100-and-sg1000.html"
+- title: ハードウェアの設置（ SG100 および SG1000 ）
+  entries:
+  - title: ハードウェアを登録
+    url: "/sg100-1000/registering-hardware-sg100-and-sg1000.html"
+  - title: キャビネットまたはラックへのアプライアンスの設置（ SG100 および SG1000 ）
+    url: "/sg100-1000/installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.html"
+  - title: アプライアンスをケーブル接続（ SG100 および SG1000 ）
+    url: "/sg100-1000/cabling-appliance-sg100-and-sg1000.html"
+  - title: 電源コードを接続して電源を投入（ SG100 および SG1000 ）
+    url: "/sg100-1000/connecting-power-cords-and-applying-power-sg100-and-sg1000.html"
+  - title: SG100 および SG1000 アプライアンスのステータスインジケータを表示します
+    url: "/sg100-1000/viewing-status-indicators-on-sg100-and-sg1000-appliances.html"
+- title: StorageGRID 接続の設定（ SG100 および SG1000 ）
+  url: "/sg100-1000/configuring-storagegrid-connections-sg100-and-sg1000.html"
+  entries:
+  - title: StorageGRID アプライアンスインストーラにアクセスします
+    url: "/sg100-1000/accessing-storagegrid-appliance-installer-sg100-and-sg1000.html"
+  - title: StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします
+    url: "/sg100-1000/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+  - title: ネットワークリンクの設定（ SG100 および SG1000 ）
+    url: "/sg100-1000/configuring-network-links-sg100-and-sg1000.html"
+  - title: StorageGRID IP アドレスを設定する
+    url: "/sg100-1000/configuring-storagegrid-ip-addresses-sg100-and-sg1000.html"
+  - title: ネットワーク接続を確認します
+    url: "/sg100-1000/verifying-network-connections.html"
+  - title: ポートレベルのネットワーク接続を確認
+    url: "/sg100-1000/verifying-port-level-network-connections.html"
+- title: BMC インターフェイスの設定（ SG100 および SG1000 ）
+  url: "/sg100-1000/configuring-bmc-interface-sg1000.html"
+  entries:
+  - title: BMC インターフェイスの root パスワードを変更します
+    url: "/sg100-1000/changing-root-password-for-bmc-interface-sg1000.html"
+  - title: BMC 管理ポートの IP アドレスを設定します
+    url: "/sg100-1000/setting-ip-address-for-bmc-management-port-sg1000.html"
+  - title: BMC インターフェイスにアクセスします
+    url: "/sg100-1000/accessing-bmc-interface-sg1000.html"
+  - title: サービスアプライアンスの SNMP を設定します
+    url: "/sg100-1000/configuring-snmp-settings-for-sg1000.html"
+  - title: アラート用の E メール通知を設定します
+    url: "/sg100-1000/setting-up-email-notifications-for-alerts.html"
+- title: オプション：ノード暗号化を有効にします
+  url: "/sg100-1000/optional-enabling-node-encryption.html"
+- title: サービスアプライアンスノードを導入する
+  url: "/sg100-1000/deploying-services-appliance-node.html"
+  entries:
+  - title: サービスアプライアンスをプライマリ管理ノードとして導入する
+    url: "/sg100-1000/deploying-services-appliance-as-primary-admin-node.html"
+  - title: ゲートウェイノードまたは非プライマリ管理ノードとしてサービスアプライアンスを導入する
+    url: "/sg100-1000/deploying-services-appliance-as-gateway-or-non-primary-admin-node.html"
+  - title: サービスアプライアンスの設置を監視する
+    url: "/sg100-1000/monitoring-services-appliance-installation.html"
+  - title: アプライアンスのインストールと設定（ SG100 および SG1000 ）を自動化する
+    url: "/sg100-1000/automating-appliance-installation-and-configuration.html"
+    entries:
+    - title: StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する
+      url: "/sg100-1000/automating-appliance-configuration-using-storagegrid-appliance-installer.html"
+    - title: configure-sga.py スクリプトを使用して、アプライアンスノードのインストールと設定を自動化します
+      url: "/sg100-1000/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html"
+    - title: StorageGRID の設定を自動化
+      url: "/sg100-1000/automating-configuration-of-storagegrid.html"
+  - title: インストール REST API の概要
+    url: "/sg100-1000/overview-of-installation-rest-apis.html"
+- title: ハードウェアの設置のトラブルシューティング（ SG100 および SG1000 ）
+  url: "/sg100-1000/troubleshooting-hardware-installation-sg100-and-sg1000.html"
+  entries:
+  - title: アプライアンスのブート時のコードを確認します
+    url: "/sg100-1000/viewing-boot-up-codes-for-appliance-sg100-and-sg1000.html"
+  - title: アプライアンスのエラーコードを確認します
+    url: "/sg100-1000/viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.html"
+  - title: ハードウェアのセットアップがハングしたように見える（ SG100 と SG1000 ）
+    url: "/sg100-1000/hardware-setup-appears-to-hang-sg100-and-sg1000.html"
+  - title: 接続の問題（ SG100 および SG1000 ）のトラブルシューティング
+    url: "/sg100-1000/troubleshooting-connection-issues-sg100-and-sg1000.html"
+  - title: StorageGRID アプライアンスインストーラの実行中にサービスアプライアンスをリブートします
+    url: "/sg100-1000/rebooting-services-appliance-while-sg-appliance-installer-is-running-sg100-and-sg1000.html"
+- title: アプライアンスの保守
+  url: "/sg100-1000/maintaining-services-appliance-sg100-and-sg1000.html"
+  entries:
+  - title: アプライアンスをメンテナンスモードにします
+    url: "/sg100-1000/placing-appliance-into-maintenance-mode.html"
+  - title: コントローラ識別 LED のオンとオフを切り替えます
+    url: "/sg100-1000/turning-controller-identify-led-on-and-off.html"
+  - title: データセンターでコントローラを探します
+    url: "/sg100-1000/locating-controller-in-data-center.html"
+  - title: アプライアンスをシャットダウンします
+    url: "/sg100-1000/shut-down-sg100-and-sg1000.html"
+  - title: サービスアプライアンスを交換します
+    url: "/sg100-1000/replacing-services-appliance.html"
+  - title: サービスアプライアンスの一方または両方の電源装置を交換します
+    url: "/sg100-1000/replacing-one-or-more-power-supplies-in-services-appliance.html"
+  - title: サービスアプライアンスのファンを交換します
+    url: "/sg100-1000/replacing-fan-in-services-appliance.html"
+  - title: サービスアプライアンスのドライブを交換します
+    url: "/sg100-1000/replacing-drive-in-services-appliance.html"
+  - title: サービスアプライアンスのリンク設定を変更します
+    url: "/sg100-1000/changing-link-configuration-of-services-appliance.html"
+  - title: MTU 設定を変更します
+    url: "/sg100-1000/changing-mtu-setting.html"
+  - title: DNS サーバの設定を確認します
+    url: "/sg100-1000/checking-dns-server-configuration.html"
+  - title: メンテナンスモード（ SG100 および SG1000 ）でのノード暗号化の監視
+    url: "/sg100-1000/monitoring-node-encryption-in-maintenance-mode.html"
+  - title: キー管理サーバの設定をクリアします
+    url: "/sg100-1000/clearing-key-management-server-configuration.html"

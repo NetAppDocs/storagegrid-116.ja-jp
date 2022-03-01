@@ -1,0 +1,56 @@
+---
+permalink: audit/object-delete-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, transaction, transactions, Object delete, S3 delete, Swift delete, S3, Swift, SDEL, WDEL 
+summary: 監査ログでオブジェクトの削除トランザクションを特定するには、 API 固有の監査メッセージ（ S3 および Swift ）を検索します。 
+---
+= オブジェクトの削除トランザクション
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査ログでオブジェクトの削除トランザクションを特定するには、 API 固有の（ S3 および Swift ）監査メッセージを検索します。
+
+以下の表には、削除トランザクション中に生成されたすべての監査メッセージが含まれているわけではなく、削除トランザクションをトレースするために必要なメッセージのみが含まれています。
+
+
+
+== S3 の削除監査メッセージ
+
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+SDEL
+ a| 
+S3 削除
+ a| 
+バケットからのオブジェクトの削除が要求されました。
+ a| 
+CBID 、 S3KY
+ a| 
+xref:sdel-s3-delete.adoc[SDEL ： S3 DELETE]
+
+|===
+
+
+== Swift の削除監査メッセージ
+
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+WDEL
+ a| 
+Swift の削除
+ a| 
+コンテナまたはコンテナからのオブジェクトの削除が要求されました。
+ a| 
+CBID 、 WOBJ
+ a| 
+xref:wdel-swift-delete.adoc[WDEL ： Swift の削除]
+
+|===

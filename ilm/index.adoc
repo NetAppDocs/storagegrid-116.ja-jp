@@ -1,0 +1,45 @@
+---
+permalink: ilm/index.html 
+sidebar: sidebar 
+keywords: information lifecycle management overview, about information lifecycle management, ilm overview, about ilm 
+summary: StorageGRID システムのオブジェクトを管理するには、情報ライフサイクル管理（ ILM ）ルールとポリシーを設定します。ILM ルールとポリシーは、オブジェクトデータのコピーを作成して分散し、一定の期間にわたって管理する方法を StorageGRID に指示します。 
+---
+= ILM によるオブジェクトの管理：概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムのオブジェクトを管理するには、情報ライフサイクル管理（ ILM ）ルールとポリシーを設定します。ILM ルールとポリシーは、オブジェクトデータのコピーを作成して分散し、一定の期間にわたって管理する方法を StorageGRID に指示します。
+
+
+
+== これらの手順について
+
+ILM ルールと ILM ポリシーを設計して実装するには、慎重な計画が必要です。運用要件、 StorageGRID システムのトポロジ、オブジェクト保護のニーズ、使用可能なストレージタイプについて理解しておく必要があります。次に、さまざまなタイプのオブジェクトをどのようにコピー、分散、および格納するかを決定する必要があります。
+
+次の手順に従って、次の操作を行います
+
+* オブジェクトのライフサイクル全体にわたる ILM の動作、 ILM ポリシーとルールなど、 StorageGRID ILM の機能について説明します。
+* ストレージプール、イレイジャーコーディングプロファイル、 ILM ルールの設定方法について説明します。
+* 1 つ以上のサイトのオブジェクトデータを保護する ILM ポリシーを作成してアクティブ化する方法について説明します。
+* S3 オブジェクトロックを使用してオブジェクトを管理する方法について説明します。特定の S3 バケット内のオブジェクトが指定した期間にわたって削除または上書きされないようにするのに役立ちます。
+
+
+
+
+== 詳細はこちら。
+
+詳細については、次のビデオをご覧ください。
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["ビデオ： StorageGRID ILM Rules ： Getting Started"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
+image::../media/video-screenshot-ilm-rules.png[ビデオ： StorageGRID ILM Rules ： Getting Started]
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["ビデオ： StorageGRID ILM Policies"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
+image::../media/video-screenshot-ilm-policies.png[ビデオ： StorageGRID ILM Policies]
+
+

@@ -1,0 +1,23 @@
+---
+permalink: monitor/index.html 
+sidebar: sidebar 
+keywords: monitor StorageGRID 
+summary: 以下の手順に従って、 StorageGRID システムを監視し、発生する可能性のある問題を評価および解決します。 
+---
+= モニタとトラブルシューティング：概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+以下の手順に従って、 StorageGRID システムを監視し、発生する可能性のある問題を評価および解決します。
+
+
+
+== これらの手順について
+
+以下の手順では、 Grid Manager を使用して StorageGRID システムを監視する方法について説明します。定期的に監視する必要がある情報、アラートやレガシーアラームの管理方法、監視に SNMP を使用する方法、および指標や診断などの追加の StorageGRID データを取得する方法について説明します。
+
+また、 StorageGRID システムのトラブルシューティング方法、すべてのシステムアラート、レガシーアラーム、ログファイルについて説明します。
+
+StorageGRID システムのインストール後に監視およびサポートする場合は、ここに記載する手順に従ってください。

@@ -1,0 +1,53 @@
+---
+permalink: sg6000/unable-to-connect-to-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, troubleshooting, connect, connection, unable to connect, no connection 
+summary: アプライアンスに接続できない場合は、ネットワーク問題 があるか、またはハードウェアの設置が正常に完了していない可能性があります。 
+---
+= アプライアンスに接続できません
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスに接続できない場合は、ネットワーク問題 があるか、またはハードウェアの設置が正常に完了していない可能性があります。
+
+.手順
+. SANtricity システムマネージャに接続できない場合は、次の手順を実行します。
++
+.. SANtricity システムマネージャの管理ネットワークで、どちらかのストレージコントローラの IP アドレスを使用してアプライアンスに ping を送信します。 +`*ping_Storage_Controller_IP_*`
+.. ping からの応答がない場合は、正しい IP アドレスを使用していることを確認します。
++
+どちらかのストレージコントローラの管理ポート 1 の IP アドレスを使用してください。
+
+.. IP アドレスが正しい場合は、アプライアンスのケーブル接続とネットワークのセットアップを確認します。
++
+この手順で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+
+.. ping が成功した場合は、 Web ブラウザを開きます。
+.. SANtricity System Manager:+`*https://_Storage_Controller_IP_*` の URL を入力します
++
+SANtricity System Manager のログインページが表示されます。
+
+
+
+. SG6000-CN コントローラに接続できない場合は、次の手順を実行します。
++
+.. SG6000-CN コントローラの IP アドレス「 * ping_SG6000-CN - CN_Controller_IP_* 」を使用してアプライアンスに ping を送信してみます
+.. ping からの応答がない場合は、正しい IP アドレスを使用していることを確認します。
++
+グリッドネットワーク、管理ネットワーク、またはクライアントネットワークでのアプライアンスの IP アドレスを使用できます。
+
+.. IP アドレスが正しい場合は、アプライアンスのケーブル接続、 SFP トランシーバ、およびネットワークのセットアップを確認します。
+.. SG6000-CN への物理的なアクセスが可能な場合は、永続的なリンクローカル IP 169.254.0.1 への直接接続を使用して、コントローラのネットワーク設定を確認し、必要に応じて更新できます。詳細な手順については、のステップ 2 を参照してください xref:..//sg6000/accessing-storagegrid-appliance-installer-sg6000.adoc[StorageGRID アプライアンスインストーラへのアクセス]。
++
+この手順で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
+
+.. ping が成功した場合は、 Web ブラウザを開きます。
+.. StorageGRID アプライアンスインストーラの URL を入力します :+`*https://_SG6000-CN_Controller_IP_:8443*`
++
+ホームページが表示されます。
+
+
+
+

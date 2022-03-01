@@ -1,0 +1,83 @@
+---
+permalink: admin/removing-user-or-group-from-cifs-audit-share.html 
+sidebar: sidebar 
+keywords: cifs audit client 
+summary: 監査共有にアクセス可能な最後のユーザまたはグループを削除することはできません。 
+---
+= CIFS 監査共有からユーザまたはグループを削除する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査共有にアクセス可能な最後のユーザまたはグループを削除することはできません。
+
+.必要なもの
+* root アカウントのパスワードを含む「 passwords.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+* 「 Configuration.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+
+
+CIFS / Samba を使用した監査エクスポートは廃止されており、 StorageGRID の今後のリリースで削除される予定です。
+
+.手順
+. プライマリ管理ノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_primary_Admin_Node_IP_`
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+
+. CIFS 設定ユーティリティを起動します :'config_cifs.RB
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. ユーザまたはグループの削除を開始します。 'remove-user-from-share'
++
+管理ノードで使用可能な監査共有に番号が振られ、リストに表示されます。監査共有には「 audit-export 」というラベルが付けられています。
+
+. 監査共有の番号として '_audit_share_number_' を入力します
+. ユーザーまたはグループの削除を求めるメッセージが表示されたら、「 user 」または「 group 」を選択します
++
+監査共有のユーザまたはグループに番号が振られ、リストに表示されます。
+
+. 削除するユーザまたはグループに対応する番号を入力します :`_number_`
++
+監査共有が更新され、ユーザまたはグループは監査共有にアクセスできなくなります。例：
+
++
+[listing]
+----
+Enabled shares
+ 1. audit-export
+Select the share to change: 1
+Remove user or group? [User/group]: User
+Valid users for this share
+1. audituser
+2. newaudituser
+Select the user to remove: 1
+
+Removed user "audituser" from share "audit-export".
+
+Press return to continue.
+----
+. CIFS 設定ユーティリティを閉じます
+. StorageGRID 環境で他のサイトに管理ノードが含まれている場合は、必要に応じて各サイトで監査共有を無効にします。
+. 構成が完了したら ' 各コマンド・シェルからログアウトします :exit
+

@@ -1,0 +1,88 @@
+---
+permalink: sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, status, indicators, lights, leds, light, led, switch , button, power, reset, identify, alarm, indicator, boot codes, boot, code, start, startup, start up, start-up, progress, sg6000-cn 
+summary: SG6000-CN コントローラには、次のインジケータやボタンなど、コントローラのステータスの確認に役立つインジケータが搭載されています。 
+---
+= SG6000-CN コントローラのステータスインジケータとボタンを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN コントローラには、次のインジケータやボタンなど、コントローラのステータスの確認に役立つインジケータが搭載されています。
+
+image::../media/sg6000_cn_front_indicators.gif[前面のインジケータ - SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+|  | 表示 | 説明 
+
+
+ a| 
+1.
+ a| 
+電源ボタン
+ a| 
+* 青色：コントローラの電源がオンになっています。
+* off ：コントローラの電源がオフになっています。
+
+
+
+
+ a| 
+2.
+ a| 
+リセットボタン
+ a| 
+_ インジケータなし _
+
+このボタンを使用して、コントローラのハードリセットを実行します。
+
+
+
+ a| 
+3.
+ a| 
+識別ボタン
+ a| 
+* 点滅または青で点灯：キャビネットまたはラック内のコントローラを示します。
+* 消灯：キャビネットやラック内のコントローラを目視で識別できません。
+
+
+このボタンは、点滅、点灯、または消灯に設定できます。
+
+
+
+ a| 
+4.
+ a| 
+アラーム LED
+ a| 
+* アンバー：エラーが発生しました。
++
+* 注： * ブート時のコードとエラーコードを確認するには、 BMC インターフェイスにアクセスする必要があります。
+
+* 消灯：エラーはありません。
+
+
+|===
+
+
+== 一般的なブートコード
+
+SG6000-CN コントローラのブート時またはハードリセット後、次の処理が実行されます。
+
+. ベースボード管理コントローラ（ BMC ）が、ブート処理のコード（発生したエラーを含む）を記録します。
+. 電源ボタンが点灯します。
+. ブート中にエラーが発生した場合は、アラーム LED が点灯します。
++
+ブート時のコードとエラーコードを表示するには、 BMC インターフェイスにアクセスする必要があります。
+
+
+
+xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置（ SG6000 ）のトラブルシューティング]
+
+xref:configuring-bmc-interface-sg6000.adoc[BMC インターフェイス（ SG6000 ）の設定]
+
+xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[SG6000-CN コントローラの電源をオンにして、動作を確認します]

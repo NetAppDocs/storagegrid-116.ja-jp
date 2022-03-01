@@ -1,0 +1,51 @@
+---
+permalink: admin/signing-out-of-grid-manager.html 
+sidebar: sidebar 
+keywords: grid manager, sign on, log out 
+summary: Grid Manager の使用が完了したら、サインアウトして、権限のないユーザが StorageGRID システムにアクセスできないようにする必要があります。ブラウザのクッキーの設定によっては、ブラウザを閉じてもシステムからサインアウトされない場合があります。 
+---
+= Grid Manager からサインアウトします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager の使用が完了したら、サインアウトして、権限のないユーザが StorageGRID システムにアクセスできないようにする必要があります。ブラウザのクッキーの設定によっては、ブラウザを閉じてもシステムからサインアウトされない場合があります。
+
+.手順
+. 右上のユーザ名を選択します。
++
+image::../media/sign_out.png[サインアウトリンク]
+
+. 「サインアウト」を選択します。
++
+[cols="1a,1a"]
+|===
+| オプション | 説明 
+
+
+ a| 
+SSO は使用されていません
+ a| 
+管理ノードからサインアウトされます。
+
+Grid Manager のサインインページが表示されます。
+
+* 注： * 複数の管理ノードにサインインした場合、各ノードからサインアウトする必要があります。
+
+
+
+ a| 
+SSO が有効です
+ a| 
+アクセスしていたすべての管理ノードからサインアウトされます。StorageGRID のサインインページが表示されます。*Grid Manager* は、 [Recent Accounts] * ドロップダウンにデフォルトとして表示され、 [*Account ID*] フィールドには 0 と表示されます。
+
+* 注： SSO が有効で Tenant Manager にもサインインしている場合は、 SSO からサインアウトするためにテナントアカウントからもサインアウトする必要があります。
+
+|===
+
+
+.関連情報
+* xref:configuring-sso.adoc[シングルサインオンを設定します]
+* xref:../tenant/index.adoc[テナントアカウントを使用する]
+

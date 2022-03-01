@@ -1,0 +1,13 @@
+---
+permalink: sg6000/installing-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, hardware, install, installing 
+summary: ハードウェアの設置作業では、 SG6000-CN コントローラとストレージコントローラシェルフをキャビネットまたはラックに設置し、ケーブルを接続し、電源を投入します。 
+---
+= ハードウェア（ SG6000 ）を設置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェアの設置作業では、 SG6000-CN コントローラとストレージコントローラシェルフをキャビネットまたはラックに設置し、ケーブルを接続し、電源を投入します。

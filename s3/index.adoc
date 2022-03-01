@@ -1,0 +1,13 @@
+---
+permalink: s3/index.html 
+sidebar: sidebar 
+keywords: about s3, s3 overview 
+summary: StorageGRID は、 Representational State Transfer （ REST ）の Web サービスのセットとして実装される Simple Storage Service （ S3\） をサポートします。S3 REST API のサポートにより、 S3 Web サービス用に開発されたサービス指向アプリケーションを、 StorageGRID システムを使用するオンプレミスのオブジェクトストレージと接続できます。クライアントアプリケーションで現在使用している S3 REST API 呼び出しの変更は、最小限しか必要ありません。 
+---
+= S3 を使用：概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID は、 Representational State Transfer （ REST ）の Web サービスのセットとして実装される Simple Storage Service （ S3 ）をサポートします。S3 REST API のサポートにより、 S3 Web サービス用に開発されたサービス指向アプリケーションを、 StorageGRID システムを使用するオンプレミスのオブジェクトストレージと接続できます。クライアントアプリケーションで現在使用している S3 REST API 呼び出しの変更は、最小限しか必要ありません。

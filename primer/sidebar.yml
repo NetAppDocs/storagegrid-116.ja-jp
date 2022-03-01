@@ -1,0 +1,61 @@
+---
+section: primer
+title: グリッド入門
+entries:
+- title: 概要
+  pdf-filename: StorageGRID グリッド入門
+  url: "/primer/index.html"
+- title: StorageGRID を使用したハイブリッドクラウド
+  url: "/primer/hybrid-clouds-with-storagegrid.html"
+- title: アーキテクチャとネットワークトポロジ
+  url: "/primer/storagegrid-architecture-and-network-topology.html"
+- title: オブジェクト管理
+  entries:
+  - title: StorageGRID によるデータの管理方法
+    url: "/primer/how-storagegrid-manages-data.html"
+  - title: オブジェクトライフサイクル
+    entries:
+    - title: オブジェクトのライフサイクル
+      url: "/primer/life-of-object.html"
+    - title: 取り込みのデータフロー
+      url: "/primer/ingest-data-flow.html"
+    - title: コピー管理
+      url: "/primer/copy-management.html"
+    - title: 読み出しのデータフロー
+      url: "/primer/retrieve-data-flow.html"
+    - title: データフローを削除します
+      url: "/primer/delete-data-flow.html"
+- title: StorageGRID の使用方法
+  entries:
+  - title: Grid Manager を探索します
+    url: "/primer/exploring-grid-manager.html"
+  - title: Tenant Manager を確認します
+    url: "/primer/exploring-tenant-manager.html"
+  - title: StorageGRID アクセスを制御します
+    url: "/primer/controlling-storagegrid-access.html"
+  - title: テナントとクライアント接続を管理する
+    url: "/primer/managing-tenants-and-client-connections.html"
+  - title: ネットワークの設定を行います
+    url: "/primer/configuring-network-settings.html"
+  - title: セキュリティを設定します
+    url: "/primer/configuring-security-settings.html"
+  - title: システム設定を構成します
+    url: "/primer/configuring-system-settings.html"
+  - title: 情報ライフサイクル管理を使用
+    url: "/primer/using-information-lifecycle-management.html"
+  - title: 処理を監視
+    entries:
+    - title: ノードの表示ページ
+      url: "/primer/viewing-nodes-page.html"
+    - title: アラートを監視および管理する
+      url: "/primer/monitoring-and-managing-alerts.html"
+    - title: SNMP による監視を使用する
+      url: "/primer/using-snmp-monitoring.html"
+    - title: 監査メッセージを確認します
+      url: "/primer/reviewing-audit-messages.html"
+  - title: メンテナンスを実施します
+    url: "/primer/performing-maintenance-procedures.html"
+  - title: リカバリパッケージをダウンロード
+    url: "/primer/downloading-recovery-package.html"
+  - title: サポートオプションを使用します
+    url: "/primer/using-storagegrid-support-options.html"

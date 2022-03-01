@@ -1,0 +1,52 @@
+---
+permalink: maintain/selecting-start-recovery-to-configure-gateway-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, gateway node 
+summary: ゲートウェイノードを交換したら、 Grid Manager で Start Recovery を選択して、障害が発生したノードの代わりとして新しいノードを設定する必要があります。 
+---
+= Start Recovery を選択して、ゲートウェイノードを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ゲートウェイノードを交換したら、 Grid Manager で Start Recovery を選択して、障害が発生したノードの代わりとして新しいノードを設定する必要があります。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Maintenance または Root Access 権限が必要です。
+* プロビジョニングパスフレーズが必要です。
+* 交換用ノードの導入と設定が完了している必要があります。
+
+
+.手順
+. Grid Manager から * maintenance * > * Tasks * > * Recovery * を選択します。
+. リカバリするグリッドノードを Pending Nodes リストで選択します。
++
+ノードは障害が発生するとリストに追加されますが、再インストールされてリカバリの準備ができるまでは選択できません。
+
+. プロビジョニングパスフレーズ * を入力します。
+. [ リカバリの開始 ] をクリックします。
++
+image::../media/4b_select_recovery_node.png[Maintenance > Recovery ページを示すスクリーンショット]
+
+. リカバリ中のグリッドノードテーブルで、リカバリの進行状況を監視します。
++
+
+NOTE: リカバリ手順 の実行中に [* リセット ] をクリックすると、新しいリカバリを開始できます。情報ダイアログボックスが表示され、手順 をリセットするとノードが不確定な状態のままになることが示されます。
+
++
+image::../media/recovery_reset_warning.gif[リカバリのリセットに関する警告を示すダイアログボックスのスクリーンショット]
+
++
+手順 をリセットしたあとにリカバリを再試行する場合は、次の手順でノードをインストール前の状態にリストアする必要があります。
+
++
+** * vmware * ：導入した仮想グリッドノードを削除します。その後、リカバリを再開する準備ができたら、ノードを再導入します。
+** *Linux*: Linux ホスト上で次のコマンドを実行してノードを再起動します StorageGRID node force-recovery_node-name_
+** * アプライアンス * ：手順 をリセットした後にリカバリを再試行する場合は ' ノードで sgareinstall を実行することにより ' アプライアンス・ノードをインストール前の状態にリストアする必要があります
+
+
+
+
+xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[再インストールのためのアプライアンスの準備（プラットフォームの交換のみ）]

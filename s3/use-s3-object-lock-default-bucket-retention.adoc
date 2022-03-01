@@ -1,0 +1,112 @@
+---
+permalink: s3/use-s3-object-lock-default-bucket-retention.html 
+sidebar: sidebar 
+keywords: s3 object lock, default bucket retention 
+summary: バケットで S3 オブジェクトのロックが有効になっている場合は、バケットに追加された各オブジェクトに適用されるデフォルトの保持モードとデフォルトの保持期間を指定できます。 
+---
+= S3 オブジェクトロックのデフォルトバケット保持を使用する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+バケットで S3 オブジェクトのロックが有効になっている場合は、バケットに追加された各オブジェクトに適用されるデフォルトの保持モードとデフォルトの保持期間を指定できます。
+
+* バケットの作成時に S3 オブジェクトロックを有効または無効にすることができます。
+* バケットで S3 オブジェクトロックが有効になっている場合は、バケットのデフォルトの保持を設定できます。
+* デフォルトの保持設定は次のとおりです。
++
+** デフォルトの保持モード： StorageGRID は「準拠」モードのみをサポートします。
+** デフォルトの保持期間（日数または年数）。
+
+
+
+
+
+
+== オブジェクトロック設定の取得
+
+GET Object Lock Configuration 要求を使用すると、バケットでオブジェクトロックが有効になっているかどうかを確認できます。有効になっている場合は、バケットにデフォルトの保持モードと保持期間が設定されているかどうかを確認できます。
+
+オブジェクトの新しいバージョンがバケットに取り込まれる際には、デフォルトの保持モードが適用されるのは、「 x-amz-object-lock-mode 」が指定されていない場合です。デフォルトの保持期間は、「 x-amz-object-lock-retain-date 」が指定されていない場合に、 retain-until date の計算に使用されます。
+
+この処理を完了するには、 s3 ： GetBucketObjectLockConfiguration 権限または root アカウントが必要です。
+
+
+
+=== 要求例
+
+[listing, subs="specialcharacters,quotes"]
+----
+GET /bucket?object-lock HTTP/1.1
+Host: _host_
+Accept-Encoding: identity
+User-Agent: aws-cli/1.18.106 Python/3.8.2 Linux/4.4.0-18362-Microsoft botocore/1.17.29
+x-amz-date: _date_
+x-amz-content-sha256: _authorization string_
+Authorization: _authorization string_
+----
+
+
+=== 応答例
+
+[listing]
+----
+HTTP/1.1 200 OK
+x-amz-id-2: iVmcB7OXXJRkRH1FiVq1151/T24gRfpwpuZrEG11Bb9ImOMAAe98oxSpXlknabA0LTvBYJpSIXk=
+x-amz-request-id: B34E94CACB2CEF6D
+Date: Fri, 04 Sep 2020 22:47:09 GMT
+Transfer-Encoding: chunked
+Server: AmazonS3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectLockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <ObjectLockEnabled>Enabled</ObjectLockEnabled>
+    <Rule>
+        <DefaultRetention>
+            <Mode>COMPLIANCE</Mode>
+            <Years>6</Years>
+        </DefaultRetention>
+    </Rule>
+</ObjectLockConfiguration>
+----
+
+
+== PUT Object Lock の設定を指定します
+
+PUT Object Lock Configuration 要求を使用すると、オブジェクトロックが有効になっているバケットのデフォルトの保持モードとデフォルトの保持期間を変更できます。以前に設定したデフォルトの保持設定を削除することもできます。
+
+オブジェクトの新しいバージョンがバケットに取り込まれる際には、デフォルトの保持モードが適用されるのは、「 x-amz-object-lock-mode 」が指定されていない場合です。デフォルトの保持期間は、「 x-amz-object-lock-retain-date 」が指定されていない場合に、 retain-until date の計算に使用されます。
+
+オブジェクトバージョンの取り込み後にデフォルトの保持期間が変更された場合、オブジェクトバージョンの retain-until はそのまま残り、新しいデフォルトの保持期間を使用して再計算されることはありません。
+
+この処理を完了するには、 s3 ： PutBucketObjectLockConfiguration 権限または root アカウントが必要です。
+
+PUT 要求では 'Content-MD5' 要求ヘッダーを指定する必要があります
+
+
+
+=== 要求例
+
+[listing, subs="specialcharacters,quotes"]
+----
+PUT /bucket?object-lock HTTP/1.1
+Accept-Encoding: identity
+Content-Length: 308
+Host: _host_
+Content-MD5: _request header_
+User-Agent: s3sign/1.0.0 requests/2.24.0 python/3.8.2
+X-Amz-Date: _date_
+X-Amz-Content-SHA256: _authorization string_
+Authorization: _authorization string_
+
+<ObjectLockConfiguration>
+    <ObjectLockEnabled>Enabled</ObjectLockEnabled>
+    <Rule>
+        <DefaultRetention>
+            <Mode>COMPLIANCE</Mode>
+            <Years>6</Years>
+        </DefaultRetention>
+    </Rule>
+</ObjectLockConfiguration>
+----

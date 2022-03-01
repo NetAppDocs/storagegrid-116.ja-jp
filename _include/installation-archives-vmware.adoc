@@ -1,0 +1,6 @@
+= 
+
+
+「 StorageGRIDWebscale--_version__ vmware --uniqueID_.zip 」を参照してください
+
+「 StorageGRIDWebscale--_version__ vmware --uniqueID_.tgz 」と入力します

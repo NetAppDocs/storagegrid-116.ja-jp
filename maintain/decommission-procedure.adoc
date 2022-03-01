@@ -1,0 +1,33 @@
+---
+permalink: maintain/decommission-procedure.html 
+sidebar: sidebar 
+keywords: how to decommission 
+summary: 手順 の運用停止を実行して、グリッドノードまたはサイト全体を StorageGRID システムから完全に削除できます。 
+---
+= 手順 の運用を停止
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+手順 の運用停止を実行して、グリッドノードまたはサイト全体を StorageGRID システムから完全に削除できます。
+
+グリッドノードまたはサイトを削除するには、次のいずれかの運用停止手順を実行します。
+
+* ノードの運用停止 * を実行し、 1 つ以上のサイトにある 1 つ以上のノードを削除します。削除するノードは、オンラインで StorageGRID システムに接続されている場合とオフラインで切断されている場合があります。
+* 接続されているサイトの運用停止 * を実行し、すべてのノードが StorageGRID に接続されているサイトを削除します。
+* 「切断されたサイトの運用停止」を実行し、すべてのノードが StorageGRID から切断されているサイトを削除します。
++
+
+IMPORTANT: 切断されたサイトの運用停止を実行する前に、ネットアップのアカウント担当者にお問い合わせください。運用停止サイトのウィザードですべての手順を有効にする前に、要件を確認してください。切断されているサイトの運用停止は、サイトをリカバリしたり、サイトからオブジェクトデータをリカバリしたりできる可能性がある場合は、試行しないでください。
+
+
+
+サイトに接続された（image:../media/icon_alert_green_checkmark.png["アイコンアラートの緑のチェックマーク"]）および切断されているノード（image:../media/icon_alarm_gray_administratively_down.png["アイコンのアラームグレーが管理上ダウンしています"] または image:../media/icon_alarm_blue_unknown.png["アイコンアラーム青不明"]）の場合は、すべてのオフラインノードをオンラインに戻す必要があります。
+
+
+NOTE: 2 回目のメンテナンス手順 を実行する必要がある場合は、を実行します xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[ストレージノードを削除している間は、運用停止手順 を一時停止します]。* Pause * ボタンは、 ILM 評価またはイレイジャーコーディングデータの運用停止ステージに達したときにのみ有効になります。ただし、 ILM 評価（データ移行）はバックグラウンドで継続して実行されます。2 つ目のメンテナンス手順 が完了したら、運用停止手順を再開できます。
+
+xref:grid-node-decommissioning.adoc[グリッドノードの運用停止]
+
+xref:site-decommissioning.adoc[サイトの運用停止]

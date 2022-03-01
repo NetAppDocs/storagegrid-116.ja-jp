@@ -1,0 +1,20 @@
+---
+permalink: maintain/hotfix-planning-and-preparation.html 
+sidebar: sidebar 
+keywords: storagegrid, hotfix, prepare for a hotfix, plan for a hotfix 
+summary: ホットフィックスを適用する際は、 StorageGRID システムの中断を最小限に抑えるために、事前に計画を立てておく必要があります。 
+---
+= ホットフィックスの適用を計画して準備
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホットフィックスを適用する際は、 StorageGRID システムの中断を最小限に抑えるために、事前に計画を立てておく必要があります。
+
+.手順
+* xref:how-your-system-is-affected-when-you-apply-hotfix.adoc[ホットフィックス適用時のシステムへの影響]
+* xref:obtaining-required-materials-for-hotfix.adoc[ホットフィックスに必要な項目の確認]
+* xref:downloading-hotfix-file.adoc[ホットフィックスファイルをダウンロードしています]
+* xref:checking-systems-condition-before-applying-hotfix.adoc[ホットフィックス適用前のシステムの状態の確認]
+

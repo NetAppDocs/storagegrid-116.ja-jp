@@ -1,0 +1,29 @@
+---
+permalink: sg100-1000/automating-appliance-installation-and-configuration.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, automate, automating, automation, automatic, install, installation, configuration, configure 
+summary: アプライアンスのインストールと設定、および StorageGRID システム全体の設定を自動化することができます。 
+---
+= アプライアンスのインストールと設定（ SG100 および SG1000 ）を自動化する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスのインストールと設定、および StorageGRID システム全体の設定を自動化することができます。
+
+インストールと設定を自動化すると、複数の StorageGRID インスタンス、または大規模で複雑な StorageGRID インスタンスを 1 つ導入する場合に便利です。
+
+インストールと設定を自動化するには、次のオプションを 1 つ以上使用します。
+
+* アプライアンスの構成設定を指定した JSON ファイルを作成します。StorageGRID アプライアンスインストーラを使用して JSON ファイルをアップロードします。
++
+
+NOTE: 同じファイルを使用して、複数のアプライアンスを設定できます。
+
+* StorageGRID の configure -sSGA .py Python スクリプトを使用して、アプライアンスの設定を自動化します。
+* 追加の Python スクリプトを使用して、 StorageGRID システム全体の他のコンポーネント（「グリッド」）を設定します。
+
+
+
+NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の手順を参照してください xref:../maintain/downloading-and-extracting-storagegrid-installation-files.adoc[StorageGRID インストールファイルのダウンロードと展開]。

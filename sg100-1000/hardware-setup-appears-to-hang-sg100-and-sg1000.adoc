@@ -1,0 +1,22 @@
+---
+permalink: sg100-1000/hardware-setup-appears-to-hang-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。 
+---
+= ハードウェアのセットアップがハングしたように見える（ SG100 と SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。
+
+.手順
+. アプライアンスの LED と、 BMC に表示されるブートコードとエラーコードを確認します。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+
+xref:viewing-boot-up-codes-for-appliance-sg100-and-sg1000.adoc[アプライアンスのブート時のコードを確認します]
+
+xref:viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.adoc[アプライアンスのエラーコードを確認します]

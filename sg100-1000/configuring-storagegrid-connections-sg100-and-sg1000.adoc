@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/configuring-storagegrid-connections-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, storagegrid connections, connections, configure, setup, set up 
+summary: サービスアプライアンスをノードとして StorageGRID システムに導入するには、アプライアンスと使用するネットワークの間の接続を設定する必要があります。ネットワークを設定するには、サービスアプライアンスにプリインストールされている StorageGRID アプライアンスインストーラにアクセスします。 
+---
+= StorageGRID 接続の設定（ SG100 および SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスアプライアンスをノードとして StorageGRID システムに導入するには、アプライアンスと使用するネットワークの間の接続を設定する必要があります。ネットワークを設定するには、サービスアプライアンスにプリインストールされている StorageGRID アプライアンスインストーラにアクセスします。

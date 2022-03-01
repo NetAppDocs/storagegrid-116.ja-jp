@@ -1,0 +1,33 @@
+---
+permalink: s3/deprecated-put-bucket-request-modifications-for-compliance.html 
+sidebar: sidebar 
+keywords: S3 REST API, S3 operations, deprecated bucket requests for compliance 
+summary: SGCompliance XML 要素は廃止されました。これまでは、この StorageGRID カスタム要素を PUT Bucket 要求のオプションの XML 要求の本文に含めて準拠バケットを作成できました。 
+---
+= 廃止：準拠のための PUT Bucket 要求の変更
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SGCompliance XML 要素は廃止されました。これまでは、この StorageGRID カスタム要素を PUT Bucket 要求のオプションの XML 要求の本文に含めて準拠バケットを作成できました。
+
+
+IMPORTANT: 以前のバージョンの StorageGRID で提供されていた StorageGRID 準拠機能は廃止され、 S3 オブジェクトロックに置き換えられました。
+
+xref:using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]
+
+xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^]
+
+準拠を有効にした新しいバケットを作成することはできなくなりました。準拠バケットを新しく作成するために PUT Bucket 要求の変更を使用しようとすると、次のエラーメッセージが返されます。
+
+[listing]
+----
+The Compliance feature is deprecated.
+Contact your StorageGRID administrator if you need to create new Compliant buckets.
+----
+xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+xref:../tenant/index.adoc[テナントアカウントを使用する]

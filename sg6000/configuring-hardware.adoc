@@ -1,0 +1,13 @@
+---
+permalink: sg6000/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: アプライアンスの電源を入れたら、 StorageGRID で使用するネットワーク接続を設定する必要があります。SANtricity System Manager を設定する必要があります。これは、コントローラシェルフのストレージコントローラとその他のハードウェアを監視するためのソフトウェアです。また、 SG6000-CN コントローラの BMC インターフェイスにアクセスできることを確認する必要もあります。 
+---
+= ハードウェア（ SG6000 ）の設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスの電源を入れたら、 StorageGRID で使用するネットワーク接続を設定する必要があります。SANtricity System Manager を設定する必要があります。これは、コントローラシェルフのストレージコントローラとその他のハードウェアを監視するためのソフトウェアです。また、 SG6000-CN コントローラの BMC インターフェイスにアクセスできることを確認する必要もあります。

@@ -1,0 +1,40 @@
+---
+permalink: tenant/deleting-your-own-s3-access-keys.html 
+sidebar: sidebar 
+keywords: how to delete S3 access key 
+summary: S3 テナントを使用している場合は、適切な権限があれば、自分の S3 アクセスキーを削除できます。アクセスキーを削除すると、テナントアカウント内のオブジェクトとバケットにそのアクセスキーでアクセスできなくなります。 
+---
+= 自分の S3 アクセスキーを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 テナントを使用している場合は、適切な権限があれば、自分の S3 アクセスキーを削除できます。アクセスキーを削除すると、テナントアカウント内のオブジェクトとバケットにそのアクセスキーでアクセスできなくなります。
+
+.必要なもの
+* Tenant Manager にはを使用してサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Manage Your Own S3 Credentials 権限が必要です。を参照してください xref:tenant-management-permissions.adoc[テナント管理権限]。
+
+
+
+IMPORTANT: アカウントに属する S3 バケットとオブジェクトには、 Tenant Manager でアカウントに表示されるアクセスキー ID とシークレットアクセスキーを使用してアクセスできます。このため、アクセスキーはパスワードと同じように保護する必要があります。定期的にアクセスキーをローテーションし、使用されていないキーはアカウントから削除します。また、他のユーザとはアクセスキーを共有しないでください。
+
+.手順
+. 「 * storage （ S3 ） * > * My access keys * 」を選択します。
++
+[ マイアクセスキー ] ページが表示され、既存のアクセスキーが一覧表示されます。
+
+. 削除する各アクセスキーのチェックボックスを選択します。
+. 「 * Delete key （キーの削除）」 * を選択
++
+確認のダイアログボックスが表示されます。
+
++
+image::../media/access_key_confirm_delete.png[アクセスキー - 削除の確認]
+
+. 「 * Delete key （キーの削除）」 * を選択
++
+ページの右上に確認メッセージが表示されます。キャッシングに時間がかかるため変更には最大で 15 分を要します。
+
+

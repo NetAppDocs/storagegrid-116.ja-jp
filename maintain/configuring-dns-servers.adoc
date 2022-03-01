@@ -1,0 +1,35 @@
+---
+permalink: maintain/configuring-dns-servers.html 
+sidebar: sidebar 
+keywords: storagegrid, dns, configuring dns, configure dns, domain name system 
+summary: IP アドレスではなく完全修飾ドメイン名 \ （ FQDN\ ）を使用できるよう、ドメインネームシステム（ DNS\ ）サーバを追加、削除、更新することができます。 
+---
+= DNS サーバを設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+IP アドレスではなく Fully Qualified Domain Name （ FQDN ；完全修飾ドメイン名）ホスト名を使用できるよう、 Domain Name System （ DNS ；ドメインネームシステム）サーバを追加、削除、更新することができます。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Maintenance または Root Access 権限が必要です。
+* 設定する DNS サーバの IP アドレスを確認しておく必要があります。
+
+
+DNS サーバ情報を指定すると、 E メール通知や SNMP 通知、および AutoSupport に、 IP アドレスではなく完全修飾ドメイン名（ FQDN ）ホスト名を使用できるようになります。DNS サーバは少なくとも 2 つ指定することを推奨します。
+
+
+IMPORTANT: DNS サーバの IP アドレスは 2~6 つ指定します。一般に、ネットワーク分離が発生した場合に各サイトがローカルにアクセスできる DNS サーバを選択します。これにより、分離されたサイトは引き続き DNS サービスにアクセスできます。グリッド全体の DNS サーバリストを設定したら、次の操作を実行できます xref:modifying-dns-configuration-for-single-grid-node.adoc[各ノードの DNS サーバリストをさらにカスタマイズします]。
+
+DNS サーバ情報を省略したり誤って設定したりすると、各グリッドノードの SSM サービスで DNST アラームがトリガーされます。このアラームは、 DNS が正しく設定され、新しいサーバ情報がすべてのグリッドノードに配信された時点で解除されます。
+
+.手順
+. [* maintenance * （メンテナンス * ） ] > [* Network * （ネットワーク * ） ] > [* DNS servers * （ * DNS サーバー
+. 必要に応じて、 Servers セクションで、アップデートを追加するか、 DNS サーバエントリを削除します。
++
+サイトごとに少なくとも 2 つの DNS サーバを指定することを推奨します。DNS サーバは 6 つまで指定できます。
+
+. [ 保存（ Save ） ] をクリックします。
+

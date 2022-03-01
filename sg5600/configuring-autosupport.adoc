@@ -1,0 +1,63 @@
+---
+permalink: sg5600/configuring-autosupport.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, configure, configuring, set up, setup, autosupport, auto support 
+summary: AutoSupport ツールは、アプライアンスからカスタマーサポートバンドルのデータを収集し、テクニカルサポートに自動的に送信します。AutoSupport を設定すると、トラブルシューティングや問題の分析をテクニカルサポートがリモートから行えるようになります。 
+---
+= AutoSupport を設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AutoSupport ツールは、アプライアンスからカスタマーサポートバンドルのデータを収集し、テクニカルサポートに自動的に送信します。AutoSupport を設定すると、トラブルシューティングや問題の分析をテクニカルサポートがリモートから行えるようになります。
+
+.必要なもの
+* AutoSupport 機能をアクティブ化し、アプライアンスで有効にする必要があります。
++
+AutoSupport 機能のアクティブ化と非アクティブ化は、ストレージ管理ステーションでグローバルに設定します。
+
+* Storage Manager Event Monitor は、アプライアンスにアクセスできる 1 台以上のマシン上で実行する必要があります。できれば、複数のマシン上で実行することはできません。
+
+
+すべてのデータが単一のアーカイブファイル（ .7z 形式）に圧縮されて、指定した場所に格納されます。
+
+AutoSupport には、次の種類のメッセージが用意されています。
+
+|===
+| メッセージタイプ | 説明 
+
+
+ a| 
+イベントメッセージ
+ a| 
+* 管理対象アプライアンスでサポートイベントが発生したときに送信されます
+* システム構成と診断情報が含まれます
+
+
+
+
+ a| 
+毎日のメッセージ
+ a| 
+* アプライアンスのローカル時間にユーザが設定可能な時間間隔で、 1 日に 1 回送信されます
+* 現在のシステムイベントログとパフォーマンスデータが含まれます
+
+
+
+
+ a| 
+週次メッセージ
+ a| 
+* アプライアンスのローカル時間内にユーザが設定可能な時間間隔で、毎週 1 回送信されます
+* 構成とシステムの状態の情報が含まれます
+
+
+|===
+.手順
+. SANtricity ストレージ・マネージャの [ エンタープライズ管理 ] ウィンドウで '[ デバイス ] タブを選択し '[* 検出されたストレージ・アレイ * ] を選択します
+. [ ツール（ Tools ） ] [ * （ * ） ] [ ツール（ * AutoSupport ） ] [ * 構成（ * Configuration ） ]
+. SANtricity Storage Manager のオンラインヘルプを必要に応じて参照しながら、タスクを完了します。
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["ネットアップのマニュアル： SANtricity Storage Manager"^]

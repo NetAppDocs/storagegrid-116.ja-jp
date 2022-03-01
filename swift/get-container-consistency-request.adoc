@@ -1,0 +1,119 @@
+---
+permalink: swift/get-container-consistency-request.html 
+sidebar: sidebar 
+keywords: get container consistency request 
+summary: 整合性レベルを設定する場合は、オブジェクトの可用性と、異なるストレージノードおよびサイト間におけるオブジェクトの整合性のどちらかを犠牲にしなければなりません。GET コンテナ整合性要求では、特定のコンテナに適用されている整合性レベルを確認できます。 
+---
+= GET コンテナセイコウセイヨウキユウ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+整合性レベルを設定する場合は、オブジェクトの可用性と、異なるストレージノードおよびサイト間におけるオブジェクトの整合性のどちらかを犠牲にしなければなりません。GET コンテナ整合性要求では、特定のコンテナに適用されている整合性レベルを確認できます。
+
+
+
+== リクエスト
+
+|===
+| 要求の HTTP ヘッダー | 説明 
+
+
+ a| 
+「 X-Auth-Token 」
+ a| 
+要求に使用するアカウントの Swift 認証トークンを指定します。
+
+
+
+ a| 
+x-ntap-sg-consistency
+ a| 
+要求のタイプを指定しますここで 'true'= コンテナの整合性を取得し 'false'= コンテナを取得します
+
+
+
+ a| 
+ホスト
+ a| 
+要求の転送先のホスト名。
+
+|===
+
+
+== 要求例
+
+[listing]
+----
+GET /v1/28544923908243208806/Swift container
+X-Auth-Token: SGRD_3a877009a2d24cb1801587bfa9050f29
+x-ntap-sg-consistency: true
+Host: test.com
+----
+
+
+== 応答
+
+|===
+| 応答の HTTP ヘッダー | 説明 
+
+
+ a| 
+「日付」
+ a| 
+応答の日時。
+
+
+
+ a| 
+「接続」
+ a| 
+サーバへの接続が開いているかどうか。
+
+
+
+ a| 
+「 X-Trans-ID 」
+ a| 
+要求の一意のトランザクション ID 。
+
+
+
+ a| 
+「 Content-Length 」
+ a| 
+応答の本文の長さ。
+
+
+
+ a| 
+x-ntap-sg-consistency
+ a| 
+コンテナに適用されている整合性制御レベルです。次の値がサポートされています。
+
+* * all * ：すべてのノードが即座にデータを受け取り、受け取れない場合は要求が失敗します。
+* * strong-global * ：すべてのサイトにおけるすべてのクライアント要求について、リードアフターライト整合性が保証されます。
+* * strong-site * ： 1 つのサイトにおけるすべてのクライアント要求について、リードアフターライト整合性が保証されます。
+* * read-after-new-write * ：新規オブジェクトについてはリードアフターライト整合性が提供され、オブジェクトの更新については結果整合性が提供されます。高可用性が確保され、データ保護が保証されます。
++
+* 注：存在しないオブジェクトに対してアプリケーションが HEAD 要求を使用すると、使用できないストレージノードがあると「 500 Internal Server Error 」が大量に返される可能性があります。これらのエラーを防ぐには、「 available 」レベルを使用します。
+
+* * available * （ HEAD オペレーションについては結果整合性）：「 read-after-new-write 」整合性レベルと動作は同じですが、 HEAD オペレーションについては結果整合性のみを提供します。ストレージ・ノードが使用できない場合 ' リードアフター・新規ライトよりもヘッド操作の可用性が高くなります
+
+
+|===
+
+
+== 応答例
+
+[listing]
+----
+HTTP/1.1 204 No Content
+Date: Sat, 29 Nov 2015 01:02:18 GMT
+Connection: CLOSE
+X-Trans-Id: 1936575373
+Content-Length: 0
+x-ntap-sg-consistency: strong-site
+----
+xref:../tenant/index.adoc[テナントアカウントを使用する]

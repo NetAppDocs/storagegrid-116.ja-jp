@@ -1,0 +1,63 @@
+---
+permalink: audit/client-read-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, client read, SGET, SHEA, WGET, WHEA, S3, swift 
+summary: クライアント読み取り監査メッセージは、 S3 または Swift クライアントアプリケーションがオブジェクトを読み出す要求を行うときに記録されます。 
+---
+= クライアント読み取り監査メッセージ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+クライアント読み取り監査メッセージは、 S3 または Swift クライアントアプリケーションがオブジェクトを読み出す要求を行うときに記録されます。
+
+|===
+| コード | 説明 | によって使用されます | を参照してください 
+
+
+ a| 
+SGET
+ a| 
+S3 GET ：バケット内のオブジェクトを読み出しまたはリストアップするトランザクションの成功をログに記録します。
+
+* 注：トランザクションがサブリソースで動作している場合、監査メッセージには S3SR フィールドが含まれます。
+ a| 
+S3 クライアント
+ a| 
+xref:sget-s3-get.adoc[SGET ： S3 GET]
+
+
+
+ a| 
+Shea
+ a| 
+S3 HEAD ：オブジェクトまたはバケットの存在を確認するトランザクションの成功をログに記録します。
+ a| 
+S3 クライアント
+ a| 
+xref:shea-s3-head.adoc[Shea ： S3 ヘッド]
+
+
+
+ a| 
+wget
+ a| 
+Swift GET ：コンテナ内のオブジェクトを読み出しまたはリストアップするトランザクションの成功をログに記録します。
+ a| 
+Swift クライアント
+ a| 
+xref:wget-swift-get.adoc[wget ： Swift GET]
+
+
+
+ a| 
+WHEA
+ a| 
+Swift HEAD ：オブジェクトまたはコンテナの存在を確認するトランザクションの成功をログに記録します。
+ a| 
+Swift クライアント
+ a| 
+xref:whea-swift-head.adoc[WHEA ： Swift ヘッド]
+
+|===

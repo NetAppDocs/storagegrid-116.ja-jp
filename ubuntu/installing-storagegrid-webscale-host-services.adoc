@@ -1,0 +1,40 @@
+---
+permalink: ubuntu/installing-storagegrid-webscale-host-services.html 
+sidebar: sidebar 
+keywords: how to install StorageGRID host services 
+summary: StorageGRID ホストサービスをインストールするには、 StorageGRID の DEB パッケージを使用します。 
+---
+= StorageGRID ホストサービスをインストールする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID ホストサービスをインストールするには、 StorageGRID の DEB パッケージを使用します。
+
+以下の手順では、 DEB パッケージからホストサービスをインストールする方法を説明します。また、インストールアーカイブに含まれている APT リポジトリメタデータを使用して、 DEB パッケージをリモートでインストールすることもできます。使用している Linux オペレーティングシステムの APT リポジトリに関する手順を参照してください。
+
+.手順
+. StorageGRID の DEB パッケージを個々のホストにコピーするか、共有ストレージに置きます。
++
+たとえば ' これらのコマンドを /tmp' ディレクトリに配置すると ' 次の手順で Example コマンドを使用できるようになります
+
+. 各ホストに root アカウントまたは sudo 権限を持つアカウントでログインし、次のコマンドを実行します。
++
+最初にイメージパッケージをインストールし ' 次にサービスパッケージをインストールする必要がありますパッケージを /tmp' 以外のディレクトリに配置した場合は ' 使用したパスを反映するようにコマンドを変更します
+
++
+[listing]
+----
+sudo dpkg --install /tmp/storagegrid-webscale-images-version-SHA.deb
+----
++
+[listing]
+----
+sudo dpkg --install /tmp/storagegrid-webscale-service-version-SHA.deb
+----
++
+
+IMPORTANT: StorageGRID パッケージをインストールするには、 Python 2.7 がインストールされている必要があります。sudo dpkg --install /tmp/storagegrid-webscale-images-version-SHA.deb` コマンドは、これを行うまで失敗します。
+
+

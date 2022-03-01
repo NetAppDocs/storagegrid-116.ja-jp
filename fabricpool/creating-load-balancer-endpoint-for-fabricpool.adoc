@@ -1,0 +1,91 @@
+---
+permalink: fabricpool/creating-load-balancer-endpoint-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, load balancer, endpoint, load balancing, create, creating, certificate 
+summary: FabricPool で使用する StorageGRID を設定する場合は、ロードバランサエンドポイントを設定し、ロードバランサエンドポイントの証明書をアップロードする必要があります。この証明書は、 ONTAP と StorageGRID の間の接続を保護するために使用されます。 
+---
+= FabricPool のロードバランサエンドポイントを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+FabricPool で使用する StorageGRID を設定する場合は、ロードバランサエンドポイントを設定し、ロードバランサエンドポイントの証明書をアップロードする必要があります。この証明書は、 ONTAP と StorageGRID の間の接続を保護するために使用されます。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Root アクセス権限が割り当てられている。
+* 次のファイルが必要です。
++
+** Server Certificate ：カスタムサーバ証明書ファイル。
+** Server Certificate Private Key ：カスタムサーバ証明書の秘密鍵ファイル。
+** CA Bundle ：各中間発行認証局（ CA ）の証明書を含む単一のオプションファイル。このファイルには、 PEM でエンコードされた各 CA 証明書ファイルが、証明書チェーンの順序で連結して含まれている必要があります。
+
+
+
+
+このタスクの詳細については、を参照してください xref:../admin/configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]。
+
+.手順
+. [ * configuration * > * Network * > * Load Balancer Endpoints * ] を選択します。
+. 「 * Create * 」を選択します。
++
+image::../media/load_balancer_endpoint_create_http.png[ロードバランサエンドポイントの作成]
+
+. エンドポイントの詳細を入力します。
++
+[cols="1a,2a"]
+|===
+| フィールド | 説明 
+
+
+ a| 
+名前
+ a| 
+エンドポイントのわかりやすい名前
+
+
+
+ a| 
+ポート
+ a| 
+ロードバランシングに使用する StorageGRID ポート。このフィールドのデフォルト値は 10433 ですが、未使用の外部ポートを入力することもできます。80 または 443 と入力すると、エンドポイントは管理ノードで予約されているため、ゲートウェイノードにのみ設定されます。
+
+* 注： * 他のグリッドサービスで使用されているポートは使用できません。を参照してくださいxref:../network/network-port-reference.adoc[ネットワークポートのリファレンス]。
+
+StorageGRID を FabricPool クラウド階層として接続する場合は、 ONTAP に同じポート番号を指定する必要があります。
+
+
+
+ a| 
+クライアントタイプ
+ a| 
+S3 を選択します。
+
+
+
+ a| 
+ネットワークプロトコル
+ a| 
+[*HTTPS*] を選択します。
+
+* 注 * ： HTTP * の使用はサポートされていますが、推奨されません。
+
+|===
+. 「 * Continue * 」を選択します。
+. バインドモードを指定します。
++
+[ グローバル * （ Global * ） ] 設定を使用するか（推奨）、このエンドポイントのアクセス性を次のいずれかに制限します。
+
++
+** 特定のノードの特定のネットワークインターフェイス。
+** 特定のハイアベイラビリティ（ HA ）仮想 IP アドレス（ VIP ）。このオプションは、ワークロードの分離レベルを大幅に高める必要がある場合にのみ使用してください。
+
+
+. 「 * Continue * 」を選択します。
+. [ 証明書のアップロード *( 推奨 )] を選択し、サーバ証明書、証明書の秘密鍵、およびオプションの CA バンドルを参照します。
+. 「 * Create * 」を選択します。
+
+
+
+NOTE: エンドポイント証明書の変更がすべてのノードに適用されるまでに最大 15 分かかることがあります。

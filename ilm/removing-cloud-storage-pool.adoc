@@ -1,0 +1,49 @@
+---
+permalink: ilm/removing-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: remove cloud storage pool 
+summary: ILM ルールで使用されておらず、オブジェクトデータが含まれていないクラウドストレージプールを削除できます。 
+---
+= クラウドストレージプールを削除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ILM ルールで使用されておらず、オブジェクトデータが含まれていないクラウドストレージプールを削除できます。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* S3 バケットまたは Azure コンテナにオブジェクトが含まれていないことを確認します。クラウドストレージプールにオブジェクトが含まれている場合、そのストレージプールを削除しようとするとエラーが発生します。を参照してください xref:troubleshooting-cloud-storage-pools.adoc[クラウドストレージプールのトラブルシューティング]。
++
+
+NOTE: クラウドストレージプールを作成すると、 StorageGRID はバケットまたはコンテナにマーカーファイルを書き込み、クラウドストレージプールとして識別します。このファイルは削除しないでください。削除するファイルの名前は「 x-ntap-sgws -ccloud-pool-uuid 」です。
+
+* プールを使用している可能性のある ILM ルールを削除しておきます。
+
+
+.手順
+. ILM * > * Storage pools * を選択します
++
+Storage Pools （ストレージプール）ページが表示されます。
+
+. ILM ルールで現在使用されていないクラウドストレージプールのラジオボタンを選択します。
++
+ILM ルールで使用されているクラウドストレージプールは削除できません。「 * 削除」ボタンは無効になっています。
+
++
+image::../media/cloud_storage_pool_used_in_ilm_rule.png[ILM ルールで使用されているクラウドストレージプール]
+
+. 「 * 削除」を選択します。
++
+確認の警告が表示されます。
+
++
+image::../media/cloud_storage_pool_remove.gif[クラウドストレージプールの削除]
+
+. 「 * OK 」を選択します。
++
+クラウドストレージプールが削除されます。
+
+

@@ -1,0 +1,20 @@
+---
+permalink: maintain/using-donotstart-file.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, donotstart, do not start, donotstart file, do not start file 
+summary: テクニカルサポートの指示の下でメンテナンスや設定の手順を実行している場合は、 Server Manager の起動時または再起動時にサービスが開始されないように、 DoNotStart ファイルを使用するよう求められることがあります。 
+---
+= DoNotStart ファイルを使用します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+テクニカルサポートの指示の下でメンテナンスや設定の手順を実行している場合は、 Server Manager の起動時または再起動時にサービスが開始されないように、 DoNotStart ファイルを使用するよう求められることがあります。
+
+
+IMPORTANT: DoNotStart ファイルは、テクニカルサポートから指示があった場合のみ追加または削除してください。
+
+サービスが開始されないようにするには、そのサービスのディレクトリに DoNotStart ファイルを配置します。Server Manager は起動時に DoNotStart ファイルを検索し、ファイルが存在する場合、サービス（およびそれに依存するサービス）は開始されません。DoNotStart ファイルを削除すると、停止されていたサービスは、 Server Manager が次回起動または再起動したときに開始されます。DoNotStart ファイルを削除しても、サービスは自動的には開始されません。
+
+すべてのサービスを再開しないようにする最も効率的な方法は、 NTP サービスを開始しないようにすることです。すべてのサービスは NTP サービスに依存しているため、 NTP サービスが実行されていない場合は実行できません。

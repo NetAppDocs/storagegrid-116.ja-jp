@@ -1,0 +1,75 @@
+---
+permalink: maintain/linux-exporting-node-from-source-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, export node, linux source host 
+summary: グリッドノードをシャットダウンして、ソースの Linux ホストからエクスポートします。 
+---
+= Linux ：ソースホストからノードをエクスポートします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッドノードをシャットダウンして、ソースの Linux ホストからエクスポートします。
+
+ソースの Linux ホストで次のコマンドを実行します。
+
+. ソースホストで現在実行されているすべてのノードのステータスを取得します。
++
+[listing]
+----
+sudo storagegrid node status all
+----
++
+Name Config - State Run-State
+
++
+「 DC1-ADM1 は実行されています」
+
++
+「 DC1-ARC1 configured RUNNING 」
+
++
+DC1-GW1 が実行されています
+
++
+「 DC1-S1 が実行されています」
+
++
+DC1-S2 が設定されています
+
++
+DC1-S3 が実行されています
+
+. 移行するノードの名前を特定し、その Run-State が「 running 」の場合は停止します。
++
+[listing]
+----
+sudo storagegrid node stop DC1-S3
+----
++
+ノード DC1-S3 を停止しています
+
++
+「ノードのシャットダウンを最大 630 秒待機しています」というメッセージが表示されます
+
+. ソースホストからノードをエクスポートします。
++
+[listing]
+----
+sudo storagegrid node export DC1-S3
+----
++
+ノード DC1-S3 の /dev/mapper/sgws-dc1-s3-var-local.` へのエクスポートが完了しました
+
++
+StorageGRID node import /dev/mapper/sgws -dc1 -s3 – var-local を使用する場合は 'use ' を使用します
+
++
+「もう一度インポートしたいですね。
+
+. 「 export 」コマンドの出力に表示される「 import 」コマンドをメモします。
++
+次の手順で、このコマンドをターゲットホストで実行します。
+
+

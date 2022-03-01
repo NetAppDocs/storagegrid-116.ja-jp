@@ -1,0 +1,75 @@
+---
+permalink: admin/configuring-s3-api-endpoint-domain-names.html 
+sidebar: sidebar 
+keywords: s3 api, endpoint domain names, virtual hosted-style requests 
+summary: S3 仮想ホスト形式の要求をサポートするには、 Grid Manager を使用して、 S3 クライアントの接続先となるエンドポイントのドメイン名のリストを設定する必要があります。 
+---
+= S3 API エンドポイントのドメイン名を設定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 仮想ホスト形式の要求をサポートするには、 Grid Manager を使用して、 S3 クライアントの接続先となるエンドポイントのドメイン名のリストを設定する必要があります。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* グリッドのアップグレードが進行中でないことを確認します。
++
+
+CAUTION: ドメイン名の設定は、グリッドのアップグレードの進行中は変更しないでください。
+
+
+
+クライアントが S3 エンドポイントのドメイン名を使用できるようにするには、次の作業をすべて実行する必要があります。
+
+* Grid Manager を使用して、 S3 エンドポイントのドメイン名を StorageGRID システムに追加します。
+* クライアントが StorageGRID への HTTPS 接続に使用する証明書が、クライアントが必要とするすべてのドメイン名に対して署名されていることを確認します。
++
+たとえば ' エンドポイントが s3.company.com` の場合 'HTTPS 接続に使用される証明書には 's3.company.com` エンドポイントとエンドポイントのワイルドカード Subject Alternative Name (SAN):*.s3.company.com` が含まれていることを確認する必要があります
+
+* クライアントが使用する DNS サーバを設定します。クライアントが接続に使用する IP アドレスの DNS レコードを含め、ワイルドカード名を含む必要なすべてのエンドポイントドメイン名をレコードが参照するようにします。
++
+
+NOTE: クライアントは、ゲートウェイノード、管理ノード、またはストレージノードの IP アドレスを使用するか、ハイアベイラビリティグループの仮想 IP アドレスに接続することで、 StorageGRID に接続できます。DNS レコードに正しい IP アドレスを追加するためには、クライアントアプリケーションがグリッドに接続する方法を理解しておく必要があります。
+
+
+
+グリッドへの HTTPS 接続を使用するクライアント（推奨）では、次のいずれかの証明書を使用できます。
+
+* ロードバランサエンドポイントに接続するクライアントは、そのエンドポイント用のカスタム証明書を使用できます。各ロードバランサエンドポイントは、異なるエンドポイントドメイン名を認識するように設定できます。
+* ロードバランサエンドポイントに接続するクライアント、ストレージノードに直接接続するクライアント、またはゲートウェイノード上の廃止された CLB サービスに直接接続するクライアントは、グローバル S3 および Swift API 証明書をカスタマイズして、必要なエンドポイントのドメイン名をすべて含めることができます。
+
+
+.手順
+. [ * configuration * > * Network * > * Domain Names * ] を選択します。
++
+[Endpoint Domain Names] ページが表示されます。
+
++
+image::../media/configure_endpoint_domain_names.png[[Endpoint Domain Names] ダイアログボックスのスクリーンショット]
+
+. S3 API エンドポイントのドメイン名のリストを * Endpoint * フィールドに入力します。を使用します image:../media/icon_plus_sign_black_on_white_old.png["プラス記号アイコン"] アイコンをクリックしてフィールドを追加します。
++
+このリストが空の場合、 S3 仮想ホスト形式の要求のサポートは無効になります。
+
+. [ 保存（ Save ） ] を選択します。
+. クライアントが使用するサーバ証明書が、必要なエンドポイントのドメイン名と一致していることを確認します。
++
+** クライアントが独自の証明書を使用するロードバランサエンドポイントに接続する場合は、エンドポイントに関連付けられている証明書を更新します。
+** クライアントがグローバルな S3 および Swift API 証明書を使用するロードバランサエンドポイントに接続する場合は、ストレージノードに直接接続するか、またはゲートウェイノード上の CLB サービスに直接接続する場合は、グローバルな S3 および Swift API 証明書を更新します。
+
+
+. エンドポイントのドメイン名要求を解決するために必要な DNS レコードを追加します。
+
+
+これで、クライアントがエンドポイント bucket.s3.company.com` を使用すると、 DNS サーバは正しいエンドポイントに解決し、証明書はエンドポイントを認証します。
+
+.関連情報
+* xref:../s3/index.adoc[S3 を使用する]
+* xref:viewing-ip-addresses.adoc[IP アドレスを表示します]
+* xref:configure-high-availability-group.adoc[ハイアベイラビリティグループを設定する]
+* xref:configuring-custom-server-certificate-for-storage-node-or-clb.adoc[S3 および Swift API 証明書を設定する]
+* xref:configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]
+

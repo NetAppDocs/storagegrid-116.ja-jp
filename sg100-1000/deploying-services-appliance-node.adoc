@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/deploying-services-appliance-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying 
+summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。SG100 と SG1000 アプライアンスは、両方がゲートウェイノードと管理ノード（プライマリまたは非プライマリ）として同時に動作します。 
+---
+= サービスアプライアンスノードを導入する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。SG100 と SG1000 アプライアンスは、両方ともゲートウェイノードと管理ノード（プライマリまたは非プライマリ）として同時に動作できます。

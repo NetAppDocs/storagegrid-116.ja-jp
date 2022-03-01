@@ -1,0 +1,114 @@
+---
+permalink: admin/adding-user-or-group-to-cifs-audit-share.html 
+sidebar: sidebar 
+keywords: CIFS, add user to audit share, add group to audit share, ad authentication 
+summary: AD 認証と統合されている CIFS 監査共有にユーザまたはグループを追加できます。 
+---
+= CIFS 監査共有にユーザまたはグループを追加する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AD 認証と統合されている CIFS 監査共有にユーザまたはグループを追加できます。
+
+.必要なもの
+* root/admin アカウントのパスワードを持つ「 passwords.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+* 「 Configuration.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+
+
+次の手順 は、 AD 認証と統合されている監査共有用です。
+
+
+NOTE: CIFS / Samba を使用した監査エクスポートは廃止されており、 StorageGRID の今後のリリースで削除される予定です。
+
+.手順
+. プライマリ管理ノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_primary_Admin_Node_IP_`
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+
+. すべてのサービスの状態が「 Running 」または「 Verified 」であることを確認します。「 storagegrid-status 」と入力します
++
+すべてのサービスが「 Running 」または「 Verified 」でない場合は、問題を解決してから続行してください。
+
+. コマンドラインに戻り、 * Ctrl * + * C * を押します。
+. CIFS 設定ユーティリティを起動します :'config_cifs.RB
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. ユーザまたはグループの追加を開始します。「 add-user-to share
++
+設定済みの監査共有に番号が振られ、リストに表示されます。
+
+. プロンプトが表示されたら ' 監査共有 (audit-export):`_audit_share_number_` の番号を入力します
++
+この監査共有へのアクセスをユーザまたはグループに許可するかどうかの確認を求められます。
+
+. プロンプトが表示されたら、ユーザまたはグループ「 user 」または「 group 」を追加します
+. プロンプトが表示されたら、この AD 監査共有のユーザまたはグループ名を入力します。
++
+サーバのオペレーティングシステムと CIFS サービスの両方で、ユーザまたはグループが読み取り専用として監査共有に追加されます。Samba 設定がリロードされ、ユーザまたはグループが監査クライアント共有にアクセスできるようになります。
+
+. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+. 監査共有に追加するユーザまたはグループごとに、上記の手順を繰り返します。
+. オプションで、構成を確認します。「 validate-config 」
++
+サービスがチェックされて表示されます。次のメッセージは無視してかまいません。
+
++
+** include ファイル /etc/samba/include/cifs-interfaces.in が見つかりません
+** include ファイル /etc/samba/include/cifs-filesystem.in が見つかりません
+** include ファイル /etc/samba/include/cifs-custom-config.in が見つかりません
+** include ファイル /etc/samba/include/cifs-shares.in が見つかりません
++
+... プロンプトが表示されたら、 * Enter * を押して監査クライアントの設定を表示します。
+... プロンプトが表示されたら、 * Enter * を押します。
+
+
+
+
+. CIFS 設定ユーティリティを閉じます
+. 次の状況に応じて、追加の監査共有を有効にする必要があるかどうかを判断します。
++
+** StorageGRID 環境が単一サイトの場合は、次の手順に進みます。
+** StorageGRID 環境で他のサイトに管理ノードが含まれている場合は、必要に応じてこれらの監査共有を有効にします。
++
+... サイトの管理ノードにリモートからログインします。
++
+.... 次のコマンドを入力します。 ssh admin@_grid_node_name
+.... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.... root に切り替えるには、次のコマンドを入力します
+.... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
+... 同じ手順を繰り返して、管理ノードごとに監査共有を設定します。
+... リモート管理ノードへのリモートの Secure Shell ログインを終了します。「 exit
+
+
+
+
+. コマンドシェルからログアウトします :exit
+

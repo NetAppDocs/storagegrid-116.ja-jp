@@ -1,0 +1,61 @@
+---
+permalink: sg100-1000/monitoring-node-encryption-in-maintenance-mode.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, kms, key management server, monitor, monitoring, status, encryption 
+summary: インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。 
+---
+= メンテナンスモード（ SG100 および SG1000 ）でのノード暗号化の監視
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。
+
+.必要なもの
+* インストール時にアプライアンスのノード暗号化を有効にした。アプライアンスのインストール後にノード暗号化を有効にすることはできません。
+* これで完了です xref:placing-appliance-into-maintenance-mode.adoc[アプライアンスをメンテナンスモードにしました]。
+
+
+.手順
+. StorageGRID アプライアンスインストーラから、 * ハードウェアの設定 * > * ノード暗号化 * を選択します。
++
+image::../media/fde_monitor_in_maint_mode.png[KMS の設定をクリアします]
+
++
+Node Encryption ページには、次の 3 つのセクションがあります。
+
++
+** Encryption Status には、アプライアンスでノード暗号化が有効か無効かが表示されます。
+** キー管理サーバの詳細には、アプライアンスの暗号化に使用されている KMS に関する情報が表示されます。サーバおよびクライアント証明書のセクションを展開すると、証明書の詳細およびステータスを表示できます。
++
+*** 期限切れの証明書の更新など、証明書自体の問題に対処するには、を参照してください xref:../admin/kms-configuring.adoc[KMS の設定方法]。
+*** KMS ホストへの接続で予期しない問題が発生する場合は、を確認してください xref:checking-dns-server-configuration.adoc[ドメインネームシステム（ DNS ）サーバが正しいこと] そしてそれ xref:configuring-network-links-sg100-and-sg1000.adoc[アプライアンスのネットワークが正しく設定されていること]。
+*** 証明書の問題を解決できない場合は、テクニカルサポートにお問い合わせください。
+
+
+** KMS Key をクリアすると、アプライアンスのノード暗号化が無効になり、 StorageGRID サイト用に設定されているアプライアンスとキー管理サーバの間の関連付けが解除され、アプライアンスのすべてのデータが削除されます。実行する必要があります xref:clearing-key-management-server-configuration.adoc[KMS キーをクリアします] 別の StorageGRID システムにアプライアンスを設置する前に、
++
+
+IMPORTANT: KMS の設定をクリアすると、アプライアンスからデータが削除され、永久にアクセスできなくなります。このデータはリカバリできません。
+
+
+
+. ノード暗号化ステータスの確認が完了したら、ノードをリブートします。StorageGRID アプライアンス・インストーラから、 *Advanced*>*Reboot Controller* を選択し、次のいずれかのオプションを選択します。
++
+** Reboot into StorageGRID * を選択し、ノードをグリッドに再追加してコントローラをリブートします。メンテナンスモードで作業を完了し、ノードを通常動作に戻す準備ができている場合は、このオプションを選択します。
+** メンテナンスモードを維持したままコントローラをリブートするには、 * Reboot into Maintenance Mode * を選択します。（このオプションは、コントローラがメンテナンスモードのときにのみ使用できます）。 グリッドに再参加するためにノードで実行する必要のあるメンテナンス処理がほかにある場合は、このオプションを選択します。
++
+image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+
++
+アプライアンスがリブートしてグリッドに再参加するまでに最大 20 分かかることがあります。リブートが完了し、ノードが再びグリッドに参加したことを確認するには、 Grid Manager に戻ります。ノード * ページには、アクティブなアラートがなくノードがグリッドに接続されていることを示すために、アプライアンスノードの通常ステータス（アイコンなし）が表示されます。
+
++
+image::../media/nodes_menu.png[アプライアンスノードがグリッドに再参加しました]
+
+
+
+
+
+xref:../admin/index.adoc[StorageGRID の管理]

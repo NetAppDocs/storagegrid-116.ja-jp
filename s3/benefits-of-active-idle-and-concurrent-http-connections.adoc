@@ -1,0 +1,20 @@
+---
+permalink: s3/benefits-of-active-idle-and-concurrent-http-connections.html 
+sidebar: sidebar 
+keywords: active http connection benefits, idle http connection benefits, concurrent http connection benefits 
+summary: StorageGRID システムのパフォーマンスに影響するのは、 HTTP 接続の設定方法です。設定は、 HTTP 接続がアクティブであるかアイドルであるか、同時に複数の接続を使用するかによって異なります。 
+---
+= アクティブ、アイドル、および同時 HTTP 接続のメリット
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムのパフォーマンスに影響するのは、 HTTP 接続の設定方法です。設定は、 HTTP 接続がアクティブであるかアイドルであるか、同時に複数の接続を使用するかによって異なります。
+
+次の種類の HTTP 接続について、パフォーマンスのメリットを特定することができます。
+
+* アイドル HTTP 接続
+* アクティブ HTTP 接続
+* 同時 HTTP 接続
+

@@ -1,0 +1,62 @@
+---
+permalink: audit/vlst-user-initiated-volume-lost.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, VLST, User Initiated Volume Lost 
+summary: このメッセージは /proc/CMSI/Volume_Lost コマンドが実行されるたびに出力されます。 
+---
+= VLST ：ユーザーが開始したボリュームが失われました
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このメッセージは '/proc/CMSI/Volume_lost` コマンドが実行されるたびに発行されます
+
+|===
+| コード | フィールド | 説明 
+
+
+ a| 
+VOLL
+ a| 
+Volume Identifier （ボリューム識別子）下限
+ a| 
+影響を受けるボリューム範囲の下端、または単一ボリューム。
+
+
+
+ a| 
+volu
+ a| 
+ボリューム識別子上限
+ a| 
+影響を受けるボリューム範囲の終了 ID 。単一ボリュームの場合は VOLL と同じです。
+
+
+
+ a| 
+NOID
+ a| 
+ソースノード ID
+ a| 
+場所が失われたノード ID 。
+
+
+
+ a| 
+LTYP
+ a| 
+保管場所タイプ
+ a| 
+「 CLDI 」（オンライン）または「 CLNL 」（ニアライン）。指定しない場合、デフォルトは「 CLDI 」です。
+
+
+
+ a| 
+RSLT
+ a| 
+結果
+ a| 
+常に「 NONE 」。RSLT は必須のメッセージフィールドですが、このメッセージには該当しません。このメッセージがフィルタリングされないように、「 UCS 」ではなく「 none 」が使用されます。
+
+|===

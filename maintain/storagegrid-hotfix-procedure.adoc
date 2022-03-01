@@ -1,0 +1,15 @@
+---
+permalink: maintain/storagegrid-hotfix-procedure.html 
+sidebar: sidebar 
+keywords: apply hotfix, install hotfix 
+summary: ソフトウェアの問題が検出され、次の機能リリースの前に解決された場合は、 StorageGRID システムへのホットフィックスの適用が必要になる場合があります。 
+---
+= StorageGRID ホットフィックス手順
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ソフトウェアの問題が検出され、次の機能リリースの前に解決された場合は、 StorageGRID システムへのホットフィックスの適用が必要になる場合があります。
+
+StorageGRID のホットフィックスには、フィーチャーパックまたはフィーチャーパックに含まれないソフトウェアの変更が含まれます。今後のリリースにも同じ変更が含まれます。さらに、各ホットフィックスリリースには、その機能またはパッチリリースに含まれる以前のすべてのホットフィックスがまとめて含まれています。

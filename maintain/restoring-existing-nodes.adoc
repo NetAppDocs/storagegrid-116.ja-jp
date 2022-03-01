@@ -1,0 +1,23 @@
+---
+permalink: maintain/restoring-existing-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore node to host 
+summary: 障害グリッドノードを新しい Linux ホストにリストアするには、適切なコマンドを使用してノード構成ファイルをリストアします。 
+---
+= グリッドノードをホストにリストアします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+障害グリッドノードを新しい Linux ホストにリストアするには、適切なコマンドを使用してノード構成ファイルをリストアします。
+
+新規インストールを実行するときは、ホストにインストールするグリッドノードごとにノード構成ファイルを作成します。交換ホストにグリッドノードをリストアするときは、障害グリッドノードのノード構成ファイルをリストアまたは交換します。
+
+以前のホストのブロックストレージボリュームが保持されている場合は、追加のリカバリ手順の実行が必要になることがあります。このセクションのコマンドを使用して、必要な追加手順を特定できます。
+
+.手順
+* xref:restoring-and-validating-grid-nodes.adoc[グリッドノードをリストアして検証する]
+* xref:starting-storagegrid-host-service.adoc[StorageGRID ホストサービスを開始する]
+* xref:recovering-nodes-that-fail-to-start-normally.adoc[正常に開始しないノードをリカバリします]
+

@@ -1,0 +1,118 @@
+---
+permalink: sg100-1000/viewing-status-indicators-on-sg100-and-sg1000-appliances.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, status, indicators, lights, leds, light, led, switch , button, power, reset, identify, alarm, ssd, indicator, boot codes, boot, code, start, startup, start up, start-up, progress 
+summary: アプライアンスには、アプライアンスコントローラと 2 本の SSD のステータスを確認するためのインジケータが搭載されています。 
+---
+= SG100 および SG1000 アプライアンスのステータスインジケータを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスには、アプライアンスコントローラと 2 本の SSD のステータスを確認するためのインジケータが搭載されています。
+
+
+
+== アプライアンスのインジケータとボタン
+
+image::../media/sg6000_cn_front_indicators.gif[前面のインジケータ - SG1000]
+
+|===
+|  | 表示 | 状態 
+
+
+ a| 
+1.
+ a| 
+電源ボタン
+ a| 
+* 青色：アプライアンスの電源がオンになっています。
+* Off ：アプライアンスの電源がオフになっています。
+
+
+
+
+ a| 
+2.
+ a| 
+リセットボタン
+ a| 
+このボタンを使用して、コントローラのハードリセットを実行します。
+
+
+
+ a| 
+3.
+ a| 
+識別ボタン
+ a| 
+このボタンは、点滅、点灯、または消灯に設定できます。
+
+* 青、点滅：キャビネットまたはラック内のアプライアンスを示します。
+* 青、点灯：キャビネットまたはラック内のアプライアンスを示します。
+* 消灯：キャビネットまたはラック内のアプライアンスを目視で識別できません。
+
+
+
+
+ a| 
+4.
+ a| 
+アラーム LED
+ a| 
+* 黄色、点灯：エラーが発生しました。
++
+* 注： * ブート時のコードとエラーコードを確認するには、 BMC インターフェイスにアクセスする必要があります。
+
+* 消灯：エラーはありません。
+
+
+|===
+
+
+== 一般的なブートコード
+
+アプライアンスのブート時やハードリセット後に、次の処理が実行されます。
+
+. ベースボード管理コントローラ（ BMC ）が、ブート処理のコード（発生したエラーを含む）を記録します。
+. 電源ボタンが点灯します。
+. ブート中にエラーが発生した場合は、アラーム LED が点灯します。
++
+ブート時のコードとエラーコードを表示するには、 BMC インターフェイスにアクセスする必要があります。
+
+
+
+
+
+== SSD インジケータ
+
+image::../media/ssd_indicators.png[SSD インジケータ]
+
+|===
+| LED | 表示 | 状態 
+
+
+ a| 
+1.
+ a| 
+ドライブのステータス / 障害
+ a| 
+* 青（点灯）：ドライブはオンラインです
+* 黄色（点滅）：ドライブ障害
+* 消灯：スロットが空です
+
+
+
+
+ a| 
+2.
+ a| 
+ドライブがアクティブです
+ a| 
+青（点滅）：ドライブにアクセス中です
+
+|===
+xref:troubleshooting-hardware-installation-sg100-and-sg1000.adoc[ハードウェアの設置のトラブルシューティング（ SG100 および SG1000 ）]
+
+xref:configuring-bmc-interface-sg1000.adoc[BMC インターフェイスの設定（ SG100 および SG1000 ）]

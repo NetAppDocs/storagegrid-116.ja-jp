@@ -1,0 +1,120 @@
+---
+permalink: sg6000/preparing-site-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。 
+---
+= サイト（ SG6000 ）を準備する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。
+
+.手順
+. 設置場所の温度、湿度、高度範囲、通気、熱放散の要件を満たしていることを確認します。 配線、電源、およびアース。詳細については、 NetApp Hardware Universe を参照してください。
+. 設置場所に SGF6024 の SG6060 または 120V AC 電源が 240V になっていることを確認します。
+. 次のサイズのシェルフ（ケーブルなし）が収まる 48.3cm （ 19 インチ）のキャビネットまたはラックを用意します。
++
+|===
+| シェルフのタイプ | 高さ | 幅 | 奥行き | 最大重量 
+
+
+ a| 
+* SG6060 の E2860 コントローラシェルフ *
+ a| 
+6.87 インチ
+
+（ 17.46 cm ）
+ a| 
+17.66 インチ
+
+（ 44.86 cm ）
+ a| 
+38.25 インチ
+
+（ 97.16 cm ）
+ a| 
+250 ポンド
+
+（ 113 kg ）
+
+
+
+ a| 
+* SG6060 のオプションの拡張シェルフ * （ 1 台または 2 台）
+ a| 
+6.87 インチ
+
+（ 17.46 cm ）
+ a| 
+17.66 インチ
+
+（ 44.86 cm ）
+ a| 
+38.25 インチ
+
+（ 97.16 cm ）
+ a| 
+250 ポンド
+
+（ 113 kg ）
+
+
+
+ a| 
+* EF570 コントローラシェルフ * SGF6024
+ a| 
+3.35 インチ
+
+（ 8.50 cm ）
+ a| 
+17.66 インチ
+
+（ 44.86 cm ）
+ a| 
+19.00 インチ
+
+（ 48.26cm ）
+ a| 
+51.74 ポンド
+
+（ 23.47 kg ）
+
+
+
+ a| 
+* 各アプライアンスの SG6000-CN コントローラ *
+ a| 
+1.70 インチ
+
+（ 4.32 cm ）
+ a| 
+17.32 インチ
+
+（ 44.0 cm ）
+ a| 
+32.0 インチ
+
+（ 81.3 cm ）
+ a| 
+39 ポンド
+
+（ 17.7 kg ）
+
+|===
+. アプライアンスの設置場所を決定します。
++
+
+CAUTION: E2860 コントローラシェルフまたはオプションの拡張シェルフを設置する場合は、機器の転倒を防ぐために、ラックまたはキャビネットの一番下から順にハードウェアを設置してください。最も重い機器をキャビネットまたはラックの一番下に設置するには、 E2860 コントローラシェルフおよび拡張シェルフの上に SG6000-CN コントローラを設置します。
+
++
+
+IMPORTANT: 設置作業を行う前に、アプライアンスに付属の 0.5m 光ケーブル、または用意したケーブルの長さが、計画したレイアウトに十分であることを確認してください。
+
+
+
+https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

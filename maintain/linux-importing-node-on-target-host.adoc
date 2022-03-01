@@ -1,0 +1,52 @@
+---
+permalink: maintain/linux-importing-node-on-target-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, import node, importing node, target host 
+summary: ソースホストからノードをエクスポートしたら、ターゲット Linux ホストにノードをインポートして検証します。検証では、ソースホストと同じブロックストレージおよびネットワークインターフェイスデバイスにノードがアクセスできるかどうかを確認します。 
+---
+= Linux ：ターゲットホストでノードをインポートします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ソースホストからノードをエクスポートしたら、ターゲット Linux ホストにノードをインポートして検証します。検証では、ソースホストと同じブロックストレージおよびネットワークインターフェイスデバイスにノードがアクセスできるかどうかを確認します。
+
+ターゲット Linux ホストで次のコマンドを実行します。
+
+. ターゲットホストにノードをインポートします。
++
+[listing]
+----
+sudo storagegrid node import /dev/mapper/sgws-dc1-s3-var-local
+----
++
+/dev/mapper/sgws-dc1-s3-var-local.` からノード DC1-S3 のインポートが完了しました
+
++
+「 StorageGRID node validate DC1-S3 」を実行する必要があります
+
+. 新しいホストでノード構成を検証します。
++
+[listing]
+----
+sudo storagegrid node validate DC1-S3
+----
++
+ノード DC1-S3 の存在を確認しています ... パス +`
+
++
+「 + ノード DC1-S3 の構成ファイル /etc/storagegrid/nodes/DC1-S3.conf を確認しています ... 」 パス +`
+
++
++ 一意の値の重複をチェックしています ... パス +`
+
+. 検証エラーが発生した場合は、移行したノードを開始する前に対処してください。
++
+トラブルシューティングの情報については、使用している Linux オペレーティングシステムでの StorageGRID のインストール手順を参照してください。
+
+
+
+xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+
+xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]

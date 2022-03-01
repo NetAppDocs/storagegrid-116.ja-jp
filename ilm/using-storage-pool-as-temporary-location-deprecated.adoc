@@ -1,0 +1,20 @@
+---
+permalink: ilm/using-storage-pool-as-temporary-location-deprecated.html 
+sidebar: sidebar 
+keywords: storage pool temporary location 
+summary: ストレージプールを 1 つ含むオブジェクトの配置を使用して ILM ルールを作成する場合は、一時的な場所として使用する 2 つ目のストレージプールを指定するように求められます。 
+---
+= 一時的な場所としてストレージプールを使用する（廃止）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ストレージプールを 1 つ含むオブジェクトの配置を使用して ILM ルールを作成する場合は、一時的な場所として使用する 2 つ目のストレージプールを指定するように求められます。
+
+一時的な場所は廃止されており、今後のリリースで削除される予定です。ストレージプールは、新しい ILM ルールの一時的な場所として選択しないでください。
+
+
+NOTE: Strict 取り込み動作を選択した場合（ Create ILM Rule ウィザードのステップ 3 ）、一時的な場所は無視されます。
+
+xref:data-protection-options-for-ingest.adoc[取り込みのデータ保護オプション]

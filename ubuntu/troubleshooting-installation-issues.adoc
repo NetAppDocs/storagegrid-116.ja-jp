@@ -1,0 +1,39 @@
+---
+permalink: ubuntu/troubleshooting-installation-issues.html 
+sidebar: sidebar 
+keywords: how to troubleshoot ubuntu or debian installation 
+summary: StorageGRID システムのインストール中に問題が発生した場合は、インストールログファイルにアクセスできます。テクニカルサポートが問題を解決するためにインストールログファイルを使用することもあります。 
+---
+= インストールに関する問題のトラブルシューティング
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムのインストール中に問題が発生した場合は、インストールログファイルにアクセスできます。テクニカルサポートが問題を解決するためにインストールログファイルを使用することもあります。
+
+次のインストールログファイルは、各ノードを実行しているコンテナからアクセスできます。
+
+* /var/local/log/install.log （すべてのグリッドノードに存在）
+* /var/local/log/gdu-server.log （プライマリ管理ノードに存在）
+
+
+次のインストールログファイルは、ホストからアクセスできます。
+
+* /var/log/storagegrid/daemon.log
+* /var/log/storagegrid/nodes/ <node-name> .log の形式で指定します
+
+
+ログファイルへのアクセス方法については、 StorageGRID の監視とトラブルシューティングの手順を参照してください。アプライアンスの設置に関する問題のトラブルシューティングについては、使用しているアプライアンスの設置とメンテナンスの手順を参照してください。その他のサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+
+xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+xref:../sg100-1000/index.adoc[SG100 および SG1000 サービスアプライアンス]
+
+xref:../sg6000/index.adoc[SG6000 ストレージアプライアンス]
+
+xref:../sg5700/index.adoc[SG5700 ストレージアプライアンス]
+
+xref:../sg5600/index.adoc[SG5600 ストレージアプライアンス]
+
+https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

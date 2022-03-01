@@ -1,0 +1,23 @@
+---
+permalink: sg5600/storagegrid-appliance-features.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, features 
+summary: StorageGRID SG5600 アプライアンスは、 StorageGRID システムの新規作成や既存システムの容量の拡張に使用できる統合ストレージ解決策 です。 
+---
+= StorageGRID アプライアンスの特長
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SG5600 アプライアンスは、 StorageGRID システムの新規作成や既存システムの容量の拡張に使用できる統合ストレージ解決策 です。
+
+StorageGRID アプライアンスには次のような特長があります。
+
+* StorageGRID ストレージノードのコンピューティング要素とストレージ要素を 1 つに統合した効率的な解決策 です
+* 必要なプロセスのほとんどを自動化できるため、ストレージノードのインストールと設定を簡単に行えます
+* 2U と 4U の 2 種類のエンクロージャが用意された高密度なストレージ解決策 を提供します
+* FC や iSCSI などの中間ストレージインターフェイスを使用せずに、 10GbE の IP インターフェイスでストレージノードに直接接続します
+* は、 StorageGRID アプライアンスと仮想（ソフトウェアベース）のストレージノードを使用するハイブリッドなグリッド環境で使用できます
+* 構成済みのストレージと StorageGRID アプライアンスインストーラが搭載されており（ E5600SG コントローラ）、すぐにソフトウェアの導入と統合を実行できます
+

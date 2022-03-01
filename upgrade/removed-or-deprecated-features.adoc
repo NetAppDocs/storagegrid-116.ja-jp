@@ -1,0 +1,47 @@
+---
+permalink: upgrade/removed-or-deprecated-features.html 
+sidebar: sidebar 
+keywords: features, removed, deprecated 
+summary: 一部の機能については、このリリースで削除または廃止されています。以下の項目を確認して、アップグレードの前にクライアントアプリケーションを更新する必要があるか、または設定を変更する必要があるかを理解してください。 
+---
+= 削除または廃止された機能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一部の機能については、このリリースで削除または廃止されています。以下の項目を確認して、アップグレードの前にクライアントアプリケーションを更新する必要があるか、または設定を変更する必要があるかを理解してください。
+
+
+
+== アラームシステムおよびアラームベースの API が廃止されました
+
+StorageGRID 11.6 リリース以降、従来のアラームシステムは廃止されました。このアラームシステムのユーザインターフェイスと API は、今後のリリースで削除される予定です。
+
+
+IMPORTANT: 従来のアラームをまだ使用している場合は、 StorageGRID 11.6 にアップグレードしたあとにアラートシステムに完全に移行することを計画してください。を参照してください xref:../monitor/managing-alerts-and-alarms.adoc[アラートとアラームの管理：概要] アラートの詳細については、を参照してください。
+
+11.6 リリースでは、すべてのアラームベース API が廃止されました。この変更の影響を受ける API は次のとおりです。
+
+* 'get/grid/alarms': 完全に廃止されました
+* 'get/grid/health/topology': 完全に廃止されました
+* `get/grid/health` ：応答の「 alarm-counts 」セクションは廃止されました
+
+
+
+
+== 今後のリリースでは、 PUT Object について最大 5TiB のオブジェクトサイズはサポートされません
+
+StorageGRID の今後のリリースでは、単一の PUT Object 処理の最大サイズは 5TiB ではなく 5GiB になる予定です。5 GiB よりも大きいオブジェクトでは、最大 5TiB （ 5 、 497 、 558 、 138 、 880 バイト）のマルチパートアップロードを使用できます。
+
+StorageGRID 11.6 では、 S3 クライアントが 5GB を超えるオブジェクトをアップロードしようとしたときに、 PUT Object のサイズが小さいために「 * S3 PUT Object size too large * 」というアラートがトリガーされます。
+
+
+
+== NAS Bridge 機能の廃止
+
+NAS Bridge 機能は、以前に StorageGRID 11.4 リリースで制限付きアクセスになっていました。NAS Bridge 機能は、アクセスが制限されたままで、 StorageGRID 11.6 で廃止されました。
+
+NAS Bridge 11.4 は、引き続き最終リリースであり、 StorageGRID 11.6 との互換性を維持します。を確認します https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] NAS Bridge 11.4 バージョンと StorageGRID バージョン間の互換性を継続するため。
+
+ネットアップサポートサイトでを確認します https://mysupport.netapp.com/site/info/version-support["NAS Bridge のサポートスケジュール"^]。

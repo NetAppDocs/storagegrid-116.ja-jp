@@ -1,0 +1,40 @@
+---
+permalink: sg5600/optional-changing-to-raid6-mode-sg5660-only.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, raid6 
+summary: 60 ドライブを搭載した SG5660 を使用する場合は、ボリューム構成をデフォルトかつ推奨される設定である Dynamic Disk Pools （ DDP ）から RAID 6 に変更できます。モードを変更できるのは、 StorageGRID アプライアンスストレージノードを導入する前だけです。 
+---
+= オプション： RAID 6 モードへの変更（ SG5660 のみ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+60 ドライブを搭載した SG5660 を使用する場合は、ボリューム構成をデフォルトかつ推奨される設定である Dynamic Disk Pools （ DDP ）から RAID 6 に変更できます。モードを変更できるのは、 StorageGRID アプライアンスストレージノードを導入する前だけです。
+
+.必要なもの
+* SG5660 を使用している。SG5612 は RAID 6 をサポートしていない。SG5612 を使用している場合は、 DDP モードを使用する必要があります。
+
+
+
+IMPORTANT: ボリュームがすでに構成されている場合や StorageGRID が事前にインストールされている場合に RAID モードを変更すると、ボリュームが削除されて置き換えられます。対象となったボリュームのデータはすべて失われます。
+
+StorageGRID アプライアンスストレージノードを導入する前に、ボリューム構成オプションを次の 2 つから選択できます。
+
+* * Dynamic Disk Pools （ DDP ） * - 推奨されるデフォルトの設定です。DDP は、システムのパフォーマンスに優れた高度なハードウェアデータ保護方式です。ドライブ障害が発生したあとのリビルド時間を短縮することができ、管理も簡単です。
+* *RAID6 * -- 各ディスクでパリティストライプを使用するハードウェア保護方式で、データが失われる前に RAID セット内の 2 つのディスク障害に対応します。
++
+
+IMPORTANT: ほとんどの StorageGRID 環境では、 RAID 6 の使用が推奨されません。RAID 6 を使用するとストレージ効率が 88% まで向上しますが（ DDP では 80% ）、ドライブ障害からのリカバリの効率は DDP モードの方が優れています。
+
+
+
+.手順
+. サービスラップトップを使用して Web ブラウザを開き、 StorageGRID アプライアンスインストーラ +`*https://_E5600SG_Controller_IP_:8443*` にアクセスします
++
+ここで '_E5600SG コントローラの IP アドレスは '_E5600SG コントローラのいずれかです
+
+. メニューバーから * アドバンスト * > * RAID モード * を選択します。
+. RAID モードの設定 * ページで、モードドロップダウンリストから *RAID6 * を選択します。
+. [ 保存（ Save ） ] をクリックします。
+

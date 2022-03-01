@@ -1,0 +1,187 @@
+---
+permalink: s3/put-object-copy.html 
+sidebar: sidebar 
+keywords: object, add object, put, put object request 
+summary: S3 PUT Object - Copy 要求を使用すると、すでに S3 に格納されているオブジェクトのコピーを作成できます。PUT Object - Copy 処理は、 GET を実行してから PUT を実行する処理と同じです。 
+---
+= PUT Object - Copy の各コマンドを実行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 PUT Object - Copy 要求を使用すると、すでに S3 に格納されているオブジェクトのコピーを作成できます。PUT Object - Copy 処理は、 GET を実行してから PUT を実行する処理と同じです。
+
+
+
+== 競合を解決します
+
+同じキーに書き込む 2 つのクライアントなど、競合するクライアント要求は、「 latest-wins 」ベースで解決されます。「 latest-wins 」評価は、 S3 クライアントが処理を開始するタイミングではなく、 StorageGRID システムが特定の要求を完了したタイミングで行われます。
+
+
+
+== オブジェクトのサイズ
+
+単一 PUT Object 処理の maximum_recommended_size は 5GiB （ 5 、 368 、 709 、 120 バイト）です。5GB より大きいオブジェクトがある場合は、マルチパートアップロードを使用してください。
+
+
+IMPORTANT: StorageGRID 11.6 では、単一 PUT Object 処理の maximum_supported_size は 5TiB （ 5 、 497 、 558 、 138 、 880 バイト）です。ただし、 5GiB を超えるオブジェクトをアップロードしようとすると、 * S3 PUT Object size too large * アラートがトリガーされます。
+
+
+
+== ユーザメタデータ内の UTF-8 文字
+
+要求のユーザ定義メタデータのキー名または値に（エスケープされていない） UTF-8 文字が含まれている場合、 StorageGRID の動作は定義されていません。
+
+ユーザ定義メタデータのキー名または値に含まれているエスケープされた UTF-8 文字は、 StorageGRID で解析も解釈もされません。エスケープされた UTF-8 文字は ASCII 文字として扱われます。
+
+* ユーザ定義メタデータにエスケープされた UTF-8 文字が含まれている場合、要求は正常に実行されます。
+* キーの名前または値の解釈後の値に印刷不能文字が含まれている場合、 StorageGRID は「 x-amz-missing-meta 」ヘッダーを返しません。
+
+
+
+
+== サポートされる要求ヘッダー
+
+次の要求ヘッダーがサポートされています。
+
+* 「 Content-Type 」
+* 「 x-amz-copy-source 」
+* x-amz-copy-source-if-match
+* x-amz-copy-source-if-none-match
+* 「 x-amz-copy-source-if-unmodified-since 」です
+* x-amz-copy-source-if-modified-since
+* x-amz-meta- 。後ろに、ユーザ定義のメタデータを含む名前と値のペアを付加
+* x-amz-metadata-directive ：デフォルト値は「 copy 」です。この場合、オブジェクトおよび関連するメタデータをコピーできます。
++
+オブジェクトのコピー時に既存のメタデータを上書きする場合は 'replace' を指定し ' オブジェクトのメタデータを更新する場合は 'replace' を指定します
+
+* x-amz-storage-class'
+* x-amz-tagging-directive ：デフォルト値は「 copy 」です。この場合、オブジェクトとすべてのタグをコピーできます。
++
+オブジェクトをコピーするときに既存のタグを上書きする場合 ' またはタグを更新する場合は 'replace' を指定できます
+
+* S3 オブジェクトロック要求のヘッダー：
++
+** 「 x-amz-object-lock-mode 」です
+** x-amz-object-lock-retain-until -date' のように指定します
+** 「 x-amz-object-lock-legal hold' 」のようになります
++
+これらのヘッダーがない状態で要求を送信した場合、バケットのデフォルトの保持設定を使用して、オブジェクトバージョンの retain-date が計算されます。
+
++
+xref:using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]
+
+
+
+* SSE 要求ヘッダー：
++
+** x-amz-copy-sourcemalse-server-sideAlgorithme-encryption.Algorithmy-customer-algorithm 」のように指定します
+** x-amz-copy-sourceSourcedming-ser-encryption-customer-key のようになります
+** x-amz-copy-source Sourcedmings-server-side-encryption-customer-key-MD5
+** 「 x-amz-server-side-encryption 」です
+** 「 x-amz-server-side-encryption-customer-key-MD5 」
+** 「 x-amz-server-side-encryption-customer-key 」
+** 「 x-amz-server-side-encryption-customer-algorithm 」を実行します
++
+を参照してください <<Request headers for server-side encryption>>
+
+
+
+
+
+
+
+== サポートされない要求ヘッダーです
+
+次の要求ヘッダーはサポートされていません。
+
+* 「 Cache - Control 」を選択します
+* 「 Content-Disposition 」
+* 「コンテンツエンコーディング」
+* 「 Content - Language 」
+* 'expires'
+* 「 x-amz-website redirect-location 」
+
+
+
+
+== ストレージクラスのオプション
+
+x-amz-storage-class' 要求ヘッダーがサポートされています。一致する ILM ルールで取り込み動作に Dual commit または Balanced が指定されている場合に StorageGRID で作成されるオブジェクトコピーの数に影響します
+
+* 「 standard 」
++
+（デフォルト） ILM ルールで Dual commit オプションが使用されている場合、または Balanced オプションによって中間コピーが作成される場合に、デュアルコミットの取り込み処理を指定します。
+
+* 「 reduced_redundancy 」
++
+ILM ルールで Dual commit オプションが使用されている場合、または Balanced オプションによって中間コピーが作成される場合に、シングルコミットの取り込み処理を指定します。
+
++
+
+NOTE: S3 オブジェクトロックが有効な状態でオブジェクトをバケットに取り込む場合、「 REDUCED_REDUNDANCY 」オプションは無視されます。オブジェクトをレガシー準拠バケットに取り込む場合、「 reduced_redundancy 」オプションはエラーを返します。StorageGRID では、常にデュアルコミットの取り込みが実行され、コンプライアンス要件が満たされます。
+
+
+
+
+
+== PUT Object - Copy で x-amz-copy-source を使用しています
+
+「 x-amz-copy-source 」のヘッダーで指定されたソースのバケットおよびキーがデスティネーションのバケットおよびキーと異なる場合は、ソースのオブジェクトデータのコピーがデスティネーションに書き込まれます。
+
+ソースとデスティネーションが一致し、「 x-amz-metadata-directive 」ヘッダーで「 replace 」が指定されている場合は、要求で指定されたメタデータの値がオブジェクトのメタデータに更新されます。この場合、 StorageGRID はオブジェクトを再取り込みしません。これには 2 つの重要な結果があります。
+
+* PUT Object - Copy を使用して既存のオブジェクトを暗号化したり、既存のオブジェクトの暗号化を変更したりすることはできません。「 x-amz-server-side-encryption’ ヘッダーまたは「 x-amz-server-side-encryption-customer-algorithm 」ヘッダーを指定した場合、 StorageGRID は要求を拒否し、「 XNotImplemented 」を返します。
+* 一致する ILM ルールで指定されている取り込み動作のオプションが使用されません。更新によって発生したオブジェクト配置の変更は、通常のバックグラウンド ILM プロセスで ILM が再評価されるときに実施されます。
++
+このため、 ILM ルールの取り込み動作に Strict オプションが指定されている場合、必要なオブジェクト配置を実行できないと（たとえば、新たに必要となった場所を使用できない場合）、アクションは実行されません。更新されたオブジェクトは、必要な配置を実行可能になるまで現在の配置が維持されます。
+
+
+
+
+
+== サーバ側の暗号化を行うための要求ヘッダー
+
+サーバ側の暗号化を使用する場合は、ソースオブジェクトが暗号化されているかどうか、およびターゲットオブジェクトを暗号化するかどうかによって、指定する要求ヘッダーが異なります。
+
+* ソースオブジェクトがユーザ指定のキーを使用して暗号化されている場合（ SSE-C ）は、オブジェクトを復号化してコピーできるように、 PUT Object - Copy 要求に次の 3 つのヘッダーを含める必要があります。
++
+** x-amz-copy-sourcemalgebals-server-sideAlgorithmebals-encryptedユーザ ・アルゴリズム「 AES256 」を指定します。
+** x-amz-copy-source Sourcedming-ser-encryption-customer-key 「ソースオブジェクトの作成時に指定した暗号化キーを指定します。
+** x-amz-copy-source Sourcedgals-server-side-encryption-customer-key-MD5 ：ソースオブジェクトの作成時に指定した MD5 ダイジェストを指定します。
+
+
+* ユーザが指定および管理する一意のキーでターゲットオブジェクト（コピー）を暗号化する場合は、次の 3 つのヘッダーを含めます。
++
+** 「 x-amz-server-side-encryption-customer-algorithm 」：「 AES256 」を指定します。
+** x-amz-server-side-encryption-customer-key ：ターゲットオブジェクト用の新しい暗号化キーを指定します。
+** x-amz-server-side-encryption-customer-key-MD5 ：新しい暗号化キーの MD5 ダイジェストを指定します。
+
+
+
+
+* 注意： * 指定した暗号化キーは保存されません。暗号化キーを紛失すると、対応するオブジェクトが失われます。お客様提供の鍵を使用してオブジェクト・データを保護する前に ' サーバ側の暗号化を使用の考慮事項を確認してください
+
+* StorageGRID で管理される一意のキーでターゲットオブジェクト（コピー）を暗号化する（ SSE ）には、 PUT Object - Copy 要求に次のヘッダーを含めます。
++
+** 「 x-amz-server-side-encryption 」です
+
+
+
+
+* 注意： * オブジェクトの「 server-side-encryption 」の値は更新できません。代わりに 'x-amz-metadata-directive: 'replace' を使用して ' 新しい 'server-side-encryption' 値をコピーします
+
+
+
+== バージョン管理
+
+ソースバケットでバージョン管理が有効になっている場合は、「 x-amz-copy-source 」ヘッダーを使用してオブジェクトの最新バージョンをコピーできます。オブジェクトの特定のバージョンをコピーするには、コピーするバージョンを versionId サブリソースを使用して明示的に指定する必要があります。デスティネーションのバケットでバージョン管理が有効になっている場合は、生成されたバージョンが「 x-amz-version-id 」応答ヘッダーで返されます。ターゲットバケットのバージョン管理が一時停止されている場合 'x-amz-version-id' は Null 値を返します
+
+xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+xref:using-server-side-encryption.adoc[サーバ側の暗号化を使用します]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[監査ログで追跡される S3 処理]
+
+xref:put-object.adoc[PUT Object の場合]

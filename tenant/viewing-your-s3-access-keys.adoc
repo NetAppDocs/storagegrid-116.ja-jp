@@ -1,0 +1,43 @@
+---
+permalink: tenant/viewing-your-s3-access-keys.html 
+sidebar: sidebar 
+keywords: how to view your s3 access key 
+summary: S3 テナントを使用している場合は、適切な権限があれば、 S3 アクセスキーのリストを表示できます。有効期限でリストをソートすると、まもなく期限切れになるキーを確認できます。必要に応じて、新しいキーを作成したり、使用しなくなったキーを削除したりできます。 
+---
+= S3 アクセスキーを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 テナントを使用している場合は、適切な権限があれば、 S3 アクセスキーのリストを表示できます。有効期限でリストをソートすると、まもなく期限切れになるキーを確認できます。必要に応じて、新しいキーを作成したり、使用しなくなったキーを削除したりできます。
+
+.必要なもの
+* Tenant Manager にはを使用してサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Manage Your Own S3 Credentials 権限が必要です。
+
+
+
+IMPORTANT: アカウントに属する S3 バケットとオブジェクトには、 Tenant Manager でアカウントに表示されるアクセスキー ID とシークレットアクセスキーを使用してアクセスできます。このため、アクセスキーはパスワードと同じように保護する必要があります。定期的にアクセスキーをローテーションし、使用されていないキーはアカウントから削除します。また、他のユーザとはアクセスキーを共有しないでください。
+
+.手順
+. 「 * storage （ S3 ） * > * My access keys * 」を選択します。
++
+[ マイアクセスキー ] ページが表示され、既存のアクセスキーが一覧表示されます。
+
++
+image::../media/access_keys_view_list.png[アクセスキーのリスト]
+
+. キーを * Expiration time * または * Access key ID * でソートします。
+. 必要に応じて、新しいキーを作成し、使用しなくなったキーを手動で削除します。
++
+既存のキーの有効期限が切れる前に新しいキーを作成した場合は、アカウントのオブジェクトに一時的にアクセスできなくなることなく、新しいキーの使用を開始できます。
+
++
+期限切れのキーは自動的に削除されます。
+
+
+
+xref:creating-your-own-s3-access-keys.adoc[独自の S3 アクセスキーを作成します]
+
+xref:deleting-your-own-s3-access-keys.adoc[自分の S3 アクセスキーを削除します]

@@ -1,0 +1,54 @@
+---
+permalink: maintain/configuring-ntp-servers.html 
+sidebar: sidebar 
+keywords: storagegrid, ntp, ntp server, configure ntp, configuring ntp 
+summary: StorageGRID システムのグリッドノード間でデータが正確に同期されるようにするには、ネットワークタイムプロトコル（ NTP ）サーバを追加、更新、または削除します。 
+---
+= NTP サーバを設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムのグリッドノード間でデータが正確に同期されるようにするには、 Network Time Protocol （ NTP ；ネットワークタイムプロトコル）サーバを追加、更新、または削除します。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Maintenance または Root Access 権限が必要です。
+* プロビジョニングパスフレーズが必要です。
+* 設定する NTP サーバの IPv4 アドレスを確認しておく必要があります。
+
+
+StorageGRID システムは、 Network Time Protocol （ NTP ；ネットワークタイムプロトコル）を使用して、グリッド内のすべてのグリッドノード間で時刻を同期します。
+
+各サイトでは、 StorageGRID システムの少なくとも 2 つのノードにプライマリ NTP ロールが割り当てられます。推奨される最低 4 つ、最大 6 つの外部時間ソース、および相互に同期します。StorageGRID システムのプライマリ NTP ノード以外のノードは、すべて NTP クライアントとして機能し、プライマリ NTP ノードと同期されます。
+
+外部 NTP サーバは、以前にプライマリ NTP ロールを割り当てていたノードに接続されます。このため、プライマリ NTP ロールが割り当てられたノードを少なくとも 2 つ指定することを推奨します。
+
+
+IMPORTANT: 各サイトの少なくとも 2 つのノードが、少なくとも 4 つの外部 NTP ソースにアクセスできることを確認します。NTP ソースにアクセスできるノードがサイトに 1 つしかないと、そのノードがダウンした場合にタイミングの問題が生じます。また、各サイトで 2 つのノードをプライマリ NTP ソースとして指定することにより、サイトがグリッドの他の部分から分離されても、正確なタイミングが保証されます。
+
+指定する外部 NTP サーバは、 NTP プロトコルを使用している必要があります。時間のずれに伴う問題を防ぐには、 Stratum 3 以上の NTP サーバ参照を指定する必要があります。
+
+
+NOTE: 本番レベルの StorageGRID インストール環境で外部 NTP ソースを指定する場合は、 Windows Server 2016 より前のバージョンの Windows で Windows Time （ W32Time ）サービスを使用しないでください。以前のバージョンの Windows のタイムサービスは精度が十分でないため、 StorageGRID などの高精度環境での使用は Microsoft でサポートされていません。
+
+https://support.microsoft.com/en-us/help/939322/support-boundary-to-configure-the-windows-time-service-for-high-accura["高精度環境用に Windows タイムサービスを構成するためのサポート境界"^]
+
+インストール時に指定した最初の NTP サーバの安定性や可用性に問題が生じた場合は、サーバの追加や既存のサーバの更新や削除を行って、 StorageGRID システムが使用する外部 NTP ソースのリストを更新できます。
+
+.手順
+. [* maintenance * （メンテナンス） ] > [* Network * （ * ネットワーク * ） ] > [* NTP servers * （ * NTP サーバー
+. 必要に応じて、 Servers セクションで、アップデートを追加するか、 NTP サーバエントリを削除します。
++
+NTP サーバは少なくとも 4 つ指定する必要があり、最大で 6 つまで指定できます。
+
+. ［ * プロビジョニングパスフレーズ * ］ テキストボックスに、 StorageGRID システムのプロビジョニングパスフレーズを入力し、 ［ * 保存 * ］ をクリックします。
++
+手順 のステータスは、ページの上部に表示されます。設定の更新が完了するまで、ページは無効になります。
+
++
+
+IMPORTANT: 新しい NTP サーバを保存したあとに、すべての NTP サーバで接続テストが失敗した場合は、次の手順に進まないでください。テクニカルサポートにお問い合わせください。
+
+

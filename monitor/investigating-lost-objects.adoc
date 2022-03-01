@@ -1,0 +1,198 @@
+---
+permalink: monitor/investigating-lost-objects.html 
+sidebar: sidebar 
+keywords: lost objects, investigating, objects 
+summary: Objects lost * アラートがトリガーされた場合は、すぐに調査する必要があります。影響を受けるオブジェクトに関する情報を収集し、テクニカルサポートに連絡してください。 
+---
+= 損失オブジェクトを調査する
+:experimental: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Objects lost * アラートがトリガーされた場合は、すぐに調査する必要があります。影響を受けるオブジェクトに関する情報を収集し、テクニカルサポートに連絡してください。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* 「 passwords.txt 」ファイルが必要です。
+
+
+* Objects lost * アラートは、 StorageGRID がグリッド内にオブジェクトのコピーがないと判断したことを示します。データが完全に失われた可能性があります。
+
+損失オブジェクトのアラートをただちに調査してください。これ以上のデータ損失を防ぐための対処が必要になる場合があります。迅速に対処すれば、損失オブジェクトをリストアできる場合があります。
+
+.手順
+. [* nodes （ノード） ] を選択します
+. [*_Storage Node_*>* Objects*] を選択します。
+. オブジェクト数の表に表示された損失オブジェクトの数を確認します。
++
+この数値は、 StorageGRID システム全体で欠落していることがグリッドノードで検出されたオブジェクトの合計数を示します。この値は、 LDR サービスと DDS サービスに含まれるデータストアコンポーネントの損失オブジェクトカウンタの合計です。
+
++
+image::../media/nodes_storage_nodes_objects_page_lost_object.png[Nodes ストレージノードのオブジェクトページが失われました]
+
+. 管理ノードから監査ログにアクセスして、 * Objects Lost * アラートをトリガーしたオブジェクトの一意の識別子（ UUID ）を特定します。
++
+.. グリッドノードにログインします。
++
+... 次のコマンドを入力します。 ssh admin@grid_node_name
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+... root に切り替えるには、次のコマンドを入力します
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+.. 監査ログが格納されているディレクトリに移動します。「 cd /var/local/audit/export/` 」と入力します
+.. grep を使用して Object Lost （ OLST ）監査メッセージを抽出します。「 grep OLST audit_file_name 」と入力します
+.. メッセージに含まれている UUID の値をメモします。
++
+[listing]
+----
+>Admin: # grep OLST audit.log
+2020-02-12T19:18:54.780426 [AUDT:[CBID(UI64):0x38186FE53E3C49A5][UUID(CSTR):926026C4-00A4-449B-AC72-BCCA72DD1311]
+[PATH(CSTR):"source/cats"][NOID(UI32):12288733][VOLI(UI64):3222345986][RSLT(FC32):NONE][AVER(UI32):10]
+[ATIM(UI64):1581535134780426][ATYP(FC32):OLST][ANID(UI32):12448208][AMID(FC32):ILMX][ATID(UI64):7729403978647354233]]
+----
+
+
+. ObjectByUUID' コマンドを使用して識別子 (UUID) でオブジェクトを検索し ' データが危険にさらされているかどうかを判断します
++
+.. Telnet で localhost 1402 に接続して、 LDR コンソールにアクセスします。
+.. 「 /proc/OBRP/ObjectByUUID UUID_VALUE 」と入力します
++
+この最初の例では 'UUID 926026C4-00A4-449B-AC72-BCCA72DD1311' のオブジェクトに 2 つの場所が表示されています
+
++
+[listing]
+----
+ade 12448208: /proc/OBRP > ObjectByUUID 926026C4-00A4-449B-AC72-BCCA72DD1311
+
+{
+    "TYPE(Object Type)": "Data object",
+    "CHND(Content handle)": "926026C4-00A4-449B-AC72-BCCA72DD1311",
+    "NAME": "cats",
+    "CBID": "0x38186FE53E3C49A5",
+    "PHND(Parent handle, UUID)": "221CABD0-4D9D-11EA-89C3-ACBB00BB82DD",
+    "PPTH(Parent path)": "source",
+    "META": {
+        "BASE(Protocol metadata)": {
+            "PAWS(S3 protocol version)": "2",
+            "ACCT(S3 account ID)": "44084621669730638018",
+            "*ctp(HTTP content MIME type)": "binary/octet-stream"
+        },
+        "BYCB(System metadata)": {
+            "CSIZ(Plaintext object size)": "5242880",
+            "SHSH(Supplementary Plaintext hash)": "MD5D 0xBAC2A2617C1DFF7E959A76731E6EAF5E",
+            "BSIZ(Content block size)": "5252084",
+            "CVER(Content block version)": "196612",
+            "CTME(Object store begin timestamp)": "2020-02-12T19:16:10.983000",
+            "MTME(Object store modified timestamp)": "2020-02-12T19:16:10.983000",
+            "ITME": "1581534970983000"
+        },
+        "CMSM": {
+            "LATM(Object last access time)": "2020-02-12T19:16:10.983000"
+        },
+        "AWS3": {
+            "LOCC": "us-east-1"
+        }
+    },
+    "CLCO\(Locations\)": \[
+        \{
+            "Location Type": "CLDI\(Location online\)",
+            "NOID\(Node ID\)": "12448208",
+            "VOLI\(Volume ID\)": "3222345473",
+            "Object File Path": "/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila\#3udu",
+            "LTIM\(Location timestamp\)": "2020-02-12T19:36:17.880569"
+        \},
+        \{
+            "Location Type": "CLDI\(Location online\)",
+            "NOID\(Node ID\)": "12288733",
+            "VOLI\(Volume ID\)": "3222345984",
+            "Object File Path": "/var/local/rangedb/0/p/19/11/00rH0%DkRt78Rrb\#3s;L",
+            "LTIM\(Location timestamp\)": "2020-02-12T19:36:17.934425"
+        }
+    ]
+}
+----
++
+2 番目の例では 'UUID 926026C4-00A4-449B-AC72-BCCA72DD1311' を持つオブジェクトには ' リストされている場所がありません
+
++
+[listing]
+----
+ade 12448208: / > /proc/OBRP/ObjectByUUID 926026C4-00A4-449B-AC72-BCCA72DD1311
+
+{
+    "TYPE(Object Type)": "Data object",
+    "CHND(Content handle)": "926026C4-00A4-449B-AC72-BCCA72DD1311",
+    "NAME": "cats",
+    "CBID": "0x38186FE53E3C49A5",
+    "PHND(Parent handle, UUID)": "221CABD0-4D9D-11EA-89C3-ACBB00BB82DD",
+    "PPTH(Parent path)": "source",
+    "META": {
+        "BASE(Protocol metadata)": {
+            "PAWS(S3 protocol version)": "2",
+            "ACCT(S3 account ID)": "44084621669730638018",
+            "*ctp(HTTP content MIME type)": "binary/octet-stream"
+        },
+        "BYCB(System metadata)": {
+            "CSIZ(Plaintext object size)": "5242880",
+            "SHSH(Supplementary Plaintext hash)": "MD5D 0xBAC2A2617C1DFF7E959A76731E6EAF5E",
+            "BSIZ(Content block size)": "5252084",
+            "CVER(Content block version)": "196612",
+            "CTME(Object store begin timestamp)": "2020-02-12T19:16:10.983000",
+            "MTME(Object store modified timestamp)": "2020-02-12T19:16:10.983000",
+            "ITME": "1581534970983000"
+        },
+        "CMSM": {
+            "LATM(Object last access time)": "2020-02-12T19:16:10.983000"
+        },
+        "AWS3": {
+            "LOCC": "us-east-1"
+        }
+    }
+}
+----
+.. /proc/OBRP/ObjectByUUID の出力を確認し、適切な処理を実行します。
++
+[cols="2a,4a"]
+|===
+| メタデータ | まとめ 
+
+
+ a| 
+オブジェクトが見つかりません（ "ERROR" ： "" ）
+ a| 
+オブジェクトが見つからない場合は「 ERROR 」：というメッセージが返されます。
+
+オブジェクトが見つからない場合は、 * Objects lost * の数をリセットしてアラートをクリアできます。オブジェクトがない場合は、意図的に削除されたオブジェクトであることを示しています。
+
+
+
+ a| 
+場所が 0 より大きい
+ a| 
+出力に場所が表示されている場合は、 * Objects lost * アラートが誤った正の値である可能性があります。
+
+オブジェクトが存在することを確認します。出力に表示されたノード ID とファイルパスを使用して、オブジェクトファイルがリストされた場所にあることを確認します。
+
+（の手順 xref:searching-for-and-restoring-potentially-lost-objects.adoc[失われた可能性があるオブジェクトの検索] ノード ID を使用して正しいストレージノードを特定する方法について説明します）。
+
+オブジェクトが存在する場合は、 * Objects lost * の数をリセットしてアラートをクリアできます。
+
+
+
+ a| 
+場所 = 0
+ a| 
+出力に場所が表示されない場合は、オブジェクトが欠落している可能性があります。試してみてください xref:searching-for-and-restoring-potentially-lost-objects.adoc[オブジェクトを検索してリストアします] または、テクニカルサポートにお問い合わせください。
+
+テクニカルサポートに問い合わせた際に、実行中のストレージリカバリ手順 がないかどうかを確認するように求められることがあります。つまり、いずれかのストレージノードで _repair-data_command が実行されたあとにリカバリを実行中でないかを確認します。の情報を参照してください xref:../maintain/restoring-object-data-to-storage-volume-if-required.adoc[ストレージボリュームへのオブジェクトデータのリストア]。
+
+|===
+
+
+
+
+xref:../audit/index.adoc[監査ログを確認します]

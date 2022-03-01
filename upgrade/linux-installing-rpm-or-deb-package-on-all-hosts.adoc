@@ -1,0 +1,56 @@
+---
+permalink: upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html 
+sidebar: sidebar 
+keywords: upgrade, linux, rpm, deb, 
+summary: Linux ホストに StorageGRID ノードが導入されている場合は、アップグレードを開始する前に、これらの各ホストに追加の RPM パッケージまたは DEB パッケージをインストールする必要があります。 
+---
+= Linux ：すべてのホストに RPM パッケージまたは DEB パッケージをインストールします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Linux ホストに StorageGRID ノードが導入されている場合は、アップグレードを開始する前に、これらの各ホストに追加の RPM パッケージまたは DEB パッケージをインストールする必要があります。
+
+StorageGRID の NetApp Downloads ページから次のいずれかの「 .tgz 」ファイルまたは「 .zip 」ファイルをダウンロードしておく必要があります。
+
+
+NOTE: サービスラップトップで Windows を実行している場合は '.zip ファイルを使用します
+
+[cols="1a,2a"]
+|===
+| Linux プラットフォーム | 追加ファイル（ 1 つ選択） 
+
+
+ a| 
+Red Hat Enterprise Linux または CentOS
+ a| 
+* 「 StorageGRID Webscale --_version_-RPM -- _uniqueID_.zip 」
+* 「 StorageGRIDWebscale--_version__ rpm --_uniqueID_.tgz 」という形式です
+
+
+
+
+ a| 
+Ubuntu または Debian
+ a| 
+* `StorageGRIDWebscale--_version_-bDEB -- _uniqueID_.zip
+* `StorageGRIDWebscale--_version_-bDEB -- _uniqueID_tgz`
+
+
+|===
+.手順
+. インストールファイルから RPM パッケージまたは DEB パッケージを展開します。
+. すべての Linux ホストに RPM パッケージまたは DEB パッケージをインストールします。
++
+使用している Linux プラットフォーム用のインストール手順の StorageGRID ホストサービスのインストール手順を参照してください。
+
++
+** xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+** xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]
+
+
++
+新しいパッケージは追加のパッケージとしてインストールされます。既存のパッケージは削除しないでください。
+
+

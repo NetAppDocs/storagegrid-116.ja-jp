@@ -1,0 +1,81 @@
+---
+permalink: monitor/information-you-should-monitor-regularly.html 
+sidebar: sidebar 
+keywords: monitor, monitoring, StorageGRID, 
+summary: StorageGRID は、フォールトトレラントな分散ストレージシステムで、エラーが発生した場合やノードやサイトを使用できない場合でも、継続して動作するように設計されています。システムの健全性、ワークロード、および使用状況の統計情報をプロアクティブに監視して、潜在的な問題にグリッドの効率や可用性に影響が及ぶ前に対処できるようにする必要があります。 
+---
+= 定期的に監視する必要がある情報
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID は、フォールトトレラントな分散ストレージシステムで、エラーが発生した場合やノードやサイトを使用できない場合でも、継続して動作するように設計されています。システムの健全性、ワークロード、および使用状況の統計をプロアクティブに監視して、潜在的な問題にグリッドの効率性または可用性に影響が及ぶ前に対処できるようにする必要があります。
+
+ビジーシステムでは大量の情報が生成されます。このセクションでは、継続的に監視する必要がある最も重要な情報についてガイダンスを提供します。
+
+[cols="2a,1a"]
+|===
+| 監視対象 | 頻度 
+
+
+ a| 
+。 xref:monitoring-system-health.adoc[システムヘルスデータ] Grid Manager のダッシュボードに表示されます。前日から変更があった場合は注意してください。
+ a| 
+毎日
+
+
+
+ a| 
+レート xref:monitoring-storage-capacity.adoc[ストレージノードのオブジェクトとメタデータの容量] が使用されています
+ a| 
+毎週
+
+
+
+ a| 
+xref:monitoring-information-lifecycle-management.adoc[情報ライフサイクル管理のオペレーション]
+ a| 
+毎週
+
+
+
+ a| 
+xref:monitoring-performance-networking-and-system-resources.adoc[パフォーマンス、ネットワーク、システムリソース]：
+
+* クエリのレイテンシ
+* 接続とネットワーク
+* ノードレベルのリソース
+
+ a| 
+毎週
+
+
+
+ a| 
+xref:monitoring-tenant-activity.adoc[テナントのアクティビティ]
+ a| 
+毎週
+
+
+
+ a| 
+xref:monitoring-archival-capacity.adoc[外部アーカイブストレージシステムの容量]
+ a| 
+毎週
+
+
+
+ a| 
+xref:monitoring-load-balancing-operations.adoc[ロードバランシング操作]
+ a| 
+初期設定後と設定の変更後
+
+
+
+ a| 
+xref:applying-hotfixes-or-upgrading-software-if-necessary.adoc[ソフトウェアのホットフィックスおよびソフトウェアのアップグレードの可用性]
+ a| 
+毎月
+
+|===

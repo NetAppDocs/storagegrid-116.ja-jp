@@ -1,0 +1,66 @@
+---
+permalink: sg5600/setting-ip-address-for-e2700-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, storage controller, controller, configure, setup, set up, IP, IP address, management port, Appliance Installer, e2700 
+summary: E2700 コントローラの管理ポート 1 を使用して、アプライアンスを SANtricity Storage Manager の管理ネットワークに接続します。StorageGRID アプライアンスのハードウェアおよびコントローラファームウェアとの管理接続が失われないように、 E2700 コントローラの静的 IP アドレスを設定する必要があります。 
+---
+= E2700 コントローラの IP アドレスを設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E2700 コントローラの管理ポート 1 を使用して、アプライアンスを SANtricity Storage Manager の管理ネットワークに接続します。StorageGRID アプライアンスのハードウェアおよびコントローラファームウェアとの管理接続が失われないように、 E2700 コントローラの静的 IP アドレスを設定する必要があります。
+
+を使用している xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+
+DHCP によって割り当てられたアドレスは、いつ変更されるかわかりません。一貫したアクセスを確保するために、コントローラに静的 IP アドレスを割り当ててください。
+
+.手順
+. クライアントから、 StorageGRID アプライアンス・インストーラの URL を +`*https://_E5600SG_Controller_IP_:8443*` と入力します
++
+「 _E5600SG _ Controller_IP_` 」の場合は、任意の StorageGRID ネットワーク上のアプライアンスの IP アドレスを使用します。
+
++
+StorageGRID アプライアンスインストーラのホームページが表示されます。
+
+. ハードウェア構成 * > * ストレージ・コントローラ・ネットワーク構成 * を選択します。
++
+Storage Controller Network Configuration ページが表示されます。
+
+. ネットワーク構成に応じて、 IPv4 、 IPv6 、またはその両方で * Enabled * を選択します。
+. 自動的に表示される IPv4 アドレスを書き留めます。
++
+このポートに IP アドレスを割り当てるためのデフォルトの方法は、 DHCP です。
+
++
+
+NOTE: DHCP 値が表示されるまでに数分かかる場合があります。
+
++
+image::../media/storage_controller_network_config_ipv4.gif[ストレージコントローラネットワークの IPv4 設定]
+
+. 必要に応じて、 E2700 コントローラ管理ポートの静的 IP アドレスを設定します。
++
+
+NOTE: 管理ポートに静的 IP を割り当てるか、 DHCP サーバでアドレスの永久リースを割り当てる必要があります。
+
++
+.. 「 * Static * 」を選択します。
+.. CIDR 表記を使用して IPv4 アドレスを入力します。
+.. デフォルトゲートウェイを入力します。
++
+image::../media/storage_controller_ipv4_and_def_gateway.gif[ストレージコントローラネットワークの IPv4 設定とデフォルトのゲートウェイ]
+
+.. [ 保存（ Save ） ] をクリックします。
++
+変更が適用されるまで数分かかる場合があります。
+
++
+SANtricity Storage Manager に接続するときは、新しい静的 IP アドレスを URL ： +`* https://_E2700_Controller_IP_*` として使用します
+
+
+
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["ネットアップのマニュアル： SANtricity Storage Manager"^]

@@ -1,0 +1,41 @@
+---
+permalink: fabricpool/creating-tenant-account-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, tenant, SSO 
+summary: Grid Manager で FabricPool 用のテナントアカウントを作成する必要があります。 
+---
+= FabricPool のテナントアカウントを作成します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Grid Manager で FabricPool 用のテナントアカウントを作成する必要があります。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+
+
+テナントアカウントを使用すると、クライアントアプリケーションで StorageGRID に対してオブジェクトの格納や読み出しを行うことができます。各テナントアカウントには、専用のアカウント ID 、許可されたグループとユーザ、バケット、オブジェクトがあります。
+
+複数の ONTAP クラスタに同じテナントアカウントを使用できます。また、必要に応じて、 ONTAP クラスタごとに専用のテナントアカウントを作成することもできます。
+
+
+NOTE: この手順は、 Grid Manager にシングルサインオン（ SSO ）が設定されていることを前提としています。SSO が有効になっていない場合は、を使用します xref:../admin/creating-tenant-account.adoc[テナントアカウントを作成する手順を以下で説明します] 代わりに、
+
+.手順
+. 「 * tenants * 」を選択します
+. 「 * Create * 」を選択します。
+. 表示名と概要 を入力します。
+. S3 を選択します。
+. Storage quota * フィールドは空白のままにします。
+. プラットフォームサービスの使用を有効にするには、 [ プラットフォームサービスを許可する ] を選択します。
++
+プラットフォームサービスが有効になっている場合、テナントは外部サービスにアクセスする CloudMirror レプリケーションなどの機能を使用できます。
+
+. [ 独自のアイデンティティソースを使用する *] は選択しないでください。
+. 「 * Allow S3 Select * 」は選択しないでください。
+. テナントに対する最初の Root Access 権限を割り当てる既存のフェデレーテッドグループを Grid Manager から選択します。
+. [ テナントの作成 ] を選択します。
+

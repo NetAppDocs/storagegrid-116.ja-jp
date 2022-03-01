@@ -1,0 +1,30 @@
+---
+permalink: sg6000/rebooting-sg6000-cn-controller-while-storagegrid-appliance-installer-is-running.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, reboot, restart 
+summary: StorageGRID アプライアンスインストーラの実行中に、 SG6000-CN コントローラのリブートが必要になることがあります。たとえば、インストールが失敗した場合は、コントローラのリブートが必要になることがあります。 
+---
+= StorageGRID アプライアンスインストーラの実行中に SG6000-CN コントローラをリブートします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスインストーラの実行中に、 SG6000-CN コントローラのリブートが必要になることがあります。たとえば、インストールが失敗した場合は、コントローラのリブートが必要になることがあります。
+
+この手順 は、 SG6000-CN コントローラで StorageGRID アプライアンスインストーラが実行されている場合にのみ該当します。インストールが完了すると、 StorageGRID アプライアンスインストーラが使用できなくなるため、この手順は機能しなくなります。
+
+.手順
+. StorageGRID アプライアンス・インストーラで、 [*Advanced*>*Reboot Controller*] をクリックし、次のいずれかのオプションを選択します。
++
+** Reboot into StorageGRID * を選択し、ノードをグリッドに再追加してコントローラをリブートします。メンテナンスモードで作業を完了し、ノードを通常動作に戻す準備ができている場合は、このオプションを選択します。
+** メンテナンスモードを維持したままコントローラをリブートするには、 * Reboot into Maintenance Mode * を選択します。（このオプションは、コントローラがメンテナンスモードのときにのみ使用できます）。 このオプションは、グリッドに再追加する前にノードで追加のメンテナンス処理を実行する必要がある場合に選択します。
++
+image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
+
++
+SG6000-CN コントローラがリブートされます。
+
+
+
+

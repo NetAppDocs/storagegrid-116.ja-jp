@@ -1,0 +1,47 @@
+---
+section: upgrade
+title: StorageGRID ソフトウェアをアップグレードします
+entries:
+- title: 概要
+  pdf-filename: StorageGRID ソフトウェアをアップグレードします
+  url: "/upgrade/index.html"
+- title: StorageGRID 11.6 の新機能
+  url: "/upgrade/whats-new.html"
+- title: 削除または廃止された機能
+  url: "/upgrade/removed-or-deprecated-features.html"
+- title: Grid 管理 API に対する変更
+  url: "/upgrade/changes-to-grid-management-api.html"
+- title: テナント管理 API に対する変更
+  url: "/upgrade/changes-to-tenant-management-api.html"
+- title: アップグレードを計画して準備
+  entries:
+  - title: アップグレードが完了するまでの推定時間
+    url: "/upgrade/estimating-time-to-complete-upgrade.html"
+  - title: アップグレード中にシステムが受ける影響
+    url: "/upgrade/how-your-system-is-affected-during-upgrade.html"
+  - title: アップグレードによるグループおよびユーザアカウントへの影響
+    url: "/upgrade/impact-of-upgrade-on-groups-and-user-accounts.html"
+  - title: インストールされている StorageGRID のバージョンを確認
+    url: "/upgrade/verifying-installed-version-of-storagegrid.html"
+  - title: 必要な資料を用意します
+    url: "/upgrade/obtaining-required-materials-for-software-upgrade.html"
+  - title: システムをチェックしてください
+    url: "/upgrade/checking-systems-condition-before-upgrading-software.html"
+- title: StorageGRID ソフトウェアをアップグレードします
+  entries:
+  - title: アップグレードワークフロー
+    url: "/upgrade/upgrade-workflow.html"
+  - title: すべてのホストに Linux インストール RPM パッケージまたは DEB パッケージ
+    url: "/upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html"
+  - title: アップグレードを実行する
+    url: "/upgrade/performing-upgrade.html"
+- title: アップグレードの問題をトラブルシューティングする
+  entries:
+  - title: アップグレードが完了しない
+    url: "/upgrade/troubleshooting-upgrade-issues.html"
+  - title: ユーザインターフェイスに問題があります
+    url: "/upgrade/troubleshooting-user-interface-issues.html"
+  - title: Docker イメージの可用性チェックエラーメッセージ
+    url: "/upgrade/docker-image-availability-check-error-messages.html"
+- title: Metadata Reserved Space 設定の増加
+  url: "/upgrade/increasing-metadata-reserved-space-setting.html"

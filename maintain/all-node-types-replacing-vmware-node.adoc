@@ -1,0 +1,88 @@
+---
+permalink: maintain/all-node-types-replacing-vmware-node.html 
+sidebar: sidebar 
+keywords: replace VMware node 
+summary: VMware でホストされていた障害 StorageGRID ノードをリカバリする場合は、障害ノードを削除してリカバリノードを導入する必要があります。 
+---
+= すべてのグリッドノードタイプ： VMware ノードを交換します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+VMware でホストされていた障害 StorageGRID ノードをリカバリする場合は、障害ノードを削除してリカバリノードを導入する必要があります。
+
+仮想マシンをリストアできず、交換しなければならないことを確認しておく必要があります。
+
+VMware vSphere Web Client を使用して、最初に障害グリッドノードに関連付けられた仮想マシンを削除します。その後、新しい仮想マシンを導入できます。
+
+この手順 は、グリッドノードのリカバリプロセスの一部です。ノードの削除と導入の手順 は、管理ノード、ストレージノード、ゲートウェイノード、アーカイブノードを含むすべての VMware ノードで同じです。
+
+.手順
+. VMware vSphere Web Client にログインします。
+. 障害が発生したグリッドノード仮想マシンに移動します。
+. リカバリノードを導入するために必要なすべての情報をメモしておきます。
++
+.. 仮想マシンを右クリックし、 * 設定の編集 * タブを選択して、使用中の設定を確認します。
+.. [* vApp Options* ] タブを選択して、グリッドノードのネットワーク設定を表示し、記録します。
+
+
+. 障害グリッドノードがストレージノードである場合は、データストレージに使用されている仮想ハードディスクが破損していないかどうかを確認し、リカバリされたグリッドノードへの再接続に備えて保持しておきます。
+. 仮想マシンの電源をオフにします。
+. 仮想マシンを削除するには、 * Actions * > * All vCenter Actions * > * Delete from Disk * を選択します。
+. 新しい仮想マシンを交換用ノードとして導入し、 1 つ以上の StorageGRID ネットワークに接続します。
++
+ノードを導入する際には、必要に応じてノードポートを再マッピングしたり、 CPU やメモリの設定を増やしたりできます。
+
++
+
+NOTE: 新しいノードを導入したら、ストレージ要件に従って新しい仮想ディスクを追加し、以前に削除した障害グリッドノードから保存した仮想ハードディスクを再接続するか、またはその両方を実行します。
+
++
+手順：
+
++
+xref:../vmware/index.adoc[VMware をインストールする] > 仮想マシンとしての StorageGRID ノードの導入
+
+. リカバリするノードのタイプに応じて、ノードのリカバリ手順 を実行します。
++
+[cols="1a,2a"]
+|===
+| ノードのタイプ | に進みます 
+
+
+ a| 
+プライマリ管理ノード
+ a| 
+xref:configuring-replacement-primary-admin-node.adoc[交換用プライマリ管理ノードを設定]
+
+
+
+ a| 
+非プライマリ管理ノード
+ a| 
+xref:selecting-start-recovery-to-configure-non-primary-admin-node.adoc[[ リカバリの開始 ] を選択して、非プライマリ管理ノードを設定します]
+
+
+
+ a| 
+ゲートウェイノード
+ a| 
+xref:selecting-start-recovery-to-configure-gateway-node.adoc[Start Recovery を選択して、ゲートウェイノードを設定します]
+
+
+
+ a| 
+ストレージノード
+ a| 
+xref:selecting-start-recovery-to-configure-storage-node.adoc[Start Recovery を選択して、ストレージノードを設定します]
+
+
+
+ a| 
+アーカイブノード
+ a| 
+xref:selecting-start-recovery-to-configure-archive-node.adoc[Start Recovery を選択して、アーカイブノードを設定します]
+
+|===
+

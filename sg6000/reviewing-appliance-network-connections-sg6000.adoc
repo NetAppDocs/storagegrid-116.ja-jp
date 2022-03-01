@@ -1,0 +1,39 @@
+---
+permalink: sg6000/reviewing-appliance-network-connections-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, network connections, network connection, network, connection, grid, admin, client, bmc, management, SANtricity System Manager, SANtricity 
+summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。 
+---
+= アプライアンスのネットワーク接続（ SG6000 ）を確認する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。
+
+StorageGRID アプライアンスを StorageGRID システムのストレージノードとして導入する場合は、次のネットワークに接続できます。
+
+* * StorageGRID のグリッドネットワーク * ：グリッドネットワークは、すべての内部 StorageGRID トラフィックに使用されます。このネットワークによって、グリッド内のすべてのノードが、すべてのサイトおよびサブネットにわたって相互に接続されます。グリッドネットワークは必須です。
+* * StorageGRID の管理ネットワーク * ：管理ネットワークは、システムの管理とメンテナンスに使用するクローズドネットワークです。管理ネットワークは通常はプライベートネットワークであり、サイト間でルーティング可能にする必要はありません。管理ネットワークはオプションです。
+* * StorageGRID のクライアントネットワーク： * クライアントネットワークは、 S3 や Swift などのクライアントアプリケーションへのアクセスを可能にするオープンネットワークです。クライアントネットワークはグリッドへのクライアントプロトコルアクセスを提供するため、グリッドネットワークを分離してセキュリティを確保できます。クライアントネットワークはオプションです。
+* * SANtricity System Manager 用管理ネットワーク * （オプション）：このネットワークは、ストレージコントローラ上の SANtricity システムマネージャへのアクセスを提供し、ストレージコントローラシェルフ内のハードウェアコンポーネントの監視と管理を可能にします。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。
++
+オプションの SANtricity System Manager ネットワークが接続されていないと、 SANtricity の一部の機能を使用できない場合があります。
+
+* * SG6000-CN コントローラの BMC 管理ネットワーク * （オプション）：このネットワークは SG6000-CN 内のベースボード管理コントローラへのアクセスを提供し、 SG6000-CN コントローラのハードウェアコンポーネントの監視と管理を可能にします。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。
++
+オプションの BMC 管理ネットワークが接続されていないと、一部のサポート手順およびメンテナンス手順の実行が困難になります。BMC 管理ネットワークは、サポート目的で必要な場合を除き、接続しないでください。
+
+
+
+
+NOTE: StorageGRID ネットワークの詳細については、 _ グリッド入門 _ を参照してください。
+
+xref:gathering-installation-information-sg6000.adoc[設置情報（ SG6000 ）の収集]
+
+xref:cabling-appliance-sg6000.adoc[アプライアンスをケーブル接続（ SG6000 ）]
+
+xref:port-bond-modes-for-sg6000-cn-controller.adoc[SG6000-CN コントローラのポートボンディングモード]
+
+xref:../network/index.adoc[ネットワークガイドライン]

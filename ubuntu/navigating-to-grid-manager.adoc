@@ -1,0 +1,43 @@
+---
+permalink: ubuntu/navigating-to-grid-manager.html 
+sidebar: sidebar 
+keywords: how to navigate to Grid Manager 
+summary: StorageGRID システムの設定に必要なすべての情報については、グリッドマネージャを使用して定義します。 
+---
+= Grid Manager に移動します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID システムの設定に必要なすべての情報については、グリッドマネージャを使用して定義します。
+
+プライマリ管理ノードが導入され、最初の起動シーケンスが完了している必要があります。
+
+.手順
+. Web ブラウザを開き、次のいずれかのアドレスに移動します。
+
+
+[listing]
+----
+https://primary_admin_node_ip
+
+client_network_ip
+----
+ポート 8443 でグリッドマネージャにアクセスすることもできます。
+
+[listing]
+----
+https://primary_admin_node_ip:8443
+----
+
+NOTE: ネットワーク設定に応じて、グリッドネットワーク上または管理ネットワーク上のプライマリ管理ノード IP の IP アドレスを使用できます。
+
+. StorageGRID システムのインストール * をクリックします。
++
+StorageGRID グリッドを設定するためのページが表示されます。
+
++
+image::../media/gmi_installer_first_screen.gif[この図には説明が付随しています。]
+
+

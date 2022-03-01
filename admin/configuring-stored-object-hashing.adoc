@@ -1,0 +1,32 @@
+---
+permalink: admin/configuring-stored-object-hashing.html 
+sidebar: sidebar 
+keywords: stored object hashing, hashing algorithm, sha-1, sha-256 
+summary: 格納オブジェクトのハッシュオプションは、オブジェクトの整合性の検証に使用するハッシュアルゴリズムを指定します。 
+---
+= 格納オブジェクトのハッシュを設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+格納オブジェクトのハッシュオプションは、オブジェクトの整合性の検証に使用するハッシュアルゴリズムを指定します。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+
+
+デフォルトでは、オブジェクトデータは SHA-1 アルゴリズムを使用してハッシュされます。SHA-256 アルゴリズムには追加の CPU リソースが必要で、整合性検証には一般的に推奨されていません。
+
+
+NOTE: この設定を変更すると、新しい設定が適用されるまで約 1 分かかります。設定した値は、パフォーマンスと拡張用にキャッシュされます。
+
+.手順
+. * 設定 * > * システム * > * グリッドオプション * を選択します。
+. 格納オブジェクトのオプションセクションで、格納オブジェクトのハッシュを * SHA-1 * （デフォルト）または * SHA-256 * に変更します。
++
+image::../media/stored_object_hashing.png[格納オブジェクトのハッシュ化]
+
+. [ 保存（ Save ） ] を選択します。
+

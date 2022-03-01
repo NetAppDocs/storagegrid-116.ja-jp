@@ -1,0 +1,58 @@
+---
+permalink: audit/object-retrieve-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Object retrieve, messages, transaction, transactions, s3, swift, trace, SGET, WGET 
+summary: 監査ログでオブジェクトの読み出しトランザクションを特定するには、 API 固有の監査メッセージ（ S3 および Swift ）を検索します。 
+---
+= オブジェクトの読み出しトランザクション
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査ログでオブジェクトの読み出しトランザクションを特定するには、 API 固有の（ S3 および Swift ）監査メッセージを検索します。
+
+以下の表には、読み出しトランザクション中に生成されたすべての監査メッセージが含まれているわけではなく、読み出しトランザクションをトレースするために必要なメッセージのみが含まれています。
+
+
+
+== S3 の読み出し監査メッセージ
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+SGET
+ a| 
+S3 GET
+ a| 
+バケットからのオブジェクトの読み出しが要求されました。
+ a| 
+CBID 、 S3BK 、 S3KY
+ a| 
+xref:sget-s3-get.adoc[SGET ： S3 GET]
+
+|===
+
+
+== Swift の読み出し監査メッセージ
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+wget
+ a| 
+Swift GET
+ a| 
+コンテナからのオブジェクトの読み出しが要求されました。
+ a| 
+CBID 、 WCON 、 WOBJ
+ a| 
+xref:wget-swift-get.adoc[wget ： Swift GET]
+
+|===

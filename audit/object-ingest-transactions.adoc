@@ -1,0 +1,82 @@
+---
+permalink: audit/object-ingest-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, transaction, transactions, Object ingest, S3 ingest, Swift ingest, S3, Swift, SPUT, ORLM, WPUT 
+summary: 監査ログでクライアントの取り込みトランザクションを特定するには、 API 固有の監査メッセージ（ S3 または Swift ）を検索します。 
+---
+= オブジェクトの取り込みトランザクション
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査ログでクライアントの取り込みトランザクションを特定するには、 API 固有の（ S3 または Swift ）監査メッセージを検索します。
+
+以下の表には、取り込みトランザクション中に生成されたすべての監査メッセージが含まれているわけではなく、取り込みトランザクションをトレースするために必要なメッセージのみが含まれています。
+
+
+
+== S3 の取り込み監査メッセージ
+
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+SPUT
+ a| 
+S3 PUT トランザクション
+ a| 
+S3 PUT 取り込みトランザクションが正常に完了しました。
+ a| 
+CBID 、 S3BK 、 S3KY
+ a| 
+xref:sput-s3-put.adoc[SPUT ： S3 PUT]
+
+
+
+ a| 
+ORLM の場合
+ a| 
+オブジェクトルールを満たしました
+ a| 
+このオブジェクトが ILM ポリシーを満たしました。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM ：オブジェクトルールが満たされています]
+
+|===
+
+
+== Swift の取り込み監査メッセージ
+
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+WPUT
+ a| 
+Swift PUT トランザクション
+ a| 
+Swift PUT 取り込みトランザクションが正常に完了しました。
+ a| 
+CBID 、 WCON 、 WOBJ
+ a| 
+xref:wput-swift-put.adoc[WPUT ： Swift PUT]
+
+
+
+ a| 
+ORLM の場合
+ a| 
+オブジェクトルールを満たしました
+ a| 
+このオブジェクトが ILM ポリシーを満たしました。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM ：オブジェクトルールが満たされています]
+
+|===

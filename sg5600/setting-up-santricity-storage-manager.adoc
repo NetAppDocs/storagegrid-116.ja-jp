@@ -1,0 +1,13 @@
+---
+permalink: sg5600/setting-up-santricity-storage-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, SANtricity Storage Manager, SANtricity, Storage Manager, configure, configuring, setup, set up, setting up 
+summary: SANtricity Storage Manager にアクセスしたあと、ハードウェアを設定する際にそのマネージャを使用できます。通常、この設定はアプライアンスを StorageGRID システムのストレージノードとして導入する前に行います。 
+---
+= SANtricity Storage Manager をセットアップする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Storage Manager にアクセスしたあと、ハードウェアを設定する際にそのマネージャを使用できます。通常、この設定はアプライアンスを StorageGRID システムのストレージノードとして導入する前に行います。

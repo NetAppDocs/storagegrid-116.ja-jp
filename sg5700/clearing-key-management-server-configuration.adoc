@@ -1,0 +1,79 @@
+---
+permalink: sg5700/clearing-key-management-server-configuration.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, kms, key management server, configure, configuration, clear, erase, delete, clearing, erasing, deleting, disable, encryption 
+summary: キー管理サーバ（ KMS ）の設定をクリアすると、アプライアンスでノード暗号化が無効になります。KMS の設定をクリアすると、アプライアンスのデータは完全に削除され、アクセスできなくなります。このデータはリカバリできません。 
+---
+= キー管理サーバの設定をクリアします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+キー管理サーバ（ KMS ）の設定をクリアすると、アプライアンスでノード暗号化が無効になります。KMS の設定をクリアすると、アプライアンスのデータは完全に削除され、アクセスできなくなります。このデータはリカバリできません。
+
+アプライアンス上でデータを保持する必要がある場合は、 KMS の設定をクリアする前に、ノードの運用を停止する手順 を実行するか、ノードをクローニングする必要があります。
+
+
+IMPORTANT: KMS をクリアすると、アプライアンスのデータが完全に削除され、アクセスできなくなります。このデータはリカバリできません。
+
+xref:../maintain/grid-node-decommissioning.adoc[ノードを運用停止] に含まれるデータを StorageGRID 内の他のノードに移動すること。
+
+アプライアンス KMS の設定をクリアすると、ノード暗号化が無効になり、アプライアンスノードと StorageGRID サイトの KMS の設定との間の関連付けが解除されます。その後、アプライアンスのデータが削除され、アプライアンスはインストール前の状態のままになります。このプロセスを元に戻すことはできません。
+
+KMS の設定をクリアする必要があります。
+
+* アプライアンスを別の StorageGRID システムにインストールする前に、 KMS を使用しない、または別の KMS を使用する前に、
++
+
+IMPORTANT: 同じ KMS キーを使用する StorageGRID システムにアプライアンスノードを再インストールする場合は、 KMS の設定をクリアしないでください。
+
+* KMS 設定が失われて KMS キーをリカバリおよび再インストールできないノードをリカバリする前に、 KMS キーをリカバリできません。
+* お客様のサイトで以前使用していたアプライアンスを返却する前に、
+* ノード暗号化が有効になっているアプライアンスの運用を停止したあと。
+
+
+
+IMPORTANT: KMS をクリアして StorageGRID システム内の他のノードにデータを移動する前に、アプライアンスの運用を停止します。アプライアンスの運用を停止する前に KMS をクリアすると、データが失われるため、アプライアンスが動作しなくなる可能性があります。
+
+.手順
+. ブラウザを開き、アプライアンスのコンピューティングコントローラの IP アドレスのいずれかを入力します。+`* https://_Controller_IP_:8443*`
++
+「 _Controller_IP_` 」は、 3 つの StorageGRID ネットワークのいずれか上のコンピューティング・コントローラ（ストレージ・コントローラではない）の IP アドレスです。
+
++
+StorageGRID アプライアンスインストーラのホームページが表示されます。
+
+. Configure Hardware * > * Node Encryption * を選択します。
++
+image::../media/clear_kms.png[KMS の設定をクリアします]
+
++
+
+IMPORTANT: KMS の設定をクリアすると、アプライアンス上のデータが完全に削除されます。このデータはリカバリできません。
+
+. ウィンドウの下部で、 * KMS キーをクリアしてデータを削除 * を選択します。
+. KMS の構成をクリアしても問題がない場合は '+`*clear*`+ と入力してから '*Clear KMS Key and Delete Data* を選択します
++
+image::../media/fde_disable_confirmation.png[KMS クリア確認]
+
++
+KMS 暗号化キーとすべてのデータがノードから削除され、アプライアンスがリブートします。この処理には 20 分程度かかる場合があります。
+
+. ブラウザを開き、アプライアンスのコンピューティングコントローラの IP アドレスのいずれかを入力します。+`* https://_Controller_IP_:8443*`
++
+「 _Controller_IP_` 」は、 3 つの StorageGRID ネットワークのいずれか上のコンピューティング・コントローラ（ストレージ・コントローラではない）の IP アドレスです。
+
++
+StorageGRID アプライアンスインストーラのホームページが表示されます。
+
+. Configure Hardware * > * Node Encryption * を選択します。
+. ノードの暗号化が無効になっていること、および * キー管理サーバの詳細 * および * KMS キーと削除 * のコントロールでキーと証明書の情報がウィンドウから削除されていることを確認します。
++
+アプライアンスでのノード暗号化の再インストールまでは、グリッドでのノード暗号化を再度有効にすることはできません。
+
+
+
+アプライアンスがリブートし、 KMS がクリアされてインストール前の状態になっていることを確認したら、 StorageGRID システムからアプライアンスを物理的に取り外すことができます。の詳細については、リカバリとメンテナンスの手順を参照してください xref:../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.adoc[再インストール用のアプライアンスを準備する]。
+
+xref:../admin/index.adoc[StorageGRID の管理]

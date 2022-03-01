@@ -1,0 +1,62 @@
+---
+permalink: maintain/restoring-prometheus-metrics-non-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore metrics, restore prometheus, non-primary admin node 
+summary: 非プライマリ管理ノードで障害が発生した場合、そのノード上の Prometheus で管理されていた過去の指標を必要に応じてリストアすることができます。 
+---
+= 非プライマリ管理ノードをリカバリする際に Prometheus 指標をリストアする
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+非プライマリ管理ノードで障害が発生した場合、そのノード上の Prometheus で管理されていた過去の指標を必要に応じてリストアすることができます。
+
+* リカバリした管理ノードをインストールして実行する必要があります。
+* StorageGRID システムには管理ノードが少なくとも 2 つ必要です。
+* 「 passwords.txt 」ファイルが必要です。
+* プロビジョニングパスフレーズが必要です。
+
+
+管理ノードで障害が発生すると、 Prometheus データベースで管理されていた管理ノード上の指標は失われます。管理ノードをリカバリする際に、ソフトウェアのインストールプロセスによって新しい Prometheus データベースが作成されます。リカバリした管理ノードを起動すると、 StorageGRID システムを新規にインストールした場合と同様に指標が記録されます。
+
+非プライマリ管理ノードをリストアした場合は、プライマリ管理ノード（ _source Admin Node_） の Prometheus データベースをリカバリした管理ノードにコピーすることで、過去の指標をリストアできます。
+
+
+NOTE: Prometheus データベースのコピーには 1 時間以上かかる場合があります。ソース管理ノードでサービスが停止している間は、グリッドマネージャの一部の機能が使用できなくなります。
+
+. ソース管理ノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_grid_node_name
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
+. ソース管理ノードから Prometheus サービス「 service prometheusSTOP 」を停止します
+. リカバリした管理ノードで次の手順を実行します。
++
+.. リカバリした管理ノードにログインします。
++
+... 次のコマンドを入力します。 ssh admin@_grid_node_name
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+... root に切り替えるには、次のコマンドを入力します
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
+.. Prometheus サービス「 service prometheusSTOP 」を停止します
+.. SSH エージェントに SSH 秘密鍵を追加します。「 ssh -add 」と入力します
+.. 「 passwords.txt 」ファイルに記載された SSH アクセスパスワードを入力します。
+.. ソース管理ノードの Prometheus データベースをリカバリした管理ノードにコピーします： /usr/local/prometheus/bin/prometheus-clone-db.sh source_Admin_Node_ip
+.. プロンプトが表示されたら、 * Enter * を押して、リカバリした管理ノード上の新しい Prometheus データベースを破棄することを確認します。
++
+元の Prometheus データベースとその履歴データが、リカバリした管理ノードにコピーされます。コピー処理が完了すると、リカバリした管理ノードがスクリプトによって起動されます。次のステータスが表示されます。
+
++
+データベースのクローニング、サービスの開始
+
+.. 他のサーバにパスワードなしでアクセスする必要がなくなった場合は、 SSH エージェントから秘密鍵を削除します。「 ssh -add-D`` 」と入力します
+
+
+. ソース管理ノードで Prometheus サービスを再起動します。「 service prometheusstart
+

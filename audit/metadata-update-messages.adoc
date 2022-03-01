@@ -1,0 +1,34 @@
+---
+permalink: audit/metadata-update-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Metadata update, S3 metadata update, SUPD 
+summary: S3 クライアントがオブジェクトのメタデータを更新すると、監査メッセージが生成されます。 
+---
+= メタデータの更新メッセージです
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 クライアントがオブジェクトのメタデータを更新すると、監査メッセージが生成されます。
+
+
+
+== S3 メタデータの更新監査メッセージ
+
+|===
+| コード | 名前 | 説明 | トレース | を参照してください 
+
+
+ a| 
+SUPD
+ a| 
+S3 メタデータが更新されました
+ a| 
+S3 クライアントが取り込まれたオブジェクトのメタデータを更新すると生成されます。
+ a| 
+CBID 、 S3KY 、 HTRH
+ a| 
+xref:supd-s3-metadata-updated.adoc[SUPD ： S3 メタデータが更新されました]
+
+|===

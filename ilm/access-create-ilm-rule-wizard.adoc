@@ -1,0 +1,59 @@
+---
+permalink: ilm/access-create-ilm-rule-wizard.html 
+sidebar: sidebar 
+keywords: create ILM rule, information lifecycle rule 
+summary: ILM ルールの作成には、 Create ILM Rule ウィザードを使用します。 
+---
+= Create ILM Rule ウィザードにアクセスします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ILM ルールを使用して、時間の経過に伴うオブジェクトデータの配置を管理できます。ILM ルールを作成するには、 Create ILM Rule ウィザードを使用します。
+
+
+NOTE: ポリシーのデフォルトの ILM ルールを作成する場合は、代わりに次の手順 を使用します。 xref:creating-default-ilm-rule.adoc[デフォルトの ILM ルールを作成します]。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+* このルール環境 を使用するテナントアカウントを指定するには、 Tenant Accounts 権限を持つか、または各アカウントのアカウント ID を確認しておきます。
+* 最終アクセス時間のメタデータでオブジェクトをフィルタリングするルールの場合、 S3 の場合はバケットで、 Swift の場合はコンテナで最終アクセス時間の更新が有効になっている必要があります。
+* レプリケートコピーを作成する場合は、使用するストレージプールまたはクラウドストレージプールを設定しておきます。を参照してください xref:creating-storage-pool.adoc[ストレージプールを作成する] および xref:creating-cloud-storage-pool.adoc[クラウドストレージプールを作成]。
+* イレイジャーコーディングコピーを作成する場合は、イレイジャーコーディングプロファイルを設定しておく必要があります。を参照してください xref:creating-erasure-coding-profile.adoc[イレイジャーコーディングプロファイルを作成]。
+* に精通していること xref:data-protection-options-for-ingest.adoc[取り込みのデータ保護オプション]。
+* S3 オブジェクトロックで使用する準拠ルールを作成する必要がある場合は、を参照してください xref:requirements-for-s3-object-lock.adoc[S3 オブジェクトのロックの要件]。
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["ビデオ： StorageGRID ILM Rules ： Getting Started"^]。
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
+image::../media/video-screenshot-ilm-rules.png[ビデオ： StorageGRID ILM Rules ： Getting Started]
+
+
+
+ILM ルールを作成する場合は、次の点
+
+* StorageGRID システムのトポロジとストレージ構成を考慮します。
+* 作成するオブジェクトコピーのタイプ（レプリケートまたはイレイジャーコーディング）および各オブジェクトに必要なコピー数を検討します。
+* StorageGRID システムに接続するアプリケーションで使用されるオブジェクトメタデータのタイプを決定します。ILM ルールは、メタデータに基づいてオブジェクトをフィルタリングします。
+* 時間の経過に伴うオブジェクトコピーの配置先を検討します。
+* 取り込み時のデータ保護に使用するオプション（ Balanced 、 Strict 、 Dual commit ）を決定します。
+
+
+.手順
+. [* ILM*>* Rules] を選択します。
++
+ILM ルールページが表示され、組み込みのルールである Make 2 Copies が選択されます。
+
++
+image::../media/ilm_create_ilm_rule.png[ILM Rules ページに移動します]
+
++
+
+NOTE: StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合、 ILM ルールページの外観は少し異なります。サマリテーブルには * 準拠 * 列が含まれ、選択したルールの詳細には * 準拠 * フィールドが含まれます。
+
+. 「 * Create * 」を選択します。
++
+Create ILM Rule ウィザードの Step 1 （ Define Basics ）が表示されます。基本の定義ページを使用して、ルール環境 で使用するオブジェクトを定義します。
+
+

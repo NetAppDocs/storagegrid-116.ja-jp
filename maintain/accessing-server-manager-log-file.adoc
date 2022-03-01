@@ -1,0 +1,17 @@
+---
+permalink: maintain/accessing-server-manager-log-file.html 
+sidebar: sidebar 
+keywords: storagegrid, server manager, log file 
+summary: Server Manager の使用時に問題が発生した場合は、そのログファイルを確認します。 
+---
+= Server Manager ログファイルにアクセスします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+Server Manager の使用時に問題が発生した場合は、そのログファイルを確認します。
+
+Server Manager に関連するエラー・メッセージは '/var/local/log/servermanagers.log にある Server Manager ログ・ファイルにキャプチャされます
+
+このファイルでエラーに関するエラーメッセージを確認してください。必要に応じて、問題 をテクニカルサポートにエスカレーションします。テクニカルサポートにログファイルを転送するよう求められる場合があります。

@@ -1,0 +1,252 @@
+---
+permalink: monitor/comparing-alerts-and-alarms.html 
+sidebar: sidebar 
+keywords: how to compare alerts and alarms 
+summary: アラートシステムと従来のアラームシステムにはいくつかの類似点がありますが、アラートシステムには大きなメリットがあり、使いやすくなっています。 
+---
+= アラートとアラームを比較します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アラートシステムと従来のアラームシステムにはいくつかの類似点がありますが、アラートシステムには大きなメリットがあり、使いやすくなっています。
+
+同様の処理を実行する方法については、次の表を参照してください。
+
+[cols="1a,1a,1a"]
+|===
+|  | アラート | アラーム（レガシーシステム） 
+
+
+ a| 
+アクティブなアラートまたはアラームを確認するにはどうすればよいですか？
+ a| 
+* ダッシュボードの * Current alerts * リンクを選択します。
+* ノード * > * 概要 * ページでアラートを選択します。
+* [ * alerts * > * current * ] を選択します。
+
+
+xref:viewing-current-alerts.adoc[現在のアラートを表示します]
+ a| 
+*support*>* Alarms （レガシー） *>* Current alarms * を選択します。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+アラートまたはアラームがトリガーされる原因は何ですか？
+ a| 
+アラートは、アラートルールの Prometheus 式で特定のトリガー条件と期間について true と評価されたときにトリガーされます。
+
+xref:view-alert-rules.adoc[アラートルールを表示します]
+ a| 
+StorageGRID 属性がしきい値に達すると、アラームがトリガーされます。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+アラートまたはアラームがトリガーされた場合、原因となっている問題をどのように解決すればよいですか？
+ a| 
+アラートの推奨される対処方法は E メール通知に含まれており、 Grid Manager のアラートページから確認できます。
+
+追加情報 は、必要に応じて StorageGRID のドキュメントに記載されています。
+
+xref:alerts-reference.adoc[アラート一覧]
+ a| 
+アラームの詳細については、属性名を選択するか、 StorageGRID のドキュメントでアラームコードを検索して確認できます。
+
+xref:alarms-reference.adoc[アラーム一覧（従来のシステム）]
+
+
+
+ a| 
+解決済みのアラートまたはアラームのリストはどこで確認できますか。
+ a| 
+[ * alerts * > * Resolved * ] を選択します。
+
+xref:viewing-resolved-alerts.adoc[解決済みのアラートを表示します]
+ a| 
+[*support*>] > [* Alarms (legac)*>] > [* Historical alarms] を選択します。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+設定を管理する場所
+ a| 
+[* alerts] * > [* Rules] を選択します。
+
+xref:managing-alerts.adoc[アラートの管理]
+ a| 
+「 * support * 」を選択します。次に、メニューの * Alarms （レガシー） * セクションのオプションを使用します。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+どのようなユーザグループ権限が必要ですか？
+ a| 
+* Grid Manager にサインインできるユーザは、現在のアラートと解決済みのアラートを表示できます。
+* サイレンス、アラート通知、およびアラートルールを管理するには、 Manage Alerts 権限が必要です。
+
+
+xref:../admin/index.adoc[StorageGRID の管理]
+ a| 
+* Grid Manager にサインインできるすべてのユーザがレガシーアラームを表示できます。
+* アラームを確認するには、 Acknowledge Alarms 権限が必要です。
+* グローバルなアラームと E メール通知を管理するには、 Grid Topology Page Configuration 権限と Other Grid Configuration 権限の両方が必要です。
+
+
+xref:../admin/index.adoc[StorageGRID の管理]
+
+
+
+ a| 
+電子メール通知の管理方法を教えてください。
+ a| 
+[* alerts*>] > [* Email setup*] を選択します。
+
+* 注： * アラームとアラートは独立したシステムなので、アラームと AutoSupport 通知に使用されるメール設定は、アラート通知には使用されません。ただし、すべての通知に同じメールサーバを使用できます。
+
+xref:set-up-email-alert-notifications.adoc[アラート用の E メール通知を設定します]
+ a| 
+*support*>* Alarms （レガシー） *>* Legacy email setup* を選択します。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+SNMP 通知の管理方法を教えてください。
+ a| 
+* configuration * > * Monitoring * > * SNMP agent * を選択します。
+
+xref:using-snmp-monitoring.adoc[SNMP による監視を使用する]
+ a| 
+* configuration * > * Monitoring * > * SNMP agent * を選択します。
+
+xref:using-snmp-monitoring.adoc[SNMP による監視を使用する]
+
+* 注 * ： SNMP 通知は、すべてのアラームまたはアラーム重大度について送信されるわけではありません。
+
+xref:alarms-that-generate-snmp-notifications.adoc[SNMP 通知を生成するアラーム（従来のシステム）]
+
+
+
+ a| 
+通知の受信者を制御するにはどうすればよいですか？
+ a| 
+. [* alerts*>] > [* Email setup*] を選択します。
+. [ 受信者 * ] セクションで、電子メールリストごと、またはアラート発生時に電子メールを受信する必要があるユーザーごとに電子メールアドレスを入力します。
+
+
+xref:set-up-email-alert-notifications.adoc[アラート用の E メール通知を設定します]
+ a| 
+. *support*>* Alarms （レガシー） *>* Legacy email setup* を選択します。
+. メーリングリストを作成しています。
+. [*Notifications] を選択します。
+. メーリングリストを選択します。
+
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+通知を送信する管理ノードはどれですか？
+ a| 
+1 つの管理ノード（「優先送信者」）。
+
+xref:../admin/index.adoc[StorageGRID の管理]
+ a| 
+1 つの管理ノード（「優先送信者」）。
+
+xref:../admin/index.adoc[StorageGRID の管理]
+
+
+
+ a| 
+一部の通知を停止する方法を教えてください。
+ a| 
+. [* alerts * > * silences* ] を選択します。
+. サイレント化するアラートルールを選択します。
+. サイレンスの期間を指定します。
+. サイレント化するアラートの重大度を選択します。
+. を選択して、グリッド全体、単一サイト、または単一ノードにサイレンスを適用します。
+
+
+* 注： SNMP エージェントを有効にした場合、サイレンスは SNMP トラップおよびインフォームも抑制します。
+
+xref:silencing-alert-notifications.adoc[アラート通知をサイレント化する]
+ a| 
+. *support*>* Alarms （レガシー） *>* Legacy email setup* を選択します。
+. [*Notifications] を選択します。
+. メーリングリストを選択し、 * 抑制 * を選択します。
+
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+すべての通知を停止するにはどうすればよいですか？
+ a| 
+[ * alerts * > * silences * ] を選択します。次に、 [ * すべてのルール * ] を選択します。
+
+* 注： SNMP エージェントを有効にした場合、サイレンスは SNMP トラップおよびインフォームも抑制します。
+
+xref:silencing-alert-notifications.adoc[アラート通知をサイレント化する]
+ a| 
+. * 設定 * > * システム * > * 表示オプション * を選択します。
+. [* 通知 - すべてを抑制 * ] チェックボックスをオンにします。
+
+
+* 注：システム全体で E メール通知を無効にすることで、イベントトリガー型 AutoSupport E メールも抑制されます。
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+条件とトリガーをカスタマイズする方法を教えてください。
+ a| 
+. [* alerts] * > [* Rules] を選択します。
+. 編集するデフォルトルールを選択するか、 * カスタムルールの作成 * を選択します。
+
+
+xref:editing-alert-rules.adoc[アラートルールを編集]
+
+xref:creating-custom-alert-rules.adoc[カスタムのアラートルールを作成]
+ a| 
+. [*support*>] > [* Alarms (legac)*>] > [* Global alarms] を選択します。
+. グローバルカスタムアラームを作成して、デフォルトアラームを上書きしたり、デフォルトアラームのない属性を監視したりします。
+
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+
+
+ a| 
+個々のアラートまたはアラームを無効にする方法を教えてください。
+ a| 
+. [* alerts] * > [* Rules] を選択します。
+. ルールを選択し、 * ルールの編集 * を選択します。
+. [ 有効 *] チェックボックスの選択を解除します。
+
+
+xref:disabling-alert-rules.adoc[アラートルールを無効化]
+ a| 
+. [*support*>] > [* Alarms (legac)*>] > [* Global alarms] を選択します。
+. ルールを選択し、 [ 編集（ Edit ） ] アイコンを選択します。
+. [ 有効 *] チェックボックスの選択を解除します。
+
+
+xref:managing-alarms.adoc[アラームの管理（従来のシステム）]
+
+|===

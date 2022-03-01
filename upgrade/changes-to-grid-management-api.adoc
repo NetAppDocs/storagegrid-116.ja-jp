@@ -1,0 +1,87 @@
+---
+permalink: upgrade/changes-to-grid-management-api.html 
+sidebar: sidebar 
+keywords: grid management api, api, api version, swagger, rest api 
+summary: StorageGRID 11.6 はグリッド管理 API のバージョン 3 を使用しています。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。 
+---
+= Grid 管理 API に対する変更
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 11.6 はグリッド管理 API のバージョン 3 を使用しています。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。
+
+
+IMPORTANT: バージョン 1 およびバージョン 2 の管理 API は StorageGRID 11.6 で引き続き使用できますが、これらのバージョンの API のサポートは StorageGRID の今後のリリースで終了する予定です。StorageGRID 11.6 にアップグレードした後、 'put/grid/config/management' API を使用して、非推奨の v1 および v2 API を非アクティブにすることができます。
+
+詳細については、を参照してください xref:../admin/using-grid-management-api.adoc[グリッド管理 API を使用します]。
+
+
+
+== Swagger ドキュメントにアクセスしてプライベート API を処理できます
+
+Grid Manager からプライベート API の Swagger ドキュメントにアクセスできるようになりました。使用可能な処理を確認するには、 Grid Manager ヘルプアイコンを選択して * API ドキュメント * を選択します。次に、 StorageGRID 管理 API ページから * プライベート API ドキュメントへ移動 * を選択します。
+
+StorageGRID プライベート API は予告なく変更される場合があります。StorageGRID プライベートエンドポイントは、要求の API バージョンも無視します。
+
+
+
+== アラームベースの API が廃止されました
+
+11.6 リリースでは、すべてのアラームベース API が廃止されました。この変更の影響を受ける API は次のとおりです。
+
+* 'get/grid/alarms': 完全に廃止されました
+* 'get/grid/health/topology': 完全に廃止されました
+* `get/grid/health` ：応答の「 alarm-counts 」セクションは廃止されました
+
+
+
+
+== S3 アクセスキーをインポートできる
+
+グリッド管理 API を使用して、テナントユーザの S3 アクセスキーをインポートできるようになりました。たとえば、アクセスキーを別の S3 プロバイダから StorageGRID に移行したり、グリッド間でユーザクレデンシャルを同じに保つためにこの機能を使用したりできます。
+
+
+IMPORTANT: この機能を有効にすると、テナントの root パスワードを変更する権限を持つ Grid Manager ユーザはすべてテナントデータにフルアクセスできます。テナントデータを保護するには、使用後すぐにこの機能を無効にしてください。
+
+
+
+== 新しいアカウントの処理
+
+3 つの新しい 'grid/account' API 操作が追加されました
+
+* 「 POST/gridseske/account-enable-s3-key-import 」： S3 クレデンシャルのインポート機能を有効にします。この機能を有効にするには、 Root アクセス権限が必要です。
+* 「 POST/gridsusese/accountseske/{id} のキーとユーザの間での変更 / ユーザの間での変更 / アクセスキー : この要求は、テナントアカウントの特定のユーザの S3 クレデンシャルをインポートします。Root Access 権限または Change tenant root password 権限が必要です。また、ユーザ ID とテナントアカウント ID を確認しておく必要があります。
+* 「 POST/gridseske/account-disable-s3-key-import 」： S3 クレデンシャルのインポート機能を無効にします。この機能を無効にするには、 Root アクセス権限が必要です。
+
+
+
+
+== PATCH メソッドは廃止されました
+
+PATCH メソッドは廃止され、今後のリリースで削除される予定です。必要に応じて、 PATCH 処理を使用してリソースを変更する代わりに、 PUT 処理を実行してリソースを交換してください。
+
+
+
+== グリッド / ログ / 収集エンドポイントに追加されました
+
+'grid/logs/collect' エンドポイントに 4 つのブール値が追加されました。
+
+* applicationLogs: テクニカルサポートがトラブルシューティングに最も頻繁に使用するアプリケーション固有のログ。収集されるログは、使用可能なアプリケーションログの一部です。デフォルトは「 true 」です。
+* 'auditLogs' ：通常のシステム動作中に生成された監査メッセージを含むログデフォルトは「 true 」です。
+* networkTrace : ネットワークのデバッグに使用するログ。デフォルトは「 false 」です。
+* `prometheusDatabase` ：すべてのノードのサービスからの時系列のメトリック。デフォルトは「 false 」です。
+
+
+
+
+== 新規登録ノード - 詳細 / 枠一致 / サービス ID エンドポイント
+
+新しい「一時ルール / 枠ルール / サービス ID 」エンドポイントは、関連付けられたノード名、サービス ID 、およびサービスタイプへのノード UUID のマッピングを提供します。
+
+
+
+== Grid ノードのコンソールパスワードを取得できます
+
+これで 'POST の起動時 / 起動時の変更 / ノードコンソールパスワードを使用して ' グリッドノードとそれに関連するコンソールパスワードのリストを取得できるようになりました

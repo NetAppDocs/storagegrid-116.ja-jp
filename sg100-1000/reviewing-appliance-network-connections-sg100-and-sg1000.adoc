@@ -1,0 +1,32 @@
+---
+permalink: sg100-1000/reviewing-appliance-network-connections-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, network connections, network connection, network, connection, grid, admin, client, bmc, management 
+summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。 
+---
+= アプライアンスのネットワーク接続（ SG100 および SG1000 ）の確認
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。
+
+StorageGRID アプライアンスを StorageGRID システムのノードとして導入する場合は、次のネットワークに接続できます。
+
+* * StorageGRID のグリッドネットワーク * ：グリッドネットワークは、すべての内部 StorageGRID トラフィックに使用されます。このネットワークによって、グリッド内のすべてのノードが、すべてのサイトおよびサブネットにわたって相互に接続されます。グリッドネットワークは必須です。
+* * StorageGRID の管理ネットワーク * ：管理ネットワークは、システムの管理とメンテナンスに使用するクローズドネットワークです。管理ネットワークは通常はプライベートネットワークであり、サイト間でルーティング可能にする必要はありません。管理ネットワークはオプションです。
+* * StorageGRID のクライアントネットワーク： * クライアントネットワークは、 S3 や Swift などのクライアントアプリケーションへのアクセスを可能にするオープンネットワークです。クライアントネットワークはグリッドへのクライアントプロトコルアクセスを提供するため、グリッドネットワークを分離してセキュリティを確保できます。開くことを選択したポートだけを使用してこのネットワーク経由でアプライアンスにアクセスできるよう、クライアントネットワークを設定できます。クライアントネットワークはオプションです。
+* * サービスアプライアンス用の BMC 管理ネットワーク * （オプション）：このネットワークは、 SG100 および SG1000 のベースボード管理コントローラにアクセスして、アプライアンス内のハードウェアコンポーネントの監視と管理を可能にします。この管理ネットワークは、 StorageGRID の管理ネットワークと同じにすることも、独立した管理ネットワークにすることもできます。
++
+オプションの BMC 管理ネットワークが接続されていないと、一部のサポート手順およびメンテナンス手順の実行が困難になります。BMC 管理ネットワークは、サポート目的で必要な場合を除き、接続しないでください。
+
+
+
+xref:gathering-installation-information-sg100-and-sg1000.adoc[インストール情報（ SG100 および SG1000 ）の収集]
+
+xref:cabling-appliance-sg100-and-sg1000.adoc[アプライアンス SG100 と SG1000 をケーブル接続します]
+
+xref:../network/index.adoc[ネットワークのガイドライン]
+
+xref:../primer/index.adoc[グリッド入門]

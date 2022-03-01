@@ -1,0 +1,132 @@
+---
+permalink: sg6000/unpacking-boxes-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
+---
+= 開梱（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。
+
+
+
+== SG6060 の設計
+
+* * SG6000-CN コントローラ *
++
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CN コントローラ]
+
+* * ドライブを取り付けていない E2860 コントローラシェルフ *
++
+image::../media/de460c_table_size.gif[SG5760 4U アプライアンス]
+
+* ※前面ベゼル × 2
++
+image::../media/sg6000_front_bezels_for_table.gif[前面ベゼル]
+
+* * レールキット 2 個、取扱説明書付き *
++
+image::../media/rail_kit.gif[レールキット]
+
+* * ドライブ 60 台（ SSD 2 台、 NL-SAS 58 台） *
++
+image::../media/sg5760_drive.gif[ドライブ]
+
+* * ハンドル 4 個 *
++
+image::../media/handles.gif[SG5760 の取っ手]
+
+* * 角穴ラック取り付け用のバックブラケットとケージナット *
++
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+
+
+
+
+== SG6060 拡張シェルフ
+
+* * ドライブを取り付けていない拡張シェルフ *
++
+image::../media/de460c_table_size.gif[SG5760 4U アプライアンス]
+
+* * フロントベゼル *
++
+image::../media/front_bezel_for_table_de460c.gif[前面ベゼル DE460C]
+
+* *60 NL-SAS ドライブ *
++
+image::../media/sg5760_drive.gif[ドライブ]
+
+* * レールキット 1 個、取扱説明書付き *
++
+image::../media/rail_kit.gif[レールキット]
+
+* * ハンドル 4 個 *
++
+image::../media/handles.gif[SG5760 の取っ手]
+
+* * 角穴ラック取り付け用のバックブラケットとケージナット *
++
+image::../media/back_brackets_table_size.gif[SG5760 の後部ブラケットとケージナット]
+
+
+
+
+
+== SGF6024
+
+* * SG6000-CN コントローラ *
++
+image::../media/sg6000_cn_front_without_bezel.gif[SG6000-CN コントローラ]
+
+* * 24 本のソリッドステート（フラッシュ）ドライブを搭載した EF570 フラッシュアレイ *
++
+image::../media/de224c_with_drives.gif[EF570 コントローラシェルフ]
+
+* ※前面ベゼル × 2
++
+image::../media/sgf6024_front_bezels_for_table.png[SG6024 前面ベゼル]
+
+* * レールキット 2 個、取扱説明書付き *
++
+image::../media/rail_kit.gif[レールキット]
+
+* * シェルフエンドキャップ *
++
+image::../media/endcaps.png[エンドキャップ]
+
+
+
+
+
+== ケーブルとコネクタ
+
+StorageGRID アプライアンスには、出荷時に次のケーブルとコネクタが付属しています。
+
+* * お住まいの国に対応した電源コード 4 本 *
++
+image::../media/power_cords.gif[電源コード]
+
++
+キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
+* * 光ケーブルと SFP トランシーバ *
++
+image::../media/fc_cable_and_sfp.gif[光ケーブルと SFP]
+
++
+FC インターコネクトポート用の光ケーブル × 4
+
++
+16Gb/s FC 対応の SFP+ トランシーバ × 4
+
+* * オプション： 1 台の SG6060 拡張シェルフ接続用 SAS ケーブル 2 本 *
++
+image::../media/sas_cable.gif[SAS ケーブル]
+
+

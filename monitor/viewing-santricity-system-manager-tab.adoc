@@ -1,0 +1,46 @@
+---
+permalink: monitor/viewing-santricity-system-manager-tab.html 
+sidebar: sidebar 
+keywords: SANtricity System Manager tab 
+summary: SANtricity の System Manager タブから、ストレージアプライアンスの管理ポートを設定したり接続したりしなくても、 SANtricity の System Manager にアクセスできます。このタブでは、ハードウェア診断と環境情報、およびドライブに関連する問題を確認できます。 
+---
+= SANtricity の System Manager タブを表示します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity の System Manager タブから、ストレージアプライアンスの管理ポートを設定したり接続したりしなくても、 SANtricity の System Manager にアクセスできます。このタブでは、ハードウェア診断と環境情報、およびドライブに関連する問題を確認できます。
+
+ストレージアプライアンスノードの SANtricity System Manager タブが表示されます。
+
+SANtricity システムマネージャを使用すると、次の操作を実行できます。
+
+* ストレージアレイレベルのパフォーマンス、 I/O レイテンシ、ストレージコントローラの CPU 利用率、スループットなどのパフォーマンスデータを表示します
+* ハードウェアコンポーネントのステータスを確認します
+* 診断データの表示や E シリーズ AutoSupport の設定など、サポート機能を実行
+
+
+
+NOTE: SANtricity システムマネージャを使用して E シリーズ AutoSupport のプロキシを設定するには、管理 StorageGRID の手順を参照してください。
+
+xref:../admin/index.adoc[StorageGRID の管理]
+
+グリッドマネージャを介して SANtricity システムマネージャにアクセスするには、ストレージアプライアンス管理者の権限またはルートアクセス権限が必要です。
+
+
+NOTE: Grid Manager を使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+
+
+IMPORTANT: グリッドマネージャから SANtricity システムマネージャにアクセスする手順は、通常、アプライアンスのハードウェアを監視し、 E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、 SANtricity System Manager 内の多くの機能や操作は、 StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。
+
+このタブには、 SANtricity システムマネージャのホームページが表示されます。
+
+image::../media/nodes_page_santricity_tab.png[ノードページの SANtricity タブ]
+
+
+NOTE: SANtricity System Manager のリンクを使用すると、 SANtricity System Manager を新しいブラウザウィンドウで開いて確認しやすくなります。
+
+ストレージアレイレベルのパフォーマンスと使用容量の詳細を表示するには、各グラフにカーソルを合わせます。
+
+SANtricity の System Manager タブからアクセスできる情報の表示の詳細については、を参照してください https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。

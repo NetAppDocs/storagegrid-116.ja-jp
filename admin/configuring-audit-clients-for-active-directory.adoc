@@ -1,0 +1,188 @@
+---
+permalink: admin/configuring-audit-clients-for-active-directory.html 
+sidebar: sidebar 
+keywords: audit client for ad, active directory 
+summary: この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。 
+---
+= Active Directory の監査クライアントを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。
+
+.必要なもの
+* root/admin アカウントのパスワードを持つ「 passwords.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+* CIFS Active Directory のユーザ名とパスワードが必要です。
+* 「 Configuration.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+
+
+
+NOTE: CIFS / Samba を使用した監査エクスポートは廃止されており、 StorageGRID の今後のリリースで削除される予定です。
+
+.手順
+. プライマリ管理ノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_primary_Admin_Node_IP_`
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+
+. すべてのサービスの状態が running または verified であることを確認します :'storagegrid-status
++
+すべてのサービスが「 Running 」または「 Verified 」でない場合は、問題を解決してから続行してください。
+
+. コマンドラインに戻り、 * Ctrl * + * C * を押します。
+. CIFS 設定ユーティリティを起動します :'config_cifs.RB
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. Active Directory: 'set-authentication' の認証を設定します
++
+ほとんどの環境では、監査クライアントを追加する前に認証を設定する必要があります。認証がすでに設定されている場合は、確認メッセージが表示されます。認証がすでに設定されている場合は、次の手順に進みます。
+
++
+.. ワークグループまたは Active Directory のインストールを求めるプロンプトが表示されたら 'ad' と入力します
+.. プロンプトが表示されたら、 AD ドメインの名前（短いドメイン名）を入力します。
+.. プロンプトが表示されたら、ドメインコントローラの IP アドレスまたは DNS ホスト名を入力します。
+.. プロンプトが表示されたら、完全なドメインレルム名を入力します。
++
+大文字を使用します。
+
+.. winbind サポートの有効化を求めるプロンプトが表示されたら、「 * y * 」と入力します。
++
+Winbind は AD サーバのユーザおよびグループの情報を解決するために使用されます。
+
+.. プロンプトが表示されたら、 NetBIOS 名を入力します。
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. ドメインに参加します。
++
+.. まだ起動していない場合は、 CIFS 設定ユーティリティを起動します
+.. ドメイン「 join-domain 」に参加します
+.. 管理ノードが現在ドメインの有効なメンバーかどうかテストするよう求めるプロンプトが表示されます。この管理ノードがドメインに参加していない場合は、「 no 」と入力します
+.. プロンプトが表示されたら ' 管理者のユーザー名として _administrator_username_` を入力します
++
+ここで '_administrator_username_' は StorageGRID ユーザー名ではなく CIFS Active Directory ユーザー名です
+
+.. プロンプトが表示されたら ' 管理者のパスワードとして _administrator_password_ を入力します
++
+は StorageGRID パスワードではなく '_administrator_password_' は CIFS Active Directory のユーザー名です
+
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. ドメインに参加したことを確認します。
++
+.. ドメイン「 join-domain 」に参加します
+.. サーバが現在ドメインの有効なメンバーであるかどうかをテストするプロンプトが表示されたら、「 y 」と入力します
++
+「 Join is OK 」というメッセージが表示される場合は、ドメインに正常に参加しています。このメッセージが表示されない場合は、もう一度認証を設定してドメインに参加してください。
+
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. 監査クライアントを追加します :addaudit-share
++
+.. ユーザまたはグループの追加を求めるプロンプトが表示されたら、「 user 」と入力します
+.. 監査ユーザ名の入力を求めるプロンプトが表示されたら、監査ユーザ名を入力します。
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. 複数のユーザまたはグループが監査共有へのアクセスを許可されている場合は、「 add-user--to-share 」というユーザを追加します
++
+有効な共有に番号が振られ、リストに表示されます。
+
++
+.. 監査エクスポート共有の数を入力します。
+.. ユーザまたはグループの追加を求めるプロンプトが表示されたら、「 group 」と入力します
++
+監査グループ名の入力を求められます。
+
+.. 監査グループ名を求めるプロンプトが表示されたら、監査ユーザグループの名前を入力します。
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+.. 監査共有に追加するユーザまたはグループごとに、この手順を繰り返します。
+
+
+. オプションで、構成を確認します。「 validate-config 」
++
+サービスがチェックされて表示されます。次のメッセージは無視してかまいません。
+
++
+** インクルード・ファイル /etc/samba/include/cifs-interfaces.inc` が見つかりません
+** インクルード・ファイル /etc/samba/include/cifs-filesystem.inc` が見つかりません
+** インクルード・ファイル /etc/samba/include/cifs-interfaces.inc` が見つかりません
+** インクルード・ファイル /etc/samba/include/cifs-custom-config.inc` が見つかりません
+** インクルード・ファイル /etc/samba/include/cifs-shares.inc` が見つかりません
+** RLIMIT_max ： rlimit_max （ 1024 ）を Windows の最小制限（ 16384 ）に増やす
++
+
+IMPORTANT: 「 security=ads 」と「 password server 」パラメータは同時に指定しないでください（ Samba は、接続する正しい DC を自動的に検出します）。
+
++
+... プロンプトが表示されたら、 * Enter * を押して監査クライアントの設定を表示します。
+... プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+
+
+. CIFS 設定ユーティリティを閉じます
+. StorageGRID 環境が単一サイトの場合は、次の手順に進みます。
++
+または
+
++
+StorageGRID 環境で他のサイトに管理ノードが含まれている場合は、必要に応じてこれらの監査共有を有効にします。
+
++
+.. サイトの管理ノードにリモートからログインします。
++
+... 次のコマンドを入力します。 ssh admin@_grid_node_name
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+... root に切り替えるには、次のコマンドを入力します
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
+.. 同じ手順を繰り返して、管理ノードごとに監査共有を設定します。
+.. 管理ノードへのリモートの Secure Shell ログインを終了します :exit
+
+
+. コマンドシェルからログアウトします :exit
+

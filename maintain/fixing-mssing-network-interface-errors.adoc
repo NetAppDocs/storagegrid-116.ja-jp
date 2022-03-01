@@ -1,0 +1,25 @@
+---
+permalink: maintain/fixing-mssing-network-interface-errors.html 
+sidebar: sidebar 
+keywords: storagegrid, network interface, network interface error 
+summary: ホストネットワークが正しく設定されていない場合や名前のスペルが間違っている場合、 StorageGRID が /etc/storagegrid/nodes/ <node-name\> .conf ファイルに指定されているマッピングをチェックするときにエラーが発生します。 
+---
+= ネットワークインターフェイスが見つからないエラーを修正
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホストネットワークが正しく設定されていない場合、または名前のスペルが間違っている場合、 StorageGRID が「 /etc/storagegrid/nodes/ _node-name .conf 」ファイルに指定されたマッピングをチェックするときにエラーが発生します。
+
+次のエラーまたは警告が表示されることがあります。
+
+'Checking configuration file`/etc/storagegrid/nodes/ _node-name _.conf 'node_name_name_...' の構成ファイルを確認しています 'error:_node-name_:GRID_NETWORK_TARGET = _host-interface-name_`_node-name_:Interface-interface-'_host-name_' は存在しません
+
+エラーは、グリッドネットワーク、管理ネットワーク、またはクライアントネットワークについて報告される場合があります。このエラーは、「 /etc/storagegrid/nodes/ _node-name _.conf 」ファイルが、指定された StorageGRID ネットワークを「 _host-interface-name _ 」という名前のホストインターフェイスにマッピングしているが、現在のホストにその名前のインターフェイスがないことを示しています。
+
+このエラーが表示された場合は、の手順を実行したことを確認してください xref:deploying-new-linux-hosts.adoc[新しい Linux ホストを導入する]。すべてのホストインターフェイスに、元のホストで使用されていた名前と同じ名前を使用します。
+
+ノード構成ファイルに指定されている名前をホストインターフェイスに付けることができない場合は、ノード構成ファイルを編集して、 GRID_NETWORK_TARGET 、 ADMIN_NETWORK_TARGET 、または CLIENT_network_target の値を既存のホストインターフェイスに一致するように変更できます。
+
+ホストインターフェイスが適切な物理ネットワークポートまたは VLAN へのアクセスを提供し、インターフェイスがボンドデバイスまたはブリッジデバイスを直接参照していないことを確認してください。ホストのボンドデバイスの上に VLAN （または他の仮想インターフェイス）を設定するか、ブリッジと仮想イーサネット（ veth ）のペアを使用する必要があります。

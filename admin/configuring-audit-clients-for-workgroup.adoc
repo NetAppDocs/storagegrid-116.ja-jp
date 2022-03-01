@@ -1,0 +1,167 @@
+---
+permalink: admin/configuring-audit-clients-for-workgroup.html 
+sidebar: sidebar 
+keywords: audit client for workgroup 
+summary: この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。 
+---
+= ワークグループの監査クライアントを設定します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。
+
+.必要なもの
+* root/admin アカウントのパスワードを持つ「 passwords.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+* 「 Configuration.txt 」ファイルがあります（ SAID パッケージ内にあります）。
+
+
+CIFS / Samba を使用した監査エクスポートは廃止されており、 StorageGRID の今後のリリースで削除される予定です。
+
+.手順
+. プライマリ管理ノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_primary_Admin_Node_IP_`
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+
+. すべてのサービスの状態が running または verified であることを確認します :'storagegrid-status
++
+すべてのサービスが「 Running 」または「 Verified 」でない場合は、問題を解決してから続行してください。
+
+. コマンドラインに戻り、 * Ctrl * + * C * を押します。
+. CIFS 設定ユーティリティを起動します :'config_cifs.RB
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. Windows ワークグループの認証を設定します。
++
+認証がすでに設定されている場合は、確認メッセージが表示されます。認証がすでに設定されている場合は、次の手順に進みます。
+
++
+.. 「 set-authentication 」と入力します
+.. Windows ワークグループまたは Active Directory のインストールを求めるプロンプトが表示されたら、「 workgroup 」と入力します
+.. プロンプトが表示されたら 'Workgroup の名前を入力します :`_workgroup_name_`
+.. プロンプトが表示されたら ' 意味のある NetBIOS 名を作成します :`_netbios_name_`
++
+または
+
++
+Enter * キーを押して管理ノードのホスト名を NetBIOS 名として使用します。
+
++
+スクリプトによって Samba サーバが再起動され、変更が適用されます。この処理にかかる時間は 1 分未満です。認証を設定したら、監査クライアントを追加します。
+
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. 監査クライアントを追加します。
++
+.. 「 add-audit-share 」と入力します
++
+
+NOTE: 共有は読み取り専用として自動的に追加されます。
+
+.. プロンプトが表示されたら ' ユーザーまたはグループを追加します
+.. プロンプトが表示されたら ' 監査ユーザー名として '_audit_user_name_` を入力します
+.. プロンプトが表示されたら ' 監査ユーザーのパスワードとして '_password_' を入力します
+.. プロンプトが表示されたら ' 確認のために同じパスワードを再入力します
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
++
+
+NOTE: ディレクトリを入力する必要はありません。監査ディレクトリ名は事前に定義されています。
+
+. 複数のユーザまたはグループが監査共有へのアクセスを許可されている場合は、ユーザを追加します。
++
+.. 「 add-user--to-share 」と入力します
++
+有効な共有に番号が振られ、リストに表示されます。
+
+.. プロンプトが表示されたら ' 監査エクスポート共有の番号として '_share_number_' を入力します
+.. プロンプトが表示されたら、ユーザまたはグループ「 user 」を追加します
++
+または 'group'
+
+.. プロンプトが表示されたら ' 監査ユーザまたはグループの名前として '_audit_user または audit_group_ を入力します
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+.. 監査共有に追加するユーザまたはグループごとに、上記の手順を繰り返します。
+
+
+. オプションで、構成を確認します。「 validate-config 」
++
+サービスがチェックされて表示されます。次のメッセージは無視してかまいません。
+
++
+[listing]
+----
+Can't find include file /etc/samba/includes/cifs-interfaces.inc
+Can't find include file /etc/samba/includes/cifs-filesystem.inc
+Can't find include file /etc/samba/includes/cifs-custom-config.inc
+Can't find include file /etc/samba/includes/cifs-shares.inc
+rlimit_max: increasing rlimit_max (1024) to minimum Windows limit (16384)
+----
++
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+監査クライアント設定が表示されます。
+
+.. プロンプトが表示されたら、 * Enter * を押します。
++
+CIFS 設定ユーティリティが表示されます。
+
+
+
+. CIFS 設定ユーティリティを閉じます
+. Samba サービス「 service smbd start 」を開始します
+. StorageGRID 環境が単一サイトの場合は、次の手順に進みます。
++
+または
+
++
+StorageGRID 環境で他のサイトに管理ノードが含まれている場合は、必要に応じてこれらの監査共有を有効にします。
+
++
+.. サイトの管理ノードにリモートからログインします。
++
+... 次のコマンドを入力します。 ssh admin@_grid_node_name
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+... root に切り替えるには、次のコマンドを入力します
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
+.. 同じ手順を繰り返して、追加の管理ノードごとに監査共有を設定します。
+.. リモート管理ノードへのリモートの Secure Shell ログインを終了します。「 exit
+
+
+. コマンドシェルからログアウトします :exit
+

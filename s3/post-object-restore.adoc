@@ -1,0 +1,86 @@
+---
+permalink: s3/post-object-restore.html 
+sidebar: sidebar 
+keywords: post, post object restore, object 
+summary: S3 POST Object restore 要求を使用して、クラウドストレージプールに格納されているオブジェクトをリストアできます。 
+---
+= POST Object restore の実行
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+S3 POST Object restore 要求を使用して、クラウドストレージプールに格納されているオブジェクトをリストアできます。
+
+
+
+== サポートされている要求タイプ
+
+StorageGRID では、オブジェクトのリストアに POST Object restore 要求のみがサポートされます。SELECT タイプのリストアはサポートされていませんSELECT 要求は 'XNotImplemented を返します
+
+
+
+== バージョン管理
+
+バージョン管理されているバケット内のオブジェクトの特定のバージョンをリストアするには 'versionId' を指定します「 versionId 」を指定しない場合、オブジェクトの最新バージョンがリストアされます
+
+
+
+== クラウドストレージプールオブジェクトでの POST Object restore の動作
+
+オブジェクトがクラウドストレージプールに格納されている場合（情報ライフサイクル管理を使用してオブジェクトを管理する手順を参照）、 POST Object restore 要求はオブジェクトの状態に基づいて次のように動作します。詳細については、「 head Object 」を参照してください。
+
+
+NOTE: オブジェクトがクラウドストレージプールに格納され、かつそのオブジェクトのコピーがグリッドに 1 つ以上存在する場合は、 POST Object restore 要求を実行してオブジェクトをリストアする必要はありません。GET Object 要求を使用してローカルコピーを直接読み出すことができます。
+
+|===
+| オブジェクトの状態 | POST Object restore の動作 
+
+
+ a| 
+StorageGRID に取り込まれているがまだ ILM によって評価されていない、またはオブジェクトがクラウドストレージプールにない
+ a| 
+「 403 Forbidden 」、「 InvalidObjectState 」
+
+
+
+ a| 
+クラウドストレージプール内にあるが、まだ読み出し不可能な状態に移行していない
+ a| 
+「 200 OK 」変更は行われません。
+
+* 注：オブジェクトが取得不可能な状態に移行される前に ' その 'expiry-date ' を変更することはできません
+
+
+
+ a| 
+オブジェクトを読み出し不可能な状態に移行した
+ a| 
+「 202 Accepted 」は、要求の本文で指定された日数、オブジェクトの読み出し可能なコピーを Cloud Storage Pool にリストアします。この期間が終了すると、オブジェクトは読み出し不可能な状態に戻ります。
+
+リストア・ジョブを完了するのにかかる時間（「 Expedited 」、「 Standard 」、または「 Bulk 」）を指定するには、「 Tier 」要求要素を使用します。Tier を指定しない場合 ' Standard 階層が使用されます
+
+* 注意： S3 Glacier Deep Archive またはクラウドストレージプールに移行されたオブジェクトや、 Azure Blob Storage を使用するクラウドストレージは、「 Expedited 」階層を使用してリストアできません。次のエラーが返されます「 403 Forbidden 」 'InvalidTier ：このストレージクラスでは Retrieval オプションはサポートされていません」
+
+
+
+ a| 
+読み出し不可能な状態からリストア中である
+ a| 
+409 Conflict`, RestoreAlreadyInProgress
+
+
+
+ a| 
+クラウドストレージプールへのリストアが完了している
+ a| 
+「 200 OK 」
+
+* 注意：オブジェクトが読み出し可能な状態にリストアされた場合は 'days' の新しい値で POST Object restore 要求を再発行することにより 'expiry-date を変更できます要求が実行された日時に基づいてリストア日が更新されます。
+
+|===
+xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
+
+xref:head-object.adoc[HEAD Object の実行]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[監査ログで追跡される S3 処理]

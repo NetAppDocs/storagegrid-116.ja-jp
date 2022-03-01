@@ -1,0 +1,194 @@
+---
+section: monitor
+title: 監視とトラブルシューティング
+entries:
+- title: 概要
+  pdf-filename: StorageGRID を監視してトラブルシューティングを行う
+  url: "/monitor/index.html"
+- title: ダッシュボードを表示します
+  url: "/monitor/viewing-dashboard.html"
+- title: Nodes ページを表示します
+  url: "/monitor/viewing-nodes-page.html"
+  entries:
+  - title: 概要タブを表示します
+    url: "/monitor/viewing-overview-tab.html"
+  - title: "[ ハードウェア ] タブを表示します"
+    url: "/monitor/viewing-hardware-tab.html"
+  - title: "[ ネットワーク ] タブを表示します"
+    url: "/monitor/viewing-network-tab.html"
+  - title: Storage （ストレージ）タブを表示します
+    url: "/monitor/viewing-storage-tab.html"
+  - title: グリッドノードをリブートするには、タスクタブを使用します
+    url: "/monitor/using-task-tab-to-reboot-grid-node.html"
+  - title: "[ オブジェクト ] タブを表示します"
+    url: "/monitor/viewing-objects-tab.html"
+  - title: ILM タブを表示します
+    url: "/monitor/viewing-ilm-tab.html"
+  - title: Load Balancer タブを表示します
+    url: "/monitor/viewing-load-balancer-tab.html"
+  - title: プラットフォームサービスタブを表示します
+    url: "/monitor/viewing-platform-services-tab.html"
+  - title: SANtricity の System Manager タブを表示します
+    url: "/monitor/viewing-santricity-system-manager-tab.html"
+- title: 定期的に監視する必要がある情報
+  url: "/monitor/information-you-should-monitor-regularly.html"
+  entries:
+  - title: システムヘルスを監視する
+    url: "/monitor/monitoring-system-health.html"
+    entries:
+    - title: ノードの接続状態を監視します
+      url: "/monitor/monitoring-node-connection-states.html"
+    - title: 現在のアラートを表示します
+      url: "/monitor/viewing-current-alerts.html"
+    - title: 解決済みのアラートを表示します
+      url: "/monitor/viewing-resolved-alerts.html"
+    - title: 特定のアラートを表示する
+      url: "/monitor/viewing-specific-alert.html"
+    - title: 従来のアラームを表示します
+      url: "/monitor/viewing-legacy-alarms.html"
+  - title: ストレージ容量を監視
+    url: "/monitor/monitoring-storage-capacity.html"
+  - title: 情報ライフサイクル管理を監視
+    url: "/monitor/monitoring-information-lifecycle-management.html"
+  - title: ネットワーク接続とパフォーマンスを監視します
+    url: "/monitor/monitoring-network-connections-and-performance.html"
+  - title: ノードレベルのリソースを監視
+    url: "/monitor/monitoring-node-level-resources.html"
+  - title: テナントのアクティビティを監視する
+    url: "/monitor/monitoring-tenant-activity.html"
+  - title: アーカイブ容量を監視する
+    url: "/monitor/monitoring-archival-capacity.html"
+  - title: ロードバランシング処理を監視する
+    url: "/monitor/monitoring-load-balancing-operations.html"
+  - title: 必要に応じてホットフィックスを適用するか、ソフトウェアをアップグレードします
+    url: "/monitor/applying-hotfixes-or-upgrading-software-if-necessary.html"
+- title: アラートとアラームの管理
+  entries:
+  - title: 概要
+    url: "/monitor/managing-alerts-and-alarms.html"
+  - title: アラートとアラームを比較します
+    url: "/monitor/comparing-alerts-and-alarms.html"
+  - title: アラートの管理
+    entries:
+    - title: 概要
+      url: "/monitor/managing-alerts.html"
+    - title: アラートルールを表示します
+      url: "/monitor/view-alert-rules.html"
+    - title: カスタムのアラートルールを作成
+      url: "/monitor/creating-custom-alert-rules.html"
+    - title: アラートルールを編集
+      url: "/monitor/editing-alert-rules.html"
+    - title: アラートルールを無効化
+      url: "/monitor/disabling-alert-rules.html"
+    - title: カスタムのアラートルールを削除
+      url: "/monitor/removing-custom-alert-rules.html"
+    - title: アラート通知を管理します
+      entries:
+      - title: SNMP 通知を設定する
+        url: "/monitor/set-up-snmp-alert-notifications.html"
+      - title: E メール通知を設定
+        url: "/monitor/email-alert-notifications.html"
+      - title: アラート通知をサイレント化する
+        url: "/monitor/silencing-alert-notifications.html"
+  - title: アラームの管理（従来のシステム）
+    url: "/monitor/managing-alarms.html"
+- title: 監査メッセージとログの送信先を設定します
+  url: "/monitor/configure-audit-messages.html"
+- title: 外部 syslog サーバを使用します
+  entries:
+  - title: 外部 syslog サーバに関する考慮事項
+    url: "/monitor/considerations-for-external-syslog-server.html"
+  - title: 外部 syslog サーバを設定します
+    url: "/monitor/configuring-syslog-server.html"
+- title: SNMP による監視を使用する
+  url: "/monitor/using-snmp-monitoring.html"
+  entries:
+  - title: SNMP エージェントを設定します
+    url: "/monitor/configuring-snmp-agent.html"
+  - title: SNMP エージェントを更新します
+    url: "/monitor/updating-snmp-agent.html"
+- title: 追加の StorageGRID データを収集します
+  entries:
+  - title: チャートとグラフを使用します
+    url: "/monitor/using-charts-and-reports.html"
+  - title: テキストレポートを使用する
+    url: "/monitor/types-of-text-reports.html"
+  - title: PUT / GET パフォーマンスを監視
+    url: "/monitor/monitoring-put-and-get-performance.html"
+  - title: オブジェクト検証処理を監視する
+    url: "/monitor/monitoring-object-verification-operations.html"
+  - title: イベントを監視する
+    url: "/monitor/monitoring-events.html"
+  - title: 監査メッセージを確認します
+    url: "/monitor/reviewing-audit-messages.html"
+  - title: ログファイルとシステムデータを収集
+    url: "/monitor/collecting-log-files-and-system-data.html"
+  - title: AutoSupport メッセージを手動でトリガーする
+    url: "/monitor/manually-triggering-autosupport-message.html"
+  - title: グリッドトポロジツリーを表示します
+    url: "/monitor/viewing-grid-topology-tree.html"
+  - title: サポート指標を確認
+    url: "/monitor/reviewing-support-metrics.html"
+  - title: 診断を実行します
+    url: "/monitor/running-diagnostics.html"
+  - title: カスタムの監視アプリケーションを作成
+    url: "/monitor/creating-custom-monitoring-applications.html"
+- title: StorageGRID システムのトラブルシューティングを行う
+  entries:
+  - title: トラブルシューティングの概要
+    url: "/monitor/troubleshooting-storagegrid-system.html"
+  - title: オブジェクトやストレージの問題をトラブルシューティングする
+    entries:
+    - title: オブジェクトデータの場所を確認する
+      url: "/monitor/confirming-object-data-locations.html"
+    - title: オブジェクトストアの障害
+      url: "/monitor/object-store-storage-volume-failures.html"
+    - title: オブジェクトの整合性を検証
+      url: "/monitor/verifying-object-integrity.html"
+    - title: 失われたオブジェクトデータと欠落しているオブジェクトデータのトラブルシューティング
+      url: "/monitor/troubleshooting-lost-and-missing-object-data.html"
+      entries:
+      - title: 損失オブジェクトを調査する
+        url: "/monitor/investigating-lost-objects.html"
+      - title: 失われた可能性があるオブジェクトを検索してリストアします
+        url: "/monitor/searching-for-and-restoring-potentially-lost-objects.html"
+      - title: 損失オブジェクトと欠落オブジェクトのカウントをリセットします
+        url: "/monitor/resetting-lost-and-missing-object-counts.html"
+    - title: Low object data storage アラートのトラブルシューティングを行います
+      url: "/monitor/troubleshooting-low-object-data-storage-alert.html"
+    - title: 読み取り専用のローウォーターマーク上書きアラートのトラブルシューティング
+      url: "/monitor/troubleshoot-low-watermark-alert.html"
+    - title: Storage Status （ SSTS ）アラームをトラブルシューティングします
+      url: "/monitor/troubleshooting-storage-status-alarm.html"
+    - title: プラットフォームサービスメッセージの配信のトラブルシューティング（ SMTT アラーム）
+      url: "/monitor/troubleshooting-delivery-platform-services-messages.html"
+  - title: メタデータに関する問題のトラブルシューティング
+    url: "/monitor/troubleshooting-metadata-issues.html"
+  - title: 証明書エラーのトラブルシューティングを行う
+    url: "/monitor/troubleshooting-certificate-errors.html"
+  - title: 管理ノードとユーザインターフェイスの問題をトラブルシューティングする
+    url: "/monitor/troubleshooting-admin-node-and-user-interface-issues.html"
+  - title: ネットワーク、ハードウェア、およびプラットフォームの問題をトラブルシューティングする
+    url: "/monitor/troubleshooting-network-hardware-and-platform-issues.html"
+  - title: 外部 syslog サーバのトラブルシューティングを行います
+    url: "/monitor/troubleshooting-syslog-server.html"
+- title: アラート一覧
+  url: "/monitor/alerts-reference.html"
+- title: よく使用される Prometheus 指標
+  url: "/monitor/commonly-used-prometheus-metrics.html"
+- title: アラーム一覧（従来のシステム）
+  url: "/monitor/alarms-reference.html"
+  entries:
+  - title: SNMP 通知を生成するアラーム（従来のシステム）
+    url: "/monitor/alarms-that-generate-snmp-notifications.html"
+- title: ログファイル参照
+  url: "/monitor/logs-files-reference.html"
+  entries:
+  - title: StorageGRID ソフトウェアのログ
+    url: "/monitor/storagegrid-software-logs.html"
+  - title: 導入とメンテナンスのログ
+    url: "/monitor/deployment-and-maintenance-logs.html"
+  - title: サードパーティソフトウェアのログ
+    url: "/monitor/logs-for-third-party-software.html"
+  - title: bycast.log について
+    url: "/monitor/about-bycast-log.html"

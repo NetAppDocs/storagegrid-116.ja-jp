@@ -1,0 +1,29 @@
+---
+permalink: audit/audit-log-file-rotation.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, log file, audit.log, audit.log file, rotation, save, autosave, auto save, auto-save 
+summary: 監査ログファイルは、管理ノードの /var/local/audit/export ディレクトリに保存されます。アクティブな監査ログファイルの名前は audit.log です。 
+---
+= 監査ログファイルのローテーション
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査ログファイルは管理ノードの /var/local/audit/export ディレクトリに保存されます。アクティブな監査ログ・ファイルには 'audit.log' という名前が付けられています
+
+
+NOTE: 必要に応じて、監査ログのデスティネーションを変更したり、監査情報を外部 syslog サーバに送信したりできます。外部 syslog サーバが設定されても、監査レコードのローカルログは引き続き生成および格納されます。を参照してください xref:../monitor/configure-audit-messages.adoc[監査メッセージとログの送信先を設定します]。
+
+1 日に 1 回アクティブな「 audit.log 」ファイルが保存され ' 新しい「 audit.log 」ファイルが開始されます保存されたファイルの名前は ' 保存された日時を '_yyyy-mm-dd.txt_' の形式で示します1 日に複数の監査ログが作成された場合 ' ファイル名には ' ファイルが保存された日付が使用されますファイル名には ' 番号が付加されますフォーマットは '_yyyy-mm-dd.txt.n_` ですたとえば、「 2018-04-15.txt 」と「 2018-04-15.txt.1 」は、 2018 年 4 月 15 日に作成および保存された 1 番目と 2 番目のログファイルです。
+
+1 日後、保存されたファイルは圧縮され、元の日付を保持する「 _yyyy-mm-dd.txt.gz_` 」の形式で名前が変更されます。そのため、時間の経過とともに、管理ノード上の監査ログ用に割り当てられたストレージが消費されます。スクリプトは監査ログのスペース消費を監視し ' 必要に応じてログファイルを削除して '/var/local/audit/export' ディレクトリ内のスペースを解放します監査ログは、作成日に基づいて、古い順に削除されます。スクリプトのアクションは '/var/local/log/manage-audit.log ファイルで監視できます
+
+この例は ' アクティブな 'audit.log' ファイル ' 前日のファイル (2018-04-15.txt`) ' および前日の圧縮ファイル (2018-04-14.txt.gz') を示しています
+
+[listing]
+----
+audit.log
+2018-04-15.txt
+2018-04-14.txt.gz
+----

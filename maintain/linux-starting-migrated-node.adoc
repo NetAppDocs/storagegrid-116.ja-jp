@@ -1,0 +1,37 @@
+---
+permalink: maintain/linux-starting-migrated-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, start node 
+summary: 移行済みノードの検証が完了したら、ターゲット Linux ホストでコマンドを実行して、ノードを開始します。 
+---
+= Linux ：移行済みノードを開始します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+移行済みノードの検証が完了したら、ターゲット Linux ホストでコマンドを実行して、ノードを開始します。
+
+.手順
+. 新しいホストでノードを開始します。
++
+[listing]
+----
+sudo storagegrid node start DC1-S3
+Starting node DC1-S3
+----
+. Grid Manager で、ノードのステータスが緑色であり、そのノードに対するアラームが発生していないことを確認します。
++
+
+IMPORTANT: ノードのステータスが緑色の場合、移行済みノードは完全に再起動してグリッドに再参加しています。ステータスが緑色でない場合は、複数のノードがサービス停止の状態にならないようにするために、追加のノードを移行しないでください。
+
++
+Grid Manager にアクセスできない場合は、 10 分待ってから次のコマンドを実行します。
+
++
+「 sudo StorageGRID node status *_node-name_*` 」
+
++
+移行したノードの Run-State が「 running 」であることを確認します。
+
+

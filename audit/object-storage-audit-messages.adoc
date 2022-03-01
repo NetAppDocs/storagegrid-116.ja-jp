@@ -1,0 +1,134 @@
+---
+permalink: audit/object-storage-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, object storage, object management, object retrieval, node transfer, verification, APCT, ARCB, ARCE, ARCT, AREM, ASCE, ASCT, ATCE, AVCC, CBSE, CBRE, SCMT, SREM 
+summary: オブジェクトストレージ監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。StorageGRID システム内のオブジェクトのストレージと管理に関連するイベントを示します。オブジェクトの格納と読み出し、グリッドノードからグリッドノードへの転送、および検証が含まれます。 
+---
+= オブジェクトストレージ監査メッセージ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+オブジェクトストレージ監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。StorageGRID システム内のオブジェクトのストレージと管理に関連するイベントを示します。オブジェクトの格納と読み出し、グリッドノードからグリッドノードへの転送、および検証が含まれます。
+
+|===
+| コード | 説明 | を参照してください 
+
+
+ a| 
+APCT
+ a| 
+Archive Purge from Cloud-Tier ： S3 API を使用して StorageGRID に接続する外部アーカイブストレージシステムから、アーカイブされたオブジェクトデータが削除されました。
+ a| 
+xref:apct-archive-purge-from-cloud-tier.adoc[APCT ：クラウド階層からのアーカイブの削除]
+
+
+
+ a| 
+ARCB
+ a| 
+Archive Object Retrieve Begin ： ARC サービスが、外部アーカイブストレージシステムからオブジェクトデータの読み出しを開始しました。
+ a| 
+xref:arcb-archive-object-retrieve-begin.adoc[ARCB ：アーカイブオブジェクトの読み出しが開始されました]
+
+
+
+ a| 
+ARCE
+ a| 
+Archive Object Retrieve End ：オブジェクトデータが外部アーカイブストレージシステムから読み出され、 ARC サービスが読み出し処理のステータスをレポートします。
+ a| 
+xref:arce-archive-object-retrieve-end.adoc[ARCE ：アーカイブオブジェクトの読み出しが終了しました]
+
+
+
+ a| 
+ARCT
+ a| 
+Archive Retrieve from Cloud-Tier ： S3 API を使用して StorageGRID に接続する外部アーカイブストレージシステムから、アーカイブされたオブジェクトデータが読み出されました。
+ a| 
+xref:arct-archive-retrieve-from-cloud-tier.adoc[ARCT ：クラウド階層からアーカイブを取得します]
+
+
+
+ a| 
+AREM
+ a| 
+Archive Object Remove ：外部アーカイブストレージシステムからのコンテンツブロックの削除が成功または失敗しました。
+ a| 
+xref:arem-archive-object-remove.adoc[AREM ：アーカイブオブジェクトの削除]
+
+
+
+ a| 
+ASCE
+ a| 
+Archive Object Store End ：コンテンツブロックが外部アーカイブストレージシステムに書き込まれ、 ARC サービスが書き込み処理のステータスをレポートします。
+ a| 
+xref:asce-archive-object-store-end.adoc[ASCE ：アーカイブオブジェクトストアの終了]
+
+
+
+ a| 
+▽ SCT 。△
+ a| 
+Archive Store Cloud-Tier ： S3 API を使用して StorageGRID に接続する外部アーカイブストレージシステムに、オブジェクトデータが格納されました。
+ a| 
+xref:asct-archive-store-cloud-tier.adoc[ASCT ：アーカイブストアのクラウド階層]
+
+
+
+ a| 
+ATCE
+ a| 
+Archive Object Store Begin ：外部アーカイブストレージへのコンテンツブロックの書き込みが開始されました。
+ a| 
+xref:atce-archive-object-store-begin.adoc[ATCE ：アーカイブオブジェクトストアが開始されました]
+
+
+
+ a| 
+AVCC の場合
+ a| 
+Archive Validate Cloud-Tier Configuration ：指定されたアカウントおよびバケットの設定の検証に成功または失敗しました。
+ a| 
+xref:avcc-archive-validate-cloud-tier-configuration.adoc[AVCC ：アーカイブによってクラウド階層の構成を検証]
+
+
+
+ a| 
+CBSE
+ a| 
+Object Send End ：ソースエンティティが、グリッドノードからグリッドノードへのデータ転送処理を完了しました。
+ a| 
+xref:cbse-object-send-end.adoc[CBSE ：オブジェクト送信終了]
+
+
+
+ a| 
+CBRE
+ a| 
+Object Receive End ：デスティネーションエンティティが、グリッドノードからグリッドノードへのデータ転送処理を完了しました。
+ a| 
+xref:cbre-object-receive-end.adoc[CBRE ：オブジェクト受信終了]
+
+
+
+ a| 
+SCMT
+ a| 
+Object Store Commit ：コンテンツブロックの格納と検証がすべて完了し、要求可能な状態になりました。
+ a| 
+xref:scmt-object-store-commit.adoc[SCMT ：オブジェクトストアのコミット]
+
+
+
+ a| 
+SREM
+ a| 
+Object Store Remove ：コンテンツブロックがグリッドノードから削除され、直接要求できなくなりました。
+ a| 
+xref:srem-object-store-remove.adoc[SREM ：オブジェクトストアの削除]
+
+|===

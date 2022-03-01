@@ -1,0 +1,32 @@
+---
+permalink: upgrade/troubleshooting-user-interface-issues.html 
+sidebar: sidebar 
+keywords: grid manager, tenant manager, error, browser 
+summary: StorageGRID ソフトウェアを新しいバージョンにアップグレードしたあとに、 Grid Manager またはテナントマネージャで問題が発生することがある。 
+---
+= ユーザインターフェイスの問題のトラブルシューティング
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID ソフトウェアを新しいバージョンにアップグレードしたあとに、 Grid Manager またはテナントマネージャで問題が発生することがある。
+
+
+
+== Web インターフェイスが想定どおりに応答しません
+
+StorageGRID ソフトウェアのアップグレード後に Grid Manager またはテナントマネージャが想定どおりに応答しない場合がある。
+
+Web インターフェイスで問題が発生した場合：
+
+* を使用していることを確認します xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
++
+
+NOTE: 通常、ブラウザサポートは StorageGRID リリースごとに変更されます。
+
+* Web ブラウザのキャッシュをクリアします。
++
+キャッシュをクリアすると、以前のバージョンの StorageGRID ソフトウェアで使用されていた古いリソースが削除され、ユーザインターフェイスが再び正しく動作するようになります。手順については、 Web ブラウザのドキュメントを参照してください。
+
+

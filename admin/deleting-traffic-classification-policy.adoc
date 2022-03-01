@@ -1,0 +1,40 @@
+---
+permalink: admin/deleting-traffic-classification-policy.html 
+sidebar: sidebar 
+keywords: delete traffic classification policy 
+summary: トラフィック分類ポリシーが不要になった場合は、削除できます。 
+---
+= トラフィック分類ポリシーを削除します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+トラフィック分類ポリシーが不要になった場合は、削除できます。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* Root アクセス権限が割り当てられている。
+
+
+.手順
+. * configuration * > * Network * > * traffic classification * を選択します。
++
+[Traffic Classification Policies] ページが表示され、既存のポリシーがテーブルにリストされます。
+
++
+image::../media/traffic_classification_policies_main_screen_w_examples.png[トラフィック分類ポリシーの例]
+
+. 削除するポリシーの左側にあるオプションボタンを選択します。
+. 「 * 削除」を選択します。
++
+警告ダイアログボックスが表示されます。
+
++
+image::../media/traffic_classification_policy_delete.png[トラフィック分類ポリシーを削除します]
+
+. 「 * OK * 」を選択して、ポリシーを削除することを確認します。
++
+ポリシーが削除されます。
+
+

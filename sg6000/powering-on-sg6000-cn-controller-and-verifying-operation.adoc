@@ -1,0 +1,110 @@
+---
+permalink: sg6000/powering-on-sg6000-cn-controller-and-verifying-operation.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, power on, turn on, start, sg6000-cn, controller 
+summary: メンテナンスが完了したら、コントローラの電源をオンにします。 
+---
+= SG6000-CN コントローラの電源をオンにして、動作を確認します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+メンテナンスが完了したら、コントローラの電源をオンにします。
+
+.必要なもの
+* コントローラをキャビネットまたはラックに設置し、データケーブルと電源ケーブルを接続しておきます。
++
+xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[SG6000-CN コントローラをキャビネットまたはラックに再度取り付けます]
+
+* コントローラをデータセンターに物理的に配置しておきます。
++
+xref:locating-controller-in-data-center.adoc[データセンターでコントローラを探します]
+
+
+
+.手順
+. SG6000-CN コントローラの電源をオンにし、次のいずれかの方法でコントローラの LED とブート時のコードを監視します。
++
+** コントローラ前面の電源スイッチを押します。
++
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 の前面パネルの電源 LED オフ]
+
+** コントローラの BMC インターフェイスを使用します。
++
+... コントローラの BMC インターフェイスにアクセスします。
++
+xref:accessing-bmc-interface-sg6000.adoc[BMC インターフェイスにアクセスします]
+
+... 「 * 電源制御 * 」を選択します。
+... [ サーバーの電源をオンにする *] を選択し、 [ アクションの実行 *] を選択します。
++
+image::../media/sg6060_power_on_from_bmc.png[BMC からコントローラの電源をオンにします]
+
++
+BMC インターフェイスを使用して、起動ステータスを監視します。
+
+
+
+
+
+. アプライアンスコントローラが Grid Manager に表示され、アラートがないことを確認します。
++
+コントローラが Grid Manager に表示されるまでに最大 20 分かかることがあります。
+
+. 新しい SG6000-CN コントローラが完全に動作していることを確認します。
++
+.. PuTTY または別の SSH クライアントを使用して、グリッドノードにログインします。
++
+... 次のコマンドを入力します。 ssh admin@_grid_node_name
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+... root に切り替えるには、次のコマンドを入力します
+... 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+
+
+.. 次のコマンドを入力して、想定される出力が返されることを確認します。 +`cat /sys/class/fc_host/* /port_state`
++
+想定される出力：
+
++
+[listing]
+----
+Online
+Online
+Online
+Online
+----
++
+想定する出力が返されない場合は、テクニカルサポートにお問い合わせください。
+
+.. 次のコマンドを入力して、想定される出力が返されることを確認します。 +`cat /sys/class/fc_host/*/spea`
++
+想定される出力：
+
++
+[listing]
+----
+16 Gbit
+16 Gbit
+16 Gbit
+16 Gbit
+----
++
+想定する出力が返されない場合は、テクニカルサポートにお問い合わせください。
+
+.. Grid Manager のノードページで、アプライアンスノードがグリッドに接続されていてアラートがないことを確認する。
++
+
+CAUTION: このアプライアンスに緑のアイコンが表示されていないかぎり、別のアプライアンスノードをオフラインにしないでください。
+
+
+
+. オプション：前面ベゼルが取り外されている場合は、取り付けます。
+
+
+xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]
+
+xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[SG6000 ストレージコントローラのブート時のステータスコードを確認します]

@@ -1,0 +1,40 @@
+---
+permalink: maintain/fixing-missing-block-device-errors.html 
+sidebar: sidebar 
+keywords: storagegrid, missing block device, block device error 
+summary: システムは、リカバリされた各ノードが有効なブロックデバイススペシャルファイル、またはブロックデバイススペシャルファイルへの有効なソフトリンクにマッピングされていることを確認します。StorageGRID が「 /etc/storagegrid/nodes/ _node-name _.conf 」ファイルで無効なマッピングを検出すると、ブロックデバイスが見つからないことを示すエラーが表示されます。 
+---
+= ブロックデバイスが見つからないエラーを修正します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムは、リカバリされた各ノードが有効なブロックデバイススペシャルファイル、またはブロックデバイススペシャルファイルへの有効なソフトリンクにマッピングされていることを確認します。StorageGRID が「 /etc/storagegrid/nodes/ _node-name _.conf 」ファイルで無効なマッピングを検出すると、ブロックデバイスが見つからないことを示すエラーが表示されます。
+
+次のエラーが発生することがあります。
+
+構成ファイル /etc/storagegrid/nodes/ _node-name _.conf で、 node_name などの構成ファイルをチェックしています `error:_node-name_:block_device_purpose =_path -name_`_node-name_:_path -name_does not exist`
+
+つまり '/etc/storagegrid/nodes/ _node-name _.conf は '_node-name_for の目的で使用されるブロック・デバイスを Linux ファイル・システム内の指定されたパス名にマッピングしますが ' 有効なブロック・デバイス・スペシャル・ファイル ' またはブロック・デバイス・スペシャル・ファイルへのソフト・リンクがこの場所にありません
+
+の手順が完了していることを確認します xref:deploying-new-linux-hosts.adoc[新しい Linux ホストを導入する]。すべてのブロックデバイスに、元のホストで使用されていたのと同じ永続的なデバイス名を使用します。
+
+見つからないブロックデバイスのスペシャルファイルをリストアまたは再作成できない場合は、適切なサイズとストレージカテゴリの新しいブロックデバイスを割り当て、ノード構成ファイルを編集して新しいブロックデバイスのスペシャルファイルを参照するように block_device_purpose の値を変更します。
+
+Linux オペレーティングシステムのインストール手順の「ストレージ要件」の表から適切なサイズとストレージカテゴリを決定します。ブロック・デバイスの交換に進む前に ' ホスト・ストレージの構成に記載されている推奨事項を確認してください
+
+
+IMPORTANT: 元のブロック・デバイスが障害ホストとともに失われたために 'block_device_' で始まる構成ファイル変数に新しいブロック・ストレージ・デバイスを指定する必要がある場合は ' リカバリ手順を進める前に ' 新しいブロック・デバイスがアンフォーマットされていることを確認してください共有ストレージを使用していて新しいボリュームを作成済みの場合、新しいブロックデバイスはアンフォーマットされます。状況がわからない場合は、新しいブロックストレージデバイスのスペシャルファイルに対して次のコマンドを実行します。
+
+注意
+
+次のコマンドは、新しいブロックストレージデバイスに対してのみ実行してください。デバイス上のデータがすべて失われるため、リカバリされているノードの有効なデータがブロックストレージに格納されている可能性がある場合は、このコマンドを実行しないでください。
+
+[listing]
+----
+sudo dd if=/dev/zero of=/dev/mapper/my-block-device-name bs=1G count=1
+----
+xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+
+xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]

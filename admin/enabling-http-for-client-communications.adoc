@@ -1,0 +1,42 @@
+---
+permalink: admin/enabling-http-for-client-communications.html 
+sidebar: sidebar 
+keywords: enable http, clb connections, storage node connections 
+summary: デフォルトでは、クライアントアプリケーションは、ストレージノードへのすべての接続、またはゲートウェイノード上の廃止された CLB サービスへのすべての接続に、 HTTPS ネットワークプロトコルを使用します。非本番環境のグリッドのテストなどの目的で、これらの接続に対して HTTP を有効にすることもできます。 
+---
+= クライアント通信で HTTP を有効にします
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+デフォルトでは、クライアントアプリケーションは、ストレージノードへのすべての接続、またはゲートウェイノード上の廃止された CLB サービスへのすべての接続に、 HTTPS ネットワークプロトコルを使用します。非本番環境のグリッドのテストなどの目的で、これらの接続に対して HTTP を有効にすることもできます。
+
+.必要なもの
+* を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* 特定のアクセス権限が必要です。
+
+
+S3 / Swift クライアントがストレージノードへの HTTP 接続を直接確立する必要がある場合、またはゲートウェイノード上の廃止された CLB サービスへの HTTP 接続を確立する必要がある場合にのみ、このタスクを実行します。
+
+HTTPS 接続のみを使用するクライアント、またはロードバランササービスに接続するクライアントでは、（各ロードバランサエンドポイントで HTTP または HTTPS を使用するように設定できるため）このタスクを実行する必要はありません。詳細については、ロードバランサエンドポイントの設定に関する情報を参照してください。
+
+を参照してください xref:summary-ip-addresses-and-ports-for-client-connections.adoc[Summary ：クライアント接続の IP アドレスとポート] ストレージノードへの接続時、または HTTP または HTTPS を使用して廃止された CLB サービスへの接続時に使用するポート S3 および Swift クライアントを取得する
+
+
+IMPORTANT: 要求が暗号化されずに送信されるため、本番環境のグリッドで HTTP を有効にする場合は注意してください。
+
+.手順
+. * 設定 * > * システム * > * グリッドオプション * を選択します。
+. [ ネットワークオプション ] セクションで、 [* HTTP 接続を有効にする *] チェックボックスをオンにします。
++
+image::../media/http_enabled.png[HTTP 接続を有効にします]
+
+. [ 保存（ Save ） ] を選択します。
+
+
+.関連情報
+* xref:configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]
+* xref:../s3/index.adoc[S3 を使用する]
+* xref:../swift/index.adoc[Swift を使用します]
+

@@ -1,0 +1,44 @@
+---
+permalink: sg5600/optional-remapping-network-ports-for-appliance-sg5600-and-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, remapping, remap, map, mapping, network, ports 
+summary: アプライアンスストレージノードの内部ポートを別の外部ポートに再マッピングすることが必要になる場合があります。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。 
+---
+= オプション：アプライアンスのネットワークポートの再マッピング
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アプライアンスストレージノードの内部ポートを別の外部ポートに再マッピングすることが必要になる場合があります。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。
+
+.必要なもの
+* 以前に StorageGRID アプライアンスインストーラにアクセスしていた場合。
+* ロードバランサエンドポイントを設定しておらず、設定する予定もない状態である必要があります。
++
+
+IMPORTANT: ポートを再マッピングする場合、同じポートを使用してロードバランサエンドポイントを設定することはできません。ポートを再マッピング済みの場合にロードバランサエンドポイントを設定するには、の手順を実行します xref:../maintain/removing-port-remaps.adoc[ポートの再マッピングを削除]。
+
+
+
+.手順
+. StorageGRID アプライアンスインストーラのメニューバーから、 *Configure Networking *>*Remap Port* をクリックします。
++
+Remap Port ページが表示されます。
+
+. Network * ドロップダウンボックスから、再マッピングするポートのネットワーク（ Grid 、 Admin 、または Client ）を選択します。
+. [*Protocol*] ドロップダウンボックスから、 IP プロトコルとして [TCP] または [UDP] を選択します。
+. [* Remap Direction] * ドロップダウンボックスから、このポートに再マッピングするトラフィック方向（インバウンド、アウトバウンド、または双方向）を選択します。
+. 「 * Original Port * 」に、再マッピングするポートの番号を入力します。
+. 「 * mapped-to Port * 」には、代わりに使用するポートの番号を入力します。
+. [ * ルールの追加 * ] をクリックします。
++
+新しいポートマッピングがテーブルに追加され、新しいマッピングがただちに有効になります。
+
++
+image::../media/remap_ports.gif[StorageGRID Webscale アプライアンスインストーラの Remap ポートオプションを示すスクリーンショット]
+
+. ポートマッピングを削除するには、削除するルールのオプションボタンを選択し、 * 選択したルールの削除 * をクリックします。
+
+
+xref:../maintain/index.adoc[リカバリとメンテナンス]

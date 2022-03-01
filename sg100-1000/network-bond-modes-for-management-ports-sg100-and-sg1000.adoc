@@ -1,0 +1,46 @@
+---
+permalink: sg100-1000/network-bond-modes-for-management-ports-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup, management, management port, management ports 
+summary: サービスアプライアンス上の 2 つの 1GbE 管理ポートでは、オプションの管理ネットワークに接続するためのネットワークボンディングモードとして、 Independent または Active-Backup を選択できます。 
+---
+= 管理ポートのネットワークボンディングモード
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスアプライアンス上の 2 つの 1GbE 管理ポートでは、オプションの管理ネットワークに接続するためのネットワークボンディングモードとして、 Independent または Active-Backup を選択できます。
+
+* SG100 ネットワーク管理ポート *
+
+image::../media/sg100_bonded_management_ports.png[SG100 ボンディングされた管理ポート]
+
+* SG1000 ネットワーク管理ポート *
+
+image::../media/sg1000_bonded_management_ports.png[SG1000 ネットワーク管理ポート]
+
+Independent モードでは、左側の管理ポートだけが管理ネットワークに接続されます。このモードではパスは冗長化されません。右側の管理ポートは接続されず、一時的なローカル接続（ IP アドレス 169.254.0.1 ）に使用できます。
+
+Active-Backup モードでは、両方の管理ポートが管理ネットワークに接続されます。一度に 1 つのポートのみがアクティブになります。アクティブポートで障害が発生すると、バックアップポートが自動的にフェイルオーバーして接続が継続されます。これら 2 つの物理ポートを 1 つの論理管理ポートにボンディングすることで、管理ネットワークへのパスが冗長化されます。
+
+
+NOTE: 1GbE 管理ポートが Active-Backup モードに設定されている場合にサービスアプライアンスへの一時的なローカル接続が必要となった場合は、両方の管理ポートからケーブルを取り外し、一時的なケーブルを右側の管理ポートに接続し、 IP アドレス 169.254.0.1 を使用してアプライアンスにアクセスしてください。
+
+|===
+| コールアウト | ネットワークボンディングモード 
+
+
+ a| 
+A
+ a| 
+アクティブ / バックアップモード：両方の管理ポートが、管理ネットワークに接続された 1 つの論理管理ポートにボンディングされます。
+
+
+
+ a| 
+私
+ a| 
+Independent モード。左側のポートが管理ネットワークに接続されます。右側のポートは一時的なローカル接続（ IP アドレス 169.254.0.1 ）に使用できます。
+
+|===

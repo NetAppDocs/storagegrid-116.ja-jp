@@ -1,0 +1,32 @@
+---
+permalink: sg6000/expansion-shelves-do-not-appear-in-appliance-installer.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance troubleshooting, Expansion, shelves, do not appear, Appliance Installer, missing, not shown 
+summary: SG6060 に拡張シェルフが設置されていて、 StorageGRID アプライアンスインストーラに表示されない場合は、シェルフの設置が完了していて、電源がオンになっていることを確認する必要があります。 
+---
+= 拡張シェルフはアプライアンスインストーラに表示されません
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6060 に拡張シェルフが設置されていて、 StorageGRID アプライアンスインストーラに表示されない場合は、シェルフの設置が完了していて、電源がオンになっていることを確認する必要があります。
+
+拡張シェルフがアプライアンスに接続されていることを確認するには、 StorageGRID アプライアンスインストーラで次の情報を表示します。
+
+* ホーム * ページには、拡張シェルフに関するメッセージが表示されます。
++
+image::../media/expansion_shelf_home_page_msg.png[拡張シェルフに関するメッセージ]
+
+* Advanced * > * RAID Mode * ページには、アプライアンスに拡張シェルフが含まれているかどうかをドライブ数で示します。たとえば、以下のスクリーンショットでは、 2 本の SSD と 178 本の HDD が表示されています。2 台の拡張シェルフを備えた SG6060 には、合計 180 本のドライブが搭載されてい
+
+
+image::../media/expansion_shelves_shown_by_num_of_drives.png[ドライブ数]
+
+拡張シェルフが存在しないことが StorageGRID アプライアンスインストーラのページに示された場合は、次の手順 を実行します。
+
+.手順
+. 確認します xref:sg6060-cabling-optional-expansion-shelves.adoc[必要なすべてのケーブルがしっかりと接続されている]。
+. を確認します xref:connecting-power-cords-and-applying-power-sg6000.adoc[拡張シェルフの電源をオンにします]。
+. 問題 の解決にサポートが必要な場合は、テクニカルサポートにお問い合わせください。
+

@@ -1,0 +1,46 @@
+---
+permalink: admin/manage-s3-select-for-tenant-accounts.html 
+sidebar: sidebar 
+keywords: s3 select, selectobjectcontent, best practices 
+summary: 特定の S3 テナントが、個々のオブジェクトに対する S3 Select から問題 SelectObjectContent 要求を使用できるようにすることができます。 
+---
+= テナントアカウント用の S3 Select を管理します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+特定の S3 テナントが、個々のオブジェクトに対する S3 Select から問題 SelectObjectContent 要求を使用できるようにすることができます。
+
+S3 Select を使用すると、データベースや関連リソースを導入せずに大量のデータを効率的に検索できます。また、データ取得のコストとレイテンシも削減されます。
+
+
+
+== S3 Select とは何ですか。
+
+S3 Select では、 S3 クライアントが SelectObjectContent 要求を使用して、オブジェクトから必要なデータのみをフィルタリングして読み出すことができます。S3 Select の StorageGRID 実装には、 S3 Select のコマンドと機能の一部が含まれています。
+
+
+
+== S3 Select を使用する際の考慮事項と要件
+
+StorageGRID では、 S3 Select クエリに次のものが必要です。
+
+* 照会するオブジェクトは CSV 形式であるか、 CSV 形式のファイルを含む GZIP または bzip2 圧縮ファイルです。
+* テナントには、グリッド管理者によって S3 Select 機能が付与されている必要があります。Allow S3 Select * When を選択します xref:creating-tenant-account.adoc[テナントを作成します] または xref:editing-tenant-account.adoc[テナントの編集]。
+* SelectObjectContent 要求は、に送信する必要があります xref:configuring-load-balancer-endpoints.adoc[StorageGRID ロードバランサエンドポイント]。エンドポイントで使用する管理ノードとゲートウェイノードは、 SG100 、 SG1000 アプライアンスノード、または VMware ベースのソフトウェアノードである必要があります。
+
+
+次の制限事項に注意してください。
+
+* ベアメタルロードバランサノードはサポートされていません。
+* クエリをストレージノードに直接送信することはできません。
+* 廃止された CLB サービスを介して送信されるクエリはサポートされません。
+
+
+
+IMPORTANT: SelectObjectContent 要求を使用すると、すべての S3 クライアントおよびすべてのテナントのロードバランサのパフォーマンスを低下させることができます。この機能は、必要な場合にのみ有効にし、信頼できるテナントに対してのみ有効にします。
+
+を参照してください xref:../s3/use-s3-select.adoc[S3 Select の使用手順]。
+
+をクリックしてください xref:../monitor/reviewing-support-metrics.adoc[Grafana チャート] 一定期間にわたる S3 Select 処理の場合は、 Grid Manager で * support * > * Tools * > * Metrics * を選択します。

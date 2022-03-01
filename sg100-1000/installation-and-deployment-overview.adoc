@@ -1,0 +1,106 @@
+---
+permalink: sg100-1000/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Installation, deployment, Install, deploy, Installing, deploying 
+summary: StorageGRID サービスアプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環としてサービスアプライアンスノードを追加することもできます。 
+---
+= インストールと導入の概要
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID サービスアプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環としてサービスアプライアンスノードを追加することもできます。
+
+StorageGRID システムが、必要なバージョンの StorageGRID ソフトウェアを使用している。
+
+|===
+| アプライアンス | 必要な StorageGRID のバージョン 
+
+
+ a| 
+SG100
+ a| 
+11.4 以降（最新のホットフィックスを推奨）
+
+
+
+ a| 
+SG1000 からのアクセス
+ a| 
+11.3 以降（最新のホットフィックスを推奨）
+
+|===
+
+
+== インストールと導入のタスク
+
+StorageGRID アプライアンスの準備とグリッドへの追加は、主に 4 つの手順で行います。
+
+. 設置の準備：
++
+** 設置場所の準備
+** 開梱と内容の確認
+** 追加機器および工具の入手方法
+** ネットワーク構成を検証しています
+** オプション：すべてのアプライアンスデータを暗号化する場合は、外部キー管理サーバ（ KMS ）を設定します。外部キー管理の詳細については、 StorageGRID の管理手順を参照してください。
+
+
+. ハードウェアの設置
++
+** ハードウェアの登録
+** キャビネットまたはラックへのアプライアンスの設置
+** アプライアンスのケーブル接続
+** 電源コードの接続と電源の投入
+** ブート時のステータスコードの確認
+
+
+. ハードウェアの設定
++
+** StorageGRID アプライアンスインストーラへのアクセス、および StorageGRID ネットワークへの接続に必要なリンクとネットワーク IP の設定
+** アプライアンスのベースボード管理コントローラ（ BMC ）インターフェイスへのアクセス
+** オプション：外部 KMS を使用してアプライアンスデータを暗号化する場合は、ノード暗号化を有効にします。
+
+
+. アプライアンスのゲートウェイノードまたは管理ノードを導入する
++
+アプライアンスハードウェアの設置と設定が完了したら、アプライアンスをゲートウェイノードおよび管理ノードとして StorageGRID システムに導入できます。SG100 と SG1000 アプライアンスは、両方ともゲートウェイノードと管理ノード（プライマリノードと非プライマリノード）として同時に動作できます。
+
++
+|===
+| タスク | 手順 
+
+
+ a| 
+新しい StorageGRID システムにアプライアンスのゲートウェイノードまたは管理ノードを導入する
+ a| 
+xref:deploying-services-appliance-node.adoc[サービスアプライアンスノードを導入する]
+
+
+
+ a| 
+既存の StorageGRID システムにアプライアンスのゲートウェイノードまたは管理ノードを追加する
+ a| 
+StorageGRID システムの拡張手順
+
+
+
+ a| 
+ノードのリカバリ処理の一環としてアプライアンスのゲートウェイノードまたは管理ノードを導入する
+ a| 
+リカバリとメンテナンスの手順
+
+|===
+
+
+xref:preparing-for-installation-sg100-and-sg1000.adoc[設置の準備（ SG100 および SG1000 ）]
+
+xref:installing-hardware-sg100-and-sg1000.adoc[ハードウェアの設置（ SG100 および SG1000 ）]
+
+xref:configuring-storagegrid-connections-sg100-and-sg1000.adoc[StorageGRID 接続の設定（ SG100 および SG1000 ）]
+
+xref:../expand/index.adoc[グリッドを展開します]
+
+xref:../maintain/index.adoc[リカバリとメンテナンス]
+
+xref:../admin/index.adoc[StorageGRID の管理]

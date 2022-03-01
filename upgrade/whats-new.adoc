@@ -1,0 +1,312 @@
+---
+permalink: upgrade/whats-new.html 
+sidebar: sidebar 
+keywords: what is new in StorageGRID 11.6 
+summary: このリリースの StorageGRID には、次の機能が導入されています。 
+---
+= StorageGRID 11.6 の新機能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+このリリースの StorageGRID には、次の機能が導入されています。
+
+
+
+== 操作性の向上
+
+Grid Manager のユーザインターフェイスが大幅に再設計されて、ユーザエクスペリエンスが向上しました。
+
+* 新しいサイドバーは、古いユーザインターフェイスのプルダウンメニューに代わるものです。
+* 複数のメニューが再編成され、関連するオプションがまとめて保持されました。たとえば、「設定 * 」メニューには、「証明書」、「キー管理サーバ」、「プロキシ設定」、「信頼されていないクライアントネットワーク」オプションの「セキュリティ * 」セクションが新しく追加されました。
+* ヘッダーバーの * Search * フィールドを使用すると、 Grid Manager のページにすばやく移動できます。
+* Nodes * ページの概要のテーブルには、使用されているオブジェクトデータや使用されているオブジェクトのメタデータなど、すべてのサイトとノードに関する情報が表示されます。このテーブルには新しい検索フィールドも含まれています。アラートアイコンは、アクティブなアラートがあるノードの横に表示されます。
+* 新しいウィザードでは、管理者グループ、管理者ユーザ、テナント、ロードバランサエンドポイント、ハイアベイラビリティ（ HA ）グループのワークフローなど、より複雑な設定を行うことができます。
+* すべての UI ページは、更新されたフォント、ボタンスタイル、および表形式でスタイルが変更されました。
++
+
+NOTE: StorageGRID 11.6 ドキュメントサイトでは、機能変更がないかぎり、新しい Grid Manager ページのスタイルを反映したスクリーンショットは更新されませんでした。
+
+
+
+以下を参照してください。
+
+* xref:../admin/index.adoc[StorageGRID の管理]
+* xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+
+
+
+== 複数の VLAN インターフェイス
+
+管理ノードとゲートウェイノードに仮想 LAN （ VLAN ）インターフェイスを作成できるようになりました。HA グループとロードバランサエンドポイントで VLAN インターフェイスを使用してクライアントトラフィックを分離およびパーティショニングすることで、セキュリティ、柔軟性、パフォーマンスを向上させることができます。
+
+* 新しい * VLAN インターフェイスの作成ウィザードでは、 VLAN ID の入力と 1 つ以上のノード上の親インターフェイスの選択を手順ごとに実行できます。親インターフェイスは、グリッドネットワーク、クライアントネットワーク、または VM またはベアメタルホスト用の追加のトランクインターフェイスです。を参照してください xref:../admin/configure-vlan-interfaces.html[VLAN インターフェイスを設定します]。
+* ノードにトランクインターフェイスまたはアクセスインターフェイスを追加できるようになりました。トランクインターフェイスを追加する場合は、 VLAN インターフェイスを設定する必要があります。アクセスインターフェイスを追加する場合は、 HA グループに直接追加できます。 VLAN インターフェイスを設定する必要はありません。以下を参照してください。
++
+** * Linux （ノードのインストール前） * ： <<Installation enhancements>>
+** * Linux （ノードのインストール後） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
+** * VMware （ノードのインストール後） * ： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[導入環境に関する情報を収集します]
+
+
+
+
+
+
+== アイデンティティフェデレーションに Azure AD を使用できる
+
+Grid Manager または Tenant Manager 用のアイデンティティフェデレーションを設定するときに、 Azure Active Directory （ Azure AD ）をアイデンティティソースとして選択できるようになりました。を参照してください xref:../admin/using-identity-federation.adoc[アイデンティティフェデレーションを使用する]。
+
+
+
+== Azure AD と PingFederate for SSO を使用できます
+
+グリッドにシングルサインオン（ SSO ）を設定するときに、 SSO タイプとして Azure AD または PingFederate を選択できるようになりました。サンドボックスモードを使用して、 Azure AD エンタープライズアプリケーションまたは PingFederate サービスプロバイダ（ SP ）から各 StorageGRID 管理ノードへの接続を設定してテストできます。を参照してください xref:../admin/configuring-sso.adoc[シングルサインオンを設定します]。
+
+
+
+== 証明書の一元管理
+
+* 新しい証明書ページ（ * configuration * > * Security * > * Certificates * ）は、すべての StorageGRID セキュリティ証明書に関する情報を 1 つの場所に集約します。StorageGRID のグローバル証明書、グリッド CA 証明書、およびクライアント証明書を新しいページから管理したり、ロードバランサエンドポイント、テナント、アイデンティティフェデレーションに使用されている証明書などの他の証明書に関する情報を表示したりできます。を参照してください xref:../admin/using-storagegrid-security-certificates.adoc[セキュリティ証明書について]。
+* この変更の一環として、次のグローバル証明書の名前が変更されました。
++
+** 管理インターフェイスサーバ証明書 * が、管理インターフェイス証明書 * になりました。
+** オブジェクトストレージ API サービスエンドポイントのサーバ証明書 * （ストレージ API サーバ証明書とも呼ばれる）が、 * S3 および Swift API 証明書 * になりました。
+** 内部 CA 証明書 * 、 * システム CA 証明書 * 、 * CA 証明書 * 、および * デフォルト CA 証明書 * が一貫して * Grid CA 証明書 * と呼ばれるようになりました。
+
+
+
+
+
+
+== Grid Manager に関するその他の機能拡張
+
+* * 高可用性（ HA ）グループ * へのアップデート。ウィザードの指示に従って HA グループを作成できるようになりました。を参照してください xref:../admin/configure-high-availability-group.html[ハイアベイラビリティグループを設定する]。
++
+** グリッドネットワーク（ eth0 ）またはクライアントネットワーク（ eth2 ）上のインターフェイスを選択するだけでなく、 VLAN インターフェイスまたはノードに追加したアクセスインターフェイスも選択できるようになりました。
+** インターフェイスの優先順位を指定できるようになりました。プライマリインターフェイスを選択し、各バックアップインターフェイスを順番にランク付けできます。
+** S3 、 Swift 、管理、またはテナントクライアントが別のサブネットから HA グループの VIP アドレスにアクセスする場合は、ゲートウェイの IP アドレスを指定できるようになりました。
+
+
+* * ロードバランサエンドポイント * を更新します。新しいウィザードでは、ロードバランサエンドポイントの作成プロセスを手順に従って実行します。を参照してください xref:../admin/configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]。
++
+** 次に、エンドポイントの作成時にクライアントタイプ（ S3 または Swift ）を選択し、エンドポイントの作成後にこの詳細を追加する必要はありません。
+** ロードバランサエンドポイントにグローバル * StorageGRID S3 および Swift 証明書 * を使用できるようになりました。別の証明書をアップロードしたり生成したりする必要はありません。
++
+
+NOTE: このグローバル証明書は、以前は廃止された CLB サービスおよびストレージノードへの接続に使用されていました。ロードバランサエンドポイントにグローバル証明書を使用する場合は、 S3 および Swift の API 証明書のページでカスタム証明書をアップロードする必要があります。
+
+
+
+
+
+
+
+== Tenant Manager の新機能
+
+* * 新しい S3 実験コンソール * 。Tenant Manager のバケットページからのリンクとして使用できる新しい実験的な S3 コンソールを使用して、 S3 テナントユーザはバケット内のオブジェクトを表示および管理できます。を参照してください xref:../tenant/use-s3-console.adoc[Experimental S3 Console を使用します]。
+
+
+
+IMPORTANT: S3 Console はテスト済みではないため、オブジェクトの一括管理や本番環境での使用は想定されていません。テナントで S3 コンソールを使用するのは、少数のオブジェクトに対して機能を実行する場合や、コンセプトの実証や非本番環境のグリッドを使用する場合のみにしてください。
+
+* * 複数の S3 バケット * を削除できます。テナントユーザは一度に複数の S3 バケットを削除できるようになりました。削除する各バケットは空である必要があります。を参照してください xref:../tenant/deleting-s3-bucket.adoc[S3 バケットを削除します]。
+* * テナントアカウントへの更新権限 * 。Tenant accounts 権限を持つグループに属する管理者ユーザは、既存のトラフィック分類ポリシーを表示できるようになりました。以前は、これらの指標を表示するには、ユーザに Root アクセス権限が必要でした。
+
+
+
+
+== 新しいアップグレードとホットフィックスのプロセス
+
+* StorageGRID アップグレード * ページが再設計されました（ * maintenance * > * System * > * Software update * > * StorageGRID upgrade * ）。
+* StorageGRID 11.6 へのアップグレードが完了したら、 Grid Manager を使用して将来のリリースにアップグレードし、そのリリース用のホットフィックスを同時に適用できます。StorageGRID のアップグレードページに推奨されるアップグレードパスが表示され、正しいダウンロードページに直接リンクされます。
+* AutoSupport ページ（ * support * > * Tools * > * AutoSupport * ）の新しい * Check for software updates * チェックボックスを使用すると、この機能を制御できます。システムに WAN アクセスがない場合は、利用可能なソフトウェアアップデートのチェックを無効にできます。を参照してください xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[AutoSupport &GT; ソフトウェアアップデートのチェックを無効にします]。
++
+
+NOTE: StorageGRID 11.6 へのアップグレードでは、オプションでスクリプトを使用して、ホットフィックスを同時にアップグレードおよび適用できます。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["ネットアップのナレッジベース：「 How to run combined Major upgrade and hotfix script for StorageGRID"^]。
+
+* SANtricity OS のアップグレードを一時停止し、あとでアップグレードを完了する必要がある場合は一部のノードのアップグレードを省略できるようになりました。ご使用のストレージアプライアンスの手順を参照してください。
++
+** xref:../sg5600/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5600.adoc[グリッドマネージャ（ SG5600 ）を使用したストレージコントローラの SANtricity OS のアップグレード]
+** xref:../sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.adoc[グリッドマネージャ（ SG5700 ）を使用してストレージコントローラの SANtricity OS をアップグレードする]
+** xref:../sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.adoc[Grid Manager （ SG6000 ）を使用しているストレージコントローラの SANtricity OS をアップグレードする]
+
+
+
+
+
+
+== 外部 syslog サーバのサポート
+
+* 監査メッセージおよび StorageGRID ログのサブセット（ * configuration * > * Monitoring * > * Audit and syslog server * ）をリモートで保存および管理する場合に、外部 syslog サーバを設定できるようになりました。外部 syslog サーバを設定したら、監査メッセージと特定のログファイルをローカル、リモート、またはその両方で保存できます。監査情報のデスティネーションを設定することで、管理ノードのネットワークトラフィックを削減できます。を参照してください xref:../monitor/configure-audit-messages.adoc[監査メッセージとログの送信先を設定します]。
+* この機能に関連して、 Logs ページの新しいチェックボックス（ * support * > * Tools * > * Logs * ）で、特定のアプリケーションログ、監査ログ、ネットワークデバッグに使用するログ、 Prometheus データベースログなど、収集するログのタイプを指定できます。を参照してください xref:../monitor/collecting-log-files-and-system-data.adoc[ログファイルとシステムデータを収集]。
+
+
+
+
+== S3 選択
+
+必要に応じて、 S3 テナントによる問題 SelectObjectContent 要求の個別オブジェクトへの許可を可能にするようになりました。S3 Select を使用すると、データベースや関連リソースを導入せずに大量のデータを効率的に検索できます。また、データ取得のコストとレイテンシも削減されます。を参照してください xref:../admin/manage-s3-select-for-tenant-accounts.adoc[テナントアカウント用の S3 Select を管理します] および xref:../s3/use-s3-select.adoc[S3 Select を使用する]。
+
+S3 Select 処理に使用する Grafana チャートも追加されました。を参照してください xref:../monitor/reviewing-support-metrics.adoc[サポート指標を確認]。
+
+
+
+== S3 オブジェクトロックのデフォルトバケット保持期間
+
+S3 オブジェクトのロックを使用している場合に、バケットのデフォルトの保持期間を指定できるようになりました。デフォルトの保持期間では、バケットに追加されたオブジェクトのうち、独自の保持設定がないオブジェクトが環境 によって保持されます。を参照してください xref:../s3/using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]。
+
+
+
+== Google Cloud Platform のサポート
+
+Google Cloud Platform （ GCP ）をクラウドストレージプールおよび CloudMirror プラットフォームサービスのエンドポイントとして使用できるようになりました。を参照してください xref:../tenant/specifying-urn-for-platform-services-endpoint.adoc[プラットフォームサービスのエンドポイントの URN を指定してください] および xref:../ilm/creating-cloud-storage-pool.adoc[クラウドストレージプールを作成]。
+
+
+
+== AWS C2S のサポート
+
+AWS Commercial クラウド サービス （ C2S ）エンドポイントを CloudMirror レプリケーションに使用できるようになりました。を参照してください xref:../tenant/creating-platform-services-endpoint.adoc[プラットフォームサービスエンドポイントを作成します]。
+
+
+
+== その他の S3 の変更
+
+* * マルチパートオブジェクト * に対する GET Object および HEAD Object のサポート。以前は、 StorageGRID は GET Object 要求または HEAD Object 要求の「 PartNumber 」要求パラメータをサポートしていませんでした。問題 の GET 要求と HEAD 要求を使用して、マルチパートオブジェクトの特定のパートを読み出すことができます。GET および HEAD Object も、オブジェクトに含まれるパーツの数を示す「 x-amz-mp-parts-count 」応答要素をサポートしています。
+* * 「 Available 」整合性制御への変更 * 。「 Available 」整合性制御は、「 read-after-new-write 」整合性レベルと同じ動作をしますが、 HEAD および GET 処理については結果的に整合性を提供します。「 Available 」整合性制御は、ストレージノードが使用できない場合に、「 read-after-new-write 」よりもヘッドおよび GET 操作の可用性が高くなります。Amazon S3 の整合性とは異なり、 HEAD 処理と GET 処理は保証されません。
++
+xref:../s3/index.adoc[S3 を使用する]
+
+
+
+
+
+== パフォーマンスの強化
+
+* * ストレージノードは 20 億個のオブジェクトをサポートできます。 *ストレージノードの基盤となるディレクトリ構造は、拡張性とパフォーマンスを向上させるために最適化されました。ストレージノードは、最大 20 億個のレプリケートオブジェクトを格納し、パフォーマンスを最大限に高めるために追加のサブディレクトリを使用するようになりました。ノードサブディレクトリは StorageGRID 11.6 にアップグレードすると変更されますが、既存のオブジェクトは新しいディレクトリに再配置されません。
+* * ILM ベースの削除パフォーマンスが向上し、高性能アプライアンス * が実現しました。ILM の削除処理に使用されるリソースとスループットが、各 StorageGRID アプライアンスノードのサイズと容量に適合するようになりました。SG5600 アプライアンスのスループットは、 StorageGRID 11.5 と同じです。SG5700 アプライアンスの場合、 ILM を使用した削除のパフォーマンスはわずかに向上しました。RAM 容量と CPU 数が多い SG6000 アプライアンスでは、 ILM による削除処理の処理速度が大幅に向上しました。この改善は、特にオールフラッシュ SGF6024 アプライアンスで顕著に見られます。
+* * ストレージ・ボリューム・ウォーターマークの最適化 *以前のリリースでは、 3 つのストレージボリュームのウォーターマークの設定が各ストレージノードのすべてのストレージボリュームに適用されていました。StorageGRID では、ストレージノードのサイズとボリュームの相対容量に基づいて、各ストレージボリュームに対するこれらのウォーターマークを最適化できるようになりました。を参照してください xref:../admin/what-storage-volume-watermarks-are.adoc[ストレージボリュームのウォーターマークとは]。
++
+最適化されたウォーターマークは、アップグレードされた新規およびほとんどの StorageGRID 11.6 システムすべてに自動的に適用されます。最適化されたウォーターマークは、以前のデフォルト設定よりも大きくなります。
+
++
+カスタム・ウォーターマークを使用すると、アップグレード後に * 読み取り専用のロー・ウォーターマーク・オーバーライド * アラートがトリガーされることがあります。このアラートでは ' カスタムのウォーターマーク設定が小さすぎるかどうかを確認できますを参照してください xref:../monitor/troubleshoot-low-watermark-alert.adoc[読み取り専用のローウォーターマーク上書きアラートのトラブルシューティング]。
+
++
+この変更の一環として、 2 つの Prometheus 指標が追加されました。
+
++
+** 'storagegrid_storage_volume_minimum_optimized_soft_readonly_watermark
+** 'storagegrid_storage_volume_maximum_optimized_soft_readonly_watermark
+
+
+* * 最大許容メタデータ容量が増加しました * 。ストレージノードで許容される最大メタデータスペースが、大容量のノードでは 3.96TB （ 2.64TB から）に拡張されました。このノードは、実際にリザーブされているスペースが 4TB を超えるメタデータ用に確保されています。この新しい値を指定すると、特定のストレージノードに格納できるオブジェクトメタデータの量が増え、 StorageGRID メタデータの容量が最大 50% 増加します。
++
+
+NOTE: まだ十分な RAM が搭載されておらず、ボリューム 0 に十分なスペースがストレージノードにある場合は、この方法を使用できます xref:../upgrade/increasing-metadata-reserved-space-setting.adoc[インストールまたはアップグレード後に、 Metadata Reserved Space 設定を 8TB に手動で拡張します]。
+
++
+** xref:../admin/managing-object-metadata-storage.adoc#allowed-metadata-space[オブジェクトメタデータストレージの管理 > 許可メタデータスペース]
+** xref:../upgrade/increasing-metadata-reserved-space-setting.adoc[Metadata Reserved Space 設定の増加]
+
+
+
+
+
+
+== メンテナンス手順とサポートツールの機能拡張
+
+* * ノードコンソールパスワードを変更できます。 *Grid Manager を使用してノードのコンソールパスワード（ * 設定 * > * アクセス制御 * > * Grid パスワード * ）を変更できるようになりました。これらのパスワードは、 SSH を使用してノードに「 admin 」としてログインする場合、または VM/ 物理コンソール接続のルートユーザにログインする場合に使用します。を参照してください xref:../admin/change-node-console-password.adoc[ノードのコンソールパスワードを変更します]。
+* * 新しいオブジェクト存在チェックウィザード * 。使いやすいオブジェクト保持チェックウィザード（ * maintenance * > * Tasks * > * Object existence check * ）を使用して、オブジェクトの整合性を検証できるようになりました。このウィザードは、フォアグラウンド検証手順 の代わりに使用できます。新しい手順 の検証には 3 分の 1 の時間しかかかりませんが、複数のノードを同時に検証できます。を参照してください xref:../monitor/verifying-object-integrity.html[オブジェクトの整合性を検証]。
+* * EC の再バランスおよび EC の修復ジョブの「完了までの推定時間」チャート * 。現在の EC のリバランシングジョブまたは EC の修復ジョブの完了までの推定時間と完了率を確認できるようになりました。
+* * 複製データ修復完了率の推定値 * 。レプリケートされた修復の完了率の推定値を表示するために 'show-replicated-repair-status オプションを 'repair-data' コマンドに追加できるようになりました。
++
+
+IMPORTANT: StorageGRID 11.6 では、「 show -replicated-repair-status 」オプションをテクニカルプレビューで利用できます。この機能は開発中であり、返される値が正しくないか遅れている可能性があります。修復が完了したかどうかを確認するには、リカバリ手順の説明に従って、 * Awaiting - All * 、 * Repairs Attempted （ XRPA * ）、 * Scan Period - Estimated （ XSCM ） * を使い続けます。
+
+* 診断ページ（ * サポート * > * ツール * > * 診断 * ）の結果が重大度順にソートされ、アルファベット順にソートされるようになりました。
+* Prometheus と Grafana は、インターフェイスとチャートを変更して新しいバージョンに更新されました。この変更の一環として、一部の指標のラベルが変更されました。
++
+** 'node_network_up' のラベルを使用したカスタムクエリがある場合は ' 代わりに 'node_network_info' のラベルを使用する必要があります
+** 'node-network' メトリックのいずれかから ' ラベル名 interface も使用する場合は ' 代わりに device ラベルを使用します
+
+
+* 以前は、 Prometheus 指標は管理ノードに 31 日間格納されていました。現在は、 Prometheus データ用にリザーブされたスペースがいっぱいになるまで指標が格納されます。その結果、過去の指標の利用可能時間が大幅に増加する可能性があります。
++
+/var/local/mysql_ibdata/` のボリュームが容量に達すると、最も古いメトリックが最初に削除されます。
+
+
+
+
+
+== インストールの機能拡張
+
+* Red Hat Enterprise Linux のインストール中に、 Podman をコンテナとして使用できるようになりました。以前は、 StorageGRID でサポートされていたのは Docker コンテナのみでした。
+* StorageGRID 用の API スキーマが、 Red Hat Enterprise Linux/CentOS 、 Ubuntu / Debian 、および VMware プラットフォームのインストールアーカイブに含まれるようになりました。アーカイブを抽出した後、「 /extrases/api-schemas' 」フォルダにスキーマがあります。
+* ベアメタル環境用のノード構成ファイル内の「 block_device_RANGEDB 」キーに、 2 桁ではなく 3 桁の数字が含まれるようになりました。つまり 'BLOCK_DEVICE_RANGEDB_nn' ではなく 'BLOCK_DEVICE_RANGEDB_nnn を指定する必要があります
++
+既存の環境との互換性を確保するために、アップグレード後のノードで 2 桁のキーが引き続きサポートされます。
+
+* ベアメタル環境のノード構成ファイルに ' 新しい 'Interfaces] ターゲットのインスタンスを 1 つ以上追加することもできます各キーは、ベアメタルホスト上の物理インターフェイスの名前と概要 を提供します。これは VLAN インターフェイスのページおよび HA グループのページに表示されます。
++
+** xref:../rhel/creating-node-configuration-files.adoc[Red Hat Enterprise Linux または CentOS 環境のノード構成ファイルを作成します]
+** xref:../ubuntu/creating-node-configuration-files.adoc[Ubuntu または Debian の環境のノード構成ファイルを作成します]
+
+
+
+
+
+
+== 新しいアラート
+
+StorageGRID 11.6 では、次の新しいアラートが追加されました。
+
+* 監査ログをメモリ内キューに追加しています
+* Cassandra テーブルが破損しています
+* EC のリバランシングに失敗しました
+* EC の修復エラー
+* EC の修復が停止した
+* S3 および Swift API 用のグローバルサーバ証明書の有効期限
+* 外部 syslog CA 証明書の有効期限
+* 外部 syslog クライアント証明書の有効期限
+* 外部 syslog サーバ証明書の有効期限
+* 外部 syslog サーバの転送エラーです
+* テナントのアイデンティティフェデレーションの同期が失敗する
+* 従来の CLB ロードバランサのアクティビティが検出されました
+* ログをディスク上キューに追加しています
+* 読み取り専用のローウォーターマークの上書き
+* tmp ディレクトリの空きスペースが不足しています
+* オブジェクトの存在チェックに失敗しました
+* オブジェクトの存在チェックが停止しました
+* S3 PUT Object のサイズが大きすぎます
+
+
+を参照してください xref:../monitor/alerts-reference.adoc[アラート一覧]。
+
+
+
+== 監査メッセージに対する変更
+
+* ORLM ： Object Rules Met 監査メッセージに新しい * BUID * フィールドが追加されました。*BUID * フィールドには、内部処理に使用されるバケット ID が表示されます。新しいフィールドは、メッセージステータスが PRGD の場合にのみ表示されます。
+* 新しい * SgRP * フィールドが次の監査メッセージに追加されました。「 * SgRP * 」フィールドは、取り込まれたサイトとは別のサイトでオブジェクトが削除された場合にのみ存在します。
++
+** IDEL ： ILM Initiated Delete
+** OVWR ：オブジェクトを上書き
+** SDEL ： S3 DELETE
+** WDEL ： Swift の削除
+
+
+
+
+を参照してください xref:../audit/index.adoc[監査ログを確認します]。
+
+
+
+== StorageGRID のマニュアルの変更点
+
+StorageGRID 11.6 ドキュメントサイトの外観と操作性が変更され、基盤となるプラットフォームとして GitHub が使用されるようになりました。
+
+ネットアップは内容に関するフィードバックを高く評価しており、製品ドキュメントの全ページに掲載されている新しい「 Request doc changes 」機能の利用を推奨しています。ドキュメントプラットフォームには、 GitHub ユーザー向けの埋め込みコンテンツ寄与機能も用意されています。
+
+このドキュメントを参照して、投稿してください。編集、変更のリクエスト、フィードバックの送信が可能です。

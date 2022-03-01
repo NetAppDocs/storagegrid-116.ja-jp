@@ -1,0 +1,39 @@
+---
+permalink: maintain/checking-systems-condition-before-applying-hotfix.html 
+sidebar: sidebar 
+keywords: storagegrid, hotfix 
+summary: システムにホットフィックスを適用する準備ができていることを確認する必要があります。 
+---
+= ホットフィックスを適用する前に、システムの状態を確認してください
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+システムにホットフィックスを適用する準備ができていることを確認する必要があります。
+
+. を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+. 可能であれば、システムが正常に稼働し、すべてのグリッドノードがグリッドに接続されていることを確認します。
++
+接続されているノードには緑のチェックマークが付いて image:../media/icon_alert_green_checkmark.png["アイコンアラートの緑のチェックマーク"] をクリックします。
+
+. 可能であれば、現在のアラートがないかを確認し、ある場合は解決します。
++
+特定のアラートの詳細については、 StorageGRID の監視とトラブルシューティングの手順を参照してください。
+
+. 手順 のアップグレード、リカバリ、拡張、運用停止など、他のメンテナンス手順が実行中でないことを確認します。
++
+アクティブなメンテナンス手順が完了してからホットフィックスを適用してください。
+
++
+別のメンテナンス手順 の実行中は、 StorageGRID ホットフィックスを適用できません。たとえば、運用停止、拡張、またはリカバリ用の手順 の実行中は、ホットフィックスを適用できません。
+
++
+
+NOTE: ノードまたはサイトの運用停止手順 が一時停止されている場合、ホットフィックスを安全に適用できます。また、 StorageGRID アップグレード手順 の最終段階でホットフィックスを適用できる場合があります。詳細については、 StorageGRID ソフトウェアのアップグレード手順を参照してください。
+
+
+
+xref:../monitor/index.adoc[監視とトラブルシューティング]
+
+xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[ストレージノードの運用停止プロセスを一時停止および再開します]

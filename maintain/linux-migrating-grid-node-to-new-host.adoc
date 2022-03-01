@@ -1,0 +1,37 @@
+---
+permalink: maintain/linux-migrating-grid-node-to-new-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, migrate node, migrating node, new host for node 
+summary: ホストのメンテナンス（ OS パッチの適用やリブートなど）を実行するために、グリッドの機能や可用性に影響を及ぼすことなく、 1 つの Linux ホストから別の Linux ホストに StorageGRID ノードを移行できます。 
+---
+= Linux ：グリッドノードを新しいホストに移行します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ホストのメンテナンス（ OS パッチの適用やリブートなど）を実行するために、グリッドの機能や可用性に影響を及ぼすことなく、 Linux ホスト間で StorageGRID ノードを移行できます。
+
+1 つまたは複数のノードを 1 つの Linux ホスト ( 「ソースホスト」 ) から別の Linux ホスト ( 「ターゲットホスト」 ) に移行します。ターゲットホストで StorageGRID を使用する準備をしておく必要があります。
+
+
+IMPORTANT: この手順 は、 StorageGRID 環境で移行をサポートするように計画した場合にのみ使用できます。
+
+グリッドノードを新しいホストに移行するには、次の両方の条件が満たされている必要があります。
+
+* 共有ストレージは、すべてのノード単位のストレージボリュームに使用されます
+* ネットワークインターフェイスの名前がホスト間で一貫している
+
+
+
+NOTE: 本番環境では、 1 つのホストで複数のストレージノードを実行しないでください。各ストレージノードに専用のホストを使用すると、分離された障害ドメインが提供されます。
+
+管理ノードやゲートウェイノードなど、他のタイプのノードは、同じホストに導入することができます。ただし、同じタイプのノードが複数ある（たとえば、 2 つのゲートウェイノード）場合は、すべてのインスタンスを同じホストにインストールしないでください。
+
+詳細については、お使いの Linux オペレーティングシステム用の StorageGRID インストール手順の「ノード移行の要件」を参照してください。
+
+xref:deploying-new-linux-hosts.adoc[新しい Linux ホストを導入する]
+
+xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+
+xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]

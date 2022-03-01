@@ -1,0 +1,85 @@
+---
+permalink: sg100-1000/deploying-services-appliance-as-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, admin node, deploy node, deploying node, node, deploy, deploying, primary, primary admin node 
+summary: サービスアプライアンスをプライマリ管理ノードとして導入する場合は、アプライアンスに組み込みの StorageGRID アプライアンスインストーラを使用して StorageGRID ソフトウェアをインストールするか、インストールするソフトウェアバージョンをアップロードします。プライマリ管理ノードは、他のタイプのアプライアンスノードをインストールする前にインストールして設定する必要があります。プライマリ管理ノードは、グリッドネットワーク、およびオプションの管理ネットワークとクライアントネットワーク（いずれかまたは両方が設定されている場合）に接続できます。 
+---
+= サービスアプライアンスをプライマリ管理ノードとして導入する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+サービスアプライアンスをプライマリ管理ノードとして導入する場合は、アプライアンスに組み込みの StorageGRID アプライアンスインストーラを使用して StorageGRID ソフトウェアをインストールするか、インストールするソフトウェアバージョンをアップロードします。プライマリ管理ノードは、他のタイプのアプライアンスノードをインストールする前にインストールして設定する必要があります。プライマリ管理ノードは、グリッドネットワーク、およびオプションの管理ネットワークとクライアントネットワーク（いずれかまたは両方が設定されている場合）に接続できます。
+
+.必要なもの
+* アプライアンスをラックまたはキャビネットに設置し、ネットワークに接続し、電源を投入しておきます。
+* StorageGRID アプライアンスインストーラを使用して、アプライアンスのネットワークリンク、 IP アドレス、ポートの再マッピング（必要な場合）を設定しておきます。
++
+
+IMPORTANT: ポートを再マッピングした場合、同じポートを使用してロードバランサエンドポイントを設定することはできません。再マッピングしたポートを使用してエンドポイントを作成できますが、これらのエンドポイントはロードバランササービスではなく、元の CLB ポートおよびサービスに再マッピングされます。の手順に従います xref:../maintain/removing-port-remaps.adoc[ポートの再マッピングを削除]。
+
++
+を参照してください xref:../admin/how-load-balancing-works-clb-service.adoc[ロードバランシングの仕組み - CLB サービス（廃止）] CLB サービスの詳細については、を参照してください。
+
++
+
+NOTE: CLB サービスは廃止されました。
+
+* を搭載したサービスラップトップを用意します xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+* アプライアンスに割り当てられている IP アドレスのいずれかを確認しておきます。接続されているどの StorageGRID ネットワークの IP アドレスでも使用できます。
+
+
+アプライアンスプライマリ管理ノードに StorageGRID をインストールするには、次の手順を実行します。
+
+* StorageGRID ソフトウェアをインストールするには、 StorageGRID アプライアンスインストーラを使用します。別のバージョンのソフトウェアをインストールする場合は、まず StorageGRID アプライアンスインストーラを使用してソフトウェアをアップロードします。
+* ソフトウェアがインストールされるまで待ちます。
+* ソフトウェアがインストールされると、アプライアンスが自動的にリブートされます。
+
+
+.手順
+. ブラウザを開き、アプライアンスの IP アドレスを入力します。+`* https://_services_appliance_IP_:8443*`
++
+StorageGRID アプライアンスインストーラのホームページが表示されます。
+
+. [ このノード * ] セクションで、 [ * プライマリ管理者 * ] を選択します。
+. [* Node name* （ノード名 * ） ] フィールドに、このアプライアンスノードに使用する名前を入力し、 [ * Save * （保存） ] をクリックします。
++
+このノード名は、 StorageGRID システムでこのアプライアンスノードに割り当てられ、グリッドノードは Grid Manager の Grid Nodes ページに表示されます。
+
+. 別のバージョンの StorageGRID ソフトウェアをインストールする必要がある場合は、次の手順を実行します。
++
+.. ネットアップの StorageGRID ダウンロードページからインストールアーカイブをダウンロードします。
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
+
+.. アーカイブを展開します。
+.. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
+.. [ 削除 ] をクリックして、現在のソフトウェアパッケージを削除します。
++
+image::../media/appliance_installer_rmv_current_software.png[アプライアンスインストーラ - 現在のソフトウェアを削除します]
+
+.. ダウンロードして解凍したソフトウェアパッケージの [*Browse*]( 参照 ) をクリックし、チェックサムファイルの [*Browse*]( 参照 ) をクリックします。
++
+image::../media/appliance_installer_upload_sg_software.png[アプライアンスインストーラ - SG ソフトウェアのアップロード]
+
+.. ホームページに戻るには、「 * Home * 」（ホーム）を選択します。
+
+
+. 現在の状態が「 Ready to start installation of primary Admin Node name with software version x.y' 」であり、「 Start Installation * 」ボタンが有効になっていることを確認します。
++
+
+NOTE: 管理ノードアプライアンスをノードクローニングターゲットとして導入する場合は、ここで導入プロセスを停止し、に従ってノードのクローニング手順 を続行してください xref:../maintain/index.adoc[リカバリとメンテナンス] 手順
+
+. StorageGRID アプライアンスインストーラのホームページで、 * インストールの開始 * をクリックします。
++
+image::../media/appliance_installer_home_start_installation_enabled_primary_an.png[アプライアンスプライマリ管理ノードのインストール]
+
++
+現在の状態が「 Installation is in progress 」に変わり、「 Monitor Installation 」ページが表示されます。
+
++
+
+NOTE: モニタのインストールページに手動でアクセスする必要がある場合は、メニューバーから * モニタのインストール * をクリックします。
+
+

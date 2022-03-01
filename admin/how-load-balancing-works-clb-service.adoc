@@ -1,0 +1,25 @@
+---
+permalink: admin/how-load-balancing-works-clb-service.html 
+sidebar: sidebar 
+keywords: clb service, connection load balancer 
+summary: ゲートウェイノード上の Connection Load Balancer \ （ CLB \ ）サービスは廃止されました。ロードバランササービスが推奨されるロードバランシングメカニズムになりました。 
+---
+= ロードバランシングの仕組み - CLB サービス（廃止）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+ゲートウェイノード上の Connection Load Balancer （ CLB ）サービスは廃止されました。ロードバランササービスが推奨されるロードバランシングメカニズムになりました。
+
+CLB サービスはレイヤ 4 ロードバランシングを使用して、可用性、システムの負荷、および管理者が設定したリンクコストに基づいて、クライアントアプリケーションからの受信 TCP ネットワーク接続を最適なストレージノードに分散します。最適なストレージノードが選択されると、 CLB サービスは双方向のネットワーク接続を確立し、選択されたノードとの間でトラフィックを転送します。CLB は、受信ネットワーク接続を転送するときにグリッドネットワーク設定を考慮しません。
+
+CLB サービスに関する情報を表示するには、 * support * > * Tools * > * Grid topology * を選択し、次に * CLB * およびその下のオプションを選択できるようになるまでゲートウェイノードを拡張します。
+
+image::../media/gateway_node.gif[グリッドトポロジツリー内の API ゲートウェイノード]
+
+CLB サービスを使用する場合は、 StorageGRID システムのリンクコストを設定することを検討してください。
+
+* xref:what-link-costs-are.adoc[リンクコストとは]
+* xref:updating-link-costs.adoc[リンクコストを更新します]
+

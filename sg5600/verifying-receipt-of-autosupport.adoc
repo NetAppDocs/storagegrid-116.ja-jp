@@ -1,0 +1,41 @@
+---
+permalink: sg5600/verifying-receipt-of-autosupport.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, verify, verification, verifying, confirm, confirmation, confirming, autosupport, auto-support, status 
+summary: テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムの AutoSupport のステータスは、 Active IQ ポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。 
+---
+= AutoSupport の受信を確認します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムの AutoSupport のステータスは、 Active IQ ポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。
+
+AutoSupport のステータスは次のいずれかになります。
+
+* * オン *
++
+オンのステータスは、テクニカルサポートが現在システムから AutoSupport メッセージを受信していることを示します。
+
+* * オフ *
++
+テクニカルサポートにシステムの週単位のログが 15 日以上届いておらず、 AutoSupport が無効になっている可能性があります。または環境や構成に変更があった可能性などが考えられます。
+
+* * 拒否 *
++
+拒否ステータスは、 AutoSupport を有効にしないことをテクニカルサポートに通知済みであることを示します。
+
+
+
+システムの週単位のログをテクニカルサポートが受信すると、 AutoSupport のステータスが ON に変わります。
+
+.手順
+. ネットアップサポートサイトにアクセスします http://mysupport.netapp.com/["mysupport.netapp.com"^]をクリックし、 Active IQ ポータルにサインインします。
+. AutoSupport のステータスが誤って OFF になっている場合は、次の手順を実行します。
++
+.. システム構成をチェックして、 AutoSupport がオンになっていることを確認します。
+.. ネットワーク環境と構成をチェックして、システムからテクニカルサポートにメッセージを送信できることを確認します。
+
+
+

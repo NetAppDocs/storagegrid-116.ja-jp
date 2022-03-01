@@ -1,0 +1,52 @@
+---
+permalink: maintain/linux-adding-interfaces-to-existing-node.html 
+sidebar: sidebar 
+keywords: add interfaces, add client network interface, add admin network interface 
+summary: 管理ネットワークまたはクライアントネットワーク上のインターフェイスをインストールしたあとに Linux ノードに追加するには、次の手順を実行します。 
+---
+= Linux ：既存のノードに管理インターフェイスまたはクライアントインターフェイスを追加
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理ネットワークまたはクライアントネットワーク上のインターフェイスをインストールしたあとに Linux ノードに追加するには、次の手順を実行します。
+
+インストール時に Linux ホスト上のノード構成ファイルで ADMIN_NETWORK_TARGET または ADMIN_NETWORK_TARGET を設定しなかった場合は、この手順 を使用してインターフェイスを追加します。ノード構成ファイルの詳細については、使用している Linux オペレーティングシステムの手順を参照してください。
+
+* xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
+* xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]
+
+
+この手順 は、ノード内ではなく、新しいネットワーク割り当てが必要なノードをホストしている Linux サーバ上で実行します。この手順 で追加されるのはノードだけです。他のネットワークパラメータを指定しようとすると、検証エラーが発生します。
+
+アドレス情報を指定するには、 IP 変更ツールを使用する必要があります。を参照してください xref:changing-nodes-network-configuration.adoc[ノードのネットワーク設定の変更]。
+
+.手順
+. ノードをホストしている Linux サーバにログインします。
+. ノード構成ファイル「 /etc/storagegrid/nodes/ _node-name _.conf 」を編集します。
++
+
+IMPORTANT: 他のネットワークパラメータを指定しないでください。検証エラーが発生します。
+
++
+.. 新しいネットワークターゲットのエントリを追加します。例：
++
+「 client_network_target = bond0.3206` 」と入力します
+
+.. オプション： MAC アドレスのエントリを追加します。例：
++
+'client_network_mac=aa:57:61:07:e:5c`
+
+
+
+. node validate コマンドを実行します。
++
+sudo StorageGRID node VALIDATE_NODE-NAME_`
+
+. 検証エラーをすべて解決します。
+. node reload コマンドを実行します。
++
+sudo StorageGRID node reload_node-name_
+
+

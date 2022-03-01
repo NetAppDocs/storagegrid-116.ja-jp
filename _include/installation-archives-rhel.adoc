@@ -1,0 +1,6 @@
+= 
+
+
+「 StorageGRID Webscale --_version_-RPM -- _uniqueID_.zip 」
+
+「 StorageGRIDWebscale--_version__ rpm --_uniqueID_.tgz 」という形式です

@@ -1,0 +1,113 @@
+---
+permalink: ubuntu/downloading-and-extracting-storagegrid-installation-files.html 
+sidebar: sidebar 
+keywords: how to download ubuntu or debian installation files 
+summary: StorageGRID インストールアーカイブをダウンロードし、必要なファイルを展開する必要があります。 
+---
+= StorageGRID インストールファイルをダウンロードして展開します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID インストールアーカイブをダウンロードし、必要なファイルを展開する必要があります。
+
+.手順
+. にアクセスします https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップの StorageGRID ダウンロードページ"^]。
+. 最新のリリースをダウンロードするボタンを選択するか、ドロップダウンメニューから別のバージョンを選択して、「 * Go * 」を選択します。
+. ネットアップアカウントのユーザ名とパスワードを使用してサインインします。
+. 「注意 / 必ずお読みください」という記述が表示されたら、それを読んでチェックボックスを選択してください。
++
+
+IMPORTANT: StorageGRID リリースのインストール後に、必要な修正プログラムを適用する必要があります。詳細については、を参照してください xref:../maintain/storagegrid-hotfix-procedure.adoc[リカバリとメンテナンスの手順の Hotfix 手順]
+
+. エンドユーザライセンス契約を読み、チェックボックスをオンにして、「 * 同意して続行 * 」を選択します。
++
+選択したバージョンのダウンロードページが表示されます。このページには 3 つの列があります。
+
+. Install StorageGRID * 列で、 Ubuntu または Debian の .tgz ファイルまたは .zip ファイルを選択します。
++
+
+NOTE: サービスラップトップで Windows を実行している場合は '.zip ファイルを選択します
+
+. アーカイブファイルを保存して展開します。
+. 次のリストから必要なファイルを選択します。
++
+必要なファイルは、計画したグリッドトポロジおよび StorageGRID グリッドの導入方法によって異なります。
+
++
+
+NOTE: 次の表に示すパスは、展開されたインストールアーカイブによってインストールされた最上位ディレクトリに対する相対パスです。
+
+
+
+[cols="1a,1a"]
+|===
+| パスとファイル名 | 説明 
+
+
+| ./debs/README  a| 
+StorageGRID ダウンロードファイルに含まれているすべてのファイルについて説明するテキストファイル。
+
+
+
+| ./debs/NLF000000.txt  a| 
+テスト環境およびコンセプトの実証環境に使用できる、非本番環境のネットアップライセンスファイル。
+
+
+
+| ./debs/storagegrid-webscale-images-version-SHA.deb  a| 
+Ubuntu ホストまたは Debian ホストに StorageGRID ノードイメージをインストールするための DEB パッケージ。
+
+
+
+| ./debs/storagegrid-webscale-images-version-SHA.deb.md5  a| 
+ファイル「 /debs/storagegrid-webscale-images-version-SHA.deb` 」の MD5 チェックサム。
+
+
+
+| ./debs/storagegrid-webscale-service-version-SHA.deb  a| 
+Ubuntu ホストまたは Debian ホストに StorageGRID ホストサービスをインストールするための DEB パッケージ。
+
+
+
+| 導入スクリプトツール | 説明 
+
+
+| ./debs/configure-storagegrid.py  a| 
+StorageGRID システムの設定を自動化するための Python スクリプト。
+
+
+
+| ./debs/configure-sga.py  a| 
+StorageGRID アプライアンスの設定を自動化するための Python スクリプト。
+
+
+
+| ./debs/storagegrid-ssoauth.py  a| 
+シングルサインオンが有効な場合にグリッド管理 API にサインインするために使用できる Python スクリプトの例。
+
+
+
+| ./debs/configure -storagegrid-sample.json という形式で指定します  a| 
+configure -storagegrid.py スクリプトで使用される設定ファイルの例。
+
+
+
+| ./debs/configure -storagegrid-bank.json という形式で実行します  a| 
+configure -storagegrid.py スクリプトで使用する空の構成ファイル。
+
+
+
+| ./debs/extras /Ansible を実行します  a| 
+StorageGRID コンテナ導入用の Ubuntu ホストまたは Debian ホストを設定するためのサンプルの Ansible のロールとプレイブック。必要に応じて、ロールまたはプレイブックをカスタマイズできます。
+
+
+
+| ./debs/extra/api-schemas  a| 
+StorageGRID の API スキーマ
+
+* 注 * ：アップグレードを実行する前に、これらのスキーマを使用して、 StorageGRID 管理 API を使用するように記述したコードが、アップグレード互換性テスト用の非本番環境の StorageGRID 環境を持たない場合、新しい StorageGRID リリースと互換性があることを確認できます。
+
+|===
+xref:../maintain/index.adoc[リカバリとメンテナンス]

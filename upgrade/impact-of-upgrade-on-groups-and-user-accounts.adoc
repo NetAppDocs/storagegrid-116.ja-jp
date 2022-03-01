@@ -1,0 +1,32 @@
+---
+permalink: upgrade/impact-of-upgrade-on-groups-and-user-accounts.html 
+sidebar: sidebar 
+keywords: upgrade, permissions 
+summary: アップグレードの完了後にグループとユーザアカウントを適切に更新できるよう、 StorageGRID アップグレードの影響を理解しておく必要があります。 
+---
+= アップグレードによるグループおよびユーザアカウントへの影響
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+アップグレードの完了後にグループとユーザアカウントを適切に更新できるよう、 StorageGRID アップグレードの影響を理解しておく必要があります。
+
+
+
+== グループの権限とオプションが変更されました
+
+StorageGRID 11.6 にアップグレードした後、オプションで次の更新された権限とオプション、または新しい権限とオプション（ * configuration * > * Access control * > * Admin groups * ）を選択します。
+
+[cols="1a,2a"]
+|===
+| 権限またはオプション | 説明 
+
+
+ a| 
+テナントアカウント
+ a| 
+テナントアカウントの作成、編集、削除をユーザに許可するだけでなく、管理者ユーザが既存のトラフィック分類ポリシー（ * configuration * > * Network * > * traffic classification * ）を表示できるようになりました。
+
+|===
+を参照してください xref:../admin/managing-admin-groups.adoc[管理者グループを管理する]。

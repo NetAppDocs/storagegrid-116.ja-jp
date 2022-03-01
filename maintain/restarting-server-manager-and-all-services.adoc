@@ -1,0 +1,38 @@
+---
+permalink: maintain/restarting-server-manager-and-all-services.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, server manager, restart server manager 
+summary: グリッドノード上で実行されている Server Manager およびすべてのサービスの再起動が必要になる場合があります。 
+---
+= Server Manager とすべてのサービスを再起動します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+グリッドノード上で実行されている Server Manager およびすべてのサービスの再起動が必要になる場合があります。
+
+「 passwords.txt 」ファイルが必要です。
+
+.手順
+. グリッドノードにログインします。
++
+.. 次のコマンドを入力します。 ssh admin@_grid_node_name
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+.. root に切り替えるには、次のコマンドを入力します
+.. 「 passwords.txt 」ファイルに記載されたパスワードを入力します。
+
+
++
+root としてログインすると、プロンプトは「 $` 」から「 #」 に変わります。
+
+. Server Manager およびグリッドノード上のすべてのサービスを再起動します。「 service servermanager restart
++
+グリッドノード上の Server Manager およびすべてのサービスが停止され、その後再開されます。
+
++
+
+NOTE: 「 restart 」コマンドの使用は、「 stop 」コマンドに続けて「 start 」コマンドを使用する場合と同じです。
+
+. コマンドシェルからログアウトします :exit
+

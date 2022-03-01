@@ -1,0 +1,42 @@
+---
+permalink: sg100-1000/unpacking-boxes-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
+---
+= 開梱（ SG100 と SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。
+
+
+
+== アプライアンスハードウェア
+
+* * SG100 または SG1000 *
++
+image::../media/sg6000_cn_front_without_bezel.gif[前面ドライブ SG 100 または SG1000 サービスアプライアンス]
+
+* * 取扱説明書付きレールキット *
++
+image::../media/rail_kit.gif[レールキット]
+
+
+
+
+
+== 電源コード
+
+StorageGRID アプライアンスには、次の電源コードが付属しています。
+
+* * お住まいの国に対応した電源コード 2 本 *
++
+image::../media/power_cords.gif[電源コード]
+
++
+キャビネットによっては、アプライアンスに付属している電源コードではなく特別な電源コードを使用する場合があります。
+
+

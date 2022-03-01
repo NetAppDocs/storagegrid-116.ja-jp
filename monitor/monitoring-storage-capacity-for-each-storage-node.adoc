@@ -1,0 +1,72 @@
+---
+permalink: monitor/monitoring-storage-capacity-for-each-storage-node.html 
+sidebar: sidebar 
+keywords: monitor node storage capacity 
+summary: 各ストレージノードの使用可能な合計スペースを監視して、ノードに新しいオブジェクトデータ用の十分なスペースがあることを確認する必要があります。 
+---
+= 各ストレージノードのストレージ容量を監視します
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+各ストレージノードの使用可能な合計スペースを監視して、ノードに新しいオブジェクトデータ用の十分なスペースがあることを確認する必要があります。
+
+.必要なもの
+* を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
+
+
+使用可能なスペースは、オブジェクトの格納に使用できるストレージスペースの量です。ストレージノードの使用可能な合計スペースは、ノード内のすべてのオブジェクトストアの使用可能なスペースの合計です。
+
+image::../media/calculating_watermarks.gif[Total Usable Space の概念図]
+
+.手順
+. ノード * > * _ ストレージノード _ * > * ストレージ * を選択します。
++
+ノードのグラフと表が表示されます。
+
+. Storage Used - Object データグラフにカーソルを合わせます。
++
+次の値が表示されます。
+
++
+** * Used （ % ） * ：オブジェクトデータに使用されている合計使用可能スペースの割合。
+** * Used * ：オブジェクトデータに使用されている合計使用可能スペースの量。
+** * Replicated data * ：このノード、サイト、またはグリッド上のレプリケートオブジェクトデータの推定量。
+** * イレイジャーコーディングデータ * ：このノード、サイト、またはグリッドにあるイレイジャーコーディングオブジェクトデータの推定量。
+** * Total * ：このノード、サイト、またはグリッドで使用可能なスペースの総容量。使用される値は 'storagegrid_storage_utilization_data_bytes メトリックです
+
+
++
+image::../media/nodes_page_storage_used_object_data.png[Nodes ページ - ストレージの使用済みオブジェクトデータ]
+
+. グラフの下の Volumes テーブルと Object Stores テーブルで使用可能な値を確認します。
++
+
+NOTE: これらの値のグラフを表示するには、グラフアイコンをクリックします image:../media/icon_chart_new_for_11_5.png["グラフアイコン"] をクリックします。
+
++
+image::../media/nodes_page_storage_tables.png[オブジェクトはテーブルを格納します]
+
+. 一定期間の値を監視して、使用可能なストレージスペースが消費される速度を見積もります。
+. システムの正常な運用を維持するには、使用可能なスペースを使い切る前に、ストレージノードを追加するか、ストレージボリュームを追加するか、オブジェクトデータをアーカイブします。
++
+拡張のタイミングを計画する際には、追加のストレージを調達して設置するのにどれくらいの時間がかかるかを検討します。
+
++
+
+NOTE: ILM ポリシーでイレイジャーコーディングを使用している場合は、既存のストレージノードの使用率が約 70% のときに拡張して、追加する必要のあるノードの数を減らすことができます。
+
++
+ストレージの拡張計画の詳細については、 StorageGRID の拡張手順を参照してください。
+
++
+Low object data storage * アラートは、ストレージノードにオブジェクトデータを格納するための十分なスペースが残っていない場合にトリガーされます。
+
+
+
+xref:../admin/index.adoc[StorageGRID の管理]
+
+xref:troubleshooting-storagegrid-system.adoc[Low object data storage アラートのトラブルシューティングを行います]
+
+xref:../expand/index.adoc[グリッドを展開します]

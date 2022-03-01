@@ -1,0 +1,13 @@
+---
+permalink: audit/audit-message-categories.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, categories, category, group, groups, organization, class, classes 
+summary: 監査メッセージの各カテゴリについて理解しておく必要があります。これらのグループは、メッセージが表すアクティビティのクラスに基づいて分類されます。 
+---
+= 監査メッセージのカテゴリ
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+監査メッセージの各カテゴリについて理解しておく必要があります。これらのグループは、メッセージが表すアクティビティのクラスに基づいて分類されます。

@@ -1,0 +1,21 @@
+---
+permalink: sg5600/configuring-email-and-snmp-trap-alert-notifications.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, email, notifications, alerts, alert, set up, setup, configure, configuration, snmp, traps 
+summary: SANtricity Storage Manager では、アプライアンスのステータスまたはいずれかのコンポーネントが変わったときに通知を受け取ることができます。これはアラート通知と呼ばれます。アラート通知は、 E メールと SNMP トラップの 2 つの方法で受信できます。受信するアラート通知を設定する必要があります。 
+---
+= E メールおよび SNMP トラップのアラート通知を設定する
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity Storage Manager では、アプライアンスのステータスまたはいずれかのコンポーネントが変わったときに通知を受け取ることができます。これはアラート通知と呼ばれます。アラート通知は、 E メールと SNMP トラップの 2 つの方法で受信できます。受信するアラート通知を設定する必要があります。
+
+.手順
+. SANtricity Storage Manager の Enterprise Management ウィンドウで、 * Devices * タブを選択し、ノードを選択します。
+. * Edit * > * Configure Alerts * を選択します。
+. [*Email*] タブを選択して、電子メールアラート通知を設定します。
+. SNMP トラップのアラート通知を設定するには、 [*SNMP*] タブを選択します。
+. SANtricity Storage Manager のオンラインヘルプを必要に応じて参照しながら、タスクを完了します。
+
