@@ -2,14 +2,14 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>storagegrid-116</title>
+    <title>storagegrid-116 | NetApp Documentation</title>
     <atom:link href="https://docs.netapp.com/ja-jp/storagegrid-116/feed.xml" rel="self" type="application/rss+xml"/>
     <link>https://docs.netapp.com/ja-jp/storagegrid-116</link>
-    <description>The latest updates from NetApp Cloud Docs</description>
+    <description>The latest updates from NetApp Documentation</description>
     <language>ja-jp</language>
     <ttl>60</ttl>
-    <pubDate>Thu, 03 Mar 2022 16:30:27 +0000</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2022 16:30:27 +0000</lastBuildDate>
+    <pubDate>Fri, 18 Mar 2022 20:40:02 +0000</pubDate>
+    <lastBuildDate>Fri, 18 Mar 2022 20:40:02 +0000</lastBuildDate>
     
   </channel>
 </rss>
