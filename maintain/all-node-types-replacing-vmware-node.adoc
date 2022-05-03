@@ -5,6 +5,7 @@ keywords: replace VMware node
 summary: VMware でホストされていた障害 StorageGRID ノードをリカバリする場合は、障害ノードを削除してリカバリノードを導入する必要があります。 
 ---
 = すべてのグリッドノードタイプ： VMware ノードを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

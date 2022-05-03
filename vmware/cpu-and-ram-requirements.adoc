@@ -5,6 +5,7 @@ keywords: cpu, ram, cpu cores
 summary: StorageGRID ソフトウェアをインストールする前に、ハードウェアの確認と設定を行って、 StorageGRID システムをサポートできる状態にしておきます。 
 ---
 = CPU と RAM の要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

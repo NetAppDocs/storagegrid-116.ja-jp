@@ -5,6 +5,7 @@ keywords: storagegrid, recover, procedure
 summary: 障害が発生したノードのタイプに適したリカバリ手順 を選択する必要があります。 
 ---
 = ノードリカバリ手順 を選択します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

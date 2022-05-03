@@ -5,6 +5,7 @@ keywords: upgrade, how to perform a software upgrade
 summary: アップグレードを実行する準備ができたら、 .upgrade アーカイブを選択してプロビジョニングパスフレーズを入力します。オプションとして、実際のアップグレードを実行する前にアップグレードの事前確認を実行することもできます。 
 ---
 = アップグレードを実行する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, repla
 summary: StorageGRID アプライアンスのコントローラバッテリ、ドライブ、ファン、または電源装置の交換が必要になることがあります。 
 ---
 = 他のハードウェアコンポーネントを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

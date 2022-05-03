@@ -5,6 +5,7 @@ keywords: configure single sign on, sso, SAML
 summary: シングルサインオン \ （ SSO \ ）が有効な場合、ユーザは、組織によって実装された SSO サインインプロセスを使用してクレデンシャルが許可された場合にのみ、 Grid Manager 、テナントマネージャ、 Grid 管理 API 、またはテナント管理 API にアクセスできます。ローカルユーザは StorageGRID にサインインできません。 
 ---
 = シングルサインオンを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID アプライアンスインストーラの実行中に、サービスアプライアンスのリブートが必要になる場合があります。たとえば、インストールが失敗した場合はサービスアプライアンスのリブートが必要になることがあります。 
 ---
 = StorageGRID アプライアンスインストーラの実行中にサービスアプライアンスをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: BMC 管理ポートの DHCP または静的 IP アドレスを使用して、サービスアプライアンスの BMC インターフェイスにアクセスできます。 
 ---
 = BMC インターフェイスにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

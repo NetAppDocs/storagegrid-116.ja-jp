@@ -5,6 +5,7 @@ keywords: s3 select, selectobjectcontent, best practices
 summary: 特定の S3 テナントが、個々のオブジェクトに対する S3 Select から問題 SelectObjectContent 要求を使用できるようにすることができます。 
 ---
 = テナントアカウント用の S3 Select を管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

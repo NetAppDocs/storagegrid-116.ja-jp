@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, migrate node, migrating node, new host fo
 summary: ホストのメンテナンス（ OS パッチの適用やリブートなど）を実行するために、グリッドの機能や可用性に影響を及ぼすことなく、 1 つの Linux ホストから別の Linux ホストに StorageGRID ノードを移行できます。 
 ---
 = Linux ：グリッドノードを新しいホストに移行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, clone appliance node, cloning appliance node
 summary: アプライアンスノードをクローニングする前に、考慮事項と要件を理解しておく必要があります。 
 ---
 = アプライアンスノードのクローニングに関する考慮事項と要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

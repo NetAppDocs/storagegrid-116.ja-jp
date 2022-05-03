@@ -5,6 +5,7 @@ keywords: how to automate ubuntu or debian installation
 summary: StorageGRID ホストサービスのインストールおよびグリッドノードの設定を自動化することができます。 
 ---
 = インストールの自動化（ Ubuntu または Debian ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

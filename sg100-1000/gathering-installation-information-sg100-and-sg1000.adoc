@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID アプライアンスを設置および設定する際に、イーサネットスイッチポート、 IP アドレス、およびポートとネットワークのボンディングモードについて決定し、関連情報を収集する必要があります。アプライアンスに接続する各ネットワークの必要な情報を記録します。これらの値は、ハードウェアの設置と設定に必要です。 
 ---
 = インストール情報（ SG100 および SG1000 ）の収集
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

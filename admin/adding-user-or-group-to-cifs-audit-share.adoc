@@ -5,6 +5,7 @@ keywords: CIFS, add user to audit share, add group to audit share, ad authentica
 summary: AD 認証と統合されている CIFS 監査共有にユーザまたはグループを追加できます。 
 ---
 = CIFS 監査共有にユーザまたはグループを追加する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

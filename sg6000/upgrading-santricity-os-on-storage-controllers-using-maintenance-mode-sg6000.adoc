@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, controller, stor
 summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているストレージコントローラの場合、アップグレードを適用するにはメンテナンスモードの手順 を使用する必要があります。 
 ---
 = ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

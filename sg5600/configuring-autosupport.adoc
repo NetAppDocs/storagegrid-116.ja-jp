@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, configure, confi
 summary: AutoSupport ツールは、アプライアンスからカスタマーサポートバンドルのデータを収集し、テクニカルサポートに自動的に送信します。AutoSupport を設定すると、トラブルシューティングや問題の分析をテクニカルサポートがリモートから行えるようになります。 
 ---
 = AutoSupport を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, decommission nodes, decommissioning nodes, maintenance ta
 summary: Grid Manager の Decommission Nodes ページにアクセスすると、運用停止できるノードが一目でわかります。 
 ---
 = [Decommission Nodes] ページにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

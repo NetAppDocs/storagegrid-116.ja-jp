@@ -5,6 +5,7 @@ keywords: Hardening guidelines, security
 summary: StorageGRID ネットワークおよびノードに対する強化ガイドラインに加えて、 StorageGRID システムの他の領域に対する強化ガイドラインに従う必要があります。 
 ---
 = その他のセキュリティ強化に関するガイドライン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

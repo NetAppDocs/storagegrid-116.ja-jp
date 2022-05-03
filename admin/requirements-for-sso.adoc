@@ -5,6 +5,7 @@ keywords: sso requirements, single sign on requirements, identity federation req
 summary: StorageGRID システムでシングルサインオン（ SSO ）を有効にする前に、このセクションの要件を確認してください。 
 ---
 = シングルサインオンの使用要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, log, structure, content
 summary: ここでは、 StorageGRID 監査メッセージおよび監査ログの構造と内容について説明します。この情報を使用して、システムアクティビティの監査証跡を判読し、分析できます。 
 ---
 = 監査ログの確認：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

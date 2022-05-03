@@ -5,6 +5,7 @@ keywords: fabricPool, high availability group, HA group, active-active, active-b
 summary: StorageGRID を FabricPool クラウド階層として接続する前に、 StorageGRID グリッドマネージャを使用してハイアベイラビリティ（ HA ）グループを設定する必要があります。 
 ---
 = ハイアベイラビリティグループのベストプラクティス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: upgrade, requirements, rhel, red hat, linux, centOS, ubuntu, debian
 summary: ソフトウェアのアップグレードを開始する前に、アップグレードを正常に完了できるよう、必要なファイル、機器、情報をすべて揃えておく必要があります。 
 ---
 = ソフトウェアのアップグレードに必要なファイル、機器、機器を揃えます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

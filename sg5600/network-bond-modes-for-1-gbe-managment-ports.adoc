@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Ne
 summary: E5600SG コントローラの 2 つの 1GbE 管理ポートでは、オプションの管理ネットワークに接続するために、独立したネットワークボンディングモードまたは Active-Backup ネットワークボンディングモードを選択できます。 
 ---
 = 1GbE 管理ポートのネットワークボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID サービスアプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環としてサービスアプライアンスノードを追加することもできます。 
 ---
 = インストールと導入の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

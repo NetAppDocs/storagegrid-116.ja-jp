@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, data, types, UI32, UI64, FC32, IPAD, CSTR
 summary: 監査メッセージ内の情報の格納にはさまざまなデータタイプが使用されます。 
 ---
 = データ型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

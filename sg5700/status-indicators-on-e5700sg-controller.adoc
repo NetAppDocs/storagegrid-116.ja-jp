@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, status, indicato
 summary: アプライアンスの電源投入やハードウェアの初期化の実行中、 E5700SG コントローラのデジタル表示ディスプレイと LED にステータスコードとエラーコードが表示されます。これらの画面を使用して、ステータスを確認したり、エラーのトラブルシューティングを行ったりできます。 
 ---
 = E5700SG コントローラのステータスインジケータ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

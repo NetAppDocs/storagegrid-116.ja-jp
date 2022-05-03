@@ -5,6 +5,7 @@ keywords: active http connection benefits
 summary: ストレージノードへの直接接続、またはゲートウェイノード上の CLB サービスへの直接接続を行う場合は、 HTTP 接続でトランザクションを継続的に実行する場合でも、アクティブ HTTP 接続の継続時間を 10 分までに制限することを推奨します。 
 ---
 = アクティブ HTTP 接続のメリット
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

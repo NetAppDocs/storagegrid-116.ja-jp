@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, controller, stor
 summary: ストレージコントローラが最適に機能するようにするには、 StorageGRID アプライアンスに対応した最新の SANtricity OS メンテナンスリリースにアップグレードする必要があります。使用するバージョンを確認するには、ネットアップの Interoperability Matrix Tool （ IMT ）を参照してください。サポートが必要な場合は、テクニカルサポートにお問い合わせください。 
 ---
 = ストレージコントローラの SANtricity OS をアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

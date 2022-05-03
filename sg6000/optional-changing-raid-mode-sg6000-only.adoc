@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, raid, raid mode,
 summary: アプライアンスでは、ストレージとリカバリの要件に応じて別の RAID モードに変更できます。モードを変更できるのは、アプライアンスストレージノードを導入する前だけです。 
 ---
 = オプション： RAID モードを変更（ SG6000 のみ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

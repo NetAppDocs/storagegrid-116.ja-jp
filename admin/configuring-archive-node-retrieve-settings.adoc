@@ -5,6 +5,7 @@ keywords: archive node, retrieve settings
 summary: アーカイブノードの読み出し設定を行って、状態をオンラインまたはオフラインに設定したり、関連するアラームで追跡されているエラー数をリセットしたりできます。 
 ---
 = アーカイブノードの読み出し設定を行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

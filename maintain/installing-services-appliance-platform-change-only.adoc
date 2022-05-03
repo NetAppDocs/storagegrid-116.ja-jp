@@ -5,6 +5,7 @@ keywords: storagegrid, recover services appliance, recover appliance, recovering
 summary: 交換用ノードに SG100 または SG1000 サービスアプライアンスを使用していた、 VMware または Linux ホストでホストされていた障害グリッドノードをリカバリする場合は、最初に障害ノードと同じノード名を使用して新しいアプライアンスハードウェアを設置する必要があります。 
 ---
 = サービスアプライアンスのインストール（プラットフォーム変更のみ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

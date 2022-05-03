@@ -5,6 +5,7 @@ keywords: storagegrid, recover, network connection, restore network connection, 
 summary: サイトまたはグリッド全体の IP アドレスの変更など、特定の状況では、ノードの 1 つ以上のグループがグリッド内の他のノードと通信できない場合があります。 
 ---
 = 分離されているノードのネットワーク接続をリストア
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

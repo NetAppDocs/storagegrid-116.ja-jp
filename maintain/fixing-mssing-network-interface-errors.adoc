@@ -5,6 +5,7 @@ keywords: storagegrid, network interface, network interface error
 summary: ホストネットワークが正しく設定されていない場合や名前のスペルが間違っている場合、 StorageGRID が /etc/storagegrid/nodes/ <node-name\> .conf ファイルに指定されているマッピングをチェックするときにエラーが発生します。 
 ---
 = ネットワークインターフェイスが見つからないエラーを修正
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

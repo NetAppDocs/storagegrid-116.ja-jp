@@ -5,6 +5,7 @@ keywords: data migration, data capacity for migration
 summary: StorageGRID システムに大量のデータを移行する前に、予想されるボリュームを処理できるディスク容量が StorageGRID システムにあることを確認します。 
 ---
 = StorageGRID システムの容量を確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

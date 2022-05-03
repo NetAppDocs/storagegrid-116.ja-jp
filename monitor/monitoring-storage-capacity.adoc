@@ -5,6 +5,7 @@ keywords: how to monitor storage capacity
 summary: 使用可能な合計スペースを監視して、 StorageGRID システムのオブジェクトまたはオブジェクトメタデータのストレージスペースが不足しないようにします。 
 ---
 = ストレージ容量を監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fabricpool, ONTAP certificates
 summary: 厳密なホスト名検証を実行する S3 クライアントでは、 FabricPool を使用する ONTAP クライアントなどの厳密なホスト名検証の無効化をサポートしていない場合は、ロードバランサエンドポイントの設定時にサーバ証明書を生成またはアップロードできます。 
 ---
 = FabricPool の StorageGRID 証明書を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

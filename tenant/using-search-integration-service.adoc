@@ -5,6 +5,7 @@ keywords: how to use search integration service
 summary: 検索統合サービスは、 3 つの StorageGRID プラットフォームサービスのうちの 1 つです。このサービスを有効にすると、オブジェクトが作成、削除されたとき、またはそのメタデータやタグが更新されたときに、デスティネーションの検索インデックスにオブジェクトメタデータを送信できます。 
 ---
 = 検索統合サービスを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

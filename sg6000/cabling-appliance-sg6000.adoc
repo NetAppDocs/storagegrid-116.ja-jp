@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, cabling, wiring,
 summary: ストレージコントローラを SG6000-CN コントローラに接続し、 3 台すべてのコントローラの管理ポートを接続して、 SG6000-CN コントローラのネットワークポートを StorageGRID のグリッドネットワークとオプションのクライアントネットワークに接続する必要があります。 
 ---
 = アプライアンスをケーブル接続（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

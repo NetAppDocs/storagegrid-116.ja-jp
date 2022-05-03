@@ -5,6 +5,7 @@ keywords: how to troubleshoot delivery of platform services message, how to trou
 summary: データを受信できないデスティネーションにプラットフォームサービスメッセージが配信された場合、 Grid Manager で Total Events （ SMTT ）アラームがトリガーされます。 
 ---
 = プラットフォームサービスメッセージの配信のトラブルシューティング（ SMTT アラーム）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

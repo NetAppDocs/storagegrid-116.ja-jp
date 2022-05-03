@@ -5,6 +5,7 @@ keywords: remove storage pool
 summary: 使用されていないストレージプールは削除できます。 
 ---
 = ストレージプールを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

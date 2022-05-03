@@ -5,6 +5,7 @@ keywords: admin network topology, using admin network
 summary: 管理ネットワークの使用はオプションです。管理ネットワークとグリッドネットワークを使用する方法の 1 つは、ノードごとにルーティング可能なグリッドネットワークと境界で保護された管理ネットワークを設定することです。 
 ---
 = 管理ネットワークトポロジ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

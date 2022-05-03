@@ -5,6 +5,7 @@ keywords: stored object encryption, grid options, encrypt
 summary: オブジェクトストアが侵害された場合に読み取り可能な形式でデータを読み出せないようにするには、格納オブジェクトを暗号化します。デフォルトでは、オブジェクトは暗号化されません。 
 ---
 = 格納オブジェクトの暗号化を設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: How grid nodes discover primary Admin Node
 summary: グリッドノードは、設定や管理のためにプライマリ管理ノードと通信します。各グリッドノードがグリッドネットワーク上のプライマリ管理ノードの IP アドレスを認識している必要があります。 
 ---
 = グリッドノードによるプライマリ管理ノードの検出
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

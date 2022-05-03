@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WDEL, Swift DELETE
 summary: Swift クライアントが DELETE トランザクションを実行すると、指定したオブジェクトまたはコンテナを削除する要求が送信されます。このメッセージは、トランザクションが成功した場合にサーバによって出力されます。 
 ---
 = WDEL ： Swift の削除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

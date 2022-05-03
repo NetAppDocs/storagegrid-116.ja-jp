@@ -5,6 +5,7 @@ keywords: storagegrid, network, networking, ethernet, subnet, routing
 summary: これらのガイドラインを使用して、 StorageGRID アーキテクチャとネットワークトポロジについて学び、ネットワークの設定とプロビジョニングの要件を確認してください。 
 ---
 = ネットワークガイドライン：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

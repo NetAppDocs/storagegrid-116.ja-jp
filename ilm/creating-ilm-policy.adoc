@@ -5,6 +5,7 @@ keywords: create ILM policy, information lifecycle policy considerations
 summary: ILM ポリシーを作成するには、最初に ILM ルールを選択して配置します。次に、以前に取り込まれたオブジェクトに対してドラフトポリシーをシミュレートし、その動作を確認します。ドラフトポリシーが意図したとおりに機能していることを確認したら、そのポリシーをアクティブ化してアクティブポリシーを作成できます。 
 ---
 = Create ILM policy ：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

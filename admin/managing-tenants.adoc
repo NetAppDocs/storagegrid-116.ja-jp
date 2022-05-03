@@ -5,6 +5,7 @@ keywords: manage tenants, tenant account, what is a tenant
 summary: グリッド管理者は、 S3 および Swift クライアントがオブジェクトの格納と読み出し、ストレージ使用状況の監視、および StorageGRID システムを使用してクライアントが実行できる操作の管理に使用するテナントアカウントを作成して管理します。 
 ---
 = テナントを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

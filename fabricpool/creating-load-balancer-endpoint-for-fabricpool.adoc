@@ -5,6 +5,7 @@ keywords: fabricPool, load balancer, endpoint, load balancing, create, creating,
 summary: FabricPool で使用する StorageGRID を設定する場合は、ロードバランサエンドポイントを設定し、ロードバランサエンドポイントの証明書をアップロードする必要があります。この証明書は、 ONTAP と StorageGRID の間の接続を保護するために使用されます。 
 ---
 = FabricPool のロードバランサエンドポイントを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

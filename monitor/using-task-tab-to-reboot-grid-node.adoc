@@ -5,6 +5,7 @@ keywords: task tab
 summary: 'Task タブでは " 選択したノードを再起動できますすべてのノードの [ タスク ] タブが表示されます。' 
 ---
 = グリッドノードをリブートするには、タスクタブを使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

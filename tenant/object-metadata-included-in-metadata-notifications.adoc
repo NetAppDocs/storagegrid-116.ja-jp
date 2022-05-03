@@ -5,6 +5,7 @@ keywords: object metadata notification
 summary: 次の表に、検索統合が有効になっている場合にデスティネーションエンドポイントに送信される JSON ドキュメント内のすべてのフィールドを示します。 
 ---
 = メタデータ通知に含まれているオブジェクトメタデータ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

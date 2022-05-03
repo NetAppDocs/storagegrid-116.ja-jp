@@ -5,6 +5,7 @@ keywords: troubleshooting, logs
 summary: サードパーティソフトウェアのログを問題のトラブルシューティングに使用できます。 
 ---
 = サードパーティソフトウェアのログ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

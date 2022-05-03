@@ -5,6 +5,7 @@ keywords: storagegrid, appliance node clone, appliance node cloning, node clone,
 summary: ソースノード \ （交換するアプライアンス \ ）とターゲット \ （新規 \ ）アプライアンス間でデータを転送するには、クローニングプロセスに数日かかることがあります。 
 ---
 = アプライアンスノードをクローニングする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

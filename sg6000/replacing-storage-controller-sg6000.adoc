@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: E2800 コントローラまたは EF570 コントローラが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。 
 ---
 = ストレージコントローラを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

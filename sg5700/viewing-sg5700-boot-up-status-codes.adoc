@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, boot codes, boot
 summary: アプライアンスの電源をオンにすると、各コントローラのデジタル表示ディスプレイにステータスコードとエラーコードが表示されます。 
 ---
 = SG5700 のブート時のステータスコードを表示する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

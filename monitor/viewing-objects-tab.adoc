@@ -5,6 +5,7 @@ keywords: objects tab
 summary: Objects タブには、 S3 および Swift の取り込み速度と読み出し速度に関する情報が表示されます。 
 ---
 = [ オブジェクト ] タブを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

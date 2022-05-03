@@ -5,6 +5,7 @@ keywords: stored object compression, compress stored objects, grid options
 summary: '[ 格納オブジェクトの圧縮 ] グリッドオプションを使用すると、 StorageGRID に格納されているオブジェクトのサイズを縮小して、オブジェクトのストレージ消費量を抑えることができます。' 
 ---
 = 格納オブジェクトの圧縮を設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

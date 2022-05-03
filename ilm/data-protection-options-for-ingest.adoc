@@ -5,6 +5,7 @@ keywords: ingest options, balanced ingest, strict ingest, dual-commit ingest
 summary: ILM ルールを作成する際には、取り込み時にオブジェクトを保護するためのオプションとして、 Dual commit 、 Balanced 、または Strict のいずれかを指定します。選択したオプションに応じて、 StorageGRID は、中間コピーを作成してオブジェクトをキューに登録し、あとで ILM 評価を実行するか、または同期配置を使用してコピーをただちに作成して ILM 要件を満たします。 
 ---
 = 取り込みのデータ保護オプション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

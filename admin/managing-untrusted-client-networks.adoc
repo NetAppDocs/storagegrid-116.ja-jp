@@ -5,6 +5,7 @@ keywords: untrusted client network
 summary: クライアントネットワークを使用している場合は、明示的に設定されたエンドポイントでのみインバウンドクライアントトラフィックを受け入れることで、悪意のある攻撃から StorageGRID を保護できます。 
 ---
 = 信頼されていないクライアントネットワークの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。 
 ---
 = メンテナンスモード（ SG100 および SG1000 ）でのノード暗号化の監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: features, removed, deprecated
 summary: 一部の機能については、このリリースで削除または廃止されています。以下の項目を確認して、アップグレードの前にクライアントアプリケーションを更新する必要があるか、または設定を変更する必要があるかを理解してください。 
 ---
 = 削除または廃止された機能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

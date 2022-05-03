@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID アプライアンスを設置する前にすべて開梱し、内容物を納品書の項目と比較します。 
 ---
 = 開梱（ SG100 と SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

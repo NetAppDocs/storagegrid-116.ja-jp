@@ -5,6 +5,7 @@ keywords: load balancer service, how load balancing works
 summary: ロードバランササービスは、クライアントアプリケーションからの受信ネットワーク接続を複数のストレージノードに分散します。ロードバランシングを有効にするには、 Grid Manager を使用してロードバランサエンドポイントを設定する必要があります。 
 ---
 = ロードバランシングの仕組み - ロードバランササービス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

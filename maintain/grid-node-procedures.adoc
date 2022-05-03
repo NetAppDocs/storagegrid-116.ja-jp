@@ -5,6 +5,7 @@ keywords: storagegrid, grid node procedure
 summary: 特定のグリッドノードで作業を実行する必要がある場合があります。これらの手順の一部は Grid Manager から実行できますが、ほとんどの手順ではノードのコマンドラインから Server Manager にアクセスする必要があります。 
 ---
 = グリッドノードの手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

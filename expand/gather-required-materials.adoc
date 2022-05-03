@@ -5,6 +5,7 @@ keywords: expand, expansion, planning, storagrid files
 summary: 拡張処理を実行する前に、機器を揃え、新しいハードウェアとネットワークの設置と設定を行ってください。 
 ---
 = 必要なデータや機器を揃えます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

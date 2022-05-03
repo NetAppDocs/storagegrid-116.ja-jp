@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, controllers, con
 summary: StorageGRID アプライアンス SG5712 と SG5760 の両モデルには、 E5700SG コントローラと E2800 コントローラが含まれています。次の図で、コントローラの違いを確認してください。 
 ---
 = StorageGRID アプライアンスのコントローラ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

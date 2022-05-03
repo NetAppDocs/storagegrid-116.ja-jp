@@ -5,6 +5,7 @@ keywords: how to create ubuntu or debian node configuration files
 summary: ノード構成ファイルは、ノードを起動して適切なネットワークおよびブロックストレージリソースに接続するために StorageGRID ホストサービスで必要となる情報をまとめた小さいテキストファイルです。ノード構成ファイルは仮想ノードに使用され、アプライアンスノードには使用されません。 
 ---
 = Ubuntu または Debian の環境のノード構成ファイルを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: add extra interface to node, trunk interface, access interface
 summary: Linux ノードをインストールしたあとで、そのノードにトランクインターフェイスまたはアクセスインターフェイスを追加できます。追加したインターフェイスは、 VLAN インターフェイスのページと HA グループのページに表示されます。 
 ---
 = Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, transaction, transactions, Obje
 summary: 監査ログでオブジェクトの削除トランザクションを特定するには、 API 固有の監査メッセージ（ S3 および Swift ）を検索します。 
 ---
 = オブジェクトの削除トランザクション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

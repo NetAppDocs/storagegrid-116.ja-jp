@@ -5,6 +5,7 @@ keywords: storagegrid, audit, messages, message, common elements, AMID, ANID, AS
 summary: すべての監査メッセージには、共通の要素が含まれています。 
 ---
 = 監査メッセージの共通要素
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

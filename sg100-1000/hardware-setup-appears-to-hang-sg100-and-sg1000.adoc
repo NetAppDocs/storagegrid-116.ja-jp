@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: ハードウェア障害やケーブル接続エラーによってアプライアンスのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。 
 ---
 = ハードウェアのセットアップがハングしたように見える（ SG100 と SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

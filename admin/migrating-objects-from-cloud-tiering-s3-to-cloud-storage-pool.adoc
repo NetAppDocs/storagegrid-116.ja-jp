@@ -5,6 +5,7 @@ keywords: cloud tiering
 summary: 現在 Cloud Tiering - Simple Storage Service （ S3 \ ）機能を使用してオブジェクトデータを S3 バケットに階層化している場合は、代わりにクラウドストレージプールへのオブジェクトの移行を検討してください。クラウドストレージプールは拡張性に優れたアプローチを提供し、 StorageGRID システム内のすべてのストレージノードを活用します。 
 ---
 = 「 Cloud Tiering - S3 」からクラウドストレージプールにオブジェクトを移行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

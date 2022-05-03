@@ -5,6 +5,7 @@ keywords: storagegrid, recover, appliance, appliance install
 summary: StorageGRID をアプライアンスストレージノードにインストールするには、アプライアンスに含まれている StorageGRID アプライアンスインストーラを使用します。 
 ---
 = StorageGRID アプライアンスのインストールを開始します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

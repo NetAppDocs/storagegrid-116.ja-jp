@@ -5,6 +5,7 @@ keywords: how data migration affects operations
 summary: StorageGRID システムは、オブジェクトを効率的に格納して読み出せるようにすること、およびオブジェクトデータとメタデータの冗長コピーをシームレスに作成することでデータ損失に対する優れた保護を提供することを目的に設計されています。 
 ---
 = 移行が処理に及ぼす影響
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

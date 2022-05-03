@@ -5,6 +5,7 @@ keywords: storagegrid, recover, non-primary admin node
 summary: 非プライマリ管理ノードを交換したら、 Grid Manager で Start Recovery を選択して、新しいノードを障害ノードの代わりとして設定する必要があります。 
 ---
 = [ リカバリの開始 ] を選択して、非プライマリ管理ノードを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

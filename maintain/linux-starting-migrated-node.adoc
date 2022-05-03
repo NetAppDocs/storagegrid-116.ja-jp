@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, start node
 summary: 移行済みノードの検証が完了したら、ターゲット Linux ホストでコマンドを実行して、ノードを開始します。 
 ---
 = Linux ：移行済みノードを開始します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

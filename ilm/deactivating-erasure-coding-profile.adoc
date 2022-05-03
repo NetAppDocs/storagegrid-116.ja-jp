@@ -5,6 +5,7 @@ keywords: deactivate ec profile, remove erasure coding profile
 summary: 使用する予定がなくなったイレイジャーコーディングプロファイルや、プロファイルが現在どの ILM ルールでも使用されていないプロファイルは、非アクティブ化できます。 
 ---
 = イレイジャーコーディングプロファイルを非アクティブ化します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

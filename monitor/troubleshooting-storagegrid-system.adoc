@@ -5,6 +5,7 @@ keywords: how to troubleshoot a StorageGRID system
 summary: StorageGRID システムの使用中に問題が発生した場合は、このセクションのヒントとガイドラインを参考に、問題 を特定し、解決してください。 
 ---
 = StorageGRID システムのトラブルシューティングを行う
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

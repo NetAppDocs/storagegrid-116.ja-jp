@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, import node, importing node, target host
 summary: ソースホストからノードをエクスポートしたら、ターゲット Linux ホストにノードをインポートして検証します。検証では、ソースホストと同じブロックストレージおよびネットワークインターフェイスデバイスにノードがアクセスできるかどうかを確認します。 
 ---
 = Linux ：ターゲットホストでノードをインポートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

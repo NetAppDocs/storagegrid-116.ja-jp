@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, AREM, Archive Object Remove
 summary: Archive Object Remove 監査メッセージは、アーカイブノードからのコンテンツブロックの削除が成功または失敗したことを示します。アーカイブノードが StorageGRID がオブジェクトの場所を解放したことを外部アーカイブストレージシステムに通知した場合、結果は成功です。オブジェクトが外部アーカイブストレージシステムから削除されるかどうかは、システムのタイプと構成によって異なります。 
 ---
 = AREM ：アーカイブオブジェクトの削除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

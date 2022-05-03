@@ -5,6 +5,7 @@ keywords: how to troubleshoot storage status alarm, how to troubleshoot ssts ala
 summary: Storage Status （ SSTS ）アラームは、ストレージノードにオブジェクトストレージ用の十分な空きスペースが残っていない場合にトリガーされます。 
 ---
 = Storage Status （ SSTS ）アラームをトラブルシューティングします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

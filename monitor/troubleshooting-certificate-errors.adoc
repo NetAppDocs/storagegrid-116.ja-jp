@@ -5,6 +5,7 @@ keywords: how to troubleshoot certificate errors
 summary: Web ブラウザ、 S3 または Swift クライアント、または外部の監視ツールを使用して StorageGRID に接続しようとしたときに、セキュリティまたは証明書の問題 が表示される場合は、証明書を確認してください。 
 ---
 = 証明書エラーのトラブルシューティングを行う
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

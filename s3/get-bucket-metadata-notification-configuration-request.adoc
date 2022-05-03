@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, GET bucket metadata notification configura
 summary: GET Bucket metadata notification configuration 要求では、個々のバケットで検索統合を設定するために使用する設定 XML を読み出すことができます。 
 ---
 = GET Bucket metadata notification configuration 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

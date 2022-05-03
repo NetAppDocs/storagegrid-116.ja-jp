@@ -5,6 +5,7 @@ keywords: expand, expansion, add subnets, Grid Network
 summary: グリッドノードまたは新しいサイトを追加した場合は、サブネットの更新、またはグリッドネットワークへのサブネットの追加が必要になることがあります。 
 ---
 = Grid ネットワークのサブネットを更新します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: what are platform services
 summary: StorageGRID プラットフォームサービスは、ハイブリッドクラウドの実装に役立ちます。 
 ---
 = プラットフォームサービスとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

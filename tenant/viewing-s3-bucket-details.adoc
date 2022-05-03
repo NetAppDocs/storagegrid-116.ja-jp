@@ -5,6 +5,7 @@ keywords: how to view s3 bucket details
 summary: テナントアカウントのバケットおよびバケット設定のリストを表示できます。 
 ---
 = S3 バケットの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

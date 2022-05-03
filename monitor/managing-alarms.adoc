@@ -5,6 +5,7 @@ keywords: alarms, managing, manage alarms global alarms, custom alarms, triggeri
 summary: StorageGRID アラームシステムは、通常の動作中に発生することがある問題点を特定するために使用される従来のシステムです。 
 ---
 = アラームの管理（従来のシステム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to create cloud storage pool
 summary: クラウドストレージプールを作成する際には、 StorageGRID がオブジェクトの格納に使用する外部バケットまたはコンテナの名前と場所、クラウドプロバイダのタイプ（ Amazon S3 または Azure Blob Storage ）、および StorageGRID が外部のバケットまたはコンテナにアクセスするために必要な情報を指定します。 
 ---
 = クラウドストレージプールを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

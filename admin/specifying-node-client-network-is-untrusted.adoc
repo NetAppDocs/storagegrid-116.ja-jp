@@ -5,6 +5,7 @@ keywords: how to specify if client network is untrusted, what is untrusted clien
 summary: クライアントネットワークを使用している場合は、各ノードのクライアントネットワークが信頼されているかどうかを指定できます。拡張で追加した新しいノードのデフォルト設定を指定することもできます。 
 ---
 = ノードのクライアントネットワークが信頼されていないことを指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

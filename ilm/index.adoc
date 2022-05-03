@@ -5,6 +5,7 @@ keywords: information lifecycle management overview, about information lifecycle
 summary: StorageGRID システムのオブジェクトを管理するには、情報ライフサイクル管理（ ILM ）ルールとポリシーを設定します。ILM ルールとポリシーは、オブジェクトデータのコピーを作成して分散し、一定の期間にわたって管理する方法を StorageGRID に指示します。 
 ---
 = ILM によるオブジェクトの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

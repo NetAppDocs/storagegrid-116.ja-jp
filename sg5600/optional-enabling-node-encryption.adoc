@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Enabling, enable
 summary: ノードの暗号化を有効にすると、アプライアンス内のディスクをセキュアなキー管理サーバ \ （ KMS ）暗号化によってサイトの物理的な損失やサイトからの削除から保護できます。アプライアンスのインストール時にノード暗号化を選択して有効にする必要があります。また、 KMS 暗号化プロセスが開始されると、ノード暗号化の選択を解除できません。 
 ---
 = オプション：ノード暗号化を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

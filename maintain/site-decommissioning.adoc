@@ -5,6 +5,7 @@ keywords: site decommission
 summary: データセンターサイトの StorageGRID システムからの削除が必要になる場合があります。サイトを削除するには、サイトの運用を停止する必要があります。 
 ---
 = サイトの運用停止
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

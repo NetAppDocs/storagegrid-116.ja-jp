@@ -5,6 +5,7 @@ keywords: SANtricity System Manager tab
 summary: SANtricity の System Manager タブから、ストレージアプライアンスの管理ポートを設定したり接続したりしなくても、 SANtricity の System Manager にアクセスできます。このタブでは、ハードウェア診断と環境情報、およびドライブに関連する問題を確認できます。 
 ---
 = SANtricity の System Manager タブを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

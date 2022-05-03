@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID のすべての機能がサポートされるようにするには、アプライアンスの StorageGRID アプライアンスインストーラのバージョンと StorageGRID システムにインストールされているソフトウェアのバージョンが一致している必要があります。 
 ---
 = StorageGRID アプライアンスインストーラのバージョンを確認してアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

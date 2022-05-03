@@ -5,6 +5,7 @@ keywords: how to edit tenant group name
 summary: グループの表示名を編集できます。グループの一意の名前は編集できません。 
 ---
 = グループ名を編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

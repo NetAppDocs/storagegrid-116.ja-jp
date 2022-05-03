@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore node to host
 summary: 障害グリッドノードを新しい Linux ホストにリストアするには、適切なコマンドを使用してノード構成ファイルをリストアします。 
 ---
 = グリッドノードをホストにリストアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

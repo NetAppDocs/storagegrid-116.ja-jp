@@ -5,6 +5,7 @@ keywords: storagegrid, recover, gateway node failure
 summary: ゲートウェイノードの障害からリカバリするには、一連のタスクを正しい順序で実行する必要があります。 
 ---
 = ゲートウェイノードの障害からリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

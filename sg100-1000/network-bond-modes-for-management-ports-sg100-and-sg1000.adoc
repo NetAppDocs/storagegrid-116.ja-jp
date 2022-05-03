@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンス上の 2 つの 1GbE 管理ポートでは、オプションの管理ネットワークに接続するためのネットワークボンディングモードとして、 Independent または Active-Backup を選択できます。 
 ---
 = 管理ポートのネットワークボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

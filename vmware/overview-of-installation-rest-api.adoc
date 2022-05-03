@@ -5,6 +5,7 @@ keywords: installation REST API
 summary: StorageGRID には、インストールタスクを実行するための StorageGRID インストール API が用意されています。 
 ---
 = インストール REST API の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

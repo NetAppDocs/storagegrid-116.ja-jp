@@ -5,6 +5,7 @@ keywords: implement swift rest api
 summary: StorageGRID で使用するために Swift REST API を実装する場合は、次の推奨事項を考慮してください。 
 ---
 = Swift REST API を実装する際の推奨事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

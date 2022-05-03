@@ -5,6 +5,7 @@ keywords: head object
 summary: S3 HEAD Object 要求を使用すると、オブジェクト自体を返さずにオブジェクトからメタデータを読み出すことができます。 
 ---
 = HEAD Object の実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

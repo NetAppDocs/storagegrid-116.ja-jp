@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, raid, raid mode,
 summary: 60 本のドライブを搭載した SG5760 では、ストレージとリカバリの要件に対応するために、別の RAID モードに変更できます。モードを変更できるのは、 StorageGRID アプライアンスストレージノードを導入する前だけです。 
 ---
 = オプション： RAID モードの変更（ SG5760 のみ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

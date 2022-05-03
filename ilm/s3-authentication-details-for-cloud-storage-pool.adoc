@@ -5,6 +5,7 @@ keywords: cloud storage pool authentication, anonymous authentication, access ke
 summary: S3 用のクラウドストレージプールを作成する場合は、クラウドストレージプールのエンドポイントで必要な認証のタイプを選択する必要があります。匿名を指定するか、アクセスキー ID とシークレットアクセスキーを入力できます。 
 ---
 = S3 ：クラウドストレージプールの認証情報の指定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

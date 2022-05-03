@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, overview, models
 summary: StorageGRID SG5600 アプライアンスは、 StorageGRID グリッドにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。 
 ---
 = StorageGRID SG5600 アプライアンスの概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

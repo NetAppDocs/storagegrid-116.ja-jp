@@ -5,6 +5,7 @@ keywords: archive node, tsm, tape storage pool, tivoli storage manager
 summary: アーカイブノードはディスクストレージプールに書き込みます。コンテンツをテープにアーカイブするには、コンテンツをテープストレージプールに移動するようにディスクストレージプールを設定する必要があります。 
 ---
 = TSM テープストレージプールとディスクストレージプールを定義します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

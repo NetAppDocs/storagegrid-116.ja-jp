@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, install,
 summary: キャビネットまたはラックに E2860 コントローラシェルフ用のレール一式を取り付け、レールにコントローラシェルフをスライドさせます。60 ドライブ拡張シェルフを設置する場合は、同じ手順 が適用されます。 
 ---
 = SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

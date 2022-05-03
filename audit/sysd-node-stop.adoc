@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, SYSD, Node Stop
 summary: サービスが正常に停止されると、シャットダウンが要求されたことを示すためにこのメッセージが生成されます。監査メッセージキューはシャットダウン前にクリアされないため、通常このメッセージはその後の再起動後に送信されます。サービスが再起動していない場合は、シャットダウンシーケンスの最初に送信された SYST メッセージを確認します。 
 ---
 = SYSD ：ノード停止
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

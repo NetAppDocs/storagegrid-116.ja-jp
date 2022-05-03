@@ -5,6 +5,7 @@ keywords: platform service support
 summary: StorageGRID プラットフォームサービスでは、 StorageGRID のテナントアカウントでリモート S3 バケット、 Simple Notification Service （ SNS ）エンドポイント、 Elasticsearch クラスタなどの外部サービスを利用して、グリッドが提供するサービスを拡張できます。 
 ---
 = StorageGRID プラットフォームサービスのサポート
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

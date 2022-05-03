@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, seven-segment di
 summary: アプライアンスの電源投入やハードウェアの初期化の実行時、 E5600SG コントローラのデジタル表示ディスプレイにステータスコードとエラーコードが表示されます。これらのコードからステータスを確認し、エラーのトラブルシューティングを行うことができます。 
 ---
 = E5600SG コントローラのデジタル表示ディスプレイのコード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

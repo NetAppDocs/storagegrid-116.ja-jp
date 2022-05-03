@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, 
 summary: 交換用のファイバチャネル HBA は、取り外した HBA と同じ場所に取り付けます。 
 ---
 = Fibre Channel HBA を再度取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

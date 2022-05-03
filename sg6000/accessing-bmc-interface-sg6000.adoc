@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard m
 summary: BMC 管理ポートの DHCP または静的 IP アドレスを使用して、 SG6000-CN コントローラの BMC インターフェイスにアクセスできます。 
 ---
 = BMC インターフェイスにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

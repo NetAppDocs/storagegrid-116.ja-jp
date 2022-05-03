@@ -5,6 +5,7 @@ keywords: firewall access, firewall ports, external firewall
 summary: ファイアウォールでアクセスを制御するには、外部ファイアウォールで特定のポートを開くか、または閉じます。 
 ---
 = ファイアウォールによるアクセスの制御
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

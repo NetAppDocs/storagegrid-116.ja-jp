@@ -5,6 +5,7 @@ keywords: archive node setup
 summary: インストールプロセスを完了した時点ではアーカイブノードは機能していません。StorageGRID システムが TSM アーカイブノードにオブジェクトを保存できるようにするには、 TSM サーバのインストールと設定を完了し、 TSM サーバと通信するようにアーカイブノードを設定する必要があります。 
 ---
 = アーカイブノードのセットアップを完了します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

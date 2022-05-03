@@ -5,6 +5,7 @@ keywords: platform service, cloudmirror replication, event notification, search 
 summary: S3 テナントアカウントでプラットフォームサービスを有効にする場合は、テナントがそのサービスの使用に必要な外部リソースにアクセスできるようにグリッドを設定する必要があります。 
 ---
 = S3 テナントアカウントのプラットフォームサービスを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

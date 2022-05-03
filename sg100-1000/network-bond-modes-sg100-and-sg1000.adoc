@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスのネットワークポートは、グリッドネットワークおよびクライアントネットワーク接続用に、 Fixed または Aggregate のポートボンディングモードをサポートします。 
 ---
 = ネットワークボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

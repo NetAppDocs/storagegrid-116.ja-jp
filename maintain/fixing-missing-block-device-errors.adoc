@@ -5,6 +5,7 @@ keywords: storagegrid, missing block device, block device error
 summary: システムは、リカバリされた各ノードが有効なブロックデバイススペシャルファイル、またはブロックデバイススペシャルファイルへの有効なソフトリンクにマッピングされていることを確認します。StorageGRID が「 /etc/storagegrid/nodes/ _node-name _.conf 」ファイルで無効なマッピングを検出すると、ブロックデバイスが見つからないことを示すエラーが表示されます。 
 ---
 = ブロックデバイスが見つからないエラーを修正します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

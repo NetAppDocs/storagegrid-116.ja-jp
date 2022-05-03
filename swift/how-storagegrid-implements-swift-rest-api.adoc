@@ -5,6 +5,7 @@ keywords: implement swift rest api
 summary: クライアントアプリケーションは、 Swift REST API 呼び出しを使用してストレージノードやゲートウェイノードに接続し、コンテナの作成やオブジェクトの格納と読み出しを行うことができます。これを利用して、 OpenStack Swift 向けに開発されたサービス指向アプリケーションを、 StorageGRID システムで利用できるオンプレミスのオブジェクトストレージに接続することができます。 
 ---
 = StorageGRID での Swift REST API の実装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

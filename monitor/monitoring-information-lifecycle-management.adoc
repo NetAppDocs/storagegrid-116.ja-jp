@@ -5,6 +5,7 @@ keywords: lifecycle management, lifecycle, monitoring, ILM, information lifecycl
 summary: 情報ライフサイクル管理（ ILM ）システムは、グリッドに格納されているすべてのオブジェクトのデータ管理を提供します。ILM 処理を監視して、グリッドが現在の負荷を処理できるかどうか、またはリソースの追加が必要かどうかを判断する必要があります。 
 ---
 = 情報ライフサイクル管理を監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

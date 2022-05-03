@@ -5,6 +5,7 @@ keywords: how to specify platform services urn
 summary: プラットフォームサービスエンドポイントを作成するときは、一意なリソース名（ URN ）を指定する必要があります。プラットフォームサービスの設定 XML を作成する際、 URN を使用してエンドポイントを参照します。各エンドポイントの URN は一意である必要があります。 
 ---
 = プラットフォームサービスのエンドポイントの URN を指定してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

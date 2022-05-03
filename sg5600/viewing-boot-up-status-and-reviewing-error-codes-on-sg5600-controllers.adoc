@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, status, boot cod
 summary: アプライアンスの電源投入やハードウェアの初期化の実行時、ハードウェアで障害が発生して初期化を取り消す必要がある場合など、各コントローラのデジタル表示ディスプレイにステータスコードとエラーコードが表示されます。進行状況の監視やトラブルシューティングの際は、表示される順番に一連のコードを確認する必要があります。 
 ---
 = SG5600 コントローラのブート時のステータスとエラーコードの確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: syslog server, external syslog server, sizing, sizing syslog server, a
 summary: 外部 syslog サーバに必要な容量を見積もるには、次のガイドラインに従ってください。 
 ---
 = 外部 syslog サーバに関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

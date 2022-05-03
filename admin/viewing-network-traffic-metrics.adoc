@@ -5,6 +5,7 @@ keywords: network traffic, traffic classification policy, monitor traffic
 summary: Traffic Classification Policies ページから使用可能なグラフを表示することで、ネットワークトラフィックを監視できます。 
 ---
 = ネットワークトラフィックの指標を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

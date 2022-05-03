@@ -5,6 +5,7 @@ keywords: nfs, audit client, audit share
 summary: NFS 監査クライアントは、 IP アドレスに基づいて監査共有へのアクセスが許可されます。新しい NFS 監査クライアントに監査共有へのアクセスを許可するには、そのクライアントの IP アドレスを監査共有に追加します。 
 ---
 = 監査共有に NFS 監査クライアントを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

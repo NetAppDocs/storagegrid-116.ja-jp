@@ -5,6 +5,7 @@ keywords: archive, monitor, monitoring, monitoring archival capacity
 summary: 外部アーカイブストレージシステムの容量を StorageGRID システムで直接監視することはできません。ただし、アーカイブノードからアーカイブ先にまだオブジェクトデータを送信できるかを監視することで、アーカイブメディアの拡張が必要かどうかを確認できます。 
 ---
 = アーカイブ容量を監視する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, LKCU, Overwritten Object Cleanup
 summary: このメッセージは、ストレージスペースを解放するためにクリーンアップが必要な上書きされたオブジェクトを StorageGRID が削除した場合に生成されます。オブジェクトがすでに含まれているパスに S3 または Swift クライアントがオブジェクトを書き込むと、オブジェクトが上書きされます。削除処理は自動的にバックグラウンドで実行されます。 
 ---
 = LKCU: 上書きされたオブジェクトのクリーンアップ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

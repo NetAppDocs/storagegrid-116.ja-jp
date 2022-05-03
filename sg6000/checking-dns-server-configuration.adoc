@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, domain name syst
 summary: このアプライアンスノードで現在使用されているドメインネームシステム（ DNS\ ）サーバを確認し、一時的に変更できます。 
 ---
 = DNS サーバの設定を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

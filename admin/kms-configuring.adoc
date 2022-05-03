@@ -5,6 +5,7 @@ keywords: configure kms, key management server, kmip, Key Management Interoperab
 summary: 1 つ以上の外部キー管理サーバ（ KMS ）を設定して、特別に設定したアプライアンスノード上のデータを保護することができます。 
 ---
 = キー管理サーバの設定：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

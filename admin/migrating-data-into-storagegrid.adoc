@@ -5,6 +5,7 @@ keywords: data migration, move data into storagegrid
 summary: 日常業務に StorageGRID システムを使用しながら、同時に StorageGRID システムに大量のデータを移行できます。 
 ---
 = データを StorageGRID に移行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, SANtricity Stora
 summary: SANtricity Storage Manager にアクセスしたあと、ハードウェアを設定する際にそのマネージャを使用できます。通常、この設定はアプライアンスを StorageGRID システムのストレージノードとして導入する前に行います。 
 ---
 = SANtricity Storage Manager をセットアップする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

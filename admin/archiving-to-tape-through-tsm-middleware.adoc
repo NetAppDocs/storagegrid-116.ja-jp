@@ -5,6 +5,7 @@ keywords: tivoli storage manager, tsm server, archive node, tape
 summary: Tivoli Storage Manager サーバ（ TSM ）をターゲットとするようにアーカイブノードを構成できます。 TSM サーバは、テープライブラリを含むランダムまたはシーケンシャルアクセスのストレージデバイスとの間でオブジェクトデータを格納および読み出すための論理インターフェイスです。 
 ---
 = TSM ミドルウェア経由でのテープへのアーカイブ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

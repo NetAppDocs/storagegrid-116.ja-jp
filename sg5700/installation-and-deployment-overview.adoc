@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, Installation, de
 summary: StorageGRID アプライアンスは StorageGRID の初回導入時に設置することも、後日拡張の一環として追加することもできます。リカバリ処理の一環としてアプライアンスストレージノードの設置が必要となる場合もあります。 
 ---
 = インストールと導入の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

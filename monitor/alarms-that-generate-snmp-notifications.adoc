@@ -5,6 +5,7 @@ keywords: alarms, monitor alarms, snmp notification, snmp
 summary: 次の表に、 SNMP 通知を生成するレガシーアラームを示します。アラートとは異なり、すべてのアラームが SNMP 通知を生成するわけではありません。リストされたアラームだけが SNMP 通知を生成し、指定された重大度以上の重大度のみが生成されます。 
 ---
 = SNMP 通知を生成するアラーム（従来のシステム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

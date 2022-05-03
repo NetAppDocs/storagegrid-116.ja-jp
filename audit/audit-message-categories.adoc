@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, categories, category, group, groups, orga
 summary: 監査メッセージの各カテゴリについて理解しておく必要があります。これらのグループは、メッセージが表すアクティビティのクラスに基づいて分類されます。 
 ---
 = 監査メッセージのカテゴリ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

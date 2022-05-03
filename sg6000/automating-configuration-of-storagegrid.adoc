@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, automate, automa
 summary: グリッドノードを導入したら、 StorageGRID システムの設定を自動化できます。 
 ---
 = StorageGRID の設定を自動化
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

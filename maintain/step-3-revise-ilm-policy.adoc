@@ -5,6 +5,7 @@ keywords: storagegrid, recover, revise ilm policy
 summary: 運用停止サイトウィザードの手順 3 （ ILM ポリシーの改訂）から、サイトがアクティブな ILM ポリシーで参照されているかどうかを確認できます。 
 ---
 = 手順 3 ： ILM ポリシーを改訂する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

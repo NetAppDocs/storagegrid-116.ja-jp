@@ -5,6 +5,7 @@ keywords: how to monitor system health, how to view system health
 summary: StorageGRID システムの全体的なヘルスは日単位で監視する必要があります。 
 ---
 = システムヘルスを監視する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

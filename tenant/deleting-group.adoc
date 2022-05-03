@@ -5,6 +5,7 @@ keywords: how to delete tenant group
 summary: システムからグループを削除できます。そのグループに属するユーザは、 Tenant Manager にサインインしたりテナントアカウントを使用したりすることはできなくなります。 
 ---
 = グループを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

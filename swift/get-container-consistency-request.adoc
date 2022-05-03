@@ -5,6 +5,7 @@ keywords: get container consistency request
 summary: 整合性レベルを設定する場合は、オブジェクトの可用性と、異なるストレージノードおよびサイト間におけるオブジェクトの整合性のどちらかを犠牲にしなければなりません。GET コンテナ整合性要求では、特定のコンテナに適用されている整合性レベルを確認できます。 
 ---
 = GET コンテナセイコウセイヨウキユウ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

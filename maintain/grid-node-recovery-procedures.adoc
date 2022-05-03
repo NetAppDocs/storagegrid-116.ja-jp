@@ -5,6 +5,7 @@ keywords: storagegrid, recovery
 summary: グリッドノードで障害が発生した場合は、障害が発生した物理または仮想サーバを交換し、 StorageGRID ソフトウェアを再インストールし、リカバリ可能なデータをリストアすることでリカバリできます。 
 ---
 = グリッドノードのリカバリ手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

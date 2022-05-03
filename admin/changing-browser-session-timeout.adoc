@@ -5,6 +5,7 @@ keywords: browser timeout, inactive session timeout
 summary: Grid Manager ユーザと Tenant Manager ユーザが一定期間非アクティブになった場合にサインアウトするかどうかを制御できます。 
 ---
 = ブラウザセッションのタイムアウトを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

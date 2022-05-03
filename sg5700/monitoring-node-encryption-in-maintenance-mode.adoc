@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, kms, key managem
 summary: インストール中にアプライアンスのノード暗号化を有効にした場合は、ノード暗号化の状態やキー管理サーバ（ KMS ）の詳細など、各アプライアンスノードのノード暗号化ステータスを監視できます。 
 ---
 = メンテナンスモードでのノード暗号化の監視（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

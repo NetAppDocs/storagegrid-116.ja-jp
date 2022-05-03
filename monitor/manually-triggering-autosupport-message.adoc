@@ -5,6 +5,7 @@ keywords: autosupport, triggering autosupport, manually triggering autosupport, 
 summary: テクニカルサポートによる StorageGRID システムの問題のトラブルシューティングを支援するために、 AutoSupport メッセージの送信を手動でトリガーできます。 
 ---
 = AutoSupport メッセージを手動でトリガーする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

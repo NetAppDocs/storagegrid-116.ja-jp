@@ -5,6 +5,7 @@ keywords: considerations for using platform services
 summary: プラットフォームサービスを実装する前に、これらのサービスの使用に関する推奨事項と考慮事項を確認してください。 
 ---
 = プラットフォームサービスの使用に関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

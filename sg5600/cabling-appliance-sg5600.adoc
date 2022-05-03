@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, cabling, wiring,
 summary: SAS インターコネクトケーブルを使用して、 2 台のコントローラを相互に接続し、管理ポートを適切な管理ネットワークに接続して、 E5600SG コントローラの 10GbE ポートを StorageGRID のグリッドネットワークとオプションのクライアントネットワークに接続する必要があります。 
 ---
 = ケーブルアプライアンス（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

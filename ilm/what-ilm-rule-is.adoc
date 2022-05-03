@@ -5,6 +5,7 @@ keywords: what is information lifecycle rule, ilm rule
 summary: オブジェクトを管理するには、一連の情報ライフサイクル管理（ ILM ）ルールを作成して 1 つの ILM ポリシーにまとめます。システムに取り込まれた各オブジェクトは、アクティブポリシーに照らして評価されます。ポリシー内のルールがオブジェクトのメタデータに一致すると、ルールの説明によって、 StorageGRID がそのオブジェクトをコピーして格納するために実行するアクションが決まります。 
 ---
 = ILM ルールとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

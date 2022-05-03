@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, power on, turn o
 summary: メンテナンスが完了したら、コントローラの電源をオンにします。 
 ---
 = SG6000-CN コントローラの電源をオンにして、動作を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

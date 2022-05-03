@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アプライアンスのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。 
 ---
 = アプライアンスのエラーコードを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

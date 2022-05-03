@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, hardware, config
 summary: アプライアンスの電源を入れたら、ハードウェアの監視に使用するソフトウェアである SANtricity Storage Manager を設定する必要があります。また、 StorageGRID で使用されるネットワーク接続も設定する必要があります。 
 ---
 = ハードウェアの設定（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

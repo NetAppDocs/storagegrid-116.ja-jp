@@ -5,6 +5,7 @@ keywords: storagegrid, recover, non-primary admin node, reset preferred sender, 
 summary: リカバリする非プライマリ管理ノードが、アラート通知、アラーム通知、および AutoSupport メッセージの優先送信者として設定されている場合は、 StorageGRID システムでこの設定を変更する必要があります。 
 ---
 = リカバリ済み非プライマリ管理ノードで優先送信者をリセットします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

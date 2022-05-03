@@ -5,6 +5,7 @@ keywords: how to troubleshoot the external syslog server
 summary: 次の表に、 syslog サーバのエラーメッセージと対処方法を示します。 
 ---
 = 外部 syslog サーバのトラブルシューティングを行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

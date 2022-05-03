@@ -5,6 +5,7 @@ keywords: storagegrid, recover, admin node failure
 summary: 管理ノードのリカバリプロセスは、プライマリ管理ノードと非プライマリ管理ノードで異なります。 
 ---
 = 管理ノードの障害からリカバリ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

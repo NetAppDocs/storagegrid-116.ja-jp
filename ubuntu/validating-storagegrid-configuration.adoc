@@ -5,6 +5,7 @@ keywords: how to validate StorageGRID configuration
 summary: 各 StorageGRID ノードの /etc/storagegrid/nodes に構成ファイルを作成したら、それらのファイルの内容を検証する必要があります。 
 ---
 = StorageGRID 構成を検証
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

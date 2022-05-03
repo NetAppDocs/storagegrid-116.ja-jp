@@ -5,6 +5,7 @@ keywords: expansion, add nodes
 summary: 拡張時に新しいグリッドノードを導入する手順は、グリッドを最初にインストールしたときに使用した手順と同じです。拡張を実行する前に、すべての新しいグリッドノードの導入が完了している必要があります。 
 ---
 = 新しいグリッドノードを導入する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: stored object hashing, hashing algorithm, sha-1, sha-256
 summary: 格納オブジェクトのハッシュオプションは、オブジェクトの整合性の検証に使用するハッシュアルゴリズムを指定します。 
 ---
 = 格納オブジェクトのハッシュを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

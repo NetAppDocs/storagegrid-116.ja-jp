@@ -5,6 +5,7 @@ keywords: how to access storagegrid API if SSO is enabled with Azure
 summary: シングルサインオン（ SSO ）を設定して有効にし、 Azure を SSO プロバイダとして使用する場合は、 2 つのサンプルスクリプトを使用して、グリッド管理 API またはテナント管理 API で有効な認証トークンを取得できます。 
 ---
 = シングルサインオンが有効な場合（ Azure ）は API を使用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 設定情報を含む JSON ファイルを使用して、アプライアンスの設定を自動化することができます。ファイルは StorageGRID アプライアンスインストーラを使用してアップロードします。 
 ---
 = StorageGRID アプライアンスインストーラを使用してアプライアンスの設定を自動化する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

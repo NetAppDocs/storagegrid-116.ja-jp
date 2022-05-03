@@ -5,6 +5,7 @@ keywords: create ILM rule, information lifecycle rule
 summary: ILM ルールの作成には、 Create ILM Rule ウィザードを使用します。 
 ---
 = Create ILM Rule ウィザードにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

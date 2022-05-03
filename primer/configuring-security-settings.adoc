@@ -5,6 +5,7 @@ keywords: how to configure security settings
 summary: StorageGRID システムのセキュリティを保護するために、 Grid Manager でさまざまなセキュリティ設定を行うことができます。 
 ---
 = セキュリティを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

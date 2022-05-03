@@ -5,6 +5,7 @@ keywords: how to approve a grid node
 summary: 各グリッドノードは、 StorageGRID システムに追加する前に承認する必要があります。 
 ---
 = 保留中のグリッドノードを承認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

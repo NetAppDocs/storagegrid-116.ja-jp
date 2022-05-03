@@ -5,6 +5,7 @@ keywords: storagegrid license, update license, add storage capacity
 summary: ライセンス内容に変更があった場合は、 StorageGRID システムのライセンス情報を更新する必要があります。たとえば、グリッド用のストレージ容量を追加で購入した場合は、ライセンス情報を更新する必要があります。 
 ---
 = StorageGRID ライセンス情報を更新します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

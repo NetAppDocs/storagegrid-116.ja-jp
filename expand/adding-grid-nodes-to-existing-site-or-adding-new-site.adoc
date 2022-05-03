@@ -5,6 +5,7 @@ keywords: grid node, add node, add site, expand, expansion
 summary: この手順 を使用して、既存のサイトにグリッドノードを追加したり、新しいサイトを追加したりできますが、両方のタイプの拡張を同時に実行することはできません。 
 ---
 = 既存のサイトにグリッドノードを追加するか、新しいサイトを追加してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

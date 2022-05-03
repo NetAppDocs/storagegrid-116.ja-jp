@@ -5,6 +5,7 @@ keywords: admin network, client network, grid network, access interface, trunk i
 summary: StorageGRID では、グリッドノードあたり最大 3 つのネットワークインターフェイスがサポートされ、各グリッドノードのネットワークをセキュリティやアクセスの要件に応じて設定することができます。 
 ---
 = StorageGRID ネットワークのガイドライン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

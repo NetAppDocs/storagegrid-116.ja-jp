@@ -5,6 +5,7 @@ keywords: legacy alarms
 summary: システム属性がアラームのしきい値に達すると、アラーム \ （従来のシステム \ ）がトリガーされます。現在アクティブなアラームは、 Current Alarms ページから表示できます。 
 ---
 = 従来のアラームを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

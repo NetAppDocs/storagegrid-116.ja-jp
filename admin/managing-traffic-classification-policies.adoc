@@ -5,6 +5,7 @@ keywords: qos, quality of service, traffic classification, best practices, limit
 summary: サービス品質（ QoS ）サービスを強化するために、トラフィック分類ポリシーを作成して、さまざまなタイプのネットワークトラフィックを識別および監視できます。これらのポリシーは、トラフィックの制限と監視に役立ちます。 
 ---
 = トラフィック分類ポリシーを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

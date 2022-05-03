@@ -5,6 +5,7 @@ keywords: installation planning red hat linux
 summary: グリッドノードの導入および StorageGRID グリッドの設定を行う前に、手順 を完了するためのステップと要件を把握しておく必要があります。 
 ---
 = インストールの準備（ Red Hat または CentOS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

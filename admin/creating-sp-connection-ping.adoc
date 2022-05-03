@@ -5,6 +5,7 @@ keywords: service provider, sp connection, pingfederate, ping, single sign on, s
 summary: PingFederate を使用して、システム内の管理ノードごとにサービスプロバイダ（ SP ）接続を作成します。この処理を高速化するために、 StorageGRID から SAML メタデータをインポートします。 
 ---
 = PingFederate でサービスプロバイダ（ SP ）接続を作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

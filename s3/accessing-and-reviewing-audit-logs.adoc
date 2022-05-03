@@ -5,6 +5,7 @@ keywords: access audit logs, review audit logs, view audit logs
 summary: 監査メッセージは StorageGRID サービスによって生成され、テキスト形式のログファイルに保存されます。監査ログの API 固有の監査メッセージにより、セキュリティ、運用、およびパフォーマンスについて、システムの健全性の評価に役立つ重要な監視データが提供されます。 
 ---
 = 監査ログにアクセスして確認する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

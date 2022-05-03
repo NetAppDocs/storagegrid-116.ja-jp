@@ -5,6 +5,7 @@ keywords: expand, expansion, storage node, add storage volumes, VMware
 summary: ストレージノードのストレージボリュームが 16 個より少ない場合は、 VMware vSphere を使用してボリュームを追加することで容量を増やすことができます。 
 ---
 = VMware ：ストレージノードにストレージボリュームを追加
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

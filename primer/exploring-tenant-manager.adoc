@@ -5,6 +5,7 @@ keywords: what is the tenant manager, tenant manager dashboard
 summary: Tenant Manager は、テナントユーザがストレージアカウントを設定、管理、および監視するためにアクセスするブラウザベースのグラフィカルインターフェイスです。 
 ---
 = Tenant Manager を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

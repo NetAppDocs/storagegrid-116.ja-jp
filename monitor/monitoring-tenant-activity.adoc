@@ -5,6 +5,7 @@ keywords: how to monitor tenant activity
 summary: すべてのクライアントアクティビティがテナントアカウントに関連付けられている。Grid Manager を使用してテナントのストレージ使用状況やネットワークトラフィックを監視できます。また、監査ログまたは Grafana ダッシュボードを使用して、テナントが StorageGRID を使用している状況に関する詳細情報を収集することもできます。 
 ---
 = テナントのアクティビティを監視する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

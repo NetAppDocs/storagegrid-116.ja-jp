@@ -5,6 +5,7 @@ keywords: tenant, delete, remove tenant
 summary: システムに対するテナントのアクセス権を完全に削除する場合は、テナントアカウントを削除できます。 
 ---
 = テナントアカウントを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

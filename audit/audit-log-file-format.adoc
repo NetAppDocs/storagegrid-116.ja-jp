@@ -5,6 +5,7 @@ keywords: storagegrid, audit, log file formats, log formats, log file format, lo
 summary: 監査ログファイルはすべての管理ノードに存在し、一連の監査メッセージが格納されています。 
 ---
 = 監査ログファイルの形式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

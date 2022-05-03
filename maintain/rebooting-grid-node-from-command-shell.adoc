@@ -5,6 +5,7 @@ keywords: storagegrid, recover, reboot node, command shell reboot
 summary: リブート処理を詳細に監視する必要がある場合や Grid Manager にアクセスできない場合は、グリッドノードにログインしてコマンドシェルから Server Manager の reboot コマンドを実行できます。 
 ---
 = コマンドシェルからグリッドノードをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

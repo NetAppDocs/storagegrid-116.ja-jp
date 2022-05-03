@@ -5,6 +5,7 @@ keywords: how to view current alerts
 summary: アラートがトリガーされると、ダッシュボードにアラートアイコンが表示されます。ノードに関するアラートアイコンは、ノードページにも表示されます。アラートをサイレント化しないかぎり、 E メール通知も送信される場合があります。 
 ---
 = 現在のアラートを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

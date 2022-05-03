@@ -5,6 +5,7 @@ keywords: monitor node storage capacity
 summary: 各ストレージノードの使用可能な合計スペースを監視して、ノードに新しいオブジェクトデータ用の十分なスペースがあることを確認する必要があります。 
 ---
 = 各ストレージノードのストレージ容量を監視します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to deploy grid nodes in vsphere or vsphere web client
 summary: VMware vSphere Web Client を使用して、各グリッドノードを仮想マシンとして導入します。導入時に、各グリッドノードが作成されて、 1 つ以上の StorageGRID ネットワークに接続されます。 
 ---
 = StorageGRID ノードを仮想マシンとして導入
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

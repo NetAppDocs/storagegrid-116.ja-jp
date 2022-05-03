@@ -5,6 +5,7 @@ keywords: expansion, Linux, add storage volumes
 summary: ストレージノードのストレージボリュームが 16 個より少ない場合は、新しいブロックストレージデバイスを追加して Linux ホストから認識されるようにし、ストレージノードで使用される StorageGRID 構成ファイルに新しいブロックデバイスマッピングを追加することで、ストレージノードの容量を増やすことができます。 
 ---
 = Linux ：ストレージノードに直接接続型ボリュームまたは SAN ボリュームを追加
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, storage controll
 summary: E2700 コントローラの管理ポート 1 を使用して、アプライアンスを SANtricity Storage Manager の管理ネットワークに接続します。StorageGRID アプライアンスのハードウェアおよびコントローラファームウェアとの管理接続が失われないように、 E2700 コントローラの静的 IP アドレスを設定する必要があります。 
 ---
 = E2700 コントローラの IP アドレスを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

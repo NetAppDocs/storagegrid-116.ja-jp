@@ -5,6 +5,7 @@ keywords: how to configure host network
 summary: ホストへの Linux のインストールの完了後、このあとに導入する StorageGRID ノードにマッピングする一連のネットワークインターフェイスを準備するために、各ホストでいくつかの追加の設定が必要になることがあります。 
 ---
 = ホストネットワークの設定（ Red Hat Enterprise Linux または CentOS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

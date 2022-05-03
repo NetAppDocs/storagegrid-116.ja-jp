@@ -5,6 +5,7 @@ keywords: prevent client modification, grid option, deny client operations
 summary: PreventClientModification グリッドオプションを選択して、特定の HTTP クライアント処理を拒否することができます。 
 ---
 = どのクライアント処理を許可するかを制御します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

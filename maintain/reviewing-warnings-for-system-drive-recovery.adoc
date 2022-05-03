@@ -5,6 +5,7 @@ keywords: storagegrid, recover, system drive warning, storage node
 summary: ストレージノードの障害システムドライブをリカバリする前に、次の警告を確認する必要があります。 
 ---
 = ストレージノードのシステムドライブのリカバリに関する警告を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

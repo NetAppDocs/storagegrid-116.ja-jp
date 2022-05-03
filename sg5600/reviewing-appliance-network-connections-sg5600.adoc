@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, network connecti
 summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認し、各コントローラのポートがどのように使用されるかを把握する必要があります。 
 ---
 = SG5600 アプライアンスのネットワーク接続の確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

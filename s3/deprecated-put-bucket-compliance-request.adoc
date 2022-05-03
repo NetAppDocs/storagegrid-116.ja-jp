@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, PUT deprecated compliance requests
 summary: PUT Bucket compliance 要求は廃止されました。ただし、この要求を引き続き使用して、既存のレガシー準拠バケットの準拠設定を変更できます。 
 ---
 = 廃止予定： PUT Bucket compliance 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

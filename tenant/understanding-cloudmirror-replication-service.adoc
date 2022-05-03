@@ -5,6 +5,7 @@ keywords: cloudmirror replication
 summary: StorageGRID で、ある S3 バケットに追加されたオブジェクトを指定して 1 つ以上のデスティネーションバケットにレプリケートする必要がある場合は、そのバケットに対して CloudMirror レプリケーションを有効にすることができます。 
 ---
 = CloudMirror レプリケーションサービス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

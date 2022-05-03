@@ -5,6 +5,7 @@ keywords: how to create ILM policy, policy for S3 object lock
 summary: グローバルな S3 オブジェクトのロック設定が有効になっている場合は、ポリシーの作成手順が少し異なります。S3 オブジェクトロックが有効になっているバケットの要件を ILM ポリシーが準拠していることを確認する必要があります。 
 ---
 = S3 オブジェクトのロックを有効にしたあとに ILM ポリシーを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

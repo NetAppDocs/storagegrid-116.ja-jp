@@ -5,6 +5,7 @@ keywords: storagegrid, recover, start nodes
 summary: グリッドノードを完全にシャットダウンしたあとに起動する際は、次の手順を実行してください。 
 ---
 = グリッドノードを起動します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

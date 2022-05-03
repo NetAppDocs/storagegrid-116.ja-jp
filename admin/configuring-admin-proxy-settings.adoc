@@ -5,6 +5,7 @@ keywords: admin proxy, autosupport, non-transparent proxy
 summary: HTTP または HTTPS を使用して AutoSupport メッセージを送信する場合は、管理ノードとテクニカルサポートの間に非透過型プロキシサーバを設定できます（ AutoSupport ）。 
 ---
 = 管理プロキシを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

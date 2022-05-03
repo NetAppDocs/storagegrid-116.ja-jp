@@ -5,6 +5,7 @@ keywords: storagegrid, installation files, download
 summary: StorageGRID グリッドノードをリカバリする前に、ソフトウェアをダウンロードしてファイルを展開する必要があります。 
 ---
 = StorageGRID インストールファイルをダウンロードして展開します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: network-specific requirements, network specific requirements, network 
 summary: 各 StorageGRID ネットワークタイプの要件に従ってください。 
 ---
 = ネットワーク固有の要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

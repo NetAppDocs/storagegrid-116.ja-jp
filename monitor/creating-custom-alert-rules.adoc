@@ -5,6 +5,7 @@ keywords: how to create custom alert rules
 summary: カスタムのアラートルールを作成して、アラートをトリガーする条件を独自に定義することができます。 
 ---
 = カスタムのアラートルールを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

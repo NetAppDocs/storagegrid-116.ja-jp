@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, tr
 summary: ハードウェア障害やケーブル接続エラーによってストレージコントローラまたは SG6000-CN コントローラのブート処理が完了しなかった場合は、 StorageGRID アプライアンスインストーラを使用できなくなることがあります。 
 ---
 = ハードウェアのセットアップがハングしたように見える（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

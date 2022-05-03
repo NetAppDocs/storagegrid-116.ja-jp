@@ -5,6 +5,7 @@ keywords: create EC profile, erasure coding profile
 summary: イレイジャーコーディングプロファイルを作成するには、ストレージノードを含むストレージプールをイレイジャーコーディングスキームに関連付けます。この関連付けにより、作成されるデータフラグメントおよびパリティフラグメントの数と、各フラグメントをどこに分散配置するかが決まります。 
 ---
 = イレイジャーコーディングプロファイルを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

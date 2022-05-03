@@ -5,6 +5,7 @@ keywords: conflicting client requests
 summary: 同じキーに書き込む 2 つのクライアントなど、競合するクライアント要求は、「 latest-wins 」ベースで解決されます。 
 ---
 = 競合するクライアント要求です
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

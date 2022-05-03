@@ -5,6 +5,7 @@ keywords: ilm tab
 summary: ILM タブには、情報ライフサイクル管理（ ILM ）処理に関する情報が表示されます。 
 ---
 = ILM タブを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

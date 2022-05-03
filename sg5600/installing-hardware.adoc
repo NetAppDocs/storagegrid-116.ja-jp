@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, hardware, instal
 summary: ハードウェアの設置では、ハードウェアコンポーネントを設置し、それらのコンポーネントをケーブルで接続し、ポートを設定することが主な作業となります。 
 ---
 = ハードウェアの設置（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

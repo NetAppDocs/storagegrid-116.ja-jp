@@ -5,6 +5,7 @@ keywords: audit log actions tracked
 summary: バケットおよびオブジェクトのいくつかの処理は、 StorageGRID の監査ログで追跡されます。 
 ---
 = 監査ログで追跡される S3 処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

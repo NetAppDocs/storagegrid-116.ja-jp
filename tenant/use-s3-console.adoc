@@ -5,6 +5,7 @@ keywords: how to use s3 console
 summary: S3 コンソールを使用して S3 バケット内のオブジェクトを表示できます。 
 ---
 = Experimental S3 Console を使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

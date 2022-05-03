@@ -5,6 +5,7 @@ keywords: expand grid
 summary: 以下の手順に従って、システム処理を中断することなく StorageGRID システムの容量または機能を拡張します。 
 ---
 = グリッドを展開します。概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

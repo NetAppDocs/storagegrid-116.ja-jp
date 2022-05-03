@@ -5,6 +5,7 @@ keywords: cloud storage pool, azure blob storage
 summary: Azure BLOB ストレージ用のクラウドストレージプールを作成する場合は、 StorageGRID がオブジェクトの格納に使用する外部コンテナのアカウント名とアカウントキーを指定する必要があります。 
 ---
 = Azure ：クラウドストレージプールの認証情報を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

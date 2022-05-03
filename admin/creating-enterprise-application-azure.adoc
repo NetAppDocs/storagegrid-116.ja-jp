@@ -5,6 +5,7 @@ keywords: enterprise application, azure ad, single sign on, sso
 summary: Azure AD を使用して、システム内の管理ノードごとにエンタープライズアプリケーションを作成します。 
 ---
 = Azure AD でエンタープライズアプリケーションを作成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

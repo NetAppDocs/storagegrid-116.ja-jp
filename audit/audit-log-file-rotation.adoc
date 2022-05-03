@@ -5,6 +5,7 @@ keywords: storagegrid, audit, log file, audit.log, audit.log file, rotation, sav
 summary: 監査ログファイルは、管理ノードの /var/local/audit/export ディレクトリに保存されます。アクティブな監査ログファイルの名前は audit.log です。 
 ---
 = 監査ログファイルのローテーション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

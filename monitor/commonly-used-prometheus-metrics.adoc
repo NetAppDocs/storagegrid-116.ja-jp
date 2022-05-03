@@ -5,6 +5,7 @@ keywords: prometheus, Prometheus metrics, metrics
 summary: 管理ノードの Prometheus サービスは、すべてのノード上のサービスから時系列の指標を収集します。Prometheus は 1 、 000 件以上の指標を収集しますが、 StorageGRID の最も重要な処理を監視するために必要な指標は比較的少数です。 
 ---
 = よく使用される Prometheus 指標
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

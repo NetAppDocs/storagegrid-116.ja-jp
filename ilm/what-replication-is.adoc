@@ -5,6 +5,7 @@ keywords: replication, object copies
 summary: レプリケーションは、 StorageGRID がオブジェクトデータを格納するために使用する 2 つの方法のうちの 1 つです。レプリケーションを使用する ILM ルールにオブジェクトが一致すると、オブジェクトデータの完全なコピーが作成され、ストレージノードまたはアーカイブノードに格納されます。 
 ---
 = レプリケーションとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

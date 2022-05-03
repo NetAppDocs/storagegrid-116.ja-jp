@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance troubleshooting, 
 summary: SG6060 に拡張シェルフが設置されていて、 StorageGRID アプライアンスインストーラに表示されない場合は、シェルフの設置が完了していて、電源がオンになっていることを確認する必要があります。 
 ---
 = 拡張シェルフはアプライアンスインストーラに表示されません
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

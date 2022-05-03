@@ -5,6 +5,7 @@ keywords: storagegrid, audit, object storage, object management, object retrieva
 summary: オブジェクトストレージ監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。StorageGRID システム内のオブジェクトのストレージと管理に関連するイベントを示します。オブジェクトの格納と読み出し、グリッドノードからグリッドノードへの転送、および検証が含まれます。 
 ---
 = オブジェクトストレージ監査メッセージ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

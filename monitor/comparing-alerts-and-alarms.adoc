@@ -5,6 +5,7 @@ keywords: how to compare alerts and alarms
 summary: アラートシステムと従来のアラームシステムにはいくつかの類似点がありますが、アラートシステムには大きなメリットがあり、使いやすくなっています。 
 ---
 = アラートとアラームを比較します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

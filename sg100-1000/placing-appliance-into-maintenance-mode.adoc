@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 特定のメンテナンス手順を実行する前に、アプライアンスをメンテナンスモードにする必要があります。 
 ---
 = アプライアンスをメンテナンスモードにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

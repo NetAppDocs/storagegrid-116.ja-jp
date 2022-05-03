@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ORLM, Object Rules Met
 summary: このメッセージは、 ILM ルールで指定されたとおりにオブジェクトが格納およびコピーされた場合に生成されます。 
 ---
 = ORLM ：オブジェクトルールが満たされています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

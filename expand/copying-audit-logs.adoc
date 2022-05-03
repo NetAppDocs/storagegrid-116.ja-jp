@@ -5,6 +5,7 @@ keywords: copy audit log, Admin Node expansion,
 summary: 拡張手順 を使用して新しい管理ノードを追加した場合、その AMS サービスでログに記録されるのは、システムへの追加後に発生したイベントと処理のみになります。必要に応じて、先にインストールされていた管理ノードから新しい拡張管理ノードに監査ログをコピーして、残りの StorageGRID システムと同期されるようにすることができます。 
 ---
 = 監査ログをコピーする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

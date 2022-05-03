@@ -5,6 +5,7 @@ keywords: overview tab
 summary: 'Overview タブには " 各ノードに関する基本的な情報が表示されますまた、ノードに現在影響しているアラートも表示されます。' 
 ---
 = 概要タブを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

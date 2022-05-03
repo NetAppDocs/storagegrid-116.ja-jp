@@ -5,6 +5,7 @@ keywords: put container consistency request
 summary: PUT コンテナ整合性要求では、コンテナに対して実行される処理に適用する整合性レベルを指定できます。デフォルトでは、新しいコンテナは「 read-after-new-write 」整合性レベルを使用して作成されます。 
 ---
 = PUT コンテナセイコウセイヨウキユウ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

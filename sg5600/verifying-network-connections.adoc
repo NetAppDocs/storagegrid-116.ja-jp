@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, network connecti
 summary: 使用する StorageGRID ネットワークに、アプライアンスからアクセスできることを確認する必要があります。ネットワークゲートウェイ経由のルーティングを検証するには、 StorageGRID アプライアンスインストーラと異なるサブネット上の IP アドレスとの接続をテストする必要があります。MTU 設定を確認することもできます。 
 ---
 = ネットワーク接続を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

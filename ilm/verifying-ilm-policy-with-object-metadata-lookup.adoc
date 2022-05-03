@@ -5,6 +5,7 @@ keywords: verify ilm policy, object metadata lookup
 summary: ILM ポリシーをアクティブ化したら、そのポリシーを表すテストオブジェクトを StorageGRID システムに取り込む必要があります。次に、オブジェクトメタデータの検索を実行して、コピーが意図したとおりに作成され、正しい場所に配置されていることを確認します。 
 ---
 = オブジェクトメタデータの検索による ILM ポリシーの検証
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

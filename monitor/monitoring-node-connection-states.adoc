@@ -5,6 +5,7 @@ keywords: monitor, monitoring node connection states, node connection states
 summary: 1 つ以上のノードがグリッドから切断されると、重要な StorageGRID 処理に影響する可能性があります。ノードの接続状態を監視し、速やかに問題に対処する必要があります。 
 ---
 = ノードの接続状態を監視します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

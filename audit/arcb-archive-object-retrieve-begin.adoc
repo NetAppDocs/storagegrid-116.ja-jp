@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ARCB, Archive Object Retrieve Begin
 summary: このメッセージは、アーカイブされたオブジェクトデータの読み出し要求が送信されて読み出しプロセスが開始されたときに生成されます。読み出し要求はすぐに処理されますが、順序を変更してテープなどのリニアなメディアからの読み出し効率を高めることができます。 
 ---
 = ARCB ：アーカイブオブジェクトの読み出しが開始されました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

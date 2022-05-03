@@ -5,6 +5,7 @@ keywords: how to collect system data, how to collect logs
 summary: Grid Manager を使用して、 StorageGRID システムのログファイルとシステムデータ（設定データを含む）を取得できます。 
 ---
 = ログファイルとシステムデータを収集
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

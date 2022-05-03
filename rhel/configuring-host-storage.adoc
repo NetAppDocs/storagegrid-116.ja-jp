@@ -5,6 +5,7 @@ keywords: how to configure host storage
 summary: 各ホストにブロックストレージボリュームを割り当てる必要があります。 
 ---
 = ホストストレージを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

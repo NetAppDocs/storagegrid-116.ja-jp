@@ -5,6 +5,7 @@ keywords: s3 api, endpoint domain names, virtual hosted-style requests
 summary: S3 仮想ホスト形式の要求をサポートするには、 Grid Manager を使用して、 S3 クライアントの接続先となるエンドポイントのドメイン名のリストを設定する必要があります。 
 ---
 = S3 API エンドポイントのドメイン名を設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

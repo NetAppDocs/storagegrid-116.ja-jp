@@ -5,6 +5,7 @@ keywords: recovery package, download, encryption keys
 summary: リカバリパッケージはダウンロード可能な .zip ファイルで、 StorageGRID システムのインストール、拡張、アップグレード、および保守に必要な導入環境に固有のファイルとソフトウェアが含まれています。 
 ---
 = リカバリパッケージをダウンロードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

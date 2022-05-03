@@ -5,6 +5,7 @@ keywords: how to install StorageGRID host services
 summary: StorageGRID ホストサービスをインストールするには、 StorageGRID の DEB パッケージを使用します。 
 ---
 = StorageGRID ホストサービスをインストールする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

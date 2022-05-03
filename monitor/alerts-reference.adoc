@@ -5,6 +5,7 @@ keywords: alerts reference
 summary: 次の表に、デフォルトの StorageGRID アラートをすべて示します。必要に応じて、システムの管理方法に合わせてカスタムのアラートルールを作成できます。 
 ---
 = アラート一覧
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

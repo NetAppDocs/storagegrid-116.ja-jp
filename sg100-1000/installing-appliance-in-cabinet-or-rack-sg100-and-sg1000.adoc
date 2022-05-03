@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: キャビネットまたはラックにアプライアンス用のレール 1 組を取り付け、レール上にアプライアンスをスライドさせます。 
 ---
 = キャビネットまたはラックへのアプライアンスの設置（ SG100 および SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

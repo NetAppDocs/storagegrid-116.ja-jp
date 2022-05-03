@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: BMC インターフェイスにアクセスする前に、サービスアプライアンス上の BMC 管理ポートの IP アドレスを設定する必要があります。 
 ---
 = BMC 管理ポートの IP アドレスを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

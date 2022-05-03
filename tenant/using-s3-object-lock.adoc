@@ -5,6 +5,7 @@ keywords: how to use s3 object lock
 summary: オブジェクトが保持に関する規制要件に準拠する必要がある場合は、 StorageGRID で S3 オブジェクトロック機能を使用できます。 
 ---
 = テナントで S3 オブジェクトロックを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

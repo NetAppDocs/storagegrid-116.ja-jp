@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, hardware, Replac
 summary: E5600SG コントローラの交換が必要となる場合があります。 
 ---
 = E5600SG コントローラの交換
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

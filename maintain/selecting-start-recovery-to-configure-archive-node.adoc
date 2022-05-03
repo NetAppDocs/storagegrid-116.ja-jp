@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node
 summary: アーカイブノードを交換したら、 Grid Manager で Start Recovery を選択して、障害ノードの代わりとして新しいノードを設定する必要があります。 
 ---
 = Start Recovery を選択して、アーカイブノードを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: s3 lifecycle, object deletion, bucket
 summary: S3 ライフサイクル設定を作成して、特定のオブジェクトが StorageGRID システムから削除されるタイミングを制御できます。 
 ---
 = S3 ライフサイクル設定を作成する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

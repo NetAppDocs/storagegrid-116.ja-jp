@@ -5,6 +5,7 @@ keywords: object version, object versioning
 summary: バージョン管理の機能を使用してオブジェクトの複数のバージョンを保持することで、オブジェクトが偶発的に削除される事態に対応したり、以前のバージョンのオブジェクトを読み出してリストアしたりできます。 
 ---
 = オブジェクトのバージョン管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

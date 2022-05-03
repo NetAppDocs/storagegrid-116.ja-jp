@@ -5,6 +5,7 @@ keywords: how to view the Grid Topology tree
 summary: グリッドトポロジツリーを使用すると、サイト、グリッドノード、サービス、コンポーネントなど、 StorageGRID のシステム要素に関する詳細情報にアクセスできます。ほとんどの場合、グリッドトポロジツリーへのアクセスが必要になるのは、ドキュメントで指示されているとき、またはテクニカルサポートとともに作業するときに限られます。 
 ---
 = グリッドトポロジツリーを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

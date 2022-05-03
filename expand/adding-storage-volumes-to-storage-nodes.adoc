@@ -5,6 +5,7 @@ keywords: storage volumes, expand, expansion, add, storage nodes, adding storage
 summary: ストレージボリュームを 16 個以下にすることでストレージノードのストレージ容量を拡張できます。ILM のレプリケートコピーまたはイレイジャーコーディングコピーの要件を満たすために、複数のストレージノードへのストレージボリュームの追加が必要になる場合があります。 
 ---
 = ストレージノードにストレージボリュームを追加
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

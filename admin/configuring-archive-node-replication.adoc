@@ -5,6 +5,7 @@ keywords: archive node replication
 summary: アーカイブノードのレプリケーション設定を行って、インバウンドおよびアウトバウンドのレプリケーションを無効にしたり、関連するアラームで追跡されているエラー数をリセットしたりできます。 
 ---
 = アーカイブノードのレプリケーションを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage node, storage appliance, controller, storage controller, upgra
 summary: 現在 SANtricity OS 08.42.20.00 \ （ 11.42 \ ）以降を使用しているストレージコントローラの場合、 Grid Manager を使用してアップグレードを適用する必要があります。 
 ---
 = Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

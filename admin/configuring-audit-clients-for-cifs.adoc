@@ -5,6 +5,7 @@ keywords: audit client for cifs
 summary: '監査クライアントを設定するために使用する手順 は、認証方式 (Windows ワークグループまたは Windows Active Directory) によって異なります。追加した監査共有は、読み取り専用の共有として自動的に有効になります。' 
 ---
 = CIFS の監査クライアントを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

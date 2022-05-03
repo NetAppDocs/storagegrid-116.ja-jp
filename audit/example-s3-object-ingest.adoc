@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object ingest
 summary: 以下の一連の監査メッセージは、 S3 クライアントがストレージノードにオブジェクトを取り込んだときに生成され、監査ログに保存された監査メッセージの例です（ LDR サービス）。 
 ---
 = 例： S3 オブジェクトの取り込み
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

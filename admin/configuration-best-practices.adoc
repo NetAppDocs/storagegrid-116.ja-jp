@@ -5,6 +5,7 @@ keywords: tsm configuration, tivoli storage manager, archive to tape
 summary: TSM サーバをサイジングおよび設定する場合、アーカイブノードとの連携を最適化するベストプラクティスがあります。 
 ---
 = 構成のベストプラクティス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

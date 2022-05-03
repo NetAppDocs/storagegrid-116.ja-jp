@@ -5,6 +5,7 @@ keywords: how to reset lost object count, how to reset missing object count
 summary: StorageGRID システムを調査し、記録されたすべての損失オブジェクトが完全に失われていること、または誤ったアラームであることを確認できたら、 Lost Objects 属性の値を 0 にリセットできます。 
 ---
 = 損失オブジェクトと欠落オブジェクトのカウントをリセットします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

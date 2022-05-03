@@ -5,6 +5,7 @@ keywords: monitoring, monitoring node-level resources, grid nodes
 summary: 個々のグリッドノードを監視して、そのリソース利用率レベルを確認する必要があります。 
 ---
 = ノードレベルのリソースを監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

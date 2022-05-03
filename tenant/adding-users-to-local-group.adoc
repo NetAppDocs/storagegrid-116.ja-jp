@@ -5,6 +5,7 @@ keywords: how to add tenant user to local group
 summary: 必要に応じて、ローカルグループにユーザを追加できます。 
 ---
 = ローカルグループにユーザを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

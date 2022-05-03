@@ -5,6 +5,7 @@ keywords: erasure coding, rebalance, ec rebalance, site rebalance
 summary: ストレージノードを追加するために拡張を実行する際に、 ILM ポリシーにデータをイレイジャーコーディングするための ILM ルールが 1 つ以上含まれている場合は、拡張完了後に EC のリバランシング手順 の実行が必要になることがあります。 
 ---
 = イレイジャーコーディングデータのリバランシングに関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

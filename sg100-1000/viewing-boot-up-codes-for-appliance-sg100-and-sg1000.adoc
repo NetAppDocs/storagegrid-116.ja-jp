@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アプライアンスに電源を投入すると、 BMC に一連のブート時コードが記録されます。BMC 管理ポートに接続されているグラフィカルコンソールでこれらのコードを確認できます。 
 ---
 = アプライアンスのブート時のコードを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

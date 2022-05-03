@@ -5,6 +5,7 @@ keywords: ILM rule step 1, define basics
 summary: Create ILM Rule ウィザードのステップ 1 \ （ Define Basics \ ）では、ルールの基本フィルタと詳細フィルタを定義できます。 
 ---
 = ステップ 1/3 ：基本事項を定義します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

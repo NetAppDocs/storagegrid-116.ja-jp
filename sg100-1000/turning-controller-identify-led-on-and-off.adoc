@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。 
 ---
 = コントローラ識別 LED のオンとオフを切り替えます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

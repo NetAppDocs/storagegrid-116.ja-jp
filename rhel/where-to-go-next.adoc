@@ -5,6 +5,7 @@ keywords: what to do after red hat linux centos installation
 summary: インストールが完了したら、統合と設定のための一連の手順を実行する必要があります。手順には必須のものとオプションのものがあります。 
 ---
 = 次の手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

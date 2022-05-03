@@ -5,6 +5,7 @@ keywords: fabricPool, tenant, SSO
 summary: Grid Manager で FabricPool 用のテナントアカウントを作成する必要があります。 
 ---
 = FabricPool のテナントアカウントを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

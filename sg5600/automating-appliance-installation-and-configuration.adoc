@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, automate, automa
 summary: アプライアンスのインストールと設定、および StorageGRID システム全体の設定を自動化することができます。 
 ---
 = SG5600 （アプライアンスのインストールと設定）の自動化
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

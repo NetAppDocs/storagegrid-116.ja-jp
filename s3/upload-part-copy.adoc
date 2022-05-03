@@ -5,6 +5,7 @@ keywords: upload part, upload part - copy, multipart uploads, uploads,
 summary: Upload Part - Copy 処理は、データソースとしての既存のオブジェクトからデータをコピーすることで、オブジェクトのパートをアップロードします。 
 ---
 = パーツのアップロード - コピー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

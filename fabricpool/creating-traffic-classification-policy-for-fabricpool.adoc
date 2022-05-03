@@ -5,6 +5,7 @@ keywords: fabricPool, traffic classification, traffic policy, QOS, quality of se
 summary: 必要に応じて、 StorageGRID トラフィック分類ポリシーを設計して、 FabricPool ワークロードのサービス品質を最適化できます。 
 ---
 = FabricPool のトラフィック分類ポリシーを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

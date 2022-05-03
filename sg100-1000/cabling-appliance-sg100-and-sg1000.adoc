@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アプライアンスの管理ポートをサービスラップトップに接続し、アプライアンスのネットワークポートを、 StorageGRID のグリッドネットワークとオプションのクライアントネットワークに接続する必要があります。 
 ---
 = アプライアンス SG100 と SG1000 をケーブル接続します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

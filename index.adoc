@@ -7,6 +7,7 @@ summary: NetApp StorageGRID は、ソフトウェアで定義されるオブジ�
 ---
 = StorageGRID 11.6 ドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

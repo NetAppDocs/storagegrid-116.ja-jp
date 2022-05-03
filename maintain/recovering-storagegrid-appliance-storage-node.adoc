@@ -5,6 +5,7 @@ keywords: storagegrid, recover, appliance storage node failure
 summary: 障害が発生した StorageGRID アプライアンスストレージノードのリカバリ用手順 は、システムドライブの損失からリカバリする場合も、ストレージボリュームのみの損失からリカバリする場合も同じです。 
 ---
 = アプライアンスストレージノードをリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics
 summary: Grid Manager には、 StorageGRID システムで問題 が発生した場合にテクニカルサポートと連携するためのオプションが用意されています。 
 ---
 = StorageGRID のサポートオプションを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

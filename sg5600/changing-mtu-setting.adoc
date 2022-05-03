@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, mtu, set, settin
 summary: アプライアンスノードの IP アドレスを設定するときに割り当てた MTU 設定を変更できます。 
 ---
 = MTU 設定を変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

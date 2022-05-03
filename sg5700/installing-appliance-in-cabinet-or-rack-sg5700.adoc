@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, install, install
 summary: キャビネットまたはラックにレールを取り付け、レールにアプライアンスをスライドさせます。SG5760 を使用している場合は、アプライアンスの設置後にドライブも取り付ける必要があります。 
 ---
 = キャビネットまたはラックにアプライアンスを設置（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

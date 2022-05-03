@@ -5,6 +5,7 @@ keywords: supported versions, version support
 summary: StorageGRID でサポートしている S3 および HTTP のバージョンは次のとおりです。 
 ---
 = サポートされるバージョン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

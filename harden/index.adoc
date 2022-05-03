@@ -5,6 +5,7 @@ keywords: Hardening guidelines, system, security
 summary: システムのセキュリティ強化とは、 StorageGRID システムからできるだけ多くのセキュリティリスクを排除するプロセスです。 
 ---
 = システムのセキュリティ強化：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

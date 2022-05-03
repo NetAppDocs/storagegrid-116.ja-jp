@@ -5,6 +5,7 @@ keywords: storagegrid, recover, storage node failure
 summary: 単一のストレージノードがオフラインになって他のストレージノードに接続されなくなってから 15 日以上が経過した場合は、そのノードで Cassandra を再構築する必要があります。 
 ---
 = ストレージノードを 15 日以上停止した状態にリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

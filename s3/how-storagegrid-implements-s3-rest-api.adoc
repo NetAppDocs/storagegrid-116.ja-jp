@@ -5,6 +5,7 @@ keywords: implement s3 rest api
 summary: クライアントアプリケーションは、 S3 REST API 呼び出しを使用して StorageGRID に接続し、バケットの作成、削除、変更、およびオブジェクトの格納と読み出しを行うことができます。 
 ---
 = StorageGRID での S3 REST API の実装
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

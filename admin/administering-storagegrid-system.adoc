@@ -5,6 +5,7 @@ keywords: administration overview
 summary: 以下の手順に従って、 StorageGRID システムを設定および管理します。 
 ---
 = StorageGRID システムの管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

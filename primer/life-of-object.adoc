@@ -5,6 +5,7 @@ keywords: what is the object lifecycle
 summary: オブジェクトのライフサイクルは、さまざまな段階で構成されます。各ステージは、オブジェクトで行われる処理を表しています。 
 ---
 = オブジェクトのライフサイクル
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: Grid Management API,  API operations
 summary: グリッド管理 API では、使用可能な API 処理が次のセクションに分類されます。 
 ---
 = グリッド管理 API の処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

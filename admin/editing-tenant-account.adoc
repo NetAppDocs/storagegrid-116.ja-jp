@@ -5,6 +5,7 @@ keywords: edit tenant account, change tenant name, allow platform services, tena
 summary: テナントアカウントを編集して、表示名の変更、アイデンティティソース設定の変更、プラットフォームサービスの許可または禁止、ストレージクォータの入力を行うことができます。 
 ---
 = テナントアカウントを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

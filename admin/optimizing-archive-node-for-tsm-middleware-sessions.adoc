@@ -5,6 +5,7 @@ keywords: archive node optimization
 summary: アーカイブノードのセッションを構成することで、 Tivoli Server Manager\ （ TSM ）に接続するアーカイブノードのパフォーマンスを最適化できます。 
 ---
 = TSM ミドルウェアセッション用にアーカイブノードを最適化します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: s3 bucket event notification, sequencer key
 summary: S3 バケットに対するイベント通知を有効にすると、指定したイベントに関する通知を StorageGRID からデスティネーションの Amazon Simple Notification Service （ SNS ）に送信できます。 
 ---
 = バケットの通知について理解します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

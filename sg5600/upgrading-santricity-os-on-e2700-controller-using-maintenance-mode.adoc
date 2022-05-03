@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, controller, e270
 summary: グリッドマネージャを使用して SANtricity OS ソフトウェアをアップグレードできない場合は、メンテナンスモードの手順 を使用してアップグレードを適用します。 
 ---
 = E2700 コントローラで、メンテナンスモードを使用して SANtricity OS をアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

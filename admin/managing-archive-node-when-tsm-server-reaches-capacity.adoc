@@ -5,6 +5,7 @@ keywords: archive node, tsm server, full capacity, node is full
 summary: TSM サーバには、管理対象の TSM データベースまたはアーカイブメディアストレージの容量が上限に近づいている場合にアーカイブノードに通知する手段がありません。この状況を回避するには、 TSM サーバをプロアクティブに監視します。 
 ---
 = TSM サーバの容量が上限に達したときのアーカイブノードの管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

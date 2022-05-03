@@ -5,6 +5,7 @@ keywords: how to specify domain name system dns
 summary: IP アドレスの代わりにホスト名を使用して外部サーバにアクセスできるようにするには、 StorageGRID システムのドメインネームシステム（ DNS\ ）情報を指定する必要があります。 
 ---
 = Domain Name System サーバ情報を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

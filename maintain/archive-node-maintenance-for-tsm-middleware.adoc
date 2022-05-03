@@ -5,6 +5,7 @@ keywords: storagegrid, archive node, tsm, tsm middleware, middleware
 summary: アーカイブノードは、 TSM ミドルウェアサーバ経由でテープをターゲットとするように設定するか、 S3 API 経由でクラウドをターゲットとするように設定できます。いったん設定したアーカイブノードターゲットは変更できません。 
 ---
 = TSM ミドルウェアでのアーカイブノードのメンテナンス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

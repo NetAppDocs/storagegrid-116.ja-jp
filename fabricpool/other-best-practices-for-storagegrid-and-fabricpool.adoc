@@ -5,6 +5,7 @@ keywords: fabricPool, best practices, encryption, compressions, tiering, AFF, co
 summary: FabricPool で使用する StorageGRID システムを設定する場合は、データの保存方法に影響する可能性があるグローバルオプションを設定しないでください。 
 ---
 = StorageGRID および FabricPool に関するその他のベストプラクティスです
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

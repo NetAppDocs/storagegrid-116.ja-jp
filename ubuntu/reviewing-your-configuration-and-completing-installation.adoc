@@ -5,6 +5,7 @@ keywords: how to review your configuration and complete ubuntu debian installati
 summary: インストールを正常に完了するために、入力した設定情報をよく確認する必要があります。 
 ---
 = 構成を確認し、インストールを完了します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

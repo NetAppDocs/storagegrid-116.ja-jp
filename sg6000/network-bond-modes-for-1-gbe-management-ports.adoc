@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Network bond, Ne
 summary: SG6000-CN コントローラの 2 つの 1GbE 管理ポートでは、独立したネットワークボンディングモードまたは Active-Backup ネットワークボンディングモードを選択してオプションの管理ネットワークに接続できます。 
 ---
 = 1GbE 管理ポートのネットワークボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

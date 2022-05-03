@@ -5,6 +5,7 @@ keywords: storagegrid, recover, storage node failure
 summary: 障害ストレージノードをリカバリする手順 は、障害のタイプおよび障害が発生したストレージノードのタイプによって異なります。 
 ---
 = ストレージノードの障害からリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

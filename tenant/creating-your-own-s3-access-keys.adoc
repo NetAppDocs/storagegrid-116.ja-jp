@@ -5,6 +5,7 @@ keywords: how to create access key
 summary: S3 テナントを使用している場合は、適切な権限があれば、自分の S3 アクセスキーを作成できます。S3 テナントアカウントのバケットとオブジェクトにアクセスするには、アクセスキーが必要です。 
 ---
 = 独自の S3 アクセスキーを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

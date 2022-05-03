@@ -5,6 +5,7 @@ keywords: view encrypted nodes, kms nodes, appliances with kms
 summary: StorageGRID システムで、ノード暗号化設定が有効になっているアプライアンスノードに関する情報を表示できます。 
 ---
 = 暗号化されたノードを表示する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

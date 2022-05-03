@@ -5,6 +5,7 @@ keywords: fabricPool, high availability group, HA group, create, creating, virtu
 summary: FabricPool で使用するように StorageGRID を設定する場合は、必要に応じて 1 つ以上のハイアベイラビリティ（ HA\ ）グループを作成できます。HA グループは、管理ノード、ゲートウェイノード、またはその両方の 1 つ以上のネットワークインターフェイスで構成されます。 
 ---
 = FabricPool のハイアベイラビリティ（ HA ）グループを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

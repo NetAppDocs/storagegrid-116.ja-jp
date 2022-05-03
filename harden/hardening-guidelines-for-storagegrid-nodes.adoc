@@ -5,6 +5,7 @@ keywords: hardening guidelines, nodes, security
 summary: StorageGRID ノードは、 VMware 仮想マシン、 Linux ホスト上のコンテナエンジン、または専用のハードウェアアプライアンスとして導入できます。プラットフォームのタイプとノードのタイプにはそれぞれ、強化に関するベストプラクティスがあります。 
 ---
 = StorageGRID ノードの保護対策のガイドライン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

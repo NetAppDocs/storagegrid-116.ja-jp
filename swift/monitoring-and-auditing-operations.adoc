@@ -5,6 +5,7 @@ keywords: monitor operations, audit operations
 summary: グリッド全体または特定のノードのトランザクションの傾向を確認することで、クライアント処理のワークロードと効率を監視できます。監査メッセージを使用して、クライアント処理とトランザクションを監視できます。 
 ---
 = 監視と監査の処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

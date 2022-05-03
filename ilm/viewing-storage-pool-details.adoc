@@ -5,6 +5,7 @@ keywords: storage pool, view details
 summary: ストレージプールの詳細を表示して、ストレージプールの使用場所を確認したり、含まれているノードやストレージグレードを確認したりできます。 
 ---
 = ストレージプールの詳細を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

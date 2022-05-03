@@ -5,6 +5,7 @@ keywords: storagegrid license, view license, licensed capacity of grid
 summary: グリッドの最大ストレージ容量など、 StorageGRID システムのライセンス情報を必要に応じていつでも表示できます。 
 ---
 = StorageGRID ライセンス情報を表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

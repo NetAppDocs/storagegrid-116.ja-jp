@@ -5,6 +5,7 @@ keywords: openstack swift api support
 summary: クライアントアプリケーションでは、 OpenStack Swift API を使用して、 StorageGRID システムを操作できます。 
 ---
 = Swift の使用：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

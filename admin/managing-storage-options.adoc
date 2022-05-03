@@ -5,6 +5,7 @@ keywords: storage options
 summary: ストレージオプションには、オブジェクトのセグメント化設定、ストレージボリュームウォーターマークの現在の値、 Metadata Reserved Space 設定があります。ゲートウェイノード上の廃止された CLB サービスおよびストレージノード上の LDR サービスで使用されている S3 および Swift ポートを表示することもできます。 
 ---
 = ストレージオプションを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

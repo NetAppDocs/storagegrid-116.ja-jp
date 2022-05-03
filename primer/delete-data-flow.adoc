@@ -5,6 +5,7 @@ keywords: object, delete, deletion, object lock, bucket lifecycle, expiration, i
 summary: クライアントが削除処理を実行するか、またはオブジェクトの有効期間が終了して自動削除がトリガーされると、すべてのオブジェクトコピーが StorageGRID システムから削除されます。オブジェクト削除のデータフローが定義されています。 
 ---
 = データフローを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

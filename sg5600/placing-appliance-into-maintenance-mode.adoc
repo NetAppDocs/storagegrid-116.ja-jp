@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, maintenance mode
 summary: 特定のメンテナンス手順を実行する前に、アプライアンスをメンテナンスモードにする必要があります。 
 ---
 = アプライアンスをメンテナンスモードにします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

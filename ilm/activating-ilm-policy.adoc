@@ -5,6 +5,7 @@ keywords: activate ilm policy, information lifecycle policy
 summary: ドラフトの ILM ポリシーに ILM ルールを追加してポリシーをシミュレートし、ポリシーが想定どおりに動作することを確認したら、ドラフトポリシーをアクティブ化できます。 
 ---
 = ILM ポリシーをアクティブ化する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

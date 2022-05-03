@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, additional, equi
 summary: StorageGRID アプライアンスを設置する前に、必要な追加機器や工具がすべて揃っていることを確認します。 
 ---
 = 追加の機器や工具の入手（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

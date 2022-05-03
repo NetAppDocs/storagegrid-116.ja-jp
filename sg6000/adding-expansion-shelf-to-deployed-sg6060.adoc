@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, expansio
 summary: ストレージ容量を増やすには、 StorageGRID システムに導入されている SG6060 に拡張シェルフを 1 台または 2 台追加します。 
 ---
 = 導入済み SG6060 に拡張シェルフを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

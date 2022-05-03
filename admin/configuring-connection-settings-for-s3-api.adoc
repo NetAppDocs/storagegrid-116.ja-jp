@@ -5,6 +5,7 @@ keywords: archive node connection to s3, arc service
 summary: S3 インターフェイスを使用してアーカイブノードに接続する場合は、 S3 API の接続を設定する必要があります。これらの設定が完了するまで ARC サービスは外部アーカイブストレージシステムと通信できないため、 Major アラーム状態のままです。 
 ---
 = S3 API の接続設定を行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

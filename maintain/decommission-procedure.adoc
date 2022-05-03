@@ -5,6 +5,7 @@ keywords: how to decommission
 summary: 手順 の運用停止を実行して、グリッドノードまたはサイト全体を StorageGRID システムから完全に削除できます。 
 ---
 = 手順 の運用を停止
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

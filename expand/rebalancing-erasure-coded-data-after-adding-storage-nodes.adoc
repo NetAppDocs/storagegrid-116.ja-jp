@@ -5,6 +5,7 @@ keywords: erasure coding, EC, rebalancing, site rebalance procedure
 summary: 場合によっては、新しいストレージノードを追加したあとにイレイジャーコーディングデータのリバランシングが必要になることがあります。 
 ---
 = ストレージノードの追加後にイレイジャーコーディングデータをリバランシングします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

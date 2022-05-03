@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, cabling, wiring,
 summary: E5700SG コントローラの 2 台のコントローラを相互に接続して、各コントローラの管理ポートを接続し、 E5700SG コントローラの 10 / 25GbE ポートを StorageGRID のグリッドネットワークとオプションのクライアントネットワークに接続する必要があります。 
 ---
 = ケーブルアプライアンス（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

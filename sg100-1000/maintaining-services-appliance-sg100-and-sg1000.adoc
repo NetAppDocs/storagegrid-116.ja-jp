@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アプライアンスのメンテナンス作業が必要になることがあります。このセクションの手順は、アプライアンスが StorageGRID システムにゲートウェイノードまたは管理ノードとしてすでに導入されていることを前提としています。 
 ---
 = アプライアンスの保守
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: select object content, filter object content
 summary: S3 SelectObjectContent 要求を使用すると、シンプルな SQL ステートメントに基づいて S3 オブジェクトのコンテンツをフィルタリングできます。 
 ---
 = SelectObjectContent の順に選択します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

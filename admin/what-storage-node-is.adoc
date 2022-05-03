@@ -5,6 +5,7 @@ keywords: what is a storage node, how many storage nodes
 summary: ストレージノードは、オブジェクトデータとメタデータを管理および格納します。各 StorageGRID システムには、少なくとも 3 つのストレージノードが必要です。サイトが複数ある場合は、 StorageGRID システム内の各サイトにも 3 つのストレージノードが必要です。 
 ---
 = ストレージノードとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

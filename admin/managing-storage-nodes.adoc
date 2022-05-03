@@ -5,6 +5,7 @@ keywords: storage nodes, what is a storage node
 summary: ストレージノードは、ディスクストレージの容量とサービスを提供します。ストレージノードを管理するには、各ノードの使用可能なスペース量を監視し、しきい値を設定し、ストレージノードの設定を適用します。 
 ---
 = ストレージノードの管理について
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

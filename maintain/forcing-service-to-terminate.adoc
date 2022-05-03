@@ -5,6 +5,7 @@ keywords: storagegrid, terminate service, terminating service, force terminate
 summary: 'すぐにサービスを停止する必要がある場合は "force-stop" コマンドを使用できます' 
 ---
 = サービスを強制終了します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

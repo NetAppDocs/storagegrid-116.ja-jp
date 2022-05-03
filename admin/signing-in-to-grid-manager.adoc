@@ -5,6 +5,7 @@ keywords: grid manager, sign in, log in
 summary: Grid Manager のサインインページにアクセスするには、サポートされている Web ブラウザのアドレスバーに管理ノードの完全修飾ドメイン名（ FQDN ）または IP アドレスを入力します。 
 ---
 = Grid Manager にサインインします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

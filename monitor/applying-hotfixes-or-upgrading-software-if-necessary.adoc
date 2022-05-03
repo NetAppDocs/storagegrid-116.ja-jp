@@ -5,6 +5,7 @@ keywords: how to apply software upgrade, how to apply hotfix
 summary: ホットフィックスや新しいバージョンの StorageGRID ソフトウェアが入手可能な場合は、その更新がシステムに適しているかどうかを評価し、必要に応じてインストールしてください。 
 ---
 = 必要に応じてホットフィックスを適用するか、ソフトウェアをアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

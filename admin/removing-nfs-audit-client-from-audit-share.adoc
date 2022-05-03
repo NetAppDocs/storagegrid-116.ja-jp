@@ -5,6 +5,7 @@ keywords: nfs audit client, remove audit client
 summary: NFS 監査クライアントは、 IP アドレスに基づいて監査共有へのアクセスが許可されます。既存の監査クライアントを削除するには、その IP アドレスを削除します。 
 ---
 = 監査共有から NFS 監査クライアントを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

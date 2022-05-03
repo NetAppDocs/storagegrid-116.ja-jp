@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスをゲートウェイノードまたは非プライマリ管理ノードとして導入する場合は、アプライアンスに搭載されている StorageGRID アプライアンスインストーラを使用します。 
 ---
 = ゲートウェイノードまたは非プライマリ管理ノードとしてサービスアプライアンスを導入する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

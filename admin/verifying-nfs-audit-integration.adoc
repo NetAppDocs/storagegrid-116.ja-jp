@@ -5,6 +5,7 @@ keywords: nfs, audit share, audit client
 summary: 監査共有を設定して NFS 監査クライアントを追加したら、監査クライアント共有をマウントし、監査共有のファイルにアクセスできることを確認します。 
 ---
 = NFS 監査の統合を確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

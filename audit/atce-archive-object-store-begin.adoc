@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ATCE, Archive Object Store Begin
 summary: このメッセージは、外部アーカイブストレージへのコンテンツブロックの書き込みが開始されたことを示します。 
 ---
 = ATCE ：アーカイブオブジェクトストアが開始されました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

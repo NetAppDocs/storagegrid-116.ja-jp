@@ -5,6 +5,7 @@ keywords: install tsm server, tivoli storage manager, integrate archive node wit
 summary: アーカイブノードを新規または既存の TSM サーバと統合できます。新しい TSM サーバをインストールする場合は、 TSM のドキュメントの指示に従ってインストールを完了してください。 
 ---
 = 新しい TSM サーバをインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

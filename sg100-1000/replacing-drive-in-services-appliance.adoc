@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスの SSD には StorageGRID オペレーティングシステムが含まれています。また、アプライアンスが管理ノードとして設定されている場合は、 SSD には監査ログ、指標、データベーステーブルも格納されています。冗長性を確保するために、ドライブは RAID 1 を使用してミラーリングさいずれかのドライブで障害が発生した場合は、できるだけ早く交換して冗長性を確保する必要があります。 
 ---
 = サービスアプライアンスのドライブを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

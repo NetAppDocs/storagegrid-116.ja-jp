@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 `StorageGRIDWebscale--_version_-bDEB -- _uniqueID_.zip

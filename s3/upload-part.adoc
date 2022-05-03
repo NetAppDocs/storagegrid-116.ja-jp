@@ -5,6 +5,7 @@ keywords: s3 upload part operation
 summary: Upload Part 処理では、オブジェクトのマルチパートアップロード内のパートがアップロードされます。 
 ---
 = パーツをアップロードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to update the SNMP agent
 summary: SNMP 通知の無効化、コミュニティストリングの更新、エージェントアドレス、 USM ユーザ、トラップの送信先の追加や削除を行うことができます。 
 ---
 = SNMP エージェントを更新します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

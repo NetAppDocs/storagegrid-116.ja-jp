@@ -5,6 +5,7 @@ keywords: network transfer encryption, TLS algorithm
 summary: StorageGRID システムでは、 Transport Layer Security （ TLS ）を使用して、グリッドノード間の内部制御トラフィックを保護します。Network Transfer Encryption オプションは、グリッドノード間の制御トラフィックを暗号化するために TLS で使用されるアルゴリズムを設定します。この設定はデータ暗号化には影響しません。 
 ---
 = ネットワーク転送の暗号化を変更する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

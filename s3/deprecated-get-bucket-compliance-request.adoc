@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, deprecated GET compliance requests
 summary: GET Bucket compliance 要求は廃止されました。ただし、既存のレガシー準拠バケットに対して現在有効な準拠設定を引き続き確認することができます。 
 ---
 = 廃止予定： GET Bucket compliance 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

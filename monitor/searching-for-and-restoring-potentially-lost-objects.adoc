@@ -5,6 +5,7 @@ keywords: how to search lost object, how to restore lost object, how to find los
 summary: Lost Objects （ LOST ）アラームと * Object lost * アラートをトリガーした（失われた可能性があると特定した）オブジェクトを検索してリストアできる場合があります。 
 ---
 = 失われた可能性があるオブジェクトを検索してリストアします
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

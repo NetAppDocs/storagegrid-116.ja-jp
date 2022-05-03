@@ -5,6 +5,7 @@ keywords: object, add object, put, put object request
 summary: S3 PUT Object - Copy 要求を使用すると、すでに S3 に格納されているオブジェクトのコピーを作成できます。PUT Object - Copy 処理は、 GET を実行してから PUT を実行する処理と同じです。 
 ---
 = PUT Object - Copy の各コマンドを実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

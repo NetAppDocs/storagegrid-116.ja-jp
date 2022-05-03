@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, deprecated bucket requests for compliance
 summary: SGCompliance XML 要素は廃止されました。これまでは、この StorageGRID カスタム要素を PUT Bucket 要求のオプションの XML 要求の本文に含めて準拠バケットを作成できました。 
 ---
 = 廃止：準拠のための PUT Bucket 要求の変更
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

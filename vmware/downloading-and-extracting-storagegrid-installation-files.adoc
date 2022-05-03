@@ -5,6 +5,7 @@ keywords: how to download vmware installation files
 summary: StorageGRID インストールアーカイブをダウンロードし、ファイルを展開する必要があります。 
 ---
 = StorageGRID インストールファイルをダウンロードして展開します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID サービスアプライアンスは、ゲートウェイサービスおよび一部のグリッド管理サービスの冗長性を提供するためにさまざまな方法で設定できます。 
 ---
 = SG100 および SG1000 アプリケーション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

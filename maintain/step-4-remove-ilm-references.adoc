@@ -5,6 +5,7 @@ keywords: storagegrid, recover, remove ilm reference
 summary: 運用停止サイトウィザードの手順 4 （ ILM 参照を削除）から、ドラフトポリシーが存在する場合は削除し、サイトを参照している未使用の ILM ルールを削除または編集できます。 
 ---
 = 手順 4 ： ILM 参照を削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

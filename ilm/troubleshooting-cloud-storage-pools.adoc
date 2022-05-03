@@ -5,6 +5,7 @@ keywords: cloud storage pool, troubleshoot
 summary: クラウドストレージプールの作成、編集、削除時にエラーが発生した場合は、以下のトラブルシューティング手順を使用して問題 を解決してください。 
 ---
 = クラウドストレージプールのトラブルシューティング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, diagrams, hardwa
 summary: StorageGRID アプライアンス SG5612 と SG5660 の両モデルには、 E2700 コントローラと E5600SG コントローラが含まれています。次の図で、モデルとコントローラの違いを確認してください。 
 ---
 = ハードウェアの構成図
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

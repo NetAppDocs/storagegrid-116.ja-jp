@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: キャビネットまたはラックに SG6000-CN コントローラのレールを 1 組取り付け、レールにコントローラをスライドさせます。 
 ---
 = SG6000-CN ：キャビネットまたはラックに設置します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

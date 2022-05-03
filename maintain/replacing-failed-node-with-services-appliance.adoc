@@ -5,6 +5,7 @@ keywords: storagegrid, recover, replace failed node, services appliance
 summary: SG100 または SG1000 サービスアプライアンスを使用して、障害が発生したゲートウェイノード、障害が発生した非プライマリ管理ノード、または VMware 、 Linux ホスト、サービスアプライアンスでホストされていた障害が発生したプライマリ管理ノードをリカバリできます。この手順 は、グリッドノードのリカバリ手順 の 1 つのステップです。 
 ---
 = 障害が発生したノードをサービスアプライアンスと交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

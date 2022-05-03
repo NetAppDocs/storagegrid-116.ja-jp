@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Replacing, repla
 summary: StorageGRID アプライアンスのドライブ、ファン、電源装置、またはバッテリの交換が必要になることがあります。 
 ---
 = 他のハードウェアコンポーネントを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

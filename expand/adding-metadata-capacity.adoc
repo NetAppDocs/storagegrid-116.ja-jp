@@ -5,6 +5,7 @@ keywords: metadata capacity, add, adding, expand, expansion, guidelines, Storage
 summary: オブジェクトメタデータ用のスペースを十分に確保するために、各サイトに新しいストレージノードを追加する拡張手順 の実行が必要になる場合があります。 
 ---
 = メタデータ容量を追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

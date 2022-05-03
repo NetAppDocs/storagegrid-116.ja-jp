@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, installation, in
 summary: StorageGRID アプライアンスインストーラでは、インストールが完了するまでステータスが提供されます。ソフトウェアのインストールが完了すると、アプライアンスがリブートされます。 
 ---
 = ストレージアプライアンスの設置を監視する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

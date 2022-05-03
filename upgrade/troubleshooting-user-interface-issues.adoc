@@ -5,6 +5,7 @@ keywords: grid manager, tenant manager, error, browser
 summary: StorageGRID ソフトウェアを新しいバージョンにアップグレードしたあとに、 Grid Manager またはテナントマネージャで問題が発生することがある。 
 ---
 = ユーザインターフェイスの問題のトラブルシューティング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

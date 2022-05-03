@@ -5,6 +5,7 @@ keywords: s3 object lock, default bucket retention
 summary: バケットで S3 オブジェクトのロックが有効になっている場合は、バケットに追加された各オブジェクトに適用されるデフォルトの保持モードとデフォルトの保持期間を指定できます。 
 ---
 = S3 オブジェクトロックのデフォルトバケット保持を使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

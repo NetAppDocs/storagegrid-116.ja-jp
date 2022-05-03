@@ -5,6 +5,7 @@ keywords: s3 object lock, manage objects with object lock
 summary: グリッド管理者は、 StorageGRID システムで S3 オブジェクトロックを有効にし、準拠 ILM ポリシーを実装して、特定の S3 バケット内のオブジェクトが指定した期間にわたって削除または上書きされないようにすることができます。 
 ---
 = S3 オブジェクトロックでオブジェクトを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

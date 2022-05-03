@@ -5,6 +5,7 @@ keywords: restore replicated data, restore erasure coded data, recover storage n
 summary: システムドライブに損傷がないストレージノードでストレージボリュームをリカバリしたら、ストレージボリュームの障害で失われたオブジェクトデータをリストアできます。 
 ---
 = システムドライブに損傷がない場合は、オブジェクトデータをストレージボリュームにリストアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

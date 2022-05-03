@@ -5,6 +5,7 @@ keywords: vmware
 summary: VMware 環境への StorageGRID システムのインストールは、主に 3 つの手順で行われます。 
 ---
 = Install VMware ： Overview 」を参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

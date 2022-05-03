@@ -5,6 +5,7 @@ keywords: networking for platform services, networking for cloud storage pools
 summary: StorageGRID プラットフォームサービスまたはクラウドストレージプールを使用する場合は、デスティネーションエンドポイントに到達できるようにグリッドネットワークとファイアウォールを設定する必要があります。 
 ---
 = プラットフォームサービスとクラウドストレージプール用のネットワークとポート
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

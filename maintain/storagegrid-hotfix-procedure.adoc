@@ -5,6 +5,7 @@ keywords: apply hotfix, install hotfix
 summary: ソフトウェアの問題が検出され、次の機能リリースの前に解決された場合は、 StorageGRID システムへのホットフィックスの適用が必要になる場合があります。 
 ---
 = StorageGRID ホットフィックス手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

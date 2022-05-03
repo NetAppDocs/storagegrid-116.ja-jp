@@ -5,6 +5,7 @@ keywords: Hardening guidelines, certificates
 summary: インストール時に作成されたデフォルトの証明書を独自のカスタム証明書に置き換える必要があります。 
 ---
 = サーバ証明書のセキュリティ強化ガイドライン
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

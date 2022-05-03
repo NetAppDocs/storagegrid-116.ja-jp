@@ -5,6 +5,7 @@ keywords: storagegrid, connected nodes, decommission node, storage node, disconn
 summary: 切断されているストレージノードの運用を停止した場合にどうなるかを理解しておく必要があります（ヘルスが「 Unknown 」または「 Administratively Down 」）。 
 ---
 = 切断されているストレージノードの運用を停止
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

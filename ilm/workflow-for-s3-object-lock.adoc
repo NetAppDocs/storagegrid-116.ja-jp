@@ -5,6 +5,7 @@ keywords: object lock workflow
 summary: グリッド管理者は、テナントユーザと緊密に連携し、保持要件に応じてオブジェクトが保護されるようにする必要があります。 
 ---
 = S3 オブジェクトロックのワークフロー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

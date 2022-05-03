@@ -5,6 +5,7 @@ keywords: expand, expansion, new site, add site, guidelines
 summary: 新しいサイトを追加して StorageGRID システムを拡張することができます。 
 ---
 = 新しいサイトを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

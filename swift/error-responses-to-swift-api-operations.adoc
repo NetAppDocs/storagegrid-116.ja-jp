@@ -5,6 +5,7 @@ keywords: swift api error responses
 summary: エラー応答について理解しておくと、処理をトラブルシューティングする際に役立ちます。 
 ---
 = Swift API 処理に対するエラー応答
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

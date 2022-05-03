@@ -5,6 +5,7 @@ keywords: s3 rest api supported operations, s3 rest api limitations
 summary: StorageGRID システムは Simple Storage Service API （ API バージョン 2006-03-01 ）を実装しており、ほとんどの処理をサポートしていますが、いくつかの制限事項があります。S3 REST API クライアントアプリケーションを統合するときは、実装の詳細を理解しておく必要があります。 
 ---
 = S3 REST API のサポートされる処理と制限事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

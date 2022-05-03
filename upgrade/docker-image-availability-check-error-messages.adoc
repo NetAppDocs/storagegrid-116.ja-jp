@@ -5,6 +5,7 @@ keywords: upgrade, error message, docker image availability
 summary: アップグレードプロセスを開始しようとすると、「 The following issues were identified by the Docker image availability check validation suite 」というエラーメッセージが表示される場合があります。 アップグレードを完了する前に、すべての問題を解決しておく必要があります。 
 ---
 = 「 Docker image availability check 」というエラーメッセージが表示される
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

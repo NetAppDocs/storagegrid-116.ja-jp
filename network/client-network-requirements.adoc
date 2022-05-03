@@ -5,6 +5,7 @@ keywords: client network
 summary: クライアントネットワークはオプションです。クライアントネットワークを設定する場合は、次の考慮事項に注意してください。 
 ---
 = クライアントネットワークの要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

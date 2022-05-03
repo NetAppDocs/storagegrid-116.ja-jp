@@ -5,6 +5,7 @@ keywords: storagegrid, decommission admin node, decommission gateway node
 summary: 管理ノードまたはゲートウェイノードの運用を停止する前に、次の考慮事項を確認してください。 
 ---
 = 管理ノードまたはゲートウェイノードの運用停止に関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

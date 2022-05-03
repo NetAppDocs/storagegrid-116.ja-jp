@@ -5,6 +5,7 @@ keywords: requirements, s3 object lock
 summary: グローバルな S3 オブジェクトのロック設定を有効にするための要件、準拠 ILM ルールおよび ILM ポリシーを作成するための要件、および StorageGRID が S3 オブジェクトロックを使用するバケットとオブジェクトに適用する制限事項を確認しておく必要があります。 
 ---
 = S3 オブジェクトのロックの要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

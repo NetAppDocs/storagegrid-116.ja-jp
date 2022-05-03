@@ -5,6 +5,7 @@ keywords: enable http, clb connections, storage node connections
 summary: デフォルトでは、クライアントアプリケーションは、ストレージノードへのすべての接続、またはゲートウェイノード上の廃止された CLB サービスへのすべての接続に、 HTTPS ネットワークプロトコルを使用します。非本番環境のグリッドのテストなどの目的で、これらの接続に対して HTTP を有効にすることもできます。 
 ---
 = クライアント通信で HTTP を有効にします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

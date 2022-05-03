@@ -5,6 +5,7 @@ keywords: how to install host services
 summary: StorageGRID ホストサービスをインストールするには、 StorageGRID RPM パッケージを使用します。 
 ---
 = StorageGRID ホストサービスをインストールする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

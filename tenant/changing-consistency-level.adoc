@@ -5,6 +5,7 @@ keywords: how to change tenant consistency level, read after new write, read-aft
 summary: S3 テナントを使用している場合は、テナントマネージャまたはテナント管理 API を使用して、 S3 バケット内のオブジェクトに対して実行される処理の整合性制御レベルを変更できます。 
 ---
 = 整合性レベルを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

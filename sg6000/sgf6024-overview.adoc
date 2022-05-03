@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRIDWebscale 6024 には、コンピューティングコントローラ、およびソリッドステートドライブを 24 本収容できるストレージコントローラシェルフが含まれています。 
 ---
 = SGF6024 の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

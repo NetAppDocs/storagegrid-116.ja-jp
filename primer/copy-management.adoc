@@ -5,6 +5,7 @@ keywords: object data, ilm policy, ilm rules, replicated copy, replication, eras
 summary: オブジェクトデータは、アクティブな ILM ポリシーとその ILM ルールによって管理されます。ILM ルールは、レプリケートコピーまたはイレイジャーコーディングコピーを作成してオブジェクトデータを損失から保護します。 
 ---
 = コピー管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

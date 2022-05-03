@@ -5,6 +5,7 @@ keywords: how to troubleshoot metadata issues
 summary: メタデータに関する問題の原因を特定するのに役立ついくつかのタスクを実行できます。 
 ---
 = メタデータに関する問題のトラブルシューティング
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

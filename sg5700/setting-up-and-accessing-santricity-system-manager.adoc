@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, SANtricity Syste
 summary: ストレージコントローラシェルフのハードウェアを監視したり、 E シリーズ AutoSupport を設定したりするために、ストレージコントローラの SANtricity System Manager へのアクセスが必要になる場合があります。 
 ---
 = SANtricity System Manager をセットアップしてアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

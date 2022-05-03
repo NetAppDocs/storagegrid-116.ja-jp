@@ -5,6 +5,7 @@ keywords: swift options request
 summary: OPTIONS 要求は、個々の Swift サービスが使用可能かどうかを確認します。OPTIONS 要求は、 URL で指定されたストレージノードまたはゲートウェイノードによって処理されます。 
 ---
 = OPTIONS 要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

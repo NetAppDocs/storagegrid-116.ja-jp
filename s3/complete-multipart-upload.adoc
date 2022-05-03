@@ -5,6 +5,7 @@ keywords: multipart upload, object, object size
 summary: Complete Multipart Upload 処理では、以前にアップロードされたパートをアセンブルすることで、オブジェクトのマルチパートアップロードを完了します。 
 ---
 = Complete Multipart Upload の実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

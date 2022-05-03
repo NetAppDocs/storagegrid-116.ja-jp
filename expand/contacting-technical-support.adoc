@@ -5,6 +5,7 @@ keywords: contact technical support
 summary: グリッド拡張プロセスで解決できないエラーが発生した場合やグリッドタスクに失敗した場合は、テクニカルサポートにお問い合わせください。 
 ---
 = テクニカルサポートにお問い合わせください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

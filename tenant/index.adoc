@@ -5,6 +5,7 @@ keywords: use tenant account
 summary: テナントアカウントでは、 Simple Storage Service （ S3 ） REST API または Swift REST API を使用して、 StorageGRID システムでオブジェクトの格納や読み出しを行うことができます。 
 ---
 = テナントアカウントを使用する：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

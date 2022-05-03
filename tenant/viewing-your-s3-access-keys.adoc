@@ -5,6 +5,7 @@ keywords: how to view your s3 access key
 summary: S3 テナントを使用している場合は、適切な権限があれば、 S3 アクセスキーのリストを表示できます。有効期限でリストをソートすると、まもなく期限切れになるキーを確認できます。必要に応じて、新しいキーを作成したり、使用しなくなったキーを削除したりできます。 
 ---
 = S3 アクセスキーを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: clb service, connection load balancer
 summary: ゲートウェイノード上の Connection Load Balancer \ （ CLB \ ）サービスは廃止されました。ロードバランササービスが推奨されるロードバランシングメカニズムになりました。 
 ---
 = ロードバランシングの仕組み - CLB サービス（廃止）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

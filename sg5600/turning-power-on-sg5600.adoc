@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, power on, power,
 summary: エンクロージャの電源を入れると、両方のコントローラの電源がオンになります。 
 ---
 = 電源オン（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

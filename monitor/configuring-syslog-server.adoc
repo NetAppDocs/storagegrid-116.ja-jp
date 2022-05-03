@@ -5,6 +5,7 @@ keywords: audit messages, syslog server, configure external syslog server
 summary: 監査ログ、アプリケーションログ、およびセキュリティイベントログをグリッド以外の場所に保存する場合は、この手順 を使用して外部 syslog サーバを設定します。 
 ---
 = 外部 syslog サーバを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

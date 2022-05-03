@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, client write, OVWR, SDEL, SPOS,
 summary: クライアント書き込み監査メッセージは、 S3 または Swift クライアントアプリケーションがオブジェクトを作成または変更する要求を行うときに記録されます。 
 ---
 = クライアント書き込み監査メッセージ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

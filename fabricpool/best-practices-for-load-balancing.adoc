@@ -5,6 +5,7 @@ keywords: fabricPool, load balancer, endpoint, load balancing, Layer 7, cloud ti
 summary: StorageGRID を FabricPool クラウド階層として接続する前に、 StorageGRID グリッドマネージャを使用して少なくとも 1 つのロードバランサエンドポイントを設定する必要があります。 
 ---
 = ロードバランシングのベストプラクティスを参照してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

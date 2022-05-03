@@ -5,6 +5,7 @@ keywords: how to change bucket versioning, disabled versioning, enabled versioni
 summary: S3 テナントを使用している場合は、テナントマネージャまたはテナント管理 API を使用して、 S3 バケットのバージョン管理の状態を変更できます。 
 ---
 = バケットのオブジェクトのバージョン管理を変更する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

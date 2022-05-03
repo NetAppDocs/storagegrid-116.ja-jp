@@ -5,6 +5,7 @@ keywords: tenant management api, api, api version, swagger, rest api
 summary: StorageGRID 11.6 ではバージョン 3 のテナント管理 API を使用しています。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。 
 ---
 = テナント管理 API に変更が加えられました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, decommission, troubleshoot
 summary: エラーが原因でノードの手順 の運用が停止した場合は、特定の手順に従って問題のトラブルシューティングを実施できます。 
 ---
 = ノードの運用停止をトラブルシューティングする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: archive node
 summary: 必要に応じて、各 StorageGRID データセンターサイトにアーカイブノードを導入して、 Tivoli Storage Manager （ TSM ）などの外部アーカイブストレージシステムに接続できます。 
 ---
 = アーカイブノードとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ilm manage object rules
 summary: グリッド管理者が情報ライフサイクル管理（ ILM ）ルールを作成して、 S3 REST API クライアントアプリケーションから StorageGRID システムに取り込まれたオブジェクトデータを管理します。これらのルールは、以降のオブジェクトデータを格納する方法と場所を指定するために、 ILM ポリシーに追加されます。 
 ---
 = StorageGRID の ILM ルールによるオブジェクトの管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

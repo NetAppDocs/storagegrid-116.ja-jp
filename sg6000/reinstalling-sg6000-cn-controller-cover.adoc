@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, contr
 summary: 内蔵ハードウェアのメンテナンスが完了したら、コントローラカバーを再度取り付けます。 
 ---
 = SG6000-CN コントローラのカバーを再度取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

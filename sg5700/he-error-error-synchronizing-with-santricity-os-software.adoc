@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, troubleshooting,
 summary: StorageGRID アプライアンスインストーラが SANtricity OS ソフトウェアと同期できない場合は、コンピューティングコントローラのデジタル表示ディスプレイに HE エラーコードが表示されます。 
 ---
 = HE エラー： SANtricity OS ソフトウェアとの同期エラー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

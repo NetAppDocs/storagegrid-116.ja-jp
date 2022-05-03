@@ -5,6 +5,7 @@ keywords: hybrid cloud, cloud storage pool, platform services, fabricpool, ontap
 summary: ハイブリッドクラウド構成で StorageGRID を使用するには、ポリシーベースのデータ管理を実装してクラウドストレージプールにオブジェクトを格納し、 StorageGRID プラットフォームサービスを利用し、さらに NetApp FabricPool を使用して StorageGRID にデータを移動します。 
 ---
 = StorageGRID を使用したハイブリッドクラウド
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

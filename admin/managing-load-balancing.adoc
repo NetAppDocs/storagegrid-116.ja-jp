@@ -5,6 +5,7 @@ keywords: manage load balancing, balance workload, client ingest, client retriev
 summary: StorageGRID のロードバランシング機能を使用して、 S3 / Swift クライアントからの取り込み / 読み出しワークロードを処理できます。ロードバランシングは、複数のストレージノードにワークロードと接続を分散することで、速度と接続容量を最大化します。 
 ---
 = ロードバランシングの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: 拡張シェルフの入出力モジュール、電源装置、またはファンの交換が必要になることがあります。 
 ---
 = オプションの 60 ドライブ拡張シェルフのハードウェアコンポーネントを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

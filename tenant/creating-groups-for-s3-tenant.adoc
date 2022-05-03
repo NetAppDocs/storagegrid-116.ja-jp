@@ -5,6 +5,7 @@ keywords: how to create S3 tenant groups
 summary: S3 ユーザグループの権限を管理するには、フェデレーテッドグループをインポートするか、ローカルグループを作成します。 
 ---
 = S3 テナント用のグループを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

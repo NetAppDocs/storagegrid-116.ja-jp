@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, SANtricity Syste
 summary: SANtricity System Manager を使用して、ストレージコントローラシェルフの個々のハードウェアコンポーネントを監視および管理したり、コンポーネントの温度やドライブに関連する問題など、ハードウェア診断および環境に関する情報を確認したりできます。 
 ---
 = SANtricity システムマネージャでハードウェアステータスを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

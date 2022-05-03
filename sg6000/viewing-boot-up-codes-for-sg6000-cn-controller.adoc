@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, boot codes, boot
 summary: アプライアンスの電源を入れると、 BMC は SG6000-CN コントローラの一連のブート時のコードを記録します。これらのコードはいくつかの方法で確認できます。 
 ---
 = SG6000-CN コントローラのブート時のコードを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

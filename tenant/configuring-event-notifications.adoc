@@ -5,6 +5,7 @@ keywords: how to configure event notifications, bucket notification
 summary: 通知サービスは、 3 つの StorageGRID プラットフォームサービスのうちの 1 つです。バケットの通知を有効にすると、指定したイベントに関する情報を、 AWS Simple Notification Service ™（ SNS ）をサポートするデスティネーションサービスに送信できます。 
 ---
 = イベント通知を設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

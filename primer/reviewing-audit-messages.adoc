@@ -5,6 +5,7 @@ keywords: audit message
 summary: 監査メッセージは、 StorageGRID システムの詳細な運用状況を的確に把握するために役立ちます。監査ログを使用して、問題のトラブルシューティングやパフォーマンスの評価を行うことができます。 
 ---
 = 監査メッセージを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

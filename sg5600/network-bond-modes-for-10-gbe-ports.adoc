@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Ne
 summary: E5600SG コントローラの 10GbE ネットワークポートは、グリッドネットワークおよびクライアントネットワーク接続用に、 Fixed または Aggregate のポートボンディングモードをサポートします。 
 ---
 = 10GbE ポートのネットワークボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

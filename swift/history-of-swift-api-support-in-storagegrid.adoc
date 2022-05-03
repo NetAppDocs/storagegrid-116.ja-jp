@@ -5,6 +5,7 @@ keywords: swift api support history
 summary: StorageGRID システムでの Swift REST API のサポートに関する変更点に注意する必要があります。 
 ---
 = StorageGRID での Swift API サポートの履歴
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

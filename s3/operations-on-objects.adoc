@@ -5,6 +5,7 @@ keywords: bucket, buckets, operations on buckets
 summary: このセクションでは、 StorageGRID システムでオブジェクトの S3 REST API 処理を実装する方法について説明します。 
 ---
 = オブジェクトの処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

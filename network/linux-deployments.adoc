@@ -5,6 +5,7 @@ keywords: linux network, container engine, red hat enterprise linux rhel network
 summary: 効率性、信頼性、セキュリティのために、 StorageGRID システムはコンテナエンジンの集合として Linux 上で動作します。StorageGRID システムでは、コンテナエンジン関連のネットワーク構成は必要ありません。 
 ---
 = Linux の導入
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

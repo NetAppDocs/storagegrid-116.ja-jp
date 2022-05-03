@@ -5,6 +5,7 @@ keywords: audit client for NFS
 summary: 監査共有は読み取り専用の共有として自動的に有効になります。 
 ---
 = NFS の監査クライアントを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

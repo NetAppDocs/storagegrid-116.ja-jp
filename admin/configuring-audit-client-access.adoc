@@ -5,6 +5,7 @@ keywords: audit client, ams, audit management service
 summary: 管理ノードは、 Audit Management System \ （ AMS \ ）サービスを介して、監査対象のすべてのシステムイベントを、監査共有からアクセス可能なログファイルに記録します。監査共有はインストール時に各管理ノードに追加されます。監査ログへのアクセスを簡単にするためには、 CIFS と NFS の両方についてクライアントから監査共有へのアクセスを設定します。 
 ---
 = 監査クライアントアクセスを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

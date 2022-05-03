@@ -5,6 +5,7 @@ keywords: use sandbox mode for sso, how to test single sign-on
 summary: サンドボックスモードを使用すると、すべての StorageGRID ユーザに対してシングルサインオン（ SSO ）を有効にする前に、シングルサインオン（ SSO ）を設定およびテストできます。SSO を有効にした後は、設定を変更したり再テストしたりする必要がある場合に、サンドボックスモードに戻ることができます。 
 ---
 = サンドボックスモードを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

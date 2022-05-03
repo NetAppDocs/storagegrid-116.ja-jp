@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, wire, wiring, ca
 summary: ネットワークケーブルを接続したら、 SG6000-CN コントローラと 2 台のストレージコントローラまたはオプションの拡張シェルフの電源を入れることができます。 
 ---
 = 電源コードを接続して電源（ SG6000 ）を投入
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

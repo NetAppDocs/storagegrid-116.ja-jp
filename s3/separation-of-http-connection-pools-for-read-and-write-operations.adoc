@@ -5,6 +5,7 @@ keywords: separate http connection pools read write
 summary: 読み取り処理と書き込み処理に別々の HTTP 接続プールを使用して、それぞれに使用するプールの容量を制御できます。HTTP 接続のプールを分けることで、トランザクションや負荷分散をより細かく制御できます。 
 ---
 = 読み取り処理用と書き込み処理用に別々の HTTP 接続プールを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

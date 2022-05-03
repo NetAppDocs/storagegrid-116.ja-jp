@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, error codes, err
 summary: SG6000-CN コントローラのブート時にハードウェアエラーが発生すると、 BMC にエラーコードが記録されます。必要に応じて BMC インターフェイスを使用してこれらのエラーコードを確認し、テクニカルサポートと協力して問題 を解決できます。 
 ---
 = SG6000-CN コントローラのエラーコードを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, system, ECOC, ETAF, GNRG, GNUR,
 summary: システム監査カテゴリに属する監査メッセージについて十分に理解しておく必要があります。潜在的な問題に対処できるよう、監査システム自体、グリッドノードの状態、システム全体のタスクアクティビティ（グリッドタスク）、およびサービスバックアップ処理に関連するイベントについて生成されます。 
 ---
 = システム監査メッセージ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

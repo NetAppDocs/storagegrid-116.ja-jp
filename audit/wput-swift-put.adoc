@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WPUT, Swift PUT
 summary: Swift クライアントが PUT トランザクションを実行すると、新しいオブジェクトまたはコンテナを作成する要求が送信されます。このメッセージは、トランザクションが成功した場合にサーバによって出力されます。 
 ---
 = WPUT ： Swift PUT
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

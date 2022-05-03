@@ -5,6 +5,7 @@ keywords: ilm rule step 3, define ingest behavior
 summary: Create ILM Rule ウィザードのステップ 3 \ （取り込み動作の定義 \ ）では、このルールでフィルタリングされたオブジェクトを取り込み時に保護する方法を選択できます。 
 ---
 = ステップ 3 / 3 ：取り込み動作を定義する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

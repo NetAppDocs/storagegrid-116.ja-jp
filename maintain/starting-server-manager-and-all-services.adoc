@@ -5,6 +5,7 @@ keywords: storagegrid, recover, server manager, start server manager, start serv
 summary: Server Manager の起動が必要な場合があります。 Server Manager を起動すると、グリッドノード上のすべてのサービスも開始されます。 
 ---
 = Server Manager およびすべてのサービスを開始します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

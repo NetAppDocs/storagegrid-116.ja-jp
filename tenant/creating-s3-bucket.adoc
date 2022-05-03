@@ -5,6 +5,7 @@ keywords: how to create S3 bucket
 summary: Tenant Manager を使用して、オブジェクトデータ用の S3 バケットを作成できます。バケットを作成するときは、バケットの名前とリージョンを指定する必要があります。StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合は、必要に応じてバケットで S3 オブジェクトのロックを有効にすることができます。 
 ---
 = S3 バケットを作成する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations
 summary: StorageGRID システム固有の処理が S3 REST API に追加されています。 
 ---
 = StorageGRID の S3 REST API の処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

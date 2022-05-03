@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, admin node, link
 summary: E5700SG コントローラのイーサネットリンク設定を変更できます。ポートボンディングモード、ネットワークボンディングモード、およびリンク速度を変更できます。 
 ---
 = E5700SG コントローラのリンク設定の変更
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスのベースボード管理コントローラ \ （ bmc \ ）のユーザインターフェイスには、ハードウェアに関するステータス情報が表示され、サービスアプライアンスの SNMP 設定やその他のオプションを設定できます。 
 ---
 = BMC インターフェイスの設定（ SG100 および SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

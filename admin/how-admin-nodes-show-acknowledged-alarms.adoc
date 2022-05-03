@@ -5,6 +5,7 @@ keywords: admin node, acknowledge alarm
 summary: ある管理ノードのアラームを確認しても、確認済みのアラームは他の管理ノードにはコピーされません。確認応答は他の管理ノードにはコピーされないため、グリッドトポロジツリーでは各管理ノードで同じように表示されない場合があります。 
 ---
 = 管理ノードによる確認済みアラームの表示（従来のシステム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

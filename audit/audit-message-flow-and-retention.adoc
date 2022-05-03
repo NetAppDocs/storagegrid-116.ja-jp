@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, flow, retention
 summary: すべての StorageGRID サービスは通常のシステム運用中に監査メッセージを生成します。これらの監査メッセージが StorageGRID システムから audit.log ファイルにどのように転送されるかを理解しておく必要があります。 
 ---
 = 監査メッセージのフローと保持
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

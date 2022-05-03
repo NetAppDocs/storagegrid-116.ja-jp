@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, hardware, instal
 summary: ハードウェアの設置作業では、 SG6000-CN コントローラとストレージコントローラシェルフをキャビネットまたはラックに設置し、ケーブルを接続し、電源を投入します。 
 ---
 = ハードウェア（ SG6000 ）を設置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: audit client for ad, active directory
 summary: この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。 
 ---
 = Active Directory の監査クライアントを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

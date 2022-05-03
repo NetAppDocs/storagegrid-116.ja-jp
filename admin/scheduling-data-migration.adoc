@@ -5,6 +5,7 @@ keywords: data migration schedule, monitor data migration
 summary: 所定の期間内に ILM ポリシーに従ってデータが配置されるよう、必要に応じてデータ移行をスケジュールし、監視する必要があります。 
 ---
 = データ移行のスケジュール設定と監視
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

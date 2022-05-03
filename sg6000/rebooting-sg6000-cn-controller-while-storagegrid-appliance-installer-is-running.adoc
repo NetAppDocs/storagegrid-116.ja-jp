@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, reboot, restart
 summary: StorageGRID アプライアンスインストーラの実行中に、 SG6000-CN コントローラのリブートが必要になることがあります。たとえば、インストールが失敗した場合は、コントローラのリブートが必要になることがあります。 
 ---
 = StorageGRID アプライアンスインストーラの実行中に SG6000-CN コントローラをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

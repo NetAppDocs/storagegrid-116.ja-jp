@@ -5,6 +5,7 @@ keywords: storagegrid, recover, reboot node, grid manager
 summary: Grid Manager からグリッドノードをリブートすると、ターゲットノードで「 reboot 」コマンドが実行されます。 
 ---
 = Grid Manager からグリッドノードをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

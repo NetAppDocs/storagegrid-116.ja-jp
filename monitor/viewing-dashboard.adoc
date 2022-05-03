@@ -5,6 +5,7 @@ keywords: how to view the dashboard
 summary: Grid Manager に初めてサインインするときは、ダッシュボードを使用してシステムのアクティビティを一目で監視できます。ダッシュボードには、システムの健全性、使用状況、および処理の傾向とグラフに関する情報が表示されます。 
 ---
 = ダッシュボードを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

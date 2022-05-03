@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRID SG6000 アプライアンスは、 StorageGRID システムにおいてストレージノードとして機能する、ストレージとコンピューティングを統合したプラットフォームです。これらのアプライアンスは、アプライアンスストレージノードと仮想ストレージノードを組み合わせたハイブリッドグリッド環境で使用できます（ソフトウェアベース）。 
 ---
 = SG6000 アプライアンス：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

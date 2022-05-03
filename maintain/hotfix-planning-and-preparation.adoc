@@ -5,6 +5,7 @@ keywords: storagegrid, hotfix, prepare for a hotfix, plan for a hotfix
 summary: ホットフィックスを適用する際は、 StorageGRID システムの中断を最小限に抑えるために、事前に計画を立てておく必要があります。 
 ---
 = ホットフィックスの適用を計画して準備
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

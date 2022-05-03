@@ -5,6 +5,7 @@ keywords: storagegrid, recover, appliance storage node
 summary: '障害が発生したノードの代わりとしてアプライアンスストレージノードを設定するには、 Grid Manager で [Start Recovery] を選択する必要があります。' 
 ---
 = Start Recovery を選択して、アプライアンスストレージノードを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to automate installation
 summary: VMware vSphere を使用して、グリッドノードの導入を自動化できます。StorageGRID の設定を自動化することもできます。 
 ---
 = インストールの自動化（ VMware ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

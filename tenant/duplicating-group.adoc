@@ -5,6 +5,7 @@ keywords: how to duplicate tenant group
 summary: 既存のグループを複製することで、新しいグループをより迅速に作成できます。 
 ---
 = グループが重複しています
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

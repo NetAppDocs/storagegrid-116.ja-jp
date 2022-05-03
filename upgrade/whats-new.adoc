@@ -5,6 +5,7 @@ keywords: what is new in StorageGRID 11.6
 summary: このリリースの StorageGRID には、次の機能が導入されています。 
 ---
 = StorageGRID 11.6 の新機能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

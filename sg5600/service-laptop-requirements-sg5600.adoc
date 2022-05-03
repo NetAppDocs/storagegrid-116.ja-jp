@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, service, laptop,
 summary: StorageGRID アプライアンスハードウェアを設置する前に、サービスラップトップが最小限必要なリソースを備えているかどうかを確認する必要があります。 
 ---
 = サービスラップトップの要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

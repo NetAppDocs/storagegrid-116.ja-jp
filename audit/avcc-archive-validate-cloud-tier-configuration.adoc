@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, AVCC, Archive Validate Cloud-Tier Configu
 summary: このメッセージは、クラウド階層 - Simple Storage Service （ S3 \ ）ターゲットタイプの構成設定が検証されたときに生成されます。 
 ---
 = AVCC ：アーカイブによってクラウド階層の構成を検証
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

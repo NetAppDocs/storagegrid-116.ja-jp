@@ -5,6 +5,7 @@ keywords: how to configure cross-origin resource sharing, cors
 summary: S3 バケットとバケット内のオブジェクトに他のドメインにある Web アプリケーションからアクセスできるようにする必要がある場合は、そのバケットに Cross-Origin Resource Sharing \ （ CORS \ ）を設定できます。 
 ---
 = Cross-Origin Resource Sharing （ CORS ）の設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

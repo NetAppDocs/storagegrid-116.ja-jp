@@ -5,6 +5,7 @@ keywords: how to use identity federation, how to use federated groups with Grid 
 summary: アイデンティティフェデレーションを使用すると、グループやユーザを迅速に設定できます。また、ユーザは使い慣れたクレデンシャルを使用して StorageGRID にサインインできます。 
 ---
 = アイデンティティフェデレーションを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

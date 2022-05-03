@@ -5,6 +5,7 @@ keywords: how to create ILM policy, proposed policy
 summary: ドラフトの ILM ポリシーを新規に作成できます。同じルールセットを使用する場合は、現在のアクティブポリシーをクローニングして作成できます。 
 ---
 = ドラフトの ILM ポリシーを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

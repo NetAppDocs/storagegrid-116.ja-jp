@@ -5,6 +5,7 @@ keywords: storagegrid, decommission
 summary: この手順 を開始して 1 つ以上のノードの運用を停止する前に、各タイプのノードが削除された場合の影響を理解しておく必要があります。ノードの運用が正常に停止されると、ノードのサービスが無効になり、ノードが自動的にシャットダウンされます。 
 ---
 = グリッドノードの運用停止に関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

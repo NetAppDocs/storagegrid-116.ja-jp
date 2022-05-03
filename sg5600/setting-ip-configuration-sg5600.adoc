@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, configure, setup
 summary: StorageGRID アプライアンスインストーラを使用して、 StorageGRID のグリッドネットワーク、管理ネットワーク、クライアントネットワークでアプライアンスストレージノードに使用される IP アドレスとルーティング情報を設定します。 
 ---
 = IP を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

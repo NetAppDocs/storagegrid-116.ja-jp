@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。 
 ---
 = データセンターでコントローラを探します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

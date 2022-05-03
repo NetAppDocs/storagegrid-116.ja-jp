@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: EF570 コントローラシェルフ用のレールをキャビネットまたはラックに取り付け、レールにアレイをスライドさせます。 
 ---
 = SGF6024 ： 24 ドライブシェルフをキャビネットまたはラックに設置します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

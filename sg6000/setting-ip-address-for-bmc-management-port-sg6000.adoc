@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard m
 summary: BMC インターフェイスにアクセスするには、 SG6000-CN コントローラの BMC 管理ポートの IP アドレスを設定する必要があります。 
 ---
 = BMC 管理ポートの IP アドレスを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

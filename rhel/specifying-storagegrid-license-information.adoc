@@ -5,6 +5,7 @@ keywords: how to specify license
 summary: StorageGRID システムの名前を指定し、ネットアップから提供されたライセンスファイルをアップロードする必要があります。 
 ---
 = StorageGRID ライセンス情報を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: consistency controls
 summary: 整合性制御では、アプリケーションでの必要に応じて、オブジェクトの可用性と、異なるストレージノード間およびサイト間でのオブジェクトの整合性のどちらかを犠牲にしなければなりません。 
 ---
 = 整合性制御
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

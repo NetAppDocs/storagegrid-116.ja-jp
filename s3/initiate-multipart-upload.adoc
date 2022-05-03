@@ -5,6 +5,7 @@ keywords: initiate multipart upload, uploads
 summary: Initiate Multipart Upload 処理は、オブジェクトのマルチパートアップロードを開始し、アップロード ID を返します。 
 ---
 = マルチパートアップロードを開始します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, install, informa
 summary: StorageGRID アプライアンスを設置および設定する際に、イーサネットスイッチポート、 IP アドレス、およびポートとネットワークのボンディングモードについて決定し、関連情報を収集する必要があります。 
 ---
 = インストール情報の収集（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

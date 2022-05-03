@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, cabling, cable, 
 summary: 拡張シェルフを使用する場合は、 E2860 コントローラシェルフに拡張シェルフを接続する必要があります。SG6060 アプライアンスには、最大 2 台の拡張シェルフを用意できます。 
 ---
 = SG6060 ：オプションの拡張シェルフのケーブル接続
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

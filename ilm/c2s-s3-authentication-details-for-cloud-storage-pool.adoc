@@ -5,6 +5,7 @@ keywords: cloud storage pool with C2S, commercial cloud services, c2s access por
 summary: Commercial クラウド サービス \ （ C2S \ ） S3 サービスをクラウドストレージプールとして使用するには、認証タイプとして C2S Access Portal \ （ CAP \ ）を設定し、 StorageGRID が C2S アカウント内の S3 バケットにアクセスするための一時的なクレデンシャルを要求できるようにする必要があります。 
 ---
 = C2S S3 ：クラウドストレージプールの認証情報を指定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

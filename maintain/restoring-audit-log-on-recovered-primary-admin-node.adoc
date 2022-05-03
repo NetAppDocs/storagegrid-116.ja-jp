@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore audit log, primary admin node
 summary: 障害が発生したプライマリ管理ノードから監査ログを保存できた場合は、リカバリするプライマリ管理ノードにそのログをコピーできます。 
 ---
 = リカバリされたプライマリ管理ノードで監査ログをリストアする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

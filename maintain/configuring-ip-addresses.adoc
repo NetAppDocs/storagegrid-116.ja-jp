@@ -5,6 +5,7 @@ keywords: storagegrid, ip address, configure ip address, configuring ip address,
 summary: IP 変更ツールを使用してグリッドノードの IP アドレスを設定することで、ネットワーク設定を実行できます。 
 ---
 = IP アドレスを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

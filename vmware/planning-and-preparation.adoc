@@ -5,6 +5,7 @@ keywords: how to plan before installation
 summary: グリッドノードの導入および StorageGRID グリッドの設定を行う前に、手順 を完了するためのステップと要件を把握しておく必要があります。 
 ---
 = インストールの前に（ VMware ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to troubleshoot admin node issues, how to troubleshoot user interf
 summary: ここでは、管理ノードと StorageGRID ユーザインターフェイスに関連する問題の原因を特定するのに役立ついくつかのタスクを紹介します。 
 ---
 = 管理ノードとユーザインターフェイスの問題をトラブルシューティングする
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

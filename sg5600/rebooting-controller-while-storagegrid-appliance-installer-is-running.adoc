@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, reboot, restart
 summary: StorageGRID アプライアンスインストーラの実行中にコンピューティングコントローラのリブートが必要になる場合があります。たとえば、インストールが失敗した場合は、コントローラのリブートが必要になることがあります。 
 ---
 = StorageGRID アプライアンスインストーラの実行中にコントローラをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

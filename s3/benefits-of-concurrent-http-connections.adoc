@@ -5,6 +5,7 @@ keywords: concurrent http connection benefits
 summary: StorageGRID システムへの TCP / IP 接続を複数開いて並列処理を可能にしておくと、パフォーマンスが向上します。最適な並列接続数は、さまざまな要因によって異なります。 
 ---
 = 同時 HTTP 接続のメリット
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

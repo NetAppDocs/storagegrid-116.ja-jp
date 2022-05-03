@@ -5,6 +5,7 @@ keywords: logs
 summary: StorageGRID のログを問題のトラブルシューティングに使用できます。 
 ---
 = StorageGRID ソフトウェアのログ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, tr
 summary: アプライアンスに接続できない場合は、ネットワーク問題 があるか、またはハードウェアの設置が正常に完了していない可能性があります。 
 ---
 = アプライアンスに接続できません
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

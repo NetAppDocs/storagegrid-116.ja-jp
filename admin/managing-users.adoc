@@ -5,6 +5,7 @@ keywords: how to manage local users
 summary: ローカルユーザとフェデレーテッドユーザを表示できます。また、ローカルユーザを作成してローカル管理者グループに割り当て、そのユーザがアクセスできる Grid Manager 機能を決定することもできます。 
 ---
 = ユーザを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: host level procedures, host-level procedures, middleware procedures
 summary: 一部のメンテナンス手順は、 StorageGRID の Linux または VMware 環境、あるいは StorageGRID 解決策 のその他のコンポーネントに固有です。 
 ---
 = ホストレベルおよびミドルウェアの手順
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

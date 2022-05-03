@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, log, object lifecycle, ingest, retrieve, 
 summary: 監査メッセージは、オブジェクトの取り込み、読み出し、または削除が行われるたびに生成されます。監査ログでこれらのトランザクションを特定するには、 API 固有の監査メッセージ（ S3 または Swift ）を検索します。 
 ---
 = 監査メッセージとオブジェクトライフサイクル
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

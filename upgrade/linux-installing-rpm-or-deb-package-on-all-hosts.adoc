@@ -5,6 +5,7 @@ keywords: upgrade, linux, rpm, deb,
 summary: Linux ホストに StorageGRID ノードが導入されている場合は、アップグレードを開始する前に、これらの各ホストに追加の RPM パッケージまたは DEB パッケージをインストールする必要があります。 
 ---
 = Linux ：すべてのホストに RPM パッケージまたは DEB パッケージをインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: post, post object restore, object
 summary: S3 POST Object restore 要求を使用して、クラウドストレージプールに格納されているオブジェクトをリストアできます。 
 ---
 = POST Object restore の実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

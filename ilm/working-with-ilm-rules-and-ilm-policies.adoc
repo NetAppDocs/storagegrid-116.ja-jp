@@ -5,6 +5,7 @@ keywords: delete ilm rule, edit ilm rule, clone ilm rule, ilm queue
 summary: ILM ルールと ILM ポリシーを作成したあとも、引き続きストレージ要件の変化に合わせて設定を変更できます。 
 ---
 = ILM ルールおよび ILM ポリシーの操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

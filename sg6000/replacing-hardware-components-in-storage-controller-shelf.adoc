@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: ハードウェアの問題が発生した場合は、ストレージコントローラシェルフのコンポーネントの交換が必要となることがあります。 
 ---
 = ストレージコントローラシェルフのハードウェアコンポーネントを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

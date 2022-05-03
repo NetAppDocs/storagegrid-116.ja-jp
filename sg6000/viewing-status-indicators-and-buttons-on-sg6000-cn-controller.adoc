@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, status, indicato
 summary: SG6000-CN コントローラには、次のインジケータやボタンなど、コントローラのステータスの確認に役立つインジケータが搭載されています。 
 ---
 = SG6000-CN コントローラのステータスインジケータとボタンを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

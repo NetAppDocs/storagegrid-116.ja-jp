@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore grid node, restore node, validate grid n
 summary: 障害グリッドノードのグリッド構成ファイルをリストアして検証し、エラーをすべて解決する必要があります。 
 ---
 = グリッドノードをリストアして検証する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

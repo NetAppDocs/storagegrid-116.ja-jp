@@ -5,6 +5,7 @@ keywords: grid management api, api, api version, swagger, rest api
 summary: StorageGRID 11.6 はグリッド管理 API のバージョン 3 を使用しています。バージョン 3 はバージョン 2 に代わるものですが、バージョン 1 とバージョン 2 も引き続きサポートされます。 
 ---
 = Grid 管理 API に対する変更
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

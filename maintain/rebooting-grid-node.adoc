@@ -5,6 +5,7 @@ keywords: reboot grid node
 summary: グリッドノードは、 Grid Manager またはノードのコマンドシェルからリブートできます。 
 ---
 = グリッドノードをリブートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

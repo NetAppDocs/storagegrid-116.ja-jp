@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, SNMP, configure,
 summary: ハードウェアの SNMP の設定に精通している場合は、 BMC インターフェイスを使用して SG6000-CN コントローラの SNMP 設定を行うことができます。セキュリティで保護されたコミュニティストリングを指定し、 SNMP トラップを有効にし、 SNMP の送信先を最大 5 つ指定できます。 
 ---
 = SG6000-CN コントローラの SNMP を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

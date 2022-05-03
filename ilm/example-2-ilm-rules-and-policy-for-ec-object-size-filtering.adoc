@@ -5,6 +5,7 @@ keywords: object size for erasure coding, example ILM rule, information lifecycl
 summary: 以下に記載するサンプルルールとポリシーをベースに、オブジェクトサイズでフィルタリングして EC の推奨要件を満たす ILM ポリシーを定義できます。 
 ---
 = 例 2 ： EC オブジェクトサイズのフィルタリング用の ILM ルールとポリシー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

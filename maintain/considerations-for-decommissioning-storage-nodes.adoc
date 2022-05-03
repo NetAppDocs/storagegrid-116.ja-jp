@@ -5,6 +5,7 @@ keywords: storagegrid, decommission
 summary: ストレージノードの運用を停止する際には、 StorageGRID がそのノードのオブジェクトデータとメタデータをどのように管理しているかを理解しておく必要があります。 
 ---
 = ストレージノードの運用停止に関する考慮事項
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

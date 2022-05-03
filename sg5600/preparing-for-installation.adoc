@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, install, install
 summary: StorageGRID アプライアンスを設置するための準備では、設置場所を準備し、必要なすべてのハードウェア、ケーブル、工具を揃えます。また、 IP アドレスとネットワーク情報を収集する必要があります。 
 ---
 = 設置の準備（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

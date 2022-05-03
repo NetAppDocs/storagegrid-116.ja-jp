@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRID SG6060 アプライアンスには、コンピューティングコントローラと、 2 台のストレージコントローラと 60 本のドライブを搭載したストレージコントローラシェルフが含まれます。必要に応じて、 60 ドライブ拡張シェルフも追加できます。 
 ---
 = SG6060 の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

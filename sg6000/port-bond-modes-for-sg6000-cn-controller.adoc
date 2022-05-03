@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, port bond, port 
 summary: SG6000-CN のネットワークリンクを設定する場合は、グリッドネットワークとオプションのクライアントネットワークに接続する 10 / 25GbE ポート、およびオプションの管理ネットワークに接続する 1GbE 管理ポートに対してポートボンディングを使用できます。ポートボンディングを使用すると、 StorageGRID ネットワークとアプライアンスの間のパスが冗長化されるため、データの保護に役立ちます。 
 ---
 = SG6000-CN コントローラのポートボンディングモード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

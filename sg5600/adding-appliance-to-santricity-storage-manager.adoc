@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Adding, add, app
 summary: アプライアンス内の E2700 コントローラを SANtricity Storage Manager に接続し、アプライアンスをストレージアレイとして追加します。 
 ---
 = SANtricity ストレージ・マネージャにアプライアンスを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

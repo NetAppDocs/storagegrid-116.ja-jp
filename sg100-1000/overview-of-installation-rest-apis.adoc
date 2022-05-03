@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID には、インストールタスクを実行するための REST API として、 StorageGRID インストール API と StorageGRID アプライアンスインストーラ API の 2 つが用意されています。 
 ---
 = インストール REST API の概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

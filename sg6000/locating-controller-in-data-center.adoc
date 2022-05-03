@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, locate, find, lo
 summary: ハードウェアのメンテナンスやアップグレードを実行できるように、コントローラを特定します。 
 ---
 = データセンターでコントローラを探します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

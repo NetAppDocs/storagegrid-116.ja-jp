@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object retrieval
 summary: S3 クライアントがストレージノード \ （ LDR サービス \ ）からオブジェクトを読み出すと、監査メッセージが生成されて監査ログに保存されます。 
 ---
 = 例： S3 オブジェクトの読み出し
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

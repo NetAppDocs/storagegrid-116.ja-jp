@@ -5,6 +5,7 @@ keywords: how to aggregate red hat linux interface, LACP bond, network scripts
 summary: 以下のサンプルファイルを使用して、 4 つの Linux 物理インターフェイスを 1 つの LACP ボンドにまとめ、 3 つの VLAN インターフェイスを確立して、 StorageGRID のグリッドネットワーク、管理ネットワーク、およびクライアントネットワークのインターフェイス用にボンドを分割します。 
 ---
 = /etc/sysconfig/network-scripts の例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

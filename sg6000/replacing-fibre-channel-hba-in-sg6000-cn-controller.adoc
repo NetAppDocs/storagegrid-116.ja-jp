@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: SG6000-CN コントローラが適切に機能しない場合や障害が発生した場合は、 SG6000-CN コントローラの Fibre Channel ホストバスアダプタ（ HBA ）の交換が必要となることがあります。 
 ---
 = SG6000-CN コントローラの Fibre Channel HBA を交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

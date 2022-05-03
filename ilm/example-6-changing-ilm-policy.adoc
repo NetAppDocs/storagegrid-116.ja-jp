@@ -5,6 +5,7 @@ keywords: change ILM policy, example ILM policy, information lifecycle policy ex
 summary: データ保護のニーズが変わった場合や新しいサイトを追加した場合は、新しい ILM ポリシーの作成とアクティブ化が必要になることがあります。 
 ---
 = 例 6 ： ILM ポリシーを変更する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

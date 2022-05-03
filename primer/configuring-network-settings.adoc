@@ -5,6 +5,7 @@ keywords: network settings, configure, configuring, configuration, domain name, 
 summary: グリッドマネージャからさまざまなネットワーク設定を行い、 StorageGRID システムの動作を微調整できます。 
 ---
 = ネットワークの設定を行います
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: expand, expansion, add storage nodes, verify node is active
 summary: 新しいストレージノードを追加する拡張処理が完了すると、 StorageGRID システムは新しいストレージノードの使用を自動的に開始します。StorageGRID システムを使用して、新しいストレージノードがアクティブになっていることを確認する必要があります。 
 ---
 = ストレージノードがアクティブであることを確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

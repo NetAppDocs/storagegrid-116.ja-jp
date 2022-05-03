@@ -5,6 +5,7 @@ keywords: expand, expansion procedure
 summary: 拡張を行うと、新しいグリッドノードが既存の StorageGRID 環境に追加されます。 
 ---
 = 拡張を実行
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to view a specific alert
 summary: StorageGRID システムに現在影響しているアラートや解決されたアラートに関する詳細情報を表示できます。これには、推奨される対処方法、アラートがトリガーされた時間、アラートに関連する指標の現在の値などの情報が含まれます。 
 ---
 = 特定のアラートを表示する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, network connecti
 summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。 
 ---
 = アプライアンスのネットワーク接続（ SG6000 ）を確認する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

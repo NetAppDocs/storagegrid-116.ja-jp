@@ -5,6 +5,7 @@ keywords: verify cifs, cift audit share
 summary: 監査共有は読み取り専用です。ログファイルはコンピュータアプリケーションによって読み取られることを目的としていますが、ファイルを開けるかどうかは検証の対象に含まれていません。Windows のエクスプローラウィンドウに監査ログファイルが表示されれば、検証は十分とみなされます。接続を検証したら、すべてのウィンドウを閉じます。 
 ---
 = CIFS 監査の統合を確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

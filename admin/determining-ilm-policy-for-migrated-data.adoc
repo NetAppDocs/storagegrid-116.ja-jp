@@ -5,6 +5,7 @@ keywords: determing ilm policy, ilm for migrated data
 summary: StorageGRID システムの ILM ポリシーは、作成されるコピーの数、コピーの格納先、およびコピーの保持期間を決定します。ILM ポリシーは、オブジェクトをフィルタリングする方法、および一定の期間にわたってオブジェクトデータを管理する方法を記述した一連の ILM ルールで構成されます。 
 ---
 = 移行データの ILM ポリシーを決定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

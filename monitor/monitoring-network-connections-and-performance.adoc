@@ -5,6 +5,7 @@ keywords: monitoring, monitoring network connections, network, network performan
 summary: グリッドの動作を許可するには、グリッドノードが相互に通信できる必要があります。ノードとサイト間のネットワークの整合性、およびサイト間のネットワーク帯域幅は、効率的な運用に不可欠です。 
 ---
 = ネットワーク接続とパフォーマンスを監視します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

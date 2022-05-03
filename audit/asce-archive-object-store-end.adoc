@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ASCE, Archive Object Store End
 summary: このメッセージは、外部アーカイブストレージシステムへのコンテンツブロックの書き込みが終了したことを示します。 
 ---
 = ASCE ：アーカイブオブジェクトストアの終了
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: ha groups, best practices, high availability group options
 summary: 次の図は、 HA グループのさまざまな設定方法を示しています。各オプションには長所と短所があります。 
 ---
 = HA グループの設定オプション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

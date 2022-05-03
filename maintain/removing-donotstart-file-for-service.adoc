@@ -5,6 +5,7 @@ keywords: storagegrid, recover, donotstart file, do not start file, remove donot
 summary: サービスを開始できないようにする DoNotStart ファイルを削除するには、そのサービスを開始する必要があります。 
 ---
 = サービスの DoNotStart ファイルを削除します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

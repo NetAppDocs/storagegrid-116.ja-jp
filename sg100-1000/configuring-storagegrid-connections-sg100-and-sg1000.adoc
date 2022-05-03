@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスをノードとして StorageGRID システムに導入するには、アプライアンスと使用するネットワークの間の接続を設定する必要があります。ネットワークを設定するには、サービスアプライアンスにプリインストールされている StorageGRID アプライアンスインストーラにアクセスします。 
 ---
 = StorageGRID 接続の設定（ SG100 および SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

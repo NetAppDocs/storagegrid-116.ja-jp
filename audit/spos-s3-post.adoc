@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, SPOS, S3 POST
 summary: S3 クライアントが POST Object 要求を実行すると、トランザクションが成功した場合にサーバによってこのメッセージが生成されます。 
 ---
 = SPO ： S3 POST
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

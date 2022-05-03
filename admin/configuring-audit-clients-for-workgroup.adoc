@@ -5,6 +5,7 @@ keywords: audit client for workgroup
 summary: この手順 は、監査メッセージの取得先である StorageGRID 環境内の管理ノードごとに実行します。 
 ---
 = ワークグループの監査クライアントを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

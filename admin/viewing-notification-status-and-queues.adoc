@@ -5,6 +5,7 @@ keywords: NMS service, network management system, interface engine
 summary: 管理ノードの Network Management System （ NMS ）サービスは、メールサーバに通知を送信します。NMS サービスの現在のステータスとその通知キューのサイズは、 Interface Engine ページで確認できます。 
 ---
 = 通知のステータスとキューを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

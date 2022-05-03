@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスは、プライマリ管理ノード、非プライマリ管理ノード、またはゲートウェイノードとして導入できます。SG100 と SG1000 アプライアンスは、両方がゲートウェイノードと管理ノード（プライマリまたは非プライマリ）として同時に動作します。 
 ---
 = サービスアプライアンスノードを導入する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

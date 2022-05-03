@@ -5,6 +5,7 @@ keywords: upgrade, metadata reserved space setting
 summary: StorageGRID 11.6 にアップグレードしたあとに、ストレージノードが RAM および使用可能なスペースの特定の要件を満たしている場合は、 Metadata Reserved Space システム設定を増やすことができます。 
 ---
 = Metadata Reserved Space 設定の増加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

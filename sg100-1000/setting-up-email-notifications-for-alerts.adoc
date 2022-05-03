@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アラート発生時に E メール通知が送信されるようにするには、 BMC インターフェイスを使用して SMTP 設定、ユーザ、 LAN 宛先、アラートポリシー、およびイベントフィルタを設定する必要があります。 
 ---
 = アラート用の E メール通知を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

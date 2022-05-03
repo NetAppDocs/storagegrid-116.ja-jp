@@ -5,6 +5,7 @@ keywords: how to manage groups
 summary: テナントユーザが実行できるタスクを制御するには、ユーザグループに権限を割り当てます。Active Directory や OpenLDAP などのアイデンティティソースからフェデレーテッドグループをインポートすることも、ローカルグループを作成することもできます。 
 ---
 = グループを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

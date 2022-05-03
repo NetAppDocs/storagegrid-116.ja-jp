@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object deletion
 summary: S3 クライアントがストレージノード \ （ LDR サービス \ ）からオブジェクトを削除すると、監査メッセージが生成されて監査ログに保存されます。 
 ---
 = 例： S3 オブジェクトの削除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: remove kms, remove key management server
 summary: 場合によっては、キー管理サーバの削除が必要になることがあります。たとえば、サイトの運用を停止した場合は、サイト固有の KMS を削除できます。 
 ---
 = キー管理サーバ（ KMS ）を削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

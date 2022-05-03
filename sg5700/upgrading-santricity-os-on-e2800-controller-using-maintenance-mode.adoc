@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, controller, e280
 summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているストレージコントローラの場合、アップグレードを適用するにはメンテナンスモードの手順 を使用する必要があります。 
 ---
 = E2800 コントローラでメンテナンスモードを使用して SANtricity OS をアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

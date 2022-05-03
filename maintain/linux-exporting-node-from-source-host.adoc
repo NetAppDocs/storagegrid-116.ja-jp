@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, export node, linux source host
 summary: グリッドノードをシャットダウンして、ソースの Linux ホストからエクスポートします。 
 ---
 = Linux ：ソースホストからノードをエクスポートします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

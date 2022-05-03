@@ -5,6 +5,7 @@ keywords: edit kms, edit key management server, change kms configuration, expire
 summary: 証明書の有効期限が近づいている場合など、キー管理サーバの設定の編集が必要になることがあります。 
 ---
 = キー管理サーバ（ KMS ）を編集する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

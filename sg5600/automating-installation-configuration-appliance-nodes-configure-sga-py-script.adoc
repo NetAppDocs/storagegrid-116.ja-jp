@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, automate, automa
 summary: configure-sga.py スクリプトを使用すると、プライマリ管理ノードのインストールや設定など、 StorageGRID アプライアンスノードのインストールタスクや設定タスクの多くを自動化できます。このスクリプトは、設定するアプライアンスが多数ある場合に役立ちます。スクリプトを使用して、アプライアンスの設定情報を含む JSON ファイルを生成することもできます。 
 ---
 = configure-sga.py スクリプトを使用して、アプライアンスノードのインストールと設定を自動化します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, replace non-primary admin node, replacing non-pr
 summary: 非プライマリ管理ノードをリカバリするには、まず物理または仮想ハードウェアの交換が必要です。 
 ---
 = 非プライマリ管理ノードを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

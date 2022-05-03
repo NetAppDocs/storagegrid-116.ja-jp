@@ -5,6 +5,7 @@ keywords: example ILM rule, information lifecycle rule examples
 summary: 次のルールとポリシーの例を使用して、 1MB を超えるイメージをイレイジャーコーディングし、小さいイメージから 2 つのコピーを作成することができます。 
 ---
 = 例 3 ：画像ファイルの保護を強化する ILM ルールとポリシー
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

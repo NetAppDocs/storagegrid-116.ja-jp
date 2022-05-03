@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, remapping, remap
 summary: アプライアンスストレージノードの内部ポートを別の外部ポートに再マッピングすることが必要になる場合があります。たとえば、ファイアウォールの問題 が原因でポートの再マッピングが必要になることがあります。 
 ---
 = オプション：アプライアンスのネットワークポートの再マッピング
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

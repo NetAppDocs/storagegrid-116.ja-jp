@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, email, notificat
 summary: SANtricity Storage Manager では、アプライアンスのステータスまたはいずれかのコンポーネントが変わったときに通知を受け取ることができます。これはアラート通知と呼ばれます。アラート通知は、 E メールと SNMP トラップの 2 つの方法で受信できます。受信するアラート通知を設定する必要があります。 
 ---
 = E メールおよび SNMP トラップのアラート通知を設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

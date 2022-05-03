@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, maintain, mainta
 summary: E2700 コントローラ上の SANtricity OS ソフトウェアのアップグレード、 E2700 コントローラまたは E5600SG コントローラの交換、または特定のコンポーネントの交換が必要となる場合があります。このセクションの手順は、アプライアンスが StorageGRID システムにストレージノードとしてすでに導入されていることを前提としています。 
 ---
 = SG5600 アプライアンスのメンテナンス
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, upgradi
 summary: ドライブファームウェアをアップグレードして、最新の機能とバグ修正をすべて適用します。 
 ---
 = SANtricity System Manager を使用してドライブファームウェアをアップグレードします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

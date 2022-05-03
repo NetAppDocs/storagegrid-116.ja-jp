@@ -5,6 +5,7 @@ keywords: archive node, tsm server, tivoli storage manager, archive store
 summary: アーカイブノードが TSM ミドルウェアサーバに接続している場合は、アーカイブノードのアーカイブストアの状態をオンラインまたはオフラインに設定できます。また、アーカイブノードの初回起動時にアーカイブストアを無効にしたり、関連するアラーム用に追跡されているエラー数をリセットしたりすることもできます。 
 ---
 = TSM のアーカイブ状態とカウンタを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

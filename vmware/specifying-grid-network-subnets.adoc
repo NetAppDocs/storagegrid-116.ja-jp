@@ -5,6 +5,7 @@ keywords: how to specify Grid Network subnets
 summary: グリッドネットワークで使用されるサブネットを指定する必要があります。 
 ---
 = Grid ネットワークサブネットを指定してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

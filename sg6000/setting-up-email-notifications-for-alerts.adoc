@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, email, notificat
 summary: アラート発生時に E メール通知が送信されるようにするには、 BMC インターフェイスを使用して SMTP 設定、ユーザ、 LAN 宛先、アラートポリシー、およびイベントフィルタを設定する必要があります。 
 ---
 = アラート用の E メール通知を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

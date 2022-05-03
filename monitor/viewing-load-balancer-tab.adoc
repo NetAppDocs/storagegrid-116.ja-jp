@@ -5,6 +5,7 @@ keywords: load balancer tab
 summary: ロードバランサのタブには、ロードバランササービスの動作に関連するパフォーマンスグラフと診断グラフが表示されます。 
 ---
 = Load Balancer タブを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

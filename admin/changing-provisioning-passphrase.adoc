@@ -5,6 +5,7 @@ keywords: provisioning passphrase, change passphrase
 summary: この手順 を使用して、 StorageGRID プロビジョニングパスフレーズを変更します。パスフレーズは、リカバリ、拡張、およびメンテナンスの手順で必要になります。また、リカバリパッケージのバックアップをダウンロードする際にも、 StorageGRID システムのグリッドトポロジ情報、グリッドノードのコンソールパスワード、暗号化キーが含まれている必要があります。 
 ---
 = プロビジョニングパスフレーズを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

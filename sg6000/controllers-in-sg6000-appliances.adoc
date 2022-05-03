@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, controller, cont
 summary: StorageGRID SG6000 アプライアンスの各モデルには、 1U エンクロージャに SG6000-CN コンピューティングコントローラが搭載され、 2U または 4U エンクロージャにデュプレックス E シリーズストレージコントローラが搭載されています。各タイプのコントローラの詳細については、次の図を確認してください。 
 ---
 = SG6000 アプライアンスのコントローラ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

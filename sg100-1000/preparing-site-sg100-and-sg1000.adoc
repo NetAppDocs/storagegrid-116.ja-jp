@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: アプライアンスを設置する前に、設置場所および使用するキャビネットやラックが StorageGRID アプライアンスの仕様を満たしていることを確認する必要があります。 
 ---
 = サイトの準備（ SG100 および SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: edit storage pool
 summary: ストレージプールを編集して、名前を変更したり、サイトやストレージグレードを更新したりできます。 
 ---
 = ストレージプールを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

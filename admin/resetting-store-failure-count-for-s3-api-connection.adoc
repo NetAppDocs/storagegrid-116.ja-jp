@@ -5,6 +5,7 @@ keywords: archive node, store failure count
 summary: アーカイブノードが S3 API 経由でアーカイブストレージシステムに接続している場合は、ストア障害数をリセットでき、 ARVF \ （ Store Failures \ ）アラームをクリアできます。 
 ---
 = S3 API 接続のストア障害数をリセットします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

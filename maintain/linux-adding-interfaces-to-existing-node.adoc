@@ -5,6 +5,7 @@ keywords: add interfaces, add client network interface, add admin network interf
 summary: 管理ネットワークまたはクライアントネットワーク上のインターフェイスをインストールしたあとに Linux ノードに追加するには、次の手順を実行します。 
 ---
 = Linux ：既存のノードに管理インターフェイスまたはクライアントインターフェイスを追加
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

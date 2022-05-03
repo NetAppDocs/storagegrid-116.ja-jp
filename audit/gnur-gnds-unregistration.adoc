@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, GNUR, GNDS Unregistration
 summary: CMN サービスは、 StorageGRID システムから CMN サービスに関する情報の登録を解除したときにこの監査メッセージを生成します。 
 ---
 = GNUR ： GNDS 登録解除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

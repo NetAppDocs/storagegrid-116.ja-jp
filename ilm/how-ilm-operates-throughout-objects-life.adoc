@@ -5,6 +5,7 @@ keywords: ilm lifecycle, object lifecycle and ILM
 summary: StorageGRID での ILM を使用したオブジェクト管理方法を理解することは、ポリシーをより効果的に設計するうえで役立ちます。 
 ---
 = オブジェクトのライフサイクル全体にわたる ILM の動作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

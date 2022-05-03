@@ -5,6 +5,7 @@ keywords: storagegrid, add do not start file, adding do not start file, service
 summary: 個別のサービスが開始しないようにするには、グリッドノードのそのサービスのディレクトリに DoNotStart ファイルを追加します。 
 ---
 = サービスの DoNotStart ファイルを追加します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

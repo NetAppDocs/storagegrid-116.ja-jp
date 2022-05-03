@@ -5,6 +5,7 @@ keywords: using S3 object lock, object lock, S3 object
 summary: StorageGRID システムでグローバルな S3 オブジェクトのロック設定が有効になっている場合は、 S3 オブジェクトのロックを有効にしたバケットを作成し、そのバケットに追加するオブジェクトのバージョンごとに retain-until date および legal hold 設定を指定できます。 
 ---
 = S3 オブジェクトロックを使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

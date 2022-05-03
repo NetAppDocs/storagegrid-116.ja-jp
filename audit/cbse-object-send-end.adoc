@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, CBSE, Object Send End
 summary: このメッセージは、あるノードから別のノードへのコンテンツブロックの転送が完了したときに転送元のエンティティによって生成されます。 
 ---
 = CBSE ：オブジェクト送信終了
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

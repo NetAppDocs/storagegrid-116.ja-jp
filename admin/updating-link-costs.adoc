@@ -5,6 +5,7 @@ keywords: link costs, latency between sites
 summary: データセンターサイト間のリンクコストを更新して、サイト間のレイテンシを反映させることができます。 
 ---
 = リンクコストを更新します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

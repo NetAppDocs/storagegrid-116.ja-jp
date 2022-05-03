@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: ネットワーク・ケーブルを接続したら、アプライアンスに電源を投入できます。 
 ---
 = 電源コードを接続して電源を投入（ SG100 および SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

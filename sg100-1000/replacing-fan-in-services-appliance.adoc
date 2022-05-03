@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: サービスアプライアンスには、 8 つの冷却ファンがあります。いずれかのファンで障害が発生した場合は、アプライアンスの冷却が適切に行われるように、できるだけ早く交換する必要があります。 
 ---
 = サービスアプライアンスのファンを交換します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

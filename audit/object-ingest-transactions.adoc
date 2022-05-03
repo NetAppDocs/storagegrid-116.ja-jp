@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, transaction, transactions, Obje
 summary: 監査ログでクライアントの取り込みトランザクションを特定するには、 API 固有の監査メッセージ（ S3 または Swift ）を検索します。 
 ---
 = オブジェクトの取り込みトランザクション
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

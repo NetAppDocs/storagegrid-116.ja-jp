@@ -5,6 +5,7 @@ keywords: domain policy, tsm, tivoli storage manager
 summary: アーカイブノードから保存されたデータ用に TSM 管理クラスを使用するドメインポリシーを定義し、そのドメインポリシーを使用するようにノードを登録する必要があります。 
 ---
 = ドメインポリシーを定義し、ノードを登録します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

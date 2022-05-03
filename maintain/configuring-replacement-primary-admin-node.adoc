@@ -5,6 +5,7 @@ keywords: storagegrid, primary admin node, replace primary admin node, replacing
 summary: 交換用ノードは、 StorageGRID システムのプライマリ管理ノードとして設定する必要があります。 
 ---
 = 交換用プライマリ管理ノードを設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

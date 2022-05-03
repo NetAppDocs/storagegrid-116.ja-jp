@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node failure
 summary: アーカイブノードの障害からリカバリするには、一連のタスクを正しい順序で実行する必要があります。 
 ---
 = アーカイブノードの障害からリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

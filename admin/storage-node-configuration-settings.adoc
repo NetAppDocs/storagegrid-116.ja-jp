@@ -5,6 +5,7 @@ keywords: storage node, configuration settings, counters
 summary: 各ストレージノードは、いくつかの設定とカウンタを使用します。アラームをクリアするために、現在の設定の表示やカウンタのリセットが必要になる場合があります（レガシーシステム）。 
 ---
 = ストレージノード設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

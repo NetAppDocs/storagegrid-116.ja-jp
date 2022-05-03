@@ -5,6 +5,7 @@ keywords: FabricPool, requirements, ILM, information lifecycle management, ILM r
 summary: FabricPool を使用して StorageGRID にデータを階層化する場合は、 StorageGRID 情報ライフサイクル管理（ ILM ）ルールおよび FabricPool データを管理するための ILM ポリシーの作成に関する要件を理解しておく必要があります。FabricPool データに適用される ILM ルールがシステム停止を伴わないようにする必要があります。 
 ---
 = StorageGRID の情報ライフサイクル管理と FabricPool のデータを使用できます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

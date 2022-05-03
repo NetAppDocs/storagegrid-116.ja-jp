@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, GET bucket consistency request
 summary: GET Bucket consistency 要求を使用すると、特定のバケットに適用されている整合性レベルを確認できます。 
 ---
 = GET Bucket consistency 要求を実行します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

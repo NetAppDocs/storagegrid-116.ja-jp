@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, links, network l
 summary: アプライアンスをグリッドネットワーク、クライアントネットワーク、および管理ネットワークに接続するために使用するポートのネットワークリンクを設定できます。リンク速度およびポートボンディングモードとネットワークボンディングモードを設定できます。 
 ---
 = ネットワークリンクの設定（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

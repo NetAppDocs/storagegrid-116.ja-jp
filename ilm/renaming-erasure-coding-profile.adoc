@@ -5,6 +5,7 @@ keywords: rename erasure coding profile, ec profile
 summary: イレイジャーコーディングプロファイルの名前を変更して、プロファイルの内容をより明確にすることができます。 
 ---
 = イレイジャーコーディングプロファイルの名前を変更する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

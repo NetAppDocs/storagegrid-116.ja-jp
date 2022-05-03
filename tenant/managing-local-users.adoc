@@ -5,6 +5,7 @@ keywords: StorageGRID, tenant, tenant manager, users, local users, managing loca
 summary: ローカルユーザを作成してローカルグループに割り当て、ユーザがアクセスできる機能を決定することができます。Tenant Manager には、「 root 」という名前の事前定義されたローカルユーザが 1 つ含まれています。 ローカルユーザは追加および削除できますが、 root ユーザを削除することはできません。 
 ---
 = ローカルユーザを管理します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

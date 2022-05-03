@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, SANtricity Stora
 summary: SANtricity Storage Manager を使用して、 StorageGRID アプライアンスのストレージディスクおよびハードウェアコンポーネントのステータスを監視できます。このソフトウェアにアクセスするには、 E2700 コントローラ（アプライアンスのストレージコントローラ）の管理ポート 1 の IP アドレスが必要です。 
 ---
 = SANtricity Storage Manager を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, adc, adc quorum
 summary: 運用停止後に残る Administrative Domain Controller （ ADC ）サービスが少なすぎる場合は、データセンターサイトの一部のストレージノードの運用を停止できないことがあります。一部のストレージノードで使用されるこのサービスは、グリッドトポロジ情報を保持し、設定サービスをグリッドに提供します。StorageGRID システムでは、各サイトで ADC サービスのクォーラムが常に利用可能である必要があります。 
 ---
 = ADC クォーラムを把握します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to configure search integration service
 summary: 検索統合サービスでは、オブジェクトが作成、削除、またはそのメタデータ / タグが更新されるたびに、デスティネーションの検索インデックスにオブジェクトメタデータが送信されます。 
 ---
 = 検索統合サービスを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

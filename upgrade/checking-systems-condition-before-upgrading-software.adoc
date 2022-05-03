@@ -5,6 +5,7 @@ keywords: upgrade, grid tasks, firewall, ports
 summary: StorageGRID システムをアップグレードする前に、システムがアップグレードできる状態にあることを確認する必要があります。システムが正常に稼働し、すべてのグリッドノードが動作している必要があります。 
 ---
 = システムの状態を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

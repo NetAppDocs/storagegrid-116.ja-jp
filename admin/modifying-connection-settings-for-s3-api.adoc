@@ -5,6 +5,7 @@ keywords: archive node, cloud tiering
 summary: S3 API を使用して外部のアーカイブストレージシステムに接続するようにアーカイブノードを設定したあとで接続が変更された場合、一部の設定を変更できます。 
 ---
 = S3 API の接続設定を変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

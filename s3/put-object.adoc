@@ -5,6 +5,7 @@ keywords: object, add object, put, put object request
 summary: S3 PUT Object 要求を使用すると、オブジェクトをバケットに追加できます。 
 ---
 = PUT Object の場合
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

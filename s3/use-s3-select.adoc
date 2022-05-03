@@ -5,6 +5,7 @@ keywords: use S3 Select, S3 Select
 summary: StorageGRID では、 select Object content コマンドで、次の AWS S3 Select 句、データ型、演算子、およびリザーブキーワードがサポートされています。 
 ---
 = S3 Select を使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

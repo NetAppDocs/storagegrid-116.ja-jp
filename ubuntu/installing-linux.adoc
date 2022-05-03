@@ -5,6 +5,7 @@ keywords: how to install Linux
 summary: Ubuntu または Debian をすべてのグリッドホストにインストールする必要があります。サポートされているバージョンの一覧については、 NetApp Interoperability Matrix Tool を参照してください。 
 ---
 = Linux をインストールします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

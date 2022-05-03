@@ -5,6 +5,7 @@ keywords: storagegrid, appliance node cloning, appliance node clone
 summary: アプライアンスノードのクローニングを使用すると、グリッド内の既存のアプライアンスノード（ソース）を、同じ論理 StorageGRID サイトに含まれる互換性のあるアプライアンス（ターゲット）に簡単に置き換えることができます。このプロセスでは、すべてのデータが新しいアプライアンスに転送され、古いアプライアンスノードを交換するためにアプライアンスが稼働中になり、古いアプライアンスは設置前の状態になります。 
 ---
 = アプライアンスノードのクローニングの仕組み
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

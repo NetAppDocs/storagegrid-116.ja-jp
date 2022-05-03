@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node connection, reset archive node conn
 summary: S3 API 経由でクラウドをターゲットとして使用するアーカイブノードをリカバリしたら、設定を変更して接続をリセットする必要があります。アーカイブノードがオブジェクトデータを読み出せない場合、 Outbound Replication Status \ （ ORSU\ ）アラームがトリガーされます。 
 ---
 = アーカイブノードからクラウドへの接続をリセットします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: cmn service, primary admin node, configuration management node
 summary: プライマリ管理ノードは CMN サービスをホストします。一部のメンテナンス手順は、プライマリ管理ノードでしか実行できません。 
 ---
 = プライマリ管理ノードを特定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: snmp, simple network management protocol, agent, trap, inform, mib
 summary: 簡易ネットワーク管理プロトコル（ SNMP ）を使用して StorageGRID を監視する場合は、グリッドマネージャを使用して SNMP エージェントを設定できます。 
 ---
 = SNMP による監視を使用する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

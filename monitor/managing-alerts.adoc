@@ -5,6 +5,7 @@ keywords: alert rules, managing alerts, alerts, alert notifications. edit alert 
 summary: アラートを使用すると、 StorageGRID システム内のさまざまなイベントや状態を監視できます。アラートの管理では、カスタムアラートの作成、デフォルトアラートの編集または無効化、アラート用の E メール通知の設定、アラート通知のサイレント化を行うことができます。 
 ---
 = アラートの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

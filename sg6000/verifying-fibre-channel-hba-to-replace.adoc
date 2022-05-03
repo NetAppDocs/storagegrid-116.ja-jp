@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, 
 summary: 交換するファイバ・チャネル・ホスト・バス・アダプタ（ HBA\ ）が不明な場合は、この手順 を使用して識別します。 
 ---
 = 交換するファイバチャネル HBA を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: monitor, monitoring events, events, storageGRID events
 summary: グリッドノードによって検出されたイベントを監視できます。これには、 syslog サーバに記録されたイベントを追跡するために作成したカスタムイベントも含まれます。グリッドマネージャに表示される Last Event メッセージには、最新のイベントに関する詳細が表示されます。 
 ---
 = イベントを監視する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

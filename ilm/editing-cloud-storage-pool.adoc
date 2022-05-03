@@ -5,6 +5,7 @@ keywords: edit cloud storage pool
 summary: クラウドストレージプールを編集して、名前、サービスエンドポイント、またはその他の詳細を変更できます。ただし、クラウドストレージプールの S3 バケットまたは Azure コンテナを変更することはできません。 
 ---
 = クラウドストレージプールを編集します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

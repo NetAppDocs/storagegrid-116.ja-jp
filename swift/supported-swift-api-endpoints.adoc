@@ -5,6 +5,7 @@ keywords: swift api endpoint support
 summary: StorageGRID でサポートされている Swift API エンドポイントは、情報 URL 、認証 URL 、およびストレージ URL です。 
 ---
 = サポートされている Swift API エンドポイント
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

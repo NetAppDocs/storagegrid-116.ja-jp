@@ -5,6 +5,7 @@ keywords: global S3 and Swift API certificate
 summary: ストレージノードへの S3 または Swift クライアント接続、ゲートウェイノード上で廃止された CLB サービス、またはロードバランサエンドポイントに使用するサーバ証明書を交換またはリストアすることができます。置き換え用のカスタムサーバ証明書は組織に固有のものです。 
 ---
 = S3 および Swift API 証明書を設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

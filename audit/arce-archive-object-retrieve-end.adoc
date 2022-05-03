@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ARCE, Archive Object Retrieve End
 summary: このメッセージは、アーカイブノードが外部アーカイブストレージシステムからオブジェクトデータを読み出す試行が完了したときに生成されます。成功した場合、メッセージには、要求されたオブジェクトデータがアーカイブ先から完全に読み取られ、検証に成功したことが示されます。読み出しと検証が完了すると、オブジェクトデータは要求元のサービスに配信されます。 
 ---
 = ARCE ：アーカイブオブジェクトの読み出しが終了しました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

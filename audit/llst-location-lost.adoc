@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, LLST, Location Lost
 summary: このメッセージは、オブジェクトコピーの場所（レプリケートまたはイレイジャーコーディング）が見つからない場合に生成されます。 
 ---
 = LLST ：ロケーションが失われました
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

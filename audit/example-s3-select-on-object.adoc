@@ -5,6 +5,7 @@ keywords: S3 Select, object retrieval
 summary: S3 クライアントがオブジェクトに対して S3 Select クエリを実行すると、監査メッセージが生成されて監査ログに保存されます。 
 ---
 = 例：オブジェクトの S3 Select
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

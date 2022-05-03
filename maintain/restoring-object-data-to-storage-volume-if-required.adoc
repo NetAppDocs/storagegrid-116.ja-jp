@@ -5,6 +5,7 @@ keywords: restore replicated data, restore erasure coded data, recover storage n
 summary: 障害ストレージボリュームの 1 つ以上を再フォーマットするために sn-recovery-postinstall.sh スクリプトが必要な場合は、他のストレージノードとアーカイブノードから再フォーマットされたストレージボリュームにオブジェクトデータをリストアする必要があります。これらの手順は、 1 つ以上のストレージボリュームを再フォーマットしないかぎり必要ありません。 
 ---
 = 必要に応じて、オブジェクトデータをストレージボリュームにリストア
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

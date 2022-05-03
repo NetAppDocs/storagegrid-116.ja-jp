@@ -5,6 +5,7 @@ keywords: CIFS audit share, change group name, change use for CIFS
 summary: CIFS 監査共有のユーザまたはグループの名前を変更するには、新しいユーザまたはグループを追加してから古いユーザまたはグループを削除します。 
 ---
 = CIFS 監査共有のユーザ名またはグループ名を変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

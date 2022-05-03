@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, features
 summary: StorageGRID SG5600 アプライアンスは、 StorageGRID システムの新規作成や既存システムの容量の拡張に使用できる統合ストレージ解決策 です。 
 ---
 = StorageGRID アプライアンスの特長
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

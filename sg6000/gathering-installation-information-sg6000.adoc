@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance StorageGRID, inst
 summary: StorageGRID アプライアンスを設置および設定する際に、イーサネットスイッチポート、 IP アドレス、およびポートとネットワークのボンディングモードについて決定し、関連情報を収集する必要があります。 
 ---
 = 設置情報（ SG6000 ）の収集
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

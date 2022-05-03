@@ -5,6 +5,7 @@ keywords: storagegrid, recovery package
 summary: リカバリパッケージファイルを使用すると、障害発生時に StorageGRID システムをリストアできます。 
 ---
 = リカバリパッケージをダウンロード
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

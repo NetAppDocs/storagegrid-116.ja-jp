@@ -5,6 +5,7 @@ keywords: upgrade, troubleshoot, troubleshooting, errors, upgrade precheck
 summary: アップグレードが正常に完了しない場合は、問題 を自分で解決できることがあります。問題 を解決できない場合は、テクニカルサポートに連絡する前に、必要な情報を収集する必要があります。 
 ---
 = アップグレードが完了しない
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

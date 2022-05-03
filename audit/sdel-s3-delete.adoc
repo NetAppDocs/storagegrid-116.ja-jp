@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, SDEL, S3 DELETE
 summary: S3 クライアントが DELETE トランザクションを実行すると、指定したオブジェクトまたはバケットを削除する要求が送信されます。このメッセージは、トランザクションが成功した場合にサーバによって出力されます。 
 ---
 = SDEL ： S3 DELETE
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

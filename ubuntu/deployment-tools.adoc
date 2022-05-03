@@ -5,6 +5,7 @@ keywords: deployment tools
 summary: StorageGRID のインストールのすべてまたは一部を自動化するとメリットが得られる場合があります。 
 ---
 = 導入ツール
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

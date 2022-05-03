@@ -5,6 +5,7 @@ keywords: what is a storage grade, create storage grade
 summary: ストレージグレードは、ストレージノードで使用されているストレージのタイプを表します。サイトのすべてのノードではなく、特定のストレージノードに特定のオブジェクトを配置するように ILM ルールを設定する場合は、ストレージグレードを作成します。たとえば、 StorageGRID オールフラッシュストレージアプライアンスなどの最速のストレージノードに特定のオブジェクトを格納できます。 
 ---
 = ストレージグレードを作成して割り当てます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

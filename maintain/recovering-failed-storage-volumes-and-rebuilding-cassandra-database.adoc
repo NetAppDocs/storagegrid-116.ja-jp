@@ -5,6 +5,7 @@ keywords: storagegrid, recover, maintenance, maintain, failed storage volumes, f
 summary: 障害が発生したストレージボリュームでストレージを再フォーマットして再マウントするスクリプトを実行し、システムが必要であると判断した場合にはストレージノードの Cassandra データベースを再構築する必要があります。 
 ---
 = 障害ストレージボリュームをリカバリし、 Cassandra データベースを再構築します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

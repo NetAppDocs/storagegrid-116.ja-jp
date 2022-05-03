@@ -5,6 +5,7 @@ keywords: search integration, configuration xml, metadata notification, containe
 summary: 検索統合サービスは、 <MetadataNotificationConfiguration\> タグと </MetadataNotificationConfiguration\> タグに含まれる一連のルールを使用して設定します。各ルールは、ルール環境 が作成するオブジェクト、および StorageGRID がそのオブジェクトのメタデータを送信する宛先を指定します。 
 ---
 = 検索統合用の XML を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

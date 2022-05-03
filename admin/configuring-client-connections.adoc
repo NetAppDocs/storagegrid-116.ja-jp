@@ -5,6 +5,7 @@ keywords: s3 connection, swift connection, connect to storagegrid
 summary: グリッド管理者は設定オプションを管理して、 S3 および Swift テナントがクライアントアプリケーションを StorageGRID システムに接続してデータの格納と読み出しを行う方法を制御します。クライアントとテナントのさまざまな要件を満たすために、多数のオプションが用意されています。 
 ---
 = S3 および Swift クライアント接続について
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

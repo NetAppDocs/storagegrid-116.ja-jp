@@ -5,6 +5,7 @@ keywords: use cloud storage pool, benefits of cloud storage pools
 summary: クラウドストレージプールは、いくつかのユースケースで大きなメリットをもたらします。 
 ---
 = クラウドストレージプールを使用する状況
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

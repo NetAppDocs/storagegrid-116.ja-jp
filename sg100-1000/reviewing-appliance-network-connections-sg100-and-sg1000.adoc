@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID アプライアンスを設置する前に、アプライアンスに接続できるネットワークを確認しておく必要があります。 
 ---
 = アプライアンスのネットワーク接続（ SG100 および SG1000 ）の確認
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

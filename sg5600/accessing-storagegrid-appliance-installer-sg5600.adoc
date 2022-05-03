@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, appliance instal
 summary: アプライアンスと 3 つの StorageGRID ネットワーク（グリッドネットワーク、管理ネットワーク（オプション）、クライアントネットワーク（オプション））の間の接続を設定するには、 StorageGRID アプライアンスインストーラにアクセスする必要があります。 
 ---
 = StorageGRID アプライアンスインストーラにアクセスします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

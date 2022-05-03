@@ -5,6 +5,7 @@ keywords: how to configure CloudMirror replication, replication xml
 summary: CloudMirror レプリケーションサービスは、 3 つの StorageGRID プラットフォームサービスのいずれかです。CloudMirror レプリケーションを使用すると、外部の S3 バケットにオブジェクトを自動的にレプリケートできます。 
 ---
 = CloudMirror レプリケーションを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

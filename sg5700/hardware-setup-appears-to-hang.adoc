@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, troubleshoot, tr
 summary: ハードウェア障害やケーブル接続エラーによって E5700SG コントローラのブート処理が完了しなかった場合、 StorageGRID アプライアンスインストーラを使用できないことがあります。 
 ---
 = ハードウェアのセットアップがハングしたように見える（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

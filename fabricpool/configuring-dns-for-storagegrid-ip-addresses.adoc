@@ -5,6 +5,7 @@ keywords: fabricPool, DNS, domain name system, FQDN, fully qualified domain name
 summary: ハイアベイラビリティグループとロードバランサエンドポイントを設定したら、 ONTAP システムのドメインネームシステム（ DNS\ ）に、 FabricPool が接続に使用する IP アドレスに StorageGRID サーバ名 \ （完全修飾ドメイン名 \ ）を関連付けるレコードが含まれていることを確認する必要があります。 
 ---
 = StorageGRID IP アドレス用の DNS サーバを設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, hardware, instal
 summary: ハードウェアの設置作業では、アプライアンスをキャビネットまたはラックに設置し、ケーブルを接続し、電源を投入します。 
 ---
 = ハードウェアの設置（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

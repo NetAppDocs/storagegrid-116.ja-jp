@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, verify, verifica
 summary: テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムの AutoSupport のステータスは、 Active IQ ポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。 
 ---
 = AutoSupport の受信を確認します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, repla
 summary: E2800 コントローラが適切に機能しない場合や障害が発生した場合は、交換が必要となることがあります。 
 ---
 = E2800 コントローラを交換
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configure kms, key management server
 summary: KMS を StorageGRID に追加する前に、各外部キー管理サーバまたは KMS クラスタのクライアントとして StorageGRID を設定する必要があります。 
 ---
 = KMS でクライアントとして StorageGRID を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

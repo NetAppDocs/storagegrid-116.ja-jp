@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, sg6000-cn, storage node, storage appliance, BMC, 
 summary: SG6000-CN コントローラのベースボード管理コントローラ（ BMC\ ）のユーザインターフェイスは、ハードウェアに関するステータス情報を提供し、 SG6000-CN コントローラの SNMP 設定やその他のオプションを設定できます。 
 ---
 = BMC インターフェイス（ SG6000 ）の設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

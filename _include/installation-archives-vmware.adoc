@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 「 StorageGRIDWebscale--_version__ vmware --uniqueID_.zip 」を参照してください

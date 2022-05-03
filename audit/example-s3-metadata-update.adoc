@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, Metadata Update
 summary: 次の例は、既存の S3 オブジェクトのメタデータを更新するトランザクションの成功を示しています。 
 ---
 = 例： S3 メタデータの更新
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to automate red hat linux installation
 summary: StorageGRID ホストサービスのインストールおよびグリッドノードの設定を自動化することができます。 
 ---
 = インストールの自動化（ Red Hat Enterprise Linux または CentOS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

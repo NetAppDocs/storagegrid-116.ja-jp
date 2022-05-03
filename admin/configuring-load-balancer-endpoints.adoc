@@ -5,6 +5,7 @@ keywords: how to configure load balancer endpoint, how to attach certificate to 
 summary: ゲートウェイノードと管理ノードの StorageGRID ロードバランサに接続する際に使用できるポートとネットワークプロトコル S3 / Swift クライアントは、ロードバランサエンドポイントで決まります。 
 ---
 = ロードバランサエンドポイントを設定する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

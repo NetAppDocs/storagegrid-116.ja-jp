@@ -5,6 +5,7 @@ keywords: restore replicated data, restore erasure coded data, recover appliance
 summary: アプライアンスストレージノードのストレージボリュームをリカバリしたら、ストレージノードの障害で失われたオブジェクトデータをリストアできます。 
 ---
 = アプライアンスのストレージボリュームにオブジェクトデータをリストアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

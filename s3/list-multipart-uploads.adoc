@@ -5,6 +5,7 @@ keywords: list multipart uploads, uploads, multipart uploads, bucket
 summary: List Multipart Uploads 処理では、バケットの進行中のマルチパートアップロードがリストされます。 
 ---
 = マルチパートアップロードをリストします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

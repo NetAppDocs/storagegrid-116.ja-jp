@@ -5,6 +5,7 @@ keywords: cloud tiering
 summary: クラウド階層化サービスの状態を変更することで、 S3 API を介して接続する外部アーカイブストレージシステムに対してアーカイブノードが読み取りおよび書き込みできるかどうかを制御できます。 
 ---
 = クラウドの階層化サービスの状態を変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: what is a storage pool
 summary: ストレージプールは、ストレージノードまたはアーカイブノードを論理的にグループ化したものです。ストレージプールの設定で、 StorageGRID システムがオブジェクトデータを格納する場所と、使用するストレージのタイプを決定します。 
 ---
 = ストレージプールとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

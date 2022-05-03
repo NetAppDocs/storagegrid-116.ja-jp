@@ -5,6 +5,7 @@ keywords: domain policy for tsm, tivoli storage manager policy
 summary: アーカイブノードから送信されたデータを保存するように TSM サーバを設定するには、ドメインポリシーを作成してアクティブ化する必要があります。 
 ---
 = ドメインポリシーを作成してアクティブ化します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

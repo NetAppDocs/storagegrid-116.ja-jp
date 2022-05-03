@@ -5,6 +5,7 @@ keywords: swift rest api operations
 summary: StorageGRID システム固有の処理が Swift REST API に追加されています。 
 ---
 = StorageGRID の Swift REST API 処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

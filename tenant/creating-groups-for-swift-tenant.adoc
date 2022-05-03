@@ -5,6 +5,7 @@ keywords: how to create Swift tenant groups
 summary: Swift テナントアカウントに対するアクセス権限を管理するには、フェデレーテッドグループをインポートするか、ローカルグループを作成します。Swift テナントアカウントのコンテナとオブジェクトを管理するには、少なくとも 1 つのグループが Swift 管理者権限を持っている必要があります。 
 ---
 = Swift テナント用のグループを作成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

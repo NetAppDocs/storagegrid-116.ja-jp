@@ -5,6 +5,7 @@ keywords: how to view resolved alerts
 summary: 解決済みのアラートの履歴を検索して確認できます。 
 ---
 = 解決済みのアラートを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

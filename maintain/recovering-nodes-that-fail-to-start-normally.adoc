@@ -5,6 +5,7 @@ keywords: storagegrid, recover, node did not start, node fail to start
 summary: グリッドに正常に再参加できずリカバリ可能と表示されない StorageGRID ノードは破損している可能性があります。ノードを強制的にリカバリモードに設定することができます。 
 ---
 = 正常に開始しないノードをリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

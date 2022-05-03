@@ -5,6 +5,7 @@ keywords: remove cloud storage pool
 summary: ILM ルールで使用されておらず、オブジェクトデータが含まれていないクラウドストレージプールを削除できます。 
 ---
 = クラウドストレージプールを削除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

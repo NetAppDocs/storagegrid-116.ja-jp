@@ -5,6 +5,7 @@ keywords: manage high availability group, ha groups, admin node, gateway node, a
 summary: 複数の管理ノードとゲートウェイノードのネットワークインターフェイスをハイアベイラビリティグループ（ HA\ ）にグループ化できます。HA グループのアクティブインターフェイスで障害が発生した場合、バックアップインターフェイスがワークロードを管理できます。 
 ---
 = ハイアベイラビリティ（ HA ）グループの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

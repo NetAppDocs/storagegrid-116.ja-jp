@@ -5,6 +5,7 @@ keywords: archive node connection to tsm, tivoli storage manager
 summary: アーカイブノードが Tivoli Storage Manager \ （ TSM ）ミドルウェアと通信するためには、いくつかの設定を行う必要があります。 
 ---
 = TSM ミドルウェアへの接続を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

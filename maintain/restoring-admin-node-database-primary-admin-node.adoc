@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore admin node database, restore database, p
 summary: 障害が発生したプライマリ管理ノードの属性、アラーム、およびアラートの履歴情報を維持したい場合は、管理ノードデータベースをリストアします。このデータベースをリストアできるのは、 StorageGRID システムに別の管理ノードがある場合のみです。 
 ---
 = プライマリ管理ノードをリカバリする際に管理ノードデータベースをリストアする
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

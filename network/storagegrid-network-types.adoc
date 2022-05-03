@@ -5,6 +5,7 @@ keywords: network types, grid traffic, admin traffic, client traffic, grid netwo
 summary: StorageGRID システムのグリッドノードは、グリッドトラフィック、管理トラフィック、およびクライアントトラフィックを処理します。この 3 種類のトラフィックを管理し、制御とセキュリティを提供するには、ネットワークを適切に設定する必要があります。 
 ---
 = StorageGRID のネットワークタイプ
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

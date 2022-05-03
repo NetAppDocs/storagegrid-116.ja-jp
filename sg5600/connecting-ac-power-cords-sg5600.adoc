@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, wire, wiring, ca
 summary: AC 電源コードを外部電源と各コントローラの AC 電源コネクタに接続する必要があります。電源コードを接続したら、電源をオンにできます。 
 ---
 = AC 電源コードの接続（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

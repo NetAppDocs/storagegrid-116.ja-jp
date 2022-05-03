@@ -5,6 +5,7 @@ keywords: system settings, grid manager, configure, configuration, display optio
 summary: グリッドマネージャからさまざまなシステム設定を行い、 StorageGRID システムの動作を微調整できます。 
 ---
 = システム設定を構成します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage pool guidelines
 summary: ストレージプールを設定して使用する場合は、次のガイドラインに従ってください。 
 ---
 = ストレージプールの作成に関するガイドラインを次に示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

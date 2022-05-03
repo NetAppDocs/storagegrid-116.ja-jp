@@ -5,6 +5,7 @@ keywords: audit messages, configure syslog server, configure external syslog ser
 summary: すべての StorageGRID ノードで監査メッセージが生成され、システムアクティビティとイベントが追跡されます。監査レベルを調整して、記録する監査メッセージの種類や数を増減できます。 
 ---
 = 監査メッセージとログの送信先を設定します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

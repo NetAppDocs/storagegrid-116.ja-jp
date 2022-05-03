@@ -5,6 +5,7 @@ keywords: grid nodes, expand, expansion, site, add
 summary: 既存のサイトに新しいグリッドノードを追加することで、 StorageGRID システムに冗長性を追加したり機能を追加したりできます。 
 ---
 = システムの機能を追加するには、グリッドノードを追加してください
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

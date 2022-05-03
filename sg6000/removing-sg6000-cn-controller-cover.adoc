@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, contr
 summary: メンテナンスのために内部コンポーネントにアクセスするために、コントローラカバーを取り外します。 
 ---
 = SG6000-CN コントローラのカバーを取り外します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

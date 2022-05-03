@@ -5,6 +5,7 @@ keywords: NFS audit client, change IP address
 summary: NFS 監査クライアントの IP アドレスを変更する必要がある場合は、次の手順を実行します。 
 ---
 = NFS 監査クライアントの IP アドレスを変更します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

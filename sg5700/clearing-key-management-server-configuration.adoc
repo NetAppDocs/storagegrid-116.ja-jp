@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, kms, key managem
 summary: キー管理サーバ（ KMS ）の設定をクリアすると、アプライアンスでノード暗号化が無効になります。KMS の設定をクリアすると、アプライアンスのデータは完全に削除され、アクセスできなくなります。このデータはリカバリできません。 
 ---
 = キー管理サーバの設定をクリアします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

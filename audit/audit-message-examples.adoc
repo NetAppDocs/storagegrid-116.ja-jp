@@ -5,6 +5,7 @@ keywords: storagegrid, audit, audit.log, audit.log file, message, examples, exam
 summary: 各監査メッセージには詳細な情報が含まれています。監査メッセージはすべて同じ形式です。 
 ---
 = 監査メッセージの例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

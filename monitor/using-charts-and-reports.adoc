@@ -5,6 +5,7 @@ keywords: how to use charts, how to use reports
 summary: グラフやレポートを使用して、 StorageGRID システムの状態を監視し、問題のトラブルシューティングを行うことができます。Grid Manager で使用できるグラフとレポートのタイプには、ドーナツグラフ \ （ダッシュボードのみ \ ）、グラフ、テキストレポートがあります。 
 ---
 = チャートとグラフを使用します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

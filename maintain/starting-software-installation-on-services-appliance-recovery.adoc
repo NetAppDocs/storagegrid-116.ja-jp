@@ -5,6 +5,7 @@ keywords: storagegrid, recover, services appliance, start software installation
 summary: ゲートウェイノードまたは管理ノードを SG100 または SG1000 サービスアプライアンスにインストールするには、アプライアンスに含まれている StorageGRID アプライアンスインストーラを使用します。 
 ---
 = サービスアプライアンスでソフトウェアのインストールを開始します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

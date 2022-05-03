@@ -5,6 +5,7 @@ keywords: software requirements
 summary: 仮想マシンを使用すると、あらゆるタイプの StorageGRID グリッドノードをホストできます。VMware サーバにインストールされたグリッドノードごとに 1 つの仮想マシンが必要です。 
 ---
 = ソフトウェア要件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

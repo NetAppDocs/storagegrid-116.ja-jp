@@ -5,6 +5,7 @@ keywords: admin nodes
 summary: 管理ノードは、システムの設定、監視、ロギングなどの管理サービスを提供します。各グリッドにはプライマリ管理ノードが 1 つ必要で、冗長性を確保するために任意の数の非プライマリ管理ノードを設定できます。 
 ---
 = 管理ノードとは
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

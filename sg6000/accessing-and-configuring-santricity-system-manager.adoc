@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity Syste
 summary: SANtricity System Manager を使用して、ストレージコントローラシェルフのストレージコントローラ、ストレージディスク、その他のハードウェアコンポーネントのステータスを監視できます。E シリーズ AutoSupport のプロキシを設定することもできます。管理ポートを使用せずにアプライアンスから AutoSupport メッセージを送信できます。 
 ---
 = SANtricity System Manager （ SG6000 ）へのアクセスと設定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

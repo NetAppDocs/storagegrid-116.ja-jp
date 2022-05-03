@@ -5,6 +5,7 @@ keywords: how to download ubuntu or debian installation files
 summary: StorageGRID インストールアーカイブをダウンロードし、必要なファイルを展開する必要があります。 
 ---
 = StorageGRID インストールファイルをダウンロードして展開します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

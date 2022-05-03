@@ -5,6 +5,7 @@ keywords: operations, buckets, custom, custom operations on buckets
 summary: StorageGRID システムでは、 S3 REST API に追加されたシステム固有のカスタムバケット処理をサポートしています。 
 ---
 = バケットのカスタム処理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

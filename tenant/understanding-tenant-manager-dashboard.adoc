@@ -5,6 +5,7 @@ keywords: how to understand tenant manager dashboard
 summary: Tenant Manager Dashboard には、テナントアカウントの設定の概要とテナントのバケット（ S3 ）またはコンテナ（ Swift ）内のオブジェクトによって使用される容量が表示されます。テナントにクォータがある場合は、クォータの使用量と残りの容量がダッシュボードに表示されます。テナントアカウントに関連するエラーがある場合は、ダッシュボードにそのエラーが表示されます。 
 ---
 = Tenant Manager のダッシュボードについて理解する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

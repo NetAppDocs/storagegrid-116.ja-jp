@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: ハードウェアのメンテナンスが完了したら、コントローラをキャビネットまたはラックに再度取り付けます。 
 ---
 = SG6000-CN コントローラをキャビネットまたはラックに再度取り付けます
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

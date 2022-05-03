@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, power off, turn 
 summary: ハードウェアのメンテナンスを実行するには、 SG6000-CN コントローラをシャットダウンします。 
 ---
 = SG6000-CN コントローラをシャットダウンします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

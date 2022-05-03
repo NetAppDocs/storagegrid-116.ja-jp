@@ -5,6 +5,7 @@ keywords: storagegrid, recover, server manager, restart server manager
 summary: グリッドノード上で実行されている Server Manager およびすべてのサービスの再起動が必要になる場合があります。 
 ---
 = Server Manager とすべてのサービスを再起動します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

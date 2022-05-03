@@ -5,6 +5,7 @@ keywords: software upgrade, hotfix, santricity
 summary: StorageGRID システムを最新の状態に保ち、効率的に実行するために、さまざまなメンテナンス手順を実行します。Grid Manager には、メンテナンスタスクを実行するプロセスを支援するツールとオプションが用意されている。 
 ---
 = メンテナンスを実施します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

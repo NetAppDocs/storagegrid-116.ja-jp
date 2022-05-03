@@ -5,6 +5,7 @@ keywords: storagegrid, recover, system drive failure
 summary: ソフトウェアベースのストレージノードのシステムドライブで障害が発生すると、そのストレージノードは StorageGRID システムで使用できなくなります。システムドライブの障害からリカバリするには、特定のタスクを実行する必要があります。 
 ---
 = システムドライブ障害からリカバリします
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

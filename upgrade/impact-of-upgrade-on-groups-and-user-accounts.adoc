@@ -5,6 +5,7 @@ keywords: upgrade, permissions
 summary: アップグレードの完了後にグループとユーザアカウントを適切に更新できるよう、 StorageGRID アップグレードの影響を理解しておく必要があります。 
 ---
 = アップグレードによるグループおよびユーザアカウントへの影響
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

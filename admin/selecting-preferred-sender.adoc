@@ -5,6 +5,7 @@ keywords: preferred sender, admin nodes, primary admin node
 summary: StorageGRID 環境に複数の管理ノードが含まれている場合は、通知の優先送信者となる管理ノードを選択できます。デフォルトでは、プライマリ管理ノードが選択されますが、任意の管理ノードを優先送信者にすることができます。 
 ---
 = 優先送信者を選択します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

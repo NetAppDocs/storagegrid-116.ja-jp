@@ -5,6 +5,7 @@ keywords: how to manage alerts, what are alerts, what are alarms
 summary: StorageGRID アラートシステムは、注意が必要な運用上の問題について通知するように設計されています。従来のアラームシステムは廃止されました。 
 ---
 = アラートとアラームの管理：概要
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

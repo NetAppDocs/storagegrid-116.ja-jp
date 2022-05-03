@@ -5,6 +5,7 @@ keywords: cifs audit client
 summary: 監査共有にアクセス可能な最後のユーザまたはグループを削除することはできません。 
 ---
 = CIFS 監査共有からユーザまたはグループを削除する
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

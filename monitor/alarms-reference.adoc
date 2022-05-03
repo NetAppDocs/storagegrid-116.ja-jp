@@ -5,6 +5,7 @@ keywords: alarms, alarms reference
 summary: 次の表に、これらの従来のデフォルトアラームをすべて示します。アラームがトリガーされた場合は、この表のアラームコードを参照して、推奨される対処方法を確認できます。 
 ---
 = アラーム一覧（従来のシステム）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

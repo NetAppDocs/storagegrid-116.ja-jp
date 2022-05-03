@@ -5,6 +5,7 @@ keywords: nodes page
 summary: StorageGRID システムに関する詳しい情報がダッシュボードに表示されるよりも必要な場合は、ノードページを使用して、グリッド全体、グリッド内の各サイト、およびサイトの各ノードの指標を表示できます。 
 ---
 = Nodes ページを表示します
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
