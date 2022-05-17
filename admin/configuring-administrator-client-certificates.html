@@ -5277,6 +5277,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8710,9 +8712,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/registering-hardware.html">
         ハードウェアを登録
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します
+        SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060 ：ドライブの取り付け
+        SG6060とSG6060X：ドライブの設置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024 ： 24 ドライブシェルフをキャビネットまたはラックに設置します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8720,13 +8722,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         アプライアンスをケーブル接続（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060 ：オプションの拡張シェルフをケーブル接続します
+        SG6060とSG6060X：オプションの拡張シェルフをケーブル接続
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         電源コードを接続して電源（ SG6000 ）を投入
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         SG6000-CN コントローラのステータスインジケータとボタンを表示します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        SG6000 ストレージコントローラのブート時のステータスコードを確認します
+        SG6000およびSG6060Xストレージコントローラのブート時のステータスコードを確認する
       </a></li></ul></li><li class="subfolders "><a href="/ja-jp/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> ハードウェア（ SG6000 ）の設定</div>
       </a>
@@ -10067,13 +10069,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/using-identity-federation.html">
         アイデンティティフェデレーションを使用する
-      </a></li><li class="subfolders "><a href="/ja-jp/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> グループを管理します</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         S3 テナント用のグループを作成します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         Swift テナント用のグループを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/tenant-management-permissions.html">
+        テナント管理権限
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         グループの詳細を表示および編集します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11191,7 +11195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:50:40 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:34:42 +0000">05/17/2022</time>
     
   
 
@@ -11204,7 +11208,7 @@
 <p>クライアント証明書を使用すると、許可された外部クライアントから StorageGRID の Prometheus データベースにアクセスして、外部ツールで StorageGRID を監視するための安全な方法を提供できます。</p>
 </div>
 <div class="paragraph">
-<p>外部の監視ツールを使用して StorageGRID にアクセスする必要がある場合は、 Grid Manager を使用して管理者クライアント証明書をアップロードまたは生成し、証明書情報を外部ツールにコピーする必要があります。</p>
+<p>外部の監視ツールを使用してStorageGRID にアクセスする必要がある場合は、グリッドマネージャを使用してクライアント証明書をアップロードまたは生成し、証明書の情報を外部ツールにコピーする必要があります。</p>
 </div>
 <div class="paragraph">
 <p>の情報を参照してください <a href="using-storagegrid-security-certificates.html">一般的なセキュリティ証明書の使用</a> および <a href="configuring-custom-server-certificate-for-grid-manager-tenant-manager.html">カスタムサーバ証明書を設定しています</a>。</p>
@@ -11250,10 +11254,13 @@
 <p>管理ノードの IP アドレスまたはドメイン名を確認しておきます。</p>
 </li>
 <li>
-<p>StorageGRID 管理インターフェイス証明書を設定し、対応するオプションの CA バンドルを用意しておきます。</p>
+<p>StorageGRID 管理インターフェイス証明書を設定している場合は、管理インターフェイス証明書の設定に使用するCA、クライアント証明書、および秘密鍵を用意しておきます。</p>
 </li>
 <li>
-<p>独自の証明書をアップロードするには、証明書の公開鍵と秘密鍵をローカルコンピュータで使用できます。</p>
+<p>独自の証明書をアップロードするには、証明書の秘密鍵をローカルコンピュータで使用できます。</p>
+</li>
+<li>
+<p>秘密鍵は、作成時に保存または記録しておく必要があります。元の秘密鍵がない場合は、新しい秘密鍵を作成する必要があります。</p>
 </li>
 </ul>
 </div>
@@ -11266,7 +11273,7 @@
 <p>管理ノードの IP アドレスまたはドメイン名を確認しておきます。</p>
 </li>
 <li>
-<p>新しい証明書と秘密鍵をアップロードするには、証明書の公開鍵と秘密鍵をローカルコンピュータで使用できます。</p>
+<p>独自の証明書または新しい証明書をアップロードするには、ローカルコンピュータ上で秘密鍵、クライアント証明書、およびCA（使用している場合）を使用できます。</p>
 </li>
 </ul>
 </div>
@@ -11279,7 +11286,25 @@
 <h2 id="クライアント証明書を追加します">クライアント証明書を追加します</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>管理者クライアント証明書を追加するには、 Grid Manager を使用して独自の証明書を指定するか、または証明書を生成します。</p>
+<p>シナリオに応じて手順 に従って、クライアント証明書を追加します。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Management interface certificate already configured">[Management interface certificate already configured]</a></p>
+</li>
+<li>
+<p><a href="#CA issued client certificate">[CA issued client certificate]</a></p>
+</li>
+<li>
+<p><a href="#Generated certificate from Grid Manager">[Generated certificate from Grid Manager]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="管理インターフェイス証明書はすでに設定されています">管理インターフェイス証明書はすでに設定されています</h3>
+<div class="paragraph">
+<p>顧客が指定したCA、クライアント証明書、および秘密鍵を使用して管理インターフェイス証明書がすでに設定されている場合は、この手順 を使用してクライアント証明書を追加します。</p>
 </div>
 <div class="olist arabic">
 <div class="title">手順</div>
@@ -11291,46 +11316,25 @@
 <p>「 * 追加」を選択します。</p>
 </li>
 <li>
-<p>証明書の名前を 1~32 文字で入力します。</p>
+<p>証明書名を1文字以上32文字以下で入力します。</p>
 </li>
 <li>
 <p>外部の監視ツールを使用して Prometheus 指標にアクセスするには、 * Prometheus * を許可するを選択します。</p>
 </li>
 <li>
-<p>[ 証明書の種類 ] セクションで、証明書をアップロードまたは生成します。</p>
-<div class="exampleblock tabbed-block">
-<div class="content">
-<div class="openblock">
-<div class="title">証明書をアップロードする</div>
-<div class="content">
-<div class="paragraph">
-<p>証明書「 .pem 」ファイルをアップロードします。</p>
-</div>
+<p>「* Certificate type *」セクションで、管理インターフェイス証明書「.pem」ファイルをアップロードします。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
 <p>[ 証明書のアップロード ] を選択し、 [ 続行 ] を選択します。</p>
 </li>
 <li>
-<p>クライアント証明書名 (`.pem') をアップロードします</p>
-<div class="paragraph">
-<p>クライアント証明書の詳細 * を選択して、証明書メタデータと証明書 PEM を表示します。</p>
-</div>
+<p>管理インターフェイス証明書ファイル(`.pem')をアップロードします</p>
 <div class="ulist">
 <ul>
 <li>
-<p>証明書ファイルを保存するには、 [ 証明書のダウンロード ] を選択します。</p>
-<div class="paragraph">
-<p>証明書ファイルの名前とダウンロード先を指定します。ファイルに拡張子「 .pem 」を付けて保存します。</p>
-</div>
+<p>クライアント証明書の詳細 * を選択して、証明書メタデータと証明書 PEM を表示します。</p>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>例： 'storagegrid_certificate.pem</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
 <p>証明書の内容をコピーして他の場所に貼り付けるには、 * 証明書の PEM をコピー * を選択します。</p>
 </li>
@@ -11345,34 +11349,206 @@
 </li>
 </ol>
 </div>
-</div>
-</div>
-<div class="openblock">
-<div class="title">証明書の生成</div>
-<div class="content">
-<div class="paragraph">
-<p>証明書のテキストを生成して他の場所に貼り付けます。</p>
-</div>
+</li>
+<li>
+<p>Grafana などの外部監視ツールで次の設定を行います。</p>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
-<p>[* 証明書の生成 * ] を選択します。</p>
+<p>* 名前 * ：接続の名前を入力します。</p>
+<div class="paragraph">
+<p>StorageGRID ではこの情報は必要ありませんが、接続をテストするための名前を指定する必要があります。</p>
+</div>
+</li>
+<li>
+<p>* URL * ：管理ノードのドメイン名または IP アドレスを入力します。HTTPS とポート 9091 を指定します。</p>
+<div class="paragraph">
+<p>たとえば、「 + <a href="https://admin-node.example.com:9091+`" class="bare">https://admin-node.example.com:9091+`</a> 」と入力します</p>
+</div>
+</li>
+<li>
+<p>CA 証明書を使用して、 * TLS クライアント認証 * および * を有効にします。</p>
+</li>
+<li>
+<p>TLS/SSL Auth Detailsの下で、+をコピーして貼り付けます</p>
+<div class="ulist">
+<ul>
+<li>
+<p>管理インターフェイスのCA証明書を<strong>CA Cert</strong>に追加します</p>
+</li>
+<li>
+<p>クライアント証明書を<strong>クライアント証明書</strong>に送信します</p>
+</li>
+<li>
+<p>クライアントキー**への秘密鍵</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* ServerName* ：管理ノードのドメイン名を入力します。</p>
+<div class="paragraph">
+<p>servername は、管理インターフェイス証明書に表示されるドメイン名と一致する必要があります。</p>
+</div>
+</li>
+<li>
+<p>StorageGRID またはローカルファイルからコピーした証明書と秘密鍵を保存してテストします。</p>
+<div class="paragraph">
+<p>これで、外部の監視ツールを使用して StorageGRID から Prometheus 指標にアクセスできるようになります。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>これらの指標の詳細については、を参照してください <a href="../monitor/index.html">StorageGRID の監視手順</a>。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="caによって発行されたクライアント証明書">CAによって発行されたクライアント証明書</h3>
+<div class="paragraph">
+<p>管理インターフェイス証明書が設定されていない場合や、CAによって発行されたクライアント証明書と秘密鍵を使用するPrometheusのクライアント証明書を追加する場合は、この手順 を使用して管理者クライアント証明書を追加します。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>手順~を実行します <a href="configuring-custom-server-certificate-for-grid-manager-tenant-manager.html">管理インターフェイス証明書を設定します</a>。</p>
+</li>
+<li>
+<p>Grid Manager で、 * configuration * &gt; * Security * &gt; * Certificates * を選択し、 * Client * タブを選択します。</p>
+</li>
+<li>
+<p>「 * 追加」を選択します。</p>
+</li>
+<li>
+<p>証明書名を1文字以上32文字以下で入力します。</p>
+</li>
+<li>
+<p>外部の監視ツールを使用して Prometheus 指標にアクセスするには、 * Prometheus * を許可するを選択します。</p>
+</li>
+<li>
+<p>[証明書の種類*]セクションで、クライアント証明書、秘密鍵、およびCAバンドルの「.pem」ファイルをアップロードします。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[ 証明書のアップロード ] を選択し、 [ 続行 ] を選択します。</p>
+</li>
+<li>
+<p>クライアント証明書、秘密鍵、およびCAバンドルファイル(`.pem')をアップロードします。</p>
+<div class="ulist">
+<ul>
+<li>
+<p>クライアント証明書の詳細 * を選択して、証明書メタデータと証明書 PEM を表示します。</p>
+</li>
+<li>
+<p>証明書の内容をコピーして他の場所に貼り付けるには、 * 証明書の PEM をコピー * を選択します。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>証明書を Grid Manager に保存するには、 * Create * を選択します。</p>
+<div class="paragraph">
+<p>新しい証明書が[クライアント]タブに表示されます。</p>
+</div>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Grafana などの外部監視ツールで次の設定を行います。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>* 名前 * ：接続の名前を入力します。</p>
+<div class="paragraph">
+<p>StorageGRID ではこの情報は必要ありませんが、接続をテストするための名前を指定する必要があります。</p>
+</div>
+</li>
+<li>
+<p>* URL * ：管理ノードのドメイン名または IP アドレスを入力します。HTTPS とポート 9091 を指定します。</p>
+<div class="paragraph">
+<p>たとえば、「 + <a href="https://admin-node.example.com:9091+`" class="bare">https://admin-node.example.com:9091+`</a> 」と入力します</p>
+</div>
+</li>
+<li>
+<p>CA 証明書を使用して、 * TLS クライアント認証 * および * を有効にします。</p>
+</li>
+<li>
+<p>TLS/SSL Auth Detailsの下で、+をコピーして貼り付けます</p>
+<div class="ulist">
+<ul>
+<li>
+<p>管理インターフェイスのCA証明書を<strong>CA Cert</strong>に追加します</p>
+</li>
+<li>
+<p>クライアント証明書を<strong>クライアント証明書</strong>に送信します</p>
+</li>
+<li>
+<p>クライアントキー**への秘密鍵</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>* ServerName* ：管理ノードのドメイン名を入力します。</p>
+<div class="paragraph">
+<p>servername は、管理インターフェイス証明書に表示されるドメイン名と一致する必要があります。</p>
+</div>
+</li>
+<li>
+<p>StorageGRID またはローカルファイルからコピーした証明書と秘密鍵を保存してテストします。</p>
+<div class="paragraph">
+<p>これで、外部の監視ツールを使用して StorageGRID から Prometheus 指標にアクセスできるようになります。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>これらの指標の詳細については、を参照してください <a href="../monitor/index.html">StorageGRID の監視手順</a>。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="grid-managerから証明書が生成されました">Grid Managerから証明書が生成されました</h3>
+<div class="paragraph">
+<p>管理インターフェイス証明書が設定されていない場合やGrid Managerの証明書生成機能を使用するPrometheusのクライアント証明書を追加する場合は、この手順 を使用して管理者クライアント証明書を追加します。</p>
+</div>
+<div class="olist arabic">
+<div class="title">手順</div>
+<ol class="arabic">
+<li>
+<p>Grid Manager で、 * configuration * &gt; * Security * &gt; * Certificates * を選択し、 * Client * タブを選択します。</p>
+</li>
+<li>
+<p>「 * 追加」を選択します。</p>
+</li>
+<li>
+<p>証明書名を1文字以上32文字以下で入力します。</p>
+</li>
+<li>
+<p>外部の監視ツールを使用して Prometheus 指標にアクセスするには、 * Prometheus * を許可するを選択します。</p>
+</li>
+<li>
+<p>[証明書の種類*]セクションで、[証明書の生成]を選択します。</p>
 </li>
 <li>
 <p>証明書情報を指定します。</p>
 <div class="ulist">
 <ul>
 <li>
-<p>* Domain name * ：証明書に含める 1 つ以上の完全修飾ドメイン名。複数のドメイン名を表すには、ワイルドカードとして * を使用します。</p>
+<p>* Domain name *：証明書に含める管理ノードの完全修飾ドメイン名。複数のドメイン名を表すには、ワイルドカードとして * を使用します。</p>
 </li>
 <li>
-<p><strong>IP</strong> ：証明書に含める 1 つ以上の IP アドレス。</p>
+<p>* ip *：証明書に含める1つ以上の管理ノードIPアドレス。</p>
 </li>
 <li>
 <p>* 件名 * ：証明書所有者の X.509 サブジェクトまたは識別名（ DN ）。</p>
-</li>
-<li>
-<p><strong>days valid</strong>: 証明書の有効期限が切れる作成後の日数</p>
 </li>
 </ul>
 </div>
@@ -11381,7 +11557,7 @@
 <p>[*Generate （生成） ] を選択します</p>
 </li>
 <li>
-<p>クライアント証明書の詳細 * を選択して、証明書メタデータと証明書 PEM を表示します。</p>
+<p><a id="client_cert_details"></a>証明書メタデータと証明書PEMを表示するには、[<strong>クライアント証明書の詳細</strong>]を選択します。</p>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -11430,23 +11606,36 @@
 <p>新しい証明書が [ クライアント ] タブに表示されます。</p>
 </div>
 </li>
+<li>
+<p>Grid Managerで、* configuration <strong>&gt;</strong> Security <strong>&gt;</strong> Certificates <strong>を選択し、</strong> Global *タブを選択します。</p>
+</li>
+<li>
+<p>管理インターフェイス証明書*を選択します。</p>
+</li>
+<li>
+<p>[ * カスタム証明書を使用する * ] を選択します。</p>
+</li>
+<li>
+<p>証明書の.pemファイルとprivate_key.pemファイルをからアップロードします <a href="#client_cert_details">クライアント証明書の詳細</a> ステップ。CAバンドルをアップロードする必要はありません。</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>[ 証明書のアップロード ] を選択し、 [ 続行 ] を選択します。</p>
+</li>
+<li>
+<p>各証明書ファイル(`.pem')をアップロードします</p>
+</li>
+<li>
+<p>証明書を Grid Manager に保存するには、 * Create * を選択します。</p>
+<div class="paragraph">
+<p>新しい証明書が [ クライアント ] タブに表示されます。</p>
+</div>
+</li>
 </ol>
-</div>
-</div>
-</div>
-</div>
 </div>
 </li>
 <li>
 <p>Grafana などの外部監視ツールで次の設定を行います。</p>
-<div class="paragraph">
-<p>Grafana の例は次のスクリーンショットで示されています。</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../media/grafana_add_url_and_auth.png" alt="Grafana - URL と認証を追加します">
-</div>
-</div>
 <div class="olist loweralpha">
 <ol class="loweralpha" type="a">
 <li>
@@ -11465,7 +11654,17 @@
 <p>CA 証明書を使用して、 * TLS クライアント認証 * および * を有効にします。</p>
 </li>
 <li>
-<p>TLS/SSL Auth Details の下で、管理インターフェイス証明書またはオプションの CA バンドルを <strong>CA Cert</strong> にコピーして貼り付けます。</p>
+<p>TLS/SSL Auth Detailsの下で、+をコピーして貼り付けます</p>
+<div class="ulist">
+<ul>
+<li>
+<p>管理インターフェイスクライアント証明書は、<strong>CA Cert</strong>および<strong>クライアント証明書</strong>の両方に使用されます</p>
+</li>
+<li>
+<p>クライアントキー**への秘密鍵</p>
+</li>
+</ul>
+</div>
 </li>
 <li>
 <p>* ServerName* ：管理ノードのドメイン名を入力します。</p>
@@ -11486,6 +11685,7 @@
 </div>
 </li>
 </ol>
+</div>
 </div>
 </div>
 </div>
@@ -11511,7 +11711,7 @@
 <p>「 * Edit * 」を選択し、「 * 名前と権限を編集 * 」を選択します</p>
 </li>
 <li>
-<p>証明書の名前を 1~32 文字で入力します。</p>
+<p>証明書名を1文字以上32文字以下で入力します。</p>
 </li>
 <li>
 <p>外部の監視ツールを使用して Prometheus 指標にアクセスするには、 * Prometheus * を許可するを選択します。</p>

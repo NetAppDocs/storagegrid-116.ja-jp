@@ -5268,6 +5268,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8710,9 +8712,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/registering-hardware.html">
         ハードウェアを登録
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します
+        SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060 ：ドライブの取り付け
+        SG6060とSG6060X：ドライブの設置
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024 ： 24 ドライブシェルフをキャビネットまたはラックに設置します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8720,13 +8722,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         アプライアンスをケーブル接続（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060 ：オプションの拡張シェルフをケーブル接続します
+        SG6060とSG6060X：オプションの拡張シェルフをケーブル接続
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         電源コードを接続して電源（ SG6000 ）を投入
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         SG6000-CN コントローラのステータスインジケータとボタンを表示します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        SG6000 ストレージコントローラのブート時のステータスコードを確認します
+        SG6000およびSG6060Xストレージコントローラのブート時のステータスコードを確認する
       </a></li></ul></li><li class="subfolders "><a href="/ja-jp/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> ハードウェア（ SG6000 ）の設定</div>
       </a>
@@ -10067,13 +10069,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/using-identity-federation.html">
         アイデンティティフェデレーションを使用する
-      </a></li><li class="subfolders "><a href="/ja-jp/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> グループを管理します</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         S3 テナント用のグループを作成します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         Swift テナント用のグループを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/tenant-management-permissions.html">
+        テナント管理権限
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         グループの詳細を表示および編集します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11191,7 +11195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:50:40 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:34:42 +0000">05/17/2022</time>
     
   
 
@@ -11286,10 +11290,10 @@
 <li>
 <p>ターゲットストレージアプライアンスに設置されている標準ドライブ数がソースノードのドライブ数よりも少ない場合は、ソリッドステートドライブ（ SSD ）が設置されているため、ターゲットアプライアンスの標準ドライブの全体的なストレージ容量（ TB ）が表示されます。 ソースストレージノード内のすべてのドライブの機能的な合計ドライブ容量を満たしているか、超えている必要があります。</p>
 <div class="paragraph">
-<p>たとえば、 60 本のドライブを搭載した SG5660 ソースストレージノードアプライアンスを 58 本の標準ドライブを搭載した SG6060 ターゲットアプライアンスにクローニングする場合は、クローニングを行ってストレージ容量を確保する前に、 SG6060 ターゲットアプライアンスに大容量のドライブを設置する必要があります。（ターゲットアプライアンス内の SSD を含む 2 つのドライブスロットは、アプライアンスのストレージ容量の合計には含まれません）。</p>
+<p>たとえば、60本のドライブを搭載したSG5660ソースストレージノードアプライアンスを、58標準ドライブを搭載したSG6060またはSG6060Xターゲットアプライアンスにクローニングする場合は、ストレージ容量を確保するために、クローニングを行う前にSG6060またはSG6060Xターゲットアプライアンスに大容量のドライブを設置する必要があります。（ターゲットアプライアンス内の SSD を含む 2 つのドライブスロットは、アプライアンスのストレージ容量の合計には含まれません）。</p>
 </div>
 <div class="paragraph">
-<p>ただし、 60 ドライブ SG5660 ソースノードアプライアンスが SANtricity Dynamic Disk Pools DDP -8 を使用して構成されている場合、 DDP 16 を使用した 58 ドライブの同じサイズのドライブ SG6060 ターゲットアプライアンスの設定によって、ストレージ効率が向上しているため、 SG6060 アプライアンスが有効なクローンターゲットになる可能性があります。</p>
+<p>ただし、60ドライブSG5660ソースノードアプライアンスがSANtricity Dynamic Disk Pools DDP 8で構成されている場合は、ストレージ効率が向上しているため、SG6058ドライブの同じサイズドライブSG6060またはSG6060Xターゲットアプライアンスを有効なクローンターゲットにする可能性があります。</p>
 </div>
 </li>
 </ul>
