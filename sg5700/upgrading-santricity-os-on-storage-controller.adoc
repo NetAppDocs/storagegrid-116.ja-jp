@@ -25,6 +25,6 @@ xref:upgrading-santricity-os-on-e2800-controller-using-maintenance-mode.adoc[E28
 
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
 
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["ネットアップのダウンロード： SANtricity OS"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
 
 xref:../monitor/index.adoc[監視とトラブルシューティング]

@@ -29,7 +29,7 @@ xref:locating-controller-in-data-center.adoc[データセンターでコント�
 +
 ** コントローラ前面の電源スイッチを押します。
 +
-image::../media/sg6060_front_panel_power_led_off.jpg[SG6060 の前面パネルの電源 LED オフ]
+image::../media/sg6060_front_panel_power_led_off.jpg[SG6060とSG6060Xの前面パネルの電源LED -オフ]
 
 ** コントローラの BMC インターフェイスを使用します。
 +

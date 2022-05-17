@@ -40,9 +40,9 @@ entries:
   entries:
   - title: ハードウェアを登録
     url: "/sg6000/registering-hardware.html"
-  - title: SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します
+  - title: SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置
     url: "/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
-  - title: SG6060 ：ドライブの取り付け
+  - title: SG6060とSG6060X：ドライブの設置
     url: "/sg6000/sg6060-installing-drives.html"
   - title: SGF6024 ： 24 ドライブシェルフをキャビネットまたはラックに設置します
     url: "/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
@@ -50,13 +50,13 @@ entries:
     url: "/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html"
   - title: アプライアンスをケーブル接続（ SG6000 ）
     url: "/sg6000/cabling-appliance-sg6000.html"
-  - title: SG6060 ：オプションの拡張シェルフをケーブル接続します
+  - title: SG6060とSG6060X：オプションの拡張シェルフをケーブル接続
     url: "/sg6000/sg6060-cabling-optional-expansion-shelves.html"
   - title: 電源コードを接続して電源（ SG6000 ）を投入
     url: "/sg6000/connecting-power-cords-and-applying-power-sg6000.html"
   - title: SG6000-CN コントローラのステータスインジケータとボタンを表示します
     url: "/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html"
-  - title: SG6000 ストレージコントローラのブート時のステータスコードを確認します
+  - title: SG6000およびSG6060Xストレージコントローラのブート時のステータスコードを確認する
     url: "/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html"
 - title: ハードウェア（ SG6000 ）の設定
   url: "/sg6000/configuring-hardware.html"

@@ -30,7 +30,7 @@ xref:../admin/index.adoc[StorageGRID の管理]
 グリッドマネージャを介して SANtricity システムマネージャにアクセスするには、ストレージアプライアンス管理者の権限またはルートアクセス権限が必要です。
 
 
-NOTE: Grid Manager を使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+NOTE: グリッドマネージャを使用してSANtricity System Managerにアクセスするには、SANtricity ファームウェア8.70（11.70）以降が必要です。
 
 
 IMPORTANT: グリッドマネージャから SANtricity システムマネージャにアクセスする手順は、通常、アプライアンスのハードウェアを監視し、 E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、 SANtricity System Manager 内の多くの機能や操作は、 StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。

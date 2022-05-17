@@ -24,7 +24,7 @@ StorageGRID アプライアンスインストーラの実行中にコンピュ�
 image::../media/reboot_controller_from_maintenance_mode.png[コントローラをメンテナンスモードでリブートします]
 
 +
-SG6000-CN コントローラがリブートされます。
+コントローラがリブートされます。
 
 
 

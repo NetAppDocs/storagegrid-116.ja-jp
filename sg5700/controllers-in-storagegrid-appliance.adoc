@@ -4,14 +4,22 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, controllers, controller, e5700sg, e2800, ports, port, connectors, connector 
 summary: StorageGRID アプライアンス SG5712 と SG5760 の両モデルには、 E5700SG コントローラと E2800 コントローラが含まれています。次の図で、コントローラの違いを確認してください。 
 ---
-= StorageGRID アプライアンスのコントローラ
+= StorageGRID 5700アプライアンスのコントローラ
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-StorageGRID アプライアンス SG5712 と SG5760 の両モデルには、 E5700SG コントローラと E2800 コントローラが含まれています。次の図で、コントローラの違いを確認してください。
+StorageGRID アプライアンスの12ドライブSG5712とSG5712、および60ドライブSG5760とSG5712およびE5700SG 60Xモデルには、コンピューティングコントローラとEシリーズE2800ストレージコントローラが含まれています。
+
+* SG5712とSG5760では、E2800Aコントローラを使用します。
+* SG5712XおよびSG5760Xでは、E2800Bコントローラを使用します。
++
+ The E2800A and E2800B controllers are identical in specification and function except for the location of the interconnect ports.
+
+
+次の図で、コントローラの違いを確認してください。
 
 
 
@@ -108,7 +116,11 @@ StorageGRID の管理ネットワークに接続します。
 |===
 
 
-== E2800 コントローラ
+== E2800シリーズストレージコントローラ
+
+SG5700アプライアンスでは、E2800AとE2800Bの2つのバージョンのE2800ストレージコントローラが使用されます。E2800AにはHICがなく、E2800Bには4ポートのHICが搭載されています。2つのコントローラバージョンの仕様と機能は、インターコネクトポートの位置を除いて同じです。
+
+E2800シリーズストレージコントローラの仕様は次のとおりです。
 
 * アプライアンスのストレージコントローラとして機能します。
 * ドライブ上のデータストレージを管理します。
@@ -118,9 +130,15 @@ StorageGRID の管理ネットワークに接続します。
 * E5700SG コントローラに接続してターゲットとして機能します。
 
 
-次の図は、 E2800 コントローラ背面のコネクタを示しています。
+次の図は、E2800AコントローラおよびE2800Bコントローラの背面にあるコネクタを示しています。
 
-image::../media/e2800_controller_with_callouts.gif[E2800 コントローラのコネクタ]
+* E2800Aの背面にあるコネクタ*
+
+image::../media/e2800_controller_with_callouts.gif[E2800Aコントローラのコネクタ]
+
+* E2800Bの背面にあるコネクタ*
+
+image::../media/e2800B_controller_with_callouts.gif[E2800Bコントローラのコネクタ]
 
 |===
 |  | ポート | を入力します | 使用 
@@ -180,6 +198,6 @@ image::../media/e2800_controller_with_callouts.gif[E2800 コントローラの�
  a| 
 12Gb/ 秒 SAS の場合
  a| 
-使用されません。StorageGRID アプライアンスでは、拡張ドライブシェルフはサポートされません。
+使用されません。
 
 |===

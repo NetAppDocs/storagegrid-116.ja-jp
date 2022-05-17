@@ -26,12 +26,13 @@ entries:
   - title: アイデンティティフェデレーションを使用する
     url: "/tenant/using-identity-federation.html"
   - title: グループを管理します
-    url: "/tenant/managing-groups.html"
     entries:
     - title: S3 テナント用のグループを作成します
       url: "/tenant/creating-groups-for-s3-tenant.html"
     - title: Swift テナント用のグループを作成します
       url: "/tenant/creating-groups-for-swift-tenant.html"
+    - title: テナント管理権限
+      url: "/tenant/tenant-management-permissions.html"
     - title: グループの詳細を表示および編集します
       url: "/tenant/viewing-and-editing-group-details.html"
     - title: ローカルグループにユーザを追加します

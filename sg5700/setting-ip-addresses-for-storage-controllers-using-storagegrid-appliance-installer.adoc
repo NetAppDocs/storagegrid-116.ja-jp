@@ -2,7 +2,7 @@
 permalink: sg5700/setting-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer.html 
 sidebar: sidebar 
 keywords: storagegrid, sg5700, storage node, storage appliance, storage controller, controller, configure, setup, set up, IP, IP address, management port, Appliance Installer 
-summary: 各ストレージコントローラの管理ポート 1 を使用して、アプライアンスを SANtricity System Manager の管理ネットワークに接続します。StorageGRID アプライアンスインストーラから SANtricity System Manager にアクセスできない場合は、各ストレージコントローラの静的 IP アドレスを設定して、コントローラシェルフのハードウェアおよびコントローラファームウェアへの管理接続が失われないようにする必要があります。 
+summary: 各ストレージコントローラの管理ポート 1 を使用して、アプライアンスを SANtricity System Manager の管理ネットワークに接続します。StorageGRID アプライアンスインストーラからSANtricity System Managerにアクセスできない場合は、各ストレージコントローラの静的IPアドレスを設定して、コントローラシェルフのハードウェアおよびコントローラファームウェアへの管理接続が失われないようにする必要があります。 
 ---
 = StorageGRID アプライアンスインストーラを使用してストレージコントローラの IP アドレスを設定します
 :allow-uri-read: 

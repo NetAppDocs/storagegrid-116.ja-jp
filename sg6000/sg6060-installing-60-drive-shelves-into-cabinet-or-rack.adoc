@@ -1,10 +1,10 @@
 ---
 permalink: sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html 
 sidebar: sidebar 
-keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
+keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, sg6060X, install, installing, installation, 60-drive shelves, 60-drive shelf, 60 drive shelves, 60 drive shelf, 60 drive, 60-drive, shelf, shelves, drive, disk, 60 
 summary: キャビネットまたはラックに E2860 コントローラシェルフ用のレール一式を取り付け、レールにコントローラシェルフをスライドさせます。60 ドライブ拡張シェルフを設置する場合は、同じ手順 が適用されます。 
 ---
-= SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します
+= SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/

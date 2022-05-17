@@ -11,7 +11,7 @@ summary: ストレージ容量を増やすには、 StorageGRID システムに�
 
 
 [role="lead"]
-ストレージ容量を増やすには、 StorageGRID システムにすでに導入されている SG6060 に拡張シェルフを 1 台または 2 台追加します。
+ストレージ容量を増やすには、StorageGRID システムにすでに導入されているSG6060またはSG6060Xに拡張シェルフを1つまたは2つ追加します。
 
 .必要なもの
 * プロビジョニングパスフレーズが必要です。
@@ -26,27 +26,31 @@ xref:locating-controller-in-data-center.adoc[データセンターでコント�
 拡張シェルフを追加するには、次の手順を実行します。
 
 * キャビネットまたはラックにハードウェアを設置します。
-* SG6060 をメンテナンスモードにします。
+* SG6060またはSG6060Xをメンテナンスモードにします。
 * 拡張シェルフを E2860 コントローラシェルフまたは別の拡張シェルフに接続します。
 * StorageGRID アプライアンスインストーラを使用して拡張を開始します
 * 新しいボリュームが設定されるまで待ちます。
 
 
-拡張シェルフ 1 台または 2 台の手順 を完了するには、アプライアンスノードあたり 1 時間以内に作業を行う必要があります。ダウンタイムを最小限に抑えるために、次の手順では、 SG6060 をメンテナンスモードにする前に新しい拡張シェルフとドライブを設置するように指示します。残りの手順には、アプライアンスノード 1 台あたり 20~30 分かかります。
+拡張シェルフ 1 台または 2 台の手順 を完了するには、アプライアンスノードあたり 1 時間以内に作業を行う必要があります。ダウンタイムを最小限に抑えるために、次の手順では、SG6060またはSG6060Xをメンテナンスモードにする前に、新しい拡張シェルフとドライブを設置するように指示します。残りの手順には、アプライアンスノード 1 台あたり 20~30 分かかります。
 
 .手順
 . 60 ドライブシェルフをキャビネットまたはラックに設置する手順に従います。
 +
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置]
 
 . ドライブの取り付け手順に従います。
 +
-xref:sg6060-installing-drives.adoc[SG6060 ：ドライブの取り付け]
+xref:sg6060-installing-drives.adoc[SG6060とSG6060X：ドライブの設置]
 
 . Grid Manager から xref:placing-appliance-into-maintenance-mode.adoc[SG6000-CN コントローラをメンテナンスモードにします]。
 . 次の図に示すように、各拡張シェルフを E2860 コントローラシェルフに接続します。
 +
 この図は、 2 台の拡張シェルフを示しています。IOM A のみをコントローラ A に接続し、 IOM B をコントローラ B に接続します
+
++
+
+NOTE: SG6060が示されています。SG6060Xの拡張ケーブルの配線は同じです。
 
 +
 image::../media/expansion_shelves_connections_sg6060.png[SG6060 拡張シェルフの接続]
@@ -208,10 +212,10 @@ image::../media/appliance_installer_reboot_complete.png[リブートが完了し
 
 
 
-xref:unpacking-boxes-sg6000.adoc[開梱（ SG6000 ）]
+xref:unpacking-boxes-sg6000.adoc[開梱ボックス（SG6000およびSG6060X）]
 
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：キャビネットまたはラックに 60 ドライブシェルフを設置します]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060とSG6060X：60ドライブシェルフをキャビネットまたはラックに設置]
 
-xref:sg6060-installing-drives.adoc[SG6060 ：ドライブの取り付け]
+xref:sg6060-installing-drives.adoc[SG6060とSG6060X：ドライブの設置]
 
 xref:../monitor/index.adoc[監視とトラブルシューティング]

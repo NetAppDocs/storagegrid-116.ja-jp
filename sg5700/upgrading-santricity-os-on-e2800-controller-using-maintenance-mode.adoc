@@ -15,10 +15,7 @@ summary: 現在 08.42.20.00 より前の SANtricity OS を使用しているス�
 
 .必要なもの
 * NetApp Interoperability Matrix Tool （ IMT ）を参照して、アップグレードに使用する SANtricity OS のバージョンがお使いのアプライアンスと互換性があることを確認してください。
-* E5700SG コントローラをメンテナンスモードにして、 E2800 コントローラへの接続を中断する必要があります。
-+
-xref:placing-appliance-into-maintenance-mode.adoc[アプライアンスをメンテナンスモードにします]
-
+* E5700SGコントローラをに配置する必要があります xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモード]をクリックすると、E2800コントローラへの接続が中断されます。
 +
 
 NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。
@@ -31,6 +28,7 @@ NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモー�
 IMPORTANT: 一度に複数の StorageGRID アプライアンスをアップグレードすると、導入モデルや ILM ポリシーによっては、原因 データを使用できなくなる可能性があります。
 
 .手順
+. アプライアンスがに接続されていることを確認します xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモード]。
 . サービスラップトップから、 SANtricity System Manager にアクセスしてサインインします。
 . 新しい SANtricity OS ソフトウェアファイルと NVSRAM ファイルを管理クライアントにダウンロードします。
 +

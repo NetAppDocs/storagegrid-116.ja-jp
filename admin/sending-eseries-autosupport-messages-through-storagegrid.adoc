@@ -19,7 +19,7 @@ E シリーズ SANtricity System Manager AutoSupport メッセージは、スト
 
 
 
-NOTE: Grid Manager を使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+NOTE: Grid Managerを使用してSANtricity System Managerにアクセスするには、SANtricity ファームウェア8.70（11.7）以上が必要です。
 
 E シリーズ AutoSupport メッセージには、ストレージハードウェアの詳細が記載されており、 StorageGRID システムから送信される他の AutoSupport メッセージよりも具体的です。
 

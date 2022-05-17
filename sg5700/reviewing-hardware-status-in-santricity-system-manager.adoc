@@ -21,7 +21,7 @@ SANtricity System Manager を使用して、ストレージコントローラシ
 
 
 
-NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用して SANtricity System Manager にアクセスするには、 SANtricity ファームウェア 8.70 以降が必要です。
+NOTE: グリッドマネージャまたはStorageGRID アプライアンスインストーラを使用してSANtricity System Managerにアクセスするには、SANtricity ファームウェア8.70（11.70）以降が必要です。
 
 
 IMPORTANT: グリッドマネージャまたはアプライアンスインストーラから SANtricity システムマネージャにアクセスする方法は、通常、ハードウェアを監視して E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、 SANtricity System Manager 内の多くの機能や操作は、 StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。

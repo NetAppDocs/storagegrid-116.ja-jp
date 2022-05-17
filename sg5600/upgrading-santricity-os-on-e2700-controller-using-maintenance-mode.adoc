@@ -15,7 +15,7 @@ summary: グリッドマネージャを使用して SANtricity OS ソフトウ�
 
 .必要なもの
 * NetApp Interoperability Matrix Tool （ IMT ）を参照して、アップグレードに使用する SANtricity OS のバージョンがお使いのアプライアンスと互換性があることを確認してください。
-* グリッドマネージャを使用しない場合は、 E5600SG コントローラをメンテナンスモードにする必要があります。コントローラをメンテナンスモードにすると、 E2700 コントローラへの接続が中断されます。リンク設定を変更する前に、を実行する必要があります xref:placing-appliance-into-maintenance-mode.adoc[E5600SG コントローラをメンテナンスモードにします]。
+* E5600コントローラをに配置する必要があります xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモード] Grid Managerを使用しない場合。コントローラをメンテナンスモードにすると、 E2700 コントローラへの接続が中断されます。
 +
 
 NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモードにすると、アプライアンスにリモートアクセスできなくなることがあります。
@@ -28,6 +28,7 @@ NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモー�
 IMPORTANT: 一度に複数の StorageGRID アプライアンスをアップグレードすると、導入モデルや ILM ポリシーによっては、原因 データを使用できなくなる可能性があります。
 
 .手順
+. アプライアンスがに接続されていることを確認します xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモード]。
 . サービスラップトップから、 SANtricity ストレージマネージャにアクセスしてサインインします。
 . 新しい SANtricity OS ソフトウェアファイルと NVSRAM ファイルを管理クライアントにダウンロードします。
 +

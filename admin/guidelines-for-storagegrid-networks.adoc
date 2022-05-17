@@ -90,10 +90,7 @@ eth2
 トランクインターフェイスまたはアクセスインターフェイスを追加するには、次の項を参照してください。
 
 * * VMware （ノードのインストール後） * ： xref:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.adoc[VMware ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
-+
-** * RHEL または CentOS （ノードのインストール前） * ： xref:../rhel/creating-node-configuration-files.adoc[ノード構成ファイルを作成]
-** * Ubuntu または Debian （ノードをインストールする前） * ： xref:../ubuntu/creating-node-configuration-files.adoc[ノード構成ファイルを作成]
-** * RHEL 、 CentOS 、 Ubuntu 、または Debian （ノードのインストール後） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
-
-
+* * RHEL または CentOS （ノードのインストール前） * ： xref:../rhel/creating-node-configuration-files.adoc[ノード構成ファイルを作成]
+* * Ubuntu または Debian （ノードをインストールする前） * ： xref:../ubuntu/creating-node-configuration-files.adoc[ノード構成ファイルを作成]
+* * RHEL 、 CentOS 、 Ubuntu 、または Debian （ノードのインストール後） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
 

@@ -29,7 +29,7 @@ NOTE: この手順 は、 SANtricity OS のアップグレードに関連付け�
 ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。
 
 +
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["ネットアップのダウンロード： SANtricity OS"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
 
 . 「 * maintenance * > * System * > * Software update * 」を選択します。
 +

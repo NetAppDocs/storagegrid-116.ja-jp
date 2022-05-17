@@ -39,7 +39,7 @@ IMPORTANT: パフォーマンスの低下を防ぐために、ケーブルをね
 
 . コントローラの前面パネルにある 2 本の非脱落型ネジを緩めます。
 +
-image::../media/sg6060_rack_retaining_screws.png[SG6060 ラック固定ネジ]
+image::../media/sg6060_rack_retaining_screws.png[SG6060とSG6060Xのラック固定ネジ]
 
 . 取り付けレールが完全に引き出されて両側のラッチがカチッという音がするまで、 SG6000-CN コントローラをラックから前方にスライドします。
 +
