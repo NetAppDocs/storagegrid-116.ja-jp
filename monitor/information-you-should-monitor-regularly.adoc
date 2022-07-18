@@ -42,12 +42,14 @@ xref:monitoring-information-lifecycle-management.adoc[情報ライフサイク�
 
 
  a| 
-xref:monitoring-performance-networking-and-system-resources.adoc[パフォーマンス、ネットワーク、システムリソース]：
+xref:monitoring-network-connections-and-performance.adoc[ネットワーク接続とパフォーマンス]
+ a| 
+毎週
 
-* クエリのレイテンシ
-* 接続とネットワーク
-* ノードレベルのリソース
 
+
+ a| 
+xref:monitoring-node-level-resources.adoc[ノードレベルのリソース]
  a| 
 毎週
 

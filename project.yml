@@ -45,6 +45,8 @@ sidebar:
     - section: expand
     - section: maintain
     - section: audit
+  - title: StorageGRID を有効にします
+    url: "/storagegrid-enable.html"
   - title: 以前のバージョン
     url: "/earlier-versions.html"
   - title: 法的通知
@@ -111,6 +113,8 @@ homepage:
       url: "/audit/index.html"
   - title: デモチュートリアル
     links:
+    - title: StorageGRID を有効にする方法について説明します
+      url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
     - title: StorageGRID ビデオライブラリ
       url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
     - title: ネットアップラーニングサービス

@@ -35,7 +35,7 @@ FabricPool バケットの場合、推奨されるバケット整合性レベル
 
 == FabricPool による階層化
 
-StorageGRID ノードが NetApp AFF システムから割り当てられたストレージを使用している場合は、ボリュームで FabricPool 階層化ポリシーが有効になっていないことを確認してください。たとえば、 StorageGRID ノードが VMware ホストで実行されている場合は、 StorageGRID ノードのデータストアの作成元ボリュームで FabricPool 階層化ポリシーが有効になっていないことを確認します。StorageGRID ノードで使用するボリュームで FabricPool による階層化を無効にすることで、トラブルシューティングとストレージの処理がシンプルになります。
+StorageGRID ノードがNetApp ONTAP システムから割り当てられたストレージを使用している場合は、ボリュームでFabricPool 階層化ポリシーが有効になっていないことを確認してください。たとえば、 StorageGRID ノードが VMware ホストで実行されている場合は、 StorageGRID ノードのデータストアの作成元ボリュームで FabricPool 階層化ポリシーが有効になっていないことを確認します。StorageGRID ノードで使用するボリュームで FabricPool による階層化を無効にすることで、トラブルシューティングとストレージの処理がシンプルになります。
 
 
 IMPORTANT: StorageGRID を使用して StorageGRID に関連するデータを FabricPool 自体に階層化しないでください。StorageGRID データを StorageGRID に階層化すると、トラブルシューティングと運用がより複雑になります。

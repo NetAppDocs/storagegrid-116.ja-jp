@@ -178,11 +178,17 @@ image::../media/storage_used_object_metadata_actual_reserved.png[使用済みス
 
 image::../media/metadata_allowed_space_volume_0.png[Metadata Allowed Space ：ボリューム 0]
 
-次の表は、 StorageGRID がストレージノードで許可されるメタデータスペースの値をどのように決定するかを示しています。
+次の表に、各ストレージノードのメモリ容量とメタデータ用に実際にリザーブされているスペースに基づいてStorageGRID で許容されるメタデータスペース*がどのように計算されるかを示します。
 
 [cols="1a,1a,2a,2a"]
 |===
-|  |  2+| ストレージノードのメモリサイズ 
+
+
+ a| 
+ a| 
+ a| 
+*ストレージノード上のメモリ容量*
+
 
 
  a| 
@@ -195,14 +201,7 @@ image::../media/metadata_allowed_space_volume_0.png[Metadata Allowed Space ：�
 
 
  a| 
- a| 
- a| 
-許可されているメタデータスペースです
-
-
-
- a| 
-メタデータ用にリザーブされている実際のスペース
+*メタデータ用に実際にリザーブされているスペース*
  a| 
 <=4 TB
  a| 
