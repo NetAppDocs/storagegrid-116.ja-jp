@@ -115,7 +115,7 @@ ls '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 * 注 * ：オブジェクトファイルのパスは、特殊文字をエスケープするために、必ず一重引用符で囲んでください。
 
 * オブジェクトパスが見つからない場合はオブジェクトが失われるため、この手順 を使用してリストアすることはできません。テクニカルサポートにお問い合わせください。
-* オブジェクトパスが見つかった場合は、手順に進みます <<restore_the_object_to_StorageGRID,オブジェクトを StorageGRID にリストアします>>。見つかったオブジェクトを StorageGRID にリストアできます。
+* オブジェクトパスが見つかった場合は、手順に進みます ,オブジェクトを StorageGRID にリストアします。見つかったオブジェクトを StorageGRID にリストアできます。
 +
 .. [[restore_The _object_to _sStorageGRID 、 start=3]] オブジェクトパスが見つかった場合は、オブジェクトを StorageGRID にリストアします。
 +
@@ -154,7 +154,7 @@ First packet of file was valid. Extracted key: 38186FE53E3C49A5
 Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila#3udu'
 ----
 +
-手順に進みます <<verify_that_new_locations_were_created,新しい場所が作成されたことを確認します>>
+手順に進みます ,新しい場所が作成されたことを確認します
 
 +
 ... [[verify_new_locations_were _created 、 start=4] オブジェクトが StorageGRID に正常にリストアされた場合は、新しい場所が作成されたことを確認します。

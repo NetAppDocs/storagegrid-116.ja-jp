@@ -141,7 +141,7 @@ NOTE: 監査プロトコル要求ヘッダーは、 * クライアント読み�
 監査情報をリモートで保存する場合は、外部 syslog サーバを設定できます。
 
 * 外部の syslog サーバに監査情報を保存する場合は、に進みます xref:../monitor/configuring-syslog-server.adoc[外部 syslog サーバを設定します]。
-* 外部 syslog サーバを使用しない場合は、に進みます <<Select-audit-information-destinations,監査情報の送信先を選択します>>。
+* 外部 syslog サーバを使用しない場合は、に進みます ,監査情報の送信先を選択します。
 
 
 

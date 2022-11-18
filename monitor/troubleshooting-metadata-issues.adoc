@@ -165,7 +165,7 @@ Cassandra の停止期間が 15 日を超えている場合、 servermanager.log
 started because it has been offline for longer than
 its 15 day grace period - rebuild cassandra
 ----
-.. このメッセージのタイムスタンプが手順に従って Cassandra の再起動を試行した時間になっていることを確認してください <<restart_Cassandra_from_the_Storage_Node,ストレージノードから Cassandra を再起動します>>。
+.. このメッセージのタイムスタンプが手順に従って Cassandra の再起動を試行した時間になっていることを確認してください ,ストレージノードから Cassandra を再起動します。
 +
 Cassandra のエントリは 1 つとは限らないため、最新のエントリを確認する必要があります。
 

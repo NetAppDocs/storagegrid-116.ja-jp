@@ -287,7 +287,7 @@ S3 Select サービスのログが記録されます。
  a| 
 管理ノードとゲートウェイノード
 
-このログは特定の管理ノードとゲートウェイノードにのみ記録されます。を参照してください xref:manage-s3-select-for-tenant-accounts.adoc[S3 Select の管理ノードとゲートウェイノードの要件と制限事項]。
+このログは特定の管理ノードとゲートウェイノードにのみ記録されます。を参照してください xref:../admin/manage-s3-select-for-tenant-accounts.adoc[S3 Select の管理ノードとゲートウェイノードの要件と制限事項]。
 
 
 

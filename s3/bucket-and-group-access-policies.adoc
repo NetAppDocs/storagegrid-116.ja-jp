@@ -201,7 +201,7 @@ PUT Bucket policy 処理の HTTP 要求の本文は、 charset=UTF-8 でエン�
 * グループポリシーの作成時は、まだ存在しないバケットもリソースの値で指定することができます。
 
 
-<<Specify variables in a policy>>
+ variables in a policy
 
 
 
@@ -824,7 +824,7 @@ s3 ： PutOverwriteObject 権限は、オブジェクトの作成または更新
 
 IMPORTANT: 現在の S3 ポリシーで上書きが許可されていても、 PutOverwriteObject 権限が Deny に設定されている場合は、オブジェクトのデータ、ユーザ定義メタデータ、またはオブジェクトのタグをクライアントが上書きすることはできません。また、この設定が PutOverwriteObject 権限の設定よりも優先されている場合は、 * Prevent Client Modification * チェックボックス（ * configuration * > * System * > * Grid options * ）が選択されています。
 
-<<S3 group policy examples>>
+ group policy examples
 
 
 
@@ -1299,11 +1299,11 @@ PUT#1 -------> PUT#2 ---X (denied)
 ----
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
-<<Create policies requiring special handling>>
+ policies requiring special handling
 
 xref:how-storagegrid-ilm-rules-manage-objects.adoc[StorageGRID の ILM ルールによるオブジェクトの管理]
 
-<<S3 group policy examples>>
+ group policy examples
 
 
 

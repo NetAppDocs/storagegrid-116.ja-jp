@@ -23,8 +23,8 @@ StorageGRID システムは、 Reed-Solomon イレイジャーコーディング
 NOTE: ストレージプールにサイトが 2 つ含まれている場合、イレイジャーコーディングプロファイルは設定できません。
 
 +
-** <<Erasure-coding schemes for storage pools containing three or more sites,3 つ以上のサイトを含むストレージプールのイレイジャーコーディングスキーム>>
-** <<Erasure-coding schemes for one-site storage pools,1 サイトのストレージプールのイレイジャーコーディングスキーム>>
+**  schemes for storage pools containing three or more sites,3 つ以上のサイトを含むストレージプールのイレイジャーコーディングスキーム
+**  schemes for one-site storage pools,1 サイトのストレージプールのイレイジャーコーディングスキーム
 
 
 * デフォルトのストレージプール、すべてのストレージノード、またはデフォルトサイトであるすべてのサイトを含むストレージプールは使用しないでください。

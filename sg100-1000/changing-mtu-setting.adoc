@@ -20,9 +20,9 @@ IMPORTANT: ネットワークの MTU 値は、ノードが接続されている�
 
 IMPORTANT: ネットワークのパフォーマンスを最大限に高めるには、すべてのノードのグリッドネットワークインターフェイスで MTU 値がほぼ同じになるように設定する必要があります。個々のノードのグリッドネットワークの MTU 設定に大きな違いがある場合は、 * Grid Network MTU mismatch * アラートがトリガーされます。MTU 値はすべてのネットワークタイプで同じである必要はありません。
 
-アプライアンスノードをリブートせずに MTU 設定を変更するには、次の手順を実行します。 <<Change the MTU setting using the Change IP tool,IP 変更ツールを使用します>>。
+アプライアンスノードをリブートせずに MTU 設定を変更するには、次の手順を実行します。  the MTU setting using the Change IP tool,IP 変更ツールを使用します。
 
-初回インストール時にクライアントまたは管理ネットワークが StorageGRID アプライアンスインストーラで設定されていなかった場合は、次の手順を実行します。 <<Change the MTU setting using maintenance mode,メンテナンスモードを使用して MTU 設定を変更します>>。
+初回インストール時にクライアントまたは管理ネットワークが StorageGRID アプライアンスインストーラで設定されていなかった場合は、次の手順を実行します。  the MTU setting using maintenance mode,メンテナンスモードを使用して MTU 設定を変更します。
 
 
 

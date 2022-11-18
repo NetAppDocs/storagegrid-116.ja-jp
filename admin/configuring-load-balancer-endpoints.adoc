@@ -153,7 +153,7 @@ image::../media/load_balancer_endpoint_node_interfaces_binding_mode.png[エン�
 +
 image::../media/load_balancer_endpoint_ha_group_vips_binding_mode.png[エンドポイント HA グループ VIP バインドモード]
 
-. HTTP * エンドポイントを作成する場合、証明書を接続する必要はありません。Create * を選択して、新しいロードバランサエンドポイントを追加します。次に、に進みます <<After-you-finish,完了後>>。それ以外の場合は、「 * Continue * 」を選択して証明書を添付します。
+. HTTP * エンドポイントを作成する場合、証明書を接続する必要はありません。Create * を選択して、新しいロードバランサエンドポイントを追加します。次に、に進みます ,完了後。それ以外の場合は、「 * Continue * 」を選択して証明書を添付します。
 
 
 

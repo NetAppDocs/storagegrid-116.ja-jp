@@ -92,7 +92,7 @@ xref:using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]
 ** 「 x-amz-server-side-encryption-customer-key 」
 ** 「 x-amz-server-side-encryption-customer-algorithm 」を実行します
 +
-<<Request headers for server-side encryption>>
+ headers for server-side encryption
 
 
 

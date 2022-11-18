@@ -48,9 +48,9 @@ NOTE: 特別に設定されたアプライアンスノード上のデータを�
 
 シナリオに応じて手順 に従って、クライアント証明書を追加します。
 
-* <<Management interface certificate already configured>>
-* <<CA issued client certificate>>
-* <<Generated certificate from Grid Manager>>
+*  interface certificate already configured
+*  issued client certificate
+*  certificate from Grid Manager
 
 
 
@@ -220,7 +220,7 @@ IMPORTANT: ダイアログを閉じると、証明書の秘密鍵を表示でき
 . Grid Managerで、* configuration *>* Security *>* Certificates *を選択し、* Global *タブを選択します。
 . 管理インターフェイス証明書*を選択します。
 . [ * カスタム証明書を使用する * ] を選択します。
-. 証明書の.pemファイルとprivate_key.pemファイルをからアップロードします <<client_cert_details,クライアント証明書の詳細>> ステップ。CAバンドルをアップロードする必要はありません。
+. 証明書の.pemファイルとprivate_key.pemファイルをからアップロードします ,クライアント証明書の詳細 ステップ。CAバンドルをアップロードする必要はありません。
 +
 .. [ 証明書のアップロード ] を選択し、 [ 続行 ] を選択します。
 .. 各証明書ファイル(`.pem')をアップロードします

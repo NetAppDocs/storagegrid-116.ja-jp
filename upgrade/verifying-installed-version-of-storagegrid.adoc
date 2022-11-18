@@ -15,7 +15,7 @@ summary: アップグレードを開始する前に、利用可能な最新の�
 
 StorageGRID 11.6 にアップグレードする前に、グリッドに StorageGRID 11.5 がインストールされている必要があります。以前のバージョンの StorageGRID を現在使用している場合は、グリッドの現在のバージョンが StorageGRID 11.5._x.y_x になるまで、以前のすべてのアップグレードファイルと最新のホットフィックスをインストールする必要があります（強く推奨）。
 
-に、アップグレード可能なパスの 1 つを示します <<Example: Upgrade to StorageGRID 11.5 from version 11.3.0.8,例>>。
+に、アップグレード可能なパスの 1 つを示します  Upgrade to StorageGRID 11.5 from version 11.3.0.8,例。
 
 
 IMPORTANT: StorageGRID の各バージョンに最新のホットフィックスを適用してから次のバージョンにアップグレードすることを強く推奨します。また、インストールした新しいバージョンごとに最新のホットフィックスも適用します。場合によっては、データ損失のリスクを回避するためにホットフィックスを適用する必要があります。を参照してください https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^] 各ホットフィックスのリリースノートで詳細を確認できます。

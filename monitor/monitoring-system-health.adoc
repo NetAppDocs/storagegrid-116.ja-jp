@@ -66,6 +66,6 @@ image::../media/dashboard_health_panel.png[ダッシュボードのヘルスパ�
 
 .関連情報
 * xref:../admin/index.adoc[StorageGRID の管理]
-* xref:set-up-email-alert-notifications.adoc[アラート用の E メール通知を設定します]
+* xref:email-alert-notifications.adoc[アラート用の E メール通知を設定します]
 * xref:using-snmp-monitoring.adoc[SNMP による監視を使用する]
 

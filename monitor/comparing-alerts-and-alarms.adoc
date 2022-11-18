@@ -115,7 +115,7 @@ xref:../admin/index.adoc[StorageGRID の管理]
 
 * 注： * アラームとアラートは独立したシステムなので、アラームと AutoSupport 通知に使用されるメール設定は、アラート通知には使用されません。ただし、すべての通知に同じメールサーバを使用できます。
 
-xref:set-up-email-alert-notifications.adoc[アラート用の E メール通知を設定します]
+xref:email-alert-notifications.adoc[アラート用の E メール通知を設定します]
  a| 
 *support*>* Alarms （レガシー） *>* Legacy email setup* を選択します。
 
@@ -147,7 +147,7 @@ xref:alarms-that-generate-snmp-notifications.adoc[SNMP 通知を生成するア�
 . [ 受信者 * ] セクションで、電子メールリストごと、またはアラート発生時に電子メールを受信する必要があるユーザーごとに電子メールアドレスを入力します。
 
 
-xref:set-up-email-alert-notifications.adoc[アラート用の E メール通知を設定します]
+xref:email-alert-notifications.adoc[アラート用の E メール通知を設定します]
  a| 
 . *support*>* Alarms （レガシー） *>* Legacy email setup* を選択します。
 . メーリングリストを作成しています。

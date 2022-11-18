@@ -27,7 +27,7 @@ NOTE: サーバ証明書の問題によって処理が中断されないよう�
 IP アドレスではなくドメイン名を使用して Grid Manager または Tenant Manager にアクセスする場合は、次のいずれかの場合に証明書のエラーが表示され、バイパスするオプションはありません。
 
 * カスタム管理インターフェイス証明書の有効期限が切れます。
-* あなた <<Restore the default management interface certificate,カスタム管理インターフェイス証明書をデフォルトのサーバ証明書に戻します>>。
+* あなた  the default management interface certificate,カスタム管理インターフェイス証明書をデフォルトのサーバ証明書に戻します。
 
 
 ====

@@ -45,7 +45,7 @@ image::../media/sign_in_sso.gif[SSO が有効な場合は、 StorageGRID のサ�
 
 +
 
-NOTE: テナントアカウントの完全な URL （完全修飾ドメイン名または IP アドレスのあとに「 / ？ accountId=_20 桁の account-id_ 」）を入力すると、 StorageGRID サインインページは表示されません。代わりに、組織の SSO サインインページがすぐに表示されます。このページでは、を実行できます <<signin_sso,SSO クレデンシャルを使用してサインインします>>。
+NOTE: テナントアカウントの完全な URL （完全修飾ドメイン名または IP アドレスのあとに「 / ？ accountId=_20 桁の account-id_ 」）を入力すると、 StorageGRID サインインページは表示されません。代わりに、組織の SSO サインインページがすぐに表示されます。このページでは、を実行できます ,SSO クレデンシャルを使用してサインインします。
 
 . Grid Manager と Tenant Manager のどちらにアクセスするかを指定します。
 +

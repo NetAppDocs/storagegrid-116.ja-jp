@@ -27,4 +27,4 @@ NOTE: 同じファイルを使用して、複数のアプライアンスを設�
 
 
 
-NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の情報を参照してください xref:downloading-and-extracting-storagegrid-installation-files.adoc[StorageGRID インストールファイルのダウンロードと展開] リカバリとメンテナンスの手順を参照してください。
+NOTE: Python スクリプトを StorageGRID 自動化で直接使用することも、 StorageGRID インストール REST API を独自に開発するグリッド導入および設定ツールで使用する例として使用することもできます。の情報を参照してください xref:../maintain/gathering-required-materials-for-grid-node-recovery.adoc#download-and-extract-install-files-recover[StorageGRID インストールファイルのダウンロードと展開]。

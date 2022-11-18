@@ -16,7 +16,7 @@ summary: ホストへの Linux のインストールの完了後、このあと�
 .必要なもの
 * を確認しておきます xref:../network/index.adoc[StorageGRID ネットワークのガイドライン]。
 * についての情報を確認しておきます xref:node-container-migration-requirements.adoc[ノードコンテナの移行要件]。
-* 仮想ホストを使用している場合は、を参照してください <<mac_address_cloning_ubuntu,MAC アドレスのクローニングに関する考慮事項と推奨事項>> ホストネットワークを設定する前に、
+* 仮想ホストを使用している場合は、を参照してください ,MAC アドレスのクローニングに関する考慮事項と推奨事項 ホストネットワークを設定する前に、
 
 
 

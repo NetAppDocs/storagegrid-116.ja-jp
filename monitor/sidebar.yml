@@ -85,7 +85,7 @@ entries:
     - title: アラート通知を管理します
       entries:
       - title: SNMP 通知を設定する
-        url: "/monitor/set-up-snmp-alert-notifications.html"
+        url: "/monitor/snmp-alert-notifications.html"
       - title: E メール通知を設定
         url: "/monitor/email-alert-notifications.html"
       - title: アラート通知をサイレント化する

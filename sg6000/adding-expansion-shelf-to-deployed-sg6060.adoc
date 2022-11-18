@@ -192,7 +192,7 @@ image::../media/monitor_expansion_for_new_appliance_shelf.png[拡張シェルフ
 
 +
 
-NOTE: 拡張シェルフの構成に失敗した場合に再試行するには、 StorageGRID アプライアンスインストーラで * Advanced * > * Reboot Controller * を選択し、 * Reboot into Maintenance Mode * を選択します。ノードがリブートしたら、を再試行します <<start_expansion,拡張シェルフ構成>>。
+NOTE: 拡張シェルフの構成に失敗した場合に再試行するには、 StorageGRID アプライアンスインストーラで * Advanced * > * Reboot Controller * を選択し、 * Reboot into Maintenance Mode * を選択します。ノードがリブートしたら、を再試行します ,拡張シェルフ構成。
 
 +
 リブートが完了すると、 * Tasks * タブは次のスクリーンショットのようになります。

@@ -37,7 +37,7 @@ NOTE: 導入されたノードは、 StorageGRID アプライアンスインス�
 * StorageGRID アプライアンスインストーラまたはグリッドマネージャを使用できない場合は、管理ポートに接続された Web ブラウザを使用して SANtricity System Manager に直接アクセスできます。
 
 
-この手順 には、 SANtricity システムマネージャに最初にアクセスする手順が含まれています。SANtricity System Manager をすでにセットアップしている場合は、に進みます <<config_hardware_alerts_sg5700,ハードウェアアラートを設定します>> ステップ。
+この手順 には、 SANtricity システムマネージャに最初にアクセスする手順が含まれています。SANtricity System Manager をすでにセットアップしている場合は、に進みます ,ハードウェアアラートを設定します ステップ。
 
 
 NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用すると、アプライアンスの管理ポートを設定または接続しなくても SANtricity System Manager にアクセスできます。

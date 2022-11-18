@@ -46,7 +46,7 @@ NOTE: StorageGRID 11.6 ドキュメントサイトでは、機能変更がない
 * 新しい * VLAN インターフェイスの作成ウィザードでは、 VLAN ID の入力と 1 つ以上のノード上の親インターフェイスの選択を手順ごとに実行できます。親インターフェイスは、グリッドネットワーク、クライアントネットワーク、または VM またはベアメタルホスト用の追加のトランクインターフェイスです。を参照してください xref:../admin/configure-vlan-interfaces.html[VLAN インターフェイスを設定します]。
 * ノードにトランクインターフェイスまたはアクセスインターフェイスを追加できるようになりました。トランクインターフェイスを追加する場合は、 VLAN インターフェイスを設定する必要があります。アクセスインターフェイスを追加する場合は、 HA グループに直接追加できます。 VLAN インターフェイスを設定する必要はありません。以下を参照してください。
 +
-** * Linux （ノードのインストール前） * ： <<Installation enhancements>>
+** * Linux （ノードのインストール前） * ：  enhancements
 ** * Linux （ノードのインストール後） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
 ** * VMware （ノードのインストール後） * ： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[導入環境に関する情報を収集します]
 
@@ -122,7 +122,7 @@ IMPORTANT: S3 Console はテスト済みではないため、オブジェクト�
 
 * StorageGRID アップグレード * ページが再設計されました（ * maintenance * > * System * > * Software update * > * StorageGRID upgrade * ）。
 * StorageGRID 11.6 へのアップグレードが完了したら、 Grid Manager を使用して将来のリリースにアップグレードし、そのリリース用のホットフィックスを同時に適用できます。StorageGRID のアップグレードページに推奨されるアップグレードパスが表示され、正しいダウンロードページに直接リンクされます。
-* AutoSupport ページ（ * support * > * Tools * > * AutoSupport * ）の新しい * Check for software updates * チェックボックスを使用すると、この機能を制御できます。システムに WAN アクセスがない場合は、利用可能なソフトウェアアップデートのチェックを無効にできます。を参照してください xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[AutoSupport &GT; ソフトウェアアップデートのチェックを無効にします]。
+* AutoSupport ページ（ * support * > * Tools * > * AutoSupport * ）の新しい * Check for software updates * チェックボックスを使用すると、この機能を制御できます。システムに WAN アクセスがない場合は、利用可能なソフトウェアアップデートのチェックを無効にできます。を参照してください xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[AutoSupport  ソフトウェアアップデートのチェックを無効にします]。
 +
 
 NOTE: StorageGRID 11.6 へのアップグレードでは、オプションでスクリプトを使用して、ホットフィックスを同時にアップグレードおよび適用できます。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["ネットアップのナレッジベース：「 How to run combined Major upgrade and hotfix script for StorageGRID"^]。

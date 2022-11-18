@@ -372,7 +372,7 @@ storagegrid_storage_status のように指定します
 
 
  a| 
-storagegrid_storage_utilization_metadata_bytes
+storagegrid_storage_utilization_bytes
  a| 
 ストレージノード上のレプリケートオブジェクトデータとイレイジャーコーディングオブジェクトデータの推定合計サイズ。
 

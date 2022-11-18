@@ -88,12 +88,12 @@ StorageGRID 11.6 にアップグレードすると、次のいずれかに該当
 +
 image::../media/nodes_page_object_data_used_with_alert.png[3 つの SN で使用されているオブジェクトデータが表示されるノードページ]
 
-. ほぼすべてのストレージノードが上限に近い場合（使用済みオブジェクトデータがすべて * されている値が 80% 未満の場合など）は、無視設定を使用できます。に進みます <<Use optimized watermarks>>。
+. ほぼすべてのストレージノードが上限に近い場合（使用済みオブジェクトデータがすべて * されている値が 80% 未満の場合など）は、無視設定を使用できます。に進みます  optimized watermarks。
 +
 
-NOTE: この一般的なルールにはいくつか例外があります。たとえば、 ILM ルールで Strict 取り込み動作が使用されている場合や、特定のストレージプールがほぼいっぱいになった場合は、最初にの手順を実行する必要があります <<View optimized storage watermarks>> および <<Determine if you can use optimized watermarks>>。
+NOTE: この一般的なルールにはいくつか例外があります。たとえば、 ILM ルールで Strict 取り込み動作が使用されている場合や、特定のストレージプールがほぼいっぱいになった場合は、最初にの手順を実行する必要があります  optimized storage watermarks および  if you can use optimized watermarks。
 
-. 他のストレージノードがほぼいっぱいになった場合は、の手順を実行します <<View optimized storage watermarks>> および <<Determine if you can use optimized watermarks>>。
+. 他のストレージノードがほぼいっぱいになった場合は、の手順を実行します  optimized storage watermarks および  if you can use optimized watermarks。
 
 
 
@@ -133,9 +133,9 @@ StorageGRID は、 2 つの Prometheus 指標を使用して、 * Storage Volume
 .. 各オブジェクトストア（ボリューム）の Available * 値を、そのストレージノード用にメモした最大最適ウォーターマークと比較します。
 
 
-. 各オンラインストレージノード上の少なくとも 1 つのボリュームに、そのノードの最大最適ウォーターマークを超える使用可能なスペースがある場合は、に進みます <<Use optimized watermarks>> 最適化されたウォーターマークの使用を開始します。
+. 各オンラインストレージノード上の少なくとも 1 つのボリュームに、そのノードの最大最適ウォーターマークを超える使用可能なスペースがある場合は、に進みます  optimized watermarks 最適化されたウォーターマークの使用を開始します。
 +
-それ以外の場合、 xref:../expand/index.adoc[グリッドを展開します] できるだけ早く。既存のノードにストレージボリュームを追加するか、新しいストレージノードを追加してください。次に、に進みます <<Use optimized watermarks>> ウォーターマークの設定を更新します。
+それ以外の場合、 xref:../expand/index.adoc[グリッドを展開します] できるだけ早く。既存のノードにストレージボリュームを追加するか、新しいストレージノードを追加してください。次に、に進みます  optimized watermarks ウォーターマークの設定を更新します。
 
 . ストレージボリュームのウォーターマークにカスタム値を引き続き使用する必要がある場合は、 xref:../monitor/silencing-alert-notifications.adoc[無音] または xref:../monitor/disabling-alert-rules.adoc[- 無効にします] 「 * 読み取り専用のロー・ウォーターマーク・オーバーライド * 」アラート。
 +

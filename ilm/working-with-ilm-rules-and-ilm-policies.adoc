@@ -78,7 +78,7 @@ ILM ルールの編集ウィザードが開きます。
 +
 image::../media/edit_ilm_rule_step_1.png[Edit ILM Rule ページ]
 
-. の手順に従って、 Edit ILM Rule ウィザードの各ページのオプションを設定します xref:creating-ilm-rule.adoc[ILM ルールを作成する] および xref:using-advanced-filters-in-ilm-rules.adoc[高度なフィルタを使用する]必要に応じて。
+. の手順に従って、 Edit ILM Rule ウィザードの各ページのオプションを設定します xref:access-create-ilm-rule-wizard.adoc[ILM ルールを作成する] および xref:using-advanced-filters-in-ilm-rules.adoc[高度なフィルタを使用する]必要に応じて。
 +
 ILM ルールの編集時に、 ILM ルールの名前を変更することはできません。
 

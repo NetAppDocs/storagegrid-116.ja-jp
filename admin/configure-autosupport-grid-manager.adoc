@@ -135,7 +135,7 @@ AutoSupport On Demand は有効になっており、テクニカルサポート�
 
 AutoSupport を有効にすると、ヘルスメッセージとステータスメッセージがネットアップサポートに送信されます。すべての AutoSupport メッセージに対して、追加の送信先を 1 つ指定できます。
 
-AutoSupport メッセージの送信に使用されるプロトコルを確認または変更するには、の手順を参照してください <<Specify the protocol for AutoSupport messages>>。
+AutoSupport メッセージの送信に使用されるプロトコルを確認または変更するには、の手順を参照してください  the protocol for AutoSupport messages。
 
 
 NOTE: SMTP プロトコルを使用して、 AutoSupport メッセージを追加の送信先に送信することはできません。
