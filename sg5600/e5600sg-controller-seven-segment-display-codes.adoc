@@ -293,6 +293,7 @@ EP
 「 ManageSGA 」コードは、 E2700 コントローラとのグリッド構成前の通信に失敗したことを示します。
 
 |===
+.関連情報
 xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置のトラブルシューティング（ SG5600 ）]
 
 https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

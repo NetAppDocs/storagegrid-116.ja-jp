@@ -29,6 +29,7 @@ IMPORTANT: 切断されたサイトの運用停止を実行する前に、ネッ
 
 NOTE: 2 回目のメンテナンス手順 を実行する必要がある場合は、を実行します xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[ストレージノードを削除している間は、運用停止手順 を一時停止します]。* Pause * ボタンは、 ILM 評価またはイレイジャーコーディングデータの運用停止ステージに達したときにのみ有効になります。ただし、 ILM 評価（データ移行）はバックグラウンドで継続して実行されます。2 つ目のメンテナンス手順 が完了したら、運用停止手順を再開できます。
 
+.関連情報
 xref:grid-node-decommissioning.adoc[グリッドノードの運用停止]
 
 xref:site-decommissioning.adoc[サイトの運用停止]

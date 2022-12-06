@@ -13,6 +13,7 @@ summary: ハードウェアのメンテナンスが完了したら、コント�
 [role="lead"]
 ハードウェアのメンテナンスが完了したら、コントローラをキャビネットまたはラックに再度取り付けます。
 
+.必要なもの
 コントローラカバーを再度取り付けておきます。
 
 xref:reinstalling-sg6000-cn-controller-cover.adoc[SG6000-CN コントローラのカバーを再度取り付けます]
@@ -48,6 +49,7 @@ xref:connecting-power-cords-and-applying-power-sg6000.adoc[電源コードを接
 
 
 
+.完了後
 コントローラは再起動可能です。
 
 xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[SG6000-CN コントローラの電源をオンにして、動作を確認します]

@@ -33,4 +33,5 @@ NOTE: ユーザトリガー型 AutoSupport メッセージを送信したあと�
 
 
 
+.関連情報
 xref:managing-alarms.adoc[アラーム用 E メールサーバの設定（従来型システム）]

@@ -93,7 +93,7 @@ StorageGRID の仮想グリッドノードを導入するために必要な情�
 . deploy-vsphere-ovftool.ini` を開きます
 . VMware 仮想グリッドノードを導入するために必要なすべての情報を入力します。
 +
-を参照してください ,構成ファイルの設定 を参照してください。
+を参照してください <<configuration-file-settings,構成ファイルの設定>> を参照してください。
 
 . 必要な情報をすべて入力して確認したら、ファイルを保存して閉じます。
 
@@ -308,6 +308,7 @@ NOTE: プライマリ管理ノードでは ADMIN_IP パラメータが無視さ�
 * グローバルに設定されていないすべてのパラメータ。たとえば、ノードが管理ネットワークに接続されていて、 ADMIN_NETWORK_NETWORK パラメータをグローバルに指定していない場合は、ノードに対してそれらのパラメータを指定する必要があります。
 
 
+.プライマリ管理ノード
 プライマリ管理ノードには次の設定を追加する必要があります。
 
 * * node_type * ： VM_Admin_Node
@@ -339,6 +340,7 @@ DISK = INSTANCES=2, CAPACITY=300
 
 NOTE: 管理ノードの場合は、 INSTANCES を必ず 2 にする必要があります。
 
+.ストレージノード
 ストレージノードには次の設定を追加する必要があります。
 
 * * node_name * ： VM_Storage_Node
@@ -399,6 +401,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 ----
 
 
+.アーカイブノード
 アーカイブノードには次の設定を追加する必要があります。
 
 * * node_name * ： VM_Archive_Node
@@ -416,6 +419,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 
   ADMIN_IP = 10.1.0.2
 ----
+.ゲートウェイノード
 ゲートウェイノードには次の設定を追加する必要があります。
 
 * * node_name * ： VM_API_Gateway
@@ -439,6 +443,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 
   ADMIN_IP = 10.1.0.2
 ----
+.非プライマリ管理ノード
 非プライマリ管理ノードには次の設定を追加する必要があります。
 
 * * node_type * ： VM_Admin_Node
@@ -602,6 +607,7 @@ cd StorageGRID-Webscale-version/platform
 ----
 
 
+.結果
 設定プロセスでリカバリパッケージの .zip ファイルが生成され、インストールと設定を実行するディレクトリにダウンロードされます。グリッドノードで障害が発生した場合に StorageGRID システムをリカバリできるようにするために、リカバリパッケージファイルをバックアップする必要があります。たとえば、バックアップされたセキュアなネットワーク上の場所や、安全なクラウドストレージ上の場所にコピーします。
 
 
@@ -624,6 +630,7 @@ StorageGRID システムがインストールおよび設定されると、確�
 ----
 StorageGRID has been configured and installed.
 ----
+.関連情報
 xref:navigating-to-grid-manager.adoc[Grid Manager に移動します]
 
 xref:overview-of-installation-rest-api.adoc[インストール REST API の概要]

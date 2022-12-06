@@ -25,4 +25,5 @@ summary: リカバリするプライマリ管理ノードが、アラート通�
 . [ 変更の適用 *] をクリックします。
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

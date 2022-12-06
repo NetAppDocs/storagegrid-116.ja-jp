@@ -57,6 +57,7 @@ image::../media/object_lookup_results.png[オブジェクトの検索結果]
 
 
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:../s3/index.adoc[S3 を使用する]

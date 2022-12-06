@@ -140,6 +140,7 @@ IMPORTANT: すべてのノードが同時に停止するように、グリッド
 
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:adding-to-or-changing-subnet-lists-on-grid-network.adoc[グリッドネットワークのサブネットリストに対する追加または変更]

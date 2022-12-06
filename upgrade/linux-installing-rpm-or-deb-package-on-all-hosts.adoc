@@ -13,6 +13,7 @@ summary: Linux ホストに StorageGRID ノードが導入されている場合�
 [role="lead"]
 Linux ホストに StorageGRID ノードが導入されている場合は、アップグレードを開始する前に、これらの各ホストに追加の RPM パッケージまたは DEB パッケージをインストールする必要があります。
 
+.必要なもの
 StorageGRID の NetApp Downloads ページから次のいずれかの「 .tgz 」ファイルまたは「 .zip 」ファイルをダウンロードしておく必要があります。
 
 

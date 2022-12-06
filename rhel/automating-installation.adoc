@@ -75,6 +75,7 @@ NOTE: サンプルのプレイブックには、 StorageGRID ホストサービ�
 * 構成ファイル configure -storagegrid.json を作成しました。このファイルを作成するには、サンプル構成ファイル（「 configure -storagegrid-sample.json 」）または空の構成ファイル（「 configure -storagegridBlank.json 」）を変更します。
 
 
+.このタスクについて
 configure -storagegrid.py Python スクリプトと、 configure -storagegrid.json 構成ファイルを使用して、 StorageGRID システムの設定を自動化できます。
 
 
@@ -105,6 +106,7 @@ cd StorageGRID-Webscale-version/platform
 ----
 
 
+.結果
 リカバリ・パッケージの .zip ファイルは ' 構成プロセス中に生成され ' インストールおよび構成プロセスを実行しているディレクトリにダウンロードされますグリッドノードで障害が発生した場合に StorageGRID システムをリカバリできるようにするために、リカバリパッケージファイルをバックアップする必要があります。たとえば、バックアップされたセキュアなネットワーク上の場所や、安全なクラウドストレージ上の場所にコピーします。
 
 
@@ -127,4 +129,5 @@ StorageGRID システムがインストールおよび設定されると、確�
 ----
 StorageGRID has been configured and installed.
 ----
+.関連情報
 xref:overview-of-installation-rest-api.adoc[インストール REST API の概要]

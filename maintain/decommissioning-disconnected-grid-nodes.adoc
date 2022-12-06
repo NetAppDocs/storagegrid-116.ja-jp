@@ -23,6 +23,7 @@ summary: グリッドに現在接続されていないノード（「 Health 」
 * プロビジョニングパスフレーズが必要です。
 
 
+.このタスクについて
 切断されているノードは、「 * Health * 」列で「 Unknown 」（青）または「 Administratively Down 」（グレー）のアイコンで特定できます。この例では、 DC1-S4 という名前のストレージノードが接続解除されており、他のすべてのノードが接続されています。
 
 image::../media/decommission_nodes_page_one_disconnected.png[1 つのノードが切断されているノードの運用停止ページ]
@@ -197,6 +198,7 @@ IMPORTANT: StorageGRID 11.6 では、「 show -replicated-repair-status 」オ�
 
 --
 ====
+.完了後
 切断されているノードが運用停止され、すべてのデータ修復ジョブが完了したら、必要に応じて、接続されているグリッドノードの運用を停止できます。
 
 その後、手順 の運用停止が完了したら、次の手順を実行します。
@@ -212,4 +214,5 @@ IMPORTANT: StorageGRID 11.6 では、「 show -replicated-repair-status 」オ�
 
 
 
+.関連情報
 xref:grid-node-recovery-procedures.adoc[グリッドノードのリカバリ手順]

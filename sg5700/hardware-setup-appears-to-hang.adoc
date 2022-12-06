@@ -52,6 +52,7 @@ E5700 and E2800 System Monitoring Guide 』を参照してください
 . この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
 
 
+.関連情報
 xref:status-indicators-on-e5700sg-controller.adoc[E5700SG コントローラのステータスインジケータ]
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[HE エラー： SANtricity OS ソフトウェアとの同期エラー]

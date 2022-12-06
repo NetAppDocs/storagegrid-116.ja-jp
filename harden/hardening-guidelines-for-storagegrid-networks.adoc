@@ -51,6 +51,7 @@ StorageGRID システムでは、グリッドノードあたり最大 3 つの�
 * 明示的に設定されたエンドポイントでのみ、インバウンドクライアントトラフィックを受け入れます。を参照してください xref:../admin/managing-untrusted-client-networks.adoc[信頼されていないクライアントネットワークの管理]。
 
 
+.関連情報
 xref:../network/index.adoc[ネットワークのガイドライン]
 
 xref:../primer/index.adoc[グリッド入門]

@@ -128,4 +128,5 @@ NOTE: ILM によって配置された可能性のあるクラウドストレー�
 * ストレージプロキシサーバのネットワーク設定を確認します。
 
 
+.関連情報
 xref:lifecycle-of-cloud-storage-pool-object.adoc[クラウドストレージプールオブジェクトのライフサイクル]

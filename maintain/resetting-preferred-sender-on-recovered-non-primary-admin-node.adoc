@@ -25,4 +25,5 @@ summary: リカバリする非プライマリ管理ノードが、アラート�
 . [ 変更の適用 *] をクリックします。
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

@@ -18,6 +18,7 @@ StorageGRID アプライアンスのドライブ、ファン、電源装置、�
 * アプライアンスは次のようになりました xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモードに切り替えられます] コンポーネントの交換用手順 でアプライアンスをシャットダウンする必要がある場合。
 
 
+.このタスクについて
 ドライブ、電源 / ファンキャニスター、ファンキャニスター、電源キャニスター、バッテリを交換する方法 またはドライブドロワーについては、 E2700 および E5600 ストレージアレイでの標準的な手順を参照してください。ハードウェア自体の取り外しや交換についてのステップバイステップの手順をよくお読みください。 SANtricity Storage Manager の手順の多くは、アプライアンスには当てはまりません。
 
 
@@ -83,6 +84,7 @@ E2700 コントローラのバッテリ（コントローラの取り外しが�
 の手順に従います xref:replacing-e2700-controller.adoc[E2700 コントローラを交換します]をクリックします。ただし、既存のコントローラに新しいバッテリを取り付けます。
 
 |===
+.関連情報
 https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["ネットアップのマニュアル： E2700 シリーズ"^]

@@ -90,4 +90,5 @@ ILM ルールの操作手順を参照してください。
 . ストレージプールの詳細の表示が完了したら、「 * 閉じる * 」を選択します。
 
 
+.関連情報
 xref:working-with-ilm-rules-and-ilm-policies.adoc[ILM ルールおよび ILM ポリシーの操作]

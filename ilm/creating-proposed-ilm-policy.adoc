@@ -28,6 +28,7 @@ image::../media/video-screenshot-ilm-policies.png[ビデオ： StorageGRID ILM P
 
 
 
+.このタスクについて
 ドラフトの ILM ポリシーを作成する主な理由は次のとおりです。
 
 * 新しいサイトを追加した場合、そのサイトにオブジェクトを配置するために新しい ILM ルールを使用する必要があります。

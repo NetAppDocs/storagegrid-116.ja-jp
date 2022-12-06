@@ -85,7 +85,7 @@ xref:using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]
 ** 「 x-amz-server-side-encryption-customer-key 」
 ** 「 x-amz-server-side-encryption-customer-algorithm 」を実行します
 +
-を参照してください  headers for server-side encryption
+を参照してください <<サーバ側の暗号化を行うための要求ヘッダー>>
 
 
 
@@ -179,6 +179,7 @@ NOTE: S3 オブジェクトロックが有効な状態でオブジェクトを�
 
 ソースバケットでバージョン管理が有効になっている場合は、「 x-amz-copy-source 」ヘッダーを使用してオブジェクトの最新バージョンをコピーできます。オブジェクトの特定のバージョンをコピーするには、コピーするバージョンを versionId サブリソースを使用して明示的に指定する必要があります。デスティネーションのバケットでバージョン管理が有効になっている場合は、生成されたバージョンが「 x-amz-version-id 」応答ヘッダーで返されます。ターゲットバケットのバージョン管理が一時停止されている場合 'x-amz-version-id' は Null 値を返します
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:using-server-side-encryption.adoc[サーバ側の暗号化を使用します]

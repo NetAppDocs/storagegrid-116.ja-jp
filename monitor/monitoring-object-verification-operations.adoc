@@ -18,6 +18,7 @@ StorageGRID システムは、ストレージノード上のオブジェクト�
 * Maintenance または Root Access 権限が必要です。
 
 
+.このタスクについて
 2 つ xref:verifying-object-integrity.adoc[検証プロセス] 連携してデータの整合性を確保：
 
 * * バックグラウンド検証 * は、オブジェクトデータの正確性を継続的にチェックするために自動的に実行されます。

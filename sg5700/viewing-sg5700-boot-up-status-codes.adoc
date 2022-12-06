@@ -13,6 +13,7 @@ summary: アプライアンスの電源をオンにすると、各コントロ�
 [role="lead"]
 アプライアンスの電源をオンにすると、各コントローラのデジタル表示ディスプレイにステータスコードとエラーコードが表示されます。
 
+.このタスクについて
 E2800 コントローラと E5700SG コントローラでは、さまざまなステータスとエラーコードが表示されています。
 
 これらのコードの意味については、次のリソースを参照してください。
@@ -76,6 +77,7 @@ HO -- IP address for Admin Network -- IP address for Grid Network HO
 . デジタル表示ディスプレイにその他の値が表示される場合は、を参照してください xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置のトラブルシューティング（ SG5700 ）] インストール手順が正しく完了したことを確認します。問題を解決できない場合は、テクニカルサポートにお問い合わせください。
 
 
+.関連情報
 xref:status-indicators-on-e5700sg-controller.adoc[E5700SG コントローラのステータスインジケータ]
 
 https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2800 System Monitoring Guide 』を参照してください"^]

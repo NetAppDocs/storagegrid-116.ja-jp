@@ -20,6 +20,7 @@ summary: アプライアンスが適切に機能しない場合や障害が発�
 * アプライアンスは次のようになりました xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモードにしました]。
 
 
+.このタスクについて
 アプライアンスの交換中は、 StorageGRID ノードにアクセスできなくなります。アプライアンスが動作している場合は、この手順 の起動時に通常の方法でシャットダウンを実行できます。
 
 
@@ -92,6 +93,7 @@ BMC インターフェイスを使用して、ブート時のステータスを�
 . アプライアンスノードが Grid Manager に表示され、アラートが表示されていないことを確認します。
 
 
+.関連情報
 xref:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.adoc[キャビネットまたはラックへのアプライアンスの設置（ SG100 および SG1000 ）]
 
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[SG100 および SG1000 アプライアンスのステータスインジケータを表示します]

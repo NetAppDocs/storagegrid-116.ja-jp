@@ -27,6 +27,7 @@ CAUTION: 複数のストレージノードがオフラインの場合、また�
 
 
 
+.このタスクについて
 この手順 を完了するには、次の作業を行います。
 
 * リカバリされたストレージノードにログインします。
@@ -42,7 +43,7 @@ CAUTION: 複数のストレージノードがオフラインの場合、また�
 * sn-recovery-postinstall.sh スクリプトを実行しますこのスクリプトを実行すると、次の処理が実行されます。
 +
 
-IMPORTANT: リカバリの実行中はストレージノードをリブートしないでください `sn-recovery-postinstall.sh` 障害ストレージボリュームの再フォーマットとオブジェクトメタデータのリストア実行前にストレージノードをリブートしています `sn-recovery-postinstall.sh` completesを指定すると、サービスが開始しようとするとエラーが発生し、StorageGRID アプライアンスノードが保守モードを終了します。の手順を参照してください ,インストール後のスクリプト。
+IMPORTANT: リカバリの実行中はストレージノードをリブートしないでください `sn-recovery-postinstall.sh` 障害ストレージボリュームの再フォーマットとオブジェクトメタデータのリストア実行前にストレージノードをリブートしています `sn-recovery-postinstall.sh` completesを指定すると、サービスが開始しようとするとエラーが発生し、StorageGRID アプライアンスノードが保守モードを終了します。の手順を参照してください <<post-install-script-step,インストール後のスクリプト>>。
 
 +
 ** sn-remount-volumes スクリプトがマウントできなかったストレージ・ボリューム ' または適切にフォーマットされなかったストレージ・ボリュームを再フォーマットします
@@ -238,6 +239,7 @@ image::../media/recovering_cassandra.png[グリッド管理インターフェイ
 
 ノード上で sn-recovery-postinstall.sh スクリプトがサービスを開始したら、その手順 で説明されているように、スクリプトでフォーマットされたストレージボリュームにオブジェクトデータをリストアできます。
 
+.関連情報
 xref:reviewing-warnings-for-system-drive-recovery.adoc[ストレージノードのシステムドライブのリカバリに関する警告を確認します]
 
 xref:restoring-object-data-to-storage-volume-if-required.adoc[必要に応じて、オブジェクトデータをストレージボリュームにリストア]

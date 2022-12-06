@@ -97,6 +97,7 @@ https://_FQDN_ |_Node IP: Swift Port_/auth/v1.0 /`
 * 「 X-Container-Object-Count 」
 
 
+.関連情報
 xref:configuring-tenant-accounts-and-connections.adoc[テナントアカウントと接続を設定する]
 
 xref:account-operations.adoc[アカウントの処理]

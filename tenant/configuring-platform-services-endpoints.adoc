@@ -47,4 +47,5 @@ StorageGRID は、 Elasticsearch クラスタを表す検索統合エンドポ�
 
 検索統合エンドポイントは、 Elasticsearch の特定のインデックスとタイプを参照します。StorageGRID でエンドポイントを作成する前に、 Elasticsearch でインデックスを作成しておく必要があります。作成していない場合、エンドポイントの作成に失敗します。タイプはエンドポイントの作成前に作成しておく必要はありません。StorageGRID は、オブジェクトメタデータをエンドポイントに送信するときに必要に応じてタイプを作成します。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

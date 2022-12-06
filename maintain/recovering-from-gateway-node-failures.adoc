@@ -15,4 +15,5 @@ summary: ゲートウェイノードの障害からリカバリするには、�
 
 image::../media/overview_api_gateway_node_recovery.png[ゲートウェイノードのリカバリの概要フローチャート]
 
+.関連情報
 xref:../sg100-1000/index.adoc[SG100 および SG1000 サービスアプライアンス]

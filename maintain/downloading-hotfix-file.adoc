@@ -50,4 +50,5 @@ NOTE: macOS デバイスを使用している場合、修正プログラムフ�
 . ダウンロードする場所を選択し、「 * 保存 * 」を選択します。
 
 
+.関連情報
 xref:configuring-replacement-primary-admin-node.adoc[交換用プライマリ管理ノードを設定]

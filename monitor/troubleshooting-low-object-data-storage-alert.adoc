@@ -19,6 +19,7 @@ Low object data storage * アラートは、オブジェクトデータを格納
 * 特定のアクセス権限が必要です。
 
 
+.このタスクについて
 Low object data storage * アラートは、ストレージノード上のレプリケートオブジェクトデータおよびイレイジャーコーディングオブジェクトデータの合計容量が、アラートルールで設定されている条件のいずれかを満たした場合にトリガーされます。
 
 デフォルトでは、次の条件が true と評価されると、 Major アラートがトリガーされます。
@@ -83,6 +84,7 @@ NOTE: ストレージノードがいっぱいになったときの対応につ�
 
 
 
+.関連情報
 xref:troubleshooting-storage-status-alarm.adoc[Storage Status （ SSTS ）アラームをトラブルシューティングします]
 
 xref:../expand/index.adoc[グリッドを展開します]

@@ -34,4 +34,5 @@ image::../media/nodes_storage_node_storage_tab.png[[ ノード ] → [ ストレ
 
 image::../media/nodes_page_storage_tables.png[Nodes ページストレージテーブル]
 
+.関連情報
 xref:monitoring-storage-capacity.adoc[ストレージ容量を監視]

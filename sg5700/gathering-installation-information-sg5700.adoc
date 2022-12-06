@@ -13,6 +13,7 @@ summary: StorageGRID アプライアンスを設置および設定する際に�
 [role="lead"]
 StorageGRID アプライアンスを設置および設定する際に、イーサネットスイッチポート、 IP アドレス、およびポートとネットワークのボンディングモードについて決定し、関連情報を収集する必要があります。
 
+.このタスクについて
 次の表を使用して、アプライアンスに接続する各ネットワークの必要な情報を記録できます。これらの値は、ハードウェアの設置と設定に必要です。
 
 
@@ -362,6 +363,7 @@ VLAN タグ
 
 
 |===
+.関連情報
 xref:reviewing-appliance-network-connections-sg5700.adoc[アプライアンスのネットワーク接続を確認する（ SG5700 ）]
 
 xref:port-bond-modes-for-e5700sg-controller-ports.adoc[E5700SG コントローラポートのポートボンディングモード]

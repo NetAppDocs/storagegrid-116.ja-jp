@@ -40,6 +40,7 @@ S3 テナントアカウントが作成されたら、テナントユーザは T
 
 IMPORTANT: S3 テナントユーザは、 Tenant Manager を使用して S3 バケットを作成および管理できますが、オブジェクトを取り込んで管理するには、 S3 アクセスキーを取得し、 S3 REST API を使用する必要があります。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:../tenant/index.adoc[テナントアカウントを使用する]
@@ -79,6 +80,7 @@ StorageGRID 管理者がノードのクライアントネットワークを信�
 
 各オプションの詳細については、 StorageGRID の管理手順を参照してください。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 
@@ -199,6 +201,7 @@ LDR
 
 クライアントが StorageGRID への接続に使用する IP アドレスに DNS 名を設定できます。ローカルネットワーク管理者にお問い合わせください。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 
@@ -217,6 +220,7 @@ NOTE: CLB サービスは廃止されました。
 
 [Enable HTTP Connection*] オプションが選択されている場合、クライアントは HTTPS とは異なるポートを HTTP に使用する必要があります。StorageGRID の管理手順を参照してください。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[アクティブ、アイドル、および同時 HTTP 接続のメリット]
@@ -227,6 +231,7 @@ xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[アクティ�
 
 クライアント要求に S3 ドメイン名を使用できるようにするには、 S3 パス形式と S3 仮想ホスト形式の要求で S3 ドメイン名を使用する接続を受け入れるように StorageGRID 管理者がシステムを設定する必要があります。
 
+.このタスクについて
 S3 仮想ホスト形式の要求を使用できるようにするには、グリッド管理者が次のタスクを実行する必要があります。
 
 * Grid Manager を使用して、 S3 エンドポイントのドメイン名を StorageGRID システムに追加します。
@@ -251,6 +256,7 @@ NOTE: CLB サービスは廃止されました。
 
 これらの手順が完了したら ' 仮想ホスト形式の要求 (`bucket.s3.company.com` など ) を使用できます
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:configuring-security-for-rest-api.adoc[REST API のセキュリティを設定する]

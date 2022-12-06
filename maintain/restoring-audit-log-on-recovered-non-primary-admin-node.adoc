@@ -67,4 +67,5 @@ chown ams-user:bycast *
 
 監査共有への既存のクライアントアクセスもリストアする必要があります。詳細については、 StorageGRID の管理手順を参照してください。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

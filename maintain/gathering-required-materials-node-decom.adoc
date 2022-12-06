@@ -45,4 +45,5 @@ summary: グリッドノードの運用停止を実行する前に、次の情�
 システムの現在のトポロジを記載したドキュメントがあれば、すべて入手します。
 
 |===
+.関連情報
 xref:../admin/web-browser-requirements.adoc[Web ブラウザの要件]

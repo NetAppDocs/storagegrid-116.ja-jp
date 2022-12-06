@@ -69,6 +69,7 @@ StorageGRID システムの拡張手順
 リカバリとメンテナンスの手順
 
 |===
+.関連情報
 xref:preparing-for-installation.adoc[設置の準備（ SG5600 ）]
 
 xref:installing-hardware.adoc[ハードウェアの設置（ SG5600 ）]

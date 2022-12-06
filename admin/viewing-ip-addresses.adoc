@@ -13,8 +13,10 @@ summary: StorageGRID システムの各グリッドノードの IP アドレス�
 [role="lead"]
 StorageGRID システムの各グリッドノードの IP アドレスを表示できます。コマンドラインでこの IP アドレスを使用してグリッドノードにログインし、さまざまなメンテナンス手順を実行できます。
 
+.必要なもの
 を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
+.このタスクについて
 IP アドレスの変更については、を参照してください xref:../maintain/index.adoc[リカバリとメンテナンス]。
 
 .手順

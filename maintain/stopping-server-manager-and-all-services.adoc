@@ -13,6 +13,7 @@ summary: Server Manager は常時実行中であることが前提ですが、�
 [role="lead"]
 Server Manager は常時実行中であることが前提ですが、あるグリッドノードで実行されている Server Manager およびすべてのサービスの停止が必要になる場合もあります。
 
+.必要なもの
 「 passwords.txt 」ファイルが必要です。
 
 .手順

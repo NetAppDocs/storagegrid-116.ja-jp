@@ -25,6 +25,7 @@ FabricPool で使用する StorageGRID を設定する場合は、ロードバ�
 
 
 
+.このタスクについて
 このタスクの詳細については、を参照してください xref:../admin/configuring-load-balancer-endpoints.adoc[ロードバランサエンドポイントを設定する]。
 
 .手順

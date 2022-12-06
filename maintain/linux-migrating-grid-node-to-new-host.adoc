@@ -31,6 +31,7 @@ NOTE: 本番環境では、 1 つのホストで複数のストレージノー�
 
 詳細については、お使いの Linux オペレーティングシステム用の StorageGRID インストール手順の「ノード移行の要件」を参照してください。
 
+.関連情報
 xref:deploying-new-linux-hosts.adoc[新しい Linux ホストを導入する]
 
 xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]

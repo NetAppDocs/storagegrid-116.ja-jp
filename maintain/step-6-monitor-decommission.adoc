@@ -13,6 +13,7 @@ summary: Decommission Site ページウィザードの Step 6\ （ Monitor Decom
 [role="lead"]
 Decommission Site ページウィザードの Step 6 （ Monitor Decommission ）では、サイトが削除されるまで進行状況を監視できます。
 
+.このタスクについて
 StorageGRID は、接続されているサイトを削除するときに、次の順序でノードを削除します。
 
 . ゲートウェイノード
@@ -236,6 +237,7 @@ image::../media/decommission_site_success_message.png[運用停止サイト成�
 
 
 
+.完了後
 サイトの運用停止手順 が完了したら、次の作業を実行します。
 
 * 運用停止したサイトのすべてのストレージノードのドライブを確実に消去します。市販のデータ消去ツールまたはデータ消去サービスを使用して、ドライブからデータを完全かつ安全に削除します。

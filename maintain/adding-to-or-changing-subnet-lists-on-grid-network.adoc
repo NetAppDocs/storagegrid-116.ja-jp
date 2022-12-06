@@ -154,4 +154,5 @@ IMPORTANT: リカバリパッケージファイルには StorageGRID システ�
 
 
 
+.関連情報
 xref:configuring-ip-addresses.adoc[IP アドレスを設定する]

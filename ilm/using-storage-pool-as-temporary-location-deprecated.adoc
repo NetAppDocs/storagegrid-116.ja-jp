@@ -18,4 +18,5 @@ summary: ストレージプールを 1 つ含むオブジェクトの配置を�
 
 NOTE: Strict 取り込み動作を選択した場合（ Create ILM Rule ウィザードのステップ 3 ）、一時的な場所は無視されます。
 
+.関連情報
 xref:data-protection-options-for-ingest.adoc[取り込みのデータ保護オプション]

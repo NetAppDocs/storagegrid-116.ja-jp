@@ -29,6 +29,7 @@ xref:locating-controller-in-data-center.adoc[データセンターでコント�
 
 
 
+.このタスクについて
 コントローラに障害が発生したかどうかは、次の 2 つの方法で確認できます。
 
 * SANtricity System Manager の Recovery Guru から、コントローラを交換するように指示されます。
@@ -277,7 +278,7 @@ E2800Bコントローラにのみ、別のHICを使用します。HICはメイ�
 
 NOTE: この手順 の図は2ポートHICを示しています。コントローラのHICのポート数は異なる場合があります。
 
-. コントローラにHICが搭載されていない場合（E2800A）は、コントローラカバーを交換します。コントローラにHICが搭載されている場合（E2800B）は、に進みます ,障害が発生したコントローラから交換用コントローラにHICを移動します。
+. コントローラにHICが搭載されていない場合（E2800A）は、コントローラカバーを交換します。コントローラにHICが搭載されている場合（E2800B）は、に進みます <<move_the_HIC_to_the_replacement_controller,障害が発生したコントローラから交換用コントローラにHICを移動します>>。
 +
 .. [[move_The _HIC _on_the replacement _controller]] HICを搭載している場合は、障害が発生したコントローラから交換用コントローラにHICを移動します。
 .. HICからSFPをすべて取り外します。
@@ -395,4 +396,5 @@ NOTE: 元のコントローラの IP アドレスが DHCP を使用して取得�
 
 部品の交換後、障害のある部品は、キットに付属する RMA 指示書に従ってネットアップに返却してください。を参照してください https://mysupport.netapp.com/site/info/rma["パーツの返品と交換"^] 詳細については、を参照してください。
 
+.関連情報
 http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]

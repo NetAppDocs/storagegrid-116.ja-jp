@@ -139,4 +139,5 @@ Updating grid network configuration on Name
 
 
 
+.関連情報
 xref:configuring-ip-addresses.adoc[IP アドレスを設定する]

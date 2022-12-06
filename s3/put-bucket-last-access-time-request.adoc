@@ -48,4 +48,5 @@ Date: _date_
 Authorization: _authorization string_
 Host: _host_
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

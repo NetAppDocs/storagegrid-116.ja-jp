@@ -48,4 +48,5 @@ image::../media/sg6060_rack_retaining_screws.png[SG6060とSG6060Xのラック固
 . オプション：キャビネットまたはラックからコントローラを完全に取り外す場合は、レールキットの手順に従ってレールからコントローラを取り外します。
 
 
+.関連情報
 xref:removing-sg6000-cn-controller-cover.adoc[SG6000-CN コントローラのカバーを取り外します]

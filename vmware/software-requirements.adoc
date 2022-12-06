@@ -44,4 +44,5 @@ VMware vSphere ハイパーバイザーおよび VMware vCenter Server ソフト
 
 これらの VMware 製品をインストールするために必要な手順については、 VMware のドキュメントを参照してください。
 
+.関連情報
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

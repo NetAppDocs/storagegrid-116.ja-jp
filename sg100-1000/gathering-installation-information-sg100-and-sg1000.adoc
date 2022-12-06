@@ -357,6 +357,7 @@ BMC 管理ポートに使用する静的 IP アドレス
 
 
 |===
+.関連情報
 xref:sg100-and-sg1000-appliances-overview.adoc[SG100 および SG1000 アプライアンスの概要]
 
 xref:cabling-appliance-sg100-and-sg1000.adoc[アプライアンス SG100 と SG1000 をケーブル接続します]

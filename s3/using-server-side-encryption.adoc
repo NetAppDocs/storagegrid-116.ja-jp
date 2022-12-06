@@ -108,6 +108,7 @@ IMPORTANT: 指定した暗号化キーが格納されることはありません
 * バケットに CloudMirror レプリケーションが設定されている場合は、 SSE-C オブジェクトを取り込むことができません。取り込み処理は失敗します。
 
 
+.関連情報
 xref:get-object.adoc[オブジェクトの取得]
 
 xref:head-object.adoc[HEAD Object の実行]

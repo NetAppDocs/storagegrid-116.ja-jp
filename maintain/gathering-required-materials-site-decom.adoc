@@ -46,6 +46,7 @@ summary: サイトの運用を停止する前に、以下を準備しておく�
 システムの現在のトポロジを記載したドキュメントがあれば、すべて入手します。
 
 |===
+.関連情報
 xref:../admin/web-browser-requirements.adoc[Web ブラウザの要件]
 
 xref:downloading-recovery-package.adoc[リカバリパッケージをダウンロードします]

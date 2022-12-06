@@ -100,6 +100,7 @@ image::../media/tenant_dashboard_endpoint_error.png[エンドポイントメッ�
 
 エンドポイントエラーの詳細を表示するには、エンドポイントを選択してエンドポイントページを表示します。
 
+.関連情報
 xref:troubleshooting-platform-services-endpoint-errors.adoc[プラットフォームサービスのエンドポイントエラーのトラブルシューティングを行います]
 
 xref:../monitor/index.adoc[監視とトラブルシューティング]

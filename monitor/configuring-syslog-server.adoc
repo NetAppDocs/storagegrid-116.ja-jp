@@ -20,6 +20,7 @@ summary: 監査ログ、アプリケーションログ、およびセキュリ�
 * TLS または RELP/TLS を使用する場合は、適切なサーバおよびクライアントの認定資格を取得している必要があります。
 
 
+.このタスクについて
 外部の syslog サーバに監査情報を送信する場合は、先に外部サーバを設定する必要があります。
 
 外部 syslog サーバに監査情報を送信すると、次のことが可能になります。
@@ -563,6 +564,7 @@ IMPORTANT: 外部 syslog サーバがテスト用の StorageGRID メッセージ
 
 
 
+.関連情報
 xref:../audit/index.adoc[監査メッセージの概要]
 
 xref:../monitor/configure-audit-messages.adoc[監査メッセージとログの送信先を設定します]

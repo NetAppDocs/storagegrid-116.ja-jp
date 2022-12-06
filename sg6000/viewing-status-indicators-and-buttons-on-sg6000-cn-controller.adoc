@@ -82,6 +82,7 @@ SG6000-CN コントローラのブート時またはハードリセット後、�
 
 
 
+.関連情報
 xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置（ SG6000 ）のトラブルシューティング]
 
 xref:configuring-bmc-interface-sg6000.adoc[BMC インターフェイス（ SG6000 ）の設定]

@@ -21,4 +21,5 @@ Network タブには、ノード、サイト、またはグリッド上のすべ
 
 image::../media/nodes_page_network_tab.png[[ ノード ] ページの [ ネットワーク ] タブ]
 
+.関連情報
 xref:monitoring-network-connections-and-performance.adoc[ネットワーク接続とパフォーマンスを監視します]

@@ -123,6 +123,7 @@ X-Trans-Id: 1936575373
 Content-Length: 0
 x-ntap-sg-consistency: strong-site
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]
 
 
@@ -263,4 +264,5 @@ Connection: CLOSE
 X-Trans-Id: 1936575373
 Content-Length: 0
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

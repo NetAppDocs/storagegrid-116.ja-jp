@@ -13,6 +13,7 @@ summary: 各ストレージコントローラにはデジタル表示ディス�
 [role="lead"]
 各ストレージコントローラにはデジタル表示ディスプレイがあり、電源投入時にステータスコードが表示されます。ステータスコードは、 E2800 コントローラと EF570 コントローラで同じです。
 
+.このタスクについて
 これらのコードの説明については、使用しているストレージコントローラタイプの E シリーズシステムの監視に関する情報を参照してください。
 
 .手順
@@ -30,6 +31,7 @@ image::../media/seven_segment_display_codes_for_e2800.gif[E2800 のデジタル�
 . 一方または両方のコントローラに別の値が表示される場合は、を参照してください xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置（ SG6000 ）のトラブルシューティング] インストール手順が正しく完了したことを確認します。問題を解決できない場合は、テクニカルサポートにお問い合わせください。
 
 
+.関連情報
 https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2800 System Monitoring Guide 』を参照してください"^]
 
 https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

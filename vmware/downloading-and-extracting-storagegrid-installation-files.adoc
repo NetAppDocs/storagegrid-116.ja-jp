@@ -127,4 +127,5 @@ StorageGRID の API スキーマ
 * 注 * ：アップグレードを実行する前に、これらのスキーマを使用して、 StorageGRID 管理 API を使用するように記述したコードが、アップグレード互換性テスト用の非本番環境の StorageGRID 環境を持たない場合、新しい StorageGRID リリースと互換性があることを確認できます。
 
 |===
+.関連情報
 xref:../maintain/index.adoc[リカバリとメンテナンス]

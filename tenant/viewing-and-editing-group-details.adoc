@@ -59,6 +59,7 @@ Swift Administrator 権限の詳細については、 Swift テナント用の�
 
 
 
+.関連情報
 xref:creating-groups-for-s3-tenant.adoc[S3 テナント用のグループを作成します]
 
 xref:creating-groups-for-swift-tenant.adoc[Swift テナント用のグループを作成します]

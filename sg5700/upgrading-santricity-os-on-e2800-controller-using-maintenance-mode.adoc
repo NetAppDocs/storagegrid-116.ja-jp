@@ -22,6 +22,7 @@ NOTE: まれに、 StorageGRID アプライアンスをメンテナンスモー�
 
 
 
+.このタスクについて
 一度に複数の StorageGRID アプライアンスで E シリーズコントローラの SANtricity OS または NVSRAM をアップグレードしないでください。
 
 
@@ -57,4 +58,5 @@ image::../media/node_rejoin_grid_confirmation.png[アプライアンスノード
 
 
 
+.関連情報
 xref:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.adoc[Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード]

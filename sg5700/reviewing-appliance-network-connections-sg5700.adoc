@@ -113,6 +113,7 @@ E5700SG コントローラの 10 / 25GbE ポート 1~4
 StorageGRID のグリッドネットワークおよびクライアントネットワークに接続します。E5700SG コントローラでの 10 / 25GbE ポート接続を参照してください
 
 |===
+.関連情報
 xref:gathering-installation-information-sg5700.adoc[インストール情報の収集（ SG5700 ）]
 
 xref:cabling-appliance-sg5700.adoc[ケーブルアプライアンス（ SG5700 ）]

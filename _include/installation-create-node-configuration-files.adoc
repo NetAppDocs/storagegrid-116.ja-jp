@@ -689,4 +689,5 @@ o
 `port_remap_inbound=grid/tcp/3022/22`
 
 |===
+.関連情報
 xref:../network/index.adoc[ネットワークのガイドライン]

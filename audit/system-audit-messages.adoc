@@ -205,4 +205,5 @@ VLST
 xref:vlst-user-initiated-volume-lost.adoc[VLST ：ユーザーが開始したボリュームが失われました]
 
 |===
+.関連情報
 xref:lkcu-overwritten-object-cleanup.adoc[LKCU: 上書きされたオブジェクトのクリーンアップ]

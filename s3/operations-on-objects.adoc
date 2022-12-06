@@ -180,4 +180,5 @@ PUT Object tagging を使用してオブジェクトのタグを更新した場�
 要求に「 versionId 」クエリパラメータが指定されていない場合、バージョン管理されたバケット内のオブジェクトの最新バージョンにタグが追加されます。オブジェクトの現在のバージョンが削除マーカーの場合は、「 MethodNotAllowed 」ステータスが返され、「 x-amz-delete marker` 応答ヘッダーが「 true 」に設定されます。
 
 |===
+.関連情報
 xref:s3-operations-tracked-in-audit-logs.adoc[監査ログで追跡される S3 処理]

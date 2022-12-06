@@ -55,6 +55,7 @@ NOTE: 証明書利用者信頼を設定するには、 StorageGRID の管理手�
 
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[再インストールのためのアプライアンスの準備（プラットフォームの交換のみ）]

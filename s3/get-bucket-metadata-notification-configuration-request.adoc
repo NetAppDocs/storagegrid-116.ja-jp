@@ -177,4 +177,5 @@ Content-Type: application/xml
     </Rule>
 </MetadataNotificationConfiguration>
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

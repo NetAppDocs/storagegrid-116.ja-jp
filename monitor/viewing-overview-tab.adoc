@@ -58,6 +58,7 @@ Overview （概要）タブの Alerts （アラート）セクションには、
 
 image::../media/nodes_page_alerts_table.png[ノードページアラートの表]
 
+.関連情報
 xref:monitoring-node-connection-states.adoc[ノードの接続状態を監視します]
 
 xref:viewing-current-alerts.adoc[現在のアラートを表示します]

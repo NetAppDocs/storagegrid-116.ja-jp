@@ -38,6 +38,7 @@ Swift テナントアカウントが作成されたら、 Root Access 権限を�
 
 IMPORTANT: Swift ユーザが Tenant Manager にアクセスするには、 Root Access 権限が必要です。ただし Root Access 権限では、 Swift REST API に認証してコンテナを作成したりオブジェクトを取り込んだりすることはできません。Swift REST API に認証するには、 Swift 管理者の権限が必要です。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:../tenant/index.adoc[テナントアカウントを使用する]
@@ -213,6 +214,7 @@ NOTE: CLB サービスは廃止されました。
 
 [Enable HTTP Connection*] オプションが選択されている場合、クライアントは HTTPS とは異なるポートを HTTP に使用する必要があります。StorageGRID の管理手順を参照してください。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 
@@ -229,6 +231,7 @@ https://platform.swiftstack.com/docs/integration/python-swiftclient.html["swifft
 * StorageGRID システムに Swift テナントアカウントが必要です。
 
 
+.このタスクについて
 セキュリティを構成していない場合は ' これらの各コマンドに --insecure フラグを追加する必要があります
 
 .手順
@@ -289,6 +292,7 @@ delete test_container
 ----
 
 
+.関連情報
 xref:configuring-tenant-accounts-and-connections.adoc[Swift テナントアカウントを作成および設定します]
 
 xref:configuring-security-for-rest-api.adoc[REST API のセキュリティを設定する]

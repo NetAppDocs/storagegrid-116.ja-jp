@@ -92,4 +92,5 @@ Swift テナントアカウントが作成されたら、テナントの root �
 
 IMPORTANT: Swift ユーザが Tenant Manager にアクセスするには、 Root Access 権限が必要です。ただし Root Access 権限では、 Swift REST API に認証してコンテナを作成したりオブジェクトを取り込んだりすることはできません。Swift REST API に認証するには、 Swift 管理者の権限が必要です。
 
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

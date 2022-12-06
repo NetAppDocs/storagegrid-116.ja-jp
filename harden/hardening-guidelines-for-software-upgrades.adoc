@@ -41,12 +41,13 @@ StorageGRID ノードが VMware または別のハイパーバイザーで実行
 
 
 
-== Linux ノードにアップグレードします
+== * Linuxノードへのアップグレード*
 
 StorageGRID ノードで Linux ホストプラットフォームを使用している場合は、セキュリティ更新とカーネル更新がホスト OS に適用されていることを確認する必要があります。また、これらの更新プログラムが利用可能になった場合は、脆弱なハードウェアにファームウェアの更新プログラムを適用する必要があります。
 
 サポートされているバージョンの一覧については、 NetApp Interoperability Matrix Tool を参照してください。
 
+.関連情報
 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
 
 xref:../upgrade/index.adoc[ソフトウェアをアップグレードする]

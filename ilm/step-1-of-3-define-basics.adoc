@@ -13,6 +13,7 @@ summary: Create ILM Rule ウィザードのステップ 1 \ （ Define Basics \ 
 [role="lead"]
 Create ILM Rule ウィザードのステップ 1 （ Define Basics ）では、ルールの基本フィルタと高度なフィルタを定義できます。
 
+.このタスクについて
 StorageGRID は、 ILM ルールに照らしてオブジェクトを評価する際に、オブジェクトメタデータをルールのフィルタと比較します。オブジェクトメタデータがすべてのフィルタに一致した場合、 StorageGRID はルールを使用してオブジェクトを配置します。すべてのオブジェクトに適用するルールを設計したり、 1 つ以上のテナントアカウントやバケット名などの基本的なフィルタや、オブジェクトのサイズやユーザメタデータなどの高度なフィルタを指定したりできます。
 
 image::../media/ilm_create_ilm_rule_wizard_1.png[Create ILM Rule ウィザードのステップ 1 / 3 を実行します]

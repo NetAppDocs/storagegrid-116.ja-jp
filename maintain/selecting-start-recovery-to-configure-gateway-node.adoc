@@ -50,4 +50,5 @@ image::../media/recovery_reset_warning.gif[リカバリのリセットに関す�
 
 
 
+.関連情報
 xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[再インストールのためのアプライアンスの準備（プラットフォームの交換のみ）]

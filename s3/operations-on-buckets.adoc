@@ -366,6 +366,7 @@ PUT Object Lock の設定を指定します
 を参照してください xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#put-object-lock-configuration[PUT Object Lock の設定を指定します] を参照してください。
 
 |===
+.関連情報
 xref:consistency-controls.adoc[整合性制御]
 
 xref:get-bucket-last-access-time-request.adoc[GET Bucket last access time 要求]

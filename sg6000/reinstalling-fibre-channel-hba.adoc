@@ -40,6 +40,7 @@ image::../media/sg6060_riser_alignment_hole.jpg[SG6060 ライザーアセンブ�
 . ケーブルを再取り付けするファイバチャネル HBA ポートから保護キャップを取り外します。
 
 
+.完了後
 コントローラで他のメンテナンス手順を実行する必要がない場合は、コントローラカバーを再度取り付けます。
 
 xref:reinstalling-sg6000-cn-controller-cover.adoc[SG6000-CN コントローラのカバーを再度取り付けます]

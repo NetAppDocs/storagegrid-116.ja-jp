@@ -46,6 +46,7 @@ NOTE: この値は、各要求が完了した時点で更新されます。そ�
 
 このグラフには、 1 秒あたりにクライアントに返されたエラー応答数の 3 分間の移動平均が、エラー応答コード別に示されます。
 
+.関連情報
 xref:monitoring-load-balancing-operations.adoc[ロードバランシング処理を監視する]
 
 xref:../admin/index.adoc[StorageGRID の管理]

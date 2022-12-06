@@ -80,4 +80,5 @@ summary: アカウントに対して実行する Swift API 処理を次に示し
 * 「 X-Trans-ID 」
 
 
+.関連情報
 xref:monitoring-and-auditing-operations.adoc[監視と監査の処理]

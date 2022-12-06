@@ -75,6 +75,7 @@ StorageGRID によるプラットフォームサービスエンドポイント�
 
 xref:../admin/index.adoc[StorageGRID の管理]
 
+.関連情報
 xref:creating-platform-services-endpoint.adoc[プラットフォームサービスエンドポイントを作成します]
 
 xref:testing-connection-for-platform-services-endpoint.adoc[プラットフォームサービスエンドポイントの接続をテストします]

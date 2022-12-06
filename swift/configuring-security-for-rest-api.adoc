@@ -95,6 +95,7 @@ TLS
 
 
 |===
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 
@@ -173,4 +174,5 @@ TLS_RSA_With _AES_128_GCM _SHA256
 TLS_RSA_With _AES_256_GCM_SHA384
 
 |===
+.関連情報
 xref:configuring-tenant-accounts-and-connections.adoc[テナントアカウントと接続を設定する]

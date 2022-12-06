@@ -93,6 +93,7 @@ image::../media/alarms_acknowledging.png[アラームの確認応答]
 
 
 
+.関連情報
 xref:alarms-reference.adoc[アラーム一覧（従来のシステム）]
 
 xref:managing-alarms.adoc[現在のアラーム（従来のシステム）に確認応答する]

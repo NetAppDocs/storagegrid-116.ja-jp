@@ -39,6 +39,7 @@ image::../media/ping_test_passed.png[StorageGRID Webscale アプライアンス�
 
 
 
+.関連情報
 xref:configuring-network-links-sg5700.adoc[ネットワークリンクの設定（ SG5700 ）]
 
 xref:changing-mtu-setting.adoc[MTU 設定を変更します]

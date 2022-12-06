@@ -46,6 +46,7 @@ StorageGRID システム内でやり取りされる監査メッセージには�
 * 「 value 」は属性の内容で、通常は数値またはテキスト値です。値は常にコロン (`:') の後に続きます。データ型 CSTR の値は二重引用符で囲まれます。
 
 
+.関連情報
 xref:using-audit-explain-tool.adoc[audit-explain ツールを使用してください]
 
 xref:using-audit-sum-tool.adoc[audit-sum ツールを使用します]

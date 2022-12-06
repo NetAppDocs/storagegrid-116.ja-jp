@@ -13,6 +13,7 @@ summary: コントローラの前面と背面にある青色の識別 LED は、
 [role="lead"]
 コントローラの前面と背面にある青色の識別 LED は、データセンターでアプライアンスを特定するのに役立ちます。
 
+.必要なもの
 識別するコントローラの BMC IP アドレスが必要です。
 
 .手順
@@ -24,6 +25,7 @@ image::../media/sg6060_service_identify_turn_on.jpg[BMC のコントローラ識
 
 
 
+.結果
 青色の識別 LED は、コントローラの前面（図）と背面（図）に点灯します。
 
 image::../media/sg6060_front_panel_service_led_on.jpg[前面識別 LED オン]
@@ -31,6 +33,7 @@ image::../media/sg6060_front_panel_service_led_on.jpg[前面識別 LED オン]
 
 NOTE: コントローラにベゼルが取り付けられている場合、前面の識別 LED が見えにくいことがあります。
 
+.完了後
 コントローラ識別 LED を消灯するには、次の手順を実行します。
 
 * コントローラの前面パネルにある識別 LED スイッチを押します。
@@ -41,6 +44,7 @@ NOTE: コントローラにベゼルが取り付けられている場合、前�
 
 image::../media/sg6060_front_panel_service_led_off.jpg[前面識別 LED オフ]
 
+.関連情報
 xref:locating-controller-in-data-center.adoc[データセンターでコントローラを探します]
 
 xref:accessing-bmc-interface-sg1000.adoc[BMC インターフェイスにアクセスします]

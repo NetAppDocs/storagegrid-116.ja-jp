@@ -145,6 +145,7 @@ x-amz-restore ： ongoing -request="false" 、 expiry-date ="Sat, 23 July 20 201
 
 versionId サブリソースが指定されていない場合、バージョン管理されたバケット内のオブジェクトの最新バージョンが取得されます。オブジェクトの現在のバージョンが削除マーカーの場合は、「 Not Found 」ステータスが返され、「 x-amz-delete-marker` 応答ヘッダーは「 true 」に設定されます。
 
+.関連情報
 xref:using-server-side-encryption.adoc[サーバ側の暗号化を使用します]
 
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]

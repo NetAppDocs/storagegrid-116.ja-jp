@@ -44,4 +44,5 @@ NOTE: グリッドのバージョンに応じて、ノードの導入時にマ�
 . 次に、プライマリ管理ノードにホットフィックス 11._A.B.C._ を適用します。
 
 
+.関連情報
 xref:configuring-replacement-primary-admin-node.adoc[交換用プライマリ管理ノードを設定]

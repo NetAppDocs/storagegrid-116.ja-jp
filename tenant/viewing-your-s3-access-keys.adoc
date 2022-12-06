@@ -39,6 +39,7 @@ image::../media/access_keys_view_list.png[アクセスキーのリスト]
 
 
 
+.関連情報
 xref:creating-your-own-s3-access-keys.adoc[独自の S3 アクセスキーを作成します]
 
 xref:deleting-your-own-s3-access-keys.adoc[自分の S3 アクセスキーを削除します]

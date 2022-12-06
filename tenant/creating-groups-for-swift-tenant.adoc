@@ -72,6 +72,7 @@ Swift ユーザが Tenant Manager にアクセスするには、 Root Access 権
 
 
 
+.関連情報
 xref:tenant-management-permissions.adoc[テナント管理権限]
 
 xref:../swift/index.adoc[Swift を使用します]

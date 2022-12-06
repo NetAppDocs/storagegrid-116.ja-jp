@@ -22,6 +22,7 @@ NOTE: 保守モードでは、ストレージコントローラへの接続が�
 
 
 
+.このタスクについて
 一度に複数の StorageGRID アプライアンスで E シリーズコントローラの SANtricity OS または NVSRAM をアップグレードしないでください。
 
 
@@ -57,6 +58,7 @@ image::../media/node_rejoin_grid_confirmation.png[アプライアンスノード
 
 
 
+.関連情報
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
 
 xref:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.adoc[Grid Manager を使用してストレージコントローラの SANtricity OS をアップグレード]

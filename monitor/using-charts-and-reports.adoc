@@ -62,6 +62,7 @@ image::../media/state_graph.gif[状態グラフ（ State Graph ）]
 
 
 
+.関連情報
 xref:viewing-nodes-page.adoc[Nodes ページを表示します]
 
 xref:viewing-grid-topology-tree.adoc[グリッドトポロジツリーを表示します]
@@ -126,6 +127,7 @@ image:../media/gray_blue_chart_shading.gif["特定できない値と不明な値
 
 ノードページには、ストレージ容量やスループットなどの属性を監視するために定期的にアクセスする必要があるグラフとグラフが含まれています。一部のケース、特にテクニカルサポートと連携している場合は、サポート * > * ツール * > * グリッドトポロジ * ページを使用して他のチャートにアクセスできます。
 
+.必要なもの
 を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
 .手順

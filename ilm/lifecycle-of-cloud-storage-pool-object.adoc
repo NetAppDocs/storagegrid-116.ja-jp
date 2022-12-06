@@ -13,8 +13,8 @@ summary: クラウドストレージプールを実装する前に、クラウ�
 [role="lead"]
 クラウドストレージプールを実装する前に、クラウドストレージプールのタイプごとに格納されているオブジェクトのライフサイクルを確認してください。
 
-*  Lifecycle of a Cloud Storage Pool object
-*  Lifecycle of a Cloud Storage Pool object
+* <<S3 ：クラウドストレージプールオブジェクトのライフサイクル>>
+* <<Azure ：クラウドストレージプールオブジェクトのライフサイクル>>
 
 
 
@@ -110,4 +110,5 @@ NOTE: StorageGRID 内のストレージノードにもオブジェクトのコ�
 
 
 
+.関連情報
 xref:../s3/index.adoc[S3 を使用する]

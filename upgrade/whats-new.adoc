@@ -46,7 +46,7 @@ NOTE: StorageGRID 11.6 ドキュメントサイトでは、機能変更がない
 * 新しい * VLAN インターフェイスの作成ウィザードでは、 VLAN ID の入力と 1 つ以上のノード上の親インターフェイスの選択を手順ごとに実行できます。親インターフェイスは、グリッドネットワーク、クライアントネットワーク、または VM またはベアメタルホスト用の追加のトランクインターフェイスです。を参照してください xref:../admin/configure-vlan-interfaces.html[VLAN インターフェイスを設定します]。
 * ノードにトランクインターフェイスまたはアクセスインターフェイスを追加できるようになりました。トランクインターフェイスを追加する場合は、 VLAN インターフェイスを設定する必要があります。アクセスインターフェイスを追加する場合は、 HA グループに直接追加できます。 VLAN インターフェイスを設定する必要はありません。以下を参照してください。
 +
-** * Linux （ノードのインストール前） * ：  enhancements
+** * Linux （ノードのインストール前） * ： <<インストールの機能拡張>>
 ** * Linux （ノードのインストール後） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：ノードにトランクインターフェイスまたはアクセスインターフェイスを追加します]
 ** * VMware （ノードのインストール後） * ： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[導入環境に関する情報を収集します]
 

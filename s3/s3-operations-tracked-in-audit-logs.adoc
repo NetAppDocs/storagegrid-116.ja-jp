@@ -45,6 +45,7 @@ summary: バケットおよびオブジェクトのいくつかの処理は、 S
 * PUT Object - Copy の各コマンドを実行します
 
 
+.関連情報
 xref:operations-on-buckets.adoc[バケットの処理]
 
 xref:operations-on-objects.adoc[オブジェクトの処理]

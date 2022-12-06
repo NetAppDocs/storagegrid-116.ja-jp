@@ -22,6 +22,7 @@ xref:locating-controller-in-data-center.adoc[データセンターでコント�
 
 
 
+.このタスクについて
 SG6000-CN コントローラを交換すると、アプライアンスストレージノードにアクセスできなくなります。SG6000-CN コントローラが十分に機能している場合は、この手順 の開始時に通常の方法でシャットダウンを実行できます。
 
 
@@ -83,6 +84,7 @@ xref:../maintain/index.adoc[リカバリとメンテナンス]
 
 
 
+.関連情報
 xref:sg6000-cn-installing-into-cabinet-or-rack.adoc[SG6000-CN ：キャビネットまたはラックに設置します]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]

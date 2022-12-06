@@ -21,6 +21,7 @@ xref:locating-controller-in-data-center.adoc[データセンターでコント�
 * アプライアンスは次のようになりました xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモードに切り替えられます]。
 
 
+.このタスクについて
 サービスの中断を回避するには、他のすべてのストレージノードがグリッドに接続されていることを確認してから、コントローラをシャットダウンするか、スケジュールされたメンテナンス期間中にサービスの停止期間が許容される場合はコントローラをシャットダウンします。情報ライフサイクル管理を使用してオブジェクトを管理する手順のノード接続状態の確認に関する情報を参照してください。
 
 
@@ -79,4 +80,5 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 電源制御ペー
 
 
 
+.関連情報
 xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[キャビネットまたはラックから SG6000-CN コントローラを取り外します]

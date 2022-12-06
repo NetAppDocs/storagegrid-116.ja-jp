@@ -70,6 +70,7 @@ SG5760
 . 必要なネットワークスイッチを取り付けます。互換性の情報については、 NetApp Interoperability Matrix Tool を参照してください。
 
 
+.関連情報
 https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

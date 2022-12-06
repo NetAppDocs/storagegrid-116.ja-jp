@@ -210,6 +210,7 @@ IMPORTANT: レプリケートコピーを一定期間に 1 つだけ作成する
 * 「 X-Trans-ID 」
 
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:monitoring-and-auditing-operations.adoc[監視と監査の処理]

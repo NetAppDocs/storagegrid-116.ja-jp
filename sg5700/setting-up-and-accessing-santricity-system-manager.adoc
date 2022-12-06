@@ -26,6 +26,7 @@ NOTE: グリッドマネージャまたはStorageGRID アプライアンスイ�
 
 IMPORTANT: グリッドマネージャまたはアプライアンスインストーラから SANtricity システムマネージャにアクセスする方法は、通常、ハードウェアを監視して E シリーズ AutoSupport を設定することだけを目的としています。ファームウェアのアップグレードなど、 SANtricity System Manager 内の多くの機能や操作は、 StorageGRID アプライアンスの監視には適用されません。問題を回避するには、アプライアンスのハードウェアの設置とメンテナンスの手順に必ず従ってください。
 
+.このタスクについて
 SANtricity System Manager にアクセスする方法は 3 種類あり、その方法はインストールおよび設定のどの段階にあるかによって異なります。
 
 * アプライアンスが StorageGRID システムにノードとして導入されていない場合は、 StorageGRID アプライアンスインストーラの Advanced タブを使用します。
@@ -37,7 +38,7 @@ NOTE: 導入されたノードは、 StorageGRID アプライアンスインス�
 * StorageGRID アプライアンスインストーラまたはグリッドマネージャを使用できない場合は、管理ポートに接続された Web ブラウザを使用して SANtricity System Manager に直接アクセスできます。
 
 
-この手順 には、 SANtricity システムマネージャに最初にアクセスする手順が含まれています。SANtricity System Manager をすでにセットアップしている場合は、に進みます ,ハードウェアアラートを設定します ステップ。
+この手順 には、 SANtricity システムマネージャに最初にアクセスする手順が含まれています。SANtricity System Manager をすでにセットアップしている場合は、に進みます <<config_hardware_alerts_sg5700,ハードウェアアラートを設定します>> ステップ。
 
 
 NOTE: グリッドマネージャまたは StorageGRID アプライアンスインストーラを使用すると、アプライアンスの管理ポートを設定または接続しなくても SANtricity System Manager にアクセスできます。

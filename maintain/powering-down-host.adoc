@@ -79,6 +79,7 @@ NOTE: アプライアンス・ノードで shutdown -h now コマンドを実行
 . コマンドシェルからログアウトします :exit
 
 
+.関連情報
 xref:../sg100-1000/index.adoc[SG100 および SG1000 サービスアプライアンス]
 
 xref:../sg6000/index.adoc[SG6000 ストレージアプライアンス]

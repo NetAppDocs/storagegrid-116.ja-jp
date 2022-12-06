@@ -19,6 +19,7 @@ Tenant Manager を使用して、空の S3 バケットを削除できます。
 * 削除するバケットが空です。
 
 
+.このタスクについて
 以下の手順では、 Tenant Manager を使用して S3 バケットを削除する方法について説明します。を使用して S3 バケットを削除することもできます xref:understanding-tenant-management-api.adoc[テナント管理 API] または xref:../s3/s3-rest-api-supported-operations-and-limitations.adoc[S3 REST API]。
 
 オブジェクトまたは最新でないオブジェクトバージョンが含まれている S3 バケットは削除できません。S3 バージョン管理オブジェクトの削除方法については、を参照してください xref:../ilm/index.adoc[情報ライフサイクル管理を使用してオブジェクトを管理するための手順]。

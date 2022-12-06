@@ -35,6 +35,7 @@ StorageGRID システムに取り込まれた Swift オブジェクトは、シ�
 
 StorageGRID では、コンテナごとに整合性を制御することもできます。アプリケーションでの必要に応じて、ストレージノード間およびサイト間でオブジェクトの可用性と整合性のトレードオフを行うために、整合性制御を変更できます。
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:get-container-consistency-request.adoc[GET コンテナセイコウセイヨウキユウ]

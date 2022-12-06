@@ -56,4 +56,5 @@ image::../media/ilm_policy_and_rules.png[ILM のポリシーとルール]
 
 image::../media/ilm_policies_proposed_active_historical.png[ILM ポリシーの概念図]
 
+.関連情報
 xref:creating-ilm-policy.adoc[ILM ポリシーを作成する]

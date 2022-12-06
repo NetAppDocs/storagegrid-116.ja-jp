@@ -21,6 +21,7 @@ AutoSupport 機能のアクティブ化と非アクティブ化は、ストレ�
 * Storage Manager Event Monitor は、アプライアンスにアクセスできる 1 台以上のマシン上で実行する必要があります。できれば、複数のマシン上で実行することはできません。
 
 
+.このタスクについて
 すべてのデータが単一のアーカイブファイル（ .7z 形式）に圧縮されて、指定した場所に格納されます。
 
 AutoSupport には、次の種類のメッセージが用意されています。
@@ -61,4 +62,5 @@ AutoSupport には、次の種類のメッセージが用意されています�
 . SANtricity Storage Manager のオンラインヘルプを必要に応じて参照しながら、タスクを完了します。
 
 
+.関連情報
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["ネットアップのマニュアル： SANtricity Storage Manager"^]

@@ -125,4 +125,5 @@ NOTE: ストレージノードでストレージボリュームを 1 つしか�
 
 詳細については、を参照してください xref:../admin/managing-object-metadata-storage.adoc[オブジェクトメタデータストレージを管理する]。
 
+.関連情報
 xref:../maintain/index.adoc[リカバリとメンテナンス]

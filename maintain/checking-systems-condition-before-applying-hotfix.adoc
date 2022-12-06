@@ -35,6 +35,7 @@ NOTE: ノードまたはサイトの運用停止手順 が一時停止されて�
 
 
 
+.関連情報
 xref:../monitor/index.adoc[監視とトラブルシューティング]
 
 xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[ストレージノードの運用停止プロセスを一時停止および再開します]

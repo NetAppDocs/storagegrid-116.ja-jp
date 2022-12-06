@@ -23,4 +23,5 @@ TIP: このコマンドを実行する前に、ノードのネットワーク設
 
 IMPORTANT: StorageGRID node force-recovery_node_name _ コマンドを発行した後 '_node-name_' に対して追加のリカバリ手順を実行する必要があります
 
+.関連情報
 xref:whats-next-performing-additional-recovery-steps-if-required.adoc[次の手順：必要に応じて追加のリカバリ手順を実行します]

@@ -74,6 +74,7 @@ image::../media/traffic_classification_policies_main_screen_w_examples.png[グ�
 
 
 
+.関連情報
 xref:viewing-network-tab.adoc[[ ネットワーク ] タブを表示します]
 
 xref:monitoring-node-connection-states.adoc[ノードの接続状態を監視します]

@@ -22,6 +22,7 @@ summary: ストレージノードを交換したら、 Grid Manager で Start Re
 * ストレージノードが過去 15 日以内に再構築されていないことを確認しておく必要があります。
 
 
+.このタスクについて
 ストレージノードが Linux ホストにコンテナとしてインストールされている場合は、次のいずれかに該当する場合にのみこの手順を実行する必要があります。
 
 * ノードをインポートするには '--force' フラグを使用する必要がありましたまたは StorageGRID node force-recovery_node-name_ を発行しました
@@ -61,4 +62,5 @@ image::../media/recovery_reset_button.gif[「 waiting for manual steps 」ステ
 
 
 
+.関連情報
 xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[再インストールのためのアプライアンスの準備（プラットフォームの交換のみ）]

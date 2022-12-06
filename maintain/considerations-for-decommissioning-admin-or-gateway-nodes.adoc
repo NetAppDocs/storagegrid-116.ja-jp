@@ -20,4 +20,5 @@ summary: 管理ノードまたはゲートウェイノードの運用を停止�
 * シングルサインオン（ SSO ）が有効な StorageGRID システムで管理ノードの運用を停止した場合は、ノードの証明書利用者信頼を Active Directory フェデレーションサービス（ AD FS ）から削除する必要があります。
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

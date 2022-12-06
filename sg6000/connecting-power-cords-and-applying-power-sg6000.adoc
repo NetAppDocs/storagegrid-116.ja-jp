@@ -49,6 +49,7 @@ CAUTION: * 感電の危険性 * -- 電源コードを接続する前に、各拡
 . 前面ベゼルを取り外してある場合は、 SG6000-CN コントローラに取り付けます。
 
 
+.関連情報
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[SG6000 ストレージコントローラのブート時のステータスコードを確認します]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]

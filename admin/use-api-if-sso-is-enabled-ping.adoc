@@ -24,6 +24,7 @@ summary: シングルサインオン（ SSO ）を設定して有効にし、か
 * テナント管理 API にアクセスする場合は、テナントアカウント ID を確認しておきます。
 
 
+.このタスクについて
 認証トークンを取得するには、次のいずれかの例を使用します。
 
 * StorageGRID インストールファイルディレクトリ (Red Hat Enterprise Linux または CentOS の場合は「 ./rpms 」、 Ubuntu または Debian の場合は「 ./debs 」、 VMware の場合は「 ./vsphere-vsphere 」 ) にある「 storagegrid-ssoauth.py 」 p`python スクリプト。
@@ -207,6 +208,7 @@ export MYTOKEN="56eb07bf-21f6-40b7-af0b-5c6cacfb25e7"
 
 シングルサインオン（ SSO ）が有効になっている場合は、グリッド管理 API またはテナント管理 API からサインアウトするための一連の API 要求を問題 で処理する必要があります。これらの手順は、 SSO アイデンティティプロバイダとして PingFederate を使用している場合に適用されます
 
+.このタスクについて
 必要に応じて、組織のシングルログアウトページからログアウトするだけで、 StorageGRID API からサインアウトできます。または、 StorageGRID からシングルログアウト（ SLO ）を実行することもできます。この場合、有効な StorageGRID ベアラトークンが必要です。
 
 .手順

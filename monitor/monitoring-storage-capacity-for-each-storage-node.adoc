@@ -17,6 +17,7 @@ summary: 各ストレージノードの使用可能な合計スペースを監�
 * を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
 
+.このタスクについて
 使用可能なスペースは、オブジェクトの格納に使用できるストレージスペースの量です。ストレージノードの使用可能な合計スペースは、ノード内のすべてのオブジェクトストアの使用可能なスペースの合計です。
 
 image::../media/calculating_watermarks.gif[Total Usable Space の概念図]
@@ -66,6 +67,7 @@ Low object data storage * アラートは、ストレージノードにオブジ
 
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:troubleshooting-storagegrid-system.adoc[Low object data storage アラートのトラブルシューティングを行います]

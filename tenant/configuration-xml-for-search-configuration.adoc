@@ -183,6 +183,7 @@ Urn は Destination 要素に含まれています。
     </Rule>
 </MetadataNotificationConfiguration>
 ----
+.関連情報
 xref:../s3/index.adoc[S3 を使用する]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[メタデータ通知に含まれているオブジェクトメタデータ]

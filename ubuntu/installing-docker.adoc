@@ -41,4 +41,5 @@ sudo docker version
 
 
 
+.関連情報
 xref:configuring-host-storage.adoc[ホストストレージを設定する]

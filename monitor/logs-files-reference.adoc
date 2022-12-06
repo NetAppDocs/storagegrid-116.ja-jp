@@ -173,4 +173,5 @@ SNMP エージェント設定およびアラーム許可 / 拒否リストは、
 StorageGRID コンテナコマンドの出力。ネットワークやディスクの使用状況などのシステム情報が含まれます。
 
 |===
+.関連情報
 xref:collecting-log-files-and-system-data.adoc[ログファイルとシステムデータを収集]

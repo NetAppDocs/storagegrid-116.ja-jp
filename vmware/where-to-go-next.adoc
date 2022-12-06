@@ -59,6 +59,7 @@ NOTE: アーカイブノードが Tivoli Storage Manager を外部アーカイ�
 
 NOTE: CIFS / Samba を使用した監査エクスポートは廃止されており、 StorageGRID の今後のリリースで削除される予定です。
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:../s3/index.adoc[S3 を使用する]

@@ -97,6 +97,7 @@ NOTE: 「 x-amz-object-lock-mode 」を指定した場合は、「 x-amz-object-
 
 
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:../tenant/index.adoc[テナントアカウントを使用する]

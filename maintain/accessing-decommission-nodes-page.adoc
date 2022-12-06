@@ -66,7 +66,7 @@ image::../media/decommission_nodes_page_all_connected.png[ノードの運用停�
 ** image:../media/icon_alarm_blue_unknown.png["青の疑問符アイコン"] （青）： Unknown
 
  a| 
-にアクセスします ,運用停止の手順 選択肢を表示する手順。
+にアクセスします <<decommission_procedure_choices,運用停止の手順 選択肢を表示する手順>>。
 
 
 
@@ -146,6 +146,7 @@ xref:decommissioning-disconnected-grid-nodes.adoc[切断されているグリッ
 xref:decommissioning-connected-grid-nodes.adoc[接続されているグリッドノードの運用を停止]
 
 |===
+.関連情報
 xref:checking-data-repair-jobs.adoc[データ修復ジョブを確認します]
 
 xref:understanding-adc-service-quorum.adoc[ADC クォーラムを把握します]

@@ -40,4 +40,5 @@ image::../media/archive_store_tsm.gif[TSM ミドルウェア接続用のアー�
 . 「 * 変更を適用する * 」を選択します。
 
 
+.関連情報
 xref:managing-archive-node-when-tsm-server-reaches-capacity.adoc[TSM サーバの容量が上限に達したときのアーカイブノードの管理]

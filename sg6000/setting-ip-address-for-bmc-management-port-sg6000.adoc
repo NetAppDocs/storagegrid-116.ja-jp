@@ -22,6 +22,7 @@ image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN コントローラ�
 
 
 
+.このタスクについて
 BMC 管理ポートでは、サポート目的で下位レベルのハードウェアアクセスが許可されます。
 
 

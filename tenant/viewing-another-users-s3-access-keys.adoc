@@ -44,6 +44,7 @@ image::../media/access_key_view_list_for_other_user.png[他のユーザのアク
 
 
 
+.関連情報
 xref:creating-another-users-s3-access-keys.adoc[別のユーザの S3 アクセスキーを作成します]
 
 xref:deleting-another-users-s3-access-keys.adoc[別のユーザの S3 アクセスキーを削除します]

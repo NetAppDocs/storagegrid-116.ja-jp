@@ -21,6 +21,7 @@ SAS インターコネクトケーブルを使用して、 2 台のコントロ�
 
 CAUTION: * レーザー被ばくの危険性 * -- SFP トランシーバを分解したり部品を取り外したりしないでください。レーザー被ばくのおそれがあります。
 
+.このタスクについて
 ケーブルを接続するときは、次の図を参照してください。上の E2700 コントローラと下の E5600SG コントローラが示されています。この図は SG5660 モデルを示しています。 SG5612 モデルのコントローラは、スタックされずに並列に配置されています。
 
 image::../media/cabling_diagram.gif[ケーブル配線図]
@@ -204,6 +205,7 @@ Grid ネットワーク
 
 
 
+.関連情報
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG コントローラポートのポートボンディングモード]
 
 xref:accessing-storagegrid-appliance-installer-sg5600.adoc[StorageGRID アプライアンスインストーラにアクセスします]

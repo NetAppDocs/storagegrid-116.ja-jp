@@ -18,6 +18,7 @@ summary: アーカイブノードが Tivoli Storage Manager \ （ TSM ）ミド�
 * 特定のアクセス権限が必要です。
 
 
+.このタスクについて
 これらの設定が完了するまで ARC サービスは Tivoli Storage Manager と通信できないため、 Major アラーム状態のままです。
 
 .手順

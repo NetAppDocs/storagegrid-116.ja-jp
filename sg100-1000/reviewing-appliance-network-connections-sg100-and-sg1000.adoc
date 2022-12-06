@@ -24,6 +24,7 @@ StorageGRID アプライアンスを StorageGRID システムのノードとし�
 
 
 
+.関連情報
 xref:gathering-installation-information-sg100-and-sg1000.adoc[インストール情報（ SG100 および SG1000 ）の収集]
 
 xref:cabling-appliance-sg100-and-sg1000.adoc[アプライアンス SG100 と SG1000 をケーブル接続します]

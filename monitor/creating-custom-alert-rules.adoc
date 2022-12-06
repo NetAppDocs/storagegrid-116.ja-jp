@@ -24,6 +24,7 @@ image::../media/video-screenshot-alert-create-custom.png[リンク -"https://net
 
 
 
+.このタスクについて
 StorageGRID はカスタムアラートを検証しません。カスタムのアラートルールを作成する場合は、次の一般的なガイドラインに従ってください。
 
 * デフォルトのアラートルールの条件を参考に、カスタムのアラートルールを作成します。

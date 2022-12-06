@@ -13,12 +13,14 @@ summary: 各ホストにブロックストレージボリュームを割り当�
 [role="lead"]
 各ホストにブロックストレージボリュームを割り当てる必要があります。
 
+.必要なもの
 以下のトピックで、このタスクを実行するために必要な情報を確認しておきます。
 
 xref:storage-and-performance-requirements.adoc[ストレージとパフォーマンスの要件]
 
 xref:node-container-migration-requirements.adoc[ノードコンテナの移行要件]
 
+.このタスクについて
 ブロック・ストレージ・ボリューム（ LUN ）をホストに割り当てるときは ' ストレージ要件の表を使用して ' 次の項目を決定します
 
 * 各ホストに必要なボリュームの数（そのホストに導入するノードの数とタイプに応じて異なる）
@@ -92,6 +94,7 @@ multipaths {
 
 NOTE: StorageGRID ノードの移行やデバイスマッパーマルチパスの使用をサポートするために共有ストレージを設定する場合は、同じ場所にあるすべてのホストで共通の「 /etc/multipath.conf 」を作成してインストールできます。各ホストで使用する Docker ストレージボリュームが異なる点に注意してください。エイリアスを使用し、各 Docker ストレージボリュームの LUN のエイリアスにターゲットのホスト名を含めると覚えやすいので、この方法で設定することを推奨します。
 
+.関連情報
 xref:storage-and-performance-requirements.adoc[ストレージとパフォーマンスの要件]
 
 xref:node-container-migration-requirements.adoc[ノードコンテナの移行要件]

@@ -13,6 +13,7 @@ summary: メンテナンスのために内部コンポーネントにアクセ�
 [role="lead"]
 メンテナンスのために内部コンポーネントにアクセスするために、コントローラカバーを取り外します。
 
+.必要なもの
 コントローラをキャビネットまたはラックから取り外して、上部カバーにアクセスします。
 
 xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[キャビネットまたはラックから SG6000-CN コントローラを取り外します]
@@ -29,4 +30,5 @@ IMPORTANT: ESD リストバンドのストラップの端を手首に巻き付�
 
 
 
+.関連情報
 xref:removing-fibre-channel-hba.adoc[ファイバチャネル HBA を取り外します]

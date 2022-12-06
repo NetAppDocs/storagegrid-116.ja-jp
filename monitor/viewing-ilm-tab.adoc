@@ -19,6 +19,7 @@ ILM タブには、情報ライフサイクル管理（ ILM ）処理に関す�
 
 image::../media/nodes_page_ilm_tab.png[ノードページの ILM タブ]
 
+.関連情報
 xref:monitoring-information-lifecycle-management.adoc[情報ライフサイクル管理を監視]
 
 xref:../admin/index.adoc[StorageGRID の管理]

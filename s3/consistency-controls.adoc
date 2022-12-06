@@ -67,7 +67,7 @@ available （ HEAD 処理または GET 処理は結果整合性）
 |===
 
 
-== 「 read-after-new-write 」および「 available 」の整合性制御を使用します
+== 「read-after-new-write」および「available」の整合性制御を使用します
 
 HEAD 操作または GET 操作で「 read-after-new-write 」整合性制御を使用する場合、 StorageGRID は次のように複数の手順で検索を実行します。
 
@@ -145,6 +145,7 @@ NOTE: ILM ルールの取り込み動作を選択する前に、情報ライフ�
 
 整合性レベルと ILM ルールの間の関係は複雑になる可能性があります。サポートが必要な場合は、ネットアップにお問い合わせください。
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:get-bucket-consistency-request.adoc[GET Bucket consistency 要求を実行します]

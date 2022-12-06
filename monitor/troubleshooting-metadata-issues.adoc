@@ -24,6 +24,7 @@ Low metadata storage * アラートがトリガーされた場合は、新しい
 * を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
 
+.このタスクについて
 StorageGRID は、各ストレージノードのボリューム 0 上にオブジェクトメタデータ用に一定量のスペースをリザーブします。このスペースは、実際のリザーブスペースと呼ばれ、オブジェクトメタデータに使用できるスペース（許容されるメタデータスペース）と、コンパクションや修復などの重要なデータベース処理に必要なスペースに分割されます。許可されるメタデータスペースは、オブジェクトの全体的な容量を決定します。
 
 image::../media/metadata_allowed_space_volume_0.png[Metadata Allowed Space ：ボリューム 0]
@@ -82,6 +83,7 @@ Services ： Status - Cassandra （ SVST ）アラームは、ストレージノ
 * 「 passwords.txt 」ファイルが必要です。
 
 
+.このタスクについて
 Cassandra が停止している（ストレージノードの電源がオフになっているなど）期間が 15 日を超える場合、ノードがオンライン状態に戻っても Cassandra は起動されません。この場合、該当する DDS サービスの Cassandra データベースをリビルドする必要があります。
 
 可能です xref:running-diagnostics.adoc[診断を実行します] をクリックして、グリッドの現在の状態の追加情報 を取得します。
@@ -165,7 +167,7 @@ Cassandra の停止期間が 15 日を超えている場合、 servermanager.log
 started because it has been offline for longer than
 its 15 day grace period - rebuild cassandra
 ----
-.. このメッセージのタイムスタンプが手順に従って Cassandra の再起動を試行した時間になっていることを確認してください ,ストレージノードから Cassandra を再起動します。
+.. このメッセージのタイムスタンプが手順に従って Cassandra の再起動を試行した時間になっていることを確認してください <<restart_Cassandra_from_the_Storage_Node,ストレージノードから Cassandra を再起動します>>。
 +
 Cassandra のエントリは 1 つとは限らないため、最新のエントリを確認する必要があります。
 
@@ -184,6 +186,7 @@ Cassandra のエントリは 1 つとは限らないため、最新のエント�
 
 Total Events （ SMTT ）アラームは、 Cassandra データベースでメモリ不足エラーが発生するとトリガーされます。このエラーが発生した場合は、テクニカルサポートに連絡して問題 の処理を依頼してください。
 
+.このタスクについて
 Cassandra データベースにメモリ不足エラーが発生すると、ヒープダンプが作成され、 Total Events （ SMTT ）アラームがトリガーされて、 Cassandra Heap Out Of Memory Errors のカウントが 1 つ増えます。
 
 .手順

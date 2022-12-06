@@ -93,6 +93,7 @@ LegalHold のようになります
 
 バケットが準拠バケットとして作成されていない場合、応答の HTTP ステータスコードは「 404 Not Found 」になり、 S3 エラーコードは「 XNoSuchBucketCompliance 」になります。
 
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:../tenant/index.adoc[テナントアカウントを使用する]

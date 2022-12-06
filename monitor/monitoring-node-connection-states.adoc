@@ -17,6 +17,7 @@ summary: 1 つ以上のノードがグリッドから切断されると、重要
 * を使用して Grid Manager にサインインする必要があります xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
 
+.このタスクについて
 ノードには、次の 3 つのいずれかの接続状態があります。
 
 * * 接続されていません - 不明 * image:../media/icon_alarm_blue_unknown.png["青の疑問符アイコン"]：不明な理由でノードがグリッドに接続されていません。たとえば、ノード間のネットワーク接続が失われた、電源が切れたなどの原因が考えられます。* Unable to communicate with node * アラートがトリガーされる場合もあります。他のアラートもアクティブになる可能性があります。この状況にはすぐに対処する必要があります。
@@ -60,6 +61,7 @@ image::../media/node_connection_state_blue.png[ノード接続状態 - 青]
 
 
 
+.関連情報
 xref:alerts-reference.adoc[アラート一覧]
 
 xref:../maintain/index.adoc[リカバリとメンテナンス]

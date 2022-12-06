@@ -33,4 +33,5 @@ summary: ストレージノードの運用を停止する際には、 StorageGRI
 
 
 
+.関連情報
 xref:restoring-object-data-to-storage-volume-if-required.adoc[必要に応じて、オブジェクトデータをストレージボリュームにリストア]

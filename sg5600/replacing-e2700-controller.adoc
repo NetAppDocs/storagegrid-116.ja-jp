@@ -20,6 +20,7 @@ E2700 コントローラが適切に機能しない場合や障害が発生し�
 * Maintenance または Root Access 権限が必要です。詳細については、 StorageGRID の管理手順を参照してください。
 
 
+.このタスクについて
 コントローラの保守操作要を示す黄色の LED （図中の 1 ）を見ると、コントローラに障害が発生したかどうかを確認できます。この LED が点灯している場合は、コントローラを交換する必要があります。
 
 image::../media/e2700_controller_sar_led.gif[E2700 コントローラの保守操作要を示す LED]
@@ -96,6 +97,7 @@ image::../media/node_rejoin_grid_confirmation.png[アプライアンスノード
 . SANtricity Storage Manager で、新しいコントローラのステータスが「 Optimal 」であることを確認し、サポートデータを収集します。
 
 
+.関連情報
 https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["ネットアップのマニュアル： E2700 シリーズ"^]

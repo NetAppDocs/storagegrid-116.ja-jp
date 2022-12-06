@@ -28,6 +28,7 @@ CAUTION: * レーザー被ばくの危険性 * -- SFP トランシーバを分�
 
 
 
+.このタスクについて
 ここでは、次のアプライアンスのケーブル接続手順について説明します。
 
 * SG6060とSG6060X
@@ -207,6 +208,7 @@ Grid ネットワーク
 
 
 
+.関連情報
 xref:port-bond-modes-for-sg6000-cn-controller.adoc[SG6000-CN コントローラのポートボンディングモード]
 
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[SG6000-CN コントローラをキャビネットまたはラックに再度取り付けます]

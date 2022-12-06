@@ -106,6 +106,7 @@ CAUTION: このアプライアンスに緑のアイコンが表示されてい�
 . オプション：前面ベゼルが取り外されている場合は、取り付けます。
 
 
+.関連情報
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]
 
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[SG6000 ストレージコントローラのブート時のステータスコードを確認します]

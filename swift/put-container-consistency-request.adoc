@@ -145,4 +145,5 @@ Connection: CLOSE
 X-Trans-Id: 1936575373
 Content-Length: 0
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

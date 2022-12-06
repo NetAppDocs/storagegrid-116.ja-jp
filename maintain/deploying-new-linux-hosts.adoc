@@ -39,6 +39,7 @@ IMPORTANT: StorageGRID を使用して StorageGRID に関連するデータを F
 
 
 
+.関連情報
 xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]
 
 xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]

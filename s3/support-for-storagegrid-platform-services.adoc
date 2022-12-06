@@ -61,6 +61,7 @@ PUT Bucket metadata notification
 * デスティネーションバケットでレガシー準拠が有効になっていると、 CloudMirror レプリケーションは AccessDenied エラーで失敗します。
 
 
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]
 
 xref:../admin/index.adoc[StorageGRID の管理]

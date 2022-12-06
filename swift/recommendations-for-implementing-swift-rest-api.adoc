@@ -59,6 +59,7 @@ mycontainer/f8e3-image3132.jpg
 
 NOTE: オブジェクトを圧縮する必要があり、クライアントアプリケーションが範囲読み取りを使用する必要がある場合は、アプリケーションの読み取りタイムアウトを増やしてください。
 
+.関連情報
 xref:get-container-consistency-request.adoc[GET コンテナセイコウセイヨウキユウ]
 
 xref:put-container-consistency-request.adoc[PUT コンテナセイコウセイヨウキユウ]

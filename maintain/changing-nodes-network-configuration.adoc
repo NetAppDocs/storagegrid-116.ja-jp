@@ -13,8 +13,10 @@ summary: IP 変更ツールを使用して、 1 つ以上のノードのネッ�
 [role="lead"]
 IP 変更ツールを使用して、 1 つ以上のノードのネットワーク設定を変更できます。グリッドネットワークの設定を変更したり、管理ネットワークまたはクライアントネットワークを追加、変更、削除したりできます。
 
+.必要なもの
 「 passwords.txt 」ファイルが必要です。
 
+.このタスクについて
 * Linux ： * グリッドノードを管理ネットワークまたはクライアントネットワークに初めて追加する際に、ノード構成ファイルの ADMIN_NETWORK_TARGET または CLIENT_network_target を事前に設定していない場合は、ここで設定する必要があります。
 
 使用している Linux オペレーティングシステムでの StorageGRID のインストール手順を参照してください。
@@ -201,6 +203,7 @@ Updating grid network configuration on Name
 
 
 
+.関連情報
 xref:linux-adding-interfaces-to-existing-node.adoc[Linux ：既存のノードにインターフェイスを追加]
 
 xref:../rhel/index.adoc[Red Hat Enterprise Linux または CentOS をインストールします]

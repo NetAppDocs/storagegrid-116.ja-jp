@@ -63,4 +63,5 @@ NOTE: ユーザが初めてサインインすると、セキュリティを強�
 
 
 
+.関連情報
 xref:changing-root-password-for-bmc-interface-sg1000.adoc[BMC インターフェイスの root パスワードを変更します]

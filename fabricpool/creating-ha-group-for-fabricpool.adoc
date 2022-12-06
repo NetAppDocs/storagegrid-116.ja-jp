@@ -19,6 +19,7 @@ FabricPool で使用するように StorageGRID を設定する場合は、必�
 * VLAN を使用する場合は、 VLAN インターフェイスを作成しておきます。を参照してください xref:../admin/configure-vlan-interfaces.adoc[VLAN インターフェイスを設定します]。
 
 
+.このタスクについて
 各 HA グループは、仮想 IP アドレス（ VIP ）を使用して、関連付けられたノード上の共有サービスへの可用性の高いアクセスを提供します。
 
 このタスクの詳細については、を参照してください xref:../admin/managing-high-availability-groups.adoc[ハイアベイラビリティグループを管理します]。

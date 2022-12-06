@@ -127,6 +127,7 @@ Principal 要素では、匿名アクセスを設定してすべてのユーザ�
 ----
 バケットポリシーのサイズの上限は 20 、 480 バイトで、グループポリシーのサイズの上限は 5 、 120 バイトです。
 
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]
 
 
@@ -201,7 +202,8 @@ PUT Bucket policy 処理の HTTP 要求の本文は、 charset=UTF-8 でエン�
 * グループポリシーの作成時は、まだ存在しないバケットもリソースの値で指定することができます。
 
 
- variables in a policy
+.関連情報
+<<ポリシーで変数を指定します>>
 
 
 
@@ -824,7 +826,8 @@ s3 ： PutOverwriteObject 権限は、オブジェクトの作成または更新
 
 IMPORTANT: 現在の S3 ポリシーで上書きが許可されていても、 PutOverwriteObject 権限が Deny に設定されている場合は、オブジェクトのデータ、ユーザ定義メタデータ、またはオブジェクトのタグをクライアントが上書きすることはできません。また、この設定が PutOverwriteObject 権限の設定よりも優先されている場合は、 * Prevent Client Modification * チェックボックス（ * configuration * > * System * > * Grid options * ）が選択されています。
 
- group policy examples
+.関連情報
+<<S3 グループポリシーの例>>
 
 
 
@@ -1297,13 +1300,14 @@ PUT#2 -------> OK
 /mybucket/important.doc
 PUT#1 -------> PUT#2 ---X (denied)
 ----
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
- policies requiring special handling
+<<特別な処理を必要とするポリシーを作成します>>
 
 xref:how-storagegrid-ilm-rules-manage-objects.adoc[StorageGRID の ILM ルールによるオブジェクトの管理]
 
- group policy examples
+<<S3 グループポリシーの例>>
 
 
 
@@ -1528,6 +1532,7 @@ NOTE: StorageGRID では、非所有者アカウント（匿名アカウント�
   ]
 }
 ----
+.関連情報
 xref:operations-on-buckets.adoc[バケットの処理]
 
 
@@ -1601,7 +1606,7 @@ image::../media/tenant_add_group_custom.png[カスタムグループポリシー
 ----
 
 
-==== 例：グループメンバーにバケット内の「フォルダ」のみへのフルアクセスを許可する
+==== 例：グループメンバーにバケット内の各自の「フォルダ」のみへのフルアクセスを許可します
 
 この例では、指定したバケット内の特定のフォルダ（キープレフィックス）のリストおよびアクセスのみがグループのメンバーに許可されます。これらのフォルダのプライバシー設定を決めるときは、他のグループポリシーやバケットポリシーのアクセス権限を考慮する必要があります。
 
@@ -1629,4 +1634,5 @@ image::../media/tenant_add_group_custom.png[カスタムグループポリシー
   ]
 }
 ----
+.関連情報
 xref:../tenant/index.adoc[テナントアカウントを使用する]

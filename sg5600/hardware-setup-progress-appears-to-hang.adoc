@@ -52,6 +52,7 @@ E シリーズのドキュメント
 . この方法で問題 が解決しない場合は、テクニカルサポートにお問い合わせください。
 
 
+.関連情報
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG コントローラのデジタル表示ディスプレイのコード]
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[HE エラー： SANtricity OS ソフトウェアとの同期エラー]

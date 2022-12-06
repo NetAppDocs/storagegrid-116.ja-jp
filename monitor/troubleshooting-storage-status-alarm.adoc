@@ -18,6 +18,7 @@ Storage Status （ SSTS ）アラームは、ストレージノードにオブ�
 * 特定のアクセス権限が必要です。
 
 
+.このタスクについて
 ストレージノード内のすべてのボリュームの空きスペース量が Storage Volume Soft Read Only Watermark （ * configuration * > * System * > * Storage options * ）の値を下回ると、 SSTS （ Storage Status ）アラームが Notice レベルでトリガーされます。
 
 image::../media/storage_watermarks.png[ストレージオプションの概要]

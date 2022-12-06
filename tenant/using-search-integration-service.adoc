@@ -25,6 +25,7 @@ NOTE: 検索統合サービスではオブジェクトメタデータがデス�
 * PUT Bucket metadata notification configuration 要求
 
 
+.関連情報
 xref:configuration-xml-for-search-configuration.adoc[検索統合用の XML を設定します]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[メタデータ通知に含まれているオブジェクトメタデータ]

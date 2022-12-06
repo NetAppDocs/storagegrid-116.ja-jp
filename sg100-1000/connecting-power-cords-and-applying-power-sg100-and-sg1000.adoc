@@ -24,4 +24,5 @@ summary: ネットワーク・ケーブルを接続したら、アプライア�
 . 前面ベゼルを取り外した場合は、アプライアンスに取り付けます。
 
 
+.関連情報
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[SG100 および SG1000 アプライアンスのステータスインジケータを表示します]

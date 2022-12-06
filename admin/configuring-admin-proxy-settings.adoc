@@ -18,6 +18,7 @@ HTTP または HTTPS を使用して AutoSupport メッセージを送信する�
 * を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 
 
+.このタスクについて
 設定できる管理プロキシは 1 つです。
 
 .手順

@@ -127,6 +127,7 @@ image::../media/buckets_last_update_time_dialog_box.png[最終アクセス日時
 . 「変更を保存」を選択します。
 
 
+.関連情報
 xref:tenant-management-permissions.adoc[テナント管理権限]
 
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]

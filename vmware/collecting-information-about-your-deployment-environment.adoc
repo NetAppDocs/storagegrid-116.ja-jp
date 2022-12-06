@@ -97,6 +97,7 @@ StorageGRID グリッドネットワーク（必須）用に作成された VMwa
 * Domain Name System （ DNS ；ドメインネームシステム）サーバの IP アドレス
 
 
+.関連情報
 xref:how-grid-nodes-discover-primary-admin-node.adoc[グリッドノードによるプライマリ管理ノードの検出]
 
 xref:storage-and-performance-requirements.adoc[ストレージとパフォーマンスの要件]

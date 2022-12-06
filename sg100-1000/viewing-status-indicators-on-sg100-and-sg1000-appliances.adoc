@@ -114,6 +114,7 @@ image::../media/ssd_indicators.png[SSD インジケータ]
 青（点滅）：ドライブにアクセス中です
 
 |===
+.関連情報
 xref:troubleshooting-hardware-installation-sg100-and-sg1000.adoc[ハードウェアの設置のトラブルシューティング（ SG100 および SG1000 ）]
 
 xref:configuring-bmc-interface-sg1000.adoc[BMC インターフェイスの設定（ SG100 および SG1000 ）]

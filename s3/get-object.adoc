@@ -125,6 +125,7 @@ POST Object restore 要求が完了するまで待ちます。
 * 後続の GET Object 要求では、「 403 Forbidden 」が返される場合があります。
 
 
+.関連情報
 xref:using-server-side-encryption.adoc[サーバ側の暗号化を使用します]
 
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]

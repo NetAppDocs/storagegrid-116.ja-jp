@@ -29,6 +29,7 @@ xref:removing-sg6000-cn-controller-cover.adoc[SG6000-CN コントローラのカ
 
 
 
+.このタスクについて
 サービスの中断を回避するには、 Fibre Channel HBA の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、定期的なメンテナンスの実行中にサービスの中断が通常どおりに発生するようにアダプタを交換してください。情報ライフサイクル管理を使用してオブジェクトを管理する手順のノード接続状態の確認に関する情報を参照してください。
 
 
@@ -52,10 +53,12 @@ image::../media/sg6060_fc_hba_location.jpg[ライザーアセンブリ内の SG6
 . アダプタを静電気防止処置を施した平らな場所に置きます。
 
 
+.完了後
 交換用の Fibre Channel HBA を取り付けます。
 
 xref:reinstalling-fibre-channel-hba.adoc[Fibre Channel HBA を再度取り付けます]
 
+.関連情報
 xref:reinstalling-fibre-channel-hba.adoc[Fibre Channel HBA を再度取り付けます]
 
 xref:../admin/index.adoc[StorageGRID の管理]

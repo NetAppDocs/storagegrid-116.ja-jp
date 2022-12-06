@@ -80,6 +80,7 @@ StorageGRID に取り込まれているがまだ ILM によって評価されて
 * 注意：オブジェクトが読み出し可能な状態にリストアされた場合は 'days' の新しい値で POST Object restore 要求を再発行することにより 'expiry-date を変更できます要求が実行された日時に基づいてリストア日が更新されます。
 
 |===
+.関連情報
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
 xref:head-object.adoc[HEAD Object の実行]

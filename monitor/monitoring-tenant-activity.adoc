@@ -145,6 +145,7 @@ IMPORTANT: Metrics ページで使用できるツールは、主にテクニカ�
 
 
 
+.関連情報
 xref:alerts-reference.adoc[アラート一覧]
 
 xref:../audit/index.adoc[監査ログを確認します]

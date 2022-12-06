@@ -33,4 +33,5 @@ summary: 監査共有には、アクティブな audit.log ファイルと圧縮
 . 必要に応じて、現在の監査ログファイルまたは保存された監査ログファイルを表示します。
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]

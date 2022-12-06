@@ -133,4 +133,5 @@ StorageGRID では、 Swift アカウントあたり最大で 1 、 000 個の�
 
 コンテナ名は StorageGRID ネームスペース内で一意である必要があります。このコンテナが別のアカウントの下に存在する場合は、ヘッダー「 HTTP/1.1 409 Conflict 」が返されます。
 
+.関連情報
 xref:monitoring-and-auditing-operations.adoc[監視と監査の処理]

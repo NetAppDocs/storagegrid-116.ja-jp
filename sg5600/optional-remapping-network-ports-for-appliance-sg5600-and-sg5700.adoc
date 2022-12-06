@@ -42,4 +42,5 @@ image::../media/remap_ports.gif[StorageGRID Webscale アプライアンスイン
 . ポートマッピングを削除するには、削除するルールのオプションボタンを選択し、 * 選択したルールの削除 * をクリックします。
 
 
+.関連情報
 xref:../maintain/index.adoc[リカバリとメンテナンス]

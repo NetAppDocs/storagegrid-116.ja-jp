@@ -18,6 +18,7 @@ summary: ロードバランサを使用して StorageGRID へのクライアン�
 * 特定のアクセス権限が必要です。
 
 
+.このタスクについて
 管理ノードまたはゲートウェイノード上のロードバランササービス、外部のサードパーティのロードバランサ、またはゲートウェイノード上の CLB サービスを使用して、複数のストレージノードにクライアント要求を分散することができます。
 
 
@@ -73,6 +74,7 @@ StorageGRID の管理手順のクライアント接続の設定に関するセ�
 
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:viewing-load-balancer-tab.adoc[Load Balancer タブを表示します]

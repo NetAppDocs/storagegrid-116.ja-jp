@@ -40,4 +40,5 @@ StorageGRID インストール API には次のセクションがあります。
 * *sites * -- サイトレベルの設定操作。サイトを作成、表示、削除、および変更できます。
 
 
+.関連情報
 xref:automating-installation.adoc[インストールの自動化]

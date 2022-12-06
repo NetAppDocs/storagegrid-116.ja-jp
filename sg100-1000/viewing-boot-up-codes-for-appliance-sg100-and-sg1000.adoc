@@ -152,4 +152,5 @@ StorageGRID が実行されています。
 |===
 
 
+.関連情報
 xref:accessing-bmc-interface-sg1000.adoc[BMC インターフェイスにアクセスします]

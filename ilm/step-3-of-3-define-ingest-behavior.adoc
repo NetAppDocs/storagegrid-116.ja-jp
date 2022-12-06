@@ -13,6 +13,7 @@ summary: Create ILM Rule ウィザードのステップ 3 \ （取り込み動�
 [role="lead"]
 Create ILM Rule ウィザードのステップ 3 （取り込み動作の定義）では、このルールでフィルタリングされたオブジェクトを取り込み時に保護する方法を選択できます。
 
+.このタスクについて
 StorageGRID は、中間コピーを作成してオブジェクトをキューに登録し、あとで ILM 評価を実行するか、またはコピーを作成してルールの配置手順をすぐに満たすことができます。
 
 image::../media/define_ingest_behavior_for_ilm_rule.png[Create ILM rule ステップ 3 / 3]

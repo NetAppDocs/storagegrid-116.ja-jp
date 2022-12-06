@@ -108,4 +108,5 @@ PUT Bucket compliance で確認してください
 xref:deprecated-put-bucket-compliance-request.adoc[廃止予定： PUT Bucket compliance 要求]
 
 |===
+.関連情報
 xref:s3-operations-tracked-in-audit-logs.adoc[監査ログで追跡される S3 処理]

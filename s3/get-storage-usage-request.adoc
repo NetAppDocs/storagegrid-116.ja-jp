@@ -71,4 +71,5 @@ Content-Type: application/xml
 
 格納されているすべてのオブジェクト・バージョンは ' 応答の 'ObjectCount' 値と 'DataBytes' 値に影響します削除マーカーは 'ObjectCount' 合計には追加されません
 
+.関連情報
 xref:consistency-controls.adoc[整合性制御]

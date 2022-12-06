@@ -116,6 +116,7 @@ IMPORTANT: 設置作業を行う前に、アプライアンスに付属の 0.5m 
 
 
 
+.関連情報
 https://hwu.netapp.com["NetApp Hardware Universe の略"^]
 
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]

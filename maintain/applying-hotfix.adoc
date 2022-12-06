@@ -132,6 +132,7 @@ image::../media/approve_all_progresstable.png[ホットフィックスの進捗�
 
 
 
+.関連情報
 xref:../admin/index.adoc[StorageGRID の管理]
 
 xref:../monitor/index.adoc[監視とトラブルシューティング]

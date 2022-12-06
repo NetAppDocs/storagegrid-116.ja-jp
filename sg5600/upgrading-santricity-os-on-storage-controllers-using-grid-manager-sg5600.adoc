@@ -21,6 +21,7 @@ summary: 現在 SANtricity OS 08.42.20.00 \ （ 11.42 \ ）以降を使用して
 * SANtricity OS に関するネットアップのダウンロードページを利用できます。
 
 
+.このタスクについて
 SANtricity OS のアップグレードプロセスが完了するまで、他のソフトウェアの更新（ StorageGRID ソフトウェアのアップグレードまたはホットフィックス）は実行できません。SANtricity OS のアップグレードプロセスが完了する前にホットフィックスや StorageGRID ソフトウェアのアップグレードを開始しようとすると、 SANtricity OS のアップグレードページが表示されます。
 
 手順 は、アップグレード対象として選択されたすべての該当ノードに SANtricity OS のアップグレードが正常に適用されるまでは完了しません。各ノードの SANtricity OS を（順次）ロードする場合は 30 分以上、各 StorageGRID ストレージアプライアンスをリブートする場合は最大 90 分かかることがあります。
@@ -167,7 +168,7 @@ IMPORTANT: 表示されたすべてのストレージノードで SANtricity OS 
 すべてのノードをアップグレードせずにアップグレードプロセスを完了するかどうかを確認する警告が表示されます。
 
 .. 「 * OK * 」を選択して、「 * SANtricity OS * 」ページに戻ります。
-.. ノードの承認を続行する場合は、に進みます ,SANtricity OS をダウンロードします をクリックしてアップグレードプロセスを再開してください。
+.. ノードの承認を続行する場合は、に進みます <<download_santricity_os,SANtricity OS をダウンロードします>> をクリックしてアップグレードプロセスを再開してください。
 
 
 +
@@ -187,6 +188,7 @@ NOTE: アップグレード手順 を再度実行するときは、以前にア�
 
 
 
+.関連情報
 https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
 
 xref:upgrading-santricity-os-on-e2700-controller-using-maintenance-mode.adoc[E2700 コントローラで、メンテナンスモードを使用して SANtricity OS をアップグレードします]

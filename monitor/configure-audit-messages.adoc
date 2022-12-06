@@ -20,6 +20,7 @@ summary: すべての StorageGRID ノードで監査メッセージが生成さ�
 * Maintenance または Root アクセス権限が必要です。
 
 
+.このタスクについて
 すべての StorageGRID ノードで監査メッセージとログが生成され、システムアクティビティとイベントが追跡されます。デフォルトでは、監査情報は管理ノードの監査ログに送信されます。監査レベルを調整して、監査ログに記録する監査メッセージの種類や数を増減できます。必要に応じて、リモート syslog サーバに送信される監査情報、または手動で収集するために元のノードに一時的に格納される監査情報を設定できます。
 
 
@@ -141,7 +142,7 @@ NOTE: 監査プロトコル要求ヘッダーは、 * クライアント読み�
 監査情報をリモートで保存する場合は、外部 syslog サーバを設定できます。
 
 * 外部の syslog サーバに監査情報を保存する場合は、に進みます xref:../monitor/configuring-syslog-server.adoc[外部 syslog サーバを設定します]。
-* 外部 syslog サーバを使用しない場合は、に進みます ,監査情報の送信先を選択します。
+* 外部 syslog サーバを使用しない場合は、に進みます <<Select-audit-information-destinations,監査情報の送信先を選択します>>。
 
 
 
@@ -214,6 +215,7 @@ CAUTION: ログの送信先を変更しますか？
 
 
 
+.関連情報
 xref:../monitor/considerations-for-external-syslog-server.adoc[外部 syslog サーバに関する考慮事項]
 
 xref:../admin/index.adoc[StorageGRID の管理]

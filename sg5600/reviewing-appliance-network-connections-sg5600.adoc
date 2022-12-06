@@ -113,6 +113,7 @@ E5600SG コントローラの 4 つのネットワークポート
 StorageGRID のグリッドネットワークおよびクライアントネットワークに接続します。「 E5600SG コントローラでの 10 GbE ポート接続」を参照してください。
 
 |===
+.関連情報
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG コントローラポートのポートボンディングモード]
 
 xref:gathering-installation-information-sg5600.adoc[設置情報の収集（ SG5600 ）]

@@ -78,4 +78,5 @@ AutoSupport メッセージをテクニカルサポートに送信するには�
 * * User-triggered * ： AutoSupport メッセージをいつでも手動で送信します。
 
 
+.関連情報
 https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]

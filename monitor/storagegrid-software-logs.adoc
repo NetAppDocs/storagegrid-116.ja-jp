@@ -458,6 +458,7 @@ MySQL データベースのアップグレードに関連するエラーメッ�
 管理ノード
 
 |===
+.関連情報
 xref:about-bycast-log.adoc[bycast.log について]
 
 xref:../s3/index.adoc[S3 を使用する]

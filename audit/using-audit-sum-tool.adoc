@@ -19,6 +19,7 @@ summary: audit-sum ツールを使用して、書き込み、読み取り、 HEA
 * プライマリ管理ノードの IP アドレスを確認しておく必要があります。
 
 
+.このタスクについて
 プライマリ管理ノードで使用可能な「 audit-sum 」ツールには、ログに記録された書き込み、読み取り、削除の処理数と、それらの処理に要した時間が表示されます。
 
 
@@ -394,4 +395,5 @@ grep SPUT audit.log | audit-sum -gb -s
 
 
 
+.関連情報
 xref:using-audit-explain-tool.adoc[audit-explain ツールを使用してください]

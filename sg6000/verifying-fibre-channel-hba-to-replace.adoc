@@ -47,4 +47,5 @@ xref:turning-controller-identify-led-on-and-off.adoc[コントローラ識別 LE
 
 
 
+.関連情報
 xref:removing-fibre-channel-hba.adoc[ファイバチャネル HBA を取り外します]

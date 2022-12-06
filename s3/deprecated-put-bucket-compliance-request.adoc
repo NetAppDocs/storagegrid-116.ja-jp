@@ -106,6 +106,7 @@ Consistency-Control: strong-site
 * 要求の「 RetentionPeriodMinutes 」がバケットの現在の保持期間よりも短い場合、 HTTP ステータスコードは「 400 Bad Request 」になります。
 
 
+.関連情報
 xref:deprecated-put-bucket-request-modifications-for-compliance.adoc[廃止：準拠のための PUT Bucket 要求の変更]
 
 xref:../tenant/index.adoc[テナントアカウントを使用する]
