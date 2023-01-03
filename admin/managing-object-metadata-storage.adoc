@@ -244,7 +244,7 @@ image::../media/storage_used_object_metadata_allowed.png[使用済みストレ�
 
 * システム全体の * Metadata Reserved Space * が 8TB に設定されている（各ストレージノードの RAM が 128GB を超えている場合、 StorageGRID 11.6 のデフォルト値です）。
 * SN1 のメタデータ用にリザーブされている実際のスペースは 6TB です。（ボリューム 0 が * Metadata Reserved Space * 設定より小さいため、ボリューム全体がリザーブされます）。
-* SN1でのメタデータの許容スペースは、に示す計算に基づいて3TBです <<actual-reserved-space-for-metadata,メタデータ用にリザーブされている実際のスペースに関する表>>：（メタデータ用に実際にリザーブされるスペース−1TB）×60%、最大3.96TB。
+* SN1でのメタデータの許容スペースは、に示す計算に基づいて3TBです <<table-allowed-space-for-metadata,メタデータに使用できるスペースの表>>：（メタデータ用に実際にリザーブされるスペース−1TB）×60%、最大3.96TB。
 
 
 
