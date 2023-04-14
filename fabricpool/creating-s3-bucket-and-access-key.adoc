@@ -72,7 +72,7 @@ image::../media/create_bucket_for_fabricpool.png[FabricPool のバケットを�
 
 +
 
-NOTE: FabricPool バケットの場合、推奨されるバケット整合性レベルは「 read-after-new-write 」です。 「利用可能」整合性レベルは推奨されません。を参照してください xref:../tenant/changing-consistency-level.adoc[整合性レベルを変更します]。
+NOTE: FabricPool バケットの場合、推奨されるバケットの整合性レベルは* Read-after-new-write *で、新しいバケットのデフォルトの設定です。FabricPool バケットを編集して* available *やその他の整合性レベルを使用しないでください。
 
 . アクセスキーとシークレットアクセスキーを作成します。
 +

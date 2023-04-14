@@ -15,25 +15,22 @@ SG6000-CN コントローラが適切に機能しない場合や障害が発生�
 
 .必要なもの
 * 正しい交換用の Fibre Channel HBA を用意しておきます。
-* 交換する Fibre Channel HBA が搭載されている SG6000-CN コントローラを特定します。
+* これで完了です link:verifying-fibre-channel-hba-to-replace.html["交換するファイバチャネルHBAが搭載されているSG6000-CNコントローラを特定"]。
+* これで完了です link:locating-controller-in-data-center.html["SG6000-CNコントローラの物理的な場所を確認します"] 実現します。
+* これで完了です link:shutting-down-sg6000-cn-controller.html["SG6000-CNコントローラをシャットダウンします"]。
 +
-xref:verifying-fibre-channel-hba-to-replace.adoc[交換するファイバチャネル HBA を確認します]
 
-* データセンター内の Fibre Channel HBA を交換する SG6000-CN コントローラを物理的に配置しておきます。
-+
-xref:locating-controller-in-data-center.adoc[データセンターでコントローラを探します]
+IMPORTANT: コントローラをラックから取り外す前に、通常の方法でシャットダウンする必要があります。
 
-* コントローラのカバーを取り外しておきます。
-+
-xref:removing-sg6000-cn-controller-cover.adoc[SG6000-CN コントローラのカバーを取り外します]
-
+* これで完了です link:removing-sg6000-cn-controller-from-cabinet-or-rack.html["キャビネットまたはラックからコントローラを取り外した"]。
+* これで完了です link:removing-sg6000-cn-controller-cover.html["コントローラのカバーを取り外した"]。
 
 
 .このタスクについて
-サービスの中断を回避するには、 Fibre Channel HBA の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、定期的なメンテナンスの実行中にサービスの中断が通常どおりに発生するようにアダプタを交換してください。情報ライフサイクル管理を使用してオブジェクトを管理する手順のノード接続状態の確認に関する情報を参照してください。
+サービスの中断を回避するには、 Fibre Channel HBA の交換を開始する前に他のすべてのストレージノードがグリッドに接続されていることを確認するか、定期的なメンテナンスの実行中にサービスの中断が通常どおりに発生するようにアダプタを交換してください。の情報を参照してください link:../monitor/monitor-node-connection-states.html["ノードの接続状態を監視しています"]。
 
 
-IMPORTANT: オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス期間中に Fibre Channel HBA を交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。+ 情報ライフサイクル管理を使用したオブジェクトの管理に関する情報を参照してください
+IMPORTANT: オブジェクトのコピーを 1 つだけ作成する ILM ルールを使用したことがある場合は、スケジュールされたメンテナンス期間中に Fibre Channel HBA を交換する必要があります。そうしないと、この手順 中にオブジェクトへのアクセスが一時的に失われる可能性があります。については、を参照してください link:../ilm/why-you-should-not-use-single-copy-replication.html["シングルコピーレプリケーションを使用しない理由"]。
 
 .手順
 . ESD リストバンドのストラップの端を手首に巻き付け、静電気の放電を防ぐためにクリップの端をメタルアースに固定します。
@@ -57,12 +54,3 @@ image::../media/sg6060_fc_hba_location.jpg[ライザーアセンブリ内の SG6
 交換用の Fibre Channel HBA を取り付けます。
 
 xref:reinstalling-fibre-channel-hba.adoc[Fibre Channel HBA を再度取り付けます]
-
-.関連情報
-xref:reinstalling-fibre-channel-hba.adoc[Fibre Channel HBA を再度取り付けます]
-
-xref:../admin/index.adoc[StorageGRID の管理]
-
-xref:../monitor/index.adoc[監視とトラブルシューティング]
-
-xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
