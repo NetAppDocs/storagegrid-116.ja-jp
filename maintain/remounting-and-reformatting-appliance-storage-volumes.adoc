@@ -217,10 +217,6 @@ Recovery ページの Progress バーと Stage カラムは 'sn-recovery-postins
 +
 image::../media/recovering_cassandra.png[グリッド管理インターフェイスにおけるリカバリの進行状況を示すスクリーンショット]
 
-. コンピューティング・コントローラの IP アドレスを使用して https://Controller_IP:8443` と入力し、 StorageGRID アプライアンス・インストーラの Monitor Install ページに戻ります。
-+
-Monitor Install ページには、スクリプトの実行中のインストールの進行状況が表示されます。
-
 
 
 ノード上で sn-recovery-postinstall.sh スクリプトがサービスを開始したら、次の手順 で説明するように、スクリプトでフォーマットされたストレージボリュームにオブジェクトデータをリストアできます。

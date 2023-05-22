@@ -30,9 +30,9 @@ NOTE: StorageGRID システムで管理ノードごとにエンタープライ�
 
 == Azure AD にアクセスします
 
-. にログインします https://portal.azure.com["Azure ポータル"^]。
-. に移動します https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade["Azure Active Directory の略"^]。
-. 選択するオプション https://portal.azure.com/#blade/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/Overview/menuId/["エンタープライズアプリケーション"^]。
+. にログインします https://["Azure ポータル"^]。
+. に移動します https://["Azure Active Directory の略"^]。
+. 選択するオプション https://["エンタープライズアプリケーション"^]。
 
 
 

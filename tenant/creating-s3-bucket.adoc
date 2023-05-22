@@ -50,7 +50,7 @@ IMPORTANT: バケットの作成後にバケット名を変更することはで
 
 +
 
-NOTE: 詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html["バケットの命名規則に関する Amazon Web Services （ AWS ）のドキュメント"^]。
+NOTE: 詳細については、を参照してください https://["バケットの命名規則に関する Amazon Web Services （ AWS ）のドキュメント"^]。
 
 . このバケットのリージョンを選択します。
 +

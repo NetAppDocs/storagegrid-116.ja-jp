@@ -29,7 +29,7 @@ summary: オブジェクトデータの保存時に S3 テナントアカウン�
 テナントユーザが S3 オブジェクトのロックを有効にした新しいバケットを作成できるようにするには、グリッド管理者がグローバルな S3 オブジェクトロック設定を有効にする必要があります。この設定を有効にすると、あとで無効にすることはできません。
 
 
-NOTE: 以前のバージョンの StorageGRID を使用してグローバル準拠設定を有効にした場合、 StorageGRID 11.6 で S3 オブジェクトロック設定が有効になります。既存の準拠バケットの設定の管理には引き続き StorageGRID を使用できますが、新しい準拠バケットを作成することはできません。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^]。
+NOTE: 以前のバージョンの StorageGRID を使用してグローバル準拠設定を有効にした場合、 StorageGRID 11.6 で S3 オブジェクトロック設定が有効になります。既存の準拠バケットの設定の管理には引き続き StorageGRID を使用できますが、新しい準拠バケットを作成することはできません。を参照してください https://["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^]。
 
 .手順
 . 設定 * > * System * > * S3 Object Lock * を選択します。

@@ -25,7 +25,7 @@ NOTE: ポリシーのデフォルトの ILM ルールを作成する場合は、
 * イレイジャーコーディングコピーを作成する場合は、イレイジャーコーディングプロファイルを設定しておく必要があります。を参照してください xref:creating-erasure-coding-profile.adoc[イレイジャーコーディングプロファイルを作成]。
 * に精通していること xref:data-protection-options-for-ingest.adoc[取り込みのデータ保護オプション]。
 * S3 オブジェクトロックで使用する準拠ルールを作成する必要がある場合は、を参照してください xref:requirements-for-s3-object-lock.adoc[S3 オブジェクトのロックの要件]。
-* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["ビデオ： StorageGRID ILM Rules ： Getting Started"^]。
+* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ： StorageGRID ILM Rules ： Getting Started"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
 image::../media/video-screenshot-ilm-rules.png[ビデオ： StorageGRID ILM Rules ： Getting Started]

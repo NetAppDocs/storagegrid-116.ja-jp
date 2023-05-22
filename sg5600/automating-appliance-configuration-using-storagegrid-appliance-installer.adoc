@@ -42,7 +42,7 @@ NOTE: アプライアンスのインストールと設定の両方を自動化�
 +
 ** ConfigBuilder アプリケーション
 +
-https://configbuilder.netapp.com/["ConfigBuilder.netapp.com"^]
+https://["ConfigBuilder.netapp.com"^]
 
 ** configure -SGA .py アプライアンスの構成スクリプトスクリプトは、 StorageGRID アプライアンスインストーラ（ * Help * > * アプライアンス構成スクリプト * ）からダウンロードできます。configure-sga.py スクリプトを使用して設定を自動化する手順を参照してください。
 +

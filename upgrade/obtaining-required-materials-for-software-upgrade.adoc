@@ -95,7 +95,7 @@ Linux ホストに導入されているノードがある場合は、 RPM アー
 
 
 .手順
-. に進みます https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]。
+. に進みます https://["ネットアップのダウンロード： StorageGRID"^]。
 . 最新のリリースをダウンロードするボタンを選択するか、ドロップダウンメニューから別のバージョンを選択して、「 * Go * 」を選択します。
 +
 StorageGRID ソフトウェアのバージョンの形式は、 11._x.y_. です。StorageGRID ホットフィックスの形式は、 11._x.y.z _ です。

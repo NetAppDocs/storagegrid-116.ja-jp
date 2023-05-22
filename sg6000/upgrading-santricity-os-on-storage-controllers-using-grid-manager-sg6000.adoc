@@ -38,7 +38,7 @@ NOTE: この手順 は、 SANtricity OS のアップグレードに関連付け�
 ご使用のストレージコントローラに対応する SANtricity OS バージョンを選択してください。
 
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
+https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]
 
 . 「 * maintenance * > * System * > * Software update * 」を選択します。
 +
@@ -189,6 +189,6 @@ NOTE: アップグレード手順 を再度実行するときは、以前にア�
 
 
 .関連情報
-https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
+https://["NetApp Interoperability Matrix Tool で確認できます"^]
 
 xref:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.adoc[ストレージコントローラの SANtricity OS をメンテナンスモードでアップグレードします]

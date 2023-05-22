@@ -33,7 +33,7 @@ AutoSupport のステータスは次のいずれかになります。
 システムの週単位のログをテクニカルサポートが受信すると、 AutoSupport のステータスが ON に変わります。
 
 .手順
-. ネットアップサポートサイトにアクセスします http://mysupport.netapp.com/["mysupport.netapp.com"^]をクリックし、 Active IQ ポータルにサインインします。
+. ネットアップサポートサイトにアクセスします http://["mysupport.netapp.com"^]をクリックし、 Active IQ ポータルにサインインします。
 . AutoSupport のステータスが誤って OFF になっている場合は、次の手順を実行します。
 +
 .. システム構成をチェックして、 AutoSupport がオンになっていることを確認します。

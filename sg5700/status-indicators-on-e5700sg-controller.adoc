@@ -287,4 +287,4 @@ E2800 コントローラとのインストールまたは通信に失敗しま�
 .関連情報
 xref:troubleshooting-hardware-installation.adoc[ハードウェアの設置のトラブルシューティング（ SG5700 ）]
 
-https://mysupport.netapp.com/site/global/dashboard["ネットアップサポート"^]
+https://["ネットアップサポート"^]

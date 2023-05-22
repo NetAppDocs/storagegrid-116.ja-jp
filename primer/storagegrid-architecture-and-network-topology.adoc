@@ -104,7 +104,7 @@ StorageGRID システムは、次の 4 種類のグリッドノードを使用�
 * xref:../ubuntu/index.adoc[Ubuntu または Debian をインストールします]
 
 
-を使用します https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] をクリックすると、サポートされるバージョンのリストが表示されます。
+を使用します https://["NetApp Interoperability Matrix Tool で確認できます"^] をクリックすると、サポートされるバージョンのリストが表示されます。
 
 
 
@@ -137,7 +137,7 @@ StorageGRID アプライアンスには、次の 4 種類があります。
 
 詳細については、次を参照してください。
 
-* https://hwu.netapp.com["NetApp Hardware Universe の略"^]
+* https://["NetApp Hardware Universe の略"^]
 * xref:../sg100-1000/index.adoc[SG100 および SG1000 サービスアプライアンス]
 * xref:../sg6000/index.adoc[SG6000 ストレージアプライアンス]
 * xref:../sg5700/index.adoc[SG5700 ストレージアプライアンス]

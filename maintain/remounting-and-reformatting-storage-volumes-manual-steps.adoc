@@ -228,7 +228,7 @@ NOTE: RSM サービスは、 ADC サービスが含まれるストレージノ�
 
 NOTE: 一部の StorageGRID リカバリ手順では、 Reaper を使用して Cassandra の修復を処理します。関連サービスまたは必要なサービスが開始されるとすぐに修理が自動的に行われます。スクリプトの出力には、「 reaper 」または「 Cassandra repair 」が含まれていることがあります。 修復が失敗したことを示すエラーメッセージが表示された場合は、エラーメッセージに示されたコマンドを実行します。
 
-. [[post-install-script-step]]として `sn-recovery-postinstall.sh` スクリプトが実行され、Grid Managerのリカバリページが監視されます。
+. として[[post-install-script-step]]を選択します `sn-recovery-postinstall.sh` スクリプトが実行され、Grid Managerのリカバリページが監視されます。
 +
 Recovery ページの Progress バーと Stage カラムは 'sn-recovery-postinstall.sh スクリプトの高レベルのステータスを提供します
 

@@ -16,7 +16,7 @@ summary: StorageGRID 環境でアプリケーションをテストして有効�
 [role="lead"]
 StorageGRID 環境でアプリケーションをテストして有効にする方法について説明します。
 
-にアクセスします https://docs.netapp.com/us-en/storagegrid-enable/index.html["storagegrid-enable"^] このサイトの製品ドキュメントに記載されている例や説明書を見つけるためのドキュメントサイトです。また、StorageGRID との評価および統合に関して、* storagegrid-enable *サイトでもいくつかの次の手順を説明しています。
+にアクセスします https://["storagegrid-enable"^] このサイトの製品ドキュメントに記載されている例や説明書を見つけるためのドキュメントサイトです。また、StorageGRID との評価および統合に関して、* storagegrid-enable *サイトでもいくつかの次の手順を説明しています。
 
 次の情報が含まれています。
 

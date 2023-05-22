@@ -226,7 +226,7 @@ Swift の CLI を使用して、 StorageGRID システムへの接続をテス�
 .必要なもの
 * Swift のコマンドラインクライアント python-swiftclient をダウンロードしてインストールしておく必要があります。
 +
-https://platform.swiftstack.com/docs/integration/python-swiftclient.html["swifftStack ： python-swiftclient"^]
+https://["swifftStack ： python-swiftclient"^]
 
 * StorageGRID システムに Swift テナントアカウントが必要です。
 

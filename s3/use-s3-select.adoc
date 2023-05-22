@@ -16,7 +16,7 @@ StorageGRID では、用の AWS S3 Select 句、データ型、および演算�
 
 NOTE: リストにない項目はサポートされていません。
 
-構文については、を参照してください xref:select-object-content.adoc[SelectObjectContent の順に選択します]。S3 Select の詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html["S3 Select に関する AWS のドキュメント"^]。
+構文については、を参照してください xref:select-object-content.adoc[SelectObjectContent の順に選択します]。S3 Select の詳細については、を参照してください https://["S3 Select に関する AWS のドキュメント"^]。
 
 問題 SelectObjectContent クエリを実行できるのは、 S3 Select が有効になっているテナントアカウントのみです。を参照してください xref:../admin/manage-s3-select-for-tenant-accounts.adoc[S3 Select を使用する際の考慮事項と要件]。
 

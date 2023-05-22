@@ -50,7 +50,7 @@ S3 オブジェクトロックは、以前のバージョンの StorageGRID で�
 * リーガルホールドを解除する。
 
 
-を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^] 手順については、を参照し
+を参照してください https://["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^] 手順については、を参照し
 
 以前のバージョンの StorageGRID で従来の準拠機能を使用していた場合、次の表を参照して、 StorageGRID の S3 オブジェクトロック機能と比較する方法を確認してください。
 

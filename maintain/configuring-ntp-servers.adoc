@@ -35,7 +35,7 @@ IMPORTANT: 各サイトの少なくとも 2 つのノードが、少なくとも
 
 NOTE: 本番レベルの StorageGRID インストール環境で外部 NTP ソースを指定する場合は、 Windows Server 2016 より前のバージョンの Windows で Windows Time （ W32Time ）サービスを使用しないでください。以前のバージョンの Windows のタイムサービスは精度が十分でないため、 StorageGRID などの高精度環境での使用は Microsoft でサポートされていません。
 
-https://support.microsoft.com/en-us/help/939322/support-boundary-to-configure-the-windows-time-service-for-high-accura["高精度環境用に Windows タイムサービスを構成するためのサポート境界"^]
+https://["高精度環境用に Windows タイムサービスを構成するためのサポート境界"^]
 
 インストール時に指定した最初の NTP サーバの安定性や可用性に問題が生じた場合は、サーバの追加や既存のサーバの更新や削除を行って、 StorageGRID システムが使用する外部 NTP ソースのリストを更新できます。
 

@@ -39,8 +39,8 @@ image::../media/fabricpool_storagegrid_workflow.png[FabricPool StorageGRID ワ�
 * Grid Manager や Tenant Manager を含む StorageGRID システムソフトウェアの理解
 * FabricPool の使用と設定に関する詳細については、次のリソースを参照してください。
 +
-** https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 ：『 FabricPool Best Practices in ONTAP 9.9.1 』"^]
-** https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 のドキュメント"^]
+** https://["TR-4598 ：『 FabricPool Best Practices in ONTAP 9.9.1 』"^]
+** https://["ONTAP 9 のドキュメント"^]
 
 
 

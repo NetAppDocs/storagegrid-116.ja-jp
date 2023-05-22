@@ -40,7 +40,7 @@ NOTE: アプライアンスのインストールと設定の両方を自動化�
 .手順
 . 次のいずれかを使用して JSON ファイルを生成します。
 +
-** 。 https://configbuilder.netapp.com/["ConfigBuilder アプリケーション"^]。
+** 。 https://["ConfigBuilder アプリケーション"^]。
 ** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[configure-sga.pyアプライアンス構成スクリプト]。スクリプトは、StorageGRID アプライアンスインストーラ（* Help *アプライアンス構成スクリプト*）からダウンロードできます。
 +
 JSON ファイル内のノード名は、次の要件に従う必要があります。

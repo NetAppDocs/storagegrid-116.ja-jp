@@ -92,7 +92,7 @@ IP を手動で入力します
 
 . 別のバージョンの StorageGRID ソフトウェアをインストールする必要がある場合は、次の手順を実行します。
 +
-.. インストールアーカイブをダウンロードします。https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
+.. インストールアーカイブをダウンロードします。https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]。
 .. アーカイブを展開します。
 .. StorageGRID アプライアンス・インストーラから、 * アドバンスト * > * StorageGRID ソフトウェアのアップロード * を選択します。
 .. [ 削除 ] をクリックして、現在のソフトウェアパッケージを削除します。

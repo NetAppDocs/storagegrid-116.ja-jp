@@ -27,7 +27,7 @@ StorageGRID システムでは、日付の値を設定できるすべてのヘ�
 
 == 代表的な要求ヘッダー
 
-StorageGRID システムでは、で定義されている代表的な要求ヘッダーがサポートされます http://docs.aws.amazon.com/AmazonS3/latest/API/Welcome.html["Amazon Web Services （ AWS ）ドキュメント：「 Amazon Simple Storage Service API Reference"^]1 つの例外を除いて。
+StorageGRID システムでは、で定義されている代表的な要求ヘッダーがサポートされます http://["Amazon Web Services （ AWS ）ドキュメント：「 Amazon Simple Storage Service API Reference"^]1 つの例外を除いて。
 
 |===
 | 要求ヘッダー | 実装 

@@ -33,12 +33,12 @@ ILM ルールと ILM ポリシーを設計して実装するには、慎重な�
 
 詳細については、次のビデオをご覧ください。
 
-* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["ビデオ： StorageGRID ILM Rules ： Getting Started"^]
+* https://["ビデオ： StorageGRID ILM Rules ： Getting Started"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
 image::../media/video-screenshot-ilm-rules.png[ビデオ： StorageGRID ILM Rules ： Getting Started]
 
-* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["ビデオ： StorageGRID ILM Policies"^]
+* https://["ビデオ： StorageGRID ILM Policies"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[ビデオ： StorageGRID ILM Policies]

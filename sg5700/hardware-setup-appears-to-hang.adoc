@@ -57,4 +57,4 @@ xref:status-indicators-on-e5700sg-controller.adoc[E5700SG コントローラの�
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[HE エラー： SANtricity OS ソフトウェアとの同期エラー]
 
-http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]
+http://["NetApp E シリーズシステムのドキュメントのサイト"^]

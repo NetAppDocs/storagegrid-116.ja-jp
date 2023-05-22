@@ -63,4 +63,4 @@ AutoSupport には、次の種類のメッセージが用意されています�
 
 
 .関連情報
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["ネットアップのマニュアル： SANtricity Storage Manager"^]
+http://["ネットアップのマニュアル： SANtricity Storage Manager"^]

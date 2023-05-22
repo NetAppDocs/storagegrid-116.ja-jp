@@ -35,7 +35,7 @@ IMPORTANT: CPU とメモリの使用状況を定期的に監視して、ワー�
 ストレージ要件に関する情報も参照してください。
 
 .関連情報
-https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
+https://["NetApp Interoperability Matrix Tool で確認できます"^]
 
 xref:storage-and-performance-requirements.adoc[ストレージとパフォーマンスの要件]
 

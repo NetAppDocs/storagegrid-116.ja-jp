@@ -16,7 +16,7 @@ E5600SG コントローラの交換が必要となる場合があります。
 .必要なもの
 次のリソースにアクセスできる必要があります。
 
-* E シリーズハードウェアの交換に関する the NetApp Support Site at + の情報http://mysupport.netapp.com/["mysupport.netapp.com"^]
+* E シリーズハードウェアの交換に関する the NetApp Support Site at + の情報http://["mysupport.netapp.com"^]
 * E5600 に関するサポートサイトのドキュメント
 * アプライアンスは次のようになりました xref:placing-appliance-into-maintenance-mode.adoc[メンテナンスモードにしました]。
 
@@ -75,6 +75,6 @@ LED の最終状態は '99' です
 
 
 .関連情報
-https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
+https://["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["ネットアップのマニュアル： E5600 シリーズ"^]
+http://["ネットアップのマニュアル： E5600 シリーズ"^]

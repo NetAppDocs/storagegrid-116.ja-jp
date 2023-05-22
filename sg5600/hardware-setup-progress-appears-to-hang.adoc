@@ -57,6 +57,6 @@ xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG コントロー
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[HE エラー： SANtricity OS ソフトウェアとの同期エラー]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["E2700 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]
+https://["E2700 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["ネットアップのマニュアル： E2700 シリーズ"^]
+http://["ネットアップのマニュアル： E2700 シリーズ"^]

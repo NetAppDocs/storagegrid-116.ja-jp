@@ -25,7 +25,7 @@ summary: ハードウェア障害やケーブル接続エラーによってス�
 .関連情報
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[SG6000 ストレージコントローラのブート時のステータスコードを確認します]
 
-https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["E5700 and E2800 System Monitoring Guide 』を参照してください"^]
+https://["E5700 and E2800 System Monitoring Guide 』を参照してください"^]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[SG6000-CN コントローラのステータスインジケータとボタンを表示します]
 
