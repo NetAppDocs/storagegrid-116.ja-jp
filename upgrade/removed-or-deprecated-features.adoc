@@ -43,6 +43,6 @@ StorageGRID 11.6 では、 S3 クライアントが 5GB を超えるオブジェ
 
 NAS Bridge 機能は、以前に StorageGRID 11.4 リリースで制限付きアクセスになっていました。NAS Bridge 機能は、アクセスが制限されたままで、 StorageGRID 11.6 で廃止されました。
 
-NAS Bridge 11.4 は、引き続き最終リリースであり、 StorageGRID 11.6 との互換性を維持します。を確認します https://["NetApp Interoperability Matrix Tool で確認できます"^] NAS Bridge 11.4 バージョンと StorageGRID バージョン間の互換性を継続するため。
+NAS Bridge 11.4 は、引き続き最終リリースであり、 StorageGRID 11.6 との互換性を維持します。を確認します https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^] NAS Bridge 11.4 バージョンと StorageGRID バージョン間の互換性を継続するため。
 
-ネットアップサポートサイトでを確認します https://["NAS Bridge のサポートスケジュール"^]。
+ネットアップサポートサイトでを確認します https://mysupport.netapp.com/site/info/version-support["NAS Bridge のサポートスケジュール"^]。

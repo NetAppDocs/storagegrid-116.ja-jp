@@ -15,7 +15,7 @@ StorageGRID システムでは、 S3 テナントアカウントあたり最大 
 
 バケット名については、 AWS US Standard リージョンの制限が適用されますが、 S3 仮想ホスト形式の要求をサポートするために DNS の命名規則にも従う必要があります。
 
-https://["Amazon Web Services （ AWS ）ドキュメント：「 Bucket Restrictions and Limitations"^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html["Amazon Web Services （ AWS ）ドキュメント：「 Bucket Restrictions and Limitations"^]
 
 xref:../admin/configuring-s3-api-endpoint-domain-names.adoc[S3 API エンドポイントのドメイン名を設定]
 
@@ -313,7 +313,7 @@ PUT Bucket replication
  a| 
 この処理では、要求の本文に含まれるレプリケーション設定 XML を使用して、バケットの StorageGRID CloudMirror レプリケーションが設定されます。CloudMirror レプリケーションについては、実装に関する次の詳細事項に注意してください。
 
-* StorageGRID では、 V1 のレプリケーション設定のみがサポートされます。つまり、 StorageGRID では「 Filter 」要素をルールに使用することはサポートされておらず、 V1 の規則に従ってオブジェクトバージョンが削除されます。詳細については、を参照してください https://["レプリケーション設定に関する Amazon S3 のドキュメント"^]。
+* StorageGRID では、 V1 のレプリケーション設定のみがサポートされます。つまり、 StorageGRID では「 Filter 」要素をルールに使用することはサポートされておらず、 V1 の規則に従ってオブジェクトバージョンが削除されます。詳細については、を参照してください https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html["レプリケーション設定に関する Amazon S3 のドキュメント"^]。
 * バケットレプリケーションは、バージョン管理されているバケットでもバージョン管理されていないバケットでも設定でき
 * レプリケーション設定 XML の各ルールで異なるデスティネーションバケットを指定できます。1 つのソースバケットを複数のデスティネーションバケットにレプリケートできます。
 * デスティネーションバケットは、テナントマネージャまたはテナント管理 API で指定された StorageGRID エンドポイントの URN として指定する必要があります。

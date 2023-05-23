@@ -32,4 +32,4 @@ StorageGRID システムを強化する際は、次の点を考慮する必要�
 
 
 .関連情報
-https://["脆弱性対策ポリシー"^]
+https://security.netapp.com/policy/["脆弱性対策ポリシー"^]

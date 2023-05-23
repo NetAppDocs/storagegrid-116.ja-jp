@@ -70,7 +70,7 @@ View associated Drives * を選択して、ストレージアプライアンス�
 +
 .. Web ブラウザを開き、ネットアップサポート Web サイトにアクセスして、 ID とパスワードを使用してログインします。
 +
-https://["ネットアップサポート"^]
+https://mysupport.netapp.com/site/["ネットアップサポート"^]
 
 .. ネットアップサポート Web サイトで、「 * Downloads * 」タブを選択し、「 * E-Series Disk Drive Firmware * 」を選択します。
 +

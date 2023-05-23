@@ -41,4 +41,4 @@ IMPORTANT: ボリュームがすでに構成されている場合や StorageGRID
 
 
 .関連情報
-http://["NetApp E シリーズシステムのドキュメントのサイト"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズシステムのドキュメントのサイト"^]

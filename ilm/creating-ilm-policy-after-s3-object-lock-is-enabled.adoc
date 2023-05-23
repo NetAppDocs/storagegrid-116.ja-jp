@@ -23,7 +23,7 @@ NOTE: グローバルな S3 オブジェクトのロック設定が有効にな�
 
 * ドラフトポリシーに追加する準拠 ILM ルールと非準拠 ILM ルールを作成しておきます。必要に応じて、ドラフトポリシーを保存して追加のルールを作成し、ドラフトポリシーを編集して新しいルールを追加できます。を参照してくださいxref:example-7-compliant-ilm-policy-for-s3-object-lock.adoc[例 7 ： S3 オブジェクトロックの準拠 ILM ポリシー]。
 * これで完了です xref:creating-default-ilm-rule.adoc[デフォルトの ILM ルールが作成されました] 準拠しているポリシーである。
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ： StorageGRID ILM Policies"^]
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["ビデオ： StorageGRID ILM Policies"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[ビデオ： StorageGRID ILM Policies]

@@ -36,13 +36,13 @@ summary: アラートを使用すると、 StorageGRID システム内のさま�
 
 詳細については、次のビデオをご覧ください。
 
-* https://["ビデオ : アラートの概要"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["ビデオ : アラートの概要"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
 image::../media/video-screenshot-alert-overview.png[ビデオ : アラートの概要]
 
-* https://["ビデオ : メトリックスを使用してカスタムアラートを作成する"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["ビデオ : メトリックスを使用してカスタムアラートを作成する"^]
 +
-image::../media/video-screenshot-alert-create-custom.png[リンク -"https://[] alt=" ビデオ : メトリックを使用したカスタムアラートの作成 "]
+image::../media/video-screenshot-alert-create-custom.png[リンク -"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] alt=" ビデオ : メトリックを使用したカスタムアラートの作成 "]
 
 

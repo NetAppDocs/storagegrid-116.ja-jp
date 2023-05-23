@@ -21,7 +21,7 @@ NOTE: グローバルな S3 オブジェクトのロック設定が有効にな�
 * 特定のアクセス権限が必要です。
 * ドラフトポリシーに追加する ILM ルールを作成しておきます。必要に応じて、ドラフトポリシーを保存して追加のルールを作成し、ドラフトポリシーを編集して新しいルールを追加できます。
 * これで完了です xref:creating-default-ilm-rule.adoc[デフォルトの ILM ルールが作成されました] フィルタを含まないポリシーの場合。
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ： StorageGRID ILM Policies"^]
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["ビデオ： StorageGRID ILM Policies"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[ビデオ： StorageGRID ILM Policies]

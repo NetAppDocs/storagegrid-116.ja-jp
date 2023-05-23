@@ -39,7 +39,7 @@ Windows PowerShell を使用して証明書利用者信頼を簡単に作成で�
 . Windows のスタートメニューから PowerShell アイコンを右クリックし、 * 管理者として実行 * を選択します。
 . PowerShell コマンドプロンプトで、次のコマンドを入力します。
 +
-「 Add-AdfsRelifyPartyTrust - 名前」 _Admin_Node_Identifier_ 」 -MetadataURL "https://[]
+「 Add-AdfsRelifyPartyTrust - 名前」 _Admin_Node_Identifier_ 」 -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"`[]
 
 +
 ** 「 _Admin_Node_Identifier_ 」には、管理ノードの証明書利用者識別子を入力します。これは、 Single Sign-On ページに表示されるとおりです。たとえば 'SG-DC1-ADM1' と入力します

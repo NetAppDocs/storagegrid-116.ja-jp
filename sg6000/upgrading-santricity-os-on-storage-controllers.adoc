@@ -29,8 +29,8 @@ xref:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg600
 IMPORTANT: ストレージアプライアンスの SANtricity OS をアップグレードするときは、 StorageGRID のドキュメントに記載されている手順に従う必要があります。他の手順を使用すると、アプライアンスが動作しなくなる可能性があります。
 
 .関連情報
-https://["NetApp Interoperability Matrix Tool で確認できます"^]
+https://mysupport.netapp.com/matrix["NetApp Interoperability Matrix Tool で確認できます"^]
 
-https://["ネットアップのダウンロード：StorageGRID アプライアンス"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["ネットアップのダウンロード：StorageGRID アプライアンス"^]
 
 xref:../monitor/index.adoc[監視とトラブルシューティング]

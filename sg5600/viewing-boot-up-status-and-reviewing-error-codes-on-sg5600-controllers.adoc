@@ -25,4 +25,4 @@ E5600SG コントローラのステータスコードとエラーコードは、
 .関連情報
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG コントローラのデジタル表示ディスプレイのコード]
 
-http://["ネットアップのマニュアル： E2700 シリーズ"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["ネットアップのマニュアル： E2700 シリーズ"^]

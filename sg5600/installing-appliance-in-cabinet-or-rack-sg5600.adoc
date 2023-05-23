@@ -77,6 +77,6 @@ image::../media/appliance_drive_insertion.gif[ドライブの挿入]
 
 
 .関連情報
-https://["E2700 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["E2700 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]
 
-https://["E5600 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMP1532527["E5600 コントローラドライブトレイおよび関連ドライブトレイ設置ガイド"^]

@@ -29,7 +29,7 @@ SANtricity System Manager で特殊なプロキシサーバアドレスを設定
 Grid Manager で管理プロキシサーバを設定する場合は、を参照してください xref:configuring-admin-proxy-settings.adoc[管理プロキシを設定します]。
 
 
-NOTE: この手順 は、 E シリーズ AutoSupport メッセージ用に StorageGRID プロキシサーバを設定するためだけに使用します。E シリーズ AutoSupport 構成の詳細については、を参照してください https://["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
+NOTE: この手順 は、 E シリーズ AutoSupport メッセージ用に StorageGRID プロキシサーバを設定するためだけに使用します。E シリーズ AutoSupport 構成の詳細については、を参照してください https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E シリーズおよび SANtricity に関するドキュメント"^]。
 
 .手順
 . Grid Manager で * nodes * を選択します。

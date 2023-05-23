@@ -19,7 +19,7 @@ StorageGRID のホットフィックスには、フィーチャーパックま�
 .手順
 . ネットアップの StorageGRID ダウンロードページにアクセスします。
 +
-https://["ネットアップのダウンロード： StorageGRID"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["ネットアップのダウンロード： StorageGRID"^]
 
 . [* タイプ / バージョンの選択 *] フィールドの下矢印を選択して、ダウンロード可能なアップデートのリストを表示します。
 +

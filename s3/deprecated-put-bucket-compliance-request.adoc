@@ -20,7 +20,7 @@ xref:using-s3-object-lock.adoc[S3 オブジェクトロックを使用する]
 
 xref:../ilm/index.adoc[ILM を使用してオブジェクトを管理する]
 
-https://["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^]
+https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["ネットアップのナレッジベース： StorageGRID 11.5 でレガシー準拠バケットを管理する方法"^]
 
 この処理を完了するには、 s3 ： PutBucketCompliance 権限または root アカウントが必要です。
 

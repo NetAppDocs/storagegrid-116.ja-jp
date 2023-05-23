@@ -18,7 +18,7 @@ summary: アラートルールは、特定のアラートをトリガーする�
 .必要なもの
 * を使用して Grid Manager にサインインします xref:../admin/web-browser-requirements.adoc[サポートされている Web ブラウザ]。
 * Manage Alerts または Root Access 権限が必要です。
-* 必要に応じて、次のビデオを視聴しました。 https://["ビデオ : アラートの概要"^]
+* 必要に応じて、次のビデオを視聴しました。 https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["ビデオ : アラートの概要"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
 image::../media/video-screenshot-alert-overview.png[ビデオ : アラートの概要]

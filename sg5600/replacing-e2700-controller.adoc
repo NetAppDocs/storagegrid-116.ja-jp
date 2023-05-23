@@ -98,6 +98,6 @@ image::../media/node_rejoin_grid_confirmation.png[アプライアンスノード
 
 
 .関連情報
-https://["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
+https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E シリーズおよび EF シリーズでのハードウェアの交換手順"^]
 
-http://["ネットアップのマニュアル： E2700 シリーズ"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["ネットアップのマニュアル： E2700 シリーズ"^]
