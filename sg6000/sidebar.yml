@@ -76,10 +76,10 @@ entries:
       url: "/sg6000/verifying-network-connections.html"
     - title: ポートレベルのネットワーク接続を確認
       url: "/sg6000/verifying-port-level-network-connections.html"
-  - title: SANtricity System Manager （ SG6000 ）へのアクセスと設定
+  - title: SANtricity System Manager（SG6000）へのアクセスと設定
     url: "/sg6000/accessing-and-configuring-santricity-system-manager.html"
     entries:
-    - title: SANtricity システムマネージャをセットアップしてアクセスします
+    - title: SANtricity System Manager をセットアップしてアクセスします
       url: "/sg6000/setting-up-and-accessing-santricity-system-manager.html"
     - title: SANtricity システムマネージャでハードウェアステータスを確認します
       url: "/sg6000/reviewing-hardware-status-in-santricity-system-manager.html"
