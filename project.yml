@@ -12,7 +12,8 @@ sidebar:
   entries:
   - title: StorageGRID 11.6 ドキュメント
     url: "/index.html"
-  - section: release-notes
+  - title: リリースノート
+    url: "/release-notes/index.html"
   - title: はじめに
     entries:
     - section: primer
