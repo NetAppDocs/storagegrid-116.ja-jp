@@ -1,7 +1,7 @@
 ---
 permalink: primer/using-storagegrid-support-options.html 
 sidebar: sidebar 
-keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics 
+keywords: autosupport, Digital Advisor, logs, audit.log, metrics, diagnostics 
 summary: Grid Manager には、 StorageGRID システムで問題 が発生した場合にテクニカルサポートと連携するためのオプションが用意されています。 
 ---
 = StorageGRID のサポートオプションを使用する
@@ -51,13 +51,13 @@ image::../media/autosupport_disabled_message.png[AutoSupport が無効なメッ�
 
 
 
-=== Active IQ を使用します
+=== Digital Advisorを使用します
 
-Active IQ は、ネットアップのインストールベースが提供する予測分析と集合知を活用する、クラウドベースのデジタルアドバイザです。継続的なリスク評価、予測アラート、規範となるガイダンス、自動化されたアクションによって、問題が発生する前に予防できます。これにより、システムの健全性が向上し、システムの可用性が向上します。
+Active IQデジタルアドバイザはクラウドベースで、NetAppのインストールベースから得られた予測分析と集合知を活用します。継続的なリスク評価、予測アラート、規範となるガイダンス、自動化されたアクションによって、問題が発生する前に予防できます。これにより、システムの健全性が向上し、システムの可用性が向上します。
 
-ネットアップサポートサイトの Active IQ ダッシュボードと機能を使用する場合は、 AutoSupport を有効にする必要があります。
+デジタルアドバイザのダッシュボードと機能をNetAppサポートサイトで使用する場合は、AutoSupportを有効にする必要があります。
 
-https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザのドキュメント"^]
+https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisorドキュメント"^]
 
 
 

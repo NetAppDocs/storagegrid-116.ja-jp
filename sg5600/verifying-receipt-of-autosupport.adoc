@@ -2,7 +2,7 @@
 permalink: sg5600/verifying-receipt-of-autosupport.html 
 sidebar: sidebar 
 keywords: storagegrid, sg5600, storage node, storage appliance, verify, verification, verifying, confirm, confirmation, confirming, autosupport, auto-support, status 
-summary: テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムの AutoSupport のステータスは、 Active IQ ポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。 
+summary: テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムのAutoSupportのステータスは、Digital Advisorポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。 
 ---
 = AutoSupport の受信を確認します
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: テクニカルサポートに AutoSupport メッセージが届いて�
 
 
 [role="lead"]
-テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムの AutoSupport のステータスは、 Active IQ ポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。
+テクニカルサポートに AutoSupport メッセージが届いていることを確認する必要があります。システムのAutoSupportのステータスは、Digital Advisorポータルで確認できます。これらのメッセージがテクニカルサポートに届いていれば、支援が必要な場合にはその情報を利用できます。
 
 .このタスクについて
 AutoSupport のステータスは次のいずれかになります。
@@ -33,7 +33,7 @@ AutoSupport のステータスは次のいずれかになります。
 システムの週単位のログをテクニカルサポートが受信すると、 AutoSupport のステータスが ON に変わります。
 
 .手順
-. ネットアップサポートサイトにアクセスします http://mysupport.netapp.com/["mysupport.netapp.com"^]をクリックし、 Active IQ ポータルにサインインします。
+. NetAppサポートサイトにアクセスし http://mysupport.netapp.com/["mysupport.netapp.com"^]、デジタルアドバイザポータルにサインインします。
 . AutoSupport のステータスが誤って OFF になっている場合は、次の手順を実行します。
 +
 .. システム構成をチェックして、 AutoSupport がオンになっていることを確認します。
